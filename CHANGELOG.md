@@ -883,3 +883,5 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
 
 # Note di rilascio Revisione Profili del dd/mm/aaaa 
+
+## Modello Dati
