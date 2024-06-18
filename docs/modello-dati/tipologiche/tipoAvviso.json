@@ -1,0 +1,18 @@
+[{
+    "codice":"IT",
+    "descrizione": {
+		"it": "Nazionale",
+		"en": "Nazionale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"EU",
+    "descrizione": {
+		"it": "Europeo",
+		"en": "Europeo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}]

@@ -1,0 +1,20 @@
+[{
+    "codice":"UNKNOWN",
+    "descrizione": {
+		"it": "Sconosciuto",
+		"en": "Unknown",
+		"de": "Unbekannt"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"UNLIMITED",
+    "descrizione": {
+		"it": "Illimitato",
+		"en": "Unlimited",
+		"de": "Unbegrenzt"
+		},
+    "dataInizio":null,
+    "dataFine":null
+}]

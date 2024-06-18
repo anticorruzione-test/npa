@@ -1,0 +1,72 @@
+[{
+    "codice":"CREATO",
+    "descrizione": {
+		"it": "Creato",
+		"en": "Creato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CANC",
+    "descrizione": {
+		"it": "Cancellato",
+		"en": "Cancellato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"IN_ATT_PUBB",
+    "descrizione": {
+		"it": "In attesa pubblicazione",
+		"en": "In attesa pubblicazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"NON_PUBB",
+    "descrizione": {
+		"it": "Non pubblicato",
+		"en": "Non pubblicato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"STOP_PUBB",
+    "descrizione": {
+		"it": "In stop pubblicazione",
+		"en": "In stop pubblicazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"PUBB",
+    "descrizione": {
+		"it": "Pubblicato",
+		"en": "Pubblicato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"MOD",
+    "descrizione": {
+		"it": "Modificato",
+		"en": "Modificato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"RETT",
+    "descrizione": {
+		"it": "Rettificato",
+		"en": "Rettificato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}]

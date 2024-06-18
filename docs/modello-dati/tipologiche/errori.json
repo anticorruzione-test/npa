@@ -1,0 +1,2793 @@
+[{
+    "codice":"ERR1",
+    "descrizione": {
+		"it": "utente non autorizzato alla chiamata del servizio",
+		"en": "utente non autorizzato alla chiamata del servizio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR2",
+    "descrizione": {
+		"it": "scheda non ammessa in questa fase dell'appalto",
+		"en": "scheda non ammessa in questa fase dell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR3",
+    "descrizione": {
+		"it": "codice scheda errato",
+		"en": "codice scheda errato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR4",
+    "descrizione": {
+		"it": "errore nella conversione della scheda secondo il json schema definito",
+		"en": "errore nella conversione della scheda secondo il json schema definito"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR5",
+    "descrizione": {
+		"it": "anacForm non è in un formato json valido",
+		"en": "anacForm non è in un formato json valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR6",
+    "descrizione": {
+		"it": "eForm non è in un formato xml base64 valido",
+		"en": "eForm non è in un formato xml base64 valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR7",
+    "descrizione": {
+		"it": "ESPD non è in un formato xml base64 valido",
+		"en": "ESPD non è in un formato xml base64 valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR8",
+    "descrizione": {
+		"it": "eForm obbligatorio",
+		"en": "eForm obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR9",
+    "descrizione": {
+		"it": "anacForm obbligatorio",
+		"en": "anacForm obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR10",
+    "descrizione": {
+		"it": "ESPD obbligatorio",
+		"en": "ESPD obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR11",
+    "descrizione": {
+		"it": "tipo di eForm non coerente per la scheda",
+		"en": "tipo di eForm non coerente per la scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR12",
+    "descrizione": {
+		"it": "versione sdk eForm errata",
+		"en": "versione sdk eForm errata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR13",
+    "descrizione": {
+		"it": "versione ESPD errata",
+		"en": "versione ESPD errata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR14",
+    "descrizione": {
+		"it": "lotIdentifier duplicato nell'elenco dei lotti",
+		"en": "lotIdentifier duplicato nell'elenco dei lotti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR15",
+    "descrizione": {
+		"it": "lotIdentifier non coerenti tra eForm ed anacForm",
+		"en": "lotIdentifier non coerenti tra eForm ed anacForm"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR16",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'appalto",
+		"en": "operazione non consentita per lo stato dell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR17",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di verifica appalto",
+		"en": "operazione non consentita: è in corso una richiesta di verifica appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR18",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di conferma appalto",
+		"en": "operazione non consentita: è in corso una richiesta di conferma appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR19",
+    "descrizione": {
+		"it": "idAppalto non trovato",
+		"en": "idAppalto non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR20",
+    "descrizione": {
+		"it": "idScheda non trovato",
+		"en": "idScheda non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR21",
+    "descrizione": {
+		"it": "idPianificazione non trovato",
+		"en": "idPianificazione non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR22",
+    "descrizione": {
+		"it": "idAvviso non trovato",
+		"en": "idAvviso non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR23",
+    "descrizione": {
+		"it": "cig non trovato",
+		"en": "cig non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR24",
+    "descrizione": {
+		"it": "codice fiscale non trovato",
+		"en": "codice fiscale non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR25",
+    "descrizione": {
+		"it": "lotIdentifier non trovato",
+		"en": "lotIdentifier non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR26",
+    "descrizione": {
+		"it": "idAppalto obbligatorio",
+		"en": "idAppalto obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR27",
+    "descrizione": {
+		"it": "idPianificazione obbligatorio",
+		"en": "idPianificazione obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR28",
+    "descrizione": {
+		"it": "idAvviso obbligatorio",
+		"en": "idAvviso obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR29",
+    "descrizione": {
+		"it": "idScheda obbligatorio",
+		"en": "idScheda obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR30",
+    "descrizione": {
+		"it": "codice scheda obbligatorio",
+		"en": "codice scheda obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR31",
+    "descrizione": {
+		"it": "versione scheda obbligatorio",
+		"en": "versione scheda obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR32",
+    "descrizione": {
+		"it": "idTipologica obbligatorio",
+		"en": "idTipologica obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR33",
+    "descrizione": {
+		"it": "codice tipologica obbligatorio",
+		"en": "codice tipologica obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR34",
+    "descrizione": {
+		"it": "verificare i criteri di ricerca",
+		"en": "verificare i criteri di ricerca"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR35",
+    "descrizione": {
+		"it": "restringere i risultati di ricerca",
+		"en": "restringere i risultati di ricerca"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR36",
+    "descrizione": {
+		"it": "il body della scheda non è valorizzato",
+		"en": "il body della scheda non è valorizzato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR37",
+    "descrizione": {
+		"it": "codiceAppalto obbligatorio",
+		"en": "codiceAppalto obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR38",
+    "descrizione": {
+		"it": "codiceAppalto già presente",
+		"en": "codiceAppalto già presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR39",
+    "descrizione": {
+		"it": "idContratto non trovato",
+		"en": "idContratto non trovato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR40",
+    "descrizione": {
+		"it": "errore generico durante l'estrazione dei dati della scheda",
+		"en": "errore generico durante l'estrazione dei dati della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR41",
+    "descrizione": {
+		"it": "errore generico durante la validazione dei dati della scheda",
+		"en": "errore generico durante la validazione dei dati della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR42",
+    "descrizione": {
+		"it": "errore durante la validazione dei dati della scheda: scheda non trovata",
+		"en": "errore durante la validazione dei dati della scheda: scheda non trovata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR43",
+    "descrizione": {
+		"it": "errore durante la validazione dei dati della scheda: tabella DMN non trovata",
+		"en": "errore durante la validazione dei dati della scheda: tabella DMN non trovata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR44",
+    "descrizione": {
+		"it": "chiamata al servizio non ammessa: è in corso una richiesta di pubblicazione per l'avviso",
+		"en": "chiamata al servizio non ammessa: è in corso una richiesta di pubblicazione per l'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR45",
+    "descrizione": {
+		"it": "avviso non ammesso in questa fase dell'appalto",
+		"en": "avviso non ammesso in questa fase dell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR46",
+    "descrizione": {
+		"it": "errore durante la validazione dell'eForm",
+		"en": "errore durante la validazione dell'eForm"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR47",
+    "descrizione": {
+		"it": "errore generico durante la pubblicazione dell'avviso",
+		"en": "errore generico durante la pubblicazione dell'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR48",
+    "descrizione": {
+		"it": "operazione non consentita per la tipologia di avviso nazionale",
+		"en": "operazione non consentita per la tipologia di avviso nazionale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR49",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e idAvviso",
+		"en": "mancata coerenza tra idAppalto e idAvviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR50",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'avviso",
+		"en": "operazione non consentita per lo stato dell'avviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR51",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'avviso sul TED",
+		"en": "operazione non consentita per lo stato dell'avviso sul TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR52",
+    "descrizione": {
+		"it": "errore generico durante il controllo dello stato avviso sul TED",
+		"en": "errore generico durante il controllo dello stato avviso sul TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR53",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato dell'avviso sulla PVL",
+		"en": "operazione non consentita per lo stato dell'avviso sulla PVL"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR54",
+    "descrizione": {
+		"it": "errore generico durante il controllo dello stato sulla PVL",
+		"en": "errore generico durante il controllo dello stato sulla PVL"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR55",
+    "descrizione": {
+		"it": "cig duplicato nell'elenco dei lotti",
+		"en": "cig duplicato nell'elenco dei lotti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR56",
+    "descrizione": {
+		"it": "cig non coerenti nell'elenco dei lotti",
+		"en": "cig non coerenti nell'elenco dei lotti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR57",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e idScheda",
+		"en": "mancata coerenza tra idAppalto e idScheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR58",
+    "descrizione": {
+		"it": "operazione non consentita per lo stato della scheda",
+		"en": "operazione non consentita per lo stato della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR59",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di verifica scheda",
+		"en": "operazione non consentita: è in corso una richiesta di verifica scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR60",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di conferma scheda",
+		"en": "operazione non consentita: è in corso una richiesta di conferma scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR61",
+    "descrizione": {
+		"it": "cig duplicato nell'elenco",
+		"en": "cig duplicato nell'elenco"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR62",
+    "descrizione": {
+		"it": "cig non coerenti nell'elenco",
+		"en": "cig non coerenti nell'elenco"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR63",
+    "descrizione": {
+		"it": "tipologica non valida",
+		"en": "tipologica non valida"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR64",
+    "descrizione": {
+		"it": "errore TED",
+		"en": "errore TED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR65",
+    "descrizione": {
+		"it": "errore nell'estrazione dei lotti dall'eForm",
+		"en": "errore nell'estrazione dei lotti dall'eForm"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR66",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e cig",
+		"en": "mancata coerenza tra idAppalto e cig"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR67",
+    "descrizione": {
+		"it": "errore generico durante la comunicazione con l'anagrafe AUSA",
+		"en": "errore generico durante la comunicazione con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR68",
+    "descrizione": {
+		"it": "l'anagrafica SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA",
+		"en": "l'anagrafica SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR69",
+    "descrizione": {
+		"it": "il centro di costo SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA",
+		"en": "il centro di costo SA presente nella lista delle stazioni appaltanti non è coerente con l'anagrafe AUSA"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR70",
+    "descrizione": {
+		"it": "la lista delle stazioni appaltanti nella scheda è vuota",
+		"en": "la lista delle stazioni appaltanti nella scheda è vuota"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR71",
+    "descrizione": {
+		"it": "operazione non consentita: la notice-id dell'eForm non coincide con quella inviata in precedenza",
+		"en": "operazione non consentita: la notice-id dell'eForm non coincide con quella inviata in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR72",
+    "descrizione": {
+		"it": "operazione non consentita: la version-id dell'eForm coincide con quella inviata in precedenza",
+		"en": "operazione non consentita: la version-id dell'eForm coincide con quella inviata in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR73",
+    "descrizione": {
+		"it": "operazione non consentita: il codiceAppalto indicato nella scheda non coincide con quello inviato in precedenza",
+		"en": "operazione non consentita: il codiceAppalto indicato nella scheda non coincide con quello inviato in precedenza"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR74",
+    "descrizione": {
+		"it": "codice fiscale duplicato nell'elenco partecipanti",
+		"en": "codice fiscale duplicato nell'elenco partecipanti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR75",
+    "descrizione": {
+		"it": "il codice fiscale non è autorizzato come soggetto delegato per le stazioni appaltanti presenti nella scheda",
+		"en": "il codice fiscale non è autorizzato come soggetto delegato per le stazioni appaltanti presenti nella scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR76",
+    "descrizione": {
+		"it": "non è possibile associare un soggetto delegato in quanto non è presente la lista delle stazioni appaltanti nella scheda",
+		"en": "non è possibile associare un soggetto delegato in quanto non è presente la lista delle stazioni appaltanti nella scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR77",
+    "descrizione": {
+		"it": "il partecipante non è valido per il lotto",
+		"en": "il partecipante non è valido per il lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR78",
+    "descrizione": {
+		"it": "il partecipante non è un soggetto aggiudicatario per il lotto",
+		"en": "il partecipante non è un soggetto aggiudicatario per il lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR79",
+    "descrizione": {
+		"it": "contratto già presente per il partecipante e lotto",
+		"en": "contratto già presente per il partecipante e lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+   "codice":"ERR80",
+   "descrizione": {
+       "it": "esiste già un soggetto delegato in corso di validità per il ruolo indicato",
+       "en": "esiste già un soggetto delegato in corso di validità per il ruolo indicato"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},
+{
+    "codice":"ERR81",
+    "descrizione": {
+		"it": "la scheda indicata nel body non è stata trovata",
+		"en": "la scheda indicata nel body non è stata trovata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR82",
+    "descrizione": {
+		"it": "la scheda indicata nel body è una scheda iniziale",
+		"en": "la scheda indicata nel body è una scheda iniziale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR83",
+    "descrizione": {
+		"it": "mancata coerenza tra idAppalto e la scheda indicata nel body",
+		"en": "mancata coerenza tra idAppalto e la scheda indicata nel body"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR84",
+    "descrizione": {
+		"it": "la scheda indicata nel body non ha un contratto associato",
+		"en": "la scheda indicata nel body non ha un contratto associato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"ERR85",
+    "descrizione": {
+		"it": "il contratto associato alla scheda indicata nel body non è coerente con l'idAppalto",
+		"en": "il contratto associato alla scheda indicata nel body non è coerente con l'idAppalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR86",
+    "descrizione": {
+		"it": "codiceAusa non presente nella lista delle stazioni appaltanti della scheda di indizione",
+		"en": "codiceAusa non presente nella lista delle stazioni appaltanti della scheda di indizione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR87",
+    "descrizione": {
+		"it": "idPartecipante duplicato per lo stesso lotto",
+		"en": "idPartecipante duplicato per lo stesso lotto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR88",
+    "descrizione": {
+		"it": "il codice della scheda indicata nel body non è valida secondo le regole di correlazione definite dall'orchestratore",
+		"en": "il codice della scheda indicata nel body non è valida secondo le regole di correlazione definite dall'orchestratore"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR89",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di verifica piano",
+		"en": "operazione non consentita: è in corso una richiesta di verifica piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR90",
+    "descrizione": {
+		"it": "operazione non consentita: è in corso una richiesta di conferma piano",
+		"en": "operazione non consentita: è in corso una richiesta di conferma piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR91",
+    "descrizione": {
+		"it": "scheda non ammessa in questa fase del piano",
+		"en": "scheda non ammessa in questa fase del piano"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR92",
+    "descrizione": {
+		"it": "criteri di ricerca non ammessi: popolare in modo alternativo idAppalto e idPianificazione",
+		"en": "criteri di ricerca non ammessi: popolare in modo alternativo idAppalto e idPianificazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR93",
+    "descrizione": {
+		"it": "mancata coerenza tra idPianificazione e idAvviso",
+		"en": "mancata coerenza tra idPianificazione e idAvviso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR94",
+    "descrizione": {
+		"it": "errore generico durante la comunicazione con PVL",
+		"en": "errore generico durante la comunicazione con PVL"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR95",
+    "descrizione": {
+		"it": "la notice deve avere come lingua principale ITA (campo eForm: <cbc:NoticeLanguageCode>)",
+		"en": "la notice deve avere come lingua principale ITA (campo eForm: <cbc:NoticeLanguageCode>)"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"ERR96",
+    "descrizione": {
+		"it": "importo differente per lo stesso idPartecipante",
+		"en": "importo differente per lo stesso idPartecipante"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR97",
+    "descrizione": {
+		"it": "errore durante la validazione del CUP",
+		"en": "errore durante la validazione del CUP"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR98",
+    "descrizione": {
+		"it": "errore durante la validazione del CIG negli accordi quadro",
+		"en": "errore durante la validazione del CIG negli accordi quadro"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR99",
+    "descrizione": {
+		"it": "popolare in modo alternativo idContratto o cig nel body della scheda",
+		"en": "popolare in modo alternativo idContratto o cig nel body della scheda"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR100",
+    "descrizione": {
+		"it": "Importo totale non consentito per l'Affidamento diretto < 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.",
+		"en": "Importo totale non consentito per l'Affidamento diretto < 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR101",
+    "descrizione": {
+		"it": "Il codice scheda in ingresso non è coerente con la scheda che si desidera rettificare.",
+		"en": "Il codice scheda in ingresso non è coerente con la scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR102",
+    "descrizione": {
+		"it": "La scheda non è rettificabile secondo le regole definite dall'orchestratore.",
+		"en": "La scheda non è rettificabile secondo le regole definite dall'orchestratore."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR103",
+    "descrizione": {
+		"it": "Il numero delle stazioni appaltanti deve restare invariato rispetto alla scheda che si desidera rettificare.",
+		"en": "Il numero delle stazioni appaltanti deve restare invariato rispetto alla scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR104",
+    "descrizione": {
+		"it": "Le stazioni appaltanti devono restare invariate rispetto alla scheda che si desidera rettificare.",
+		"en": "Le stazioni appaltanti devono restare invariate rispetto alla scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR105",
+    "descrizione": {
+		"it": "Il numero dei lotti deve restare invariato rispetto alla scheda che si desidera rettificare.",
+		"en": "Il numero dei lotti deve restare invariato rispetto alla scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR106",
+    "descrizione": {
+		"it": "Tutti i lotIdentifier devono coincidere con quelli della scheda che si desidera rettificare.",
+		"en": "Tutti i lotIdentifier devono coincidere con quelli della scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR107",
+    "descrizione": {
+		"it": "Tutti i cig devono coincidere con quelli della scheda che si desidera rettificare.",
+		"en": "Tutti i cig devono coincidere con quelli della scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR108",
+    "descrizione": {
+		"it": "idContratto deve coincidere con quello della scheda che si desidera rettificare.",
+		"en": "idContratto deve coincidere con quello della scheda che si desidera rettificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR109",
+    "descrizione": {
+		"it": "operazione non consentita: per l'appalto è in corso una richiesta di rettifica.",
+		"en": "operazione non consentita: per l'appalto è in corso una richiesta di rettifica."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR110",
+    "descrizione": {
+		"it": "stazione appaltante non qualificata",
+		"en": "stazione appaltante non qualificata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR111",
+    "descrizione": {
+		"it": "errore durante la comunicazione con il servizio di qualificazione delle stazioni appaltanti.",
+		"en": "errore durante la comunicazione con il servizio di qualificazione delle stazioni appaltanti."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR112",
+    "descrizione": {
+		"it": "importo del lotto e/o oggetto principale del contratto non valorizzati.",
+		"en": "importo del lotto e/o oggetto principale del contratto non valorizzati."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"ERR9999",
+    "descrizione": {
+		"it": "errore generico",
+		"en": "errore generico"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_NOT_PUBLISHED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito NOT_PUBLISHED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito NOT_PUBLISHED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_VALIDATION_FAILED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito VALIDATION_FAILED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito VALIDATION_FAILED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_ARCHIVED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito ARCHIVED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito ARCHIVED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TED_DELETED",
+    "descrizione": {
+		"it": "errore durante la pubblicazione dell'avviso su TED: stato restituito DELETED",
+		"en": "errore durante la pubblicazione dell'avviso su TED: stato restituito DELETED"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"REG0",
+    "descrizione": {
+		"it": "Dati non presenti",
+		"en": "Dati non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
+    "codice":"REG1",
+    "descrizione": {
+		"it": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto",
+		"en": "La categoria merceologica indicata nei lotti non e' compresa tra quelle indicate nell'appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG2",
+    "descrizione": {
+		"it": "Attenzione, non è stato indicato il codice fiscale del soggetto",
+		"en": "Attenzione, non è stato indicato il codice fiscale del soggetto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG3",
+    "descrizione": {
+		"it": "I codici fiscali indicati nella lista delle stazioni appaltanti devono essere diversi",
+		"en": "I codici fiscali indicati nella lista delle stazioni appaltanti devono essere diversi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG4_1",
+    "descrizione": {
+		"it": "Non e' stato indicato il campo Motivazione richiesta CIG",
+		"en": "Non e' stato indicato il campo Motivazione richiesta CIG"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG4_2",
+    "descrizione": {
+		"it": "La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015",
+		"en": "La motivazione richiesta CIG non deve essere inserita per la categoria \"Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG5",
+    "descrizione": {
+		"it": "Il campo strumentiElettroniciSpecifici non può essere null",
+		"en": "Il campo strumentiElettroniciSpecifici non può essere null"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG6_1",
+    "descrizione": {
+		"it": "Il campo condizioniNegoziata non può essere null",
+		"en": "Il campo condizioniNegoziata non può essere null"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG6_2",
+    "descrizione": {
+		"it": "Campo condizioniNegoziata non previsto",
+		"en": "Campo condizioniNegoziata non previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG7",
+    "descrizione": {
+		"it": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC",
+		"en": "E’ stata selezionata la voce Somma urgenza e protezione civile di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il campo linkDocumenti con la URL della sezione Bandi e Contratti dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG8",
+    "descrizione": {
+		"it": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15).",
+		"en": "I campi contenente una url devono iniziare per http oppure per https. In presenza di eForm verificare anche la validità del link ai documenti di gara (BT-15)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG9",
+    "descrizione": {
+		"it": "Il campo ‘Esclusione o regime speciale’ non è richiesto",
+		"en": "Il campo ‘Esclusione o regime speciale’ non è richiesto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG10",
+    "descrizione": {
+		"it": "Il campo servizioPubblicoLocale è obbligatorio",
+		"en": "Il campo servizioPubblicoLocale è obbligatorio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG11",
+    "descrizione": {
+		"it": "Non è stato indicato il CUI",
+		"en": "Non è stato indicato il CUI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG13",
+    "descrizione": {
+		"it": "Non è stato valorizzato il campo opzioniRinnovi",
+		"en": "Non è stato valorizzato il campo opzioniRinnovi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG14",
+    "descrizione": {
+		"it": "Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento",
+		"en": "Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere :No, nessuna ipotesi di collegamento"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG15",
+    "descrizione": {
+		"it": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni",
+		"en": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG16",
+    "descrizione": {
+		"it": "il campo cigCollegato deve prevedere ripetizioni",
+		"en": "il campo cigCollegato deve prevedere ripetizioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG18",
+    "descrizione": {
+		"it": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG20",
+    "descrizione": {
+		"it": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria",
+		"en": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG21",
+    "descrizione": {
+		"it": "La sezione paritaDiGenereGenerazionale è obbligatoria se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "La sezione paritaDiGenereGenerazionale è obbligatoria se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG22",
+    "descrizione": {
+		"it": "il campo quota30PerCento della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "il campo quota30PerCento della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG23",
+    "descrizione": {
+		"it": "E' stato indicato il campo quota30PerCento della sezione paritaDiGenereGenerazionale ma non è stato indicato il valore della Previsione di una quota inferiore con riferimento all'occupazione femminile o giovanile",
+		"en": "E' stato indicato il campo quota30PerCento della sezione paritaDiGenereGenerazionale ma non è stato indicato il valore della Previsione di una quota inferiore con riferimento all'occupazione femminile o giovanile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG24",
+    "descrizione": {
+		"it": "Almeno una quota, tra occupazione femminile e occupazione giovanile, deve essere inferiore al 30%",
+		"en": "Almeno una quota, tra occupazione femminile e occupazione giovanile, deve essere inferiore al 30%"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG27",
+    "descrizione": {
+		"it": "Indicare il motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile",
+		"en": "Indicare il motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG28",
+    "descrizione": {
+		"it": "il campo misurePremiali della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI",
+		"en": "il campo misurePremiali della sezione paritaDiGenereGenerazionale è obbligatorio se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG29",
+    "descrizione": {
+		"it": "il campo modalitaAcquisizione è obbligatorio se l'oggetto del contratto è Servizi o Forniture",
+		"en": "il campo modalitaAcquisizione è obbligatorio se l'oggetto del contratto è Servizi o Forniture"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG30",
+    "descrizione": {
+		"it": "il campo prestazioniComprese è obbligatorio se l'oggetto del contratto è Lavori",
+		"en": "il campo prestazioniComprese è obbligatorio se l'oggetto del contratto è Lavori"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG32",
+    "descrizione": {
+		"it": "Il valore indicato nel campo accessibilita non è coerente con quanto indicato nel campo afferenteInvestimentiPNRR, valorizzato a SI",
+		"en": "Il valore indicato nel campo accessibilita non è coerente con quanto indicato nel campo afferenteInvestimentiPNRR, valorizzato a SI"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG33",
+    "descrizione": {
+		"it": "Il valore indicato nel campo accessibilita prevede che venga indicata la giustificazione",
+		"en": "Il valore indicato nel campo accessibilita prevede che venga indicata la giustificazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG34",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente lavori",
+		"en": "Non è stato indicato il valore dell’importo componente lavori"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG35",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente servizi",
+		"en": "Non è stato indicato il valore dell’importo componente servizi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG36",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente forniture",
+		"en": "Non è stato indicato il valore dell’importo componente forniture"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG37",
+    "descrizione": {
+		"it": "Non è stato indicato il valore relativo alle somme per opzioni e rinnovi",
+		"en": "Non è stato indicato il valore relativo alle somme per opzioni e rinnovi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG38",
+    "descrizione": {
+		"it": "Non è stato indicato il valore relativo alle somme per ripetizione servizi,forniture,lavori analoghi e consegne complementari",
+		"en": "Non è stato indicato il valore relativo alle somme per ripetizione servizi,forniture,lavori analoghi e consegne complementari"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG39",
+    "descrizione": {
+		"it": "Indicare l'importo stimato del servizio di progettazione successiva",
+		"en": "Indicare l'importo stimato del servizio di progettazione successiva"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG40",
+    "descrizione": {
+		"it": "Assenza CIG dell’affidamento di incarico esterno di progettazione",
+		"en": "Assenza CIG dell’affidamento di incarico esterno di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG41",
+    "descrizione": {
+		"it": "Indicare la data dell’affidamento di incarico esterno di progettazione",
+		"en": "Indicare la data dell’affidamento di incarico esterno di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG42",
+    "descrizione": {
+		"it": "Indicare la data di consegna del progetto",
+		"en": "Indicare la data di consegna del progetto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG43",
+    "descrizione": {
+		"it": "Indicare il tipo di progettazione",
+		"en": "Indicare il tipo di progettazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG47",
+    "descrizione": {
+		"it": "Il numero di offerte presentate non deve essere superiore al numero di offerte ammesse",
+		"en": "Il numero di offerte presentate non deve essere superiore al numero di offerte ammesse"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG50",
+    "descrizione": {
+		"it": "Il valore del campo offertaEconomica non è coerente",
+		"en": "Il valore del campo offertaEconomica non è coerente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG51",
+    "descrizione": {
+		"it": "Richiesto almeno un valore tra offertaEconomica e offertaInAumento",
+		"en": "Richiesto almeno un valore tra offertaEconomica e offertaInAumento"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG52",
+    "descrizione": {
+		"it": "Non è stato inserito l’importo dell’aggiudicatario",
+		"en": "Non è stato inserito l’importo dell’aggiudicatario"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG53",
+    "descrizione": {
+		"it": "In caso di ditta mandante l’importo non è previsto",
+		"en": "In caso di ditta mandante l’importo non è previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG54",
+    "descrizione": {
+		"it": "Selezionare un motivo di revisione prezzi",
+		"en": "Selezionare un motivo di revisione prezzi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG55",
+    "descrizione": {
+		"it": "In caso di proroga tecnica Indicare il CIG della nuova procedura avviata ovvero indicare le motivazioni della proroga nel campo Cause della modifica contrattuale",
+		"en": "In caso di proroga tecnica Indicare il CIG della nuova procedura avviata ovvero indicare le motivazioni della proroga nel campo Cause della modifica contrattuale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG56",
+    "descrizione": {
+		"it": "CIG della nuova procedura avviata: campo non previsto",
+		"en": "CIG della nuova procedura avviata: campo non previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG57",
+    "descrizione": {
+		"it": "Data approvazione antecedente la data di inizio progettazione esecutiva",
+		"en": "Data approvazione antecedente la data di inizio progettazione esecutiva"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG58",
+    "descrizione": {
+		"it": "Indicare la data del verbale di prima consegna lavori",
+		"en": "Indicare la data del verbale di prima consegna lavori"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG59",
+    "descrizione": {
+		"it": "Indicare la data di avvio della prima fase dell'esecuzione del contratto",
+		"en": "Indicare la data di avvio della prima fase dell'esecuzione del contratto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG60",
+    "descrizione": {
+		"it": "Indicare la data del verbale di consegna definitiva",
+		"en": "Indicare la data del verbale di consegna definitiva"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG61",
+    "descrizione": {
+		"it": "Per i contratti pubblici di importo superiore alla soglia comunitaria, se la variante in corso d'opera eccede il 10 per cento dell'importo originario del contratto, è necessario fornire il link URL documentazione varianti in corso d'opera",
+		"en": "Per i contratti pubblici di importo superiore alla soglia comunitaria, se la variante in corso d'opera eccede il 10 per cento dell'importo originario del contratto, è necessario fornire il link URL documentazione varianti in corso d'opera"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG62",
+    "descrizione": {
+		"it": "In caso di Altre cause impreviste ed imprevedibili indicare una motivazione nel campo Cause della modifica contrattuale",
+		"en": "In caso di Altre cause impreviste ed imprevedibili indicare una motivazione nel campo Cause della modifica contrattuale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG63",
+    "descrizione": {
+		"it": "Non è stato valorizzato il numero di giorni di proroga concessi,tempo aggiuntivo rispetto ai termini contrattuali",
+		"en": "Non è stato valorizzato il numero di giorni di proroga concessi,tempo aggiuntivo rispetto ai termini contrattuali"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG64",
+    "descrizione": {
+		"it": "Non è stata valorizzata la data del certificato di pagamento relativo all'anticipazione",
+		"en": "Non è stata valorizzata la data del certificato di pagamento relativo all'anticipazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG65",
+    "descrizione": {
+		"it": "Cpv già inserita come cpv prevalente",
+		"en": "Cpv già inserita come cpv prevalente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG66",
+    "descrizione": {
+		"it": "Cpv gia' inserita come cpv secondaria",
+		"en": "Cpv gia' inserita come cpv secondaria"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG67",
+    "descrizione": {
+		"it": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
+		"en": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG68",
+    "descrizione": {
+		"it": "il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara",
+		"en": "il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG69",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente lavori nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente lavori nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG70",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente servizi nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente servizi nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG71",
+    "descrizione": {
+		"it": "Non è stato indicato il valore dell’importo componente forniture nel quadro economico delle concessioni",
+		"en": "Non è stato indicato il valore dell’importo componente forniture nel quadro economico delle concessioni"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG72",
+    "descrizione": {
+		"it": "Campo data del certificato di pagamento relativo all'anticipazione non previsto",
+		"en": "Campo data del certificato di pagamento relativo all'anticipazione non previsto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG73",
+    "descrizione": {
+		"it": "Valorizzare almeno uno dei due campi: Data di autorizzazione del subappalto, Motivo del mancato subappalto",
+		"en": "Valorizzare almeno uno dei due campi: Data di autorizzazione del subappalto, Motivo del mancato subappalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG74",
+    "descrizione": {
+		"it": "Non è stato valorizzato il campo oneri derivanti",
+		"en": "Non è stato valorizzato il campo oneri derivanti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG75",
+    "descrizione": {
+		"it": "Il campo motivi di risoluzione è obbligatorio in caso di interruzione anticipata per risoluzione contrattuale",
+		"en": "Il campo motivi di risoluzione è obbligatorio in caso di interruzione anticipata per risoluzione contrattuale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG76",
+    "descrizione": {
+		"it": "Il campo oneri economici derivanti dalla risoluzione-recesso è obbligatorio in caso di: interruzione anticipata per risoluzione contrattuale, recesso della stazione appaltante, recesso dell'appaltatore",
+		"en": "Il campo oneri economici derivanti dalla risoluzione-recesso è obbligatorio in caso di: interruzione anticipata per risoluzione contrattuale, recesso della stazione appaltante, recesso dell'appaltatore"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG77",
+    "descrizione": {
+		"it": "La data di scadenza del contratto deve essere superiore alla data di stipula.",
+		"en": "La data di scadenza del contratto deve essere superiore alla data di stipula."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG78",
+    "descrizione": {
+		"it": "Indicare almeno un partecipante.",
+		"en": "Indicare almeno un partecipante."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG79",
+    "descrizione": {
+		"it": "L'importo è obbligatorio se è valorizzato il campo oneri economici derivanti dalla risoluzione-recesso",
+		"en": "L'importo è obbligatorio se è valorizzato il campo oneri economici derivanti dalla risoluzione-recesso"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG80",
+    "descrizione": {
+		"it": "Risoluzione/rescissione senza oneri, dunque non va indicato l'importo. Verificare.",
+		"en": "Risoluzione/rescissione senza oneri, dunque non va indicato l'importo. Verificare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG81",
+    "descrizione": {
+		"it": "Non è stata indicata la data di ultimazione",
+		"en": "Non è stata indicata la data di ultimazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG82",
+    "descrizione": {
+		"it": "Numero totale degli infortuni incoerente rispetto al numero degli infortuni mortali e con postumi permanenti",
+		"en": "Numero totale degli infortuni incoerente rispetto al numero degli infortuni mortali e con postumi permanenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG83",
+    "descrizione": {
+		"it": "Il campo incamerata polizza è obbligatorio in caso di interruzione anticipata",
+		"en": "Il campo incamerata polizza è obbligatorio in caso di interruzione anticipata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG84",
+    "descrizione": {
+		"it": "il campo di cui postumi permanenti deve essere maggiore o uguale a 0",
+		"en": "il campo di cui postumi permanenti deve essere maggiore o uguale a 0"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG85",
+    "descrizione": {
+		"it": "il campo di cui mortali deve essere maggiore o uguale a 0",
+		"en": "il campo di cui mortali deve essere maggiore o uguale a 0"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG86",
+    "descrizione": {
+		"it": "Certificato di regolare esecuzione non previsto in caso di collaudo tecnico/amministrativo",
+		"en": "Certificato di regolare esecuzione non previsto in caso di collaudo tecnico/amministrativo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG87",
+    "descrizione": {
+		"it": "Specificare data del certificato di regolare esecuzione o le modalità del collaudo tecnico amministrativo",
+		"en": "Specificare data del certificato di regolare esecuzione o le modalità del collaudo tecnico amministrativo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG88",
+    "descrizione": {
+		"it": "Non è stata indicata la data di nomina del collaudatore, Commissione",
+		"en": "Non è stata indicata la data di nomina del collaudatore, Commissione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG89",
+    "descrizione": {
+		"it": "Non è stata indicata la data di inizio delle operazioni di collaudo",
+		"en": "Non è stata indicata la data di inizio delle operazioni di collaudo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG90",
+    "descrizione": {
+		"it": "Data inizio operazioni di collaudo antecedente la data  di nomina della commissione di collaudo/collaudatore",
+		"en": "Data inizio operazioni di collaudo antecedente la data  di nomina della commissione di collaudo/collaudatore"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG91",
+    "descrizione": {
+		"it": "Non è stata indicata la data di redazione del certificato di collaudo",
+		"en": "Non è stata indicata la data di redazione del certificato di collaudo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG92",
+    "descrizione": {
+		"it": "Data redazione certificato antecedente la data di inizio operazioni di collaudo",
+		"en": "Data redazione certificato antecedente la data di inizio operazioni di collaudo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG93",
+    "descrizione": {
+		"it": "Data delibera di ammissibilità antecedente la data di redazione del certificato di collaudo",
+		"en": "Data delibera di ammissibilità antecedente la data di redazione del certificato di collaudo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG94",
+    "descrizione": {
+		"it": "Oneri complessivi derivanti è obbligatorio se il numero totale riserve è maggiore di zero.",
+		"en": "Oneri complessivi derivanti è obbligatorio se il numero totale riserve è maggiore di zero."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG95",
+    "descrizione": {
+		"it": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131).",
+		"en": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG96",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
+		"en": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG97",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
+		"en": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG98",
+    "descrizione": {
+		"it": "L'importo indicato nell'oggetto appalto.datiBase.importo deve essere > 0. In presenza di eForm verificare l'importo inserito nel campo EstimatedOverallContractAmount (BT-27).",
+		"en": "L'importo indicato nell'oggetto appalto.datiBase.importo deve essere > 0. In presenza di eForm verificare l'importo inserito nel campo EstimatedOverallContractAmount (BT-27)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG99",
+    "descrizione": {
+		"it": "L'importo indicato nell'oggetto lotti.datiBase.importo deve essere > 0. In presenza di eForm verificare l'importo inserito nel campo EstimatedOverallContractAmount (BT-27).",
+		"en": "L'importo indicato nell'oggetto lotti.datiBase.importo deve essere > 0. In presenza di eForm verificare l'importo inserito nel campo EstimatedOverallContractAmount (BT-27)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG100",
+    "descrizione": {
+		"it": "Negli affidamenti diretti è consentito inserire un solo idPartecipante",
+		"en": "Negli affidamenti diretti è consentito inserire un solo idPartecipante"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG101",
+    "descrizione": {
+		"it": "Indicare almeno uno dei campi di cui si richiede la modifica.",
+		"en": "Indicare almeno uno dei campi di cui si richiede la modifica."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG102",
+    "descrizione": {
+		"it": "Indicare il nuovo importo",
+		"en": "Indicare il nuovo importo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG103",
+    "descrizione": {
+		"it": "L'importo totale dei lotti non può superare i 5K",
+		"en": "L'importo totale dei lotti non può superare i 5K"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG104",
+    "descrizione": {
+		"it": "L'importo totale dei lotti non può essere inferiore ai 5K",
+		"en": "L'importo totale dei lotti non può essere inferiore ai 5K"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG105",
+    "descrizione": {
+		"it": "La data inserita nel campo datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131).",
+		"en": "La data inserita nel campo datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG106",
+    "descrizione": {
+		"it": "La data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneInvito non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-1311, BT-630).",
+		"en": "La data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneInvito non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-1311, BT-630)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG107",
+    "descrizione": {
+		"it": "Indicare la data alla quale ha inizio il sistema dinamico di acquisizione. In presenza di eForm verificare il campo Duration Start Date (BT-536).",
+		"en": "Indicare la data alla quale ha inizio il sistema dinamico di acquisizione. In presenza di eForm verificare il campo Duration Start Date (BT-536)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG108",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei tre campi tra dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538).",
+		"en": "E' obbligatorio inserire almeno uno dei tre campi tra dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG109",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538).",
+		"en": "Inserire solo uno tra i campi dataFine, durata e altraDurata. In presenza di eForm verificare i campi Duration End Date (BT-537), Duration Period (BT-36) e Duration Other (BT-538)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG110",
+    "descrizione": {
+		"it": "La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27).",
+		"en": "La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27)."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AUT01",
+    "descrizione": {
+        "it": "l'utente non è presente tra le stazioni appaltanti",
+        "en": "l'utente non è presente tra le stazioni appaltanti"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT02",
+    "descrizione": {
+        "it": "appalto non trovato per l'id passato in input",
+        "en": "appalto non trovato per l'id passato in input"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT03",
+    "descrizione": {
+        "it": "lotto non trovato per il cig passato in input",
+        "en": "lotto non trovato per il cig passato in input"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT04",
+    "descrizione": {
+        "it": "popolare alternativamente un parametro tra idAppalto e CIG",
+        "en": "popolare alternativamente un parametro tra idAppalto e CIG"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT05",
+    "descrizione": {
+        "it": "uuid in input non formattato correttamente",
+        "en": "uuid in input non formattato correttamente"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT06",  
+    "descrizione": {
+        "it": "CIG non presente nell'Appalto",
+        "en": "CIG non presente nell'Appalto"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT07",  
+    "descrizione": {
+        "it": "tipo ruolo indicato non valido",
+        "en": "tipo ruolo indicato non valido"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT08",  
+    "descrizione": {
+        "it": "date in input non coerenti",
+        "en": "date in input non coerenti"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+    "codice":"AUT09",  
+    "descrizione": {
+        "it": "data in input non formattata correttamente",
+        "en": "data in input non formattata correttamente"
+    },
+    "dataInizio":null,
+    "dataFine":null    
+},
+{
+   "codice":"AUT10",
+   "descrizione": {
+       "it": "nessun soggetto attivo presente",
+       "en": "nessun soggetto attivo presente"
+   },
+   "dataInizio":null,
+   "dataFine":null    
+},
+{
+    "codice":"FVX01",
+    "descrizione": {
+		"it": "Documento non presente",
+		"en": "Documento non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX02",
+    "descrizione": {
+		"it": "Fascicolo non presente",
+		"en": "Fascicolo non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX03",
+    "descrizione": {
+		"it": "Documenti non presenti",
+		"en": "Documenti non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX04",
+    "descrizione": {
+		"it": "Fascicoli non presenti",
+		"en": "Fascicoli non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX05",
+    "descrizione": {
+		"it": "Filtro non formattato correttamente",
+		"en": "Filtro non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX06",
+    "descrizione": {
+		"it": "Filtro non valido",
+		"en": "Filtro non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX07",
+    "descrizione": {
+		"it": "Filtro Stato non formattato correttamente",
+		"en": "Filtro Stato non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX08",
+    "descrizione": {
+		"it": "Filtro Stato non valido",
+		"en": "Filtro Stato non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX09",
+    "descrizione": {
+		"it": "Filtro Tipo non formattato correttamente",
+		"en": "Filtro Tipo non formattato correttamente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX10",
+    "descrizione": {
+		"it": "Filtro Tipo non valido",
+		"en": "Filtro Tipo non valido"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA01",
+    "descrizione": {
+		"it": "Criteri di ricerca non ammessi, popolare in modo alternativo codiceAppalto, idAppalto, CIG",
+		"en": "Criteri di ricerca non ammessi, popolare in modo alternativo codiceAppalto, idAppalto, CIG"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA02",
+    "descrizione": {
+		"it": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi",
+		"en": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX11",
+    "descrizione": {
+		"it": "Le date inserite non sono coerenti",
+		"en": "Le date inserite non sono coerenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA03",
+    "descrizione": {
+		"it": "L'utente non è autorizzato ad accedere al FVA richiesto",
+		"en": "L'utente non è autorizzato ad accedere al FVA richiesto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}, 
+{
+    "codice":"FVA04",
+    "descrizione": {
+		"it": "Operazione non permessa. FVA non attivo",
+		"en": "Operazione non permessa. FVA non attivo"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA05",
+    "descrizione": {
+		"it": "Operazione non permessa. Fascicolo trovato non é di Appalto",
+		"en": "Operazione non permessa. Fascicolo trovato non é di Appalto"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX12",
+    "descrizione": {
+		"it": "Trascodifica Fallita. Tipologica non presente",
+		"en": "Trascodifica Fallita. Tipologica non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX13",
+    "descrizione": {
+		"it": "Trascodifica Fallita. Codice non presente",
+		"en": "Trascodifica Fallita. Codice non presente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX14",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Estensioni Documenti - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Estensioni Documenti - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX15",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Documenti - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Documenti - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX16",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Estensioni Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Estensioni Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX17",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Ricerca Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Ricerca Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX18",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Inizializza Fascicoli - Non Disponibile",
+		"en": "Errore Servizio esterno. Inizializza Fascicoli - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX19",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Inserisci Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Inserisci Documento- Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX20",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Recupera Fascicolo - Non Disponibile",
+		"en": "Errore Servizio esterno. Recupera Fascicolo - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX21",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Recupera Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Recupera Documento - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX22",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Crea Documento - Non Disponibile",
+		"en": "Errore Servizio esterno. Crea Documento - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX23",
+    "descrizione": {
+		"it": "Errore Servizio esterno. Chiudi Fascicolo - Non Disponibile",
+		"en": "Errore Servizio esterno. Chiudi Fascicolo - Non Disponibile"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX24",
+    "descrizione": {
+		"it": "Errore Conversione Json",
+		"en": "Errore Conversione Json"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX25",
+    "descrizione": {
+		"it": "Fascicolo mal formattato",
+		"en": "Fascicolo mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX26",
+    "descrizione": {
+		"it": "Estensione Dati mal formattato",
+		"en": "Estensione Dati mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX27",
+    "descrizione": {
+		"it": "Stazioni Appaltanti mal formattato",
+		"en": "Stazioni Appaltanti mal formattato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX28",
+    "descrizione": {
+		"it": "Stazioni Appaltanti non presenti",
+		"en": "Stazioni Appaltanti non presenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVA06",
+    "descrizione": {
+		"it": "Dati trovati incongruenti. Fascicoli trovati >1",
+		"en": "Dati trovati incongruenti. Fascicoli trovati >1"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVX29",
+    "descrizione": {
+        "it": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi",
+        "en": "Criteri di ricerca non ammessi, popolare in modo alternativo datiAggiuntivi con gli altri campi"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVC04",
+    "descrizione": {
+        "it": "Richiesta accesso non trovata",
+        "en": "Richiesta accesso non trovata"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVC05",
+    "descrizione": {
+        "it": "Richiesta Respinta. Una richiesta per lo stesso CF e tipo documento già presente",
+        "en": "Richiesta Respinta. Una richiesta per lo stesso CF e tipo documento già presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+   "codice":"AUT11",
+   "descrizione": {
+       "it": "Filtro non formattato correttamente",
+       "en": "Filtro non formattato correttamente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"AUT12",
+   "descrizione": {
+       "it": "Filtro non valido",
+       "en": "Filtro non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+    "codice":"AUT13",
+    "descrizione": {
+        "it": "Trascodifica Fallita. Tipologica non presente",
+        "en": "Trascodifica Fallita. Tipologica non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AUT14",
+    "descrizione": {
+        "it": "Trascodifica Fallita. Codice non presente",
+        "en": "Trascodifica Fallita. Codice non presente"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"FVC03",
+    "descrizione": {
+		"it": "L'utente non è autorizzato ad accedere al FVA richiesto",
+		"en": "L'utente non è autorizzato ad accedere al FVA richiesto"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+   "codice":"SEC01",
+   "descrizione": {
+       "it": "Utente non presente nel sistema",
+       "en": "Utente non presente nel sistema"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC02",
+   "descrizione": {
+       "it": "Ruolo indicato non presente nel sistema",
+       "en": "Ruolo indicato non presente nel sistema"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC03",
+   "descrizione": {
+       "it": "Errore conversione Json",
+       "en": "Errore conversione Json"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC04",
+   "descrizione": {
+       "it": "Livello autorizzativo insufficiente",
+       "en": "Livello autorizzativo insufficiente"
+   },
+   "dataInizio":null,
+   "dataFine":null    
+},
+{
+   "codice":"SEC05",
+   "descrizione": {
+       "it": "Utente non autorizzato",
+       "en": "Utente non autorizzato"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC06",
+   "descrizione": {
+       "it": "Codice profilo utente non univoco",
+       "en": "Codice profilo utente non univoco"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC07",
+   "descrizione": {
+       "it": "Errore configurazione utente",
+       "en": "Errore configurazione utente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC08",
+   "descrizione": {
+       "it": "Configurazione non presente nel sistema",
+       "en": "Configurazione non presente nel sistema"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC09",
+   "descrizione": {
+       "it": "Ruolo insufficiente per l'operazione",
+       "en": "Ruolo insufficiente per l'operazione"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC10",
+   "descrizione": {
+       "it": "Appalto non presente nel sistema",
+       "en": "Appalto non presente nel sistema"
+   },
+   "dataInizio":null,
+   "dataFine":null 
+},
+{
+   "codice":"SEC11",
+   "descrizione": {
+       "it": "LOA non formattato correttamente",
+       "en": "LOA non formattato correttamente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC12",
+   "descrizione": {
+       "it": "Profili non censiti",
+       "en": "Profili non censiti"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"SEC13",
+   "descrizione": {
+       "it": "Dettagli profilo non corretti",
+       "en": "Dettagli profilo non corretti"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},
+{
+   "codice":"SEC14",
+   "descrizione": {
+       "it": "Token non valido",
+       "en": "Token non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},
+{
+   "codice":"SEC15",
+   "descrizione": {
+       "it": "Soggetto Rappresentato non presente",
+       "en": "Soggetto Rappresentato non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},	
+{
+   "codice":"FVX30",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Rimuovi Documento - Non Disponibile",
+       "en": "Errore Servizio esterno. Rimuovi Documento - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX31",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Configurazione Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Configurazione Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX32",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Controllo Autorizzazione Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Controllo Autorizzazione Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX33",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Persona Giuridica Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Persona Giuridica Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX34",
+   "descrizione": {
+       "it": "Anagrafica non presente",
+       "en": "Anagrafica non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX36",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Servizio User Detail- Non Disponibile",
+       "en": "Errore Servizio esterno. Servizio User Detail- Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX37",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Servizio Anagrafica SA - Non Disponibile",
+       "en": "Errore Servizio esterno. Servizio Anagrafica SA - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},	
+{
+   "codice":"FVX38",
+   "descrizione": {
+       "it": "Anagrafica Stazione Appaltante mal formattato",
+       "en": "Anagrafica Stazione Appaltante mal formattato"
+   },
+   "dataInizio":null,
+   "dataFine":null
+   },
+{
+   "codice":"FVX39",
+   "descrizione": {
+       "it": "Anagrafica Stazione Appaltante non presente",
+       "en": "Anagrafica Stazione Appaltante non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX40",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Inserisci Documento FVC - Non Disponibile",
+       "en": "Errore Servizio esterno. Inserisci Documento FVC - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX41",
+   "descrizione": {
+       "it": "Id documento non in formato UUID",
+       "en": "Id documento non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX42",
+   "descrizione": {
+       "it": "Id fascicolo non in formato UUID",
+       "en": "Id fascicolo non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX43",
+   "descrizione": {
+       "it": "Chiave Accesso non in formato UUID",
+       "en": "Chiave Accesso non in formato UUID"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX44",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Persona Fisica Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Persona Fisica Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX45",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Richiedi Documento Servizio - Non Disponibile",
+       "en": "Errore Servizio esterno. Richiedi Documento Servizio - Non Disponibile"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX51",
+   "descrizione": {
+       "it": "Configurazione tipo documento non presente",
+       "en": "Configurazione tipo documento non presente"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX46",
+   "descrizione": {
+       "it": "Dati non validi",
+       "en": "Dati non validi"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX47",
+   "descrizione": {
+       "it": "Codice Fiscale Impresa non valido",
+       "en": "Codice Fiscale Impresa non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX48",
+   "descrizione": {
+       "it": "Codice Fiscale Professionistra non valido",
+       "en": "Codice Fiscale Professionistra non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX49",
+   "descrizione": {
+       "it": "Codice Fiscale Persona Fisica non valido",
+       "en": "Codice Fiscale Persona Fisica non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX50",
+   "descrizione": {
+       "it": "Codice Fiscale Persona Non Fisica non valido",
+       "en": "Codice Fiscale Persona Non Fisica non valido"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX52",
+   "descrizione": {
+       "it": "Servizio esterno ricerca soggetti non disponibile",
+       "en": "External service searches for unavailable subjects",
+       "de": "Externer Dienst sucht nach nicht verfügbaren Themen"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+    "codice": "SCH01",
+    "descrizione": {
+     	"it": "Soggetto Non Presente Nelle Schede Inviate",
+        "en": "Subject not present in the cards sent",
+        "de": "Der Betreff ist in den versendeten Karten nicht enthalten"
+     },
+     "dataInizio": null,
+     "dataFine": null
+},
+{
+   "codice":"FVX58",
+   "descrizione": {
+       "it": "File Caricato Risulta Vuoto",
+       "en": "Uploaded File Appears Empty",
+       "de": "Die hochgeladene Datei erscheint leer"
+   },
+   "dataInizio":null,
+   "dataFine":null
+}]

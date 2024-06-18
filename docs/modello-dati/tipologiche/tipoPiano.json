@@ -1,0 +1,18 @@
+[{
+    "codice":"PREINFORMAZIONE",
+    "descrizione": {
+		"it": "Preinformazione",
+		"en": "Preinformazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"TRIENNALE",
+    "descrizione": {
+		"it": "Programma triennale",
+		"en": "Programma triennale"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}]

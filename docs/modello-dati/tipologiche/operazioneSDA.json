@@ -1,0 +1,27 @@
+[{
+    "codice":"1",
+    "descrizione": {
+		"it": "Inserimento",
+		"en": "Inserimento"
+		},
+    "dataInizio":"2024-04-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"2",
+    "descrizione": {
+		"it": "Rimozione",
+		"en": "Rimozione"
+		},
+    "dataInizio":"2024-04-20T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"3",
+    "descrizione": {
+		"it": "Variazione",
+		"en": "Variazione"
+		},
+    "dataInizio":"2024-04-20T00:00:00Z",
+    "dataFine":null
+}]

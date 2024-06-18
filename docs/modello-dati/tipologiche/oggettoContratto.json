@@ -1,0 +1,30 @@
+[{
+    "codice":"works",
+    "descrizione": {
+		"it": "Lavori",
+		"en": "Works",
+		"de": "Bauleistung"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"supplies",
+    "descrizione": {
+		"it": "Forniture",
+		"en": "Supplies",
+		"de": "Lieferungen"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"services",
+    "descrizione": {
+		"it": "Servizi",
+		"en": "Services",
+		"de": "Dienstleistungen"
+		},	
+    "dataInizio":null,
+    "dataFine":null
+}]
