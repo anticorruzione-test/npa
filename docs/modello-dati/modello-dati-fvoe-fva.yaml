@@ -1,0 +1,696 @@
+openapi: 3.0.3
+info:
+  title: Modello Dati FVOE e FVA - OpenAPI 3.0
+  version: 1.0.0
+  description: |-
+   Vengono riportati gli oggetti usati dalle operazioni FVOE e FVA
+components:
+  schemas:
+    StatoAutorizzazioneEnum:  
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoAutorizzazioneEnum'
+    StatoFascicoloEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
+    StatoDocumentoEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
+    TipoDocumentoEnum: 
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
+    TipoFascicoloEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoFascicoloEnum'
+    TipoOggettoFascicoloEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOggettoFascicoloEnum'
+    TipoAzioneFascicoloEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneFascicoloEnum'
+    TipoAzioneDocumentoEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneDocumentoEnum'
+    AppaltoType : 
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+    StatoRichiestaDocumentoEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
+    FascicoloType: 
+      description: Oggetto che riporta i dati del Fascicolo generico
+      type: object
+      additionalProperties: false
+      properties:
+        idFascicolo:
+          description: identificativo univoco del Fascicolo
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        codiceFascicolo:
+          description: codice univoco esterno del Fascicolo . Se tipoFascicolo='FVA' é valorizzato con il codiceAppalto
+          type: string
+          example: "FAS_202301_45632342"  
+        tipoOggetto:
+          $ref: '#/components/schemas/TipoOggettoFascicoloEnum' 
+        tipoFascicolo:
+          $ref: '#/components/schemas/TipoFascicoloEnum'
+        stato:
+          $ref: '#/components/schemas/StatoFascicoloEnum' 
+        azione:
+          $ref: '#/components/schemas/TipoAzioneFascicoloEnum'  
+        utenteCreazione:
+          description: utente di registrazione del fascicolo 
+          type: string
+          example: "UDI.8909"
+        dataCreazione:
+          description: data di registrazione del fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: "2022-01-23T12:02:05Z"
+        oggetto:
+          description: oggetto del Fascicolo
+          type: string 
+          maxLength: 4096
+        numDocumenti:
+            description: numero della pagina da visualizzare.
+            type: integer
+            format: int32
+            minimum: 10
+            default: 0
+        documenti:
+          description: Lista documenti
+          type: array
+          items:
+            $ref: '#/components/schemas/DocumentoType'    
+        numSottoFascicoli:
+            description: numero della pagina da visualizzare.
+            type: integer
+            format: int32
+            minimum: 10
+            default: 0
+        sottoFascicoli:
+          description: Lista Sotto Fascicoli
+          type: array
+          items:
+            $ref: '#/components/schemas/FascicoloType' 
+        datiAggiuntivi:
+          description: dati aggiuntivi del Fascicolo. Definiti in JSON
+          type: string
+          example: "{appalto : {idAppalto: 35553535K},
+                      schede:[{
+                        id:566eb3c704c7b31facbb0007,
+                        nome:P1.10,
+                        dataInserimento:2015-05-28T14:07:17Z,
+                        idAppalto:35553535K,
+                        espd:54495ad94c934721ede76d90,
+                        eform:566eb3c704c7b31facbb0007}]}"    
+    FVOEType:
+      allOf: # estende lo schema dati di FascicoloType
+        - $ref: '#/components/schemas/FascicoloType'
+      description: Oggetto che riporta i dati del FVOE
+      type: object
+      additionalProperties: false
+      properties:
+        operatoreEconomico: 
+          $ref: '#/components/schemas/AnagraficaOEType'
+    FVAType:
+      allOf: # estende lo schema dati di FascicoloType
+        - $ref: '#/components/schemas/FascicoloType'
+      description: Oggetto che riporta i dati del FVA
+      type: object
+      additionalProperties: false
+      properties:
+        appalto:
+          $ref: '#/components/schemas/AppaltoType'
+    DocumentoType:
+      description: Oggetto che riporta i dati del Documento
+      type: object
+      additionalProperties: false
+      properties:
+        idDocumento:
+          description: identificativo univoco del documento
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        tipo:
+          $ref: '#/components/schemas/TipoDocumentoEnum'
+        stato:
+          $ref: '#/components/schemas/StatoDocumentoEnum'
+        dataInserimento:
+          description: data di inserimento del documento (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        dataEmissione:
+          description: data di emissione del documento (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        dataFineValidita:
+          description: data fine validità del documento(A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        numeroProtocollo:
+          description: numero di registrazione del documento
+          type: string
+          example: '2342344342'
+        dataProtocollo:
+          description: data di registrazione del documento  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        azione:
+          $ref: '#/components/schemas/TipoAzioneDocumentoEnum'   
+        oggetto:
+          description: oggetto del documento
+          type: string
+          maxLength: 4096
+        utenteCreazione:
+          description: utente di registrazione del documento
+          type: string
+          example: "UDI.8909"  
+        dataCreazione:
+          description: data di registrazione del documento  (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        datiAggiuntivi:
+          description: dati aggiuntivi definiti dal Sistema proprietario del documento. Definiti in JSON
+          type: string
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        fascicoli: 
+          type: array
+          minItems: 0
+          items:
+            $ref: '#/components/schemas/FascicoloType'
+    ContentDocumentType:
+      description: Oggetto che riporta il contenuto del
+      type: object
+      additionalProperties: false
+      properties:
+        nomefile:
+          description: nomeFile originale
+          type: string
+          example: "Allegato5674.pdf"
+        estensione:
+          description: estensione file
+          type: string
+          example: "PDF"
+        dimensione:
+          description: grandezza del documento
+          type: integer
+          format: int32
+          example: 5565
+        contenuto:
+          description: Contenuto in formato Binario del documento
+          type: string
+          format: binary    
+    AutorizzazioneAccessoType:
+      description: Oggetto che descrive l'autorizzazione concessa dall' OE verso il SA per poter accedere al proprio FVOE
+      type: object
+      additionalProperties: false
+      required:
+        - dataInizio
+        - stato
+      properties:
+        idAutorizzazione:
+            description: identificativo univoco dell'Autorizzazione restituito da ANAC.
+            type: string
+            format: uui
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        operatoreEconomico:
+          $ref: '#/components/schemas/AnagraficaOEType'
+        appalto:
+          $ref: '#/components/schemas/AppaltoType'  
+        dataInizio:
+          description: data inizio autorizzazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+        dataFine:
+          description: data fine autorizzazione (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'  
+        stato:
+          $ref: '#/components/schemas/StatoAutorizzazioneEnum'
+        motivo:
+          description: motivo dell''autorizzazione o del rifiuto
+          type: string
+          maxLength: 255
+        autorizzante: 
+          $ref: '#/components/schemas/AnagraficaOEType'
+        richiestaAccesso:
+          $ref: '#/components/schemas/RichiestaAccessoType' 
+        chiaveAccesso:
+          description: chiave per accedere al Fascicolo Virtuale dell'OE
+          type: string
+          example: "507f1f77bcf86cd799439011"
+    RichiestaAccessoType:
+      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo Virtuale dell'OE
+      type: object
+      additionalProperties: false
+      required:
+        - operatoriEconomici
+        - appalto
+        - dataInizioAutorizzazione
+      properties:
+        idRichiesta:
+            description: identificativo univoco della richiesta restituito da ANAC.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        dataInizioAutorizzazione:
+          description: data richiesta dal SA per accedere al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z' 
+        dataFineAutorizzazione:
+          description: data richiesta dal SA come termine all' autorizzazione al Fascicolo (A datetime specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: datetime
+          example: '2022-01-23T12:02:05Z'
+        operatoriEconomici: 
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/AnagraficaOEType' 
+        appalto:
+          $ref: '#/components/schemas/AppaltoType' 
+        richiedente: 
+          $ref: '#/components/schemas/AnagraficaSAType'   
+    AnagraficaType:
+      description: Oggetto generico dell'anagrafica
+      type: object
+      additionalProperties: false
+      properties:
+        codiceFiscale:
+          description: Codice fiscale dell'anagrafica 
+          type: string
+          example: 'MRORSS77T05E472I'
+    AnagraficaOEType:
+      allOf: # estende la classe AnagraficaType
+        - $ref: '#/components/schemas/AnagraficaType'
+      description: Oggetto specifico dell'anagrafica dell'OE
+      type: object
+      additionalProperties: false
+      properties:
+        personaGiuridica:
+          description: Anagrafica della persona giuridica in formato json. Per la struttura fare riferimento ai valori contenuti nel file [modello-dati-persona-giuridica.yaml](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-persona-giuridica.yaml) 
+          type: string
+          example: '{\"stato\":{\"stato\":\"ATTIVA\",\"data_inizio\":\"1968-10-26.....'
+    AnagraficaSAType:
+      allOf: # estende la classe AnagraficaType
+        - $ref: '#/components/schemas/AnagraficaType'
+      description: Oggetto specifico dell'anagrafica dell'SA
+      type: object
+      additionalProperties: false
+      properties:
+        codiceAusa:
+          description: Codice univoco specifico dell'anagrafica dell'SA
+          type: string
+          pattern: '[0-9]{10}'
+          example: '0000247847'
+    StatoRichiestaDocumentoType: 
+      description: Oggetto che riporta i dati dello stato del documento di cui si é richiesta la produzione
+      type: object
+      additionalProperties: false
+      required:
+        - chiaveAccesso
+        - operatoreEconomico
+        - tipoDocumento
+        - idRichiesta
+        - stato
+      properties:
+        chiaveAccesso:
+          description: chiave di accesso del SA per accedere al FVOE
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        operatoreEconomico:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        soggetto:
+          $ref: '#/components/schemas/AnagraficaOEType' 
+        tipoDocumento:
+          $ref: '#/components/schemas/TipoDocumentoEnum'
+        idRichiesta:
+          description: identificativo univoco della richiesta di recupero del documento 
+          type: string
+          example: "1789c793-bdbe-4e8c-aa7e-4117145c739b" 
+        stato:
+          $ref: '#/components/schemas/StatoRichiestaDocumentoEnum'  
+        idDocumento:
+          description: identificativo univoco del documento 
+          type: string
+          example: "507f1f77bcf86cd799439011"
+    Soggetto_00050:
+      description: Oggetto che riporta i dati del soggetto
+      type: object
+      additionalProperties: false
+      required:
+        - CF_Soggetto
+        - Nome_Soggetto
+        - Cognome_Soggetto
+        - Sesso_Soggetto
+        - DataNascita_Soggetto
+        - LuogoNascita_Soggetto
+        - Soggetto_daVerificare
+      properties:
+        CF_Soggetto:
+          description: codice fiscale soggetto
+          type: string
+          pattern: '^(?:[A-Z][AEIOU][AEIOUX]|[AEIOU]X{2}|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}(?:[\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[15MR][\dLMNP-V]|[26NS][0-8LMNP-U])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM]|[AC-EHLMPR-T][26NS][9V])|(?:[02468LNQSU][048LQU]|[13579MPRTV][26NS])B[26NS][9V])(?:[A-MZ][1-9MNP-V][\dLMNP-V]{2}|[A-M][0L](?:[1-9MNP-V][\dLMNP-V]|[0L][1-9MNP-V]))[A-Z]$'
+          example: RSSMRA80B01H501T
+        Nome_Soggetto:
+          description: nome soggetto
+          type: string
+          maxLength: 250
+          example: MARIO
+        Cognome_Soggetto:
+          description: cognome soggetto
+          type: string
+          maxLength: 250
+          example: ROSSI
+        Sesso_Soggetto:
+          description: sesso del soggetto
+          type: string
+          enum:
+            - M
+            - F
+          example: M
+        DataNascita_Soggetto:
+          description: >-
+            data di nascita del soggetto. Formato definito da RFC 3339, sezione
+            5.6
+          type: string
+          format: date-time
+          example: '1980-02-01T00:00:00+01:00'
+        LuogoNascita_Soggetto:
+          description: codice catastale del comune di nascita/stato di nascita estero
+          type: string
+          pattern: '^(([A-M]\d{3}$)|Z\d{2}[1-9])'
+          example: H501
+        Soggetto_daVerificare:
+          description: >-
+            indica se il soggetto é da verificare. In questa release DEVE essere
+            impostato a true.
+          type: boolean
+          example: true
+    DatiNominativo_00004:
+      description: Oggetto che riporta i dati del soggetto
+      type: object
+      additionalProperties: false
+      required:
+        - Nome
+        - Cognome
+        - Sesso
+        - CF
+        - DatiNascita
+      properties:
+        Nome:
+          description: nome soggetto
+          type: string
+          maxLength: 250
+          example: MARIO
+        Cognome:
+          description: cognome soggetto
+          type: string
+          maxLength: 250
+          example: ROSSI
+        Sesso:
+          description: sesso soggetto
+          type: string
+          enum:
+            - 'M'
+            - 'F'
+          example: 'M'
+        CF:
+          description: codice fiscale soggetto
+          type: string
+          pattern: '^(?:[A-Z][AEIOU][AEIOUX]|[AEIOU]X{2}|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}(?:[\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[15MR][\dLMNP-V]|[26NS][0-8LMNP-U])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM]|[AC-EHLMPR-T][26NS][9V])|(?:[02468LNQSU][048LQU]|[13579MPRTV][26NS])B[26NS][9V])(?:[A-MZ][1-9MNP-V][\dLMNP-V]{2}|[A-M][0L](?:[1-9MNP-V][\dLMNP-V]|[0L][1-9MNP-V]))[A-Z]$'
+          example: 'RSSMRA80B01H501T'
+        DatiNascita:
+          type: object
+          additionalProperties: false
+          required:
+            - Giorno
+            - Mese
+            - Anno
+            - CodiceCatastoStato
+          properties:
+            Giorno:
+              description: giorno di nascita
+              type: string
+              pattern: '^(0[1-9]|[1-2][0-9]|3[0-1])$'
+              maxLength: 2
+              example: '01'
+            Mese:
+              description: mese di nascita
+              type: string
+              pattern: '^(0[1-9]|1[0-2])$'
+              maxLength: 2
+              example: '02'
+            Anno:
+              description: anno di nascita
+              type: string
+              pattern: '^(19\d\d|20[0-9][0-9])$'
+              maxLength: 4
+              example: '1980'
+            CodiceCatastoStato:
+              description: codice catastale stato di nascita.  Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoCatastoStato.json)
+              type: string
+              maxLength: 4
+              example: Z000
+            CodiceCatastoComuneItaliano:
+              description: codice catastale comune di nascita. Obbligatorio se CodiceCatastoStato:Z000
+              type: string
+              pattern: '^[A-Z]\d{3}$'
+              maxLength: 4
+              example: H501
+    DatiAll_00004:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento CERTIFICATO DEL
+        CASELLARIO GIUDIZIARIO (INTEGRALE)
+      type: object
+      additionalProperties: false
+      required:
+        - DatiNominativo
+        - AltriDati
+      properties:
+        DatiNominativo:
+            $ref: '#/components/schemas/DatiNominativo_00004'
+        AltriDati:
+          type: object
+          additionalProperties: false
+          required:
+            - LinguaTedesca
+          properties:
+            LinguaTedesca:
+              description: >-
+                indica se il soggetto é da verificare. In questa release DEVE
+                essere impostato a true.
+              type: boolean
+              example: true
+    DatiSA_00004:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento CERTIFICATO DEL
+        CASELLARIO GIUDIZIARIO (INTEGRALE)
+      type: object
+      additionalProperties: false
+      required:
+        - datiSoggetti
+      properties:
+        datiSoggetti:
+          description: Lista dei nominativi
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/DatiAll_00004'
+    DatiNominativo_00020:
+      description: Oggetto che riporta i dati del soggetto
+      type: object
+      additionalProperties: false
+      required:
+        - DenominazioneSociale
+        - CodiceFormaGiuridica
+        - PIVA
+        - DatiSedeSociale
+      properties:
+        DenominazioneSociale:
+          description: nome soggetto
+          type: string
+          maxLength: 250
+          example: Mangiare Bene Italia  S.p.A.
+        CodiceFormaGiuridica:
+          description: codice forma giuriridica. fare riferimento ai valori contenuti nel file [tipoFormaGiuridica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoFormaGiuridica.json)
+          type: string
+          maxLength: 6
+          example: SP
+        PIVA:
+          description: codice fiscale soggetto
+          type: string
+          pattern: '^([0-9]){11}$'
+          example: '11115678901'
+        DatiSedeSociale:
+          type: object
+          additionalProperties: false
+          required:
+            - Indirizzo
+            - CodiceCatastoStato
+          properties:
+            Indirizzo:
+              description: indirizzo sede sociale
+              type: string
+              maxLength: 250
+              example: C. Farina
+            CodiceCatastoStato:
+              description: codice catastale stato della sede legale. Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoCatastoStato.json)
+              type: string
+              maxLength: 4
+              example: F205
+            CodiceCatastoComuneItaliano:
+              description: codice catastale comune italiano. solo se CodiceCatastoStato:Z000
+              type: string
+              pattern: '^[A-Z]\d{3}$'
+              maxLength: 4
+              example: F205  
+    DatiSA_00020:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento CERTIFICATO
+        DELL'ANAGRAFE DELLE SANZIONI AMMINISTRATIVE DIPENDENTI DA REATO
+      type: object
+      additionalProperties: false
+      required:
+        - DatiNominativo
+        - AltriDati
+      properties:
+        DatiNominativo:
+          $ref: '#/components/schemas/DatiNominativo_00020'
+        AltriDati:
+          type: object
+          additionalProperties: false
+          required:
+            - LinguaTedesca
+          properties:
+            LinguaTedesca:
+              description: >-
+                indica se il soggetto é da verificare. In questa release DEVE
+                essere impostato a true.
+              type: boolean
+              example: true
+    DatiSA_00036:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento DATI REDDITUALI SOCIETA DI PERSONE e per il documento DATI REDDITUALI IMPRESA INDIVIDUALE
+      type: object
+      additionalProperties: false
+      required:
+        - annoRiferimento
+        - domicilioFiscale
+      properties:
+        annoRiferimento:
+          description: anno di cui si richiede il documento
+          type: string
+          pattern : '^(201[6-9]|202[0-2])$'
+          maxLength: 4
+          example: '2022'
+        domicilioFiscale:
+          type: object
+          additionalProperties: false
+          required:
+            - codiceCatastale
+          properties:
+            codiceCatastale:
+              description: codice catastale del domicilio fiscale dell' oggetto.
+              type: string
+              pattern: '^[A-M]\d{3}$'
+              maxLength: 4
+              example: I318
+    DatiSA_00047:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento CONSISTENZA MEDIA
+        PERSONALE
+      type: object
+      additionalProperties: false
+      required:
+        - matr_OE
+        - anno
+      properties:
+        matr_OE:
+          description: matricola dell'OE
+          type: string
+          pattern: '^[A-Z0-9]{10}$'
+          maxLength: 10
+          example: '8044161820'
+        anno:
+          description: anno di cui si richiede il documento
+          type: string
+          pattern: '^(19\d\d|20[0-9][0-9])$'
+          maxLength: 4
+          example: '2023'
+    DatiSA_00048:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento COSTO COMPLESSIVO
+        PERSONALE
+      type: object
+      additionalProperties: false
+      required:
+        - matr_OE
+        - anno
+      properties:
+        matr_OE:
+          description: matricola dell'OE
+          type: string
+          pattern: '^[A-Z0-9]{10}$'
+          maxLength: 10
+          example: '8044161820'
+        anno:
+          description: anno di cui si richiede il documento
+          type: string
+          pattern : '^(19\d\d|20[0-9][0-9])$'
+          maxLength: 4
+          example: '2023'
+    DatiSA_00050:
+      description: >-
+        Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE
+        ANTIMAFIA
+      type: object
+      additionalProperties: false
+      required:
+        - soggetto_da_verificare
+      properties:
+        soggetto_da_verificare:
+          description: Lista dei nominativi
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/Soggetto_00050'
+    DatiSA_00899:
+      description: >-
+        Oggetto che riporta dati generici dell' Operatore Economico
+      type: object
+      additionalProperties: false
+      required:
+        - tipoDocumentoOE
+        - dettaglioDocumentoOE
+      properties:
+        tipoDocumentoOE:
+          description: Descrizione breve del tipo documento che si vuole richiedere all'OE
+          type: string
+          maxLength: 255
+        dettaglioDocumentoOE:
+          description: Dettaglio del documento che si vuole richiedere all'OE
+          type: string
+          maxLength: 3000 
+    DocumentoRichiediType:
+      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo Virtuale dell'OE
+      type: object
+      additionalProperties: false
+      required:
+        - chiaveAccesso
+        - tipoDocumento
+      properties:
+        chiaveAccesso:
+            description: chiave dell'SA necessaria per accedere al FVOE.
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        tipoDocumento:
+          $ref: '#/components/schemas/TipoDocumentoEnum' 
+        datiRichiesta:
+          description: dati necessari alla richiesta specifici per tipoDocumento inviati in formato json.
+          oneOf:
+            - $ref: '#/components/schemas/DatiSA_00004'
+            - $ref: '#/components/schemas/DatiSA_00020'
+            - $ref: '#/components/schemas/DatiSA_00036'
+            - $ref: '#/components/schemas/DatiSA_00047'
+            - $ref: '#/components/schemas/DatiSA_00048'
+            - $ref: '#/components/schemas/DatiSA_00050'
+            - $ref: '#/components/schemas/DatiSA_00899'        
