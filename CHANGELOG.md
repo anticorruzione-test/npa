@@ -881,3 +881,5 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
 	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
+
+# Note di rilascio Revisione Profili del dd/mm/aaaa 
