@@ -873,7 +873,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
   
 ## Orchestratore
-* modificata a sì la colonna includeAnacForm per le schede PL1_*
+* modificata a sì la colonna includeAnacForm per le schede PL1_*.
 * **TODO**
 
 ### Regole
