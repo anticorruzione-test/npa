@@ -1,0 +1,79 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda CL1 - Scheda di collaudo.
+  version: 1.0.0
+components:
+  schemas:
+    CollaudoType:
+      description: Oggetto che riporta i dati di collaudo.
+      type: object
+      additionalProperties: false
+      required: [esito]
+      properties:
+        dataCollaudo:
+          description: Data del collaudo statico (ove ricorra)
+          type: string
+          format: date-time
+        dataCertificato:
+          description: Data del certificato di regolare esecuzione
+          type: string
+          format: date-time
+        modoCollaudo:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
+        dataNomina:
+          description: Data nomina collaudatore/Commissione
+          type: string
+          format: date-time
+        dataInizio:
+          description: Data inizio operazioni di collaudo 
+          type: string
+          format: date-time
+        dataRedazioneCertificato:
+          description: Data redazione certificato di collaudo/ verifica di conformità
+          type: string
+          format: date-time
+        dataDeliberaAmmissibilita:
+          description: Data delibera di ammissibilità del collaudo (ove prevista)
+          type: string
+          format: date-time
+        esito:
+          description: Esito del collaudo/ verifica di conformità
+          type: string
+          enum: ['POSITIVO', 'NEGATIVO'] 
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
+        numeroTotaleRiserve:
+          description: Numero totale riserve definite con accordo bonario
+          type: number
+          format: integer
+        oneri:
+          description: Oneri complessivi derivanti
+          type: number
+          format: double
+        modalitaDefinizione:
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DefinizioneType'
+    AnacFormCL1Type:
+      description: Contiene tutti i dati di collaudo
+      type: object
+      additionalProperties: false
+      required: [idContratto,collaudo]
+      properties: 
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        collaudo:
+          $ref: '#/components/schemas/CollaudoType'
+    SchedaCL1Type:
+      description: Scheda di collaudo
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCL1Type'

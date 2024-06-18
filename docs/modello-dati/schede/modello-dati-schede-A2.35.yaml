@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda A2_35 - Scheda relativa all'aggiudicazione sottosoglia senza invio al TED.
+  version: 1.0.0
+components:
+  schemas:
+    AppaltoA2_35Type:
+      type: object
+      additionalProperties: false
+      properties: 
+        datiBaseProcedura:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAType'      
+        datiBaseSubappalti:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiType'      
+    AggiudicazioneA2_35Type:
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneBaseType' 
+      type: object
+      additionalProperties: false
+      required: [numeroOfferteAmmesse,quadroEconomicoConcessioni,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto]
+      properties:  
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: number
+          format: integer             
+        quadroEconomicoConcessioni:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType'      
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseEsitoRisultatoProceduraType'
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'
+        datiBaseAccessibilita:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
+    AnacFormA2_35Type:
+      description: Contiene tutti i dati relativi all'aggiudicazione.
+      type: object
+      required: [appalto,aggiudicazioni]
+      properties:
+        appalto:
+          $ref: '#/components/schemas/AppaltoA2_35Type'
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
+          type: array
+          items:
+            $ref: '#/components/schemas/AggiudicazioneA2_35Type'     
+    SchedaA2_35Type:
+      description: Avviso di aggiudicazione di una concessione, direttiva concessioni, regime allegerito. Art. 187 decreto legislativo 36/2023.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormA2_35Type'           

@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda CS1 - Scheda di conclusione subappalto.
+  version: 1.0.0
+components:
+  schemas:
+    SubappaltoType:
+      description: Dati relativi ai subappalti
+      type: object
+      required: [importoEffettivo,dataUltimazione]
+      additionalProperties: false
+      properties:    
+        importoEffettivo: 
+          description: Importo effettivo Lavoro/ Servizio/Fornitura, subappalto
+          type: number
+          format: double
+        dataUltimazione: 
+          description: Termine di ultimazione della prestazione di subappalto
+          type: string
+          format: date-time
+        motivoMancataEsecuzioneSubappalto:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancataEsecuzioneSubappaltoEnum'
+    AnacFormCS1Type:
+      description: Contiene tutti i dati relativi alla scheda di conclusione di subappalto
+      type: object
+      required: [subappalto, idScheda]
+      additionalProperties: false
+      properties: 
+        idScheda:
+          description: identificativo restituito dal servizio all’invio della scheda di esito subappalto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"       
+        subappalto:
+          $ref: '#/components/schemas/SubappaltoType'
+    SchedaCS1Type:
+      description: Conclusione subappalto. Articolo 119 decreto legislativo 36/2023.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCS1Type'
