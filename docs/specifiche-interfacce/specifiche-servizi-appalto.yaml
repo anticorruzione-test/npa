@@ -1,0 +1,2593 @@
+openapi: 3.0.3
+info:
+  title: Specifiche Servizi Appalto - OpenAPI 3.0
+  x-summary: >-
+    Specifiche dei servizi esposti dalla Piattaforma Contratti Pubblici (PCP), richiamabili dalle Stazioni Appaltanti, per la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita degli appalti
+  description: |-
+    Sono descritte le specifiche dei servizi esposti dalla Piattaforma Contratti Pubblici (PCP), richiamabili dalle Stazioni Appaltanti, per la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita degli appalti.
+
+      #### Documentazione
+      La documentazione a supporto delle specifiche di interfaccia con i sistemi che interoperano con il nuovo sistema di digitalizzazione è redatta con il linguaggio di markup Markdown ed è presente al segunete url:
+        [documento-specifiche-servizi-npa](https://github.com/anticorruzione-test/npa/blob/main/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md)
+    ```
+  # I termini del servizio.
+  termsOfService: 'https://github.com/anticorruzione-test/npa/blob/main/README.md#termini-del-servizio'
+  # Chi posso contattare per informazioni sul servizio e sul suo stato?
+  contact:
+    email: ufficio.uscp@anticorruzione.it
+    name: ANAC - Ufficio Servizi IT Contratti Pubblici
+    url: https://www.anticorruzione.it
+  # L'audience delle API. Attualmente e' definito solamente
+  #   la tipologia `public`.
+  x-audience:
+    - public
+  # Ogni API deve avere un UUID, invariante nel tempo e
+  #   rispetto al `title`.
+  x-api-id: fb4f8763-679b-4398-958e-fbd93ccd40e1
+  license:
+    name: Licenza Pubblica dell'Unione Europea v. 1.2
+    url: 'https://eupl.eu/1.2/it/'
+  # Per dare indicazioni sul ciclo di vita dell'API
+  # si puo' usare un parametro come:
+  x-lifecycle:
+    published: 2023-03-31
+    maturity: published  
+  version: 1.0.0
+servers:
+  - url: https://repositorydocument.swagger.io/api/v1
+    description: Development server
+tags:
+  - name: gestioneUtenti 
+    description: Nel seguente contesto sono inclusi i servizi utilizzabili dalla SA per effettuare la gestione degli incaricati, la delega e la presa in carico di determinate operazioni.
+  - name: pianificazioneAppalto
+    description: Nel seguente contesto sono inclusi i servizi utilizzabili dalla SA utili alla gestione della prima fase di pianificazione e programmazione mediante la creazione e la conferma dell’Avviso di Preinformazione.
+  - name: comunicaAppalto
+    description: In questa fase del processo avviene la creazione dell’appalto, la formalizzazione dei fabbisogni della SA e, al termine di tutte le verifiche necessarie, l’emissione del CIG per i singoli lotti dell'appalto. I servizi di seguito descritti potranno essere pertanto richiamati dalle SA fino all’assegnazione dei CIG.
+  - name: pubblicaAvviso 
+    description: In questa fase del processo avviene la pubblicazione, a livello europeo e/o nazionale, degli avvisi relativi all’Appalto o ad una delle schede successive che prevedono la pubblicazione.
+  - name: comunicaPostPubblicazione
+    description: In questo contesto rientrano tutti i servizi richiamabili dalla SA finalizzati alla gestione delle fasi del ciclo di vita dell’Appalto successive alla pubblicazione di un bando di gara. I servizi permetteranno la creazione, l’invio e il recupero delle schede contenenti i dati necessari al monitoraggio delle fasi di aggiudicazione ed esecuzione di un appalto.
+  - name: serviziComuni
+    description: In questo contesto si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti della PCP.
+  - name: codeList
+    description: In questo contesto si riportano i servizi per il recupero delle tipologiche.     
+  - name: serviziTecnici 
+    description: Operazioni richiesti dalle linee guida sull'interoperabilità
+paths:
+  /status:
+    get:
+      summary: Ritorna lo stato dell'applicazione. SINCRONO
+      description: |
+        Ritorna lo stato dell'applicazione. A scopo
+        di test, su base randomica puo' ritornare
+        un errore.
+      operationId: idStatusShow
+      tags:
+        - serviziTecnici
+      responses:
+        '200':
+            description: |
+              Il server ha ritornato lo status. In caso di problemi
+              ritorna sempre un problem+json.
+            headers: &ratelimit_headers 
+              X-RateLimit-Limit:
+                 $ref: '#/components/headers/X-RateLimit-Limit'
+              X-RateLimit-Remaining:
+                 $ref: '#/components/headers/X-RateLimit-Remaining'
+              X-RateLimit-Reset:
+                 $ref: '#/components/headers/X-RateLimit-Reset'
+            content:
+              application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/BaseResponse'
+        '429':
+            description: Limite di richieste raggiunto
+            headers:
+              Retry-After:
+                $ref: '#/components/headers/Retry-After'
+            content:
+              application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/BaseResponse'        
+        '500':
+          description: Internal Server Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'          
+  /crea-piano:
+    post:
+      tags:
+         - pianificazioneAppalto
+      summary: API Rest per la creazione della Pianificazione. SINCRONO 
+      description: Il servizio permette di inviare la scheda per l'inserimento della Pianificazione nel formato definito da Anac e dell'eventuale avviso di pre-informazione in TED nel formato eForm. SINCRONO 
+      operationId: idPianoCrea
+      requestBody:
+        description: Inserimento piano con tutti i dati aggiuntivi
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreaPianoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo. Viene restituito l'idPiano generato da ANAC
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreaPianoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /modifica-piano:
+    post:
+      tags:
+         - pianificazioneAppalto
+      summary: API Rest per la modifica della Pianificazione. SINCRONO 
+      description: Il servizio permette di inviare la scheda per sostituire la precedentemente Pianificazione in lavorazione. SINCRONO 
+      operationId: idPianoModifica
+      requestBody:
+        description: Oggetto generico in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DatiPianoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModificaPianoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'  
+      security:
+        - apiKeyAuth: []
+  /cancella-piano:
+    post:
+      tags:
+        - pianificazioneAppalto
+      summary: API Rest per l'eliminazione di una Pianificazione in lavorazione. SINCRONO
+      description: Eliminazione della Pianificazione in lavorazione. SINCRONO
+      operationId: idPianoCancella
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancellaPianoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CancellaPianoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /consulta-piano:
+    get:
+      tags:
+        - pianificazioneAppalto
+      summary: API Rest per il recupero del dettaglio della Pianificazione. SINCRONO
+      description: API Rest per il recupero del dettaglio della Pianificazione. SINCRONO
+      operationId: idPianoDettaglio
+      parameters:
+        - in: query
+          name: idPianificazione
+          description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsultaPianoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /ricerca-piano:
+    get:
+      tags:
+        -  pianificazioneAppalto
+      summary: API Rest per la ricerca delle Pianificazioni. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle Pianificazioni.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base alla competenza della SA che sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
+      operationId: idPianoRicerca
+      parameters:
+        - in: query
+          name: stato
+          description: Codice stato della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoPiano.json)
+          schema:
+            type: string
+            example: 'IN_LAV'
+        - in: query
+          name: tipo
+          description: Codice tipologia della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoPiano.json)
+          schema:
+            type: string
+            example: 'PREINFORMAZIONE'  
+        - in: query
+          name: dataCreazioneDa
+          description: Data di crezione della Pianificazione - valorizzare almeno un parametro di ricerca -  intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+        - in: query
+          name: dataCreazioneA
+          description: Data di crezione della Pianificazione - valorizzare almeno un parametro di ricerca -  intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'  
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PianoListaResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /verifica-piano:
+    post:
+      tags:
+        - pianificazioneAppalto
+      summary: API Rest per la validazione della Pianificazione. ASINCRONO - ASIMMETRICO
+      description: L'ultima istanza della Pianificazione inviata viene validata. In base alla tipologia della Pianificazione viene eseguita una validazione sintattica dei dati di input. ASINCRONO - ASIMMETRICO
+      operationId: idPianoVerifica
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerificaPianoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'       
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /conferma-piano:
+    post:
+      tags:
+        - pianificazioneAppalto
+      summary: API Rest per la conferma dei dati inviati per una specifica Pianificazione. ASINCRONO - ASIMMETRICO
+      description: Il servizio consente di confermare i dati inviati per una specifica Pianificazione e, qualora il tipo di scheda lo consente, avvia la fase di pubblicazione dell'avviso. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso assegnato. ASINCRONO - ASIMMETRICO
+      operationId: idPianoConferma
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfermaPianoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'        
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /crea-appalto:
+    post:
+      tags:
+         - comunicaAppalto
+      summary: API Rest per la creazione di un Appalto. SINCRONO 
+      description: Il servizio permette di inviare la scheda per l'inserimento della prima istanza in lavorazione di un Appalto nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
+      operationId: idAppaltoCrea
+      requestBody:
+        description: Inserimento Appalto con tutti i dati aggiuntivi
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreaAppaltoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo. Viene restituito l'idAppalto generato da ANAC
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreaAppaltoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /modifica-appalto:
+    post:
+      tags:
+         - comunicaAppalto
+      summary: API Rest per la modifica dell'Appalto. SINCRONO 
+      description: Il servizio permette di inviare la scheda per sostituire la precedente istanza dell’Appalto in lavorazione. L'Appalto è nel formato ESPD-Request, per tutte le tipologie anche affidamento diretto per le pubblicazioni nazionali, nel formato eForm per le pubblicazioni europee in TED, più un formato definito da ANAC con le informazioni aggiuntive. SINCRONO 
+      operationId: idAppaltoModifica
+      requestBody:
+        description: Modifica dell'Appalto con tutti i dati aggiuntivi
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DatiAppaltoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModificaAppaltoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'  
+      security:
+        - apiKeyAuth: []
+  /cancella-appalto:
+    post:
+      tags:
+        - comunicaAppalto
+      summary: API Rest per l'eliminazione di un Appalto in lavorazione. SINCRONO
+      description: Eliminazione logica di un Appalto e dei lotti in lavorazione. SINCRONO
+      operationId: idAppaltoCancella
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancellaAppaltoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CancellaAppaltoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /ricerca-appalto:
+    get:
+      tags:
+        -  comunicaAppalto
+      summary: API Rest per la ricerca delle Gare-Lotto dell'Appalto. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi dell'Appalto e dei rispettivi lotti. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
+      operationId: idAppaltoRicerca
+      parameters:
+        - in: query
+          name: codiceAppalto
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
+          schema:
+            type: string
+            maxLength: 64
+        - in: query
+          name: cig
+          description: Identificativo univoco Appalto-Lotto rilasciato da ANAC
+          schema:
+            type: string
+            example: 9050626CD6
+        - in: query    
+          name: lotIdentifier
+          description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione del codiceAppalto o cig.
+          schema:
+            type: string
+        - in: query
+          name: stato
+          description: Codice Stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          schema:
+            type: string
+            example: 'IN_LAV'
+        - in: query
+          name: dataCreazioneDa
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+        - in: query
+          name: dataCreazioneA
+          description: Data di crezione dell'Appalto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'  
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppaltoListaResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /consulta-appalto:
+    get:
+      tags:
+         - comunicaAppalto
+      summary: API Rest per il recupero del dettaglio dell'Appalto. SINCRONO
+      description: Servizio per la consultazione delle informazioni di dettaglio di un Appalto e dei relativi Lotti. SINCRONO
+      operationId: idAppaltoDettaglio
+      parameters:
+        - in: query
+          name: idAppalto
+          description: Identificativo univoco dell'Appalto definito da ANAC alternativo al CIG. (A UUID specified by FC4122).
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: cig
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC, alternativo all'idAppalto
+          schema:
+            type: string
+            example: 9050626CD6
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsultaAppaltoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'       
+      security:
+        - apiKeyAuth: []
+  /verifica-appalto:
+    post:
+      tags:
+        - comunicaAppalto
+      summary: API Rest per la validazione dell'Appalto. ASINCRONO - ASIMMETRICO
+      description: L'ultima istanza di appalto inviata viene validata. In base alla tipologia dell'appalto viene eseguita una validazione sintattica dei dati di input dell'appalto (eForm, ESPDRequest, anacForm). ASINCRONO - ASIMMETRICO 
+      operationId: idAppaltoVerifica
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerificaAppaltoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'          
+      security:
+        - apiKeyAuth: []
+  /conferma-appalto:
+    post:
+      tags:
+        - comunicaAppalto
+      summary: API Rest per la conferma dei dati di Appalto propedeutica alla generazione dei CIG. ASINCRONO - ASIMMETRICO
+      description: Il servizio permette la conferma dei dati dell'Appalto inviati, avvia la fase di validazione e assegnazione dei CIG ed inizializza il Fascicolo Virtuale dell'Appalto. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso per invocare il successivo servizio pubblica-avviso. ASINCRONO - ASIMMETRICO 
+      operationId: idAppaltoConferma
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfermaAppaltoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'   
+      security:
+        - apiKeyAuth: []
+  /stato-appalto:
+    get:
+      tags:
+         - serviziComuni
+      summary: API Rest per il recupero dello stato dell'Appalto, del Lotto o del Contratto. SINCRONO
+      description: Servizio per il recupero dello stato in cui si trova l’Appalto, il Lotto o il Contratto. Il compito dispositivo di aggiornare lo stato proveniente dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato PCP. Pertanto il recupero dello stato da parte del servizio insiste su uno stato PCP che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
+      operationId: idAppaltoStato
+      parameters:
+        - in: query
+          name: idAppalto
+          description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo agli altri parametri di input.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: cig
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Alternativo agli altri parametri di input.
+          schema:
+            type: string
+            example: 9050626CD6
+        - in: query
+          name: idContratto
+          description: Identificativo univoco del Contratto definito da ANAC. Alternativo agli altri parametri di input.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatoResponse'  
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /recupera-cig:
+    get:
+      tags:
+        - comunicaAppalto
+      summary: API Rest per il recupero dei CIG generati da ANAC e assegnati ai lotti dell’Appalto. SINCRONO
+      description: Per un Appalto il servizio restituiti le coppie Lotto - CIG. SINCRONO
+      operationId: idCIGRecupera
+      parameters:
+        - in: query
+          name: idAppalto
+          description: Identificativo univoco dell'Appalto definito da ANAC
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32 
+            default: 20
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CigListaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /pubblica-avviso:
+    post:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per la richiesta di pubblicazione di un'avviso sia a livello nazionale sia europeo. ASINCRONO - ASIMMETRICO
+      description: Il servizio avvia la richiesta di pubblicazione di un Avviso, a livello nazionale e/o europeo. A seguito della chiamata a questo servizio, l’avviso transita in stato “IN ATTESA PUBBLICAZIONE”. ASINCRONO - ASIMMETRICO  
+      operationId: idAvvisoPubblica
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PubblicaAvvisoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'        
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /modifica-avviso:
+    post:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per la creazione di un avviso che sostituisce il precedente non ancora pubblicato sia a livello nazionale e sia europeo. ASINCRONO - ASIMMETRICO
+      description: API Rest per la richiesta di pubblicazione di un'avviso sia a livello nazionale sia europeo. L'avviso sostituisce il precedente non ancora pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso di modifica assegnato. ASINCRONO ASIMMETRICO
+      operationId: idAvvisoModifica
+      requestBody:
+        description: Inserimento Avviso con gli oggetti specifici per la pubblicazione in TED o in ambito Nazionale
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AvvisoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /rettifica-avviso:
+    post:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per la creazione di un avviso che rettifica il precedente pubblicato sia a livello nazionale e sia europeo. ASINCRONO - ASIMMETRICO
+      description: API Rest per la richiesta di pubblicazione di un'avviso di rettifica sia a livello nazionale sia europeo. L'avviso rettifica il precedente già pubblicato. Il servizio gestisce la pubblicazione europea mediante l'acquisizione di dati nel formato definito da TED (eForm) e, la pubblicazione nazionale mediante l'acquisizione di dati definiti dall'ESPD Request più dati aggiuntivi richiesti da ANAC. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso di rettifica assegnato. ASINCRONO ASIMMETRICO
+      operationId: idAvvisoRettifica
+      requestBody:
+        description: Inserimento Avviso con gli oggetti specifici per la pubblicazione in TED o in ambito Nazionale
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AvvisoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /cancella-avviso:
+    post:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per la richiesta di annullamento di pubblicazione di un avviso non ancora pubblicato. ASINCRONO - ASIMMETRICO
+      description: Il servizio permette di sospensione una una richiesta di pubblicazione, sia nazionale sia europea, di un avviso non ancora pubblicato. ASINCRONO ASIMMETRICO
+      operationId: idAvvisoCancella
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancellaAvvisoRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /ricerca-avviso:
+    get: 
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per la ricerca degli avvisi dell'appalto. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi degli Avvisi. Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
+      operationId: idAvvisoRicerca
+      parameters:
+        - in: query
+          name: codiceAppalto
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante. Alternativo all' idPianificazione. Obbligatorio se idAppalto e cig non sono stati valorizzati.
+          schema:
+            type: string
+            maxLength: 64
+        - in: query    
+          name: idAppalto
+          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122).  Alternativo all' idPianificazione. Obbligatorio se codiceAppalto e cig non sono stati valorizzati.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        - in: query
+          name: cig
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Alternativo all' idPianificazione. Obbligatorio se idAppalto e cig non sono stati valorizzati.
+          schema:
+            type: string
+            example: 9050626CD6
+        - in: query
+          name: stato
+          description: Codice Stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          schema:
+            type: string
+            example: 'IN_ATT_PUBB'
+        - in: query
+          name: dataCreazioneDa
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataCreazioneA
+          description: Data di crezione della Appalto - intervallo precedente (A date-time specified by RF333)
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'
+        - in: query    
+          name: idPianificazione
+          description: Identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto, idAppalto e cig non sono stati valorizzati.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+        - in: query
+          name: statoAvviso
+          description: Codice Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoAvviso.json)
+          schema:
+            type: string
+            example: 'IN_ATT_PUBB'
+        - in: query
+          name: tipoAvviso
+          description: Codice Tipo di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoAvviso.json)
+          schema:
+            type: string
+            example: 'IT'
+        - in: query
+          name: azioneAvviso
+          description: Codice Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
+          schema:
+            type: string
+            example: 'AZ_PUBB'
+        - in: query
+          name: dataCreazioneAvvisoDa
+          description: Data di crezione dell'Avviso - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataCreazioneAvvisoA
+          description: Data di crezione della Avviso - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'    
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AvvisoListaResponse'  
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /consulta-avviso:
+    get:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per il recupero del dettaglio di un Avviso. SINCRONO
+      description: Viene resituita la definizione di un Avviso con tutte le sue informazioni di dettaglio.
+      operationId: idAvvisoDettaglio
+      parameters:
+        - in: query
+          name: idAvviso
+          description: Identificativo dell'Avviso generato da ANAC.
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsultaAvvisoResponse'   
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /consulta-rendering-avviso:
+    get:
+      tags:
+        - pubblicaAvviso
+      summary: API Rest per il recupero del PDF di un Avviso. SINCRONO
+      description: Viene resituito il file in foramto PDF relativo all' Avviso.
+      operationId: idAvvisoAnteprima
+      parameters:
+        - in: query
+          name: idAvviso
+          description: Identificativo dell'Avviso generato da ANAC.
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RenderingAvvisoResponse'   
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /stato-avviso:
+    get:
+      tags:
+         - pubblicaAvviso
+      summary: API Rest per il recupero dello stato dell'Avviso. SINCRONO
+      description: Il compito dispositivo di aggiornare lo stato dell'avviso proveniente dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato PCP. Pertanto il recupero dello stato da parte del servizio insiste su uno stato avviso PCP che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
+      operationId: idAvvisoStato
+      parameters:
+        - in: query
+          name: idAvviso
+          description: Identificativo dell'Avviso generato da ANAC.
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatoAvvisoResponse'  
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /crea-scheda:
+    post:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest generica per l'inserimento di una scheda dati per le fasi successive alla pubblicazione. SINCRONO
+      description: API Rest generica per l'inserimento delle schede dati delle fasi successive alla pubblicazione. A titolo esemplificativo si riportano di seguito alcuni eventi che determinano l'obbligo di invio dati alla PCP:Elenco Partecipanti, Aggiudicazione, Avvio Contratto, Avanzamento Contratto, Conclusione Contratto, Collaudo Contratto, Sospensione, Ripresa Esecuzione, Contratto, Risoluzione Contratto, Modifica Contratto, Subappalto, Recesso, Contenzioso, Accordo Quadro. SINCRONO
+      operationId: idSchedaCrea
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreaSchedaRequest'
+        required: true
+      responses:
+        '200':
+            description: Operazione terminato con successo
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/CreaSchedaResponse'  
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /modifica-scheda:
+    post:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest generica per la modifica di una scheda dati per le fasi successive alla pubblicazione. SINCRONO
+      description: Il servizio sostituisce la precedentemente Scheda in lavorazione. SINCRONO
+      operationId: idSchedaModifica
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DatiSchedaRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModificaSchedaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'  
+      security:
+        - apiKeyAuth: []
+  /cancella-scheda:
+    post:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest per l'eliminazione di una specifica Scheda dati in lavorazione nelle fasi successive alla pubblicazione. SINCRONO
+      description: Eliminazione della Scheda dati in lavorazione. SINCRONO
+      operationId: idSchedaCancella
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancellaSchedaRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CancellaSchedaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /ricerca-scheda:
+    get:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest per la ricerca delle Schede dati inserite nelle fasi successive alla pubblicazione. SINCRONO
+      description: Viene recuperata la lista con i dati di sintesi delle schede.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. Almeno un filtro di ricerca deve essere valorizzato. SINCRONO
+      operationId: idSchedaRicerca
+      parameters:
+        - in: query    
+          name: idAppalto
+          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122). Obbligatorio se cig non è stato valorizzato.
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        - in: query
+          name: cig
+          description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Obbligatorio se idAppalto non è stato valorizzato.
+          schema:
+            type: string
+            example: 9050626CD6
+        - in: query
+          name: stato
+          description: Codice stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoAppalto.json)
+          schema:
+            type: string
+            example: 'IN_ATT_PUBB'
+        - in: query
+          name: dataCreazioneDa
+          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataCreazioneA
+          description: Data di crezione della Gara - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
+          schema:
+            type: string
+            format: date-time
+          example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: codiceScheda
+          description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/codiceScheda.json)
+          schema:
+            type: string
+            example: 'AD1_28'
+        - in: query
+          name: statoScheda
+          description: Codice Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoScheda.json)
+          schema:
+            type: string
+            example: 'IN_LAV'
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SchedaListaResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /consulta-scheda:
+    get:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest per il recupero del dettaglio di una specifica Scheda dati. SINCRONO
+      description: Viene recuperato il dettaglio della specifica scheda dati. SINCRONO
+      operationId: idSchedaDettaglio
+      parameters:
+        - in: query
+          name: idScheda
+          description: Identificativo della singola scheda restituita da ANAC nella fase di inserimento
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsultaSchedaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /verifica-scheda:
+    post:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest per la validazione di una Scheda dati. ASINCRONO - ASIMMETRICO
+      description: L'ultimo istanza della Scheda inviata viene validata. La validazione è orchestrata da un Workflow Engine che, tramite il suo motore di regole, verifica sia se la scheda dati è coerente con lo stato dell’Appalto sia la correttezza sintattica dei dati di input.  ASINCRONO - ASIMMETRICO
+      operationId: idSchedaVerifica
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerificaSchedaRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'       
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /conferma-scheda:
+    post:
+      tags:
+        - comunicaPostPubblicazione
+      summary: API Rest per la conferma dei dati inviati per una specifica Scheda. ASINCRONO - ASIMMETRICO
+      description: Il servizio consente di confermare i dati inviati per una specifica Scheda e, qualora il tipo di scheda lo consente, avvia la fase di pubblicazione dell'avviso. Con la successiva chiamata al servizio esito-operazione è possibile recuperare l'idAvviso assegnato. ASINCRONO - ASIMMETRICO 
+      operationId: idSchedaConferma
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConfermaSchedaRequest'
+        required: true
+      responses:
+        '200':
+            $ref: '#/components/responses/200AckResponse'           
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /esito-operazione:
+    get:
+      tags:
+        - serviziComuni
+      summary: API Rest per il recupero dell'esito dell'operazione. SINCRONO
+      description: Il compito dispositivo di aggiornare l'esito delle operazioni provenienti dai sistemi esterni, TED e/o PPL-ANAC, sarà in carico ad un task schedulato PCP. Pertanto il recupero dell'esito operazione da parte del servizio insiste su uno stato dell'esito PCP che restituisce anche la data in cui il task schedulato ha effettuato il controllo sui sistemi esterni. SINCRONO
+      operationId: idOperazioneEsito
+      parameters:
+        - in: query
+          name: idAppalto
+          description: identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se idPianificazione non è stato valorizzato (A UUID specified by RFC4122)
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: idPianificazione
+          description: identificativo univoco della Pianificazione definito da ANAC. Obbligatorio se idAppalto non è stato valorizzato (A UUID specified by RFC4122)
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
+        - in: query
+          name: tipoOperazione
+          description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoOperazione.json)
+          required: true
+          schema:
+            type: string
+            example: "SC_VERIF"
+        - in: query
+          name: tipoRicerca
+          description: Codice Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
+          required: true
+          schema:
+            type: string
+            example: "ULTIMO_ESITO"
+        - in: query
+          name: esito
+          description: Codice sintetico esito operazione - fare riferimento ai valori contenuti nel file [esito.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/esito.json)
+          schema:
+            type: string
+            example: "OK"
+      responses:
+        '200':
+          description: Esecuzione avvenuta con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EsitoOperazioneListaResponse'
+        '404':
+            description: Identificativo non trovato
+            headers: *ratelimit_headers
+            content:
+              application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/ErrorResponse'
+        '400':
+            description: Richiesta malformata
+            headers: *ratelimit_headers
+            content:
+             application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/ErrorResponse'
+        '429':
+            description: Limite di richieste raggiunto
+            headers:
+              Retry-After:
+                $ref: '#/components/headers/Retry-After'
+            content:
+              application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/ErrorResponse'
+        '500':
+            description: Errore interno avvenuto
+            content:
+              application/problem+json:
+                schema:
+                  $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - apiKeyAuth: []
+  /recupera-elenco-tipologiche:
+    get:
+      tags:
+        - codeList
+      summary: API Rest per il recupero dell'elenco delle tipologiche disponibili. SINCRONO
+      description: Il servizio restituiti un'elenco delle tipologiche disponibili. SINCRONO
+      operationId: idRecuperaElencoTipologiche
+      parameters:
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query
+          name: perPage
+          description: numero di elementi per pagina
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20     
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TipologicaListaResponse' 
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: [] 
+  /recupera-tipologica:
+    get:
+      tags:
+        - codeList
+      summary: API Rest per il recupero di una specifica tipologica. SINCRONO
+      description: Il servizio restituiti l'elenco di una singola tipologica. SINCRONO
+      operationId: idRecuperaTipologica
+      parameters:
+        - in: query
+          name: idTipologica
+          description: Identificativo della tipologica
+          schema:
+            type: string
+            example: 'CPV'
+          required: true
+        - in: query
+          name: dataInizio
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: dataFine
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+        - in: query
+          name: page
+          description: numero della pagina da visualizzare
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - in: query  
+          name: perPage
+          description: numero di elementi per pagina
+          schema:
+            type: integer
+            format: int32
+            default: 20            
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TipologicaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /recupera-valore-tipologica:
+    get:
+      tags:
+        - codeList
+      summary: API Rest per il recupero di un singolo item di una tipologica. SINCRONO
+      description: Il servizio restituiti il valore di un singolo item che si vuole recuperare dalla tipologica. SINCRONO
+      operationId: idRecuperaItemTipologica
+      parameters:
+        - in: query
+          name: idTipologica
+          description: Identificativo della tipologica
+          schema:
+            type: string
+            example: 'CPV'
+          required: true
+        - in: query
+          name: codice
+          description: Codice del valore che si vuole recuperare dalla tipologica
+          schema:
+            type: string
+            example: '001'
+          required: true          
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TipologicaItemResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []        
+  /presa-carico:
+    post:
+      tags:
+         - gestioneUtenti
+      summary: API Rest per l’associazione di un Responsabile di Progetto. SINCRONO 
+      description: servizio utile per l’associazione di un responsabile di progetto. SINCRONO 
+      operationId: idPresaCarico
+      requestBody:
+        description: Oggetto generico in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PresaCaricoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PresaCaricoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /ricerca-soggetti:
+    get:
+      tags:
+        -  gestioneUtenti
+      summary: API Rest per la ricerca dei soggetti incaricati.Le informazioni restituite dal servizio saranno filtrate, oltre in base ai parametri di ricerca, anche in base agli appalti di competenza dell' RP e della SA per la quale sta operando. SINCRONO
+      description: viene recuperata la lista con i dati di sintesi dei soggetti incaricati. SINCRONO
+      operationId: idIncaricatoRicerca
+      parameters:
+        - in: query    
+          name: idAppalto
+          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by FC4122).
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        - in: query
+          name: cig
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto rilasciato da ANAC
+          schema:
+            type: string
+            example: '9050626CD6'
+        - in: query
+          name: codiceFiscale
+          description: codice fiscale del soggetto
+          schema:
+            type: string
+            example: 'RSSMRA94E07A511G'
+        - in: query
+          name: ruolo
+          description: Codice ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoRuolo.json)
+          schema:
+            type: string
+            example: 'RP'
+        - in: query
+          name: servizio
+          description: Non gestito nella prima release - Codice servizio delegato al soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
+          schema:
+            type: string
+        - in: query
+          name: operazione
+          description: Non gestito nella prima release - Codice operazione delegata al soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
+          schema:
+            type: string           
+        - in: query
+          name: dataInizioDa
+          description: Data inizio incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+        - in: query
+          name: dataInizioA
+          description: Data inizio incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+        - in: query
+          name: dataFineDa
+          description: Data fine incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+        - in: query
+          name: dataFineA
+          description: data fine incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
+          schema:
+            type: string
+            format: date-time
+          example: '2015-05-28T14:07:17Z'
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SoggettoListaResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /aggiungi-soggetto:
+    post:
+      tags:
+         - gestioneUtenti
+      summary: API Rest per associare un soggetto delegato. SINCRONO 
+      description: servizio che ha lo scopo aggiungere l’istanza di un soggetto delegato. SINCRONO 
+      operationId: idSoggettoAggiungi
+      requestBody:
+        description: Oggetto generico in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SoggettoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AggiungiSoggettoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /elimina-soggetto:
+    post:
+      tags:
+         - gestioneUtenti
+      summary: API Rest per eliminare da un ruolo un soggetto delegato. SINCRONO 
+      description: servizio di cancellazione logica di un soggetto. SINCRONO 
+      operationId: idSoggettoElimina
+      requestBody:
+        description: Oggetto generico in ingresso al servizio 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EliminaSoggettoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo.
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EliminaSoggettoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /recupera-profilo:
+    get:
+      tags:
+        -  gestioneUtenti
+      summary: API Rest per il recupero del profilo utente. SINCRONO
+      description: Viene recuperata il profilo utente contenente i dati della stazione appaltante che viene rappresentata . SINCRONO
+      operationId: idProfiloRecupera  
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RecuperaProfiloResponse'          
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+components:
+  headers:
+    Retry-After:
+      description: |-
+        Retry contacting the endpoint *at least* after seconds.
+        See https://tools.ietf.org/html/rfc7231#section-7.1.3
+      schema:
+        format: int32
+        maximum: 186400
+        minimum: 0
+        type: integer
+    Sunset:
+      description: The Sunset HTTP response header field, indicates that a URI is likely
+        to become unresponsive at a specified point in the future.  It also defines
+        a sunset link relation type that allows linking to resources providing information
+        about an upcoming resource or service sunset.
+      schema:
+        example: Sun, 06 Nov 1994 08:49:37 GMT
+        externalDocs:
+          url: https://tools.ietf.org/html/rfc7231#appendix-D
+        format: HTTP-date
+        maxLength: 30
+        type: string
+    X-RateLimit-Limit:
+      description: The number of allowed requests in the current period
+      schema:
+        format: int32
+        maximum: 1000000
+        minimum: 0
+        type: integer
+    X-RateLimit-Remaining:
+      description: The number of remaining requests in the current period
+      schema:
+        format: int32
+        maximum: 1000000
+        minimum: 0
+        type: integer
+    X-RateLimit-Reset:
+      description: The number of seconds left in the current period
+      schema:
+        format: int32
+        maximum: 186400
+        minimum: 0
+        type: integer  
+    X-Ratelimit-Used: 
+      description: The number of requests used in the current period
+      schema:
+        type: integer
+        format: int32      
+  responses:
+    200AckResponse:
+      description: Richiesta accettata
+      headers: *ratelimit_headers
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AckResponse'
+    400BadRequest:
+      description: Richiesta malformattata
+      headers: *ratelimit_headers
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    404NotFound:
+      description: Dato non trovato
+      headers: *ratelimit_headers
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    429TooManyRequests:
+      description: Limite di richieste raggiunto
+      headers:
+        Retry-After:
+            $ref: '#/components/headers/Retry-After'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    500InternalServerError:
+      description: Errore generico. Operazione terminato con errore. Viene restitutito il dettaglio dell'errore
+      headers: *ratelimit_headers
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    503ServiceUnavailable:
+      description: Service Unavailable
+      headers:
+        Retry-After:
+            $ref: '#/components/headers/Retry-After'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    default:
+      description: |-
+       Errore inatteso. Non ritornare informazioni
+       sulla logica interna e/o non pertinenti all'interfaccia.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+  schemas:
+    TipoServizioSoggettoEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoServizioSoggettoEnum'
+    TipoOperazioneSoggettoEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
+    TipoRuoloEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
+    ErroriEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
+    AppaltoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+    DatiPianoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoType'
+    DatiPianoBaseType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoBaseType'      
+    SoggettoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SoggettoType'
+    PaginazioneType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
+    SchedaGroupType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaGroupType'
+    AvvisoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
+    AvvisoBaseType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoBaseType'      
+    StatoAvvisoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
+    CigType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
+    DatiAppaltoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
+    SchedaPianificazioneType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPianificazioneType'    
+    SchedaComunicaAppaltoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaComunicaAppaltoType'
+    SchedaPostPubblicazioneType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
+    SchedaType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
+    EsitoOperazioneType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
+    StatoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoType'
+    TipologicaBaseType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
+    TipologicaType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
+    DatiTipologicaType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiTipologicaType'
+    ContentDocumentType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType' 
+    ProfiloSAType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ProfiloSAType'  
+    RecuperaProfiloResponse: 
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:  
+        profilo: 
+          $ref: '#/components/schemas/ProfiloSAType'
+    CreaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - scheda
+      properties:
+        scheda:
+          $ref: '#/components/schemas/SchedaComunicaAppaltoType'
+    DatiAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idAppalto
+        - scheda
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaComunicaAppaltoType'
+    CancellaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Revoca delle procedure di gara'
+      required:
+        - idAppalto
+    VerificaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      required:
+        - idAppalto
+    ConfermaAppaltoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      required:
+        - idAppalto        
+    CreaPianoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:
+        - scheda
+      properties:
+        scheda:
+          $ref: '#/components/schemas/SchedaPianificazioneType'
+    DatiPianoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idPianificazione
+        - scheda
+      properties:
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaPianificazioneType'   
+    CancellaPianoRequest:     
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Pianificazione non approvata'
+      required:
+        - idPianificazione
+    VerificaPianoRequest:     
+        description: Oggetto in ingresso al servizio    
+        type: object
+        additionalProperties: false
+        properties:
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        required:
+          - idPianificazione
+    ConfermaPianoRequest:     
+        description: Oggetto in ingresso al servizio    
+        type: object
+        additionalProperties: false
+        properties:
+          idPianificazione:
+            description: identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        required:
+          - idPianificazione          
+    PresaCaricoRequest:
+      description: Oggetto in ingresso al servizio
+      type: object
+      additionalProperties: false
+      required:
+        - idAppalto
+      properties:
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. Alternativo al CIG
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC. Alternativo all'idAppalto
+          type: string
+          example: "9050626CD6"    
+    SoggettoRequest:
+      description: Oggetto in ingresso al servizio
+      type: object
+      additionalProperties: false
+      required:
+        - idAppalto
+        - codiceFiscale
+        - ruolo
+        - dataInizio
+      properties:
+        codiceFiscale:
+          description: codice fiscale del soggetto.
+          type: string
+          example: "AAA345FRT565"
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC.
+          type: string
+          example: "9050626CD6"
+        ruolo:  
+          $ref: '#/components/schemas/TipoRuoloEnum'
+        servizio: 
+          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        operazione:
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
+        dataInizio: 
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+        dataFine: 
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339). Se il valore non è indicato la delega è a tempo indeterminato.
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+    EliminaSoggettoRequest:
+      description: Oggetto in ingresso al servizio
+      type: object
+      additionalProperties: false
+      properties:
+        codiceFiscale:
+          description: codice fiscale del soggetto. Obbligatorio se idAppalto non è stato valorizzato
+          type: string
+          example: "AAA345FRT565"
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. Obbligatorio se codiceFiscale non è stato valorizzato
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        cig:
+          description: Non gestito nella prima release - Identificativo univoco Gara-Lotto generato da ANAC.
+          type: string
+          example: "9050626CD6"
+        ruolo:  
+          $ref: '#/components/schemas/TipoRuoloEnum'
+        servizio:  
+          $ref: '#/components/schemas/TipoServizioSoggettoEnum'
+        operazione:  
+          $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
+        dataInizio: 
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+        dataFine: 
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'          
+    CreaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idAppalto
+        - scheda
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
+    DatiSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idScheda
+        - idAppalto
+        - scheda
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idScheda:
+          description: identificativo univoco della Scheda definito da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        scheda:
+          $ref: '#/components/schemas/SchedaPostPubblicazioneType' 
+    CancellaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
+          type: string
+          format: uuid
+          example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Errore inserimento dati'
+      required:
+        - idScheda
+        - idAppalto
+    VerificaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+      required:
+        - idScheda
+        - idAppalto
+    ConfermaSchedaRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idScheda:
+          description: identificativo univoco della scheda definita da ANAC. (A UUID specified by RFC4122).
+          type: string
+          format: uuid
+          example: "68aa8c04-0d00-40f6-8d81-b59de3a3dcce"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+      required:
+        - idScheda 
+        - idAppalto
+    AvvisoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      required:  # List the required properties here
+        - idAvviso
+        - scheda
+      properties:
+        idAvviso:
+          description: identificativo univoco dell'Avviso generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC. Obbligatorio se idPianificazione non è stato valorizzato
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. Obbligatorio se idAppalto non è stato valorizzato
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+        scheda:
+           $ref: '#/components/schemas/SchedaGroupType'
+    PubblicaAvvisoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAvviso:
+          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC.
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
+      required:  # List the required properties here
+        - idAvviso
+        - idAppalto
+    CancellaAvvisoRequest:
+      description: Oggetto in ingresso al servizio    
+      type: object
+      additionalProperties: false
+      properties:
+        idAvviso:
+          description: identificativo univoco dell'Avviso definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idAppalto:
+          description: identificativo univoco dell'Appalto generato da ANAC. Obbligatorio se idPianificazione non è stato valorizzato
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idPianificazione:
+          description: identificativo univoco della Pianificazione definito da ANAC. Obbligatorio se idAppalto non è stato valorizzato
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        motivo:  
+          description: descrizione del motivo della richiesta di cancellazione
+          type: string
+          maxLength: 200
+          example: 'Revoca delle procedure di gara'
+      required:
+        - idAvviso
+    ConsultaAppaltoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:  
+        appalto:
+          $ref: '#/components/schemas/DatiAppaltoType'
+    CreaPianoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idPianificazione:
+          description: Identificativo univoco della pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    PresaCaricoResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      example:
+        detail: "Associazione eseguita con successo"
+        status: 200
+        title: "Operazione Effettuata"
+    AggiungiSoggettoResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+    EliminaSoggettoResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'    
+    ModificaPianoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idPianificazione:
+          description: Identificativo univoco della pianificazione definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+    CancellaPianoResponse:
+      description: Risposta all'operazione Cancella Piano
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      example:
+        detail: "Cancellazione eseguita con successo"
+        status: 200
+        title: "Operazione Effettuata"      
+    CreaAppaltoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      example:
+        detail: "Creazione eseguita con successo"
+        status: 200
+        title: "Operazione Effettuata"
+    ModificaAppaltoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idAppalto:
+          description: Identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+    CancellaAppaltoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      example:
+        detail: "Cancellazione eseguita con successo"
+        status: 200
+        title: "Operazione Effettuata"
+    StatoResponse: 
+      allOf: # estende lo schema dati di BaseResponse e StatoType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/StatoType'
+      type: object
+      additionalProperties: false
+    StatoAvvisoResponse: 
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      additionalProperties: false
+      properties:
+        statoAvviso:  
+           $ref: '#/components/schemas/StatoAvvisoType'
+    AppaltoListaResponse :
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: risposta di una lista di oggetti paginati specifica del servizio SINCRONO
+          type: array
+          items:
+            $ref: '#/components/schemas/AppaltoType'
+    SoggettoListaResponse :
+      allOf: # estende la classe BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Oggetto generico di ritorno di una risposta
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: risposta di una lista di soggetti incaricati. SINCRONO
+          type: array
+          items:
+            $ref: '#/components/schemas/SoggettoType'        
+    ConsultaPianoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        piano:
+          $ref: '#/components/schemas/DatiPianoType'
+    PianoListaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: risposta di una lista di oggetti paginati specifica del servizio SINCRONO
+          type: array
+          items:
+            $ref: '#/components/schemas/DatiPianoBaseType'
+    AvvisoListaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: Lista di ritorno con la sintesi dei dati dell'Avviso
+          type: array
+          items:
+            $ref: '#/components/schemas/AvvisoBaseType'  
+    CigListaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: Lista lotIdentifier-cig
+          type: array
+          items:
+            $ref: '#/components/schemas/CigType' 
+    TipologicaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'  
+      type: object
+      additionalProperties: false
+      properties:
+        tipologica:  
+          $ref: '#/components/schemas/TipologicaType'   
+    TipologicaItemResponse:
+      allOf: # estende la classe BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      additionalProperties: false
+      properties:
+        tipologica:  
+          $ref: '#/components/schemas/DatiTipologicaType'       
+    TipologicaListaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result: 
+          description: Elenco di tutte le tipologiche
+          type: array
+          items:
+            $ref: '#/components/schemas/TipologicaBaseType' 
+    SchedaListaResponse:
+      allOf: # estende la classe BaseResponse e PaginazioneType
+        - $ref: '#/components/schemas/BaseResponse'
+        - $ref: '#/components/schemas/PaginazioneType'
+      description: Oggetto generico di ritorno di una risposta con paginazione
+      type: object
+      additionalProperties: false
+      properties:
+        result:
+          description: Lista di ritorno con la sintesi dei dati delle schede
+          type: array
+          items:
+            $ref: '#/components/schemas/SchedaType'
+    ConsultaAvvisoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        avviso:
+          $ref: '#/components/schemas/AvvisoType'
+    RenderingAvvisoResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:  
+        content:
+          $ref: '#/components/schemas/ContentDocumentType'
+    ConsultaSchedaResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        scheda:
+          $ref: '#/components/schemas/SchedaPostPubblicazioneType'
+    EsitoOperazioneListaResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        listaEsiti:
+          description: Lista di ritorno esiti operazione
+          type: array
+          items:
+            $ref: '#/components/schemas/EsitoOperazioneType'
+    BaseResponse:
+      type: object
+      additionalProperties: false
+      properties:
+          instance:
+              description: |
+                An absolute URI that identifies the specific occurrence of the
+                problem.
+                It may or may not yield further information if dereferenced.
+              format: uri
+              maxLength: 2048
+              type: string
+          status:
+              description: |
+                The HTTP status code generated by the origin server for this
+                occurrence
+                of the problem.
+              exclusiveMaximum: true
+              format: int32
+              maximum: 600
+              minimum: 100
+              type: integer
+              example: 400
+          title:
+              description: |
+                A short, summary of the problem type. Written in english and
+                readable
+                for engineers (usually not suited for non technical stakeholders
+                and not localized);
+              maxLength: 64
+              pattern: ^[ -~]{0,64}$
+              type: string
+              example: 'There was a validation error'
+          detail:
+              description: |
+                A human readable explanation specific to this occurrence of the
+                problem.
+              maxLength: 4096
+              pattern: ^.{0,1024}$
+              type: string
+              example: 'Object Validation Error'
+          type:
+              description: |
+                An absolute URI that identifies the problem type. When
+                dereferenced,
+                it SHOULD provide human-readable documentation for the problem
+                type
+                (e.g., using HTML).
+              default: about:blank
+              format: uri
+              maxLength: 2048
+              type: string
+              example: 'https://tools.ietf.org/html/rfc7231#section-6.6.4'
+    ErrorResponse:
+      allOf: # estende la classe BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        errori: 
+          description: elenco degli errori
+          type: array
+          items:
+            $ref: '#/components/schemas/ErroriEnum'
+    AckResponse:
+      allOf: # estende la classe BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      example:
+        status: 200
+        title: "Richiesta acquisita"
+    CreaSchedaResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idScheda:
+          description: Identificativo univoco della Scheda definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    ModificaSchedaResponse:
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      description: Risposta generica servizio
+      type: object
+      properties:
+        idScheda:
+          description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    CancellaSchedaResponse:
+      description: Risposta all'operazione Cancella Scheda
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      example:
+        detail: "Cancellazione eseguita con successo"
+        status: 200
+        title: "Operazione Effettuata"
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      name: apiKeyAuth # name of the header, query parameter or cookie
+      in: header  # can be "header", "query" or "cookie"
