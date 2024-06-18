@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda PL1_4 - Scheda di programmazione per appalti settori ordinari pari /sopra soglia con invio al TED dell'eform4.
+  version: 1.0.0
+components:
+  schemas:          
+    SchedaPL1_4Type:
+      description: Avviso di preinformazione a fini unicamente informativi — direttiva generale. Articolo 48, paragrafo 1, della direttiva 2014/24/UE. Articolo 81 comma 1 decreto legislativo 36/2023.
+      type: object
+      required: [anacForm,eform]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'
+        eform:
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'            
+         

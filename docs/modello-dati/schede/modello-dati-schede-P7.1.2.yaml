@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda P7_1_2 - Scheda relativa all'avvio dell'indagine di mercato per procedura negoziata senza bando pari o sopra soglia.
+  version: 1.0.0
+components:
+  schemas:
+   LottoP7_1_2Type:
+      description: Oggetto che riporta i dati del lotto
+      allOf: # estende la classe LottoP7BaseType
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP7BaseType'      
+      type: object
+      additionalProperties: false
+      required: [datiBaseTerminiInvio]      
+      properties:
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'       
+        datiBaseTerminiInvio:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioSoloScadenzaType'
+   AnacFormP7_1_2Type:
+      description: Contiene i dati per la scheda di avvio dell'indagine di mercato
+      allOf: # estende la classe AnacFormBaseType
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'   
+      type: object
+      required: [appalto,lotti] 
+      additionalProperties: false
+      properties:
+        appalto:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP7BaseType'
+        lotti:
+          description: Dati relativi ai lotti
+          type: array
+          items:
+            $ref: '#/components/schemas/LottoP7_1_2Type'   
+   SchedaP7_1_2Type:
+      description: Procedura negoziata senza bando pari o sopra soglia. Articolo  76 decreto legislativo 36/2023. Articolo  158 decreto legislativo 36/2023. Articolo 18 decreto legislativo 208/2011. Articolo 127 decreto legislativo 36/2023. Articolo 128 decreto legislativo 36/2023.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormP7_1_2Type'          
