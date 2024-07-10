@@ -7,10 +7,10 @@ components:
     AnacFormCSDA2Type:
       description: Contiene i dati per la scheda di conclusione SDA.
       type: object
-      required: [idPianificazione,datiBaseStrumentiProcedura,datiBaseDurata] 
+      required: [idAppalto,datiBaseStrumentiProcedura,datiBaseDurata] 
       additionalProperties: false
       properties:
-        idPianificazione:
+        idAppalto:
           description: id restituito dal servizio all'invio della scheda di istituzione SDA
           type: string        
         datiBaseStrumentiProcedura:

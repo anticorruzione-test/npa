@@ -8,14 +8,11 @@ components:
       allOf: 
           - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'
       type: object
-      required: [statoSDA, ammesso] 
+      required: [statoSDA] 
       additionalProperties: false
       properties:
         statoSDA:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/StatoSDAEnum' 
-        ammesso:
-          description: Ammesso?
-          type: boolean
     SchedaS0Type:
       description: Elenco richieste di adesione SDA. Articolo 32 comma 7 decreto legislativo 36/2023.
       type: object
@@ -25,9 +22,9 @@ components:
         anacForm:
           type: object
           additionalProperties: false
-          required: [idPianificazione,partecipanti,operazioneSDA]
+          required: [idAppalto,partecipanti,operazioneSDA]
           properties:
-            idPianificazione:
+            idAppalto:
               description: id restituito dal servizio all'invio della scheda di istituzione SDA
               type: string 
             operazioneSDA: 
