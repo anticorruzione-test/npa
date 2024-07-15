@@ -639,13 +639,20 @@ components:
           example: '2023'
     DatiSA_00050:
       description: >-
-        Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE
-        ANTIMAFIA
+        Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE ANTIMAFIA
       type: object
       additionalProperties: false
       required:
-        - soggetto_da_verificare
+        - altrisoggetti
+        - prefettura
       properties:
+        prefettura:
+          description: Prefettura. Fare riferimento ai valori contenuti nel file [tipoPrefettura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoPrefettura.json)
+          pattern: IT-(AG|AL|AN|AO|AR|AP|AT|AV|BA|BT|BL|BN|BG|BI|BO|BZ|BS|BR|CA|CL|CB|CI|CE|CT|CZ|CH|CO|CS|CR|KR|CN|EN|FM|FE|FI|FG|FC|FR|GE|GO|GR|IM|IS|SP|AQ|LT|LE|LC|LI|LO|LU|MC|MN|MS|MT|ME|MI|MO|MB|NA|NO|NU|OR|PD|PA|PR|PV|PG|PU|PE|PC|PI|PT|PN|PZ|PO|RG|RA|RC|RE|RI|RN|RM|RO|SA|SS|SV|SI|SR|SO|SU|TA|TE|TR|TO|TP|TN|TV|TS|UD|VA|VE|VB|VC|VR|VV|VI|VT)$
+          type: string
+        altrisoggetti:
+          type: boolean
+          description: Presenza di soggetti da verificare
         soggetto_da_verificare:
           description: Lista dei nominativi
           type: array
