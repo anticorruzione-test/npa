@@ -795,7 +795,8 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 ### Modello Dati 
 * modello-dati-fvoe-fva.yaml:
   * modificato Soggetto_00050 - nel "luogo di nascita" inserita una regex per controllare i comuni italiani e gli stati esteri
-  * modificato datiSA_00050 - Inserito il codice prefettura e altriSoggetti 
+  * modificato DatiSA_00050 - Inserito il codice prefettura e altriSoggetti .
+  * modificato il nome dei modelli dati utlizzato per richiedere i documenti agli enti certificanti. Rimosso il carattere "_"
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
