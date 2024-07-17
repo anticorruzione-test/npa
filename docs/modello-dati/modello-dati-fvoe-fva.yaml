@@ -479,7 +479,7 @@ components:
                 essere impostato a true.
               type: boolean
               example: true
-    DatiSA_00004:
+    DatiSA00004:
       description: >-
         Oggetto che riporta i dati per richiedere il documento CERTIFICATO DEL
         CASELLARIO GIUDIZIARIO (INTEGRALE)
@@ -542,7 +542,7 @@ components:
               pattern: '^[A-Z]\d{3}$'
               maxLength: 4
               example: F205  
-    DatiSA_00020:
+    DatiSA00020:
       description: >-
         Oggetto che riporta i dati per richiedere il documento CERTIFICATO
         DELL'ANAGRAFE DELLE SANZIONI AMMINISTRATIVE DIPENDENTI DA REATO
@@ -566,7 +566,7 @@ components:
                 essere impostato a true.
               type: boolean
               example: true
-    DatiSA_00036:
+    DatiSA00036:
       description: >-
         Oggetto che riporta i dati per richiedere il documento DATI REDDITUALI SOCIETA DI PERSONE e per il documento DATI REDDITUALI IMPRESA INDIVIDUALE
       type: object
@@ -593,7 +593,7 @@ components:
               pattern: '^[A-M]\d{3}$'
               maxLength: 4
               example: I318
-    DatiSA_00047:
+    DatiSA00047:
       description: >-
         Oggetto che riporta i dati per richiedere il documento CONSISTENZA MEDIA
         PERSONALE
@@ -615,7 +615,7 @@ components:
           pattern: '^(19\d\d|20[0-9][0-9])$'
           maxLength: 4
           example: '2023'
-    DatiSA_00048:
+    DatiSA00048:
       description: >-
         Oggetto che riporta i dati per richiedere il documento COSTO COMPLESSIVO
         PERSONALE
@@ -637,7 +637,7 @@ components:
           pattern : '^(19\d\d|20[0-9][0-9])$'
           maxLength: 4
           example: '2023'
-    DatiSA_00050:
+    DatiSA00050:
       description: >-
         Oggetto che riporta i dati per richiedere il documento COMUNICAZIONE ANTIMAFIA
       type: object
@@ -659,7 +659,7 @@ components:
           minItems: 1
           items:
             $ref: '#/components/schemas/Soggetto_00050'
-    DatiSA_00899:
+    DatiSA00899:
       description: >-
         Oggetto che riporta dati generici dell' Operatore Economico
       type: object
@@ -694,10 +694,10 @@ components:
         datiRichiesta:
           description: dati necessari alla richiesta specifici per tipoDocumento inviati in formato json.
           oneOf:
-            - $ref: '#/components/schemas/DatiSA_00004'
-            - $ref: '#/components/schemas/DatiSA_00020'
-            - $ref: '#/components/schemas/DatiSA_00036'
-            - $ref: '#/components/schemas/DatiSA_00047'
-            - $ref: '#/components/schemas/DatiSA_00048'
-            - $ref: '#/components/schemas/DatiSA_00050'
-            - $ref: '#/components/schemas/DatiSA_00899'        
+            - $ref: '#/components/schemas/DatiSA00004'
+            - $ref: '#/components/schemas/DatiSA00020'
+            - $ref: '#/components/schemas/DatiSA00036'
+            - $ref: '#/components/schemas/DatiSA00047'
+            - $ref: '#/components/schemas/DatiSA00048'
+            - $ref: '#/components/schemas/DatiSA00050'
+            - $ref: '#/components/schemas/DatiSA00899'        
