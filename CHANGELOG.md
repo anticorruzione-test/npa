@@ -776,7 +776,9 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 ## documento-specifiche-servizi-npa.md 
 * Inserito paragrafo 11.3 Lista tipi documento richiedibili agli enti certificanti
-
+## Specifiche Interfacce
+* specifiche-servizi-fvoe-fva.yaml:
+  * modificato esempio operazione richiedi-documenti
 ### Tipologiche
 * statoAutorizzazione.json
   * aggiunto il valore: 05
@@ -793,7 +795,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 ### Modello Dati 
 * modello-dati-fvoe-fva.yaml:
   * modificato Soggetto_00050 - nel "luogo di nascita" inserita una regex per controllare i comuni italiani e gli stati esteri
-  * modificato datiSA_00050 - Inserito il codice prefettura e altriSoggetti
+  * modificato datiSA_00050 - Inserito il codice prefettura e altriSoggetti 
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
