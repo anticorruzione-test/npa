@@ -331,7 +331,7 @@ components:
           description: identificativo univoco del documento 
           type: string
           example: "507f1f77bcf86cd799439011"
-    Soggetto_00050:
+    Soggetto00050:
       description: Oggetto che riporta i dati del soggetto
       type: object
       additionalProperties: false
@@ -384,7 +384,7 @@ components:
             impostato a true.
           type: boolean
           example: true
-    DatiNominativo_00004:
+    DatiNominativo00004:
       description: Oggetto che riporta i dati del soggetto
       type: object
       additionalProperties: false
@@ -455,7 +455,7 @@ components:
               pattern: '^[A-Z]\d{3}$'
               maxLength: 4
               example: H501
-    DatiAll_00004:
+    DatiAll00004:
       description: >-
         Oggetto che riporta i dati per richiedere il documento CERTIFICATO DEL
         CASELLARIO GIUDIZIARIO (INTEGRALE)
@@ -466,7 +466,7 @@ components:
         - AltriDati
       properties:
         DatiNominativo:
-            $ref: '#/components/schemas/DatiNominativo_00004'
+            $ref: '#/components/schemas/DatiNominativo00004'
         AltriDati:
           type: object
           additionalProperties: false
@@ -493,8 +493,8 @@ components:
           type: array
           minItems: 1
           items:
-            $ref: '#/components/schemas/DatiAll_00004'
-    DatiNominativo_00020:
+            $ref: '#/components/schemas/DatiAll00004'
+    DatiNominativo00020:
       description: Oggetto che riporta i dati del soggetto
       type: object
       additionalProperties: false
@@ -553,7 +553,7 @@ components:
         - AltriDati
       properties:
         DatiNominativo:
-          $ref: '#/components/schemas/DatiNominativo_00020'
+          $ref: '#/components/schemas/DatiNominativo00020'
         AltriDati:
           type: object
           additionalProperties: false
@@ -658,7 +658,7 @@ components:
           type: array
           minItems: 1
           items:
-            $ref: '#/components/schemas/Soggetto_00050'
+            $ref: '#/components/schemas/Soggetto00050'
     DatiSA00899:
       description: >-
         Oggetto che riporta dati generici dell' Operatore Economico
