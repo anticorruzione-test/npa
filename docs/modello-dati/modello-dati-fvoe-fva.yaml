@@ -475,7 +475,7 @@ components:
           properties:
             LinguaTedesca:
               description: >-
-                indica se il soggetto é da verificare. In questa release DEVE
+                indica la lingua con cui produrre il documento. In questa release DEVE
                 essere impostato a true.
               type: boolean
               example: true
