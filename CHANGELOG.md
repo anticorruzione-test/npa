@@ -771,7 +771,10 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * aggiornata codiceScheda.json
 
 </details>
-	
+
+# Note di rilascio del 02/08/2024 
+### Tipologiche
+
 # Note di rilascio del dd/mm/aaaa 
 
 ## documento-specifiche-servizi-npa.md 
