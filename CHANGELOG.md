@@ -795,7 +795,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * statoAutorizzazione.json
   * aggiunto il valore: 05
 * tipoDocumento.json:
-  * aggiunti i seguenti valori: 00008 00042
+  * aggiunti i seguenti valori: 00008 00042 00010 e 00011
 * errori.json
   * aggiunto il valore : FVX58
 * tipoPrefettura.json
