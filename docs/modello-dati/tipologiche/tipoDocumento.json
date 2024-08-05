@@ -47,6 +47,22 @@
       "dataInizio": null,
       "dataFine": null
 },{
+      "codice":"00010",
+      "descrizione": {
+        "it": "Verifica esistenza prospetto informativo disabili",
+        "en": "Verifica esistenza prospetto informativo disabili"
+    },
+      "dataInizio":null,
+      "dataFine":null
+},{
+      "codice":"00011",
+      "descrizione": {
+        "it": "Verifica esistenza prospetto Rapporto situazione personale",
+        "en": "Verifica esistenza prospetto Rapporto situazione personale"
+    },
+      "dataInizio":null,
+      "dataFine":null
+},{
       "codice": "00024",
       "descrizione": {
         "it": "DURC",
