@@ -794,6 +794,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * Pubblicazione contenuti su GitHub: 12/09/2024
 * Rilascio in Qualificazione: 24/09/2024
 * Rilascio in Esercizio: 24/10/2024
+  
 **la nota di rilascio potrà essere integrata successivamente**
     
 ## documento-specifiche-servizi-npa.md 
@@ -921,6 +922,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * Pubblicazione contenuti su GitHub: 17/10/2024
 * Rilascio in Qualificazione: 29/10/2024
 * Rilascio in Esercizio: 29/11/2024
+  
 **la nota di rilascio potrà essere integrata successivamente**
     
 ### Modello Dati 
