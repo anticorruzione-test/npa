@@ -936,10 +936,6 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * aggiornato flusso di orchestrazione prevedendo per le P1* la possibilità di ammettere anche direttamente una A1*
 
 ### Regole
-* issue 1145: eliminata la REG13 da tutte le schede
-* issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
-* P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
-	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
 * ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
 * CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
 
