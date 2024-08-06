@@ -772,7 +772,12 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 </details>
 
-# Note di rilascio del 02/08/2024 
+# Note di rilascio del 02/08/2024 (Changelog-01)
+## Date di Rilascio
+* Pubblicazione specifiche: già pubblicate su github
+* Qualificazione: 07/08/2024
+* Esercizio: 08/08/2024
+  
 ### Tipologiche
 * motivoEsclusioneOrdinarioSpeciale.json, fattispecieTracciabilità.json, motivoEsclusioneConcessione.json:
 	* aggiunta la voce "Appalti Difesa e Sicurezza soggetti al D. Lgs 208/2011"
@@ -784,8 +789,13 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 ### Orchestratore
 * modificata la colonna includeESPD a "NO" per la scheda P3_1
 
-# Note di rilascio del dd/mm/aaaa 
-
+# Note di rilascio del 06/08/2024 (Changelog-02)
+## Date di Rilascio
+* Pubblicazione specifiche: 12/09/2024
+* Qualificazione: 24/09/2024
+* Esercizio: 24/10/2024
+**NOTA: la nota di rilascio potrà essere integrata successivamente**
+    
 ## documento-specifiche-servizi-npa.md 
 * Inserito paragrafo 11.3 Lista tipi documento richiedibili agli enti certificanti
 ## Specifiche Interfacce
@@ -797,7 +807,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * tipoDocumento.json:
   * aggiunti i seguenti valori: 00008 00042 00010 e 00011
 * errori.json
-  * aggiunto il valore : FVX58
+  * aggiunto il valore : FVX58, REG111
 * tipoPrefettura.json
   * nuova tipologica utilizzata per la scelta della prefettura nella compilazione della richiesta del 00001-Comunicazione Antimafia
 * enteCertificante.json
@@ -809,6 +819,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
   * modificato Soggetto_00050 - nel "luogo di nascita" inserita una regex per controllare i comuni italiani e gli stati esteri
   * modificato DatiSA_00050 - Inserito il codice prefettura e altriSoggetti .
   * modificato il nome dei modelli dati utlizzato per richiedere i documenti agli enti certificanti. Rimosso il carattere "_"
+* modello-dati-npa.yaml: inserite le nuove schede
 ### Schede 
 * issue 853: 
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
@@ -886,17 +897,22 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modello-dati-schede-A3_4.yaml: resi obbligatori gli oggetti: datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto,datiBaseStrumentiProcedura,datiBaseSubappalti
 * modello-dati-schede-A4.yaml: resi obbligatori gli oggetti: numeroOfferteAmmesse,datiBaseRisultatoProcedura,datiBaseAggiudicazioneAppalto
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
+* modello-dati-schede-ISDA1.yaml,modello-dati-schede-ISDA2.yaml,modello-dati-schede-S0.yaml,modello-dati-schede-CSDA1.yaml,modello-dati-schede-CSDA2.yaml: nuove schede per la gestione dello SDA
+* modello-dati-schede-P7_2.yaml: inserito identificativo per lo SDA
+* modello-dati-schede-CM1.yaml,modello-dati-schede-CM2.yaml,modello-dati-schede-AD5.yaml,modello-dati-schede-P5.yaml: modificata la cardinalità del campo cupLotto
 
   
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*.
-* **TODO**
+* inserite le informazioni per gestire il processo delle nuove schede SDA (ISDA1, ISDA2, S0, CSDA1, CSDA2)
 
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
 	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
+* ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
+* CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
 
 # Note di rilascio Revisione Profili del dd/mm/aaaa 
 
