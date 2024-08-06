@@ -827,8 +827,6 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* modello-dati-schede-P6.2.yaml: reso obbligatorio il quadroEconomicoStandard
 * issue 1151:
 	* modello-dati-schede-dati-comuni.yaml: per le schede P1_23 e P2_23 spostato il campo contrattiDisposizioniParticolari dall'oggetto appalto all'oggetto lotti, come per tutte le altre schede
-* modello-dati-schede-AD4.yaml, modello-dati-schede-A3_3.yaml, modello-dati-schede-P5.yaml, modello-dati-schede-dati-comuni.yaml:
-	* rinominato il campo relativo all’accordo quadro/convenzione cui si aderisce in "cigAccordoQuadroConvenzione"
 * modello-dati-schede-S4.yaml:
 	* modificata la descrizione della scheda
 * modello-dati-schede-PL1_*.yaml:
