@@ -798,9 +798,11 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
     
 ## documento-specifiche-servizi-npa.md 
 * Inserito paragrafo 11.3 Lista tipi documento richiedibili agli enti certificanti
+  
 ## Specifiche Interfacce
 * specifiche-servizi-fvoe-fva.yaml:
   * modificato esempio operazione richiedi-documenti
+    
 ### Tipologiche
 * statoAutorizzazione.json
   * aggiunto il valore: 05
@@ -905,6 +907,33 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*.
 * inserite le informazioni per gestire il processo delle nuove schede SDA (ISDA1, ISDA2, S0, CSDA1, CSDA2)
+
+### Regole
+* issue 1145: eliminata la REG13 da tutte le schede
+* issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
+* P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
+	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
+* ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
+* CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
+
+# Note di rilascio del 06/08/2024 (Changelog-03)
+**NOTA**
+* Pubblicazione contenuti su GitHub: 17/10/2024
+* Rilascio in Qualificazione: 29/10/2024
+* Rilascio in Esercizio: 29/11/2024
+**la nota di rilascio potrà essere integrata successivamente**
+    
+### Modello Dati 
+* modello-dati-npa.yaml: aggiunti i riferimenti alle nuove schede AOC nell'oggetto SchedaComunicaAppaltoType e RSOC, COOC nell'oggetto SchedaPostPubblicazioneType
+  
+### Schede 
+* modello-dati-schede-AOC.yaml,modello-dati-schede-RSOC.yaml,modello-dati-schede-COOC.yaml: nuove schede per la gestione degli OOCC
+* modello-dati-schede-A1*.yaml, modello-dati-schede-dati-comuni.yaml: reso facoltativo l'oggetto offertePresentate
+  
+## Orchestratore
+* inserite le informazioni per gestire il processo delle nuove schede OOCC (AOC, RSOC, COOC)
+* aggiornate le informazioni della S2 per gestire il nuovo flusso OOCC
+* aggiornato flusso di orchestrazione prevedendo per le P1* la possibilità di ammettere anche direttamente una A1*
 
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
