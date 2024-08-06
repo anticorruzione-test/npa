@@ -936,8 +936,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * aggiornato flusso di orchestrazione prevedendo per le P1* la possibilità di ammettere anche direttamente una A1*
 
 ### Regole
-* ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
-* CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
+* AOC.dmn, RSOC.dmn, COOC.dmn: nuove regole per la gestione degli OOCC
 
 # Note di rilascio Revisione Profili del dd/mm/aaaa 
 
