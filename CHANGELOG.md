@@ -835,7 +835,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modello-dati-schede-PL1_*.yaml:
 	* aggiunta l'anacForm con l'oggetto stazioniAppaltanti.
 * modello-dati-schede-PL2_7.yaml, modello-dati-schede-PL2_8.yaml, modello-dati-schede-PL2_9.yaml, modello-dati-schede-dati-comuni.yaml:
-	* aggiunto l'oggetto stazioniAppaltanti in anacForm.  **NOTA: verificare se è necessario aggiungere il controllo di coerenza con la SA del token: RISPOSTA SI**
+	* aggiunto l'oggetto stazioniAppaltanti in anacForm.
 * modello-dati-schede-AD5.yaml:
 	* eliminata l'obbligatorietà dell'oggetto datiBaseDocumenti e del campo url
 * modello-dati-schede-P2_19.yaml, modello-dati-schede-S2.yaml:
@@ -884,7 +884,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modello-dati-schede-P7_1_1.yaml, modello-dati-schede-P7_1_2.yaml, modello-dati-schede-P7_1_3.yaml, modello-dati-schede-P7_2.yaml:
 	* revisione schede:
  		* resi obbligatori gli oggetti: datiBaseContratto,datiBaseAggiudicazione,datiBaseAggiuntivi,contrattiDisposizioniParticolari.
- 		* aggiunto l'oggetto datiBaseStrumentiProcedura **NOTA aggiungere l'oggetto nel modello dati di atterraggio dell'estrattore**
+ 		* aggiunto l'oggetto datiBaseStrumentiProcedura
 * modello-dati-schede-AD2_25.yaml,modello-dati-schede-AD2_26.yaml,modello-dati-schede-AD2_27.yaml,modello-dati-schede-AD2_28.yaml, modello-dati-schede-AD4.yaml:
 	* revisione schede: reso obbligatorio l'oggetto datiBaseContratto
 * modello-dati-schede-AD3.yaml:
@@ -913,7 +913,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * issue 1145: eliminata la REG13 da tutte le schede
 * issue 1016, 1144, 1194, 1310: eliminata la REG67 dalle schede dove non è presente il campo giustificazioneProceduraAccelerata
 * P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn:
-	* inserito controllo sul campo motivazioneCIG **NOTE inserire jsonPath nella collection estrattore a livello di appalto**
+	* inserito controllo sul campo motivazioneCIG
 * ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
 * CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
 
