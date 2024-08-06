@@ -773,10 +773,10 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 </details>
 
 # Note di rilascio del 02/08/2024 (Changelog-01)
-## Date di Rilascio
-* Pubblicazione specifiche: già pubblicate su github
-* Qualificazione: 07/08/2024
-* Esercizio: 08/08/2024
+**NOTA**
+* Pubblicazione contenuti su GitHub: già pubblicati
+* Rilascio in Qualificazione: 07/08/2024
+* Rilascio in Esercizio: 08/08/2024
   
 ### Tipologiche
 * motivoEsclusioneOrdinarioSpeciale.json, fattispecieTracciabilità.json, motivoEsclusioneConcessione.json:
@@ -790,11 +790,11 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modificata la colonna includeESPD a "NO" per la scheda P3_1
 
 # Note di rilascio del 06/08/2024 (Changelog-02)
-## Date di Rilascio
-* Pubblicazione specifiche: 12/09/2024
-* Qualificazione: 24/09/2024
-* Esercizio: 24/10/2024
-**NOTA: la nota di rilascio potrà essere integrata successivamente**
+**NOTA**
+* Pubblicazione contenuti su GitHub: 12/09/2024
+* Rilascio in Qualificazione: 24/09/2024
+* Rilascio in Esercizio: 24/10/2024
+**la nota di rilascio potrà essere integrata successivamente**
     
 ## documento-specifiche-servizi-npa.md 
 * Inserito paragrafo 11.3 Lista tipi documento richiedibili agli enti certificanti
