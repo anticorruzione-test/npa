@@ -44,7 +44,7 @@ satisfies aggiudicazione.datiBaseAccessibilita.accessibilita.codice = "n-inc-jus
 satisfies (count(aggiudicazione.offertePresentate) &gt; aggiudicazione.numeroOfferteAmmesse)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0nf57qi">
-          <text>{\"idTipologica\":\"errori\",\"codice\":\"REG47\"}"</text>
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG47\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0gn1gdf">
