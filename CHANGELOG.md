@@ -772,7 +772,9 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 </details>
 
-# Note di rilascio del 02/08/2024 (Changelog-01)
+<details>
+<summary><h1>Note di rilascio del 02/08/2024 (Changelog-01)</h1></summary>
+	
 **NOTA**
 * Pubblicazione contenuti su GitHub: già pubblicati
 * Rilascio in Qualificazione: 07/08/2024
@@ -788,8 +790,11 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* rimossa la richiesta di ESPD
 ### Orchestratore
 * modificata la colonna includeESPD a "NO" per la scheda P3_1
+  
+</details>
 
-# Note di rilascio del 06/08/2024 (Changelog-02)
+<details>
+<summary><h1>Note di rilascio del 06/08/2024 (Changelog-02)</h1></summary>
 **NOTA**
 * Pubblicazione contenuti su GitHub: 12/09/2024
 * Rilascio in Qualificazione: 24/09/2024
@@ -916,8 +921,11 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* inserito controllo sul campo motivazioneCIG
 * ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
 * CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
+</details>
 
-# Note di rilascio del 06/08/2024 (Changelog-03)
+<details>
+<summary><h1>Note di rilascio del 06/08/2024 (Changelog-03)</h1></summary>
+
 **NOTA**
 * Pubblicazione contenuti su GitHub: 02/10/2024
 * Rilascio in Qualificazione: 29/10/2024
@@ -939,6 +947,16 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 ### Regole
 * AOC.dmn, RSOC.dmn, COOC.dmn: nuove regole per la gestione degli OOCC
+</details>
+
+
+# Note di rilascio del dd/mm/aaaa 
+
+## Modello Dati
+
+### Regole
+
+
 
 # Note di rilascio Revisione Profili del dd/mm/aaaa 
 
