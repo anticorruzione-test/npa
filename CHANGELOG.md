@@ -795,6 +795,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 <details>
 <summary><h1>Note di rilascio del 06/08/2024 (Changelog-02)</h1></summary>
+
 **NOTA**
 * Pubblicazione contenuti su GitHub: 12/09/2024
 * Rilascio in Qualificazione: 24/09/2024
