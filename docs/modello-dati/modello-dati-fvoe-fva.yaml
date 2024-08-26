@@ -376,7 +376,7 @@ components:
         LuogoNascita_Soggetto:
           description: codice catastale del comune di nascita/stato di nascita estero
           type: string
-          pattern: '^(([A-M]\d{3}$)|Z\d{2}[1-9])'
+          pattern: '^(([A-M]\d{3}$)|(Z(?!0{3})\d{3}))'
           example: H501
         Soggetto_daVerificare:
           description: >-
