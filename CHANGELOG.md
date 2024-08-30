@@ -959,7 +959,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * ticket 55540: A1_32.dmn, A2_32.dmn, A1_35.dmn, A2_35.dmn: corretto errore di sintassi nella regola REG47
 * ticket 56076: P3_3.dmn, P3_4.dmn: eliminate le REG37 e REG38 perché i campi non sono presenti nel modello dati
 * ticket 56077: P6_2.dmn: eliminata la REG11 perché il campo non è presente nel modello dati
-
+* ticket 55503: P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_22.dmn,P1_23.dmn,P1_24.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_22.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn: corretto un errore di sintassi nella regola REG20
 
 # Note di rilascio Revisione Profili del dd/mm/aaaa 
 
