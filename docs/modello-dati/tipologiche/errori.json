@@ -1979,6 +1979,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG112",
+    "descrizione": {
+		"it": "Inserire almeno un elemento nella lista delle aggiudicazioni.",
+		"en": "Inserire almeno un elemento nella lista delle aggiudicazioni."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
