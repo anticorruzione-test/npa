@@ -2800,6 +2800,55 @@
      "dataFine": null
 },
 {
+   "codice":"FVC01",
+   "descrizione": {
+       "it": "Stato Richiesta Documento non presente",
+       "en": "Request Status Document not present",
+       "de": "Anforderungsstatusdokument nicht vorhanden"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},{
+   "codice":"FVC02",
+   "descrizione": {
+       "it": "Richiesta Documento non presente",
+       "en": "Request Document not present",
+       "de": "Anforderungsdokument nicht vorhanden"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX53",
+   "descrizione": {
+       "it": "Errore servizo esterno. Ricerca Notifiche - Non disponibile",
+       "en": "External service error. Notification search - Not available",
+       "de": "Externer Servicefehler. Nach Benachrichtigungen suchen - Nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX54",
+   "descrizione": {
+       "it": "Errore servizo esterno. Aggiorna Notifica - Non disponibile",
+       "en": "External service error. Update Notification - Not available",
+       "de": "Externer Servicefehler. Update-Benachrichtigung - Nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX55",
+   "descrizione": {
+       "it": "Dati inseriti non validi",
+       "en": "Invalid data entered",
+       "de": "Ungültige daten eingegeben"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
    "codice":"FVX58",
    "descrizione": {
        "it": "File Caricato Risulta Vuoto",
