@@ -789,6 +789,8 @@ components:
           type: string
           minLength: 8
           maxLength: 64  
+        idAppalto:
+          $ref: '#/components/schemas/AppaltoISDABaseType'
         idPianificazione:
           description: ID pianificazione
           type: string  
