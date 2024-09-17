@@ -10,8 +10,8 @@
 {
     "codice":"2",
     "descrizione": {
-		"it": "Rimozione",
-		"en": "Rimozione"
+		"it": "Conferma",
+		"en": "Conferma"
 		},
     "dataInizio":"2024-04-20T00:00:00Z",
     "dataFine":null
@@ -19,8 +19,26 @@
 {
     "codice":"3",
     "descrizione": {
-		"it": "Variazione",
-		"en": "Variazione"
+		"it": "Cancellazione",
+		"en": "Cancellazione"
+		},
+    "dataInizio":"2024-04-20T00:00:00Z",
+    "dataFine":null
+},
+{
+  "codice":"4",
+  "descrizione": {
+  "it": "Modifica",
+  "en": "Modifica"
+  },
+  "dataInizio":"2024-04-20T00:00:00Z",
+  "dataFine":null
+},
+{
+    "codice":"5",
+    "descrizione": {
+		"it": "Rivalutazione",
+		"en": "Rivalutazione"
 		},
     "dataInizio":"2024-04-20T00:00:00Z",
     "dataFine":null

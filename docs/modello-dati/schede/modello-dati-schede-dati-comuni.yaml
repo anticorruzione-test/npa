@@ -36,10 +36,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
-    StatoSDAEnum:
+    OperazioneSDAEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Stato dei partecipanti [statoSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoSDA.json)
+      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/operazioneSDA.json)
     GiustificazioneAggiudicazioneDirettaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -657,8 +657,8 @@ components:
           type: string
           minLength: 8
           maxLength: 64      
-        idAppalto:
-          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122).
+        idSDA:
+          description: Identificativo univoco dello SDA rilasciato da ANAC.
           type: string
           format: uuid 
     AppaltoP3BaseType:
@@ -789,7 +789,7 @@ components:
           type: string
           minLength: 8
           maxLength: 64  
-        idAppalto:
+        idSDA:
           $ref: '#/components/schemas/AppaltoISDABaseType'
         idPianificazione:
           description: ID pianificazione
