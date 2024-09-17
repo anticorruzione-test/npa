@@ -719,7 +719,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 <summary><h1>Note di rilascio del 21/05/2024 (in Esercizio il 30/05/2024)</h1></summary>
 
 ### Schede 
-* modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml:
+* modello-dati-schede-P2*.yaml, modello-dati-schede-P3*.yaml, modello-dati-schede-P7_3.yaml, modello-dati-schede-AD2*.yaml,modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-dati-comuni.yaml:
 	* reso obbligatorio l'oggetto datiBaseCPV e il campo cpvPrevalente
  * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** modello-dati-schede-CM1.yaml, modello-dati-schede-CM2.yaml, modello-dati-schede-ANN.yaml:
  	* Nuove schede CM1, CM2 e ANN per annullamento procedura (ANN) o comunicazione nuovo importo per appalti sopra (CM1) e sotto (CM2) i 5K euro.
@@ -730,7 +730,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modello-dati-schede-NAG.yaml: reso obbligatorio l'oggetto datiBaseRisultatoProcedura
 * modello-dati-schede-M2.yaml,modello-dati-schede-M2_40.yaml: reso obbligatorio l'oggetto datiBaseModificaContrattuale
 * modello-dati-schede-dati-comuni.yaml, modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-AD5.yaml, modello-dati-schede-P5.yaml:
-	*  Impostata la minLength a 8 sul codiceAppalto
+	*  Impostata la minLength a 8 sul codiceAppalto (si raccomanda l'adozione immediata per consentire l'enforcement rinviato a settembre)
   
 ## Modello Dati
  * **[PROCESSO DI ANNULLAMENTO PROCEDURA O COMUNICAZIONE NUOVO IMPORTO/CUP]** modello-dati-npa.yaml:
@@ -817,12 +817,14 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
   * aggiunti i seguenti valori: 00008 00042 00010 e 00011
 * errori.json
   * aggiunto il valore : FVX58, REG111
+  * aggiunta la REG113
 * tipoPrefettura.json
   * nuova tipologica utilizzata per la scelta della prefettura nella compilazione della richiesta del 00001-Comunicazione Antimafia
 * enteCertificante.json
   * aggiunti i seguenti valori : MINLAV ISPLAV
 * erroriEC.json
   * nuova tipologica utilizzata per la trascodifica degli errori provenienti dagli enti certificanti.
+* aggiunta la tipologica statoSDA.json
     
 ### Modello Dati 
 * modello-dati-fvoe-fva.yaml:
@@ -857,6 +859,15 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
    	* oggetto parita di genere: aggiunto il flag ulterioriMisurePremiali
    	* Reso obbligatorio il campo quadroEconomicoStandardRideterminato dell'oggetto ModificaContrattualeType
    	* Resi obbligatori gli importi del quadroEconomicoStandardRideterminato
+  * aggiunto l'enum statoSDAEnum utilizzato nella scheda S0
+  * aggiunto l'enum OperazioneSDAEnum utilizzato nella scheda S0
+  * In ComunicazioneType modificata la cardinalità del campo cup
+  * aggiunto l'oggetto AppaltoISDABaseType utilizzato nelle schede ISDA1 e ISDA2
+  * aggiunto l'oggetto LottoISDABaseType utilizzato nelle schede ISDA1 e ISDA2
+  * aggiunto l'oggetto DatiBaseStrumentiProceduraSDAType utilizzato nella scheda ISDA2
+  * aggiunto l'oggetto DatiBaseStrumentiProceduraCSDAType utilizzato nella scheda CSDA2
+  * aggiunto l'oggetto DatiBaseDurataCSDAType utilizzato nella scheda CSDA2
+  * modificato l'oggetto AppaltoP7BaseType: aggiunta la proprietà idAppalto
 * modello-dati-schede-A3_6.yaml, modello-dati-schede-AD3.yaml:
 	* inserito il quadro economico delle concessioni
 * modello-dati-schede-AD1_28.yaml, modello-dati-schede-AD2_28.yaml:
@@ -908,12 +919,13 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * modello-dati-schede-A7_1_2.yaml: reso obbligatorio l'oggetto: datiBaseAggiudicazioneAppalto
 * modello-dati-schede-ISDA1.yaml,modello-dati-schede-ISDA2.yaml,modello-dati-schede-S0.yaml,modello-dati-schede-CSDA1.yaml,modello-dati-schede-CSDA2.yaml: nuove schede per la gestione dello SDA
 * modello-dati-schede-P7_2.yaml: inserito identificativo per lo SDA
-* modello-dati-schede-CM1.yaml,modello-dati-schede-CM2.yaml,modello-dati-schede-AD5.yaml,modello-dati-schede-P5.yaml: modificata la cardinalità del campo cupLotto
+* #48952 modello-dati-schede-CM1.yaml,modello-dati-schede-CM2.yaml,modello-dati-schede-AD5.yaml,modello-dati-schede-P5.yaml: modificata la cardinalità del campo cupLotto e del campo cup
 
   
 ## Orchestratore
 * modificata a sì la colonna includeAnacForm per le schede PL1_*.
 * inserite le informazioni per gestire il processo delle nuove schede SDA (ISDA1, ISDA2, S0, CSDA1, CSDA2)
+* aggiunte schede ISDA1, ISDA2, S0, CSDA1, CSDA2
 
 ### Regole
 * issue 1145: eliminata la REG13 da tutte le schede
@@ -968,7 +980,8 @@ A1_29.dmn,A1_30.dmn,A1_31.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A1_36.dmn,
 
 ### Orchestratore
 * aggiunto il valore 713 nella colonna flussoAppartenenza
-  
-# Note di rilascio Revisione Profili del dd/mm/aaaa 
 
-## Modello Dati
+<summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
+* Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
+Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
+

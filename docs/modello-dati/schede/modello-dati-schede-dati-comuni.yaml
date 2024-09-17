@@ -36,6 +36,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
+    StatoSDAEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+      description: Stato dei partecipanti [statoSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/statoSDA.json)
     GiustificazioneAggiudicazioneDirettaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -262,8 +266,10 @@ components:
           format: double
         cup:
           description: Cup
-          type: string
-          pattern: ^[a-zA-Z0-9]{15}$
+          type: array
+          items:
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$
     AnnullamentoType:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
@@ -650,7 +656,11 @@ components:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64            
+          maxLength: 64      
+        idAppalto:
+          description: Identificativo univoco dell' Appalto definito da ANAC. (A UUID specified by FC4122).
+          type: string
+          format: uuid 
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
@@ -771,7 +781,7 @@ components:
     AppaltoP7_2Type:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
+      required: [categorieMerceologiche,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
       additionalProperties: false
       properties:
         codiceAppalto:
