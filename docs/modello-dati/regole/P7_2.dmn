@@ -107,7 +107,7 @@ satisfies lotto.datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte != null and
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1232tet">
-        <description>REG113: se il campo condizioniNegoziata.codice=46(SDA) allora il campo idAppalto rilasciato da ISDA1 e ISDA2 deve essere obbligatoriamente valorizzato.</description>
+        <description>REG113: se il campo condizioniNegoziata.codice=46(SDA) allora il campo idSDA rilasciato da ISDA1 e ISDA2 deve essere obbligatoriamente valorizzato.</description>
         <inputEntry id="UnaryTests_16cad0j">
           <text></text>
         </inputEntry>
