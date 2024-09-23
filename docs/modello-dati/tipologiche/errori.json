@@ -2896,4 +2896,74 @@
    },
    "dataInizio":null,
    "dataFine":null
+},
+{
+   "codice":"FVX60",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Inizializza Sotto Fascicoli - Non Disponibile",
+       "en": "External Service Error. Initialize Under Issues - Not Available",
+       "de": "Externer Servicefehler. Unter „Probleme“ initialisieren – nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX61",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Richiedi Documento - Non Disponibile",
+       "en": "External Service Error. Request Document - Not Available",
+       "de": "Externer Servicefehler. Dokument anfordern – nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX62",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Inizializza Fascicoli FVQOE - Non Disponibile",
+       "en": "External Service Error. Initialize FVQOE Files - Not Available",
+       "de": "Externer Servicefehler. FVQOE-Dateien initialisieren – nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+	{
+   "codice":"FVX63",
+   "descrizione": {
+       "it": "Errore Servizio esterno. Ricerca Richieste Documento - Non Disponibile",
+       "en": "External Service Error. Search Document Requests - Not Available",
+       "de": "Externer Servicefehler. Dokumentanfragen durchsuchen – nicht verfügbar"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX64",
+   "descrizione": {
+       "it": "Dati Richiesta non validi",
+       "en": "Invalid request data",
+       "de": "Ungültige anforderungsdaten"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX65",
+   "descrizione": {
+       "it": "Codice Dati Richiesta non supportati",
+       "en": "Code Request Data not supported",
+       "de": "Codeanforderungsdaten werden nicht unterstützt"
+   },
+   "dataInizio":null,
+   "dataFine":null
+},
+{
+   "codice":"FVX66",
+   "descrizione": {
+       "it": "Codice Tipo Documento non supportati",
+       "en": "Document Type Code not supported",
+       "de": "Dokumenttypcode wird nicht unterstützt"
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
