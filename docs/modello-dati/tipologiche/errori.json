@@ -1592,6 +1592,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG68_1",
+    "descrizione": {
+		"it": "il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
+		"en": "il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG69",
     "descrizione": {
 		"it": "Non è stato indicato il valore dell’importo componente lavori nel quadro economico delle concessioni",
