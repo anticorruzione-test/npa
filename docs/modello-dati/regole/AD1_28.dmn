@@ -83,45 +83,6 @@ satisfies aggiudicazione.datiBaseAccessibilita.accessibilita.codice = "n-inc-jus
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG33\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1ye79l7">
-        <description>REG34: Importo Lavori: se l'oggetto del contratto è "works" deve essere indicato un importo maggiore di 0.</description>
-        <inputEntry id="UnaryTests_1et0397">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_19c8er9">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.datiBase.oggettoContratto.codice = "works" and (aggiudicazione.quadroEconomicoStandard.impLavori = null or aggiudicazione.quadroEconomicoStandard.impLavori = 0)</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1homh6v">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG34\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_1c1lfik">
-        <description>REG35: Importo Servizi: se l'oggetto del contratto è "services" deve essere indicato un importo maggiore di 0.</description>
-        <inputEntry id="UnaryTests_0zqh73a">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0nhu6iu">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.datiBase.oggettoContratto.codice = "services" and (aggiudicazione.quadroEconomicoStandard.impServizi = null or aggiudicazione.quadroEconomicoStandard.impServizi = 0)</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_17vjfvq">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG35\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_1eay078">
-        <description>REG36: Importo Forniture: se l'oggetto del contratto è "supplies" deve essere indicato un importo maggiore di 0.</description>
-        <inputEntry id="UnaryTests_0p4dsvp">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1g7jg4l">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies aggiudicazione.datiBase.oggettoContratto.codice = "supplies" and (aggiudicazione.quadroEconomicoStandard.impForniture = null or aggiudicazione.quadroEconomicoStandard.impForniture = 0)</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1hyh5lh">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG36\"}"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_0rnx8fl">
         <description>REG52: Non è stato inserito l’importo dell’aggiudicatario</description>
         <inputEntry id="UnaryTests_0zvb2ie">
@@ -151,13 +112,25 @@ satisfies some partecipante in aggiudicazione.partecipanti satisfies partecipant
       <rule id="DecisionRule_0f2k00t">
         <description>REG68: il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara</description>
         <inputEntry id="UnaryTests_06ezqke">
-          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and (appalto.datiBaseProcedura.tipoProcedura.codice != "neg-wo-call" and appalto.datiBaseProcedura.tipoProcedura.codice != "" ) and (appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta!= null and appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta!= "")</text>
+          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and (appalto.datiBaseProcedura.tipoProcedura.codice != "neg-wo-call" and appalto.datiBaseProcedura.tipoProcedura.codice != "" ) and (appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta != null and count(appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta)&gt;0 and (some giustificazione in appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta satisfies giustificazione.codice != ""))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0uvdogq">
           <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_14yl3sg">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG68\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0s1379r">
+        <description>REG68_1: il campo giustificazione aggiudicazione diretta è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara</description>
+        <inputEntry id="UnaryTests_0i5ckzd">
+          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and (appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call" and appalto.datiBaseProcedura.tipoProcedura.codice != "" ) and (appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta = null or count(appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta)&lt;0 or (every giustificazione in appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta satisfies giustificazione.codice = ""))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yuxiqo">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11dwebq">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG68_1\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_18hx927">
