@@ -999,6 +999,17 @@ errori.json: Aggiunto errore REG68_1
   * P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn: corretta la sintassi della regola REG106 per considerare anche l'orario
   * P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
   * P6_1.dmn,P6_2.dmn: corretta la sintassi della regola REG105 per considerare anche l'orario
+ 
+# Note di rilascio del 10/02/2024
+
+## Modello Dati
+
+### Regole
+* ticket 55650, 59540, 59541, 59556:
+  * P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn: corretta la sintassi della regola REG1
+
+* ticket 59350:
+  * P1_23.dmn,P1_24.dmn: eliminate le REG98 e REG99 inserite per errore nell'ultimo rilascio
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
