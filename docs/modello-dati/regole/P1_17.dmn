@@ -44,7 +44,7 @@
         <inputEntry id="UnaryTests_P1_17_0056">
           <text>some lotto in lotti
 satisfies (some categoria in lotto.categorieMerceologiche
-satisfies list contains(appalto.categorieMerceologiche, categoria))</text>
+satisfies not(list contains(appalto.categorieMerceologiche, categoria)))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0057">
           <text></text>
