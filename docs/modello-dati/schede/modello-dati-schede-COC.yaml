@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda COC - Scheda di conclusione per gli Organi Costituzionali.
+  version: 1.0.0
+components:
+  schemas:
+    ConclusioneType:
+      description: Oggetto che riporta i dati di conclusione.
+      type: object
+      additionalProperties: false
+      required: [aggiudicatario,dataInizio,dataUltimazione,importo]
+      properties:
+        aggiudicatario: 
+          description: idPartecipante tra quelli indicati nella scheda di elenco soggetti S2
+        dataInizio:
+          description: Data di inizio
+          type: string
+          format: date-time
+        dataUltimazione:
+          description: Data di ultimazione
+          type: string
+          format: date-time
+        importo: 
+          description: Importo delle somme liquidate
+          type: number
+          format: double
+    AnacFormCOCType:
+      description: Contiene tutti i dati di conclusione
+      type: object
+      additionalProperties: false
+      required: [cig, conclusione]      
+      properties: 
+        cig:
+          description: codice identificativo lotto
+          type: string      
+        conclusione:
+          $ref: '#/components/schemas/ConclusioneType'
+    SchedaCOCType:
+      description: Scheda di conclusione
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCOCType'
