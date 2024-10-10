@@ -8,6 +8,7 @@ components:
       description: categoria prevalente o scorporabile
       type: object
       additionalProperties: false
+      required: [categoria, tipo]
       properties:    
         categoria:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
@@ -16,20 +17,21 @@ components:
           type: string
           enum: ['PREVALENTE', 'SCORPORABILE'] 
     CpvType: 
-      description: cpv prevalente o scorporabile
+      description: cpv prevalente o secondaria
       type: object
       additionalProperties: false
+      required: [cpv, tipo]
       properties:    
         cpv:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum' 
         tipo: 
           description: tipo di categoria
           type: string
-          enum: ['PRIMARIA', 'SECONDARIA'] 
+          enum: ['PREVALENTE', 'SECONDARIA'] 
     SubappaltoType:
       description: Dati relativi ai subappalti
       type: object
-      required: [conferente,subappaltatore,impresaEstera,importoPresunto,categoria,cpv]
+      required: [conferente,subappaltatore,impresaEstera,importoSubappalto,categoria,cpv,oggetto]
       additionalProperties: false
       properties:    
         conferente:
@@ -44,8 +46,8 @@ components:
           type: string
         oggettoMl:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'         
-        importoPresunto:
-          description: Importo presunto Lavoro/ Servizio/Fornitura, subappalto
+        importoSubappalto:
+          description: Importo subappalto
           type: number
           format: double
         categoria:

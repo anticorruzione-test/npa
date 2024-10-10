@@ -10,7 +10,7 @@ components:
       required: [lotIdentifier,partecipanti,codIstat,datiBase,datiBaseCPV,categoria,datiBaseTerminiInvio,tipologiaAffidamento]
       properties:  
         lotIdentifier:
-          description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+          description: Id univoco del lotto generato dalla stazione appaltante
           type: string
         afferenteInvestimentiPNRR:
           description: L’appalto o concessione è afferente gli investimenti pubblici finanziati, in tutto o in parte, con le risorse previste dal PNRR (Piano Nazionale di Ripresa e Resilienza) e/o dal PNC (Piano nazionale per gli investimenti complementari)?
