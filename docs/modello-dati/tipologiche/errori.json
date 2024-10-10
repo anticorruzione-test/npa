@@ -2024,6 +2024,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG115",
+    "descrizione": {
+		"it": "Indicare una sola categoria di tipo prevalente.",
+		"en": "Indicare una sola categoria di tipo prevalente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG116",
+    "descrizione": {
+		"it": "Indicare una sola cpv di tipo prevalente.",
+		"en": "Indicare una sola cpv di tipo prevalente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
