@@ -2006,6 +2006,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG114",
+    "descrizione": {
+		"it": "Indicare l'aggiudicatario.",
+		"en": "Indicare l'aggiudicatario."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG114_1",
+    "descrizione": {
+		"it": "Deve essere indicato un solo aggiudicatario.",
+		"en": "Deve essere indicato un solo aggiudicatario."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
