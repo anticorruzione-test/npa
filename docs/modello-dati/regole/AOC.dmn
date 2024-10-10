@@ -19,58 +19,8 @@
         </inputExpression>
       </input>
       <output id="OutputClause_0ah2sls" name="Errore" typeRef="string" biodi:width="422" />
-      <rule id="DecisionRule_88a5iti">
-        <description>ERR100: Importo totale non consentito per l'Affidamento diretto &lt; 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.</description>
-        <inputEntry id="UnaryTests_1vksbpb">
-          <text>appalto.datiBase.importo != null and appalto.datiBase.importo &gt;= 5000</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1otf3vc">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_44yzvav">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"ERR100\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_0rnx8fl">
-        <description>REG52: Non è stato inserito l’importo dell’aggiudicatario</description>
-        <inputEntry id="UnaryTests_0zvb2ie">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_19btv0t">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies count(aggiudicazione.partecipanti)&gt;1 and (every partecipante in aggiudicazione.partecipanti satisfies (partecipante.importo = null or partecipante.importo &lt;= 0))</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_0v7k8hx">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG52\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_0e5c9ne">
-        <description>REG78: Indicare almeno un partecipante</description>
-        <inputEntry id="UnaryTests_1msdhew">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0lrh8vr">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies count(aggiudicazione.partecipanti)=0</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1aadsz9">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG78\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_15nadb3">
-        <description>REG100: Negli affidamenti diretti è consentito inserire un solo idPartecipante</description>
-        <inputEntry id="UnaryTests_179dmvv">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_08bqris">
-          <text>some aggiudicazione in aggiudicazioni satisfies count(distinct values(aggiudicazione.partecipanti.idPartecipante))&gt;1</text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_1rwfsf9">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG100\"}"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_16k7di5">
-        <description>REG112: La lista delle aggiudicazioni deve contenere almeno un elemento.</description>
+        <description>REG114: Indicare l'aggiudicatario.</description>
         <inputEntry id="UnaryTests_159spzo">
           <text></text>
         </inputEntry>
@@ -78,19 +28,19 @@ satisfies count(aggiudicazione.partecipanti)=0</text>
           <text>count(aggiudicazioni) &lt;= 0</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_06r7al1">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG112\"}"</text>
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG114\"}</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_0uf8m6e">
-        <description>REG101: indicare almeno uno dei campi di cui si richiede la modifica</description>
-        <inputEntry id="UnaryTests_1hc1990">
+      <rule id="DecisionRule_1ghygb9">
+        <description>REG114_1: Deve essere indicato un solo aggiudicatario.</description>
+        <inputEntry id="UnaryTests_197x1nd">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1a4e2bn">
-          <text>(aggiudicazioni.cup = null or aggiudicazioni.cup.isEmpty() or aggiudicazioni.cup.stream().allMatch(c -&gt; c = ""))</text>
+        <inputEntry id="UnaryTests_0avkz1u">
+          <text>count(aggiudicazioni) &gt; 1</text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_0jttif7">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG101\"}"</text>
+        <outputEntry id="LiteralExpression_0xqsmy9">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG114_1\"}</text>
         </outputEntry>
       </rule>
     </decisionTable>
