@@ -2042,6 +2042,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG117",
+    "descrizione": {
+		"it": "Il campo importo cauzione deve essere >= 0.",
+		"en": "Il campo importo cauzione deve essere >= 0."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
