@@ -94,7 +94,9 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$              
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoP3_4Type'  
+          $ref: '#/components/schemas/QuadroEconomicoP3_4Type' 
+        derogaQualificazione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoDerogaQlfEnum'
         datiBase:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:

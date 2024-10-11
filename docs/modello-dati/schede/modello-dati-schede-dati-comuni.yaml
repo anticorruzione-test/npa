@@ -251,7 +251,11 @@ components:
     SettoreEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/tipologiche/settore.json)      
+      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/tipologiche/settore.json)
+    MotivoDerogaQlfEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
     ComunicazioneType:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
@@ -1079,7 +1083,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'   
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+          $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     LottoPLBaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
@@ -1847,7 +1853,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'   
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBaseCPV:
           $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
@@ -1926,6 +1934,8 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/FinanziamentoType' 
+          derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
           datiBase:
             $ref: '#/components/schemas/DatiBaseLottoType'
           datiBaseCPV:
@@ -2026,6 +2036,8 @@ components:
             $ref: '#/components/schemas/FinanziamentoType' 
         tipoRealizzazione:
           $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
@@ -2125,7 +2137,9 @@ components:
           items:
             $ref: '#/components/schemas/FinanziamentoType' 
         tipoRealizzazione:
-          $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
+          $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'  
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
@@ -2441,7 +2455,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_25Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva generale - Articolo 3 bis della direttiva 89/665/CEE
       type: object
@@ -2508,7 +2524,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_26Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva settoriale - Articolo 3 bis della direttiva 92/13/CEE 
       type: object
@@ -2620,7 +2638,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_28Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva sulle concessioni. Articolo 3 bis delle direttive 89/665/CEE e 92/13/CEE
       type: object

@@ -93,7 +93,9 @@ components:
           description: L’appalto prevede opzioni o rinnovi?
           type: boolean    
         quadroEconomicoStandard:
-          $ref: '#/components/schemas/QuadroEconomicoP3_5Type' 
+          $ref: '#/components/schemas/QuadroEconomicoP3_5Type'
+        derogaQualificazione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoDerogaQlfEnum'        
         datiBase:
           allOf: 
           - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'          
