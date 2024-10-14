@@ -1146,7 +1146,9 @@ components:
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
-          type: string  
+          type: string
+        derogaQualificazione:
+          $ref: 'l#/components/schemas/MotivoDerogaQlfEnum'          
     LottoP_10Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
