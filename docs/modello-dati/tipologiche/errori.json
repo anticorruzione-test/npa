@@ -2049,6 +2049,56 @@
 	},
     "dataInizio":null,
     "dataFine":null
+}
+,
+{
+    "codice":"REG118",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €.",
+		"en": "Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG119",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 2 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 431000 €.",
+		"en": "Non è possibile inserire il codice 2 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 431000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG120",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 3 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da lavori o l'importo è superiore a 1 milione di euro.",
+		"en": "Non è possibile inserire il codice 3 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da lavori o l'importo è superiore a 1 milione di euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG121",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 4 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 750000 €.",
+		"en": "Non è possibile inserire il codice 4 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 750000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG122",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 5 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 1 milione di euro.",
+		"en": "Non è possibile inserire il codice 5 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 1 milione di euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
 },
 {
     "codice":"AUT01",
