@@ -72,6 +72,9 @@ components:
           type: boolean
         settore:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SettoreEnum'
+        accordoQuadro:
+          description: accordo quadro
+          type: boolean
         motivoUrgenza:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
