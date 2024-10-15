@@ -60,7 +60,7 @@ components:
     AppaltoAD3Type:
       type: object
       additionalProperties: false
-      required: [codiceAppalto,motivoUrgenza,datiBase,contrattoDifesa,settore]
+      required: [codiceAppalto,motivoUrgenza,datiBase,contrattoDifesa,settore,accordoQuadro]
       properties:   
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
