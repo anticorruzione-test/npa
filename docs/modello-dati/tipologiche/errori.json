@@ -2128,6 +2128,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG126",
+    "descrizione": {
+		"it": "L'importo indicato deve essere maggiore di zero.",
+		"en": "L'importo indicato deve essere maggiore di zero."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
