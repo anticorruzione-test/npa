@@ -1013,7 +1013,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 
 </details>
 
-
+<details>
 <summary><h1>Note di rilascio del 09/09/2024  (In Esercizio)</h1></summary>
 
 ## Modello Dati
@@ -1031,6 +1031,7 @@ A1_29.dmn,A1_30.dmn,A1_31.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A1_36.dmn,
 
 ### Orchestratore
 * aggiunto il valore 713 nella colonna flussoAppartenenza
+</details>
 
 # Note di rilascio del 01/10/2024 (In Esercizio)
 
