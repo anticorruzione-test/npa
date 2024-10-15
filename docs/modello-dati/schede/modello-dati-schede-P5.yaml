@@ -14,7 +14,7 @@ components:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 6
+          maxLength: 64
         settore:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SettoreEnum'
         cigAccordoQuadro:
