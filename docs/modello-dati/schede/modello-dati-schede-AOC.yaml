@@ -38,7 +38,8 @@ components:
         cpv:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CpvType'datiBaseContratto:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CpvType'
+        datiBaseContratto:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseContrattoType'    
         datiBaseTerminiInvio:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioSoloOraType' 
