@@ -1014,7 +1014,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 </details>
 
 
-# Note di rilascio del 09/09/2024  (In Esercizio)
+<summary><h1>Note di rilascio del 09/09/2024  (In Esercizio)</h1></summary>
 
 ## Modello Dati
 
