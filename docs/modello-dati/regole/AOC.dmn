@@ -43,6 +43,32 @@
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG114_1\"}</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_155fqzq">
+        <description>REG115: Indicare una sola categoria di tipo prevalente</description>
+        <inputEntry id="UnaryTests_0a6cf6z">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0txswp3">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies (count(aggiudicazione.categoria.tipo = "PREVALENTE")= 0 or count(aggiudicazione.categoria.tipo = "PREVALENTE")&gt;1)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1pbe4w6">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG115\"}</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mjokfn">
+        <description>REG116: Indicare una sola cpv di tipo prevalente</description>
+        <inputEntry id="UnaryTests_0tyer8q">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j7k2ku">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies (count(aggiudicazione.cpv.tipo = "PREVALENTE")= 0 or count(aggiudicazione.cpv.tipo = "PREVALENTE")&gt;1)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gsyyb4">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG116\"}</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_12xm90p">
         <description>REG118: Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €.</description>
         <inputEntry id="UnaryTests_0xe75lf">
