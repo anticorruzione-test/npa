@@ -256,6 +256,30 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
+    CategoriaType: 
+      description: categoria prevalente o scorporabile
+      type: object
+      additionalProperties: false
+      required: [categoria, tipo]
+      properties:    
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum' 
+        tipo: 
+          description: tipo di categoria
+          type: string
+          enum: ['PREVALENTE', 'SCORPORABILE'] 
+    CpvType: 
+      description: cpv prevalente o secondaria
+      type: object
+      additionalProperties: false
+      required: [cpv, tipo]
+      properties:    
+        cpv:
+          $ref: '#/components/schemas/CPVEnum' 
+        tipo: 
+          description: tipo di categoria
+          type: string
+          enum: ['PREVALENTE', 'SECONDARIA']       
     ComunicazioneType:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object

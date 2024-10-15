@@ -4,30 +4,6 @@ info:
   version: 1.0.0
 components:
   schemas:
-    CategoriaType: 
-      description: categoria prevalente o scorporabile
-      type: object
-      additionalProperties: false
-      required: [categoria, tipo]
-      properties:    
-        categoria:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
-        tipo: 
-          description: tipo di categoria
-          type: string
-          enum: ['PREVALENTE', 'SCORPORABILE'] 
-    CpvType: 
-      description: cpv prevalente o secondaria
-      type: object
-      additionalProperties: false
-      required: [cpv, tipo]
-      properties:    
-        cpv:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum' 
-        tipo: 
-          description: tipo di categoria
-          type: string
-          enum: ['PREVALENTE', 'SECONDARIA'] 
     SubappaltoType:
       description: Dati relativi ai subappalti
       type: object
@@ -53,11 +29,11 @@ components:
         categoria:
           type: array
           items:
-            $ref: '#/components/schemas/CategoriaType'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaType'
         cpv:
           type: array
           items:
-            $ref: '#/components/schemas/CpvType'   
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CpvType'   
     AnacFormSOCType:
       description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
       type: object
