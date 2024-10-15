@@ -43,7 +43,7 @@
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG114_1\"}</text>
         </outputEntry>
       </rule>
-	  <rule id="DecisionRule_12xm90p">
+      <rule id="DecisionRule_12xm90p">
         <description>REG118: Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €.</description>
         <inputEntry id="UnaryTests_0xe75lf">
           <text></text>
@@ -107,6 +107,19 @@ satisfies ((aggiudicazione.datiBase.oggettoContratto.codice != "services" or (so
         </inputEntry>
         <outputEntry id="LiteralExpression_0nsca0v">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG122\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13y0kv0">
+        <description>REG123: E’ obbligatorio indicare i cup associati al lotto se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
+        <inputEntry id="UnaryTests_00tvxli">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1euwt2z">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies aggiudicazione.afferenteInvestimentiPNRR = true and (is defined(aggiudicazione.cupLotto)=false or count(aggiudicazione.cupLotto) = 0)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0pnshr2">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG123\"}"</text>
         </outputEntry>
       </rule>
     </decisionTable>
