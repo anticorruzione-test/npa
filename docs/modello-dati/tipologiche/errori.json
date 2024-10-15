@@ -2101,6 +2101,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG123",
+    "descrizione": {
+		"it": "E’ obbligatorio indicare i cup associati al lotto se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC.",
+		"en": "E’ obbligatorio indicare i cup associati al lotto se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
