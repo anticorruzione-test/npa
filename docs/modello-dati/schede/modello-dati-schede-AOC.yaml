@@ -26,9 +26,7 @@ components:
         tipologiaAffidamento:
           description: Tipologia di affidamento
           type: string
-          enum: ['DIRETTO', 'SENZA ESPLETAMENTO DI GARA']
-        derogaQualificazione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoDerogaQlfEnum'          
+          enum: ['DIRETTO', 'SENZA ESPLETAMENTO DI GARA']                 
         datiBase:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoADType'
         categoria:
