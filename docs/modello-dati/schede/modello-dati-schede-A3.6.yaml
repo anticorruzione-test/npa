@@ -7,7 +7,7 @@ components:
     AppaltoA3_6Type:
       type: object
       additionalProperties: false
-      required: [relazioneUnicaSulleProcedure,codiceAppalto,datiBase, settore]      
+      required: [relazioneUnicaSulleProcedure,codiceAppalto,datiBase, settore,accordoQuadro]      
       properties: 
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
