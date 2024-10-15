@@ -148,6 +148,32 @@ satisfies aggiudicazione.afferenteInvestimentiPNRR = true and (is defined(aggiud
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG123\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1mjiq71">
+        <description>REG124: Indicare almeno uno tra codice istat e codice nuts.</description>
+        <inputEntry id="UnaryTests_066ktkc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qmp1dc">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies aggiudicazione.codIstat = "" and aggiudicazione.datiBaseContratto.codNUTS.codice = ""</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09z2d2o">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG124\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fws3we">
+        <description>REG125: Indicare solo uno tra codice istat e codice nuts.</description>
+        <inputEntry id="UnaryTests_1ru4b3p">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05dunpq">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies aggiudicazione.codIstat != "" and aggiudicazione.datiBaseContratto.codNUTS.codice != ""</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jgmwic">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG125\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_0k6u5e5" name="appalto" />
