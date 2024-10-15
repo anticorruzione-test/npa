@@ -29,6 +29,15 @@
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG116\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_03g054s">
+        <description>REG126: L'importo indicato deve essere maggiore di zero</description>
+        <inputEntry id="UnaryTests_0abn2pc">
+          <text>subappalto.importoSubappalto &lt;= 0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0goe4be">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG126\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="subappalto" />
