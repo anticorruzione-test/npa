@@ -7,7 +7,7 @@ components:
     AggiudicazioneAOCType:
       type: object
       additionalProperties: false
-      required: [lotIdentifier,afferenteInvestimentiPNRR,partecipanti,codIstat,datiBase,cpv,categoria,datiBaseTerminiInvio,tipologiaAffidamento]
+      required: [lotIdentifier,afferenteInvestimentiPNRR,partecipanti,datiBase,cpv,categoria,datiBaseTerminiInvio,tipologiaAffidamento]
       properties:  
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
