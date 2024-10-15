@@ -2110,6 +2110,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG124",
+    "descrizione": {
+		"it": "Indicare almeno uno tra codice istat e codice nuts.",
+		"en": "Indicare almeno uno tra codice istat e codice nuts."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG125",
+    "descrizione": {
+		"it": "Indicare solo uno tra codice istat e codice nuts.",
+		"en": "Indicare solo uno tra codice istat e codice nuts."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
