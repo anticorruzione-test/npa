@@ -1068,6 +1068,8 @@ errori.json: Aggiunto errore REG68_1
 	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn: corretta la sintassi della regola REG106 per considerare anche l'orario
 	* P7_2.dmn,PL1_8.dmn,PL2_8.dmn: corretta la sintassi della regola REG105 per considerare anche l'orario
 	* P1_18.dmn, P2_18.dmn, PL1_7.dmn, PL1_9.dmn, PL2_7.dmn, PL2_9.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
+ * ticket 60341:
+ 	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn: inserito Output name "Errore"
  
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
