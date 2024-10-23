@@ -1070,7 +1070,7 @@ errori.json: Aggiunto errore REG68_1
 	* P1_18.dmn, P2_18.dmn, PL1_7.dmn, PL1_9.dmn, PL2_7.dmn, PL2_9.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
 * ticket 60341:
  	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn: inserito Output name "Errore"
-ticket 55775:
+* ticket 55775:
   * M1.dmn, M2.dmn: corretta la sintassi delle regole REG54, REG55, REG56, REG61, REG62, REG63
   * M1_40.dmn, M2_40.dmn: corretta la sintassi delle regole REG54, REG55, REG56, REG61, REG62
  
