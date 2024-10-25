@@ -1049,7 +1049,7 @@ errori.json: Aggiunto errore REG68_1
   * P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
   * P6_1.dmn,P6_2.dmn: corretta la sintassi della regola REG105 per considerare anche l'orario
  
-# Note di rilascio del 10/03/2024 (In Esercizio)
+# Note di rilascio del 03/10/2024 (In Esercizio)
 
 ## Modello Dati
 
@@ -1059,6 +1059,23 @@ errori.json: Aggiunto errore REG68_1
 
 * ticket 59350:
   * P1_23.dmn,P1_24.dmn: eliminate le REG98 e REG99 inserite per errore nell'ultimo rilascio
+
+# Note di rilascio del 25/10/2024
+
+## Modello Dati
+
+### Regole
+* ticket 57024:
+	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn: corretta la sintassi della regola REG106 per considerare anche l'orario
+	* P7_2.dmn,PL1_8.dmn,PL2_8.dmn: corretta la sintassi della regola REG105 per considerare anche l'orario
+	* P1_18.dmn, P2_18.dmn, PL1_7.dmn, PL1_9.dmn, PL2_7.dmn, PL2_9.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
+* ticket 60341:
+ 	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn: inserito Output name "Errore"
+* ticket 55775:
+  * M1.dmn, M2.dmn: corretta la sintassi delle regole REG54, REG55, REG56, REG61, REG62, REG63
+  * M1_40.dmn, M2_40.dmn: corretta la sintassi delle regole REG54, REG55, REG56, REG61, REG62
+* ticket 60869:
+	* AD4.dmn: corretta la sintassi della regola REG53 per uniformarla alle altre AD*
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
