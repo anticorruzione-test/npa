@@ -1065,7 +1065,7 @@ errori.json: Aggiunto errore REG68_1
 ## Modello Dati
 
 ### Regole
-* ticket 57024:
+* ticket 55651:
 	* P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn: corretta la sintassi della regola REG106 per considerare anche l'orario
 	* P7_2.dmn,PL1_8.dmn,PL2_8.dmn: corretta la sintassi della regola REG105 per considerare anche l'orario
 	* P1_18.dmn, P2_18.dmn, PL1_7.dmn, PL1_9.dmn, PL2_7.dmn, PL2_9.dmn: corretta la sintassi delle regole REG105 e REG106 per considerare anche l'orario
