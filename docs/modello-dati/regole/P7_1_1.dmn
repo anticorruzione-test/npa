@@ -18,7 +18,7 @@
           <text>lotti</text>
         </inputExpression>
       </input>
-      <output id="Errore_AD1_10" label="Errore" typeRef="string" biodi:width="477" />
+      <output id="Errore_P7_1_1" name="Errore" typeRef="string" biodi:width="477" />
       <rule id="DecisionRule_1211n5w">
         <description>REG4_1: Tipologica motivazioneCIG: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
         <inputEntry id="UnaryTests_0k6f521">
@@ -88,7 +88,7 @@ satisfies lotto.datiBase.importo = null or lotto.datiBase.importo &lt;= 0</text>
         <inputEntry id="UnaryTests_0xbdfzz">
           <text>some lotto in lotti
 satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "" and
- date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito, "Z")) &lt;= date and time(string(today()))</text>
+ date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_01bit43">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG106\"}"</text>

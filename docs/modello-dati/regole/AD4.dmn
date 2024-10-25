@@ -73,13 +73,13 @@ satisfies count(aggiudicazione.partecipanti)&gt;1 and (every partecipante in agg
         </outputEntry>
       </rule>
       <rule id="DecisionRule_06v607c">
-        <description>REG53: Inserire l'importo.</description>
+        <description>REG53: In caso di ditta mandante l’importo non è previsto</description>
         <inputEntry id="UnaryTests_071t6vz">
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_1c5y6uc">
           <text>some aggiudicazione in aggiudicazioni
-satisfies some partecipante in aggiudicazione.partecipanti satisfies (partecipante.importo != null and partecipante.importo &lt; 0)</text>
+satisfies some partecipante in aggiudicazione.partecipanti satisfies partecipante.ruoloOE.codice="2" and (partecipante.importo != null or partecipante.importo &gt; 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1vtb5ha">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG53\"}"</text>
