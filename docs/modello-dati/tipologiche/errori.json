@@ -1522,8 +1522,8 @@
 {
     "codice":"REG61",
     "descrizione": {
-		"it": "Per i contratti pubblici di importo superiore alla soglia comunitaria, se la variante in corso d'opera eccede il 10 per cento dell'importo originario del contratto, è necessario fornire il link URL documentazione varianti in corso d'opera",
-		"en": "Per i contratti pubblici di importo superiore alla soglia comunitaria, se la variante in corso d'opera eccede il 10 per cento dell'importo originario del contratto, è necessario fornire il link URL documentazione varianti in corso d'opera"
+		"it": "Il campo urlDocumentazione è obbligatorio se si seleziona come motivo di modifica la voce 'mod-cir', 'Necessità di modifiche dovute a circostante non prevedibili da un committente diligente'.",
+		"en": "Il campo urlDocumentazione è obbligatorio se si seleziona come motivo di modifica la voce 'mod-cir', 'Necessità di modifiche dovute a circostante non prevedibili da un committente diligente'."
 	},
     "dataInizio":null,
     "dataFine":null
