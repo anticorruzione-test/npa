@@ -1077,6 +1077,10 @@ errori.json: Aggiunto errore REG68_1
 * ticket 60869:
 	* AD4.dmn: corretta la sintassi della regola REG53 per uniformarla alle altre AD*
 
+### Orchestratore
+* ticket 59196:
+	* corretto il riferimento alla scheda RSU1 per la scheda IR1
+
 ### Tipologiche
 * ticket 57847:
 	* errori.json: modificato l'errore REG61
