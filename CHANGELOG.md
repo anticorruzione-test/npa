@@ -1060,7 +1060,7 @@ errori.json: Aggiunto errore REG68_1
 * ticket 59350:
   * P1_23.dmn,P1_24.dmn: eliminate le REG98 e REG99 inserite per errore nell'ultimo rilascio
 
-# Note di rilascio del 25/10/2024
+# Note di rilascio del 29/10/2024
 
 ## Modello Dati
 
