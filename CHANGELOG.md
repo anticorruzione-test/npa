@@ -982,6 +982,9 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* aggiunto il campo facoltativo derogaQualificazione all'oggetto LottoP3_5Type
 	* aggiunto il campo accordoQuadro nell'oggetto appalto.datiBaseStrumentiProcedura
 * modello-dati-schede-AOC.yaml, modello-dati-schede-SOC.yaml, modello-dati-schede-COC.yaml: aggiunte le nuove schede per il flusso degli Organi Costituzionali
+* modello-dati-schede-ISDA2.yaml: 
+	* modificata la reference della properties AppaltoSDAType.datiBase verso DatiBaseAppaltoType
+	* modificata la reference della properties LottoSDAType.datiBase verso DatiBaseLottoType
 
 ### Tipologiche
 * errori.json: aggiunti gli errori REG117, REG118, REG119, REG120, REG121, REG122, REG123, REG124, REG125, REG126, ERR113
@@ -1012,6 +1015,8 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 * P1_10.dmn, P1_11.dmn, P1_12.dmn, P1_13.dmn, P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn, P2_12.dmn, P2_13.dmn, P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3_4.dmn,P3_5.dmn,P4*.dmn,P6*.dmn,P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn,AD1_25.dmn,AD2_25.dmn,AD1_26.dmn,AD2_26.dmn,AD1_28.dmn,AD2_28.dmn: aggiunte le regole REG118, REG119, REG120, REG121, REG122
 * AOC.dmn, SOC.dmn, COC.dmn: aggiunte le regole relative alle nuove schede per il flusso degli Organi Costituzionali
 * A1_29.dmn,A1_30.dmn,A1_33.dmn,A1_34.dmn, A2_29.dmn, A2_30.dmn,A2_33.dmn,A2_34.dmn, A3*.dmn, A4*.dmn: modificata la REG51 perché sia accettato solo un valore non nullo tra offertePresentate.offertaEconomica e offertePresentate.offertaInAumento
+* ISDA1.dmn: aggiunte le regole REG98 e REG99
+* ISDA2.dmn: aggiunte le regole REG98 e REG99
   
 </details>
 
