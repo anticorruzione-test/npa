@@ -5,7 +5,7 @@ I certificati ssl saranno rinnovati in base al seguente calendario
 - 18 luglio 2024 ore 17.00 aggiornamento ambiente di qualificazione e attestazione
 - 22 luglio 2024 ore 13.00 aggiornamento ambiente di esercizio
 
-I nuovi certificati sono disponibili nella sezione certificato SSL di questo repository ([/docs/certificato SSL](https://github.com/anticorruzione/npa/tree/main/docs/certificato%20SSL))
+I nuovi certificati sono disponibili nella sezione certificato SSL di questo repository ([/docs/certificato SSL](https://github.com/anticorruzione/npa/tree/changelog03/docs/certificato%20SSL))
 
 ## 2
 Come da [roadmap](/docs/specifiche-jws/roadmap.md), si ricorda a tutti i soggetti che sono stati autorizzati all’accesso temporaneo agli eService della Piattaforma Contratti Pubblici, che a partire dal 9 ottobre 2023, per poter accedere agli eService attualmente disponibili che implementano il contesto di sicurezza, dovranno effettuare l’onboarding su PDND attraverso la richiesta di iscrizione tra le piattaforme certificate come indicato nelle [regole tecniche](https://www.agid.gov.it/it/piattaforme/procurement/certificazione-componenti-piattaforme) emanate da AgID 
@@ -108,7 +108,7 @@ Durante l'esercizio della piattaforma NPA il processo di aggiornamento del model
 La cartella [modello-dati](/docs/modello-dati/) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
  ```shell
  StatoAppaltoEnum:
-   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
+   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog03/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
  ```
 ## Gestione del processo
 La gestione del processo di appalto è demandata al componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di gestire il flusso di informazioni (schede) che caratterizzano il singolo appalto. 
