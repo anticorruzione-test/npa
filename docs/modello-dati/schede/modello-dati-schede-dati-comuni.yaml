@@ -652,11 +652,7 @@ components:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64      
-        idSDA:
-          description: Identificativo univoco dello SDA rilasciato da ANAC.
-          type: string
-          format: uuid 
+          maxLength: 64
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
@@ -1116,7 +1112,11 @@ components:
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
-          type: string  
+          type: string
+        importo:
+          description: Importo lotto in €
+          type: string
+          format: decimal
     LottoP_10Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType

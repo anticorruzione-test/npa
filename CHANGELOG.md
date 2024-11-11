@@ -833,6 +833,8 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
   * modificato DatiNominativo_00004DatiNascita - nel "codice catasto comune italiano" modificata la regex per controllare i comuni italiani.
   * modificato il nome dei modelli dati utlizzato per richiedere i documenti agli enti certificanti. Rimosso il carattere "_"
 * modello-dati-npa.yaml: aggiunti i riferimenti alle nuove schede ISDA1,ISDA2 nell'oggetto SchedaComunicaAppaltoType e S0,CSDA1,CSDA2 nell'oggetto SchedaPostPubblicazioneType
+* rimosso il campo idSDA dall'oggetto AppaltoISDABaseType
+* aggiunto il campo importo all'oggetto LottoISDABaseType
   
 ### Schede 
 * issue 853: 
@@ -923,6 +925,9 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
   * inserito identificativo per lo SDA
   * all'interno della property "appalto" di AnacFormP7_2Type, è stato cambiato il riferimento adottato da AppaltoP7BaseType a AppaltoP7_2Type e perciò rimosso il campo "StrumentiSvolgimentoProcedure" dalla scheda P7_2 e sostituito con l'oggetto "datiBaseStrumentiProcedura"
 * #48952 modello-dati-schede-CM1.yaml,modello-dati-schede-CM2.yaml,modello-dati-schede-AD5.yaml,modello-dati-schede-P5.yaml: modificata la cardinalità del campo cupLotto e del campo cup
+* modello-dati-schede-P2_19,S2 modificata la descrizione delle schede
+* modello-dati-schede-S0 Aggiunto il campo lotIdentier 
+* modello-dati-schede-ISDA2 rimosso il campo lotIdentifier dall'oggetto LottoSDAType
 
   
 ## Orchestratore
@@ -937,6 +942,7 @@ Il rilascio in esercizio è pianificato per le ore 13:00 e avra' una durata di c
 	* inserito controllo sul campo motivazioneCIG
 * ISDA1.dmn, ISDA2.dmn, S0.dmn, CSDA1.dmn, CSDA2.dmn: nuove regole per la gestione dello SDA
 * CM1.dmn,CM2.dmn,AD5.dmn,P5.dmn: aggiornate le regole in coerenza con la nuova cardinalità del cupLotto
+* * ticket 59346 P7_2.dmn rimossa regola 113
 </details>
 
 <details>
