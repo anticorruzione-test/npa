@@ -1069,6 +1069,9 @@ errori.json: Aggiunto errore REG68_1
 # Note di rilascio del 29/10/2024
 
 ## Modello Dati
+### Schede
+* ticket 59340:
+	* modello-dati-schede-dati-comuni.yaml: rimosso il maximum sul campo offertaInAumento dell'oggetto OfferteType
 
 ### Regole
 * ticket 55651:
@@ -1082,6 +1085,8 @@ errori.json: Aggiunto errore REG68_1
   * M1_40.dmn, M2_40.dmn: corretta la sintassi delle regole REG54, REG55, REG56, REG61, REG62
 * ticket 60869:
 	* AD4.dmn: corretta la sintassi della regola REG53 per uniformarla alle altre AD*
+* ticket 59340:
+	* A1_29.dmn,A1_30.dmn,A1_33.dmn,A1_34.dmn, A2_29.dmn, A2_30.dmn,A2_33.dmn,A2_34.dmn, A3*.dmn, A4*.dmn: modificata la REG51 perché sia accettato solo un valore non nullo tra offertePresentate.offertaEconomica e offertePresentate.offertaInAumento 
 
 ### Orchestratore
 * ticket 59196:
