@@ -19,7 +19,8 @@ As new rules were added, a notice that was valid with SDK 1.9.x might not be val
 #### Schemas
 
 #### Fields
-Updated fields and nodes properties to allow for multiple direct award justifications. --- il bt-136 in dati comuni è già ripetibile
+* Updated fields and nodes properties to allow for multiple direct award justifications.
+   * il bt-136 in dati comuni è già ripetibile
 
 #### Notice type definitions
 
