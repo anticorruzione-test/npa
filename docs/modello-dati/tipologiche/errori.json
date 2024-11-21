@@ -1088,6 +1088,24 @@
     "dataFine":null
 },
 {
+    "codice": "ERR122",
+    "descrizione": {
+      "it": "Elenco partecipanti SDA trovato non attivo",
+      "en": "SDA participant list found inactive"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice": "ERR123",
+    "descrizione": {
+      "it": "idSDA non trovato",
+      "en": "idSDA not found"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",

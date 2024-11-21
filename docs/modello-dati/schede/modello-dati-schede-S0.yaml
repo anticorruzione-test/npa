@@ -22,11 +22,14 @@ components:
         anacForm:
           type: object
           additionalProperties: false
-          required: [idSDA,partecipanti]
+          required: [idSDA,partecipanti,lotIdentifier]
           properties:
             idSDA:
               description: id restituito dal servizio all'invio della scheda di istituzione SDA
-              type: string 
+              type: string
+            lotIdentifier:
+              description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+              type: string
             partecipanti:
               description: Dati relativi ai partecipanti allo SDA
               type: array

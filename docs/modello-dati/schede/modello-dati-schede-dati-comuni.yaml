@@ -683,11 +683,7 @@ components:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64      
-        idSDA:
-          description: Identificativo univoco dello SDA rilasciato da ANAC.
-          type: string
-          format: uuid 
+          maxLength: 64
         settore: 
           $ref: '#/components/schemas/SettoreEnum' 
     AppaltoP3BaseType:
@@ -1169,7 +1165,7 @@ components:
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
-          type: string          
+          type: string
     LottoP_10Type:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe LottoBaseType
