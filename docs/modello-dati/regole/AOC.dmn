@@ -49,8 +49,7 @@
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_0txswp3">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies (count(aggiudicazione.categoriaOC.tipo = "PREVALENTE")= 0 or count(aggiudicazione.categoriaOC.tipo = "PREVALENTE")&gt;1)</text>
+          <text>some aggiudicazione in aggiudicazioni satisfies (count(aggiudicazione.categoriaOC[item.tipo = "PREVALENTE"])=0 or count(aggiudicazione.categoriaOC[item.tipo = "PREVALENTE"])&gt;1)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1pbe4w6">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG115\"}"</text>
@@ -62,8 +61,7 @@ satisfies (count(aggiudicazione.categoriaOC.tipo = "PREVALENTE")= 0 or count(agg
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_0j7k2ku">
-          <text>some aggiudicazione in aggiudicazioni
-satisfies (count(aggiudicazione.cpvOC.tipo = "PREVALENTE")= 0 or count(aggiudicazione.cpvOC.tipo = "PREVALENTE")&gt;1)</text>
+		  <text>some aggiudicazione in aggiudicazioni satisfies (count(aggiudicazione.cpvOC[item.tipo = "PREVALENTE"])=0 or count(aggiudicazione.cpvOC[item.tipo = "PREVALENTE"])&gt;1)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1gsyyb4">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG116\"}"</text>
