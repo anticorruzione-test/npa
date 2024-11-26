@@ -1106,6 +1106,15 @@
     "dataFine":null
 },
 {
+    "codice":"ERR124",
+    "descrizione": {
+		"it": "codiceFiscaleSA non presente nella lista delle stazioni appaltanti della scheda di indizione",
+		"en": "codiceFiscaleSA non presente nella lista delle stazioni appaltanti della scheda di indizione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
