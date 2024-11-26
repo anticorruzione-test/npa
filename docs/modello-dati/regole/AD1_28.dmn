@@ -120,7 +120,7 @@ satisfies some partecipante in aggiudicazione.partecipanti satisfies partecipant
         <outputEntry id="LiteralExpression_14yl3sg">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG68\"}"</text>
         </outputEntry>
-      </rule>
+      </rule>      
       <rule id="DecisionRule_18hx927">
         <description>REG69: Quadro economico concessioni - Importo Lavori: se l'oggetto del contratto è "works" deve essere indicato un importo maggiore di 0.</description>
         <inputEntry id="UnaryTests_1jedlwh">
