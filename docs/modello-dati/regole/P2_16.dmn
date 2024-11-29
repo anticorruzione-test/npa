@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_P2_16" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="16.1.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_P2_16" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="16.6.2" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
   <decision id="P2_16" name="P2_16">
     <informationRequirement id="InformationRequirement_P2_16_01">
       <requiredInput href="#InputData_appalto_P2_16" />
@@ -422,6 +422,22 @@ satisfies lotto.paritaDiGenereGenerazionale != null and lotto.afferenteInvestime
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG28\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_P2_16_0031">
+        <description>REG29: Modalità Acquisizione: il campo è obbligatorio se l'oggetto del contratto è 'Servizi' o 'Forniture'.</description>
+        <inputEntry id="UnaryTests_P2_16_0094">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P2_16_0095">
+          <text>some lotto in lotti
+satisfies (lotto.datiBase.oggettoContratto.codice = "services" or lotto.datiBase.oggettoContratto.codice = "supplies") and (lotto.modalitaAcquisizione = null or lotto.modalitaAcquisizione = "" or lotto.modalitaAcquisizione.codice = null or lotto.modalitaAcquisizione.codice = "")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P2_16_0096">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P2_16_0032">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG29\"}"</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_P2_16_0032">
         <description>REG30: Prestazioni Comprese: il campo è obbligatorio se l'oggetto del contratto è "Lavori".</description>
         <inputEntry id="UnaryTests_P2_16_0097">
@@ -583,9 +599,9 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         </outputEntry>
       </rule>
       <rule id="DecisionRule_P2_16_0038">
-        <description>REG67: il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara</description>
+        <description>REG67: il campo giustificazione procedura accelerata è obbligatorio in caso di procedura accelerata</description>
         <inputEntry id="UnaryTests_P2_16_0115">
-          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call" and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
+          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.proceduraAccelerata != null and appalto.datiBaseProcedura.proceduraAccelerata and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P2_16_0116">
           <text></text>

@@ -422,6 +422,22 @@ satisfies lotto.paritaDiGenereGenerazionale != null and lotto.afferenteInvestime
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG28\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_P1_17_0031">
+        <description>REG29: Modalità Acquisizione: il campo è obbligatorio se l'oggetto del contratto è 'Servizi' o 'Forniture'.</description>
+        <inputEntry id="UnaryTests_P1_17_0094">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P1_17_0095">
+          <text>some lotto in lotti
+satisfies (lotto.datiBase.oggettoContratto.codice = "services" or lotto.datiBase.oggettoContratto.codice = "supplies") and (lotto.modalitaAcquisizione = null or lotto.modalitaAcquisizione = "" or lotto.modalitaAcquisizione.codice = null or lotto.modalitaAcquisizione.codice = "")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P1_17_0096">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P1_17_0032">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG29\"}"</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_P1_17_0032">
         <description>REG30: Prestazioni Comprese: il campo è obbligatorio se l'oggetto del contratto è "Lavori".</description>
         <inputEntry id="UnaryTests_P1_17_0097">
@@ -583,9 +599,9 @@ satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct valu
         </outputEntry>
       </rule>
       <rule id="DecisionRule_P1_17_0038">
-        <description>REG67: il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara</description>
+        <description>REG67: il campo giustificazione procedura accelerata è obbligatorio in caso di procedura accelerata</description>
         <inputEntry id="UnaryTests_P1_17_0115">
-          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call" and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
+          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.proceduraAccelerata != null and appalto.datiBaseProcedura.proceduraAccelerata and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_P1_17_0116">
           <text></text>
