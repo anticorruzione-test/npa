@@ -1118,7 +1118,14 @@ errori.json: Aggiunto errore REG68_1
   
 ### Regole
   * ticket 60143:
-  	* P1_10.dmn, P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn, P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn, P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3*.dmn, P4*.dmn, P6*.dmn: eliminata la REG29 
+  	* P1_10.dmn, P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn, P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn, P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3*.dmn, P4*.dmn, P6*.dmn: eliminata la REG29
+   * ticket 59349:
+   	* P1_16.dmn,P1_17.dmn, P1_18.dmn, P2_16.dmn, P2_17.dmn, P2_18.dmn, P3_4.dmn, P3_5.dmn, P6_1.dmn, P6_2.dmn: modificata la REG67
+
+### Tipologiche
+* ticket 59349:
+	* errori.json: modificato l'errore REG67
+
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
