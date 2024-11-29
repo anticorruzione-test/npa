@@ -1684,8 +1684,8 @@
 {
     "codice":"REG67",
     "descrizione": {
-		"it": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
-		"en": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+		"it": "il campo giustificazione procedura accelerata è obbligatorio se la procedura è accelerata.",
+		"en": "il campo giustificazione procedura accelerata è obbligatorio se la procedura è accelerata."
 	},
     "dataInizio":null,
     "dataFine":null
