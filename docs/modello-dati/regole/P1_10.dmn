@@ -400,22 +400,6 @@ satisfies lotto.paritaDiGenereGenerazionale != null and lotto.afferenteInvestime
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG28\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P1_10_0031">
-        <description>REG29: Modalità Acquisizione: il campo è obbligatorio se l'oggetto del contratto è 'Servizi' o 'Forniture'.</description>
-        <inputEntry id="UnaryTests_P1_10_0094">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P1_10_0095">
-          <text>some lotto in lotti
-satisfies (lotto.datiBase.oggettoContratto.codice = "services" or lotto.datiBase.oggettoContratto.codice = "supplies") and (lotto.modalitaAcquisizione = null or lotto.modalitaAcquisizione = "" or lotto.modalitaAcquisizione.codice = null or lotto.modalitaAcquisizione.codice = "")</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P1_10_0096">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P1_10_0032">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG29\"}"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_P1_10_0032">
         <description>REG30: Prestazioni Comprese: il campo è obbligatorio se l'oggetto del contratto è "Lavori".</description>
         <inputEntry id="UnaryTests_P1_10_0097">
