@@ -1096,7 +1096,7 @@ errori.json: Aggiunto errore REG68_1
 * ticket 61371:
   * fix estrazione dati REG68_1
 
-# Note di rilascio del 22/11/2024
+# Note di rilascio del 22/11/2024 (In Esercizio)
 
 ## Modello Dati
   
