@@ -1148,7 +1148,8 @@ errori.json: Aggiunto errore REG68_1
 * errori.json: aggiornata la descrizione della REG100
   
 ## Orchestratore
-
+* Nella riga relativa alla scheda SC1, nella colonna ‘scheda successiva’, eliminata la scheda SA1.
+  
 ### Regole
 * AD3.dmn, AD*_25.dmn, AD*_26.dmn, AD*_27.dmn: 
 	* aggiornata la REG100 per consentire più partecipanti in caso di accordo quadro.
