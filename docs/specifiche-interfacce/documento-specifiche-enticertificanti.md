@@ -9,7 +9,7 @@ Nel presente documento vengono riportati i tipi documento e il rispettivo modell
 
 Vengono riportati per ogni tipologia di documento richiedibile all'ente certificante il modello dati che arricchisce le informazioni, dove non presente, le informazioni implicitamente passate nella richiesta (Esempio Denominazione OE, Sede Legale, ecc) sono esaustive per l'eleborazione della richiesta per l'ente cerificante.
 
-Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https://github.com/anticorruzione-test/npa/tree/main/docs/modello-dati/modello-dati-fvoe-fva.yaml)
+Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https://github.com/anticorruzione-test/npa/tree/changelog04/docs/modello-dati/modello-dati-fvoe-fva.yaml)
 
 
 °Note: La lista verrà aggiornata in base alle nuove integrazioni 
@@ -30,7 +30,7 @@ Tutti i modelli dati sono presenti nel file [modello-dati-fvoe-fva.yaml](https:/
 | `23/01/2024`    | `00041` | `Dati reddituali impresa individuale` | `DatiSA_00036`| `Agenzia delle Entrate` |
 | `23/01/2024`    | `00899` | `Documento Generico OE`  | `DatiSA_00899` | `Operatore Econimico` |
 | `16/09/2024`    | `00042` | `Carichi Fiscali Pendenti` | `-` | `Agenzia delle Entrate` |
-| `In Progress`   | `00007` | `Iscrizione WhiteList antimafia` | `-` | `Min. Interno` |
+| `07/11/2024`    | `00007` | `Iscrizione WhiteList antimafia` | `-` | `Min. Interno` |
 | `02/08/2024`    | `00008` | `DURC emesso in corso di validità` | `-` | `Inps` |
 | `25/09/2024`    | `00010` | `Verifica esistenza prospetto informativo disabili` | `-` | `Ministero del Lavoro` |
 | `25/09/2024`    | `00011` | `Verifica esistenza rapporto parità di genere` | `-` | `Ministero del Lavoro` |

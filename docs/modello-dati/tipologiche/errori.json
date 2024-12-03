@@ -1005,16 +1005,7 @@
 	},
     "dataInizio":null,
     "dataFine":null
-},
-{
-    "codice":"ERR113",
-    "descrizione": {
-		"it": "espd obbligatorio nelle schede AD3 per importi superiori o pari a 40000 euro.",
-		"en": "espd obbligatorio nelle schede AD3 per importi superiori o pari a 40000 euro."
-	},
-    "dataInizio":null,
-    "dataFine":null
-},
+},	
 {
     "codice":"ERR113",
     "descrizione": {
@@ -1092,6 +1083,33 @@
     "descrizione": {
 		"it": "lotIdentifier non trovato.",
 		"en": "lotIdentifier not found."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice": "ERR122",
+    "descrizione": {
+      "it": "Elenco partecipanti SDA trovato non attivo",
+      "en": "SDA participant list found inactive"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice": "ERR123",
+    "descrizione": {
+      "it": "idSDA non trovato",
+      "en": "idSDA not found"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR124",
+    "descrizione": {
+		"it": "codiceFiscaleSA non presente nella lista delle stazioni appaltanti della scheda di indizione",
+		"en": "codiceFiscaleSA non presente nella lista delle stazioni appaltanti della scheda di indizione"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1666,8 +1684,8 @@
 {
     "codice":"REG67",
     "descrizione": {
-		"it": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara",
-		"en": "il campo giustificazione procedura accelerata è obbligatorio se il tipo di procedura è Negoziata senza previa indizione di gara"
+		"it": "il campo giustificazione procedura accelerata è obbligatorio se la procedura è accelerata.",
+		"en": "il campo giustificazione procedura accelerata è obbligatorio se la procedura è accelerata."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2109,6 +2127,119 @@
     "descrizione": {
 		"it": "Deve essere indicato un solo aggiudicatario.",
 		"en": "Deve essere indicato un solo aggiudicatario."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG115",
+    "descrizione": {
+		"it": "Indicare una sola categoria di tipo prevalente.",
+		"en": "Indicare una sola categoria di tipo prevalente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG116",
+    "descrizione": {
+		"it": "Indicare una sola cpv di tipo prevalente.",
+		"en": "Indicare una sola cpv di tipo prevalente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG117",
+    "descrizione": {
+		"it": "Il campo importo cauzione deve essere >= 0.",
+		"en": "Il campo importo cauzione deve essere >= 0."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG118",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €.",
+		"en": "Non è possibile inserire il codice 1 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 215000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG119",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 2 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 431000 €.",
+		"en": "Non è possibile inserire il codice 2 nel campo derogaQualificazione se l'oggetto principale del contratto è lavori o l'importo è superiore a 431000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG120",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 3 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da lavori o l'importo è superiore a 1 milione di euro.",
+		"en": "Non è possibile inserire il codice 3 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da lavori o l'importo è superiore a 1 milione di euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG121",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 4 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 750000 €.",
+		"en": "Non è possibile inserire il codice 4 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 750000 €."
+	},
+    "dataInizio":null,
+    "dataFine":null
+}
+,
+{
+    "codice":"REG122",
+    "descrizione": {
+		"it": "Non è possibile inserire il codice 5 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 1 milione di euro.",
+		"en": "Non è possibile inserire il codice 5 nel campo derogaQualificazione se l'oggetto principale del contratto è diverso da servizi o l'importo è superiore a 1 milione di euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG123",
+    "descrizione": {
+		"it": "E’ obbligatorio indicare i cup associati al lotto se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC.",
+		"en": "E’ obbligatorio indicare i cup associati al lotto se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG124",
+    "descrizione": {
+		"it": "Indicare almeno uno tra codice istat e codice nuts.",
+		"en": "Indicare almeno uno tra codice istat e codice nuts."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG125",
+    "descrizione": {
+		"it": "Indicare solo uno tra codice istat e codice nuts.",
+		"en": "Indicare solo uno tra codice istat e codice nuts."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG126",
+    "descrizione": {
+		"it": "L'importo indicato deve essere maggiore di zero.",
+		"en": "L'importo indicato deve essere maggiore di zero."
 	},
     "dataInizio":null,
     "dataFine":null
