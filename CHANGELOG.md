@@ -1127,6 +1127,37 @@ errori.json: Aggiunto errore REG68_1
 	* errori.json: modificato l'errore REG67
 
 
+<details>
+<summary><h1>Note di rilascio del 13/12/2024 (Changelog-04)</h1></summary>
+
+**NOTA**
+* Pubblicazione contenuti su GitHub: 13/12/2024
+* Rilascio in Qualificazione: 17/01/2025
+* Rilascio in Esercizio: 17/02/2025
+  
+**la nota di rilascio potrà essere integrata successivamente**
+    
+### Modello Dati 
+  
+### Schede 
+* modello-dati-schede-A7.1.2.yaml, modello-dati-schede-dati-comuni.yaml: 
+	* oggetto AggiudicazioneA7Type: deprecati i campi: acquisizioneCup, afferenteInvestimentiPNRR, cupLotto, paritaDiGenereGenerazionale, partecipanti, finanziamenti, datiBaseAccessibilita
+	* oggetto AggiudicazioneA7Type: aggiunti i campi: valore soglia anomalia, offerte Presentate, numero offerte ammesse, esitoProceduraAnnullata, datiBaseRisultatoProcedura, datiBaseSottomissioniRicevute
+
+### Tipologiche
+* errori.json: aggiornata la descrizione della REG100
+  
+## Orchestratore
+
+### Regole
+* AD3.dmn, AD*_25.dmn, AD*_26.dmn, AD*_27.dmn: 
+	* aggiornata la REG100 per consentire più partecipanti in caso di accordo quadro.
+* A7.1.1.dmn, A7.1.2.dmn: 
+	* aggiunte le regole REG47, REG50, REG51, REG52
+
+</details>
+
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
