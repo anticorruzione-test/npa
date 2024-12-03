@@ -6,13 +6,12 @@ components:
   schemas:
     AggiudicazioneA7_1_1Type:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA7Type'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA7Type'
       type: object
       additionalProperties: false
-      required: [datiBaseAggiudicazioneAppalto,datiBaseRisultatoProcedura]
       properties:   
         esitoProceduraAnnullata:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'  
     AnacFormA7_1_1Type:
       description: Contiene tutti i dati necessari per procedura negoziata senza bando pari o sopra soglia con invio al TED
       type: object
