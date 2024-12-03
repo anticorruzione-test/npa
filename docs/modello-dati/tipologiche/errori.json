@@ -1990,8 +1990,8 @@
 {
     "codice":"REG100",
     "descrizione": {
-		"it": "Negli affidamenti diretti è consentito inserire un solo idPartecipante",
-		"en": "Negli affidamenti diretti è consentito inserire un solo idPartecipante"
+		"it": "Negli affidamenti diretti è consentito inserire un solo idPartecipante, se non è un accordo quadro.",
+		"en": "Negli affidamenti diretti è consentito inserire un solo idPartecipante, se non è un accordo quadro."
 	},
     "dataInizio":null,
     "dataFine":null
