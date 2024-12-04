@@ -1140,21 +1140,31 @@ errori.json: Aggiunto errore REG68_1
 ### Modello Dati 
   
 ### Schede 
-* modello-dati-schede-A7.1.2.yaml, modello-dati-schede-dati-comuni.yaml: 
+* modello-dati-schede-A7.1.2.yaml:
 	* oggetto AggiudicazioneA7Type: deprecati i campi: acquisizioneCup, afferenteInvestimentiPNRR, cupLotto, paritaDiGenereGenerazionale, partecipanti, finanziamenti, datiBaseAccessibilita
 	* oggetto AggiudicazioneA7Type: aggiunti i campi: valore soglia anomalia, offerte Presentate, numero offerte ammesse, esitoProceduraAnnullata, datiBaseRisultatoProcedura, datiBaseSottomissioniRicevute
+* modello-dati-schede-dati-comuni.yaml: 
+	* oggetto AggiudicazioneA7Type: deprecati i campi: acquisizioneCup, afferenteInvestimentiPNRR, cupLotto, paritaDiGenereGenerazionale, partecipanti, finanziamenti, datiBaseAccessibilita
+	* oggetto AggiudicazioneA7Type: aggiunti i campi: valore soglia anomalia, offerte Presentate, numero offerte ammesse, esitoProceduraAnnullata, datiBaseRisultatoProcedura, datiBaseSottomissioniRicevute
+ 	* aggiunto l'oggetto MotivoRichiestaRettificaEnum
+* modello-dati-schede-S2R.yaml:
+	* nuova scheda di rettifica della scheda S2R
 
 ### Tipologiche
 * errori.json: aggiornata la descrizione della REG100
+* motivoRichiestaRettifica.json: nuova tipologica per la scheda S2R
   
 ## Orchestratore
 * Nella riga relativa alla scheda SC1, nella colonna ‘scheda successiva’, eliminata la scheda SA1.
+* Modificata la riga della scheda S2: aggiunta la S2R come possibile scheda successiva
+* Aggiunte le informazioni sulla nuova scheda S2R
   
 ### Regole
 * AD3.dmn, AD*_25.dmn, AD*_26.dmn, AD*_27.dmn: 
 	* aggiornata la REG100 per consentire più partecipanti in caso di accordo quadro.
 * A7.1.1.dmn, A7.1.2.dmn: 
 	* aggiunte le regole REG47, REG50, REG51, REG52
+* S2R.dmn: aggiunte regole per la nuova scheda S2R
 
 </details>
 
