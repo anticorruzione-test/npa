@@ -244,6 +244,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo di richiesta di modifica - fare riferimento ai valori contenuti nel file [motivoRichiestaModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/tipologiche/motivoRichiestaModifica.json)
+    MotivoRichiestaRettificaEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di richiesta di rettifica - fare riferimento ai valori contenuti nel file [motivoRichiestaRettifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/tipologiche/motivoRichiestaRettifica.json)
     AnnullamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog04/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
