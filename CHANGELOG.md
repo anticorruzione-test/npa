@@ -1166,7 +1166,7 @@ errori.json: Aggiunto errore REG68_1
 	* aggiunte le regole REG47, REG50, REG51, REG52
 * S2R.dmn: aggiunte regole per la nuova scheda S2R
 
-</details>
+
 
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
