@@ -1127,7 +1127,7 @@ errori.json: Aggiunto errore REG68_1
 	* errori.json: modificato l'errore REG67
 
 
-<details>
+
 <summary><h1>Note di rilascio del 13/12/2024 (Changelog-04)</h1></summary>
 
 **NOTA**
@@ -1165,7 +1165,6 @@ errori.json: Aggiunto errore REG68_1
 * A7.1.1.dmn, A7.1.2.dmn: 
 	* aggiunte le regole REG47, REG50, REG51, REG52
 * S2R.dmn: aggiunte regole per la nuova scheda S2R
-
 
 
 
