@@ -1128,10 +1128,10 @@ errori.json: Aggiunto errore REG68_1
 
 
 
-<summary><h1>Note di rilascio del 13/12/2024 (Changelog-04)</h1></summary>
+<summary><h1>Note di rilascio del 10/12/2024 (Changelog-04)</h1></summary>
 
 **NOTA**
-* Pubblicazione contenuti su GitHub: 13/12/2024
+* Pubblicazione contenuti su GitHub: 10/12/2024
 * Rilascio in Qualificazione: 17/01/2025
 * Rilascio in Esercizio: 17/02/2025
   
@@ -1148,16 +1148,16 @@ errori.json: Aggiunto errore REG68_1
 	* oggetto AggiudicazioneA7Type: aggiunti i campi: valore soglia anomalia, offerte Presentate, numero offerte ammesse, esitoProceduraAnnullata, datiBaseRisultatoProcedura, datiBaseSottomissioniRicevute
  	* aggiunto l'oggetto MotivoRichiestaRettificaEnum
 * modello-dati-schede-S2R.yaml:
-	* nuova scheda di rettifica della scheda S2R
+	* nuova scheda di rettifica della scheda S2
 
 ### Tipologiche
 * errori.json: aggiornata la descrizione della REG100
 * motivoRichiestaRettifica.json: nuova tipologica per la scheda S2R
-* giustificazioniAggiudicazioneDiretta.json:
+* giustificazioniAggiudicazioneDiretta.json: aggiornata alla versione ted sdk 1.12
 	* modificate le label su below-thres-sme, int-oper, tra-ser
  	* aggiunte occorrenze char-imp, exc-circ-rail, sim-infra
   	* rimossa occorrenza rail
-* tipoProcedura.json:
+* tipoProcedura.json: aggiornata alla versione ted sdk 1.12
 	* modificate le label su comp-tend
  	* aggiunta occorrenzea exp-int-rail
 
