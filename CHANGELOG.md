@@ -1153,7 +1153,14 @@ errori.json: Aggiunto errore REG68_1
 ### Tipologiche
 * errori.json: aggiornata la descrizione della REG100
 * motivoRichiestaRettifica.json: nuova tipologica per la scheda S2R
-  
+* giustificazioniAggiudicazioneDiretta.json:
+	* modificate le label su below-thres-sme, int-oper, tra-ser
+ 	* aggiunte occorrenze char-imp, exc-circ-rail, sim-infra
+  	* rimossa occorrenza rail
+* tipoProcedura.json:
+	* modificate le label su comp-tend
+ 	* aggiunta occorrenzea exp-int-rail
+
 ## Orchestratore
 * Nella riga relativa alla scheda SC1, nella colonna ‘scheda successiva’, eliminata la scheda SA1.
 * Modificata la riga della scheda S2: aggiunta la S2R come possibile scheda successiva
