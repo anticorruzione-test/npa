@@ -1138,6 +1138,8 @@ errori.json: Aggiunto errore REG68_1
 **la nota di rilascio potrà essere integrata successivamente**
     
 ### Modello Dati 
+* modello-dati-npa.yaml:
+  * aggiunta nuova scheda S2R
   
 ### Schede 
 * modello-dati-schede-A7.1.2.yaml:
@@ -1162,6 +1164,8 @@ errori.json: Aggiunto errore REG68_1
 * tipoProcedura.json: aggiornata alla versione ted sdk 1.12
 	* modificate le label su comp-tend
  	* aggiunta occorrenzea exp-int-rail
+* codiceScheda.json: 
+  * aggiunta la nuova scheda S2R.
 
 ## Orchestratore
 * Nella riga relativa alla scheda SC1, nella colonna ‘scheda successiva’, eliminata la scheda SA1.
