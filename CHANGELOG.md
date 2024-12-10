@@ -1151,7 +1151,9 @@ errori.json: Aggiunto errore REG68_1
 	* nuova scheda di rettifica della scheda S2
 
 ### Tipologiche
-* errori.json: aggiornata la descrizione della REG100
+* errori.json:
+	* aggiornata la descrizione della REG100 e della REG18
+ 	* aggiunti gli errori REG19 e REG20_1
 * motivoRichiestaRettifica.json: nuova tipologica per la scheda S2R
 * giustificazioniAggiudicazioneDiretta.json: aggiornata alla versione ted sdk 1.12
 	* modificate le label su below-thres-sme, int-oper, tra-ser
@@ -1172,6 +1174,9 @@ errori.json: Aggiunto errore REG68_1
 * A7.1.1.dmn, A7.1.2.dmn: 
 	* aggiunte le regole REG47, REG50, REG51, REG52
 * S2R.dmn: aggiunte regole per la nuova scheda S2R
+* P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn:
+	* aggiornata la REG18
+ 	* aggiunte le REG19 e REG20_1
 
 
 
