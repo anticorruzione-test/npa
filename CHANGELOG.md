@@ -1112,6 +1112,16 @@ errori.json: Aggiunto errore REG68_1
 ### Segnalazioni
   * AD1*.dmn, AD2*.dmn,A1_29.dmn,A1_30.dmn,A1_31.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn: eliminata la REG68_1
 
+# Note di rilascio del changelog 03 del 28/11/2024
+
+## Modello Dati
+  
+### Segnalazioni
+  * ticket 62742:
+  	* P1_10.dmn, P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn, P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn, P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3*.dmn, P4*.dmn, P6*.dmn,P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn: corretta la sintassi delle regole REG120, REG121, REG122
+  * segnalazione interna:
+    * AOC.dmn, SOC.dmn: corrette le reg REG115, REG116
+
 # Note di rilascio del 29/11/2024
 
 ## Modello Dati
