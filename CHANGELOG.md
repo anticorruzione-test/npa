@@ -1068,7 +1068,7 @@ errori.json: Aggiunto errore REG68_1
 * ticket 59350:
   * P1_23.dmn,P1_24.dmn: eliminate le REG98 e REG99 inserite per errore nell'ultimo rilascio
 
-# Note di rilascio del 29/10/2024
+# Note di rilascio del 29/10/2024 (In Esercizio)
 
 ## Modello Dati
 ### Schede
@@ -1099,6 +1099,43 @@ errori.json: Aggiunto errore REG68_1
 	* errori.json: modificato l'errore REG61
 * tipoPrefettura.json:
   * corretta la sintassi del file
+  
+### Segnalazioni
+* ticket 61371:
+  * fix estrazione dati REG68_1
+
+
+# Note di rilascio del 22/11/2024 (In Esercizio)
+
+## Modello Dati
+  
+### Segnalazioni
+  * AD1*.dmn, AD2*.dmn,A1_29.dmn,A1_30.dmn,A1_31.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn: eliminata la REG68_1
+
+# Note di rilascio del changelog 03 del 28/11/2024
+
+## Modello Dati
+  
+### Segnalazioni
+  * ticket 62742:
+  	* P1_10.dmn, P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn, P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn, P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3*.dmn, P4*.dmn, P6*.dmn,P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn: corretta la sintassi delle regole REG120, REG121, REG122
+  * segnalazione interna:
+    * AOC.dmn, SOC.dmn: corrette le reg REG115, REG116
+
+# Note di rilascio del 29/11/2024
+
+## Modello Dati
+  
+### Regole
+  * ticket 60143:
+  	* P1_10.dmn, P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn, P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P2_10.dmn, P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn, P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P3*.dmn, P4*.dmn, P6*.dmn: eliminata la REG29
+   * ticket 59349:
+   	* P1_16.dmn,P1_17.dmn, P1_18.dmn, P2_16.dmn, P2_17.dmn, P2_18.dmn, P3_4.dmn, P3_5.dmn, P6_1.dmn, P6_2.dmn: modificata la REG67
+
+### Tipologiche
+* ticket 59349:
+	* errori.json: modificato l'errore REG67
+
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.

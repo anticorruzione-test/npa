@@ -1144,8 +1144,8 @@
 {
     "codice":"CM1",
     "descrizione": {
-		"it": "Scheda di comunicazione modifica dati della procedura per appalti sopra i 5K euro",
-		"en": "Scheda di comunicazione modifica dati della procedura per appalti sopra i 5K euro"
+		"it": "Scheda di comunicazione modifica dati della procedura per appalti sopra o pari a 5K euro",
+		"en": "Scheda di comunicazione modifica dati della procedura per appalti sopra o pari a 5K euro"
 		},
     "dataInizio":null,
     "dataFine":null
@@ -1199,6 +1199,33 @@
     "descrizione": {
 		"it": "Scheda di annullamento affidamento",
 		"en": "Scheda di annullamento affidamento"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"AOC",
+    "descrizione": {
+		"it": "Scheda di indizione per gli Organi Costituzionali",
+		"en": "Scheda di indizione per gli Organi Costituzionali"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SOC",
+    "descrizione": {
+		"it": "Scheda di richiesta subappalto per gli Organi Costituzionali",
+		"en": "Scheda di richiesta subappalto per gli Organi Costituzionali"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"COC",
+    "descrizione": {
+		"it": "Scheda di conclusione per gli Organi Costituzionali",
+		"en": "Scheda di conclusione per gli Organi Costituzionali"
 		},
     "dataInizio":null,
     "dataFine":null

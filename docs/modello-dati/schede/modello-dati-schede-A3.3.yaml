@@ -56,7 +56,7 @@ components:
           items:
             $ref: '#/components/schemas/AggiudicazioneA3_3Type'
     SchedaA3_3Type:
-      description: Contratti esclusi - adesione con confronto competitivo
+      description: Contratto escluso - Adesione senza confronto competitivo
       type: object
       required: [anacForm]
       additionalProperties: false

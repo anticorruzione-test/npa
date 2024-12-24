@@ -23,7 +23,7 @@ components:
     StrumentiSvolgimentoProcedureEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
+      description: Deprecato - Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
     MotivoUrgenzaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -248,6 +248,38 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [motivoAnnullamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoAnnullamento.json)
+    SettoreEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/settore.json)
+    MotivoDerogaQlfEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
+    CategoriaType: 
+      description: categoria prevalente o scorporabile
+      type: object
+      additionalProperties: false
+      required: [categoria, tipo]
+      properties:    
+        categoria:
+          $ref: '#/components/schemas/CategoriaEnum' 
+        tipo: 
+          description: tipo di categoria
+          type: string
+          enum: ['PREVALENTE', 'SCORPORABILE'] 
+    CpvType: 
+      description: cpv prevalente o secondaria
+      type: object
+      additionalProperties: false
+      required: [cpv, tipo]
+      properties:    
+        cpv:
+          $ref: '#/components/schemas/CPVEnum' 
+        tipo: 
+          description: tipo di categoria
+          type: string
+          enum: ['PREVALENTE', 'SECONDARIA']       
     ComunicazioneType:
       description: Oggetto utilizzato per modificare i dati di una procedura
       type: object
@@ -644,7 +676,7 @@ components:
     AppaltoISDABaseType:
       description: Oggetto che riporta i dati dell'appalto per istituzione dello SDA
       type: object
-      required: [codiceAppalto]
+      required: [codiceAppalto,settore]
       additionalProperties: false
       properties:
         codiceAppalto:
@@ -652,17 +684,21 @@ components:
           type: string
           minLength: 8
           maxLength: 64
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum' 
     AppaltoP3BaseType:
       description: Oggetto che riporta i dati dell'appalto relativi ai contratti senza limiti di importo con obblighi di comunicazione.
       type: object
       additionalProperties: false
-      required: [codiceAppalto]
+      required: [codiceAppalto,settore]
       properties:  
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64            
+          maxLength: 64 
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum'
         strumentiSvolgimentoProcedure: 
           $ref: '#/components/schemas/StrumentiSvolgimentoProcedureEnum'
         idPianificazione:
@@ -702,14 +738,16 @@ components:
     AppaltoP4BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [prelazionePromotore,codiceAppalto,costituzioneSocietaDiScopo,datiBase,datiBaseProcedura]
+      required: [prelazionePromotore,codiceAppalto,costituzioneSocietaDiScopo,datiBase,datiBaseProcedura,settore]
       additionalProperties: false
       properties:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64            
+          maxLength: 64
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum'          
         prelazionePromotore:
           description: E' previsto il diritto di prelazione per il promotore?
           type: boolean  
@@ -734,18 +772,23 @@ components:
     AppaltoP7BaseType:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,strumentiSvolgimentoProcedure,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
+      required: [categorieMerceologiche,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura, contrattoDifesa,settore]
       additionalProperties: false
       properties:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64  
+          maxLength: 64 
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum' 
         idPianificazione:
           description: ID pianificazione
           type: string  
           format: uuid
+        contrattoDifesa:
+          description: Contratto Difesa
+          type: boolean
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
           type: boolean           
@@ -772,7 +815,7 @@ components:
     AppaltoP7_2Type:
       description: Oggetto che riporta i dati dell'appalto
       type: object
-      required: [categorieMerceologiche,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]
+      required: [categorieMerceologiche,codiceAppalto,datiBase,datiBaseProcedura,datiBaseStrumentiProcedura, contrattoDifesa,settore]
       additionalProperties: false
       properties:
         codiceAppalto:
@@ -788,6 +831,11 @@ components:
           description: ID pianificazione
           type: string  
           format: uuid
+        contrattoDifesa:
+          description: Contratto Difesa
+          type: boolean
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum' 
         termineRidottoAvvisoPreinformazione:
           description: E' stato utilizzato un termine ridotto con avviso di preinformazione?
           type: boolean           
@@ -870,12 +918,14 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [costituzioneSocietaDiScopo] 
+      required: [costituzioneSocietaDiScopo,settore] 
       additionalProperties: false
       properties:
         costituzioneSocietaDiScopo:
           description: Indicare se è prevista la costituzione di una società di scopo
           type: boolean
+        settore:
+          $ref: '#/components/schemas/SettoreEnum'    
     AppaltoP_15Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -933,12 +983,14 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object 
-      required: [costituzioneSocietaDiScopo] 
+      required: [costituzioneSocietaDiScopo,settore] 
       additionalProperties: false
       properties:
         costituzioneSocietaDiScopo:
           description: Indicare se è prevista la costituzione di una società di scopo
-          type: boolean        
+          type: boolean 
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum'
     AppaltoP_20Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
@@ -1050,7 +1102,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'   
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+          $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     LottoPLBaseType:
       description: Oggetto che riporta i dati del lotto all'interno della fase di pianificazione
       type: object
@@ -1818,7 +1872,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'   
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBaseCPV:
           $ref: '#/components/schemas/DatiBaseCPVType'
         datiBaseContratto:
@@ -1897,6 +1953,8 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/FinanziamentoType' 
+          derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
           datiBase:
             $ref: '#/components/schemas/DatiBaseLottoType'
           datiBaseCPV:
@@ -1997,6 +2055,8 @@ components:
             $ref: '#/components/schemas/FinanziamentoType' 
         tipoRealizzazione:
           $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
@@ -2096,7 +2156,9 @@ components:
           items:
             $ref: '#/components/schemas/FinanziamentoType' 
         tipoRealizzazione:
-          $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'            
+          $ref: '#/components/schemas/TipoRealizzazioneContrattoEnum'  
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
         datiBase:
           $ref: '#/components/schemas/DatiBaseLottoType'
         datiBaseCPV:
@@ -2306,6 +2368,19 @@ components:
           type: array
           items: 
             $ref: '#/components/schemas/OfferteType' 
+    AggiudicazioneBaseSopraSogliaType:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [cig]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+        offertePresentate:
+          type: array
+          items: 
+            $ref: '#/components/schemas/OfferteType' 
     AggiudicazioneCompletaType:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       type: object
@@ -2323,7 +2398,25 @@ components:
         offertePresentate:
           type: array
           items: 
-            $ref: '#/components/schemas/OfferteType'             
+            $ref: '#/components/schemas/OfferteType'         
+    AggiudicazioneCompletaSopraSogliaType:
+      description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [cig]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: number
+          format: double
+          pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$             
+        offertePresentate:
+          type: array
+          items: 
+            $ref: '#/components/schemas/OfferteType'         
     AppaltoAType:
       description: Oggetto che riporta i dati inerenti l'appalto nella fase di aggiudicazione
       type: object
@@ -2381,7 +2474,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_25Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva generale - Articolo 3 bis della direttiva 89/665/CEE
       type: object
@@ -2448,7 +2543,9 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_26Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva settoriale - Articolo 3 bis della direttiva 92/13/CEE 
       type: object
@@ -2560,18 +2657,22 @@ components:
           description: Dati relativi ai finanziamenti
           type: array
           items:
-            $ref: '#/components/schemas/FinanziamentoType'             
+            $ref: '#/components/schemas/FinanziamentoType'
+        derogaQualificazione:
+            $ref: '#/components/schemas/MotivoDerogaQlfEnum'
     AppaltoAD1_28Type:
       description: Oggetto che riporta i dati inerenti l'affidamento diretto soprasoglia e sottosoglia con pubblicazione su TED - Avviso volontario per la trasparenza ex ante — direttiva sulle concessioni. Articolo 3 bis delle direttive 89/665/CEE e 92/13/CEE
       type: object
-      required: [opereUrbanizzazioneScomputo,codiceAppalto,motivoUrgenza]
+      required: [opereUrbanizzazioneScomputo,codiceAppalto,motivoUrgenza,settore]
       additionalProperties: false
       properties:
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
           type: string
           minLength: 8
-          maxLength: 64            
+          maxLength: 64       
+        settore: 
+          $ref: '#/components/schemas/SettoreEnum'
         motivoUrgenza:
           $ref: '#/components/schemas/MotivoUrgenzaEnum'       
         linkDocumenti:
@@ -2598,7 +2699,7 @@ components:
     AggiudicazioneA1_29Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneCompletaType
-      - $ref: '#/components/schemas/AggiudicazioneCompletaType'        
+      - $ref: '#/components/schemas/AggiudicazioneCompletaSopraSogliaType'        
       type: object
       required: [numeroOfferteAmmesse]
       properties:
@@ -2627,7 +2728,7 @@ components:
     AggiudicazioneA1_30Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia   
       allOf: # estende la classe AggiudicazioneCompletaType
-      - $ref: '#/components/schemas/AggiudicazioneCompletaType'       
+      - $ref: '#/components/schemas/AggiudicazioneCompletaSopraSogliaType'       
       type: object
       required: [numeroOfferteAmmesse]
       properties:
@@ -2643,7 +2744,7 @@ components:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       type: object
       additionalProperties: false
-      required: [cig,offertePresentate]
+      required: [cig]
       properties: 
         cig:
           description: codice identificativo lotto
@@ -2664,7 +2765,7 @@ components:
     AggiudicazioneA1_32Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia    
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType'      
+      - $ref: '#/components/schemas/AggiudicazioneBaseSopraSogliaType'      
       type: object
       required: [numeroOfferteAmmesse,quadroEconomicoConcessioni]      
       additionalProperties: false
@@ -2691,7 +2792,7 @@ components:
     AggiudicazioneA1_33Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneCompletaType
-      - $ref: '#/components/schemas/AggiudicazioneCompletaType' 
+      - $ref: '#/components/schemas/AggiudicazioneCompletaSopraSogliaType' 
       type: object
       required: [numeroOfferteAmmesse]
       properties:
@@ -2717,7 +2818,7 @@ components:
     AggiudicazioneA1_34Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneCompletaType
-      - $ref: '#/components/schemas/AggiudicazioneCompletaType' 
+      - $ref: '#/components/schemas/AggiudicazioneCompletaSopraSogliaType' 
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse]  
@@ -2733,7 +2834,7 @@ components:
     AggiudicazioneA1_35Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      - $ref: '#/components/schemas/AggiudicazioneBaseSopraSogliaType' 
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse,quadroEconomicoConcessioni]      
@@ -2749,7 +2850,7 @@ components:
     AggiudicazioneA1_36Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      - $ref: '#/components/schemas/AggiudicazioneBaseSopraSogliaType' 
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse] 
@@ -2763,7 +2864,7 @@ components:
     AggiudicazioneA1_37Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione sopra soglia e sotto soglia 
       allOf: # estende la classe AggiudicazioneBaseType
-      - $ref: '#/components/schemas/AggiudicazioneBaseType' 
+      - $ref: '#/components/schemas/AggiudicazioneBaseSopraSogliaType' 
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse] 
@@ -3730,7 +3831,7 @@ components:
           $ref: '#/components/schemas/EsitoProceduraEnum'          
     DatiBaseModificaContrattualeType:
       description:  Dato in comune con i Business Group Contract e Modification delle eforms
-      required: [dataSottoscrizione,motiviModifica,causaModifica]
+      required: [motiviModifica,causaModifica]
       additionalProperties: false
       properties:
         dataSottoscrizione:
