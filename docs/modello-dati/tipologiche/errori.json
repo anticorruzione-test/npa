@@ -1145,7 +1145,7 @@
     "codice":"ERR128",
     "descrizione": {
 		"it": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica",
-		"en": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica",
+		"en": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica"
 	},
     "dataInizio":null,
     "dataFine":null
