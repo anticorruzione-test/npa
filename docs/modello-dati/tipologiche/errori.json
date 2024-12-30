@@ -1140,6 +1140,24 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},		
+{
+    "codice":"ERR128",
+    "descrizione": {
+		"it": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica",
+		"en": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica",
+	},
+    "dataInizio":null,
+    "dataFine":null
+},		
+{
+    "codice":"ERR129",
+    "descrizione": {
+		"it": "Il Codice Fiscale del partecipante non è censito in anagrafe Persona Giuridica",
+		"en": "Il Codice Fiscale del partecipante non è censito in anagrafe Persona Giuridica"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
