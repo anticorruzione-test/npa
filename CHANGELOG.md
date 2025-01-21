@@ -1142,6 +1142,12 @@ errori.json: Aggiunto errore REG68_1
 * Modificata la colonna V "nuovoStatoAppalto": 
   * schede ISDA1, ISDA2: impostato il valore PUBB
 
+### Regole
+* AD1_28.dmn: 
+	* modificato valore dell'attributo id del tag ```<decision>```
+  * modificato valore dell'attributo dmnElementRef del tag ```<dmndi:DMNShape>```.
+
+
 # Note di rilascio del 21/01/2025 (In Esercizio)
 ### Orchestratore
 * Aggiornato il file schema-cronologia-schede.xlsx
