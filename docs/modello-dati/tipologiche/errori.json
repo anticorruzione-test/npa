@@ -1333,8 +1333,8 @@
 {
     "codice":"REG15",
     "descrizione": {
-		"it": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni",
-		"en": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato oppure se l'appalto prevede ripetizioni"
+		"it": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato",
+		"en": "il campo cigCollegato è obbligatorio se il motivo di collegamento CIG e' valorizzato"
 	},
     "dataInizio":null,
     "dataFine":null
