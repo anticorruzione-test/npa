@@ -77,7 +77,7 @@ satisfies aggiudicazione.afferenteInvestimentiPNRR = true and (aggiudicazione.ac
           <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_07v70ua">
-          <text>some aggiudicazione in aggiudicazioni satisfies (is not defined(aggiudicazione.quadroEconomicoStandard) and is not defined(aggiudicazione.quadroEconomicoConcessioni)) </text>
+          <text>some aggiudicazione in aggiudicazioni satisfies (is defined(aggiudicazione.quadroEconomicoStandard)=false and is defined(aggiudicazione.quadroEconomicoConcessioni)=false) </text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1qgpb0b">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG31_1\"}"</text>
