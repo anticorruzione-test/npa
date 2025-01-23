@@ -1439,6 +1439,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG31",
+    "descrizione": {
+		"it": "Le sezioni del quadro economico standard e quadro economico concessioni devono essere mutuamente esclusive",
+		"en": "Le sezioni del quadro economico standard e quadro economico concessioni devono essere mutuamente esclusive"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG31_1",
+    "descrizione": {
+		"it": "Almeno una delle due sezioni quadro economico standard e quadro economico concessioni deve essere compilata",
+		"en": "Almeno una delle due sezioni quadro economico standard e quadro economico concessioni deve essere compilata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG32",
     "descrizione": {
 		"it": "Il valore indicato nel campo accessibilita non è coerente con quanto indicato nel campo afferenteInvestimentiPNRR, valorizzato a SI",
@@ -1466,6 +1484,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG34_1",
+    "descrizione": {
+		"it": "Importo Lavori: se l'oggetto del contratto è works deve essere indicato un importo maggiore di 0 nel quadro economico compilato",
+		"en": "Importo Lavori: se l'oggetto del contratto è works deve essere indicato un importo maggiore di 0 nel quadro economico compilato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG35",
     "descrizione": {
 		"it": "Non è stato indicato il valore dell’importo componente servizi",
@@ -1475,10 +1502,28 @@
     "dataFine":null
 },
 {
+    "codice":"REG35_1",
+    "descrizione": {
+		"it": "Importo Servizi: se l'oggetto del contratto è services deve essere indicato un importo maggiore di 0 nel quadro economico compilato.",
+		"en": "Importo Servizi: se l'oggetto del contratto è services deve essere indicato un importo maggiore di 0 nel quadro economico compilato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG36",
     "descrizione": {
 		"it": "Non è stato indicato il valore dell’importo componente forniture",
 		"en": "Non è stato indicato il valore dell’importo componente forniture"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG36_1",
+    "descrizione": {
+		"it": "Importo Forniture: se l'oggetto del contratto è supplies deve essere indicato un importo maggiore di 0 nel quadro economico compilato",
+		"en": "Importo Forniture: se l'oggetto del contratto è supplies deve essere indicato un importo maggiore di 0 nel quadro economico compilato"
 	},
     "dataInizio":null,
     "dataFine":null
