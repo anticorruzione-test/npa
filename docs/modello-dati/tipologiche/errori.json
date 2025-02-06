@@ -3296,4 +3296,14 @@
    },
    "dataInizio":null,
    "dataFine":null
+},
+{
+   "codice":"FVQ01",
+   "descrizione": {
+       "it": "Contratto Fascicolo Chiuso",
+       "en": "Closed File Contract",
+       "de": "Vertrag über geschlossene Dateien"
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
