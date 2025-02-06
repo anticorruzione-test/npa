@@ -3286,4 +3286,13 @@
    },
    "dataInizio":null,
    "dataFine":null
+},
+{
+   "codice":"FVQOE01",
+   "descrizione": {
+       "it": "Criteri di ricerca non ammessi, popolare in modo alternativo chiaveAccesso o codicePrtocolloIstruttoria e codiceFiscaleOE",
+       "it": "Criteri di ricerca non ammessi, popolare in modo alternativo chiaveAccesso o codicePrtocolloIstruttoria e codiceFiscaleOE",
+   },
+   "dataInizio":null,
+   "dataFine":null
 }]
