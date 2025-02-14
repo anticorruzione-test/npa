@@ -486,8 +486,12 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - datiSoggetti
       properties:
+        type:
+          type: string
+          example: 'DatiSA00004'
         datiSoggetti:
           description: Lista dei nominativi
           type: array
@@ -549,9 +553,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - DatiNominativo
         - AltriDati
       properties:
+        type:
+          type: string
+          example: 'DatiSA00020'
         DatiNominativo:
           $ref: '#/components/schemas/DatiNominativo00020'
         AltriDati:
@@ -572,9 +580,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - annoRiferimento
         - domicilioFiscale
       properties:
+        type:
+          type: string
+          example: 'DatiSA00036'
         annoRiferimento:
           description: anno di cui si richiede il documento
           type: string
@@ -600,9 +612,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - matr_OE
         - anno
       properties:
+        type:
+          type: string
+          example: 'DatiSA00047'
         matr_OE:
           description: matricola dell'OE
           type: string
@@ -622,9 +638,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - matr_OE
         - anno
       properties:
+        type:
+          type: string
+          example: 'DatiSA00048'
         matr_OE:
           description: matricola dell'OE
           type: string
@@ -643,9 +663,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - altrisoggetti
         - prefettura
       properties:
+        type:
+          type: string
+          example: 'DatiSA00850'
         prefettura:
           description: Prefettura. Fare riferimento ai valori contenuti nel file [tipoPrefettura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoPrefettura.json)
           pattern: IT-(AG|AL|AN|AO|AR|AP|AT|AV|BA|BT|BL|BN|BG|BI|BO|BZ|BS|BR|CA|CL|CB|CI|CE|CT|CZ|CH|CO|CS|CR|KR|CN|EN|FM|FE|FI|FG|FC|FR|GE|GO|GR|IM|IS|SP|AQ|LT|LE|LC|LI|LO|LU|MC|MN|MS|MT|ME|MI|MO|MB|NA|NO|NU|OR|PD|PA|PR|PV|PG|PU|PE|PC|PI|PT|PN|PZ|PO|RG|RA|RC|RE|RI|RN|RM|RO|SA|SS|SV|SI|SR|SO|SU|TA|TE|TR|TO|TP|TN|TV|TS|UD|VA|VE|VB|VC|VR|VV|VI|VT)$
@@ -665,9 +689,13 @@ components:
       type: object
       additionalProperties: false
       required:
+        - type
         - tipoDocumentoOE
         - dettaglioDocumentoOE
       properties:
+        type:
+          type: string
+          example: 'DatiSA00899'
         tipoDocumentoOE:
           description: Descrizione breve del tipo documento che si vuole richiedere all'OE
           type: string
@@ -701,3 +729,5 @@ components:
             - $ref: '#/components/schemas/DatiSA00048'
             - $ref: '#/components/schemas/DatiSA00050'
             - $ref: '#/components/schemas/DatiSA00899'        
+          discriminator:
+            propertyName: type
