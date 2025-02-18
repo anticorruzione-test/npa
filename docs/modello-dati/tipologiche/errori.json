@@ -1140,6 +1140,42 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},		
+{
+    "codice":"ERR128",
+    "descrizione": {
+		"it": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica",
+		"en": "Errore generico durante la comunicazione con l'anagrafe Persona Giuridica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},		
+{
+    "codice":"ERR129",
+    "descrizione": {
+		"it": "Il Codice Fiscale del partecipante non è censito in anagrafe Persona Giuridica",
+		"en": "Il Codice Fiscale del partecipante non è censito in anagrafe Persona Giuridica"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},			
+{
+    "codice":"ERR130",
+    "descrizione": {
+		"it": "Scheda Afferente Investimenti PNRR senza CUP presenti in REGIS",
+		"en": "Scheda Afferente Investimenti PNRR senza CUP presenti in REGIS"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},			
+{
+    "codice":"ERR131",
+    "descrizione": {
+		"it": "CUP presenti in REGIS ma non afferenti a Investimenti PNRR",
+		"en": "CUP presenti in REGIS ma non afferenti a Investimenti PNRR"
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR9999",
@@ -1351,8 +1387,17 @@
 {
     "codice":"REG18",
     "descrizione": {
-		"it": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI",
-		"en": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI"
+		"it": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI e l'appalto non è di tipo Accordo Quadro/convenzione",
+		"en": "E’ obbligatorio valorizzare a SI il campo acquisizioneCup se il campo afferenteInvestimentiPNRR è valorizzato a SI e l'appalto non è di tipo Accordo Quadro/convenzione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG19",
+    "descrizione": {
+		"it": "E’ obbligatorio inserire almeno un codice CUP se il campo acquisizioneCup è valorizzato a SI",
+		"en": "E’ obbligatorio inserire almeno un codice CUP se il campo acquisizioneCup è valorizzato a SI"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -1362,6 +1407,15 @@
     "descrizione": {
 		"it": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria",
 		"en": "Il campo cupLotto è obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG20_1",
+    "descrizione": {
+		"it": "Il campo cupLotto non deve essere inserito se il campo afferenteInvestimentiPNRR è SI e l'appalto è di tipo Accordo Quadro/convenzione",
+		"en": "Il campo cupLotto non deve essere inserito se il campo afferenteInvestimentiPNRR è SI e l'appalto è di tipo Accordo Quadro/convenzione"
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2062,8 +2116,8 @@
 {
     "codice":"REG100",
     "descrizione": {
-		"it": "Negli affidamenti diretti è consentito inserire un solo idPartecipante",
-		"en": "Negli affidamenti diretti è consentito inserire un solo idPartecipante"
+		"it": "Negli affidamenti diretti è consentito inserire un solo idPartecipante, se non è un accordo quadro.",
+		"en": "Negli affidamenti diretti è consentito inserire un solo idPartecipante, se non è un accordo quadro."
 	},
     "dataInizio":null,
     "dataFine":null

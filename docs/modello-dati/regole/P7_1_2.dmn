@@ -55,29 +55,83 @@
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG8\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1stlxvn">
+      <rule id="DecisionRule_1l4fxp9">
         <description>REG14: Motivo Collegamento: Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere 'No, nessuna ipotesi di collegamento' </description>
-        <inputEntry id="UnaryTests_1k680z6">
+        <inputEntry id="UnaryTests_1il2oqi">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_04hdyhy">
+        <inputEntry id="UnaryTests_0uo6ho7">
           <text>some lotto in lotti
 satisfies lotto.ripetizioniEConsegneComplementari and lotto.ipotesiCollegamento.motivoCollegamento.codice != "10"</text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_17uqga7">
+        <outputEntry id="LiteralExpression_0wsidyv">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG14\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_11tl36v">
+      <rule id="DecisionRule_0rf81mf">
         <description>REG15: Cig collegato: è obbligatorio se Motivo collegamento CIG e' valorizzato</description>
-        <inputEntry id="UnaryTests_1yl7s2x">
+        <inputEntry id="UnaryTests_0id6rpo">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1rfdfhe">
+        <inputEntry id="UnaryTests_0l7zryo">
           <text>some lotto in lotti satisfies (lotto.ipotesiCollegamento.motivoCollegamento.codice != "10" and (lotto.ipotesiCollegamento.cigCollegato = null or count(lotto.ipotesiCollegamento.cigCollegato) = 0 or lotto.ipotesiCollegamento.cigCollegato[1]= ""))</text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_1a2pkfz">
+        <outputEntry id="LiteralExpression_0771fhj">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG15\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1i7p6fa">
+        <description>REG18: E’ obbligatorio valorizzare a SI il campo ‘L'appalto è finalizzato alla realizzazione di progetti d'investimento pubblico per i quali è prevista l'acquisizione del codice CUP ai sensi dell'art. 11 L. 3/2003 e ss.mm.?
+’ se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC e l'appalto non è di tipo accordo quadro/convenzione</description>
+        <inputEntry id="UnaryTests_0oco5k5">
+          <text>((is defined(appalto.datiBaseStrumentiProcedura.accordoQuadro)=true and appalto.datiBaseStrumentiProcedura.accordoQuadro.codice = "none") or is defined(appalto.datiBaseStrumentiProcedura.accordoQuadro)=false)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0btfjg9">
+          <text>(some lotto in lotti satisfies lotto.afferenteInvestimentiPNRR = true and (lotto.acquisizioneCup = null or lotto.acquisizioneCup=false))</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18kr2b4">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG18\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_097n5su">
+        <description>REG19: E’ obbligatorio inserire almeno un codice CUP se il campo acquisizioneCup è valorizzato a SI</description>
+        <inputEntry id="UnaryTests_1x8hunq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0na5dvz">
+          <text>some lotto in lotti satisfies is defined(lotto.acquisizioneCup) and lotto.acquisizioneCup and (is defined(lotto.cupLotto)=false or count(lotto.cupLotto) = 0)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_13bzggv">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG19\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0i3q9lc">
+        <description>REG20: Cup associati al lotto: il campo non è obbligatorio se:
+- lotto.acquisizionecup=’N’ e oggettoContratto="services" o ‘supplies’
+- lotto.acquisizionecup=’N’ e oggettoContratto="works" e lotto.tipologialavoro è assegnata la ‘Manutenzione Ordinaria’ (codice 12).
+E' quindi obbligatorio se il campo acquisizioneCup è valorizzato a no e se l'oggetto del contratto è Lavori e se la tipologia di lavoro è diversa da Manutenzione ordinaria</description>
+        <inputEntry id="UnaryTests_0qz436u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1euqixj">
+          <text>some lotto in lotti
+satisfies (is defined(lotto.cupLotto)=false or count(lotto.cupLotto) = 0) and lotto.acquisizioneCup=false and lotto.datiBase.oggettoContratto.codice="works" and (some tipo in lotto.tipologiaLavoro satisfies tipo.codice != "12")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0m21d0h">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG20\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ncp5ov">
+        <description>REG20_1: Il campo cupLotto non deve essere inserito se il campo afferenteInvestimentiPNRR è SI e l'appalto è di tipo Accordo Quadro/convenzione</description>
+        <inputEntry id="UnaryTests_020nlan">
+          <text>(is defined(appalto.datiBaseStrumentiProcedura.accordoQuadro)=true and appalto.datiBaseStrumentiProcedura.accordoQuadro.codice != "none")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jkmopj">
+          <text>(some lotto in lotti
+satisfies lotto.afferenteInvestimentiPNRR = true and is defined(lotto.cupLotto) and count(lotto.cupLotto) &gt; 0)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jq1jae">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG20_1\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1ikxmb9">

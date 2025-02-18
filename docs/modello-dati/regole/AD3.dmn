@@ -59,27 +59,27 @@ satisfies aggiudicazione.afferenteInvestimentiPNRR = true and (aggiudicazione.ac
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG18\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_0649fmo">
+      <rule id="DecisionRule_0h3nkj1">
         <description>REG31: Le sezioni del quadro economico standard e quadro economico concessioni devono essere mutuamente esclusive</description>
-        <inputEntry id="UnaryTests_0sqe3mu">
+        <inputEntry id="UnaryTests_1uknzc6">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1vrn6rf">
+        <inputEntry id="UnaryTests_19hvb4m">
           <text>some aggiudicazione in aggiudicazioni satisfies (is defined(aggiudicazione.quadroEconomicoStandard) and is defined(aggiudicazione.quadroEconomicoConcessioni)) </text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_0euwnaj">
+        <outputEntry id="LiteralExpression_1by5f7v">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG31\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_031e4e6">
+      <rule id="DecisionRule_1i91l3r">
         <description>REG31_1: Almeno una delle due sezioni quadro economico standard e quadro economico concessioni deve essere compilata</description>
-        <inputEntry id="UnaryTests_1bl68pp">
+        <inputEntry id="UnaryTests_1qrs0k7">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_07v70ua">
+        <inputEntry id="UnaryTests_0cxe23x">
           <text>some aggiudicazione in aggiudicazioni satisfies (is defined(aggiudicazione.quadroEconomicoStandard)=false and is defined(aggiudicazione.quadroEconomicoConcessioni)=false) </text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_1qgpb0b">
+        <outputEntry id="LiteralExpression_0rjrr0n">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG31_1\"}"</text>
         </outputEntry>
       </rule>
@@ -188,12 +188,12 @@ satisfies count(aggiudicazione.partecipanti)=0</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0eszjic">
-        <description>REG100: Negli affidamenti diretti è consentito inserire un solo idPartecipante</description>
+        <description>REG100: Negli affidamenti diretti è consentito inserire un solo idPartecipante, se non è un accordo quadro</description>
         <inputEntry id="UnaryTests_0j7ded2">
 		  <text>(is defined(appalto.accordoQuadro) and appalto.accordoQuadro = false)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0j6tkpb">
-          <text>some aggiudicazione in aggiudicazioni satisfies count(distinct values(aggiudicazione.partecipanti.idPartecipante))&gt;1</text>
+          <text>(some aggiudicazione in aggiudicazioni satisfies count(distinct values(aggiudicazione.partecipanti.idPartecipante))&gt;1)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0r68w5z">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG100\"}"</text>

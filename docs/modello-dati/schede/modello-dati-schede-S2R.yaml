@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda S2R - Scheda di rettifica o integrazione dei dati inviati con la scheda S2.
+  description: | 
+    La scheda S2R deve essere utilizzata per rettificare o integrare i dati dei partecipanti.\
+    La scheda può essere inviata più volte solo dopo la scheda S2 e solo prima della successiva scheda di aggiudicazione.\In caso di partecipante singolo le operazioni consentite sono inserimento e variazione.\
+    Inserimento - Indicare un nuovo idPartecipante per inserirlo in elenco.\
+    Variazione - Indicando un idPartecipante esistente il sistema sovrascriverà le informazioni presenti con quelle inviate.\
+    In caso di gruppo deve essere sempre inviata la struttura completa dei partecipanti, con tutte le informazioni. Il sistema sostituirà i dati esistenti con quelli inviati in rettifica.\
+    Occorre dunque sempre rimandare l'elenco completo dei soggetti appartenenti al gruppo e identificati dall'idPartecipante.
+  version: 1.0.0
+components:
+  schemas:
+    ElencoSoggettiType:
+      description: Elenco di soggetti che hanno presentato offerta e di ulteriori invitati che non hanno presentato offerta.
+      type: object
+      additionalProperties: false
+      required: [cig, dataScadenzaPresentazioneOfferta,partecipanti]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+        invitatiCheNonHannoPresentatoOfferta:
+          description: Dati relativi ai soggetti invitati che non hanno presentato offerta
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/InvitatoType'
+        partecipanti:
+          description: Dati relativi ai partecipanti
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'              
+        dataInvito: 
+          description: Data della lettera di invito
+          type: string
+          format: date-time
+        dataScadenzaPresentazioneOfferta: 
+          description: Data della scadenza di presentazione dell'offerta
+          type: string
+          format: date-time        
+      
+    SchedaS2RType:
+      description: "Scheda di rettifica o integrazione dei dati inviati con la scheda S2."
+      type: object
+      additionalProperties: false
+      required: [anacForm]
+      properties:
+        anacForm:
+          type: object
+          additionalProperties: false
+          required: [elencoSoggetti,motivoRichiestaRettifica]
+          properties:
+            motivoRichiestaRettifica:
+              $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaRettificaEnum'
+            elencoSoggetti:
+              type: array
+              items:
+                $ref: '#/components/schemas/ElencoSoggettiType'              
+                       
