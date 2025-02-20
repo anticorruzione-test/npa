@@ -1158,7 +1158,8 @@ errori.json: Aggiunto errore REG68_1
 * Pubblicazione contenuti su GitHub: 10/12/2024 (completato come da pianificazione)
 * Rilascio in Qualificazione: 17/01/2025 (completato, escluso sdk 1.12)
 * Rilascio in Esercizio: 17/02/2025 (completato, escluso sdk1.12)
-* Rilascio in Esercizio sdk1.12: ripianificato al 27/03/2025
+* Rilascio in Qualificazione sdk1.12: 18/02/2025 (completato)
+* Rilascio in Esercizio sdk1.12: 27/03/2025
   
 **la nota di rilascio potrà essere integrata successivamente**
     
@@ -1264,6 +1265,14 @@ errori.json: Aggiunto errore REG68_1
 * ticket 65796:
   * Modificata la colonna Y "codiciSchedeCorrelate": 
 	  * scheda RI1: aggiunto il valore SQ1
+
+
+# Note di rilascio del 20/02/2025 (In Esercizio)
+
+## Modello Dati
+### Schede
+* ticket 62734, 67380, 66167:
+	* rimossa obbligatorietà del campo appalto all'interno di anacForm per le schede A1_32, A2_32, A2_35, A3_1, A3_2, A4_1, A4_2, A4_3, A4_4, A4_5, A4_6;
 
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
