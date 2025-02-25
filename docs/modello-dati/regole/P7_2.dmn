@@ -124,7 +124,7 @@ satisfies (is defined(lotto.cupLotto)=false or count(lotto.cupLotto) = 0) and lo
       <rule id="DecisionRule_02aszdj">
         <description>REG20_1: Il campo cupLotto non deve essere inserito se il campo afferenteInvestimentiPNRR è SI e l'appalto è di tipo Accordo Quadro/convenzione</description>
         <inputEntry id="UnaryTests_1p22eh9">
-          <text>(is defined(appalto.datiBaseStrumentiProcedura.accordoQuadro)=true and appalto.datiBaseStrumentiProcedura.accordoQuadro.codice != "none")</text>
+          <text>(is defined(appalto.datiBaseStrumentiProcedura.accordoQuadro)=true and appalto.datiBaseStrumentiProcedura.accordoQuadro.codice != "" and appalto.datiBaseStrumentiProcedura.accordoQuadro.codice != "none")</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0v9rslk">
           <text>(some lotto in lotti
