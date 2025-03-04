@@ -11,7 +11,7 @@ components:
     AnacFormSTEVType:
       description: Contiene i dati per la scheda di Terminazione verifiche FVOE.
       type: object
-      required: [idScheda,dataChiusuraVerifiche,motivazioneChiusuraVerifiche] 
+      required: [idScheda,motivazioneMancatoAffidamento] 
       additionalProperties: false 
       properties:
         idScheda:
@@ -19,16 +19,8 @@ components:
           type: string   
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
-        dataAvvioVerifiche:
-          description: Data di comunicazione dell’elenco delle anagrafiche dei soggetti interessati (SIM)
-          type: string
-          format: date-time
-        dataChiusuraVerifiche:
-          description: Data di chiusura del FVOE o della decisione di non proseguire con le verifiche
-          type: string
-          format: date-time
-        motivazioneChiusuraVerifiche:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoChiusuraVerificheEnum'
+        motivazioneMancatoAffidamento:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoAffidamentoEnum'
     SchedaSTEVType:
       description: Scheda di Terminazione Verifiche FVOE (STEV).
       type: object
