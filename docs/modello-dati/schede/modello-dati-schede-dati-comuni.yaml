@@ -260,10 +260,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
-    MotivoMancatoAffidamentoEnum: 
+    MotivazioneMancatoAffidamentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivazione della decisione di chiusura delle verifiche FVOE - fare riferimento ai valori contenuti nel file [motivoMancatoAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/tipologiche/motivoMancatoAffidamento.json)
+      description: Motivazione della decisione di chiusura delle verifiche FVOE - fare riferimento ai valori contenuti nel file [motivazioneMancatoAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/tipologiche/motivazioneMancatoAffidamento.json)
     CategoriaType: 
       description: categoria prevalente o scorporabile
       type: object
