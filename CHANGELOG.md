@@ -1285,3 +1285,9 @@ errori.json: Aggiunto errore REG68_1
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
 
+# Note di rilascio del 10/03/2025 
+### Regole
+* ticket 69407:
+  * eliminata la REG 4_1 da ripristinare in data 16/05/2025 su Indicazione specifica nella call del 10/03/2025
+  * sulle seguenti schede:
+  * P1_10, P1_11, P1_12, P1_13, P1_14, P1_16, P1_17, P1_19, P1_20, P1_21, P2_10, P2_11, P2_12, P2_13, P2_14, P2_16, P2_17, P2_19, P2_20, P2_21, P7_1_1, P7_1_2, P7_1_3, P7_2
