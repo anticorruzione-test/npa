@@ -103,7 +103,7 @@ Durante l'esercizio della piattaforma NPA il processo di aggiornamento del model
 La cartella [modello-dati](/docs/modello-dati/) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
  ```shell
  StatoAppaltoEnum:
-   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
+   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
  ```
 ## Gestione del processo
 La gestione del processo di appalto è demandata al componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di gestire il flusso di informazioni (schede) che caratterizzano il singolo appalto. 
