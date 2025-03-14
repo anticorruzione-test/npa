@@ -2983,6 +2983,15 @@
    "dataFine":null   
 },	
 {
+   "codice":"SEC16",
+   "descrizione": {
+       "it": "Stazione appaltante non abilitata",
+       "en": "Stazione appaltante non abilitata"
+   },
+   "dataInizio":null,
+   "dataFine":null   
+},	
+{
    "codice":"FVX30",
    "descrizione": {
        "it": "Errore Servizio esterno. Rimuovi Documento - Non Disponibile",
