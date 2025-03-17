@@ -1207,6 +1207,9 @@ errori.json: Aggiunto errore REG68_1
 * P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_14.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn:
 	* aggiornata la REG18
  	* aggiunte le REG19 e REG20_1
+* P1_14.dmn: eliminate le REG6_1 e REG6_2 perché il campo tipoProcedura (bt-105) non è più consentito dal TED nella versione sdk1.12
+* P1_19.dmn: eliminate le REG6_1, REG6_2, REG95 perché il campo tipoProcedura (bt-105) non è più consentito dal TED nella versione sdk1.12
+* A1_32.dmn, A1_35.dmn: eliminata la REG68 perché il campo tipoProcedura (bt-105) non è più consentito dal TED nella versione sdk1.12
 
 <summary><h1>Note di rilascio del 23/12/2024 (In Esercizio)</h1></summary>
 
@@ -1279,15 +1282,29 @@ errori.json: Aggiunto errore REG68_1
 ### Regole
 * ticket 60876, 67879 e 68466:
   * modificata la REG4_1, rimossa la REG4_2, corretta sintassi delle REG18, REG19, REG20_1, REG101;
-  
 
-<summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
-* Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
-Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
 
-# Note di rilascio del 10/03/2025 
+# Note di rilascio del 10/03/2025 (In Esercizio)
 ### Regole
 * ticket 69407:
   * eliminata la REG 4_1 da ripristinare in data 16/05/2025 su Indicazione specifica nella call del 10/03/2025
   * sulle seguenti schede:
   * P1_10, P1_11, P1_12, P1_13, P1_14, P1_16, P1_17, P1_19, P1_20, P1_21, P2_10, P2_11, P2_12, P2_13, P2_14, P2_16, P2_17, P2_19, P2_20, P2_21, P7_1_1, P7_1_2, P7_1_3, P7_2
+
+
+# Note di rilascio del 17/03/2025 (In Esercizio)
+### Tipologiche
+* errori.json:
+  * modificato messaggio di errore ERR117, ERR118;
+  * aggiunti messaggi di errore ERR119_1, SEC16;
+
+## Modello Dati
+### Schede
+* modello-dati-schede-S0.yaml (ticket 68069, 68308, 68309, 68310, 68311, 67614, 68829, 68946, 69212):
+	* aggiunta descrizione sulle tipologie di operazioni consentitE per la scheda S0;
+
+
+<summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
+* Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
+Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
+
