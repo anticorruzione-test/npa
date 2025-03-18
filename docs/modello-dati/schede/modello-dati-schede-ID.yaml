@@ -4,14 +4,11 @@ info:
   version: 1.0.0
 components:
   schemas:
-    AnacFormIDType:
+    ComunicazioneIDType:
       type: object
-      required: [cig,motivoRichiestaModifica,cup]
+      required: [motivoRichiestaModifica,cup]
       additionalProperties: false
       properties:
-        cig:
-          description: codice identificativo lotto
-          type: string 
         motivoRichiestaModifica:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModificaEnum'    
         cup:
@@ -20,6 +17,16 @@ components:
           items:
             type: string
             pattern: ^[a-zA-Z0-9]{15}$
+    AnacFormIDType:
+      type: object
+      required: [cig,comunicazione]
+      additionalProperties: false
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string 
+        comunicazione:
+            $ref: '#/components/schemas/ComunicazioneIDType'    
     SchedaIDType:
       description: Scheda  per l'integrazione dei dati non essenziali ai fini della pubblicità legale e del flusso della procedura.
       type: object
