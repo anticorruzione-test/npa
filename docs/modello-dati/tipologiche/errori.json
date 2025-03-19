@@ -2389,6 +2389,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG129",
+    "descrizione": {
+		"it": "Attenzione, non è stata indicata la denominazione del soggetto.",
+		"en": "Attenzione, non è stata indicata la denominazione del soggetto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
