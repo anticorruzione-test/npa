@@ -12,14 +12,14 @@ info:
 components:
   schemas:
     AnacFormSIMType:
-      description: Anagrafica dei soggetti interessati.
+      description: Anagrafica dei soggetti.
       allOf: # estende la classe AnacFormBaseType
       - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'
       type: object
       additionalProperties: false
-      required: [elencoSoggettiRichiedenti]
+      required: [elencoSoggetti]
       properties:
-        elencoSoggettiRichiedenti:
+        elencoSoggetti:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SoggettoType'
