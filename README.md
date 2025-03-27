@@ -1,11 +1,20 @@
 # AVVISI:
 ## 1
-E' stata pubblicata sulla PDND di attestazione e di esercizio la nuova versione dei servizi FVC che include il richiedi-documenti in POST
+Si comunica che la REG4_1 è stata sospesa fino al 16 maggio 2025 poichè poteva causare il fallimento della conferma di avvisi di rettifica per bandi pubblicati prima del rilascio del changelog-04, laddove la regola, malfunzionante, era stata fixata.
 
 ## 2
-Come da [roadmap](/docs/specifiche-jws/roadmap.md), si ricorda a tutti i soggetti che sono stati autorizzati all’accesso temporaneo agli eService della Piattaforma Contratti Pubblici, che a partire dal 9 ottobre 2023, per poter accedere agli eService attualmente disponibili che implementano il contesto di sicurezza, dovranno effettuare l’onboarding su PDND attraverso la richiesta di iscrizione tra le piattaforme certificate come indicato nelle [regole tecniche](https://www.agid.gov.it/it/piattaforme/procurement/certificazione-componenti-piattaforme) emanate da AgID 
+Si invitano tutti gli utenti a prendere visione del calendario di manutenzione programmata degli ambienti PDND da parte di PagoPA:
+-	Attestazione lunedì 10 marzo dalle 14.00 alle 17:00
+-	Collaudo mercoledì 12 marzo dalle 14.00 alle 17:00
+-	Produzione sabato 15 marzo dalle 16.00 alle 19:00
 
 ## 3
+E' stata pubblicata sulla PDND di attestazione e di esercizio la nuova versione dei servizi FVC che include il richiedi-documenti in POST
+
+## 4
+Come da [roadmap](/docs/specifiche-jws/roadmap.md), si ricorda a tutti i soggetti che sono stati autorizzati all’accesso temporaneo agli eService della Piattaforma Contratti Pubblici, che a partire dal 9 ottobre 2023, per poter accedere agli eService attualmente disponibili che implementano il contesto di sicurezza, dovranno effettuare l’onboarding su PDND attraverso la richiesta di iscrizione tra le piattaforme certificate come indicato nelle [regole tecniche](https://www.agid.gov.it/it/piattaforme/procurement/certificazione-componenti-piattaforme) emanate da AgID 
+
+## 5
 Attivato il nuovo ambiente di ATTESTAZIONE per le piattaforme.
 L'ambiente è destinato all'esecuzione di test funzionali per la verifica delle attività di MAC, è esposto su PDND e disponibile alle sole piattaforme certificate.
 ANAC non garantisce livelli di servizio sulla disponibilità dell'ambiente ed è ammesso un disallineamento temporaneo di versione tra tale ambiente e quello di esercizio in coincidenza con le operazioni di rilascio di MAC, MAD o MEV.
@@ -140,7 +149,7 @@ Nella tabella seguente sono disciplinati i tempi massimi e minimi per l'adozione
 **NB**: l'aggiornamento del flusso di monitoraggio può includere l'aggiornamento o l'estensione del modello dati anche mediante l'introduzione di nuove schede.
 
 ## Standard adottati
- - eForms sdk versione 1.9.0;
+ - eForms sdk versione 1.9.0 fino al 27/03/2025; 1.12 dal 27/03/2025
  - ESPD versione 2.1.1;
 
 **NB**: nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
