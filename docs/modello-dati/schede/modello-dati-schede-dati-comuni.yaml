@@ -957,14 +957,16 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object
-      required: [costituzioneSocietaDiScopo,settore] 
+      required: [costituzioneSocietaDiScopo,settore,datiBaseProcedura] 
       additionalProperties: false
       properties:
         costituzioneSocietaDiScopo:
           description: Indicare se è prevista la costituzione di una società di scopo
           type: boolean
         settore:
-          $ref: '#/components/schemas/SettoreEnum'    
+          $ref: '#/components/schemas/SettoreEnum'
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraType'
     AppaltoP_15Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione
       type: object
@@ -1022,7 +1024,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object 
-      required: [costituzioneSocietaDiScopo,settore] 
+      required: [costituzioneSocietaDiScopo,settoredatiBaseProcedura] 
       additionalProperties: false
       properties:
         costituzioneSocietaDiScopo:
@@ -1030,6 +1032,8 @@ components:
           type: boolean 
         settore: 
           $ref: '#/components/schemas/SettoreEnum'
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraType'
     AppaltoP_20Type:
       description: Oggetto che riporta i dati dell'appalto all'interno della fase di pubblicazione sopra soglia e sotto soglia
       allOf: # estende la classe AppaltoBaseType
