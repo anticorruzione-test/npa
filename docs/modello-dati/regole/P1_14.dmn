@@ -84,7 +84,6 @@ satisfies is defined(stazioneAppaltante.funzioniSvolte) and stazioneAppaltante.c
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG3\"}"</text>
         </outputEntry>
       </rule>
-      </rule>
       <rule id="DecisionRule_P1_14_0001">
         <description>REG6_1: Condizioni Negoziata: se il valore del tipo di procedura è "Negoziata senza previa indizione di gara" allora il campo condizioniNegoziata deve essere valorizzato.</description>
         <inputEntry id="UnaryTests_P1_14_0001">
