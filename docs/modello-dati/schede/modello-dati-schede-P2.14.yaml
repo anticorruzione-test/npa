@@ -9,14 +9,11 @@ components:
       - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP_14Type'        
       type: object
       additionalProperties: false
-      required: [datiBase,datiBaseProcedura]
+      required: [datiBase]
       properties:  
         datiBase:
           allOf: 
-          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'
-        datiBaseProcedura:
-          allOf:
-          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraType'          
+          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'                 
         datiBaseStrumentiProcedura:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaCUP/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAccordoQuadroAstaType'          
     LottoP2_14Type:
