@@ -1024,7 +1024,7 @@ components:
       allOf: # estende la classe AppaltoBaseType
       - $ref: '#/components/schemas/AppaltoBaseType'
       type: object 
-      required: [costituzioneSocietaDiScopo,settoredatiBaseProcedura] 
+      required: [costituzioneSocietaDiScopo,settore,datiBaseProcedura] 
       additionalProperties: false
       properties:
         costituzioneSocietaDiScopo:
