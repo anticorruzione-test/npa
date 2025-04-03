@@ -11,10 +11,10 @@ components:
     AnacFormSTEVType:
       description: Contiene i dati per la scheda di Terminazione verifiche FVOE.
       type: object
-      required: [idScheda,motivazioneMancatoAffidamento] 
+      required: [idSchedaSim,motivazioneMancatoAffidamento] 
       additionalProperties: false 
       properties:
-        idScheda:
+        idSchedaSim:
           description: identificativo restituito dal servizio all’invio della scheda SIM.
           type: string   
           format: uuid
