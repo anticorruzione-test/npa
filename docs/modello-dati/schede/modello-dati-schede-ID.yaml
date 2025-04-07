@@ -1,6 +1,9 @@
 openapi: 3.0.0
 info:
   title: Modello Dati - Scheda ID - Scheda  per l'integrazione dei dati non essenziali ai fini della pubblicità legale e del flusso della procedura.
+  description: | 
+    La scheda dovrà contenere ogni volta la lista dei cup validi. Questa lista sovrascriverà la precedente lista inviata.\
+    Quindi i cup validi saranno sempre solo quelli inviati con l'ultima scheda ID.
   version: 1.0.0
 components:
   schemas:
