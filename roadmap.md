@@ -4,7 +4,9 @@
 
 ## ChangeLog-05
 >**Data Rilascio Documentazione** - 09/04/2025
+
 >**Data Disponibilità QLF** - 11/04/2025
+
 >**Data Rilascio Esercizio** - 08/05/2025
 
 |ID|Titolo|Descrizione|
@@ -31,7 +33,9 @@
 |72189|Revisione campo ”strumentiElettroniciSpecifici"|Revisione del campo ”strumentiElettroniciSpecifici”: reso obbligatorio ed esteso a tutte le procedure ad eccezione delle AD5|
 
 >**Data Rilascio Documentazione** - 15/04/2025
+
 >**Data Disponibilità QLF** - 16/05/2025 *
+
 >**Data Rilascio Esercizio** - 16/06/2025 *
 
 |ID|Titolo|Descrizione|
@@ -43,7 +47,9 @@
 
 ## ChangeLog-06
 >**Data Rilascio Documentazione** - 09/04/2025
+
 >**Data Disponibilità QLF** - 11/04/2025
+
 >**Data Rilascio Esercizio** - 08/05/2025
 
 |ID|Titolo|Descrizione|
