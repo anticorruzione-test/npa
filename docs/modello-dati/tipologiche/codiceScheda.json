@@ -1240,24 +1240,6 @@
     "dataFine":null
 },
 {
-    "codice":"SIM",
-    "descrizione": {
-		"it": "Scheda anagrafica per Indagine di Mercato.",
-		"en": "Scheda anagrafica per Indagine di Mercato."
-		},
-    "dataInizio":null,
-    "dataFine":null
-},
-{
-    "codice":"STEV",
-    "descrizione": {
-		"it": "Scheda di Terminazione Verifiche FVOE.",
-		"en": "Scheda di Terminazione Verifiche FVOE."
-		},
-    "dataInizio":null,
-    "dataFine":null
-},
-{
     "codice":"ID",
     "descrizione": {
     "it": "Scheda per l'integrazione dei dati non essenziali ai fini della pubblicità legale e del flusso della procedura.",
