@@ -1330,19 +1330,19 @@ errori.json: Aggiunto errore REG68_1
 <summary><h1>Note di rilascio del 09/04/2025 (Changelog-05)</h1></summary>
 
 **NOTA**
-* Pubblicazione contenuti su GitHub: 09/04/2025
-* Rilascio in Qualificazione: 11/04/2025
+* Pubblicazione contenuti su GitHub: 11/04/2025
+* Rilascio in Qualificazione: 14/04/2025
 * Rilascio in Qualificazione: 18/04/2025 (campo strumentiElettroniciSpecifici, REG5)
 * Rilascio in Esercizio: 08/05/2025
-* Pubblicazione contenuti su GitHub: 15/04/2025 (schede SIM, STEV)
-* Rilascio in Qualificazione: 16/05/2025 (schede SIM, STEV)
-* Rilascio in Esercizio: 16/06/2025 (schede SIM, STEV)
+* Pubblicazione contenuti su GitHub: 15/04/2025 (schede AVR, TVR)
+* Rilascio in Qualificazione: 16/05/2025 (schede AVR, TVR)
+* Rilascio in Esercizio: 16/06/2025 (schede AVR, TVR)
 
   **la nota di rilascio potrà essere integrata successivamente**
     
 ## Modello Dati 
 * modello-dati-npa.yaml:
-  * aggiunte nuove schede ID, SIM, STEV
+  * aggiunte nuove schede ID
 * modello-dati-schede-dati-comuni.yaml: aggiunto l'oggetto strumentiElettroniciSpecifici per le schede ISDA1, ISDA2, P1_18, P1_20, P1_21, P1_23, P1_24, P2_12, P2_13, P2_14, P2_18, P2_20, P2_21, P2_23, P2_24, P6_1, P6_2, P4_6, AD2_25, AD2_26, AD2_27, AD2_28, AD3, AD4, AD1_25, AD1_26, AD1_28, P1_12, P1_13, AD1_27, P1_14
 
 ### Schede
@@ -1350,7 +1350,7 @@ errori.json: Aggiunto errore REG68_1
   * modificati gli oggetti ModificaContrattualeType e ModificaContrattuale_40Type aggiungendo l'attributo format: url per urlDocumentazione
 
 ## Orchestratore  
-* Aggiunte le informazioni sulle nuove schede ID, SIM, STEV
+* Aggiunte le informazioni sulle nuove schede ID
 * Per tutte le schede di indizione, post-pubblicazione, esecuzione (no conclusione) aggiunta la scheda ID come schedaSuccessiva
 * Modificata la colonna J "pubblicazioneTED": 
   * scheda P4_1: impostata pubblicazioneTED a SI
@@ -1359,7 +1359,6 @@ errori.json: Aggiunto errore REG68_1
   * schede AD1*, AD2*, AD3, AD4, AD5: aggiunta la scheda S4
   * schede CO2, P5: impostato il valore STATO_FINALE
   * scheda P1_15_2: aggiunte le schede S1,S2
-  * schede PL1_1, PL1_2, PL1_3, PL1_4, PL1_5, PL1_6, PL1_7, PL1_8, PL1_9, PL2_1, PL2_2, PL2_3, PL2_7, PL2_8, PL2_9: aggiunta scheda SIM
 * Modificata la colonna S "flussoAppartenenza": 
   * scheda M2: aggiunto il valore 31, 33, 34, 225
   * schede M2, M2_40: aggiunti i valori 40, 711, 712, 713
@@ -1380,7 +1379,7 @@ errori.json: Aggiunto errore REG68_1
   * aggiunti errori ERR132, ERR133
   * aggiunte regole REG127, REG128, REG129, REG130
 * codiceScheda.json:
-  * aggiunta codice scheda ID, SIM, STEV
+  * aggiunta codice scheda ID
   * aggiunte regole REG127, REG128, REG129, REG130
 * statoPiano.json:
   * aggiunta voce TERM
