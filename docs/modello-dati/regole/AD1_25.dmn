@@ -97,6 +97,19 @@ satisfies aggiudicazione.afferenteInvestimentiPNRR = true and is defined(aggiudi
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG20_1\"}"</text>
         </outputEntry>
       </rule>
+	  <rule id="DecisionRule_AD1_25_0025">
+        <description>REG21: Tutela delle pari opportunità generazionali e di genere nonché per l'inclusione delle persone con disabilità: La sezione è obbligatoria se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
+        <inputEntry id="UnaryTests_AD1_25_0076">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_AD1_25_0077">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies aggiudicazione.afferenteInvestimentiPNRR and aggiudicazione.paritaDiGenereGenerazionale = null</text>
+        </inputEntry>        
+        <outputEntry id="LiteralExpression_AD1_25_0026">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG21\"}"</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_AD1_25_0026">
         <description>REG22: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?: il campo è obbligatorio se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
         <inputEntry id="UnaryTests_AD1_25_0079">
