@@ -1226,6 +1226,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 15/01/2025 (In Esercizio)</h1></summary>
+
 ### Orchestratore  
 * Modificata la colonna V "nuovoStatoAppalto": 
   * schede ISDA1, ISDA2: impostato il valore PUBB
@@ -1238,6 +1239,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 21/01/2025 (In Esercizio)</h1></summary>
+
 ### Orchestratore
 * Aggiornato il file schema-cronologia-schede.xlsx
 
@@ -1247,6 +1249,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 23/01/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 62440, 62813:
   * modificata la REG15, rimossa la REG16:
@@ -1273,6 +1276,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 29/01/2025 (In Esercizio)</h1></summary>
+
 ### Orchestratore
 * ticket 65796:
   * Modificata la colonna Y "codiciSchedeCorrelate": 
@@ -1281,6 +1285,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 20/02/2025 (In Esercizio)</h1></summary>
+
 ## Modello Dati
 ### Schede
 * ticket 62734, 67380, 66167:
@@ -1289,6 +1294,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 03/03/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 60876, 67879 e 68466:
   * modificata la REG4_1, rimossa la REG4_2, corretta sintassi delle REG18, REG19, REG20_1, REG101;
@@ -1296,6 +1302,7 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 10/03/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 69407:
   * eliminata la REG 4_1 da ripristinare in data 16/05/2025 su Indicazione specifica nella call del 10/03/2025
@@ -1305,19 +1312,20 @@ errori.json: Aggiunto errore REG68_1
 
 <details>
 <summary><h1>Note di rilascio del 17/03/2025 (In Esercizio)</h1></summary>
+
 ### Tipologiche
 * errori.json:
   * modificato messaggio di errore ERR117, ERR118;
   * aggiunti messaggi di errore ERR119_1, SEC16;
 
-## Modello Dati
 ### Schede
 * modello-dati-schede-S0.yaml (ticket 68069, 68308, 68309, 68310, 68311, 67614, 68829, 68946, 69212):
 	* aggiunta descrizione sulle tipologie di operazioni consentite per la scheda S0;
 </details>
 
 <details>
-# Note di rilascio del 27/03/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 27/03/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 60876, 67879 e 68466:
   * aggiunte le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
@@ -1326,7 +1334,8 @@ errori.json: Aggiunto errore REG68_1
 </details>
 
 <details>
-# Note di rilascio del 07/04/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 07/04/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 73104:
   * rimosse le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
