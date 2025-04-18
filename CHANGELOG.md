@@ -1152,6 +1152,7 @@ errori.json: Aggiunto errore REG68_1
 	* errori.json: modificato l'errore REG67
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 10/12/2024 (Changelog-04 SDK 1.12)</h1></summary>
 
 **NOTA**
@@ -1213,6 +1214,7 @@ errori.json: Aggiunto errore REG68_1
 
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.12).
+</details>
 
 <details>
 <summary><h1>Note di rilascio del 23/12/2024 (In Esercizio)</h1></summary>
@@ -1314,18 +1316,21 @@ errori.json: Aggiunto errore REG68_1
 	* aggiunta descrizione sulle tipologie di operazioni consentite per la scheda S0;
 </details>
 
+<details>
 # Note di rilascio del 27/03/2025 (In Esercizio)
 ### Regole
 * ticket 60876, 67879 e 68466:
   * aggiunte le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
 * ticket 70939:
   * eliminate le REG37, REG38 dalla scheda: P3_1
+</details>
 
+<details>
 # Note di rilascio del 07/04/2025 (In Esercizio)
 ### Regole
 * ticket 73104:
   * rimosse le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
-
+</details>
 
 <summary><h1>Note di rilascio del 09/04/2025 (Changelog-05)</h1></summary>
 
