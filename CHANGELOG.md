@@ -1337,8 +1337,8 @@ errori.json: Aggiunto errore REG68_1
 
 ### Tipologiche
 * ticket 76046:
-errori.json: corretta descrizione errore FVX48
-tipoDocumento.json: corretta descrizione tipologica 00034
+  * errori.json: corretta descrizione errore FVX48
+  * tipoDocumento.json: corretta descrizione tipologica 00034
 
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
