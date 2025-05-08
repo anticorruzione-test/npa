@@ -1347,10 +1347,10 @@ errori.json: Aggiunto errore REG68_1
 * Pubblicazione contenuti su GitHub: 11/04/2025
 * Rilascio in Qualificazione: 14/04/2025
 * Rilascio in Qualificazione: 18/04/2025 (campo strumentiElettroniciSpecifici, REG5)
-* Rilascio in Esercizio: 08/05/2025
+* Rilascio in Esercizio: Come da Roadmap
 * Pubblicazione contenuti su GitHub: 15/04/2025 (schede AVR, TVR)
 * Rilascio in Qualificazione: 16/05/2025 (schede AVR, TVR)
-* Rilascio in Esercizio: 16/06/2025 (schede AVR, TVR)
+* Rilascio in Esercizio: Come da Roadmap (schede AVR, TVR)
 
   **la nota di rilascio potrà essere integrata successivamente**
     
@@ -1428,6 +1428,13 @@ errori.json: Aggiunto errore REG68_1
   * errori.json: corretta descrizione errore FVX48
   * tipoDocumento.json: corretta descrizione tipologica 00034
 
+
+# Note di rilascio del 08/05/2025 (In Esercizio)
+
+## Orchestratore  
+* scheda A2_31: aggiunti i flussi 61, 62
+* schede A2_32, A2_35: aggiunto il flusso 61
+* schede A2_29, A2_30, A2_33, A2_34: aggiunto il flusso 62
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
