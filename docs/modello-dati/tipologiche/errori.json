@@ -2397,6 +2397,15 @@
     "dataInizio":null,
     "dataFine":null
 },
+	{
+    "codice":"REG127",
+    "descrizione": {
+		"it": "Indicare almeno un Cup.",
+		"en": "Indicare almeno un Cup."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
 {
     "codice":"AUT01",
     "descrizione": {
