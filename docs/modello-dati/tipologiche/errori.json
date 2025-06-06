@@ -1270,8 +1270,8 @@
 {
 	"codice":"ERR141",
     "descrizione": {
-		"it": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare"",
-		"en": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare""
+		"it": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare",
+		"en": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare"
 	},
     "dataInizio":null,
     "dataFine":null
