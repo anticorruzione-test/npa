@@ -1347,7 +1347,7 @@ errori.json: Aggiunto errore REG68_1
 * Pubblicazione contenuti su GitHub: 11/04/2025
 * Rilascio in Qualificazione: 14/04/2025
 * Rilascio in Qualificazione: 18/04/2025 (campo strumentiElettroniciSpecifici, REG5)
-* Rilascio in Esercizio: 14/05/2025
+* Rilascio in Esercizio: Come da Roadmap
 * Pubblicazione contenuti su GitHub: 15/04/2025 (schede AVR, TVR)
 * Rilascio in Qualificazione: 16/05/2025 (schede AVR, TVR)
 * Rilascio in Esercizio: Come da Roadmap (schede AVR, TVR)
@@ -1377,9 +1377,10 @@ errori.json: Aggiunto errore REG68_1
 * Modificata la colonna J "pubblicazioneTED": 
   * scheda P4_1: impostata pubblicazioneTED a SI
 * Modificata la colonna R "schedaSuccessiva": 
-  * scheda S4: impostato elenco di schede successive M1,M1_40,M2,M2_40,SA1,RSU1,SO1,AC1,IR1,CO1,ES1,CL1,S4,S3
+  * scheda S4: impostato elenco di schede successive M1,M1_40,M2,M2_40,SA1,RSU1,SO1,AC1,IR1,CO1,ES1,CL1,S4,S3,SC1
   * schede AD1*, AD2*, AD3, AD4, AD5: aggiunta la scheda S4
-  * schede CO2, P5: impostato il valore STATO_FINALE
+  * schede P5: impostato il valore CM1, ANN
+  * schede CO2: impostato il valore STATO_FINALE
   * scheda P1_15_2: aggiunte le schede S1,S2
   * schede PL1_1, PL1_2, PL1_3, PL1_4, PL1_5, PL1_6, PL1_7, PL1_8, PL1_9, PL2_1, PL2_2, PL2_3, PL2_7, PL2_8, PL2_9: aggiunta scheda AVR
 * Modificata la colonna S "flussoAppartenenza": 
@@ -1436,6 +1437,18 @@ errori.json: Aggiunto errore REG68_1
   * scheda A2_31: aggiunti i flussi 61, 62
   * schede A2_32, A2_35: aggiunto il flusso 61
   * schede A2_29, A2_30, A2_33, A2_34: aggiunto il flusso 62
+
+
+# Note di rilascio del 06/06/2025 (In Esercizio)
+### Tipologiche
+* ticket 77555:
+  * errori.json: modificata descrizione regola REG5
+* tipoDocumento.json: corretta descrizione tipologica 00071
+
+### Regole
+* rimossa REG52 dalle schede A1_29, A1_30, A1_31, A1_32, A1_33, A1_34, A1_36, A1_37;
+* modificata la REG51 per le schede A1_29, A1_30, A1_33, A1_34;
+
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
