@@ -1347,7 +1347,7 @@ errori.json: Aggiunto errore REG68_1
 * Pubblicazione contenuti su GitHub: 11/04/2025
 * Rilascio in Qualificazione: 14/04/2025
 * Rilascio in Qualificazione: 18/04/2025 (campo strumentiElettroniciSpecifici, REG5)
-* Rilascio in Esercizio: 14/05/2025
+* Rilascio in Esercizio: Come da Roadmap
 * Pubblicazione contenuti su GitHub: 15/04/2025 (schede AVR, TVR)
 * Rilascio in Qualificazione: 16/05/2025 (schede AVR, TVR)
 * Rilascio in Esercizio: Come da Roadmap (schede AVR, TVR)
@@ -1442,8 +1442,12 @@ errori.json: Aggiunto errore REG68_1
 # Note di rilascio del 06/06/2025 (In Esercizio)
 ### Tipologiche
 * ticket 77555:
-  * errori.json: modificata descrizione regola  REG5
+  * errori.json: modificata descrizione regola REG5
 * tipoDocumento.json: corretta descrizione tipologica 00071
+
+### Regole
+* rimossa REG52 dalle schede A1_29, A1_30, A1_31, A1_32, A1_33, A1_34, A1_36, A1_37;
+* modificata la REG51 per le schede A1_29, A1_30, A1_33, A1_34;
 
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
