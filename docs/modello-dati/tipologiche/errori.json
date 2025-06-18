@@ -1277,6 +1277,15 @@
     "dataFine":null
 },
 {
+	"codice":"ERR142",
+    "descrizione": {
+		"it": "Errore durante la comunicazione con FVPQ.",
+		"en": "Errore durante la comunicazione con FVPQ."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
