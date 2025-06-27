@@ -1205,6 +1205,87 @@
     "dataFine":null
 },	
 {
+    "codice":"ERR134",
+    "descrizione": {
+		"it": "L'idPianificazione indicato nel body non è coerente con il Piano che si sta tentando di creare.",
+		"en": "L'idPianificazione indicato nel body non è coerente con il Piano che si sta tentando di creare."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR135",
+    "descrizione": {
+		"it": "Il Piano indicato nel body non è stato pubblicato.",
+		"en": "Il Piano indicato nel body non è stato pubblicato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR136",
+    "descrizione": {
+		"it": "Il Piano indicato nel body non è stato confermato.",
+		"en": "Il Piano indicato nel body non è stato confermato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR137",
+    "descrizione": {
+		"it": "idSchedaAvr non trovato.",
+		"en": "idSchedaAvr non trovato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR138",
+    "descrizione": {
+		"it": "idSchedaAvr non coerente.",
+		"en": "idSchedaAvr non coerente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ERR139",
+    "descrizione": {
+		"it": "Partecipanti non coerenti con precedente invio AVR.",
+		"en": "Partecipanti non coerenti con precedente invio AVR."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR140",
+    "descrizione": {
+		"it": "È stato inserito lo stesso eForm dell'avviso che si desidera rettificare, si prega di verificare",
+		"en": "È stato inserito lo stesso eForm dell'avviso che si desidera rettificare, si prega di verificare"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR141",
+    "descrizione": {
+		"it": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare",
+		"en": "È stato inserito nell'eform lo stesso NoticeId dell'avviso che si desidera rettificare, si prega di verificare"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR142",
+    "descrizione": {
+		"it": "Errore durante la comunicazione con FVPQ.",
+		"en": "Errore durante la comunicazione con FVPQ."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
@@ -2402,6 +2483,33 @@
     "descrizione": {
 		"it": "Indicare almeno un Cup.",
 		"en": "Indicare almeno un Cup."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG128",
+    "descrizione": {
+		"it": "Inserire almeno un elemento nella lista.",
+		"en": "Inserire almeno un elemento nella lista."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG129",
+    "descrizione": {
+		"it": "Attenzione, non è stata indicata la denominazione del soggetto.",
+		"en": "Attenzione, non è stata indicata la denominazione del soggetto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG130",
+    "descrizione": {
+		"it": "I codici fiscali indicati nella lista dei soggetti devono essere diversi.",
+		"en": "I codici fiscali indicati nella lista dei soggetti devono essere diversi."
 	},
     "dataInizio":null,
     "dataFine":null
