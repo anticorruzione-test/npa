@@ -2692,6 +2692,10 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/FinanziamentoType'
+        quadroEconomicoStandard:
+          $ref: '#/components/schemas/QuadroEconomicoP7Type'
+        quadroEconomicoConcessioni:
+          $ref: '#/components/schemas/QuadroEconomicoConcessioniType'
         partecipanti:
           type: array
           items: 
