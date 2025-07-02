@@ -264,6 +264,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivazione della decisione di chiusura delle verifiche FVOE - fare riferimento ai valori contenuti nel file [motivazioneMancatoAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/tipologiche/motivazioneMancatoAffidamento.json)
+    CcnlEnum: 
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: CCNL - fare riferimento ai valori contenuti nel file [ccnl.json](https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/tipologiche/ccnl.json)      
     CategoriaType: 
       description: categoria prevalente o scorporabile
       type: object
@@ -592,8 +596,7 @@ components:
           description: indicare se è un aggiudicatario
           type: boolean
         ccnl:
-          description: Contratto Collettivo applicato dall'aggiudicatario. Indicare il codice CNEL o non applicabile 
-          type: string
+          $ref: '#/components/schemas/CcnlEnum'
         posizioneGraduatoria: 
           description: Posizione in graduatoria
           type: number
@@ -1237,8 +1240,7 @@ components:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string
+          $ref: '#/components/schemas/CcnlEnum'
         tipologiaLavoro:
           type: array
           items:
@@ -1277,8 +1279,7 @@ components:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         tipologiaLavoro:
           type: array
           items:
@@ -1322,8 +1323,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$ 
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'          
         opzioniRinnovi:
@@ -1366,8 +1366,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$           
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
@@ -1407,8 +1406,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$              
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'         
         opzioniRinnovi:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean 
@@ -1487,8 +1485,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType'            
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string   
+          $ref: '#/components/schemas/CcnlEnum'   
         tipologiaLavoro:
           type: array
           items:
@@ -1537,8 +1534,7 @@ components:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         tipologiaLavoro:
           type: array
           items:
@@ -1587,8 +1583,7 @@ components:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         tipologiaLavoro:
           type: array
           items:
@@ -1637,8 +1632,7 @@ components:
             type: string
             pattern: ^[a-zA-Z0-9]{15}$  
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string  
+          $ref: '#/components/schemas/CcnlEnum'  
         strumentiElettroniciSpecifici:
           description: Uso e metodi e strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche
           type: boolean
@@ -1664,8 +1658,7 @@ components:
           type: string
           pattern: ^[a-zA-Z0-9]{20,22}$          
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         tipologiaLavoro:
           type: array
           items:
@@ -1710,8 +1703,7 @@ components:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
@@ -1754,8 +1746,7 @@ components:
           description: L’appalto prevede opzioni/rinnovi?
           type: boolean  
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         ipotesiCollegamento:
           $ref: '#/components/schemas/IpotesiCollegamentoType'
         categoria:
@@ -1978,8 +1969,7 @@ components:
             description: Id univoco del lotto generato dalla stazione appaltante
             type: string 
           ccnl:
-            description: indicare il codice CNEL o non applicabile
-            type: string        
+            $ref: '#/components/schemas/CcnlEnum'        
           condizioniNegoziata:
             type: array
             items:
@@ -2113,8 +2103,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
@@ -2215,8 +2204,7 @@ components:
         paritaDiGenereGenerazionale:
           $ref: '#/components/schemas/ParitaDiGenereGenerazionaleType' 
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string          
+          $ref: '#/components/schemas/CcnlEnum'          
         modalitaAcquisizione:
           $ref: '#/components/schemas/ModalitaAcquisizioneEnum'
         tipologiaLavoro:
@@ -2535,8 +2523,7 @@ components:
             type: string 
             pattern: ^[a-zA-Z0-9]{15}$
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string  
+          $ref: '#/components/schemas/CcnlEnum'  
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         categoriaScorporabile:
@@ -2612,8 +2599,7 @@ components:
             type: string  
             pattern: ^[a-zA-Z0-9]{15}$
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string  
+          $ref: '#/components/schemas/CcnlEnum'  
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         categoriaScorporabile:
@@ -2677,8 +2663,7 @@ components:
           description: Id univoco del lotto generato dalla stazione appaltante - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-137 - Purpose Lot Identifier del TED
           type: string  
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string  
+          $ref: '#/components/schemas/CcnlEnum'  
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         categoriaScorporabile:
@@ -2746,8 +2731,7 @@ components:
             type: string  
             pattern: ^[a-zA-Z0-9]{15}$
         ccnl:
-          description: indicare il codice CNEL o non applicabile
-          type: string  
+          $ref: '#/components/schemas/CcnlEnum'  
         categoria:
           $ref: '#/components/schemas/CategoriaEnum'  
         categoriaScorporabile:
