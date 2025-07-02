@@ -3,7 +3,7 @@
     "descrizione": {
 		"it": "operai agricoli e florovivaisti; impiegati, quadri e dirigenti dell'agricoltura",
 		"en": "operai agricoli e florovivaisti; impiegati, quadri e dirigenti dell'agricoltura",
-	    "de": "operai agricoli e florovivaisti; impiegati, quadri e dirigenti dell'agricoltura"	},
+	    	"de": "operai agricoli e florovivaisti; impiegati, quadri e dirigenti dell'agricoltura"	},
     "dataInizio":null,
     "dataFine":null
 },
@@ -12,7 +12,7 @@
     "descrizione": {
 		"it": "attività di contoterzismo in agricoltura",
 		"en": "attività di contoterzismo in agricoltura",
-	    "de": "attività di contoterzismo in agricoltura"	},
+	    	"de": "attività di contoterzismo in agricoltura"	},
     "dataInizio":null,
     "dataFine":null
 },
@@ -21,7 +21,7 @@
     "descrizione": {
 		"it": "consorzi di bonifica e di miglioramento fondiario, sistemazioni idraulico-forestali",
 		"en": "consorzi di bonifica e di miglioramento fondiario, sistemazioni idraulico-forestali",
-	    "de": "consorzi di bonifica e di miglioramento fondiario, sistemazioni idraulico-forestali"	},
+	    	"de": "consorzi di bonifica e di miglioramento fondiario, sistemazioni idraulico-forestali"	},
     "dataInizio":null,
     "dataFine":null
 },
@@ -30,7 +30,7 @@
     "descrizione": {
 		"it": "consorzi agrari",
 		"en": "consorzi agrari",
-	    "de": "consorzi agrari"	},
+	    	"de": "consorzi agrari"	},
     "dataInizio":null,
     "dataFine":null
 },
@@ -39,7 +39,7 @@
     "descrizione": {
 		"it": "settore zootecnico",
 		"en": "settore zootecnico",
-	    "de": "settore zootecnico"	},
+	    	"de": "settore zootecnico"	},
     "dataInizio":null,
     "dataFine":null
 },
