@@ -34,6 +34,19 @@ satisfies aggiudicazione.datiBase.oggettoContratto.codice = "works" and aggiudic
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG5\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_18cb08q">
+        <description>REG5_1: il campo docFaP è obbligatorio in caso venga valorizzato il campo strumentiElettroniciSpecifici</description>
+        <inputEntry id="UnaryTests_1x0tmvr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fhhxpu">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies is defined(aggiudicazione.strumentiElettroniciSpecifici) and is defined (aggiudicazione.docFAP) = false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0c8i3k8">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG5_1\"}"</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_AD1_10_0020">
         <description>REG7: E’ stata selezionata la voce ‘Somma urgenza e protezione civile’ di cui all’art. 140 co. 10 D. Lgs. 36/2023. E’ necessario valorizzare il ‘link ai documenti relativi all’affidamento diretto in somma urgenza e protezione civile’ con la URL della sezione ‘Bandi e Contratti’ dove sono pubblicati i documenti previsti dal regolamento di vigilanza ANAC</description>
         <inputEntry id="UnaryTests_AD1_10_0061">
