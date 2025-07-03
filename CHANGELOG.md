@@ -1472,7 +1472,7 @@ errori.json: Aggiunto errore REG68_1
 	* modificato il campo ccnl da string a tipologica, aggiunto il riferimento al nuovo oggetto CcnlEnum
 	* aggiunto l'oggetto MotivoVariazioneCUPEnum
 	* aggiunto l'oggetto MotivoCorrezioneEnum
- 	* aggiunto il campo docFAP in tutte gli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
+ 	* aggiunto il campo docFAP in tutti gli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
 
 * modello-dati-schede-P7.1.1.yaml,modello-dati-schede-P7.1.2.yaml,modello-dati-schede-P7.1.3.yaml: aggiunto il campo facoltativo espd
 
@@ -1484,7 +1484,7 @@ errori.json: Aggiunto errore REG68_1
 	* aggiunto l'oggetto comunicazioneRibassoAggiudicazione
 
 * modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml,modello-dati-schede-AD3.yaml,modello-dati-schede-AD4.yaml: 
-	* aggiunto il campo docFAP in tutte gli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
+	* aggiunto il campo docFAP negli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
 
 ## Orchestratore  
 * modificata la scheda successiva di PL1_8: corretta P1_15 con P1_15_2
