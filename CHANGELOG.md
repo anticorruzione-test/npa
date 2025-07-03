@@ -1502,13 +1502,14 @@ errori.json: Aggiunto errore REG68_1
 * Creata la nuova tipologica ccnl.json
 * Creata la nuova tipologica motivoVariazioneCUP
 * Creata la nuova tipologica motivoCorrezione
-
+* errori.json: aggiunto l'errore REG5_1
 
 ### Regole
 * AD1_27.dmn, AD2_27.dmn: aggiunte le regole sui quadri economici standard e concessioni: REG31, REG31_1, REG34_1, REG35_1, REG36_1
 * AD*.dmn: modificata la sintassi delle regole REG52 e REG53.
 * ID.dmn: aggiornate le regole in base alla nuova struttura della scheda.
-
+* AD1_25.dmn,AD1_26.dmn,AD1_28.dmn,P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_15_2.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P2_10.dmn,P2_11.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn:
+aggiunta regola REG5_1
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
