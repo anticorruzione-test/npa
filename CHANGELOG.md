@@ -1415,6 +1415,7 @@ errori.json: Aggiunto errore REG68_1
 * eliminata la REG5 per le schede P3_4, P3_5
 * AVR.dmn, TVR.dmn: aggiunte le regole relative alle nuove schede AVR, TVR
 </details>
+
 # Note di rilascio del 18/04/2025 (In Esercizio)
 ### Regole
 * ticket 74116:
