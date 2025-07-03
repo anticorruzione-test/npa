@@ -1503,6 +1503,7 @@ errori.json: Aggiunto errore REG68_1
 * Creata la nuova tipologica motivoVariazioneCUP
 * Creata la nuova tipologica motivoCorrezione
 * errori.json: aggiunto l'errore REG5_1
+* codiceScheda.json: aggiunte nuove schede AD6, CO3
 
 ### Regole
 * AD1_27.dmn, AD2_27.dmn: aggiunte le regole sui quadri economici standard e concessioni: REG31, REG31_1, REG34_1, REG35_1, REG36_1
