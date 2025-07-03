@@ -30,7 +30,7 @@ components:
         motivoCorrezione:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneEnum'    
         ribassoAggiudicazione:
-          description: ribasso di aggiudicazione. Ammessi valori negativi, che implicano un'offerta in aumento.
+          description: ribasso di aggiudicazione. valori ammessi: (x<100); sono ammessi valori negativi.
           type: integer
           maximum: 99           
     ComunicazioneIDType:
