@@ -22,10 +22,11 @@
       <rule id="DecisionRule_88a5iti">
         <description>ERR100: Importo totale non consentito per l'Affidamento diretto &lt; 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.</description>
         <inputEntry id="UnaryTests_1vksbpb">
-          <text>appalto.datiBase.importo != null and appalto.datiBase.importo &gt;= 5000</text>
+          <text></text>
         </inputEntry>
         <inputEntry id="UnaryTests_1otf3vc">
-          <text></text>
+          <text>some aggiudicazione in aggiudicazioni 
+satisfies aggiudicazione.importoAggiudicazione &gt;= 5000 </text>
         </inputEntry>
         <outputEntry id="LiteralExpression_44yzvav">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"ERR100\"}"</text>
@@ -38,7 +39,7 @@
         </inputEntry>
         <inputEntry id="UnaryTests_19btv0t">
           <text>some aggiudicazione in aggiudicazioni
-satisfies count(aggiudicazione.partecipanti)&gt;1 and (every partecipante in aggiudicazione.partecipanti satisfies (partecipante.importo = null or partecipante.importo &lt;= 0))</text>
+satisfies some partecipante in aggiudicazione.partecipanti satisfies (partecipante.ruoloOE.codice!="10" or partecipante.ruoloOE.codice!="12") and (partecipante.importo &lt;= 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0v7k8hx">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG52\"}"</text>
