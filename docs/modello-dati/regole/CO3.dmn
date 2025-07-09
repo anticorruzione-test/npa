@@ -4,9 +4,9 @@
     <informationRequirement id="InformationRequirement_00o5h7n">
       <requiredInput href="#InputData_1vsdrei" />
     </informationRequirement>
-    <decisionTable id="DecisionTable_CO2" hitPolicy="COLLECT">
-      <input id="appalto_CO2" biodi:width="394">
-        <inputExpression id="LiteralExpression_appalto_CO2" typeRef="string">
+    <decisionTable id="DecisionTable_CO3" hitPolicy="COLLECT">
+      <input id="appalto_CO3" biodi:width="394">
+        <inputExpression id="LiteralExpression_appalto_CO3" typeRef="string">
           <text>conclusione</text>
         </inputExpression>
       </input>
