@@ -19,19 +19,6 @@
         </inputExpression>
       </input>
       <output id="OutputClause_0ah2sls" name="Errore" typeRef="string" biodi:width="422" />
-      <rule id="DecisionRule_88a5iti">
-        <description>ERR100: Importo totale non consentito per l'Affidamento diretto &lt; 5k €. Articolo 49 c. 6 e 50 decreto legislativo 36/2023.</description>
-        <inputEntry id="UnaryTests_1vksbpb">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1otf3vc">
-          <text>some aggiudicazione in aggiudicazioni 
-satisfies aggiudicazione.importoAggiudicazione &gt;= 5000 </text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_44yzvav">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"ERR100\"}"</text>
-        </outputEntry>
-      </rule>
       <rule id="DecisionRule_0rnx8fl">
         <description>REG52: Non è stato inserito l’importo dell’aggiudicatario</description>
         <inputEntry id="UnaryTests_0zvb2ie">
