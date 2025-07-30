@@ -1845,6 +1845,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
     ErroriEnum:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
+    MotivoAnnullamentoComunicazioneEnum:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/MotivoAnnullamentoComunicazioneEnum'
     AppaltoType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     DatiPianoType:
@@ -1889,8 +1891,6 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType' 
     ProfiloSAType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ProfiloSAType'
-    MotivoAnnullamentoComunicazioneEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/changelog06/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/MotivoAnnullamentoComunicazioneEnum'
     RecuperaProfiloResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
