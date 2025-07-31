@@ -1140,6 +1140,15 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"ERR126_1",
+    "descrizione": {
+		"it": "L'oggetto indicato in aggiudicazioni.datiBase.oggetto deve essere valorizzato. In presenza di eForm verificare l'oggetto inserito nel campo Description (BT-24).",
+		"en": "L'oggetto indicato in aggiudicazioni.datiBase.oggetto deve essere valorizzato. In presenza di eForm verificare l'oggetto inserito nel campo Description (BT-24)."
+	},
+    "dataInizio":null,
+    "dataFine":null
 },	
 {
     "codice":"ERR127",
