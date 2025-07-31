@@ -1417,14 +1417,15 @@ errori.json: Aggiunto errore REG68_1
 </details>
 
 <details>
-# Note di rilascio del 18/04/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 18/04/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 74116:
   * aggiunte le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
 </details>
 
 <details>
-# Note di rilascio del 29/04/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 29/04/2025 (In Esercizio)</h1></summary>
 
 ## Modello Dati
 
@@ -1435,7 +1436,7 @@ errori.json: Aggiunto errore REG68_1
 </details>
 
 <details>
-# Note di rilascio del 08/05/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 08/05/2025 (In Esercizio)</h1></summary>
 
 ### Orchestratore
 * ticket 75362:
@@ -1445,7 +1446,8 @@ errori.json: Aggiunto errore REG68_1
 </details>
 
 <details>
-# Note di rilascio del 06/06/2025 (In Esercizio)
+<summary><h1>Note di rilascio del 06/06/2025 (In Esercizio)</h1></summary>
+
 ### Tipologiche
 * ticket 77555:
   * errori.json: modificata descrizione regola REG5
