@@ -1341,6 +1341,7 @@ errori.json: Aggiunto errore REG68_1
   * rimosse le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 09/04/2025 (Changelog-05)</h1></summary>
 
 **NOTA**
@@ -1389,7 +1390,6 @@ errori.json: Aggiunto errore REG68_1
   * schede M2_40: aggiunti i valori 41, 42, 43, 44, 45, 46
   * schede P7_2, AD1_25, AD1_26, AD1_27, AD1_28, AD2_25, AD2_26, AD2_27, AD2_28, AD3, AD5, CO2, CM2, ANN: aggiunto il valore 300
 
-
 ### Tipologiche
 * tipoIncarico.json:
   * rimossa la voce con codice "3"
@@ -1414,13 +1414,18 @@ errori.json: Aggiunto errore REG68_1
 * aggiunta REG5 alle seguenti schede: P4_1, P4_2, P4_3, P4_4, P4_5, P7_1_1, P7_1_2, P7_1_3, P7_2, P1_15_2, AD1_25, AD1_26
 * eliminata la REG5 per le schede P3_4, P3_5
 * AVR.dmn, TVR.dmn: aggiunte le regole relative alle nuove schede AVR, TVR
+</details>
 
-# Note di rilascio del 18/04/2025 (In Esercizio)
+<details>
+<summary><h1>Note di rilascio del 18/04/2025 (In Esercizio)</h1></summary>
+
 ### Regole
 * ticket 74116:
   * aggiunte le REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4
+</details>
 
-# Note di rilascio del 29/04/2025 (In Esercizio)
+<details>
+<summary><h1>Note di rilascio del 29/04/2025 (In Esercizio)</h1></summary>
 
 ## Modello Dati
 
@@ -1428,18 +1433,21 @@ errori.json: Aggiunto errore REG68_1
 * ticket 76046:
   * errori.json: corretta descrizione errore FVX48
   * tipoDocumento.json: corretta descrizione tipologica 00034
+</details>
 
-
-# Note di rilascio del 08/05/2025 (In Esercizio)
+<details>
+<summary><h1>Note di rilascio del 08/05/2025 (In Esercizio)</h1></summary>
 
 ### Orchestratore
 * ticket 75362:
   * scheda A2_31: aggiunti i flussi 61, 62
   * schede A2_32, A2_35: aggiunto il flusso 61
   * schede A2_29, A2_30, A2_33, A2_34: aggiunto il flusso 62
+</details>
 
+<details>
+<summary><h1>Note di rilascio del 06/06/2025 (In Esercizio)</h1></summary>
 
-# Note di rilascio del 06/06/2025 (In Esercizio)
 ### Tipologiche
 * ticket 77555:
   * errori.json: modificata descrizione regola REG5
@@ -1448,9 +1456,17 @@ errori.json: Aggiunto errore REG68_1
 ### Regole
 * rimossa REG52 dalle schede A1_29, A1_30, A1_31, A1_32, A1_33, A1_34, A1_36, A1_37;
 * modificata la REG51 per le schede A1_29, A1_30, A1_33, A1_34;
+</details>
 
+<details>
+<summary><h1>Note di rilascio del 24/09/2025 (In Esercizio)</h1></summary>
+
+### Regole
+* ticket 85898, 85924:
+  * rimossa la REG95:
+    * P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn;
+</details>
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
-
