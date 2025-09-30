@@ -45,7 +45,7 @@
 |79548|Limitazione flusso 5 in varie schede fase esecuzione|Esclusione del flusso 5 dalle schede CO1, ID, S1, S2, S3, SC1|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
 |77324|Previsione SC1 dopo CO1|Introduzione della scheda SC1 come successiva alla scheda CO1|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
 |60461|Inserimento ESPD facoltativo nelle schede P7_1_x|In analogia con quanto presente nella scheda P7_2, aggiornamento dell'orchestratore in relazione alle schede P7_1_1, P7_1_2, P7_1_3, valorizzando la colonna "includeESPD" come "SI,NO", previsione dell'ESPD come facoltativo. Conseguentemente modifica delle schede corrispondenti per prevedere la presenza facoltativa dell'ESPD.|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
-|78515|Aggiornamento flusso esecuzione|Previsione invio scheda SQ1 e RI1 dopo scheda SA1|04/07/2025<br>05/08/2025<br>30/09/2025*|CHG-06|
+|78515|Aggiornamento flusso esecuzione|Previsione invio scheda SQ1 e RI1 dopo scheda SA1|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
 |81331|Inibizione invio scheda S3 prima della scheda di esito|La tabella di orchestrazione va modificata per impedire l'invio della scheda S3 prima della scheda di esito A*|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
 |70237|Modifica contrattuale per scheda P7_2|Aggiunta del flusso 72 per la scheda M2|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
 |79454|aggiornamento tipologica motivoDerogaQlf|Revisione della lista dei voci della tipologica, con aggiunta di nuove voci|04/07/2025<br>05/08/2025<br>30/09/2025|CHG-06|
