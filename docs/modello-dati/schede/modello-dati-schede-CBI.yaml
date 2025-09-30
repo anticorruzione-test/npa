@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda CBI - Scheda di conclusione relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce.
+  version: 1.0.0
+components:
+  schemas:
+    ConclusioneType:
+      description: Oggetto che riporta i dati di conclusione relativi a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce.
+      type: object
+      additionalProperties: false
+      required: [dataInizio,dataUltimazione,importo]
+      properties:
+        dataInizio:
+          description: Data di inizio
+          type: string
+          format: date-time
+        dataUltimazione:
+          description: Data di ultimazione
+          type: string
+          format: date-time
+        importo: 
+          description: Importo delle somme liquidate
+          type: number
+          format: double
+    AnacFormCBIType:
+      description: Contiene tutti i dati relativi a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce.
+      type: object
+      additionalProperties: false
+      required: [cig, conclusione]      
+      properties: 
+        cig:
+          description: codice identificativo lotto
+          type: string      
+        conclusione:
+          $ref: '#/components/schemas/ConclusioneType'
+    SchedaCBIType:
+      description: Scheda di conclusione relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCBIType'

@@ -1265,4 +1265,22 @@
   },
   "dataInizio":null,
   "dataFine":null
+},
+{
+    "codice":"ABI",
+    "descrizione": {
+		"it": "Scheda relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce, senza invio al TED.",
+        "en": "Scheda relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce, senza invio al TED."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CBI",
+    "descrizione": {
+		"it": "Scheda di conclusione relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce.",
+        "en": "Scheda di conclusione relativa a procedure negoziate per l'acquisizione di beni e servizi infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce."
+		},
+    "dataInizio":null,
+    "dataFine":null
 }]

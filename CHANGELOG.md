@@ -1458,6 +1458,79 @@ errori.json: Aggiunto errore REG68_1
 * modificata la REG51 per le schede A1_29, A1_30, A1_33, A1_34;
 </details>
 
+<summary><h1>Note di rilascio del 04/07/2025 (Changelog-06)</h1></summary>
+
+**NOTA**
+* Pubblicazione contenuti su GitHub: 04/07/2025
+* Rilascio in Qualificazione: Come da Roadmap
+* Rilascio in Esercizio: Come da Roadmap
+* Rilascio in Qualificazione: Come da Roadmap (nuove schede beni infungbili, ABI, CBI)
+* Rilascio in Esercizio: Come da Roadmap (nuove schede beni infungbili, ABI, CBI)
+* Rilascio in Qualificazione: 09/09/2025 (per la scheda ID modificata la descrizione del campo ribassoAggiudicazione all'interno dell'oggetto comunicazioneRibassoAggiudicazione, e modificato il type del campo da integer a double)
+
+  **la nota di rilascio potrà essere integrata successivamente**
+    
+## Modello Dati 
+* modello-dati-npa.yaml:
+  * aggiunte nuove schede ABI, CBI relative al nuovo flusso dei beni infungibili
+
+### Schede
+* modello-dati-schede-dati-comuni.yaml: 
+	* aggiunte le sezioni quadro economico standard e concessioni in AggiudicazioneAD1_27Type
+	* aggiunto l'oggetto CcnlEnum
+	* modificato il campo ccnl da string a tipologica, aggiunto il riferimento al nuovo oggetto CcnlEnum
+	* aggiunto l'oggetto MotivoVariazioneCUPEnum
+	* aggiunto l'oggetto MotivoCorrezioneEnum
+ 	* aggiunto il campo docFAP in tutti gli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
+
+* modello-dati-schede-P7.1.1.yaml,modello-dati-schede-P7.1.2.yaml,modello-dati-schede-P7.1.3.yaml: aggiunto il campo facoltativo espd
+
+* modello-dati-schede-A3.6.yaml,modello-dati-schede-AD3.yaml,modello-dati-schede-AD4.yaml,modello-dati-schede-P3.1.yaml,modello-dati-schede-P3.2.yaml,modello-dati-schede-P3.3.yaml: modificato il campo ccnl da string a tipologica, aggiunto il riferimento al nuovo oggetto CcnlEnum
+
+* modello-dati-schede-ID.yaml: 
+	* aggiunto l'oggetto comunicazioneCUP
+	* aggiunto il campo docFAP
+	* aggiunto l'oggetto comunicazioneRibassoAggiudicazione
+
+* modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml,modello-dati-schede-AD3.yaml,modello-dati-schede-AD4.yaml: 
+	* aggiunto il campo docFAP negli oggetti in cui è già presente il campo strumentiElettroniciSpecifici
+* modello-dati-schede.ABI.yaml, modello-dati-schede-CBI.yaml: schede relative al nuovo flusso dei beni infungibili
+
+## Orchestratore  
+* modificata la scheda successiva di PL1_8: corretta P1_15 con P1_15_2
+* modificato il flusso di appartenenza delle schede CO1, ID, S1, S2, S3, SC1: escluso il flusso 5
+* modificato l'elenco delle schede successive della CO1: prevista anche la SC1
+* modificata la colonna includeEspd delle schede P7_1_*: aggiunto SI,NO 
+* modificato l'elenco delle schede successive della SA1: aggiunte le schede SQ1 e RI1
+* modificato il flusso di appartenenza delle schede: S1, S2, S3, SC1, CO1, S2R: escluso il flusso 60
+* Aggiunte le righe con le informazioni relative alle nuove schede relative ai beni infungibili ABI E CBI
+* eliminata la S3 come scheda successiva alle schede S2, S2R, ID
+* modificato il flusso di appartenenza della scheda M2: aggiunto il flusso 72
+* aggiunte le colonne schedaAnnullabile e servizioPostAnnullamento
+
+### Tipologiche
+* ruoloOE.json: eliminate alcune voci, aggiunte altre.
+* condizioniNegoziata.json: eliminate voci chiuse prima del 2024
+* Creata la nuova tipologica ccnl.json
+* Creata la nuova tipologica motivoVariazioneCUP
+* Creata la nuova tipologica motivoCorrezione
+* Creata la nuova tipologica motivoAnnullamentoComunicazione
+* Aggiornate le tipologiche esitoOperazione, tipoOperazione, statoScheda, motivoDerogaQlf
+* errori.json: 
+  * aggiunti gli errori ERR126_1, ERR134, ERR135, ERR136, ERR137, ERR138, ERR139, ERR140, ERR141, ERR142, ERR143, ERR144, ERR145, ERR146, ERR147, ERR148, ERR149, ERR150
+  * aggiunto l'errore REG5_1, REG131
+* codiceScheda.json: aggiunte nuove schede ABI, CBI
+
+### Regole
+* AD1_27.dmn, AD2_27.dmn: aggiunte le regole sui quadri economici standard e concessioni: REG31, REG31_1, REG34_1, REG35_1, REG36_1
+* AD*.dmn: modificata la sintassi delle regole REG52 e REG53.
+* ID.dmn: aggiornate le regole in base alla nuova struttura della scheda.
+* AD1_25.dmn,AD1_26.dmn,AD1_28.dmn,P1_10.dmn,P1_11.dmn,P1_12.dmn,P1_13.dmn,P1_14.dmn,P1_15_2.dmn,P1_16.dmn,P1_17.dmn,P1_19.dmn,P2_10.dmn,P2_11.dmn,P2_16.dmn,P2_17.dmn,P2_19.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P7_1_1.dmn,P7_1_2.dmn,P7_1_3.dmn,P7_2.dmn:
+aggiunta regola REG5_1
+* CO2.dmn, COC.dmn,CS1.dmn,IR1.dmn,RI1.dmn,RSU1.dmn,S1.dmn,S2.dmn,S2R.dmn,SO1.dmn,SQ1.dmn: aggiornata la annotation con il riferimento alla REG0
+* ABI.dmn, CBI.dmn: regole relative al nuovo flusso dei beni infungibili
+
+
 <details>
 <summary><h1>Note di rilascio del 24/09/2025 (In Esercizio)</h1></summary>
 

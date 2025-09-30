@@ -24,6 +24,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneDocumentoEnum'
     AppaltoType : 
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+    PianoType : 
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
     StatoRichiestaDocumentoEnum:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
     FascicoloType: 
@@ -111,6 +113,15 @@ components:
       properties:
         appalto:
           $ref: '#/components/schemas/AppaltoType'
+    FVPQType:
+      allOf: # estende lo schema dati di FascicoloType
+        - $ref: '#/components/schemas/FascicoloType'
+      description: Oggetto che riporta i dati del FVPQ
+      type: object
+      additionalProperties: false
+      properties:
+        piano:
+          $ref: '#/components/schemas/PianoType'
     DocumentoType:
       description: Oggetto che riporta i dati del Documento
       type: object
@@ -236,12 +247,13 @@ components:
           type: string
           example: "507f1f77bcf86cd799439011"
     RichiestaAccessoType:
-      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo Virtuale dell'OE
+      description: Oggetto che riporta i dati della Richiesta di Accesso al Fascicolo Virtuale dell'OE obbligatori alternativamente appalto o piano
       type: object
       additionalProperties: false
       required:
         - operatoriEconomici
         - appalto
+        - piano
         - dataInizioAutorizzazione
       properties:
         idRichiesta:
@@ -266,6 +278,8 @@ components:
             $ref: '#/components/schemas/AnagraficaOEType' 
         appalto:
           $ref: '#/components/schemas/AppaltoType' 
+        piano:
+          $ref: '#/components/schemas/PianoType' 
         richiedente: 
           $ref: '#/components/schemas/AnagraficaSAType'   
     AnagraficaType:
