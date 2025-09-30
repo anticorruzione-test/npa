@@ -6,7 +6,7 @@ info:
   version: 1.0.0
 externalDocs:
   description: Ulteriori informazioni 
-  url: https://github.com/anticorruzione/npa
+  url: https://github.com/anticorruzione-test/npa
 components:
   schemas:
     body:

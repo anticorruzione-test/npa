@@ -1,4 +1,25 @@
 # AVVISI:
+
+## Attenzione
+Si ricorda che l’area Issues di questo progetto è destinata al supporto delle segnalazioni ricevute riguardanti i servizi disponibili per la qualificazione e l’attestazione delle piattaforme.
+
+Quest’area è pubblica:
+pertanto, nelle segnalazioni non devono quindi essere inserite informazioni riservate quali:
+
+-	password o credenziali,
+-	configurazioni di sicurezza,
+-	log applicativi o documenti contenenti dati sensibili,
+-	dati personali o informazioni soggette a vincoli di riservatezza contrattuale.
+
+Qualora fosse necessario trasmettere informazioni riservate, dovranno essere utilizzati canali alternativi, previamente concordati con ANAC.
+
+## 16/07/2025 - Aggiornamento del certificato SSL dei servizi ANAC
+Il certificato SSL dei servizi ANAC verrà aggiornato secondo il seguente calendario: </br>
+  •	21 luglio: ambiente di pre-produzione (attestazione) </br>
+  •	28 luglio: ambiente di qualificazione ed esercizio</br>
+
+Il certificato aggiornato è disponibile [qui](https://github.com/anticorruzione-test/npa/tree/main/docs/certificato%20SSL)
+
 ## 17/06/2025
 Il Pubblication Office TeD ha comunicato che, a causa di una manutenzione programmata, il sistema di pubblicazione può subire delle interruzioni nel giorno 18/06/2025, nella fascia oraria 07:00 - 09:00 (CEST). 
 
@@ -181,6 +202,18 @@ Il canale di comunicazione con ANAC è rappresentato dall'apposita sezione [Issu
 La cartella [scenari-di-esempio](docs/scenari-di-esempio) contiene una sequenza di operazioni da eseguire per ottenere l'aggiudicazione di un appalto
 
 ## Disclaimer
+Si ricorda che l’area Issues di questo progetto è destinata al supporto delle segnalazioni ricevute riguardanti i servizi disponibili per la qualificazione e l’attestazione delle piattaforme.
+
+Quest’area è pubblica:
+pertanto, nelle segnalazioni non devono quindi essere inserite informazioni riservate quali:
+
+-	password o credenziali,
+-	configurazioni di sicurezza,
+-	log applicativi o documenti contenenti dati sensibili,
+-	dati personali o informazioni soggette a vincoli di riservatezza contrattuale.
+
+Qualora fosse necessario trasmettere informazioni riservate, dovranno essere utilizzati canali alternativi, previamente concordati con ANAC.
+
 L’Autorità Nazionale Anticorruzione si riserva la facoltà di non fornire risposta puntuale a tutte le issues ricevute ed è sollevata da eventuali responsabilità dovuta:
 - alla mancanza di risposta per richieste pervenute al di fuori dell'unico canale di comunicazione con ANAC rappresentato dalla sezione [Issues](https://github.com/anticorruzione-test/npa/issues)
 - alla possibile mancanza di risposta per tutte le richieste pervenute nell'apposita sezione Issues o che potrebbero essere di competenza di organizzazioni esterne.
