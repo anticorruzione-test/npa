@@ -6,276 +6,276 @@ components:
   schemas:
     TipoFinanziamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file [tipoFinanziamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoFinanziamento.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipo di finanziamento - fare riferimento ai valori contenuti nel file [tipoFinanziamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoFinanziamento.json)
     FunzioniDelegateEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniSvolte.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/funzioniSvolte.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Ruolo svolto dalla S.A. nell'appalto - fare riferimento ai valori contenuti nel file [funzioniSvolte.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/funzioniSvolte.json)
     CategorieMerceologicheEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [categorieMerceologiche.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/categorieMerceologiche.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+      description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [categorieMerceologiche.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/categorieMerceologiche.json)
     MotivazioneCIGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [motivazioneCIG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivazioneCIG.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [motivazioneCIG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivazioneCIG.json)
     StrumentiSvolgimentoProcedureEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Deprecato - Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Deprecato - Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
     MotivoUrgenzaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo urgenza - fare riferimento ai valori contenuti nel file [motivoUrgenza.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoUrgenza.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo urgenza - fare riferimento ai valori contenuti nel file [motivoUrgenza.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoUrgenza.json)
     PrestazioniEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/prestazioniComprese.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/prestazioniComprese.json)
     CondizioniNegoziataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
     OperazioneSDAEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/operazioneSDA.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/operazioneSDA.json)
     GiustificazioneAggiudicazioneDirettaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioniAggiudicazioneDiretta.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/giustificazioniAggiudicazioneDiretta.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Giustificazione del ricorso a una procedura che consente di aggiudicare appalti direttamente, vale a dire che non impone la pubblicazione di un avviso di indizione di gara nella Gazzetta ufficiale dell'Unione europea - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-136 - Direct Award Justification Code del TED - fare riferimento ai valori contenuti nel file [giustificazioniAggiudicazioneDiretta.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/giustificazioniAggiudicazioneDiretta.json) 
     ContrattiDisposizioniParticolariEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Contratti nei settori ordinari assoggettati a disposizioni particolari - fare riferimento ai valori contenuti nel file [contrattiDisposizioniParticolari.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/contrattiDisposizioniParticolari.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Contratti nei settori ordinari assoggettati a disposizioni particolari - fare riferimento ai valori contenuti nel file [contrattiDisposizioniParticolari.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/contrattiDisposizioniParticolari.json) 
     CodIstatEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Codice ISTAT - fare riferimento ai valori contenuti nel file [codIstat.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/codIstat.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Codice ISTAT - fare riferimento ai valori contenuti nel file [codIstat.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/codIstat.json) 
     CodNUTSEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Il luogo di esecuzione secondo la classificazione comune delle unità territoriali per la statistica (NUTS). Va indicato il codice di livello NUTS 3 - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-5071 - Place Performance Country Subdivision del TED - fare riferimento ai valori contenuti nel file [codNUTS.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/codNUTS.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Il luogo di esecuzione secondo la classificazione comune delle unità territoriali per la statistica (NUTS). Va indicato il codice di livello NUTS 3 - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-5071 - Place Performance Country Subdivision del TED - fare riferimento ai valori contenuti nel file [codNUTS.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/codNUTS.json)
     RuoloOEEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/ruoloOE.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/ruoloOE.json) 
     TipoOEEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipo soggetto - fare riferimento ai valori contenuti nel file [tipoOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoOE.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipo soggetto - fare riferimento ai valori contenuti nel file [tipoOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoOE.json)
     ModalitaAcquisizioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di acquisizione (per servizi e forniture) - fare riferimento ai valori contenuti nel file  [modalitaAcquisizione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/modalitaAcquisizione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di acquisizione (per servizi e forniture) - fare riferimento ai valori contenuti nel file  [modalitaAcquisizione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/modalitaAcquisizione.json) 
     TipologiaLavoroEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia lavoro - fare riferimento ai valori contenuti nel file [tipologiaLavoro.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipologiaLavoro.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia lavoro - fare riferimento ai valori contenuti nel file [tipologiaLavoro.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipologiaLavoro.json) 
     MotivoCollegamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoCollegamento.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoCollegamento.json)
     CategoriaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Categoria - fare riferimento ai valori contenuti nel file [categoria.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/categoria.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Categoria - fare riferimento ai valori contenuti nel file [categoria.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/categoria.json)
     MotivoDerogaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoDeroga.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoDeroga.json) 
     MisurePremialiEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Misure Premiali - fare riferimento ai valori contenuti nel file [misurePremiali.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/misurePremiali.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Misure Premiali - fare riferimento ai valori contenuti nel file [misurePremiali.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/misurePremiali.json) 
     TipoClassificazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file [tipoClassificazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoClassificazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Il tipo di classificazione che descrive l'appalto (ad es. CPV) - fare riferimento ai valori contenuti nel file [tipoClassificazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoClassificazione.json) 
     TipoSoggettoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoSoggetto.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoSoggetto.json) 
     TipoIncaricoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoIncarico.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoIncarico.json) 
     TipoProgettazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoProgettazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia di progettazione - fare riferimento ai valori contenuti nel file [tipoProgettazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoProgettazione.json) 
     CPVEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/CPV.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/CPV.json) 
     AccessibilitaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file [accessibilita.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/accessibilita.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Richiamo nel bando di gara, nell’avviso o nell’invito alla necessità da parte del concorrente o dell’offerente di aver assolto, al momento della presentazione dell'offerta, agli obblighi in materia di lavoro delle persone con disabilità di cui alla legge 12 marzo 1999, n. 68 - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-754 - Accessibility del TED - fare riferimento ai valori contenuti nel file [accessibilita.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/accessibilita.json)
     OggettoContrattoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Oggetto del contratto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file [oggettoContratto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/oggettoContratto.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Oggetto del contratto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-23 - Main Nature del TED - fare riferimento ai valori contenuti nel file [oggettoContratto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/oggettoContratto.json) 
     SceltaContraenteEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Scelta del contraente - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/sceltaContraente.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Scelta del contraente - fare riferimento ai valori contenuti nel file [sceltaContraente.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/sceltaContraente.json) 
     TipoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [tipoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoProcedura.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Il tipo di procedura di appalto (ad es. secondo i tipi indicati nelle direttive sugli appalti citate nei considerando del presente documento). - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-105 - Procedure Type del TED - fare riferimento ai valori contenuti nel file [tipoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoProcedura.json) 
     AffidamentiRiservatiEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
     CriteriAggiudicazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: criteri di aggiudicazione - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file [criteriAggiudicazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/criteriAggiudicazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: criteri di aggiudicazione - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-539 - Award Criterion Type del TED - fare riferimento ai valori contenuti nel file [criteriAggiudicazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/criteriAggiudicazione.json) 
     SistemaDinamicoAcquisizioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Sistema dinamico di acquisizione - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file [sistemaDinamicoAcquisizione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/sistemaDinamicoAcquisizione.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Sistema dinamico di acquisizione - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-766 - Dynamic Purchasing System del TED  - fare riferimento ai valori contenuti nel file [sistemaDinamicoAcquisizione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/sistemaDinamicoAcquisizione.json)
     AccordoQuadroEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Accordo quadro - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file [accordoQuadro.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/accordoQuadro.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Accordo quadro - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-765 - Framework agreement del TED  - fare riferimento ai valori contenuti nel file [accordoQuadro.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/accordoQuadro.json) 
     MotivoEsclusioneOrdinarioSpecialeEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneOrdinarioSpeciale.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoEsclusioneOrdinarioSpeciale.json) 
     MotivoEsclusioneConcessioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di esclusione concessione - fare riferimento ai valori contenuti nel file [motivoEsclusioneConcessione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoEsclusioneConcessione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di esclusione concessione - fare riferimento ai valori contenuti nel file [motivoEsclusioneConcessione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoEsclusioneConcessione.json) 
     FattispecieTracciabilitaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Fattispecie tracciabilità - fare riferimento ai valori contenuti nel file [fattispecieTracciabilita.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/fattispecieTracciabilita.json)  
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Fattispecie tracciabilità - fare riferimento ai valori contenuti nel file [fattispecieTracciabilita.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/fattispecieTracciabilita.json)  
     ModalitaRiaggiudicazioneAffidamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/modalitaRiaggiudicazioneAffidamento.json)    
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/modalitaRiaggiudicazioneAffidamento.json)    
     EsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/esitoProcedura.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/esitoProcedura.json) 
     GiustificazioneEsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Giustificazione esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/giustificazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Giustificazione esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-144 - Not Awarded Reason del TED - fare riferimento ai valori contenuti nel file [giustificazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/giustificazione.json) 
     MotiviModificaContrattualeEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivi modifica contrattuale - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motiviModifica.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivi modifica contrattuale - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motiviModifica.json) 
     MotiviRevisionePrezziEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motivoRevisionePrezzi.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoRevisionePrezzi.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di revisione dei prezzi - fare riferimento ai valori contenuti nel file [motivoRevisionePrezzi.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoRevisionePrezzi.json) 
     TipoRealizzazioneContrattoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoRealizzazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipo modalità di realizzazione contratto - fare riferimento ai valori contenuti nel file [tipoRealizzazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoRealizzazione.json) 
     EsitoProceduraAnnullataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Esito procedura annullata - fare riferimento ai valori contenuti nel file [esitoProceduraAnnullata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/esitoProceduraAnnullata.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Esito procedura annullata - fare riferimento ai valori contenuti nel file [esitoProceduraAnnullata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/esitoProceduraAnnullata.json) 
     AvanzamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/avanzamento.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: L'avanzamento raggiunto, rispetto al cronoprogramma di previsione registrato - fare riferimento ai valori contenuti nel file [avanzamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/avanzamento.json) 
     ModalitaPagamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/modalitaPagamento.json)  
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di pagamento - fare riferimento ai valori contenuti nel file [modalitaPagamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/modalitaPagamento.json)  
     TipologiaComunicazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipoComunicazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipoComunicazione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia di comunicazione - fare riferimento ai valori contenuti nel file [tipoComunicazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoComunicazione.json) 
     SubappaltoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Subappalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-773 - Subcontracting del TED - fare riferimento ai valori contenuti nel file [subappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/subappalto.json)  
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Subappalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-773 - Subcontracting del TED - fare riferimento ai valori contenuti nel file [subappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/subappalto.json)  
     MotivoSospensioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motivoSospensione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoSospensione.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motivoSospensione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoSospensione.json) 
     TipologiaAvvalimentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia di avvalimento - fare riferimento ai valori contenuti nel file [tipologiaAvvalimento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/tipologiaAvvalimento.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipologia di avvalimento - fare riferimento ai valori contenuti nel file [tipologiaAvvalimento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipologiaAvvalimento.json) 
     MotiviVariazioneAnagraficaEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivi di variazione anagrafica - fare riferimento ai valori contenuti nel file [motivoVariazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoVariazione.json)       
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivi di variazione anagrafica - fare riferimento ai valori contenuti nel file [motivoVariazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoVariazione.json)       
     LingueEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Lingue in cui i documenti di gara sono ufficialmente disponibili - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-708 - Documents Official Language del TED - fare riferimento ai valori contenuti nel file [lingue.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/lingue.json)    
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Lingue in cui i documenti di gara sono ufficialmente disponibili - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-708 - Documents Official Language del TED - fare riferimento ai valori contenuti nel file [lingue.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/lingue.json)    
     AltraDurataEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: La durata è ignota, illimitata, ecc. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED - fare riferimento ai valori contenuti nel file [durata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/durata.json)  
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: La durata è ignota, illimitata, ecc. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED - fare riferimento ai valori contenuti nel file [durata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/durata.json)  
     MotivoMancatoSubappaltoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo del mancato subappalto - fare riferimento ai valori contenuti nel file [motivoMancatoSubappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoMancatoSubappalto.json)  
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo del mancato subappalto - fare riferimento ai valori contenuti nel file [motivoMancatoSubappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoMancatoSubappalto.json)  
     MotivoMancataEsecuzioneSubappaltoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo della mancata esecuzione del subappalto - fare riferimento ai valori contenuti nel file [motivoMancataEsecuzioneSubappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoMancataEsecuzioneSubappalto.json)    
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo della mancata esecuzione del subappalto - fare riferimento ai valori contenuti nel file [motivoMancataEsecuzioneSubappalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoMancataEsecuzioneSubappalto.json)    
     MotiviInterruzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [causaInterruzioneAnticipata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/causaInterruzioneAnticipata.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [causaInterruzioneAnticipata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/causaInterruzioneAnticipata.json)
     MotiviRisoluzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivi di risoluzione - fare riferimento ai valori contenuti nel file [motiviRisoluzione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motiviRisoluzione.json)   
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivi di risoluzione - fare riferimento ai valori contenuti nel file [motiviRisoluzione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motiviRisoluzione.json)   
     OneriEconomiciRisoluzioneRecessoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Oneri economici derivanti dalla risoluzione-recesso - fare riferimento ai valori contenuti nel file [oneriEconomiciRisoluzioneRecesso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/oneriEconomiciRisoluzioneRecesso.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Oneri economici derivanti dalla risoluzione-recesso - fare riferimento ai valori contenuti nel file [oneriEconomiciRisoluzioneRecesso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/oneriEconomiciRisoluzioneRecesso.json)
     ModoCollaudoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/modoCollaudo.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Modalità del collaudo tecnico/amministrativo/ verifica di conformità - fare riferimento ai valori contenuti nel file [modoCollaudo.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/modoCollaudo.json)
     MotivoRichiestaModificaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di richiesta di modifica - fare riferimento ai valori contenuti nel file [motivoRichiestaModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoRichiestaModifica.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di richiesta di modifica - fare riferimento ai valori contenuti nel file [motivoRichiestaModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoRichiestaModifica.json)
     MotivoRichiestaRettificaEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di richiesta di rettifica - fare riferimento ai valori contenuti nel file [motivoRichiestaRettifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoRichiestaRettifica.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di richiesta di rettifica - fare riferimento ai valori contenuti nel file [motivoRichiestaRettifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoRichiestaRettifica.json)
     AnnullamentoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [motivoAnnullamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoAnnullamento.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [motivoAnnullamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoAnnullamento.json)
     SettoreEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/settore.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/settore.json)
     MotivoDerogaQlfEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
     MotivazioneMancatoAffidamentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivazione della decisione di chiusura delle verifiche FVOE - fare riferimento ai valori contenuti nel file [motivazioneMancatoAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivazioneMancatoAffidamento.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivazione della decisione di chiusura delle verifiche FVOE - fare riferimento ai valori contenuti nel file [motivazioneMancatoAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivazioneMancatoAffidamento.json)
     CcnlEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: CCNL - fare riferimento ai valori contenuti nel file [ccnl.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/ccnl.json) 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: CCNL - fare riferimento ai valori contenuti nel file [ccnl.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/ccnl.json) 
     MotivoVariazioneCUPEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo variazione CUP - fare riferimento ai valori contenuti nel file [motivoVariazioneCUP.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoVariazioneCUP.json)
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo variazione CUP - fare riferimento ai valori contenuti nel file [motivoVariazioneCUP.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoVariazioneCUP.json)
     MotivoCorrezioneEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo variazione CUP - fare riferimento ai valori contenuti nel file [motivoCorrezione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/tipologiche/motivoCorrezione.json)      
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo variazione CUP - fare riferimento ai valori contenuti nel file [motivoCorrezione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/motivoCorrezione.json)      
     CategoriaType: 
       description: categoria prevalente o scorporabile
       type: object

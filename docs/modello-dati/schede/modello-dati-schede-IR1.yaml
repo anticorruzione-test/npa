@@ -15,7 +15,7 @@ components:
           type: string
           format: date-time
         tipoComunicazione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaComunicazioneEnum'  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipologiaComunicazioneEnum'  
         durataSospensione: 
           description: Durata della sospensione in giorni (in caso di sospensione)
           type: number
@@ -24,7 +24,7 @@ components:
           description: Motivazione della sospensione/ritardo
           type: string
         motivoSospensioneMl:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'         
         dataIstanzaRecesso:
           description: Data di presentazione dell’istanza di recesso
           type: string
