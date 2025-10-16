@@ -82,6 +82,10 @@
 |84809|Revisione flusso 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria|Revisione flusso 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria|/<br>/<br>/<br>|CHG-07|
 |86830|Introduzione xls per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica|/<br>/<br>/<br>|CHG-07|
 |87011|Aggiornamento tabella istat|Aggiornamento della tabella istat con allineamento alla versione attuale|/<br>/<br>/<br>|CHG-07|
+|84677|Revisione Scheda ID - Integrazione Dati|Aggiunta idPartecipante all'oggetto comunicazioneRibassoAggiudicazione|/<br>/<br>/<br>|CHG-07|
+|83225|Revisione Scheda S2|modifica all'elenco dei flussi di appartenenza della scheda S2 con rimozione del flusso 40|/<br>/<br>/<br>|CHG-07|
+|72902|Revisione Regole Scheda S3|Introduzione di una regola che verifichi la coerenza tra il tipo di progettazione e il tipo di soggetto indicato.|/<br>/<br>/<br>|CHG-07|
+|61141|Inserimento tetto massimo su scheda AD3|Introduzione di una regola che blocca la scheda in caso di appalto di lavori di importo superiore a € 150.000 e di servizi e forniture di importo superiore a € 140.000|/<br>/<br>/<br>|CHG-07|
 ||||||
 |58792|partecipante type - refactoring modello dati|refactoring del modello dati per la  gestione dei gruppi multilivello |/<br>/<br>/<br>|/|
 |62794|Modifica delle stazioni appaltanti coinvolte nella procedura|Funzionalità di inserimento, sostituzione, eliminazione di soggetti dall'elenco delle Stazioni Appaltanti|/<br>/<br>/<br>|/|
