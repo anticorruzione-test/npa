@@ -55,7 +55,6 @@
 |70092|Schede P3_*: modifica obbligatorietà ESPD|Per tutte le schede P3* il campo ESPD sarà reso facoltativo. Nella scheda P3_1 sarà aggiunto come campo facoltativo.|/<br>/<br>/<br>|CHG-07|
 |70094|Scheda P5 e schede P3_*: modifica riferimento nomativa nell'orchestratore|Per le schede P5 e schede P3_* sarà modificata la colonna "schedaNormativa" dell’orchestratore aggiungendo il riferimento alla Delibera 584/2023 dell’ANAC|/<br>/<br>/<br>|CHG-07|
 |84898|Ripristino stato precedente ultima comunicazione - adeguamento PCP UI|La funzionalità di roll-back sarà disponibile anche sulla UI, ma potrà essere utilizzata solo se l'ultima scheda sarà stata inviata da PCP-UI|/<br>/<br>/<br>|CHG-07|
-|58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte|/<br>/<br>/<br>|CHG-07|
 |68233|REG81: Modifica descrizione|La descrizione della REG81 sarà modificata in "E' necessario indicare la data di ultimazione o la data di interruzione anticipata".|/<br>/<br>/<br>|CHG-07|
 |68666|Modifica flusso Scheda AC1|Sarà aggiunta la scheda CL1 come successiva alla scheda AC1|/<br>/<br>/<br>|CHG-07|
 |69673|Scheda P2_19 : Correzione schedaDescrizione su orchestratore	La colonna schedaDescrizione della scheda P2_19 dell’orchestratore|Sarà corretta in “Bando di concessione - settori ordinario e speciale”|/<br>/<br>/<br>|CHG-07|
@@ -63,7 +62,6 @@
 |69933|Modifica tipologica fattispecieTracciabilita|Saranno chiuse le voci con codice 19 e 24 e sarà creata una nuova voce sostitutiva “Appalti nei settori della difesa e della sicurezza”|/<br>/<br>/<br>|CHG-07|
 |69935|Modifica tipologiche motivoEsclusioneConcessione e motivoEsclusioneOrdinarioSpeciale|Saranno chiuse le voci con codice 20 in motivoEsclusioneConcessione e con codice 65 in motivoEsclusioneOrdinarioSpeciale e sarà creata una nuova voce sostitutiva "Appalti nei settori della difesa e della sicurezza"|/<br>/<br>/<br>|CHG-07|
 |77851|Introduzione regole restrittive per l'uso della tipologica tipoProcedura|Saranno introdotte delle regole per limitare le scelte delle voci della tipologica tipoProcedura a quelle compatibili con la tipologia di comunicazione|/<br>/<br>/<br>|CHG-07|
-|77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura|/<br>/<br>/<br>|CHG-07|
 |77857|Ridefinizione tipo per i campi data/ora|Il nome del campo  DatiTerminiInvioType.oraScadenzaPresentazioneOfferte sarà cambiato in  DatiTerminiInvioType.ScadenzaPresentazioneOfferte|/<br>/<br>/<br>|CHG-07|
 |78221|scheda ID: correzione url trasparenza|Nella scheda ID sarà aggiunta la possibilità di integrare o correggere il dato datiBaseDocumenti.url|/<br>/<br>/<br>|CHG-07|
 |78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.|/<br>/<br>/<br>|CHG-07|
@@ -71,8 +69,7 @@
 |56603|Nuova scheda CM3|Nuova scheda, estensione della CM1, disponibile per le negoziate senza bando, con ulteriori attributi modificabili, tra cui l'attributo "data scadenza offerta"|/<br>/<br>/<br>|CHG-07|
 |68505|Nuova scheda S1_2 – elenco dei soggetti invitati a presentare offerta|Nuova scheda per le procedure a due fasi, utilizzata dopo la S1 per comunicare la data di scadenza offerta in caso di mancata aggiudicazione della gara sottosoglia|/<br>/<br>/<br>|CHG-07|
 |68586<br>68671|Procedura ristretta sopra soglia deserta dopo l'invito<br>Modifica flusso scheda S1|Previsione della possibilità di invio della scheda di aggiudicazione A1* sopra soglia dopo la S1 nei casi di procedure deserte dopo la manifestazione di interesse.|/<br>/<br>/<br>|CHG-07|
-|84595|Reingegnerizzazione rettifiche|Aggiunta di una colonna extra su orchestratore che agisca da "semaforo" per consentire le rettifiche|/<br>/<br>/<br>|CHG-07|
-|84599|Annullamento trasmissione schede ANN e NAG|Aggiunta delle schede ANN e NAG alla lista delle schede annullabili con il servizio di roll-back|/<br>/<br>/<br>|CHG-07|
+|84599|Annullamento trasmissione scheda ANN|Aggiunta della scheda ANN alla lista delle schede annullabili con il servizio di roll-back|/<br>/<br>/<br>|CHG-07|
 |57290|Revisione scheda RSU1 - richiesta subappalto|Revisione del campo codice fiscale, modifica della cardinalità da molti a uno.|/<br>/<br>/<br>|CHG-07|
 |68087|Cancellazione appalti non confermati dopo 90 giorni|Verrà realizzato un job che provvederà alla cancellazione degli appalti non confermati dopo 90 giorni|/<br>/<br>/<br>|CHG-07|
 |68485|Affidamento diretto: Correzione per Esenzione dai contributi in casi di ripetizioni di lavori e servizi analoghi|Aggiunta della sezione ipotesiCollegamento nelle schede di affidamento diretto|/<br>/<br>/<br>|CHG-07|
@@ -90,3 +87,6 @@
 |58792|partecipante type - refactoring modello dati|refactoring del modello dati per la  gestione dei gruppi multilivello |/<br>/<br>/<br>|/|
 |62794|Modifica delle stazioni appaltanti coinvolte nella procedura|Funzionalità di inserimento, sostituzione, eliminazione di soggetti dall'elenco delle Stazioni Appaltanti|/<br>/<br>/<br>|/|
 |68715|introduzione eForm SDK 1.13|Aggiornamento del modello dati allo schema eForm SDK 1.13|/<br>/<br>/<br>|/|
+|84595|Reingegnerizzazione rettifiche|Aggiunta di una colonna extra su orchestratore che agisca da "semaforo" per consentire le rettifiche|/<br>/<br>/<br>||
+|77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura|/<br>/<br>/<br>||
+|58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte|/<br>/<br>/<br>||
