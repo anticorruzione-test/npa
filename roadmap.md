@@ -70,19 +70,20 @@
 |68505|Nuova scheda S1_2 – elenco dei soggetti invitati a presentare offerta|Nuova scheda per le procedure a due fasi, utilizzata dopo la S1 per comunicare la data di scadenza offerta in caso di mancata aggiudicazione della gara sottosoglia|/<br>/<br>/<br>|CHG-07|
 |68586<br>68671|Procedura ristretta sopra soglia deserta dopo l'invito<br>Modifica flusso scheda S1|Previsione della possibilità di invio della scheda di aggiudicazione A1* sopra soglia dopo la S1 nei casi di procedure deserte dopo la manifestazione di interesse.|/<br>/<br>/<br>|CHG-07|
 |84599|Annullamento trasmissione scheda ANN|Aggiunta della scheda ANN alla lista delle schede annullabili con il servizio di roll-back|/<br>/<br>/<br>|CHG-07|
-|57290|Revisione scheda RSU1 - richiesta subappalto|Revisione del campo codice fiscale, modifica della cardinalità da molti a uno.|/<br>/<br>/<br>|CHG-07|
 |68087|Cancellazione appalti non confermati dopo 90 giorni|Verrà realizzato un job che provvederà alla cancellazione degli appalti non confermati dopo 90 giorni|/<br>/<br>/<br>|CHG-07|
 |68485|Affidamento diretto: Correzione per Esenzione dai contributi in casi di ripetizioni di lavori e servizi analoghi|Aggiunta della sezione ipotesiCollegamento nelle schede di affidamento diretto|/<br>/<br>/<br>|CHG-07|
-|68714|Revisione flusso di esecuzione|Revisione della corretta successione delle schede di avvio del flusso SC1 e I1, per eliminare la possibilità di non rilevare la data di sottoscrizione del contratto. Revisione della successione di eventi della fase di conclusione|/<br>/<br>/<br>|CHG-07|
-|70558|TED - Migrazione Nuove API v3|Aggiornamento API endpoint URLs e modifica del nome del parametro "noticeAuthorLocale" in "noticeAuthorLang"|/<br>/<br>/<br>|CHG-07|
 |81541|Verifica flussi non associato a comunicazioni di variazione contrattuale|Modifica dell’orchestratore per permettere l’invio delle schede di modifica contrattuale M2* per le schede A3_6, P2_17 e AD2_28|/<br>/<br>/<br>|CHG-07|
 |84809|Revisione flusso 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria|Revisione flusso 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria|/<br>/<br>/<br>|CHG-07|
-|86830|Introduzione xls per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica|/<br>/<br>/<br>|CHG-07|
 |87011|Aggiornamento tabella istat|Aggiornamento della tabella istat con allineamento alla versione attuale|/<br>/<br>/<br>|CHG-07|
 |84677|Revisione Scheda ID - Integrazione Dati|Aggiunta idPartecipante all'oggetto comunicazioneRibassoAggiudicazione|/<br>/<br>/<br>|CHG-07|
 |83225|Revisione Scheda S2|modifica all'elenco dei flussi di appartenenza della scheda S2 con rimozione del flusso 40|/<br>/<br>/<br>|CHG-07|
 |72902|Revisione Regole Scheda S3|Introduzione di una regola che verifichi la coerenza tra il tipo di progettazione e il tipo di soggetto indicato.|/<br>/<br>/<br>|CHG-07|
 |61141|Inserimento tetto massimo su scheda AD3|Introduzione di una regola che blocca la scheda in caso di appalto di lavori di importo superiore a € 150.000 e di servizi e forniture di importo superiore a € 140.000|/<br>/<br>/<br>|CHG-07|
+||||||
+|57290|Revisione scheda RSU1 - richiesta subappalto|Revisione del campo codice fiscale, modifica della cardinalità da molti a uno.|/<br>/<br>/<br>||
+|68714|Revisione flusso di esecuzione|Revisione della corretta successione delle schede di avvio del flusso SC1 e I1, per eliminare la possibilità di non rilevare la data di sottoscrizione del contratto. Revisione della successione di eventi della fase di conclusione|/<br>/<br>/<br>||
+|70558|TED - Migrazione Nuove API v3|Aggiornamento API endpoint URLs e modifica del nome del parametro "noticeAuthorLocale" in "noticeAuthorLang"|/<br>/<br>/<br>||
+|86830|Introduzione xsd per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica|/<br>/<br>/<br>||
 ||||||
 |58792|partecipante type - refactoring modello dati|refactoring del modello dati per la  gestione dei gruppi multilivello |/<br>/<br>/<br>|/|
 |62794|Modifica delle stazioni appaltanti coinvolte nella procedura|Funzionalità di inserimento, sostituzione, eliminazione di soggetti dall'elenco delle Stazioni Appaltanti|/<br>/<br>/<br>|/|
