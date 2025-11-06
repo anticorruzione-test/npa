@@ -2614,6 +2614,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG132",
+    "descrizione": {
+		"it": "La scheda può essere utilizzata solo per procedure con oggetto del contratto servizi o forniture.",
+		"en": "La scheda può essere utilizzata solo per procedure con oggetto del contratto servizi o forniture."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
