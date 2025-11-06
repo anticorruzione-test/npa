@@ -1458,6 +1458,7 @@ errori.json: Aggiunto errore REG68_1
 * modificata la REG51 per le schede A1_29, A1_30, A1_33, A1_34;
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 04/07/2025 (Changelog-06)</h1></summary>
 
 **NOTA**
@@ -1530,7 +1531,7 @@ errori.json: Aggiunto errore REG68_1
 aggiunta regola REG5_1
 * CO2.dmn, COC.dmn,CS1.dmn,IR1.dmn,RI1.dmn,RSU1.dmn,S1.dmn,S2.dmn,S2R.dmn,SO1.dmn,SQ1.dmn: aggiornata la annotation con il riferimento alla REG0
 * ABI.dmn, CBI.dmn: regole relative al nuovo flusso dei beni infungibili
-
+</details>
 
 <details>
 <summary><h1>Note di rilascio del 24/09/2025 (In Esercizio)</h1></summary>
@@ -1540,6 +1541,32 @@ aggiunta regola REG5_1
   * rimossa la REG95:
     * P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn;
 </details>
+
+<summary><h1>Note di rilascio del 30/11/2025 (Changelog-07)</h1></summary>
+
+**NOTA**
+* Pubblicazione contenuti su GitHub: 30/11/2025
+* Rilascio in Qualificazione: Come da Roadmap
+* Rilascio in Esercizio: Come da Roadmap
+
+  **la nota di rilascio potrà essere integrata successivamente**
+    
+## Modello Dati 
+* modello-dati-npa.yaml:
+
+### Schede
+* modello-dati-schede-ABI.yaml:
+	* modificata la descrizione della scheda.	
+	* aggiunto il campo facoltativo idPianificazione.
+
+## Orchestratore  
+* modificate le righe di ABI e CBI, colonna Settore-regime.
+
+### Tipologiche
+* errori.json: aggiunto l'errore REG132
+
+### Regole
+* ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
