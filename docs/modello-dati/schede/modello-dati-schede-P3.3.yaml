@@ -78,7 +78,7 @@ components:
     SchedaP3_3Type:
       description: Contratti esclusi - adesione con confronto competitivo. 
       type: object
-      required: [anacForm,espd]
+      required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:

@@ -146,7 +146,7 @@ components:
     SchedaP3_5Type:
       description: Scelta del socio privato nella società mista. Art. 13 comma 3 decreto legislativo 36/2023. Articolo 17 decreto legislativo 175/2016.
       type: object
-      required: [anacForm,espd]
+      required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:

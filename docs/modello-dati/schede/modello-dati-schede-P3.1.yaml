@@ -82,4 +82,6 @@ components:
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormP3_1Type'          
+          $ref: '#/components/schemas/AnacFormP3_1Type'
+        espd:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'                  
