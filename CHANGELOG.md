@@ -1566,6 +1566,9 @@ aggiunta regola REG5_1
 	* inserito in anacForm il campo facoltativo espd
 * modello-dati-schede-P3.2.yaml,modello-dati-schede-P3.3.yaml,modello-dati-schede-P3.4.yaml,modello-dati-schede-P3.5.yaml:
 	* reso facoltativo il campo espd
+ 	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
+* modello-dati-schede-P5.yaml:
+	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
 
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
