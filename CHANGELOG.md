@@ -1558,16 +1558,21 @@ aggiunta regola REG5_1
 * modello-dati-schede-ABI.yaml:
 	* modificata la descrizione della scheda.	
 	* aggiunto il campo facoltativo idPianificazione.
+* modello-dati-schede-ISDA2.yaml:
+	* reso facoltativo il campo datiBaseDurata.dataInizio
+* modello-dati-schede-PL2.7.yaml,modello-dati-schede-P2.11.yaml,modello-dati-schede-P2.19.yaml:
+	* aggiunto l'oggetto datiBaseDurata
 
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
 
 ### Tipologiche
-* errori.json: aggiunto l'errore REG132
+* errori.json: aggiunti gli errori REG132,REG133,REG134,REG135
 
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
-
+* ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
+  
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
