@@ -2623,6 +2623,33 @@
     "dataFine":null
 },
 {
+    "codice":"REG133",
+    "descrizione": {
+		"it": "Definire solo uno dei campi tra durata e altraDurata.",
+		"en": "Definire solo uno dei campi tra durata e altraDurata."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG134",
+    "descrizione": {
+		"it": "Il campo durata non può essere vuoto.",
+		"en": "Il campo durata non può essere vuoto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG135",
+    "descrizione": {
+		"it": "Definire almeno uno dei campi tra durata e altraDurata.",
+		"en": "Definire almeno uno dei campi tra durata e altraDurata."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
