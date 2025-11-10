@@ -2143,8 +2143,8 @@
 {
     "codice":"REG81",
     "descrizione": {
-		"it": "Non è stata indicata la data di ultimazione",
-		"en": "Non è stata indicata la data di ultimazione"
+		"it": "E' necessario indicare la data di ultimazione o la data di interruzione anticipata.",
+		"en": "E' necessario indicare la data di ultimazione o la data di interruzione anticipata"
 	},
     "dataInizio":null,
     "dataFine":null
