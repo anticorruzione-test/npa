@@ -1585,6 +1585,7 @@ aggiunta regola REG5_1
 	* aggiunti gli errori REG132,REG133,REG134,REG135
  	* modificata la descrizione dell'errore REG81
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
+* fattispecieTracciabilita.json: chiuse le voci con codice 19 e 24 e inserita una nuova voce
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
