@@ -1584,7 +1584,8 @@ aggiunta regola REG5_1
 * errori.json:
 	* aggiunti gli errori REG132,REG133,REG134,REG135
  	* modificata la descrizione dell'errore REG81
-
+* motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
+  
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
 * ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
