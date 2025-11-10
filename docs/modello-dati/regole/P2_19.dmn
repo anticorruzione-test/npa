@@ -648,6 +648,51 @@ satisfies ((lotto.datiBase.oggettoContratto.codice != "services" or lotto.datiBa
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG122\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1t8rmur">
+        <description>REG133: Definire solo uno dei campi tra durata e altraDurata</description>
+        <inputEntry id="UnaryTests_088l7lh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nyn32r">
+          <text>is defined(lotto.datiBaseDurata.durata) and is defined(lotto.datiBaseDurata.altraDurata)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dhuu3c">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h8lrn0">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG133\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0kew0d8">
+        <description>REG134: Il campo durata non può essere vuoto</description>
+        <inputEntry id="UnaryTests_0ka1ygx">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f4o84n">
+          <text>is defined(lotto.datiBaseDurata.durata) and lotto.datiBaseDurata.durata = ""</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pavnrh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03d8gm9">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG134\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_130hs4r">
+        <description>REG135: Definire almeno uno dei campi tra durata e altraDurata</description>
+        <inputEntry id="UnaryTests_1cu5zqn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0apuyvx">
+          <text>is defined(lotto.datiBaseDurata.durata)=false and is defined(lotto.datiBaseDurata.altraDurata)=false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tj2q2n">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08y3hps">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG135\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_0tq3gr1" name="lotti" />
