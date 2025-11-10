@@ -1576,11 +1576,14 @@ aggiunta regola REG5_1
 * modificate le righe delle schede P3* e P5, colonna schedaNormativa: aggiunto il riferimento alla delibera anac n. 584/2023
 
 ### Tipologiche
-* errori.json: aggiunti gli errori REG132,REG133,REG134,REG135
+* errori.json:
+	* aggiunti gli errori REG132,REG133,REG134,REG135
+ 	* modificata la descrizione dell'errore REG81
 
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
 * ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
+* CO1.dmn: modificata la descrizione della regola
   
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
