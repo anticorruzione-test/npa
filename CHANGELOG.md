@@ -1570,6 +1570,7 @@ aggiunta regola REG5_1
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
 * modificate le righe delle schede P3*, colonna includeESPD: inserito il valore SI, NO.
+* modificate le righe delle schede P3* e P5, colonna schedaNormativa: aggiunto il riferimento alla delibera anac n. 584/2023
 
 ### Tipologiche
 * errori.json: aggiunti gli errori REG132,REG133,REG134,REG135
