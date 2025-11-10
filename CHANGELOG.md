@@ -1560,8 +1560,11 @@ aggiunta regola REG5_1
 	* aggiunto il campo facoltativo idPianificazione.
 * modello-dati-schede-ISDA2.yaml:
 	* reso facoltativo il campo datiBaseDurata.dataInizio
-* modello-dati-schede-PL2.7.yaml,modello-dati-schede-P2.11.yaml,modello-dati-schede-P2.19.yaml:
+* modello-dati-schede-PL2.7.yaml,modello-dati-schede-P2.11.yaml:
 	* aggiunto l'oggetto datiBaseDurata
+* modello-dati-schede-P2.19.yaml:
+	* aggiunto l'oggetto datiBaseDurata
+	* modificata la descrizione della scheda
 * modello-dati-schede-P3.1.yaml: 
 	* inserito in anacForm il campo facoltativo espd
 * modello-dati-schede-P3.2.yaml,modello-dati-schede-P3.3.yaml,modello-dati-schede-P3.4.yaml,modello-dati-schede-P3.5.yaml:
@@ -1575,6 +1578,7 @@ aggiunta regola REG5_1
 * modificate le righe delle schede P3*, colonna includeESPD: inserito il valore SI, NO.
 * modificate le righe delle schede P3* e P5, colonna schedaNormativa: aggiunto il riferimento alla delibera anac n. 584/2023
 * modificata la riga della scheda AC1, colonna schedaSuccessiva: aggiunta la scheda CL1
+* modificata la riga della scheda P2_19, colonna schedaDescrizione
   
 ### Tipologiche
 * errori.json:
