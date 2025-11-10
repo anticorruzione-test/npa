@@ -76,7 +76,7 @@ components:
           items:
             $ref: '#/components/schemas/LottoP3_1Type'             
     SchedaP3_1Type:
-      description: Contratti esclusi (generale o di tipo accordo quadro). Articolo 10 della direttiva 2014/24/UE e articolo 21 della direttiva 2014/25/UE.
+      description: Contratti esclusi (generale o di tipo accordo quadro). Articolo 10 della direttiva 2014/24/UE e articolo 21 della direttiva 2014/25/UE. Delibera Anac n. 584/2023
       type: object
       required: [anacForm]
       additionalProperties: false
