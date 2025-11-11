@@ -1582,7 +1582,7 @@ aggiunta regola REG5_1
   
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136
  	* modificata la descrizione dell'errore REG81
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
 * fattispecieTracciabilita.json: chiuse le voci con codice 19 e 24 e inserita una nuova voce
@@ -1593,6 +1593,7 @@ aggiunta regola REG5_1
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
 * ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
 * CO1.dmn: modificata la descrizione della regola
+* PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
   
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
