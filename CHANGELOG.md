@@ -1574,7 +1574,10 @@ aggiunta regola REG5_1
 	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
 * modello-dati-schede-dati-comuni.yaml, :
 	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
-
+ 	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
+* modello-dati-schede-ID.yaml:
+	* aggiunto la sezione comunicazioneUrl per comunicare la correzione della url
+   
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
 * modificate le righe delle schede P3*, colonna includeESPD: inserito il valore SI, NO.
@@ -1591,6 +1594,7 @@ aggiunta regola REG5_1
 * fattispecieTracciabilita.json: chiuse le voci con codice 19 e 24 e inserita una nuova voce
 * motivoEsclusioneConcessione.json: chiusa la voce con codice 20 e inserita una nuova voce
 * motivoEsclusioneOrdinarioSpeciale.json: chiusa la voce con codice 65 e inserita una nuova voce
+* motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
@@ -1599,6 +1603,9 @@ aggiunta regola REG5_1
 * PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
 * PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
 PL1_7.dmn,PL1_8.dmn,PL1_9.dmn,PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P1_16.dmn,P1_17.dmn,P1_18.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn,P7_2.dmn: rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
+* ID.dmn: 
+	* modifica alla regola REG101 per l'introduzione della nuova sezione comunicazioneUrl
+	* aggiunta la regola REG8_1
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
