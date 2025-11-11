@@ -1572,6 +1572,8 @@ aggiunta regola REG5_1
  	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
 * modello-dati-schede-P5.yaml:
 	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
+* modello-dati-schede-dati-comuni.yaml, :
+	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
 
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
@@ -1584,6 +1586,7 @@ aggiunta regola REG5_1
 * errori.json:
 	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136
  	* modificata la descrizione dell'errore REG81
+  	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
 * fattispecieTracciabilita.json: chiuse le voci con codice 19 e 24 e inserita una nuova voce
 * motivoEsclusioneConcessione.json: chiusa la voce con codice 20 e inserita una nuova voce
@@ -1594,7 +1597,9 @@ aggiunta regola REG5_1
 * ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
 * CO1.dmn: modificata la descrizione della regola
 * PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
-  
+* PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
+PL1_7.dmn,PL1_8.dmn,PL1_9.dmn,PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P1_16.dmn,P1_17.dmn,P1_18.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn,P7_2.dmn: rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
