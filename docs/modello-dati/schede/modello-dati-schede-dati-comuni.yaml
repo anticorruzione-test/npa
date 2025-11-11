@@ -3963,7 +3963,7 @@ components:
           description: Data e ora di scadenza per la presentazione della richiesta di invito - nei casi in cui la scheda preveda un eform, corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
           type: string
           format: date-time
-        oraScadenzaPresentazioneOfferte: 
+        scadenzaPresentazioneOfferte: 
           description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
           format: date-time   
@@ -3979,10 +3979,10 @@ components:
           format: date-time          
     DatiBaseTerminiInvioSoloOraType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
-      required: [oraScadenzaPresentazioneOfferte]
+      required: [scadenzaPresentazioneOfferte]
       additionalProperties: false
       properties:
-        oraScadenzaPresentazioneOfferte: 
+        scadenzaPresentazioneOfferte: 
           description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           type: string
           format: date-time            
