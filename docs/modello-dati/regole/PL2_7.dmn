@@ -122,6 +122,18 @@ satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lot
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG135\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_050s8vi">
+        <description>REG136: Valore della tipologica TipoProcedura non ammesso</description>
+        <inputEntry id="UnaryTests_1w65823">
+          <text>is defined(appalto.datiBaseProcedura) and is defined(appalto.datiBaseProcedura.tipoProcedura) and not(list contains(["neg-w-call","open","oth-mult","oth-single","restricted"], appalto.datiBaseProcedura.tipoProcedura.codice))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11korfp">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19tp85i">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG136\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_0jj7j7u" name="lotti" />
