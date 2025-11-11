@@ -1601,8 +1601,7 @@ aggiunta regola REG5_1
 * ISDA2.dmn,P7_3.dmn,PL2_7.dmn,P2_11.dmn,P2_19.dmn: aggiunte le regole REG133,REG134,REG135 relative alla sezione datiBaseDurata
 * CO1.dmn: modificata la descrizione della regola
 * PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
-* PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,AD2_25.dmn,AD2_26.dmn,AD2_27.dmn,AD2_28.dmn,A2_29.dmn,A2_30.dmn,A2_31.dmn,A2_33.dmn,A2_34.dmn,A2_36.dmn,A2_37.dmn: aggiunta la regola REG136
-PL1_7.dmn,PL1_8.dmn,PL1_9.dmn,PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P1_16.dmn,P1_17.dmn,P1_18.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn,P7_2.dmn: rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
+* PL1_7.dmn,PL1_8.dmn,PL1_9.dmn,PL2_7.dmn,PL2_8.dmn,PL2_9.dmn,P1_16.dmn,P1_17.dmn,P1_18.dmn,P1_19.dmn,P1_20.dmn,P1_21.dmn,P1_23.dmn,P1_24.dmn,P2_16.dmn,P2_17.dmn,P2_18.dmn,P2_19.dmn,P2_20.dmn,P2_21.dmn,P2_23.dmn,P2_24.dmn,P3_1.dmn,P3_2.dmn,P3_3.dmn,P3_4.dmn,P3_5.dmn,P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn,P6_1.dmn,P6_2.dmn,P7_2.dmn: rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
 * ID.dmn: 
 	* modifica alla regola REG101 per l'introduzione della nuova sezione comunicazioneUrl
 	* aggiunta la regola REG8_1
