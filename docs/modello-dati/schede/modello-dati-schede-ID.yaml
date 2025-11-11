@@ -37,6 +37,18 @@ components:
           format: double
           maximum: 100
           exclusiveMaximum: true
+    ComunicazioneUrlType:
+      description: Dati inerenti la comunicazione del ribasso di aggiudicazione
+      type: object
+      required: [motivoCorrezione,url]
+      additionalProperties: false
+      properties:
+        motivoCorrezione:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneUrlEnum'    
+        url:
+          description: Indirizzo dei documenti di gara.
+          type: string
+          format: url         
     ComunicazioneIDType:
       type: object
       required: [motivoRichiestaModifica]
@@ -51,6 +63,8 @@ components:
         docFAP:
           description: è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM
           type: boolean
+        comunicazioneUrl:
+            $ref: '#/components/schemas/ComunicazioneUrlType'
     AnacFormIDType:
       type: object
       required: [cig,comunicazione]
