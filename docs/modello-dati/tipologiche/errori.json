@@ -2650,6 +2650,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG136",
+    "descrizione": {
+		"it": "Valore della tipologica TipoProcedura non ammesso.",
+		"en": "Valore della tipologica TipoProcedura non ammesso."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
