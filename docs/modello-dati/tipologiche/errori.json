@@ -2269,8 +2269,8 @@
 {
     "codice":"REG95",
     "descrizione": {
-		"it": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131).",
-		"en": "Per il tipo di procedura aperta o altra procedura a fase unica il campo oraScadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131)."
+		"it": "Per il tipo di procedura aperta o altra procedura a fase unica il campo scadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131).",
+		"en": "Per il tipo di procedura aperta o altra procedura a fase unica il campo scadenzaPresentazioneOfferte è obbligatorio. In presenza di eForm verificare il campo EndDate (BT-131)."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2278,8 +2278,8 @@
 {
     "codice":"REG96",
     "descrizione": {
-		"it": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
-		"en": "E' obbligatorio inserire almeno uno dei due campi tra oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
+		"it": "E' obbligatorio inserire almeno uno dei due campi tra scadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
+		"en": "E' obbligatorio inserire almeno uno dei due campi tra scadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2287,8 +2287,8 @@
 {
     "codice":"REG97",
     "descrizione": {
-		"it": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
-		"en": "Inserire solo uno tra i campi oraScadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
+		"it": "Inserire solo uno tra i campi scadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630).",
+		"en": "Inserire solo uno tra i campi scadenzaPresentazioneOfferte e scadenzaPresentazioneInvito. In presenza di eForm verificare i campi EndDate (BT-131, BT-1311, BT-630)."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2359,8 +2359,8 @@
 {
     "codice":"REG105",
     "descrizione": {
-		"it": "La data inserita nel campo datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131).",
-		"en": "La data inserita nel campo datiBaseTerminiInvio.oraScadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131)."
+		"it": "La data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131).",
+		"en": "La data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi. In presenza di eForm verificare il campo EndDate (BT-131)."
 	},
     "dataInizio":null,
     "dataFine":null
