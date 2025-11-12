@@ -1297,4 +1297,11 @@
     "it": "Chiusura elenco fornitori.",
     "en": "Chiusura elenco fornitori."
   }
+},
+{
+  "codice": "CM3",
+  "descrizione": {
+    "it": "Comunicazione modifica dati della procedura negoziata senza bando.",
+    "en": "Comunicazione modifica dati della procedura negoziata senza bando."
+  }
 }]
