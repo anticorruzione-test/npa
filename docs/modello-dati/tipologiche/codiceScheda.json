@@ -1283,4 +1283,18 @@
 		},
     "dataInizio":null,
     "dataFine":null
+},
+{
+  "codice": "SE",
+  "descrizione": {
+    "it": "Elenco richieste di adesione all'elenco fornitori.",
+    "en": "Elenco richieste di adesione all'elenco fornitori."
+  }
+},
+{
+  "codice": "C7_3",
+  "descrizione": {
+    "it": "Chiusura elenco fornitori.",
+    "en": "Chiusura elenco fornitori."
+  }
 }]
