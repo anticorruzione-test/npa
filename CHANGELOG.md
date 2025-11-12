@@ -1604,7 +1604,7 @@ aggiunta regola REG5_1
 * motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
 * operazioneElenco.json: nuova tipologica definita per gestire le operazioni sugli elenchi fornitori
 * codiceScheda.json: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
-
+* ruoloOE.json: aggiunta della nuova voce "Progettista incaricato"
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
