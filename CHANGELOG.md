@@ -1552,7 +1552,7 @@ aggiunta regola REG5_1
   **la nota di rilascio potrà essere integrata successivamente**
     
 ## Modello Dati 
-* modello-dati-npa.yaml:
+* modello-dati-npa.yaml: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 
 ### Schede
 * modello-dati-schede-ABI.yaml:
@@ -1575,8 +1575,13 @@ aggiunta regola REG5_1
 * modello-dati-schede-dati-comuni.yaml, :
 	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
  	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
+  	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
 * modello-dati-schede-ID.yaml:
 	* aggiunto la sezione comunicazioneUrl per comunicare la correzione della url
+* modello-dati-schede-SE.yaml:
+	* nuova scheda definita per la gestione elenco fornitori
+* modello-dati-schede-C7_3.yaml:
+	* nuova scheda definita per la chiusura elenco fornitori
    
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
@@ -1584,6 +1589,8 @@ aggiunta regola REG5_1
 * modificate le righe delle schede P3* e P5, colonna schedaNormativa: aggiunto il riferimento alla delibera anac n. 584/2023
 * modificata la riga della scheda AC1, colonna schedaSuccessiva: aggiunta la scheda CL1
 * modificata la riga della scheda P2_19, colonna schedaDescrizione
+* modificata la riga della scheda P7_3, colonna schedaSuccessiva: aggiunte le schede C7_3 e SE
+* aggiunte le righe relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
   
 ### Tipologiche
 * errori.json:
@@ -1595,6 +1602,9 @@ aggiunta regola REG5_1
 * motivoEsclusioneConcessione.json: chiusa la voce con codice 20 e inserita una nuova voce
 * motivoEsclusioneOrdinarioSpeciale.json: chiusa la voce con codice 65 e inserita una nuova voce
 * motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
+* operazioneElenco.json: nuova tipologica definita per gestire le operazioni sugli elenchi fornitori
+* codiceScheda.json: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
@@ -1605,6 +1615,7 @@ aggiunta regola REG5_1
 * ID.dmn: 
 	* modifica alla regola REG101 per l'introduzione della nuova sezione comunicazioneUrl
 	* aggiunta la regola REG8_1
+* SE.dmn,C7_3.dmn: aggiunta delle regole relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
