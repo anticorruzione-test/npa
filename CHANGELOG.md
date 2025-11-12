@@ -1552,7 +1552,9 @@ aggiunta regola REG5_1
   **la nota di rilascio potrà essere integrata successivamente**
     
 ## Modello Dati 
-* modello-dati-npa.yaml: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+* modello-dati-npa.yaml:
+	* aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+ 	* aggiunta della nuova scheda CM3 per la modifica dei dati della procedura negoziata senza bando
 
 ### Schede
 * modello-dati-schede-ABI.yaml:
@@ -1582,6 +1584,7 @@ aggiunta regola REG5_1
 	* nuova scheda definita per la gestione elenco fornitori
 * modello-dati-schede-C7_3.yaml:
 	* nuova scheda definita per la chiusura elenco fornitori
+* modello-dati-schede-CM3.yaml: nuova scheda definita per la modifica dei dati della procedura negoziata senza bando
    
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
@@ -1591,6 +1594,10 @@ aggiunta regola REG5_1
 * modificata la riga della scheda P2_19, colonna schedaDescrizione
 * modificata la riga della scheda P7_3, colonna schedaSuccessiva: aggiunte le schede C7_3 e SE
 * aggiunte le righe relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+* modificata la riga della scheda P7_2, colonna schedaSuccessiva: aggiunte le schede ANN e CM3
+* modificata la riga della scheda ANN, colonna flussoAppartenenza: aggiunto il flusso 72
+* modificata la riga della scheda ID, colonna schedaSuccessiva: aggiunta la scheda CM3
+* aggiunta la riga relativa alla nuova scheda CM3 per la modifica delle procedure negoziate senza bando che non prevedono pubblicazione
   
 ### Tipologiche
 * errori.json:
@@ -1603,7 +1610,7 @@ aggiunta regola REG5_1
 * motivoEsclusioneOrdinarioSpeciale.json: chiusa la voce con codice 65 e inserita una nuova voce
 * motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
 * operazioneElenco.json: nuova tipologica definita per gestire le operazioni sugli elenchi fornitori
-* codiceScheda.json: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+* codiceScheda.json: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori e CM3 per la modifica dei dati della procedura negoziata senza bando
 * ruoloOE.json: aggiunta della nuova voce "Progettista incaricato"
   
 ### Regole
@@ -1616,6 +1623,7 @@ aggiunta regola REG5_1
 	* modifica alla regola REG101 per l'introduzione della nuova sezione comunicazioneUrl
 	* aggiunta la regola REG8_1
 * SE.dmn,C7_3.dmn: aggiunta delle regole relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
+* CM3.dmn: aggiunta delle regole relative alla nuova scheda CM3 definita per la modifica dei dati della procedura negoziata senza bando
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
