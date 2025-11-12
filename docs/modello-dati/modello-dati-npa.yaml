@@ -206,6 +206,8 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-CSDA2.yaml#/components/schemas/SchedaCSDA2Type' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-ID.yaml#/components/schemas/SchedaIDType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-CBI.yaml#/components/schemas/SchedaCBIType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-SE.yaml#/components/schemas/SchedaSEType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-C7_3.yaml#/components/schemas/SchedaC7_3Type'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
