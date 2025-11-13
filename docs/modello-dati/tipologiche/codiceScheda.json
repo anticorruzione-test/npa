@@ -1304,4 +1304,11 @@
     "it": "Comunicazione modifica dati della procedura negoziata senza bando.",
     "en": "Comunicazione modifica dati della procedura negoziata senza bando."
   }
+},
+{
+  "codice": "S1_2",
+  "descrizione": {
+    "it": "Elenco dei soggetti invitati.",
+    "en": "Elenco dei soggetti invitati."
+  }
 }]

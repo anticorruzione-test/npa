@@ -2659,6 +2659,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG137",
+    "descrizione": {
+		"it": "Indicare almeno un invitato.",
+		"en": "Indicare almeno un invitato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG138",
+    "descrizione": {
+		"it": "I campi di tipo testo non possono essere vuoti.",
+		"en": "I campi di tipo testo non possono essere vuoti."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
