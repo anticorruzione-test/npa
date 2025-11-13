@@ -142,6 +142,7 @@ components:
           body:
             oneOf:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-S1.yaml#/components/schemas/SchedaS1Type'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-S1_2.yaml#/components/schemas/SchedaS1_2Type'            
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-S2.yaml#/components/schemas/SchedaS2Type'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-S2R.yaml#/components/schemas/SchedaS2RType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-S3.yaml#/components/schemas/SchedaS3Type'
