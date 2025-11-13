@@ -1605,7 +1605,9 @@ aggiunta regola REG5_1
 * aggiunta la riga relativa alla nuova scheda CM3 per la modifica delle procedure negoziate senza bando che non prevedono pubblicazione
 * aggiunta la riga relativa alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * modificata la riga della scheda S2, colonna schedaDescrizione
-* modificata la riga della scheda S1, colonna schedaSuccessiva: aggiunta la scheda S1_2 ed eliminata la S2
+* modificata la riga della scheda S1:
+	* colonna schedaSuccessiva: aggiunta la scheda S1_2 ed eliminata la S2
+ 	* colonna schedaSuccessiva: aggiunte le schede A1* per comunicare gara deserta o non aggiudicata
 
 ### Tipologiche
 * errori.json:
