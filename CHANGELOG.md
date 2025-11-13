@@ -1555,6 +1555,7 @@ aggiunta regola REG5_1
 * modello-dati-npa.yaml:
 	* aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
  	* aggiunta della nuova scheda CM3 per la modifica dei dati della procedura negoziata senza bando
+  	* aggiunta della nuova scheda S1_2 per la comunicazione dell'elenco degli invitati
 
 ### Schede
 * modello-dati-schede-ABI.yaml:
@@ -1585,6 +1586,10 @@ aggiunta regola REG5_1
 * modello-dati-schede-C7_3.yaml:
 	* nuova scheda definita per la chiusura elenco fornitori
 * modello-dati-schede-CM3.yaml: nuova scheda definita per la modifica dei dati della procedura negoziata senza bando
+* modello-dati-schede-S1_2.yaml: nuova scheda definita per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
+* modello-dati-schede-S2.yaml,modello-dati-schede-S2R.yaml: 
+	* deprecata la sezione invitati e i campi dataInvito e scadenzaPresentazioneOfferta
+	* modificata la descrizione della scheda
    
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
@@ -1598,10 +1603,13 @@ aggiunta regola REG5_1
 * modificata la riga della scheda ANN, colonna flussoAppartenenza: aggiunto il flusso 72
 * modificata la riga della scheda ID, colonna schedaSuccessiva: aggiunta la scheda CM3
 * aggiunta la riga relativa alla nuova scheda CM3 per la modifica delle procedure negoziate senza bando che non prevedono pubblicazione
-  
+* aggiunta la riga relativa alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
+* modificata la riga della scheda S2, colonna schedaDescrizione
+* modificata la riga della scheda S1, colonna schedaSuccessiva: aggiunta la scheda S1_2 ed eliminata la S2
+
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138
  	* modificata la descrizione dell'errore REG81
   	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
@@ -1624,6 +1632,7 @@ aggiunta regola REG5_1
 	* aggiunta la regola REG8_1
 * SE.dmn,C7_3.dmn: aggiunta delle regole relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * CM3.dmn: aggiunta delle regole relative alla nuova scheda CM3 definita per la modifica dei dati della procedura negoziata senza bando
+* S1_2.dmn: aggiunta delle regole relative alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
