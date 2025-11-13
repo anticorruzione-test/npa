@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda S2 - Per la procedura a fase unica è l'elenco dei soggetti che hanno presentato offerta. 
+  title: Modello Dati - Scheda S2 - Elenco dei soggetti che hanno presentato offerta. 
   version: 1.0.0
 components:
   schemas:
@@ -33,7 +33,7 @@ components:
           format: date-time        
       
     SchedaS2Type:
-      description: "Per la procedura a fase unica è l'elenco dei soggetti che hanno presentato offerta."
+      description: "Elenco dei soggetti che hanno presentato offerta."
       type: object
       additionalProperties: false
       required: [anacForm]
