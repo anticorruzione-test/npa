@@ -1600,7 +1600,9 @@ aggiunta regola REG5_1
 * modificata la riga della scheda P7_3, colonna schedaSuccessiva: aggiunte le schede C7_3 e SE
 * aggiunte le righe relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * modificata la riga della scheda P7_2, colonna schedaSuccessiva: aggiunte le schede ANN e CM3
-* modificata la riga della scheda ANN, colonna flussoAppartenenza: aggiunto il flusso 72
+* modificata la riga della scheda ANN:
+	* colonna flussoAppartenenza: aggiunto il flusso 72
+	* colonna schedaAnnullabile: SI
 * modificata la riga della scheda ID, colonna schedaSuccessiva: aggiunta la scheda CM3
 * aggiunta la riga relativa alla nuova scheda CM3 per la modifica delle procedure negoziate senza bando che non prevedono pubblicazione
 * aggiunta la riga relativa alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
