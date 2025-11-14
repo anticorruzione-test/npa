@@ -2713,6 +2713,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG143",
+    "descrizione": {
+		"it": "Indicare almeno un soggetto.",
+		"en": "Indicare almeno un soggetto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
