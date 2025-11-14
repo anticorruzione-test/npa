@@ -1579,6 +1579,7 @@ aggiunta regola REG5_1
 	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
  	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
   	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
+  	* aggiunto l'oggetto DatiBaseProceduraAD2Type per inserimento del nuovo campo cigCollegato
 * modello-dati-schede-ID.yaml:
 	* aggiunto la sezione comunicazioneUrl per comunicare la correzione della url
 * modello-dati-schede-SE.yaml:
@@ -1592,7 +1593,7 @@ aggiunta regola REG5_1
 	* modificata la descrizione della scheda
 * modello-dati-schede-RSU1.yaml:
 	* revisione della scheda 
- 
+* modello-dati-schede-AD2.25.yaml, modello-dati-schede-AD2.26.yaml,modello-dati-schede-AD2.27.yaml,modello-dati-schede-AD2.28.yaml: modificato il riferimento dell'oggetto DatiBaseProceduraADType verso il nuovo oggetto DatiBaseProceduraAD2Type
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
 * modificate le righe delle schede P3*, colonna includeESPD: inserito il valore SI, NO.
