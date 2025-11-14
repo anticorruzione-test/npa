@@ -3777,6 +3777,27 @@ components:
           type: array
           items:        
             $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'            
+    DatiBaseProceduraAD2Type:
+      description: Dato in comune con il Business Group Procedure delle eforms
+      type: object
+      additionalProperties: false
+      required: [tipoProcedura]
+      properties:
+        tipoProcedura:
+          $ref: '#/components/schemas/TipoProceduraEnum'  
+        giustificazioniAggiudicazioneDiretta:
+          type: array
+          items: 
+           $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaType'           
+    GiustificazioneAggiudicazioneDirettaType:
+          properties:
+            giustificazioneAggiudicazioneDiretta:
+              $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'
+            cigCollegato:
+              description: CIG collegato
+              type: array
+              items: 
+                type: string
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
