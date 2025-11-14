@@ -2722,6 +2722,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG144",
+    "descrizione": {
+		"it": "Per appalti di lavori l'importo non può superare i 150000 euro.",
+		"en": "Per appalti di lavori l'importo non può superare i 150000 euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG145",
+    "descrizione": {
+		"it": "Per appalti di servizi e forniture l'importo non può superare i 140000 euro.",
+		"en": "Per appalti di servizi e forniture l'importo non può superare i 140000 euro."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
