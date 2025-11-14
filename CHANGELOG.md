@@ -1581,7 +1581,8 @@ aggiunta regola REG5_1
   	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
   	* aggiunto l'oggetto DatiBaseProceduraAD2Type per inserimento del nuovo campo cigCollegato
 * modello-dati-schede-ID.yaml:
-	* aggiunto la sezione comunicazioneUrl per comunicare la correzione della url
+	* aggiunta la sezione comunicazioneUrl per comunicare la correzione della url 
+	* aggiunto l'idPartecipante all'oggetto ComunicazioneRibassoAggiudicazioneType
 * modello-dati-schede-SE.yaml:
 	* nuova scheda definita per la gestione elenco fornitori
 * modello-dati-schede-C7_3.yaml:
