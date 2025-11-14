@@ -2677,6 +2677,42 @@
     "dataFine":null
 },
 {
+    "codice":"REG139",
+    "descrizione": {
+		"it": "Definire almeno un conferente subappalto.",
+		"en": "Definire almeno un conferente subappalto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG140",
+    "descrizione": {
+		"it": "Definire un solo conferente subappalto.",
+		"en": "Definire un solo conferente subappalto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG141",
+    "descrizione": {
+		"it": "In caso di subappalto a cascata deve essere indicato l'idSubappalto.",
+		"en": "In caso di subappalto a cascata deve essere indicato l'idSubappalto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG142",
+    "descrizione": {
+		"it": "Indicare almeno un soggetto.",
+		"en": "Indicare almeno un soggetto."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
