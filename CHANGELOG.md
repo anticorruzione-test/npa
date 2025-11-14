@@ -1620,7 +1620,7 @@ aggiunta regola REG5_1
   
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143
  	* modificata la descrizione dell'errore REG81
   	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
@@ -1645,6 +1645,7 @@ aggiunta regola REG5_1
 * CM3.dmn: aggiunta delle regole relative alla nuova scheda CM3 definita per la modifica dei dati della procedura negoziata senza bando
 * S1_2.dmn: aggiunta delle regole relative alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * RSU1.dmn: aggiunte regole per la gestione della nuova scheda di subappalto
+* S3: aggiunta la regola REG143
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
