@@ -1613,7 +1613,8 @@ aggiunta regola REG5_1
 * modificata la riga della scheda S1:
 	* colonna schedaSuccessiva: aggiunta la scheda S1_2 ed eliminata la S2
  	* colonna schedaSuccessiva: aggiunte le schede A1* per comunicare gara deserta o non aggiudicata
-
+* modificate le righe delle schede M2 e M2_40, colonna flussoAppartenenza: aggiunti i flussi 36,217,228
+  
 ### Tipologiche
 * errori.json:
 	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142
