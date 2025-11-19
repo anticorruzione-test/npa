@@ -1556,6 +1556,7 @@ aggiunta regola REG5_1
 	* aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
  	* aggiunta della nuova scheda CM3 per la modifica dei dati della procedura negoziata senza bando
   	* aggiunta della nuova scheda S1_2 per la comunicazione dell'elenco degli invitati
+  	* aggiunta della nuova scheda P8 per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 
 ### Schede
 * modello-dati-schede-ABI.yaml:
@@ -1580,6 +1581,7 @@ aggiunta regola REG5_1
  	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
   	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
   	* aggiunto l'oggetto DatiBaseProceduraAD2Type per inserimento del nuovo campo cigCollegato
+  	* aggiunto l'oggetto TipoSchedaEnum per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 * modello-dati-schede-ID.yaml:
 	* aggiunta la sezione comunicazioneUrl per comunicare la correzione della url 
 	* aggiunto l'idPartecipante all'oggetto ComunicazioneRibassoAggiudicazioneType
@@ -1595,6 +1597,9 @@ aggiunta regola REG5_1
 * modello-dati-schede-RSU1.yaml:
 	* revisione della scheda 
 * modello-dati-schede-AD2.25.yaml, modello-dati-schede-AD2.26.yaml,modello-dati-schede-AD2.27.yaml,modello-dati-schede-AD2.28.yaml: modificato il riferimento dell'oggetto DatiBaseProceduraADType verso il nuovo oggetto DatiBaseProceduraAD2Type
+* modello-dati-schede-P8.yaml: 
+	* nuova scheda per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
+
 ## Orchestratore  
 * modificate le righe di ABI e CBI, colonna Settore-regime.
 * modificate le righe delle schede P3*, colonna includeESPD: inserito il valore SI, NO.
@@ -1605,8 +1610,9 @@ aggiunta regola REG5_1
 * aggiunte le righe relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * modificata la riga della scheda P7_2, colonna schedaSuccessiva: aggiunte le schede ANN e CM3
 * modificata la riga della scheda ANN:
-	* colonna flussoAppartenenza: aggiunto il flusso 72
+	* colonna flussoAppartenenza: aggiunti i flussi 72,800
 	* colonna schedaAnnullabile: SI
+* modificata la riga della scheda CM1, colonna flussoAppartenenza: aggiunto il flusso 800
 * modificata la riga della scheda ID, colonna schedaSuccessiva: aggiunta la scheda CM3
 * aggiunta la riga relativa alla nuova scheda CM3 per la modifica delle procedure negoziate senza bando che non prevedono pubblicazione
 * aggiunta la riga relativa alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
@@ -1617,6 +1623,8 @@ aggiunta regola REG5_1
 	* colonna schedaSuccessiva: aggiunta la scheda S1_2 ed eliminata la S2
  	* colonna schedaSuccessiva: aggiunte le schede A1* per comunicare gara deserta o non aggiudicata
 * modificate le righe delle schede M2 e M2_40, colonna flussoAppartenenza: aggiunti i flussi 36,217,228
+* aggiunta la riga relativa alla nuova scheda P8 per le procedure negoziate senza bando o adesione ad AQ soprasoglia
+* modificata la riga della scheda A1_29, colonna flussoAppartenenza: aggiunto il flusso 800
   
 ### Tipologiche
 * errori.json:
@@ -1629,8 +1637,13 @@ aggiunta regola REG5_1
 * motivoEsclusioneOrdinarioSpeciale.json: chiusa la voce con codice 65 e inserita una nuova voce
 * motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
 * operazioneElenco.json: nuova tipologica definita per gestire le operazioni sugli elenchi fornitori
-* codiceScheda.json: aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori e CM3 per la modifica dei dati della procedura negoziata senza bando
+* codiceScheda.json: aggiunta delle nuove schede: 
+	* SE e C7_3 per la gestione dell'elenco fornitori
+	* CM3 per la modifica dei dati della procedura negoziata senza bando
+	* S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
+	* P8 per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 * ruoloOE.json: aggiunta della nuova voce "Progettista incaricato"
+* tipoScheda.json: nuova tipologica per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
@@ -1647,6 +1660,7 @@ aggiunta regola REG5_1
 * RSU1.dmn: aggiunte regole per la gestione della nuova scheda di subappalto
 * S3: aggiunta la regola REG143
 * AD3.dmn: aggiunte le regole REG144,REG145
+* P8.dmn: aggiunte le regole per la nuova scheda per le procedure negoziate senza bando o adesioni ad AQ soprasoglia
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
