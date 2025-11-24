@@ -1298,8 +1298,8 @@
 	{
 		"codice": "004021001",
 		"descrizione": {
-			"it": "ALDINO",
-			"en": "ALDINO"
+			"it": "ALDINO/ALDEIN",
+			"en": "ALDINO/ALDEIN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -2234,8 +2234,8 @@
 	{
 		"codice": "004021002",
 		"descrizione": {
-			"it": "ANDRIANO",
-			"en": "ANDRIANO"
+			"it": "ANDRIANO/ANDRIAN",
+			"en": "ANDRIANO/ANDRIAN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -2387,8 +2387,8 @@
 	{
 		"codice": "004021003",
 		"descrizione": {
-			"it": "ANTERIVO",
-			"en": "ANTERIVO"
+			"it": "ANTERIVO/ALTREI",
+			"en": "ANTERIVO/ALTREI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -2585,8 +2585,8 @@
 	{
 		"codice": "004021004",
 		"descrizione": {
-			"it": "APPIANO SULLA STRADA DEL VINO",
-			"en": "APPIANO SULLA STRADA DEL VINO"
+			"it": "APPIANO SULLA STRADA DEL VINO/EPPAN AN DER WEINSTRASSE",
+			"en": "APPIANO SULLA STRADA DEL VINO/EPPAN AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -3872,8 +3872,8 @@
 	{
 		"codice": "004021005",
 		"descrizione": {
-			"it": "AVELENGO",
-			"en": "AVELENGO"
+			"it": "AVELENGO/HAFLING",
+			"en": "AVELENGO/HAFLING"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -4158,15 +4158,6 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021006",
-		"descrizione": {
-			"it": "BADIA",
-			"en": "BADIA"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "005023005",
 		"descrizione": {
 			"it": "BADIA CALAVENA",
@@ -4198,6 +4189,15 @@
 		"descrizione": {
 			"it": "BADIA TEDALDA",
 			"en": "BADIA TEDALDA"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021006",
+		"descrizione": {
+			"it": "BADIA/ABTEI",
+			"en": "BADIA/ABTEI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -4880,8 +4880,8 @@
 	{
 		"codice": "004021007",
 		"descrizione": {
-			"it": "BARBIANO",
-			"en": "BARBIANO"
+			"it": "BARBIANO/BARBIAN",
+			"en": "BARBIANO/BARBIAN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -7101,15 +7101,6 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021008",
-		"descrizione": {
-			"it": "BOLZANO",
-			"en": "BOLZANO"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "001003022",
 		"descrizione": {
 			"it": "BOLZANO NOVARESE",
@@ -7123,6 +7114,15 @@
 		"descrizione": {
 			"it": "BOLZANO VICENTINO",
 			"en": "BOLZANO VICENTINO"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021008",
+		"descrizione": {
+			"it": "BOLZANO/BOZEN",
+			"en": "BOLZANO/BOZEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -8354,8 +8354,8 @@
 	{
 		"codice": "004021009",
 		"descrizione": {
-			"it": "BRAIES",
-			"en": "BRAIES"
+			"it": "BRAIES/PRAGS",
+			"en": "BRAIES/PRAGS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -8552,8 +8552,8 @@
 	{
 		"codice": "004021010",
 		"descrizione": {
-			"it": "BRENNERO",
-			"en": "BRENNERO"
+			"it": "BRENNERO/BRENNER",
+			"en": "BRENNERO/BRENNER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -8642,8 +8642,8 @@
 	{
 		"codice": "004021011",
 		"descrizione": {
-			"it": "BRESSANONE",
-			"en": "BRESSANONE"
+			"it": "BRESSANONE/BRIXEN",
+			"en": "BRESSANONE/BRIXEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -8939,8 +8939,8 @@
 	{
 		"codice": "004021012",
 		"descrizione": {
-			"it": "BRONZOLO",
-			"en": "BRONZOLO"
+			"it": "BRONZOLO/BRANZOLL",
+			"en": "BRONZOLO/BRANZOLL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -9065,8 +9065,8 @@
 	{
 		"codice": "004021013",
 		"descrizione": {
-			"it": "BRUNICO",
-			"en": "BRUNICO"
+			"it": "BRUNICO/BRUNECK",
+			"en": "BRUNICO/BRUNECK"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -9920,8 +9920,8 @@
 	{
 		"codice": "004021014",
 		"descrizione": {
-			"it": "CAINES",
-			"en": "CAINES"
+			"it": "CAINES/KUENS",
+			"en": "CAINES/KUENS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -10181,8 +10181,8 @@
 	{
 		"codice": "004021015",
 		"descrizione": {
-			"it": "CALDARO SULLA STRADA DEL VINO",
-			"en": "CALDARO SULLA STRADA DEL VINO"
+			"it": "CALDARO SULLA STRADA DEL VINO/KALTERN AN DER WEINSTRASSE",
+			"en": "CALDARO SULLA STRADA DEL VINO/KALTERN AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -11063,8 +11063,8 @@
 	{
 		"codice": "004021016",
 		"descrizione": {
-			"it": "CAMPO DI TRENS",
-			"en": "CAMPO DI TRENS"
+			"it": "CAMPO DI TRENS/FREIENFELD",
+			"en": "CAMPO DI TRENS/FREIENFELD"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -11099,8 +11099,8 @@
 	{
 		"codice": "004021017",
 		"descrizione": {
-			"it": "CAMPO TURES",
-			"en": "CAMPO TURES"
+			"it": "CAMPO TURES/SAND IN TAUFERS",
+			"en": "CAMPO TURES/SAND IN TAUFERS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -15329,8 +15329,8 @@
 	{
 		"codice": "004021018",
 		"descrizione": {
-			"it": "CASTELBELLO-CIARDES",
-			"en": "CASTELBELLO-CIARDES"
+			"it": "CASTELBELLO-CIARDES/KASTELBELL-TSCHARS",
+			"en": "CASTELBELLO-CIARDES/KASTELBELL-TSCHARS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -16463,8 +16463,8 @@
 	{
 		"codice": "004021019",
 		"descrizione": {
-			"it": "CASTELROTTO",
-			"en": "CASTELROTTO"
+			"it": "CASTELROTTO/KASTELRUTH",
+			"en": "CASTELROTTO/KASTELRUTH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -18308,8 +18308,8 @@
 	{
 		"codice": "004021020",
 		"descrizione": {
-			"it": "CERMES",
-			"en": "CERMES"
+			"it": "CERMES/TSCHERMS",
+			"en": "CERMES/TSCHERMS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -19127,8 +19127,8 @@
 	{
 		"codice": "004021021",
 		"descrizione": {
-			"it": "CHIENES",
-			"en": "CHIENES"
+			"it": "CHIENES/KIENS",
+			"en": "CHIENES/KIENS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -19296,15 +19296,6 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021022",
-		"descrizione": {
-			"it": "CHIUSA",
-			"en": "CHIUSA"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "001004068",
 		"descrizione": {
 			"it": "CHIUSA DI PESIO",
@@ -19327,6 +19318,15 @@
 		"descrizione": {
 			"it": "CHIUSA SCLAFANI",
 			"en": "CHIUSA SCLAFANI"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021022",
+		"descrizione": {
+			"it": "CHIUSA/KLAUSEN",
+			"en": "CHIUSA/KLAUSEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -21980,8 +21980,8 @@
 	{
 		"codice": "004021023",
 		"descrizione": {
-			"it": "CORNEDO ALL'ISARCO",
-			"en": "CORNEDO ALL'ISARCO"
+			"it": "CORNEDO ALL'ISARCO/KARNEID",
+			"en": "CORNEDO ALL'ISARCO/KARNEID"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -22142,8 +22142,8 @@
 	{
 		"codice": "004021024",
 		"descrizione": {
-			"it": "CORTACCIA SULLA STRADA DEL VINO",
-			"en": "CORTACCIA SULLA STRADA DEL VINO"
+			"it": "CORTACCIA SULLA STRADA DEL VINO/KURTATSCH AN DER WEINSTRASSE",
+			"en": "CORTACCIA SULLA STRADA DEL VINO/KURTATSCH AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -22313,8 +22313,8 @@
 	{
 		"codice": "004021025",
 		"descrizione": {
-			"it": "CORTINA SULLA STRADA DEL VINO",
-			"en": "CORTINA SULLA STRADA DEL VINO"
+			"it": "CORTINA SULLA STRADA DEL VINO/KURTINIG AN DER WEINSTRASSE",
+			"en": "CORTINA SULLA STRADA DEL VINO/KURTINIG AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -22349,8 +22349,8 @@
 	{
 		"codice": "004021026",
 		"descrizione": {
-			"it": "CORVARA IN BADIA",
-			"en": "CORVARA IN BADIA"
+			"it": "CORVARA IN BADIA/CORVARA",
+			"en": "CORVARA IN BADIA/CORVARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -23366,8 +23366,8 @@
 	{
 		"codice": "004021027",
 		"descrizione": {
-			"it": "CURON VENOSTA",
-			"en": "CURON VENOSTA"
+			"it": "CURON VENOSTA/GRAUN IM VINSCHGAU",
+			"en": "CURON VENOSTA/GRAUN IM VINSCHGAU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -23969,8 +23969,8 @@
 	{
 		"codice": "004021028",
 		"descrizione": {
-			"it": "DOBBIACO",
-			"en": "DOBBIACO"
+			"it": "DOBBIACO/TOBLACH",
+			"en": "DOBBIACO/TOBLACH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -24563,8 +24563,8 @@
 	{
 		"codice": "004021029",
 		"descrizione": {
-			"it": "EGNA",
-			"en": "EGNA"
+			"it": "EGNA/NEUMARKT",
+			"en": "EGNA/NEUMARKT"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -25265,8 +25265,8 @@
 	{
 		"codice": "004021030",
 		"descrizione": {
-			"it": "FALZES",
-			"en": "FALZES"
+			"it": "FALZES/PFALZEN",
+			"en": "FALZES/PFALZEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -25868,8 +25868,8 @@
 	{
 		"codice": "004021031",
 		"descrizione": {
-			"it": "FIE' ALLO SCILIAR",
-			"en": "FIE' ALLO SCILIAR"
+			"it": "FIE' ALLO SCILIAR/VÖLS AM SCHLERN",
+			"en": "FIE' ALLO SCILIAR/VÖLS AM SCHLERN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -27065,8 +27065,8 @@
 	{
 		"codice": "004021032",
 		"descrizione": {
-			"it": "FORTEZZA",
-			"en": "FORTEZZA"
+			"it": "FORTEZZA/FRANZENSFESTE",
+			"en": "FORTEZZA/FRANZENSFESTE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -27749,8 +27749,8 @@
 	{
 		"codice": "004021033",
 		"descrizione": {
-			"it": "FUNES",
-			"en": "FUNES"
+			"it": "FUNES/VILLNÖSS",
+			"en": "FUNES/VILLNÖSS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -28037,8 +28037,8 @@
 	{
 		"codice": "004021034",
 		"descrizione": {
-			"it": "GAIS",
-			"en": "GAIS"
+			"it": "GAIS/GAIS",
+			"en": "GAIS/GAIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -28505,8 +28505,8 @@
 	{
 		"codice": "004021035",
 		"descrizione": {
-			"it": "GARGAZZONE",
-			"en": "GARGAZZONE"
+			"it": "GARGAZZONE/GARGAZON",
+			"en": "GARGAZZONE/GARGAZON"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -29711,8 +29711,8 @@
 	{
 		"codice": "004021036",
 		"descrizione": {
-			"it": "GLORENZA",
-			"en": "GLORENZA"
+			"it": "GLORENZA/GLURNS",
+			"en": "GLORENZA/GLURNS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32229,19 +32229,19 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021117",
+		"codice": "005025027",
 		"descrizione": {
-			"it": "LA VALLE",
-			"en": "LA VALLE"
+			"it": "LA VALLE AGORDINA",
+			"en": "LA VALLE AGORDINA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "005025027",
+		"codice": "004021117",
 		"descrizione": {
-			"it": "LA VALLE AGORDINA",
-			"en": "LA VALLE AGORDINA"
+			"it": "LA VALLE/WENGEN",
+			"en": "LA VALLE/WENGEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32303,8 +32303,8 @@
 	{
 		"codice": "004021037",
 		"descrizione": {
-			"it": "LACES",
-			"en": "LACES"
+			"it": "LACES/LATSCH",
+			"en": "LACES/LATSCH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32402,8 +32402,8 @@
 	{
 		"codice": "004021038",
 		"descrizione": {
-			"it": "LAGUNDO",
-			"en": "LAGUNDO"
+			"it": "LAGUNDO/ALGUND",
+			"en": "LAGUNDO/ALGUND"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32456,8 +32456,8 @@
 	{
 		"codice": "004021039",
 		"descrizione": {
-			"it": "LAION",
-			"en": "LAION"
+			"it": "LAION/LAJEN",
+			"en": "LAION/LAJEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32465,8 +32465,8 @@
 	{
 		"codice": "004021040",
 		"descrizione": {
-			"it": "LAIVES",
-			"en": "LAIVES"
+			"it": "LAIVES/LEIFERS",
+			"en": "LAIVES/LEIFERS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32564,8 +32564,8 @@
 	{
 		"codice": "004021041",
 		"descrizione": {
-			"it": "LANA",
-			"en": "LANA"
+			"it": "LANA/LANA",
+			"en": "LANA/LANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32762,8 +32762,8 @@
 	{
 		"codice": "004021042",
 		"descrizione": {
-			"it": "LASA",
-			"en": "LASA"
+			"it": "LASA/LAAS",
+			"en": "LASA/LAAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -32924,8 +32924,8 @@
 	{
 		"codice": "004021043",
 		"descrizione": {
-			"it": "LAUREGNO",
-			"en": "LAUREGNO"
+			"it": "LAUREGNO/LAUREIN",
+			"en": "LAUREGNO/LAUREIN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -34994,8 +34994,8 @@
 	{
 		"codice": "004021044",
 		"descrizione": {
-			"it": "LUSON",
-			"en": "LUSON"
+			"it": "LUSON/LÜSEN",
+			"en": "LUSON/LÜSEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -35480,8 +35480,8 @@
 	{
 		"codice": "004021045",
 		"descrizione": {
-			"it": "MAGRE' SULLA STRADA DEL VINO",
-			"en": "MAGRE' SULLA STRADA DEL VINO"
+			"it": "MAGRE' SULLA STRADA DEL VINO/MARGREID AN DER WEINSTRASSE",
+			"en": "MAGRE' SULLA STRADA DEL VINO/MARGREID AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -35750,8 +35750,8 @@
 	{
 		"codice": "004021046",
 		"descrizione": {
-			"it": "MALLES VENOSTA",
-			"en": "MALLES VENOSTA"
+			"it": "MALLES VENOSTA/MALS",
+			"en": "MALLES VENOSTA/MALS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -36335,8 +36335,8 @@
 	{
 		"codice": "004021047",
 		"descrizione": {
-			"it": "MAREBBE",
-			"en": "MAREBBE"
+			"it": "MAREBBE/ENNEBERG",
+			"en": "MAREBBE/ENNEBERG"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -36488,8 +36488,8 @@
 	{
 		"codice": "004021048",
 		"descrizione": {
-			"it": "MARLENGO",
-			"en": "MARLENGO"
+			"it": "MARLENGO/MARLING",
+			"en": "MARLENGO/MARLING"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -36668,8 +36668,8 @@
 	{
 		"codice": "004021049",
 		"descrizione": {
-			"it": "MARTELLO",
-			"en": "MARTELLO"
+			"it": "MARTELLO/MARTELL",
+			"en": "MARTELLO/MARTELL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -37694,8 +37694,8 @@
 	{
 		"codice": "004021050",
 		"descrizione": {
-			"it": "MELTINA",
-			"en": "MELTINA"
+			"it": "MELTINA/MÖLTEN",
+			"en": "MELTINA/MÖLTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -37793,8 +37793,8 @@
 	{
 		"codice": "004021051",
 		"descrizione": {
-			"it": "MERANO",
-			"en": "MERANO"
+			"it": "MERANO/MERAN",
+			"en": "MERANO/MERAN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -39494,8 +39494,8 @@
 	{
 		"codice": "004021052",
 		"descrizione": {
-			"it": "MONGUELFO-TESIDO",
-			"en": "MONGUELFO-TESIDO"
+			"it": "MONGUELFO-TESIDO/WELSBERG-TAISTEN",
+			"en": "MONGUELFO-TESIDO/WELSBERG-TAISTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -39674,8 +39674,8 @@
 	{
 		"codice": "004021053",
 		"descrizione": {
-			"it": "MONTAGNA SULLA STRADA DEL VINO",
-			"en": "MONTAGNA SULLA STRADA DEL VINO"
+			"it": "MONTAGNA SULLA STRADA DEL VINO/MONTAN AN DER WEINSTRASSE",
+			"en": "MONTAGNA SULLA STRADA DEL VINO/MONTAN AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -42500,8 +42500,8 @@
 	{
 		"codice": "004021054",
 		"descrizione": {
-			"it": "MOSO IN PASSIRIA",
-			"en": "MOSO IN PASSIRIA"
+			"it": "MOSO IN PASSIRIA/MOOS IN PASSEIER",
+			"en": "MOSO IN PASSIRIA/MOOS IN PASSEIER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -42959,8 +42959,8 @@
 	{
 		"codice": "004021055",
 		"descrizione": {
-			"it": "NALLES",
-			"en": "NALLES"
+			"it": "NALLES/NALS",
+			"en": "NALLES/NALS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -43085,8 +43085,8 @@
 	{
 		"codice": "004021056",
 		"descrizione": {
-			"it": "NATURNO",
-			"en": "NATURNO"
+			"it": "NATURNO/NATURNS",
+			"en": "NATURNO/NATURNS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -43130,8 +43130,8 @@
 	{
 		"codice": "004021057",
 		"descrizione": {
-			"it": "NAZ-SCIAVES",
-			"en": "NAZ-SCIAVES"
+			"it": "NAZ-SCIAVES/NATZ-SCHABS",
+			"en": "NAZ-SCIAVES/NATZ-SCHABS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -43823,8 +43823,8 @@
 	{
 		"codice": "004021058",
 		"descrizione": {
-			"it": "NOVA LEVANTE",
-			"en": "NOVA LEVANTE"
+			"it": "NOVA LEVANTE/WELSCHNOFEN",
+			"en": "NOVA LEVANTE/WELSCHNOFEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -43841,8 +43841,8 @@
 	{
 		"codice": "004021059",
 		"descrizione": {
-			"it": "NOVA PONENTE",
-			"en": "NOVA PONENTE"
+			"it": "NOVA PONENTE/DEUTSCHNOFEN",
+			"en": "NOVA PONENTE/DEUTSCHNOFEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -44831,8 +44831,8 @@
 	{
 		"codice": "004021060",
 		"descrizione": {
-			"it": "ORA",
-			"en": "ORA"
+			"it": "ORA/AUER",
+			"en": "ORA/AUER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -45236,8 +45236,8 @@
 	{
 		"codice": "004021061",
 		"descrizione": {
-			"it": "ORTISEI",
-			"en": "ORTISEI"
+			"it": "ORTISEI/ST. ULRICH",
+			"en": "ORTISEI/ST. ULRICH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -46730,8 +46730,8 @@
 	{
 		"codice": "004021062",
 		"descrizione": {
-			"it": "PARCINES",
-			"en": "PARCINES"
+			"it": "PARCINES/PARTSCHINS",
+			"en": "PARCINES/PARTSCHINS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -47522,8 +47522,8 @@
 	{
 		"codice": "004021063",
 		"descrizione": {
-			"it": "PERCA",
-			"en": "PERCA"
+			"it": "PERCA/PERCHA",
+			"en": "PERCA/PERCHA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -49727,8 +49727,8 @@
 	{
 		"codice": "004021064",
 		"descrizione": {
-			"it": "PLAUS",
-			"en": "PLAUS"
+			"it": "PLAUS/PLAUS",
+			"en": "PLAUS/PLAUS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -50555,8 +50555,8 @@
 	{
 		"codice": "004021065",
 		"descrizione": {
-			"it": "PONTE GARDENA",
-			"en": "PONTE GARDENA"
+			"it": "PONTE GARDENA/WAIDBRUCK",
+			"en": "PONTE GARDENA/WAIDBRUCK"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -51320,8 +51320,8 @@
 	{
 		"codice": "004021066",
 		"descrizione": {
-			"it": "POSTAL",
-			"en": "POSTAL"
+			"it": "POSTAL/BURGSTALL",
+			"en": "POSTAL/BURGSTALL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -51779,8 +51779,8 @@
 	{
 		"codice": "004021067",
 		"descrizione": {
-			"it": "PRATO ALLO STELVIO",
-			"en": "PRATO ALLO STELVIO"
+			"it": "PRATO ALLO STELVIO/PRAD AM STILFSERJOCH",
+			"en": "PRATO ALLO STELVIO/PRAD AM STILFSERJOCH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -51923,8 +51923,8 @@
 	{
 		"codice": "004021068",
 		"descrizione": {
-			"it": "PREDOI",
-			"en": "PREDOI"
+			"it": "PREDOI/PRETTAU",
+			"en": "PREDOI/PRETTAU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -52319,8 +52319,8 @@
 	{
 		"codice": "004021069",
 		"descrizione": {
-			"it": "PROVES",
-			"en": "PROVES"
+			"it": "PROVES/PROVEIS",
+			"en": "PROVES/PROVEIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -52787,8 +52787,8 @@
 	{
 		"codice": "004021070",
 		"descrizione": {
-			"it": "RACINES",
-			"en": "RACINES"
+			"it": "RACINES/RATSCHINGS",
+			"en": "RACINES/RATSCHINGS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -53030,8 +53030,8 @@
 	{
 		"codice": "004021071",
 		"descrizione": {
-			"it": "RASUN-ANTERSELVA",
-			"en": "RASUN-ANTERSELVA"
+			"it": "RASUN-ANTERSELVA/RASEN-ANTHOLZ",
+			"en": "RASUN-ANTERSELVA/RASEN-ANTHOLZ"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -53354,8 +53354,8 @@
 	{
 		"codice": "004021072",
 		"descrizione": {
-			"it": "RENON",
-			"en": "RENON"
+			"it": "RENON/RITTEN",
+			"en": "RENON/RITTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -53759,8 +53759,8 @@
 	{
 		"codice": "004021073",
 		"descrizione": {
-			"it": "RIFIANO",
-			"en": "RIFIANO"
+			"it": "RIFIANO/RIFFIAN",
+			"en": "RIFIANO/RIFFIAN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -53858,8 +53858,8 @@
 	{
 		"codice": "004021074",
 		"descrizione": {
-			"it": "RIO DI PUSTERIA",
-			"en": "RIO DI PUSTERIA"
+			"it": "RIO DI PUSTERIA/MÜHLBACH",
+			"en": "RIO DI PUSTERIA/MÜHLBACH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -55242,19 +55242,19 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021075",
+		"codice": "003017163",
 		"descrizione": {
-			"it": "RODENGO",
-			"en": "RODENGO"
+			"it": "RODENGO SAIANO",
+			"en": "RODENGO SAIANO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "003017163",
+		"codice": "004021075",
 		"descrizione": {
-			"it": "RODENGO SAIANO",
-			"en": "RODENGO SAIANO"
+			"it": "RODENGO/RODENECK",
+			"en": "RODENGO/RODENECK"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -57008,8 +57008,8 @@
 	{
 		"codice": "004021076",
 		"descrizione": {
-			"it": "SALORNO SULLA STRADA DEL VINO",
-			"en": "SALORNO SULLA STRADA DEL VINO"
+			"it": "SALORNO SULLA STRADA DEL VINO/SALURN AN DER WEINSTRASSE",
+			"en": "SALORNO SULLA STRADA DEL VINO/SALURN AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -57494,8 +57494,8 @@
 	{
 		"codice": "004021077",
 		"descrizione": {
-			"it": "SAN CANDIDO",
-			"en": "SAN CANDIDO"
+			"it": "SAN CANDIDO/INNICHEN",
+			"en": "SAN CANDIDO/INNICHEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -58043,8 +58043,8 @@
 	{
 		"codice": "004021079",
 		"descrizione": {
-			"it": "SAN GENESIO ATESINO",
-			"en": "SAN GENESIO ATESINO"
+			"it": "SAN GENESIO ATESINO/JENESIEN",
+			"en": "SAN GENESIO ATESINO/JENESIEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -58736,8 +58736,8 @@
 	{
 		"codice": "004021080",
 		"descrizione": {
-			"it": "SAN LEONARDO IN PASSIRIA",
-			"en": "SAN LEONARDO IN PASSIRIA"
+			"it": "SAN LEONARDO IN PASSIRIA/ST. LEONHARD IN PASSEIER",
+			"en": "SAN LEONARDO IN PASSIRIA/ST. LEONHARD IN PASSEIER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -58799,8 +58799,8 @@
 	{
 		"codice": "004021081",
 		"descrizione": {
-			"it": "SAN LORENZO DI SEBATO",
-			"en": "SAN LORENZO DI SEBATO"
+			"it": "SAN LORENZO DI SEBATO/ST. LORENZEN",
+			"en": "SAN LORENZO DI SEBATO/ST. LORENZEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -59114,8 +59114,8 @@
 	{
 		"codice": "004021082",
 		"descrizione": {
-			"it": "SAN MARTINO IN BADIA",
-			"en": "SAN MARTINO IN BADIA"
+			"it": "SAN MARTINO IN BADIA/ST. MARTIN IN THURN",
+			"en": "SAN MARTINO IN BADIA/ST. MARTIN IN THURN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -59123,8 +59123,8 @@
 	{
 		"codice": "004021083",
 		"descrizione": {
-			"it": "SAN MARTINO IN PASSIRIA",
-			"en": "SAN MARTINO IN PASSIRIA"
+			"it": "SAN MARTINO IN PASSIRIA/ST. MARTIN IN PASSEIER",
+			"en": "SAN MARTINO IN PASSIRIA/ST. MARTIN IN PASSEIER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -59517,15 +59517,6 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021084",
-		"descrizione": {
-			"it": "SAN PANCRAZIO",
-			"en": "SAN PANCRAZIO"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "008034809",
 		"descrizione": {
 			"it": "SAN PANCRAZIO PARMENSE",
@@ -59539,6 +59530,15 @@
 		"descrizione": {
 			"it": "SAN PANCRAZIO SALENTINO",
 			"en": "SAN PANCRAZIO SALENTINO"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021084",
+		"descrizione": {
+			"it": "SAN PANCRAZIO/ST. PANKRAZ",
+			"en": "SAN PANCRAZIO/ST. PANKRAZ"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -61427,8 +61427,8 @@
 	{
 		"codice": "004021085",
 		"descrizione": {
-			"it": "SANTA CRISTINA VALGARDENA",
-			"en": "SANTA CRISTINA VALGARDENA"
+			"it": "SANTA CRISTINA VALGARDENA/ST. CHRISTINA IN GRÖDEN",
+			"en": "SANTA CRISTINA VALGARDENA/ST. CHRISTINA IN GRÖDEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -62255,8 +62255,8 @@
 	{
 		"codice": "004021086",
 		"descrizione": {
-			"it": "SARENTINO",
-			"en": "SARENTINO"
+			"it": "SARENTINO/SARNTAL",
+			"en": "SARENTINO/SARNTAL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -62957,8 +62957,8 @@
 	{
 		"codice": "004021087",
 		"descrizione": {
-			"it": "SCENA",
-			"en": "SCENA"
+			"it": "SCENA/SCHENNA",
+			"en": "SCENA/SCHENNA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -63452,8 +63452,8 @@
 	{
 		"codice": "004021088",
 		"descrizione": {
-			"it": "SELVA DEI MOLINI",
-			"en": "SELVA DEI MOLINI"
+			"it": "SELVA DEI MOLINI/MÜHLWALD",
+			"en": "SELVA DEI MOLINI/MÜHLWALD"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -63479,8 +63479,8 @@
 	{
 		"codice": "004021089",
 		"descrizione": {
-			"it": "SELVA DI VAL GARDENA",
-			"en": "SELVA DI VAL GARDENA"
+			"it": "SELVA DI VAL GARDENA/WOLKENSTEIN IN GRÖDEN",
+			"en": "SELVA DI VAL GARDENA/WOLKENSTEIN IN GRÖDEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -63560,8 +63560,8 @@
 	{
 		"codice": "004021118",
 		"descrizione": {
-			"it": "SENALE-SAN FELICE",
-			"en": "SENALE-SAN FELICE"
+			"it": "SENALE-SAN FELICE/UNSERE LIEBE FRAU IM WALDE-ST. FELIX",
+			"en": "SENALE-SAN FELICE/UNSERE LIEBE FRAU IM WALDE-ST. FELIX"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -63569,8 +63569,8 @@
 	{
 		"codice": "004021091",
 		"descrizione": {
-			"it": "SENALES",
-			"en": "SENALES"
+			"it": "SENALES/SCHNALS",
+			"en": "SENALES/SCHNALS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -64179,15 +64179,6 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021092",
-		"descrizione": {
-			"it": "SESTO",
-			"en": "SESTO"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "006093043",
 		"descrizione": {
 			"it": "SESTO AL REGHENA",
@@ -64237,6 +64228,15 @@
 		"descrizione": {
 			"it": "SESTO SAN GIOVANNI",
 			"en": "SESTO SAN GIOVANNI"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021092",
+		"descrizione": {
+			"it": "SESTO/SEXTEN",
+			"en": "SESTO/SEXTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -64568,8 +64568,8 @@
 	{
 		"codice": "004021093",
 		"descrizione": {
-			"it": "SILANDRO",
-			"en": "SILANDRO"
+			"it": "SILANDRO/SCHLANDERS",
+			"en": "SILANDRO/SCHLANDERS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -64937,8 +64937,8 @@
 	{
 		"codice": "004021094",
 		"descrizione": {
-			"it": "SLUDERNO",
-			"en": "SLUDERNO"
+			"it": "SLUDERNO/SCHLUDERNS",
+			"en": "SLUDERNO/SCHLUDERNS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -66305,8 +66305,8 @@
 	{
 		"codice": "004021095",
 		"descrizione": {
-			"it": "STELVIO",
-			"en": "STELVIO"
+			"it": "STELVIO/STILFS",
+			"en": "STELVIO/STILFS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -67538,8 +67538,8 @@
 	{
 		"codice": "004021096",
 		"descrizione": {
-			"it": "TERENTO",
-			"en": "TERENTO"
+			"it": "TERENTO/TERENTEN",
+			"en": "TERENTO/TERENTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -67574,8 +67574,8 @@
 	{
 		"codice": "004021097",
 		"descrizione": {
-			"it": "TERLANO",
-			"en": "TERLANO"
+			"it": "TERLANO/TERLAN",
+			"en": "TERLANO/TERLAN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -67601,8 +67601,8 @@
 	{
 		"codice": "004021098",
 		"descrizione": {
-			"it": "TERMENO SULLA STRADA DEL VINO",
-			"en": "TERMENO SULLA STRADA DEL VINO"
+			"it": "TERMENO SULLA STRADA DEL VINO/TRAMIN AN DER WEINSTRASSE",
+			"en": "TERMENO SULLA STRADA DEL VINO/TRAMIN AN DER WEINSTRASSE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -67898,8 +67898,8 @@
 	{
 		"codice": "004021099",
 		"descrizione": {
-			"it": "TESIMO",
-			"en": "TESIMO"
+			"it": "TESIMO/TISENS",
+			"en": "TESIMO/TISENS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -68114,8 +68114,8 @@
 	{
 		"codice": "004021100",
 		"descrizione": {
-			"it": "TIRES",
-			"en": "TIRES"
+			"it": "TIRES/TIERS",
+			"en": "TIRES/TIERS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -68132,8 +68132,8 @@
 	{
 		"codice": "004021101",
 		"descrizione": {
-			"it": "TIROLO",
-			"en": "TIROLO"
+			"it": "TIROLO/TIROL",
+			"en": "TIROLO/TIROL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -70193,8 +70193,8 @@
 	{
 		"codice": "004021102",
 		"descrizione": {
-			"it": "TRODENA NEL PARCO NATURALE",
-			"en": "TRODENA NEL PARCO NATURALE"
+			"it": "TRODENA NEL PARCO NATURALE/TRUDEN IM NATURPARK",
+			"en": "TRODENA NEL PARCO NATURALE/TRUDEN IM NATURPARK"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -70292,8 +70292,8 @@
 	{
 		"codice": "004021103",
 		"descrizione": {
-			"it": "TUBRE",
-			"en": "TUBRE"
+			"it": "TUBRE/TAUFERS IM MÜNSTERTAL",
+			"en": "TUBRE/TAUFERS IM MÜNSTERTAL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -70625,8 +70625,8 @@
 	{
 		"codice": "004021104",
 		"descrizione": {
-			"it": "ULTIMO",
-			"en": "ULTIMO"
+			"it": "ULTIMO/ULTEN",
+			"en": "ULTIMO/ULTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -70922,8 +70922,8 @@
 	{
 		"codice": "004021105",
 		"descrizione": {
-			"it": "VADENA",
-			"en": "VADENA"
+			"it": "VADENA/PFATTEN",
+			"en": "VADENA/PFATTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -71066,8 +71066,8 @@
 	{
 		"codice": "004021107",
 		"descrizione": {
-			"it": "VAL DI VIZZE",
-			"en": "VAL DI VIZZE"
+			"it": "VAL DI VIZZE/PFITSCH",
+			"en": "VAL DI VIZZE/PFITSCH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -71192,8 +71192,8 @@
 	{
 		"codice": "004021106",
 		"descrizione": {
-			"it": "VALDAORA",
-			"en": "VALDAORA"
+			"it": "VALDAORA/OLANG",
+			"en": "VALDAORA/OLANG"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -71498,8 +71498,8 @@
 	{
 		"codice": "004021108",
 		"descrizione": {
-			"it": "VALLE AURINA",
-			"en": "VALLE AURINA"
+			"it": "VALLE AURINA/AHRNTAL",
+			"en": "VALLE AURINA/AHRNTAL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -71543,8 +71543,8 @@
 	{
 		"codice": "004021109",
 		"descrizione": {
-			"it": "VALLE DI CASIES",
-			"en": "VALLE DI CASIES"
+			"it": "VALLE DI CASIES/GSIES",
+			"en": "VALLE DI CASIES/GSIES"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -72056,8 +72056,8 @@
 	{
 		"codice": "004021110",
 		"descrizione": {
-			"it": "VANDOIES",
-			"en": "VANDOIES"
+			"it": "VANDOIES/VINTL",
+			"en": "VANDOIES/VINTL"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -72245,8 +72245,8 @@
 	{
 		"codice": "004021111",
 		"descrizione": {
-			"it": "VARNA",
-			"en": "VARNA"
+			"it": "VARNA/VAHRN",
+			"en": "VARNA/VAHRN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -72515,8 +72515,8 @@
 	{
 		"codice": "004021116",
 		"descrizione": {
-			"it": "VELTURNO",
-			"en": "VELTURNO"
+			"it": "VELTURNO/FELDTHURNS",
+			"en": "VELTURNO/FELDTHURNS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -72702,21 +72702,21 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
-		"codice": "004021112",
-		"descrizione": {
-			"it": "VERANO",
-			"en": "VERANO"
-		},
-		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
-	},
-	{
 		"codice": "003108048",
 		"descrizione": {
 			"it": "VERANO BRIANZA",
 			"en": "VERANO BRIANZA"
 		},
 		"dataInizio": "2010-06-29T22:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "004021112",
+		"descrizione": {
+			"it": "VERANO/VÖRAN",
+			"en": "VERANO/VÖRAN"
+		},
+		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74207,8 +74207,8 @@
 	{
 		"codice": "004021113",
 		"descrizione": {
-			"it": "VILLABASSA",
-			"en": "VILLABASSA"
+			"it": "VILLABASSA/NIEDERDORF",
+			"en": "VILLABASSA/NIEDERDORF"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -74459,8 +74459,8 @@
 	{
 		"codice": "004021114",
 		"descrizione": {
-			"it": "VILLANDRO",
-			"en": "VILLANDRO"
+			"it": "VILLANDRO/VILLANDERS",
+			"en": "VILLANDRO/VILLANDERS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
@@ -75053,8 +75053,8 @@
 	{
 		"codice": "004021115",
 		"descrizione": {
-			"it": "VIPITENO",
-			"en": "VIPITENO"
+			"it": "VIPITENO/STERZING",
+			"en": "VIPITENO/STERZING"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
