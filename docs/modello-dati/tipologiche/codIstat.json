@@ -42,6 +42,15 @@
 			"en": "ABBASANTA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115001",
+		"descrizione": {
+			"it": "ABBASANTA",
+			"en": "ABBASANTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -77,7 +86,7 @@
 			"it": "ABETONE CUTIGLIANO",
 			"en": "ABETONE CUTIGLIANO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -536,7 +545,16 @@
 			"it": "AGGIUS",
 			"en": "AGGIUS"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113001",
+		"descrizione": {
+			"it": "AGGIUS",
+			"en": "AGGIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -581,7 +599,16 @@
 			"it": "AGLIENTU",
 			"en": "AGLIENTU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113002",
+		"descrizione": {
+			"it": "AGLIENTU",
+			"en": "AGLIENTU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -662,7 +689,7 @@
 			"it": "AGRATE BRIANZA",
 			"en": "AGRATE BRIANZA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -716,7 +743,7 @@
 			"it": "AICURZIO",
 			"en": "AICURZIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -726,6 +753,15 @@
 			"en": "AIDOMAGGIORE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115002",
+		"descrizione": {
+			"it": "AIDOMAGGIORE",
+			"en": "AIDOMAGGIORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -869,8 +905,8 @@
 			"it": "ALA' DEI SARDI",
 			"en": "ALA' DEI SARDI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "003018001",
@@ -951,6 +987,15 @@
 			"en": "ALBAGIARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115003",
+		"descrizione": {
+			"it": "ALBAGIARA",
+			"en": "ALBAGIARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1157,7 +1202,7 @@
 			"it": "ALBIATE",
 			"en": "ALBIATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1311,6 +1356,15 @@
 			"en": "ALES"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115004",
+		"descrizione": {
+			"it": "ALES",
+			"en": "ALES"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1419,6 +1473,15 @@
 			"en": "ALGHERO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112001",
+		"descrizione": {
+			"it": "ALGHERO",
+			"en": "ALGHERO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1527,6 +1590,15 @@
 			"en": "ALLAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115005",
+		"descrizione": {
+			"it": "ALLAI",
+			"en": "ALLAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1589,7 +1661,7 @@
 			"it": "ALLUVIONI PIOVERA",
 			"en": "ALLUVIONI PIOVERA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1643,7 +1715,7 @@
 			"it": "ALPAGO",
 			"en": "ALPAGO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1688,7 +1760,7 @@
 			"it": "ALTA VAL TIDONE",
 			"en": "ALTA VAL TIDONE"
 		},
-		"dataInizio": "2018-02-06T09:30:20",
+		"dataInizio": "2018-02-07T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1697,7 +1769,7 @@
 			"it": "ALTA VALLE INTELVI",
 			"en": "ALTA VALLE INTELVI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1724,7 +1796,7 @@
 			"it": "ALTAVALLE",
 			"en": "ALTAVALLE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1778,7 +1850,7 @@
 			"it": "ALTIDONA",
 			"en": "ALTIDONA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1832,7 +1904,7 @@
 			"it": "ALTO RENO TERME",
 			"en": "ALTO RENO TERME"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1841,7 +1913,7 @@
 			"it": "ALTO SERMENZA",
 			"en": "ALTO SERMENZA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1877,7 +1949,7 @@
 			"it": "ALTOPIANO DELLA VIGOLANA",
 			"en": "ALTOPIANO DELLA VIGOLANA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -1935,6 +2007,15 @@
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
+		"codice": "020113003",
+		"descrizione": {
+			"it": "ALÀ DEI SARDI",
+			"en": "ALÀ DEI SARDI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
 		"codice": "015065006",
 		"descrizione": {
 			"it": "AMALFI",
@@ -1949,7 +2030,7 @@
 			"it": "AMANDOLA",
 			"en": "AMANDOLA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2030,7 +2111,7 @@
 			"it": "AMBLAR-DON",
 			"en": "AMBLAR-DON"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2228,7 +2309,7 @@
 			"it": "ANDRIA",
 			"en": "ANDRIA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2247,6 +2328,15 @@
 			"en": "ANELA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112002",
+		"descrizione": {
+			"it": "ANELA",
+			"en": "ANELA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2751,6 +2841,15 @@
 			"en": "ARBOREA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115006",
+		"descrizione": {
+			"it": "ARBOREA",
+			"en": "ARBOREA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2768,7 +2867,16 @@
 			"it": "ARBUS",
 			"en": "ARBUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117001",
+		"descrizione": {
+			"it": "ARBUS",
+			"en": "ARBUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2885,7 +2993,7 @@
 			"it": "ARCORE",
 			"en": "ARCORE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2904,6 +3012,15 @@
 			"en": "ARDARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112003",
+		"descrizione": {
+			"it": "ARDARA",
+			"en": "ARDARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -2913,6 +3030,15 @@
 			"en": "ARDAULI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115007",
+		"descrizione": {
+			"it": "ARDAULI",
+			"en": "ARDAULI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3129,6 +3255,15 @@
 			"en": "ARITZO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114001",
+		"descrizione": {
+			"it": "ARITZO",
+			"en": "ARITZO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3200,7 +3335,16 @@
 			"it": "ARMUNGIA",
 			"en": "ARMUNGIA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118001",
+		"descrizione": {
+			"it": "ARMUNGIA",
+			"en": "ARMUNGIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3443,7 +3587,16 @@
 			"it": "ARZACHENA",
 			"en": "ARZACHENA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113004",
+		"descrizione": {
+			"it": "ARZACHENA",
+			"en": "ARZACHENA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3461,7 +3614,16 @@
 			"it": "ARZANA",
 			"en": "ARZANA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116001",
+		"descrizione": {
+			"it": "ARZANA",
+			"en": "ARZANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3606,6 +3768,15 @@
 			"en": "ASSEMINI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118002",
+		"descrizione": {
+			"it": "ASSEMINI",
+			"en": "ASSEMINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3633,6 +3804,15 @@
 			"en": "ASSOLO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115008",
+		"descrizione": {
+			"it": "ASSOLO",
+			"en": "ASSOLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3660,6 +3840,15 @@
 			"en": "ASUNI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115009",
+		"descrizione": {
+			"it": "ASUNI",
+			"en": "ASUNI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3759,6 +3948,15 @@
 			"en": "ATZARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114002",
+		"descrizione": {
+			"it": "ATZARA",
+			"en": "ATZARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -3840,6 +4038,15 @@
 			"en": "AUSTIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114003",
+		"descrizione": {
+			"it": "AUSTIS",
+			"en": "AUSTIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4154,7 +4361,16 @@
 			"it": "BADESI",
 			"en": "BADESI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113005",
+		"descrizione": {
+			"it": "BADESI",
+			"en": "BADESI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4577,7 +4793,16 @@
 			"it": "BALLAO",
 			"en": "BALLAO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118003",
+		"descrizione": {
+			"it": "BALLAO",
+			"en": "BALLAO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4641,6 +4866,15 @@
 			"en": "BANARI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112004",
+		"descrizione": {
+			"it": "BANARI",
+			"en": "BANARI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4658,7 +4892,7 @@
 			"it": "BANCO",
 			"en": "BANCO"
 		},
-		"dataInizio": "1979-12-31T23:00:00",
+		"dataInizio": "1980-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -4704,6 +4938,15 @@
 			"en": "BARADILI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115010",
+		"descrizione": {
+			"it": "BARADILI",
+			"en": "BARADILI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4758,6 +5001,15 @@
 			"en": "BARATILI SAN PIETRO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115011",
+		"descrizione": {
+			"it": "BARATILI SAN PIETRO",
+			"en": "BARATILI SAN PIETRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4793,7 +5045,7 @@
 			"it": "BARBARANO MOSSANO",
 			"en": "BARBARANO MOSSANO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4856,7 +5108,7 @@
 			"it": "BARBERINO TAVARNELLE",
 			"en": "BARBERINO TAVARNELLE"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -4946,7 +5198,7 @@
 			"it": "BARDELLO CON MALGESSO E BREGANO",
 			"en": "BARDELLO CON MALGESSO E BREGANO"
 		},
-		"dataInizio": "1999-12-31T22:00:00",
+		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5010,6 +5262,15 @@
 			"en": "BARESSA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115012",
+		"descrizione": {
+			"it": "BARESSA",
+			"en": "BARESSA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5072,7 +5333,16 @@
 			"it": "BARI SARDO",
 			"en": "BARI SARDO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116002",
+		"descrizione": {
+			"it": "BARI SARDO",
+			"en": "BARI SARDO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5117,7 +5387,7 @@
 			"it": "BARLASSINA",
 			"en": "BARLASSINA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5126,7 +5396,7 @@
 			"it": "BARLETTA",
 			"en": "BARLETTA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5180,7 +5450,16 @@
 			"it": "BARRALI",
 			"en": "BARRALI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118004",
+		"descrizione": {
+			"it": "BARRALI",
+			"en": "BARRALI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5198,7 +5477,16 @@
 			"it": "BARUMINI",
 			"en": "BARUMINI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117002",
+		"descrizione": {
+			"it": "BARUMINI",
+			"en": "BARUMINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5478,6 +5766,15 @@
 			"en": "BAULADU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115013",
+		"descrizione": {
+			"it": "BAULADU",
+			"en": "BAULADU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5486,7 +5783,16 @@
 			"it": "BAUNEI",
 			"en": "BAUNEI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116003",
+		"descrizione": {
+			"it": "BAUNEI",
+			"en": "BAUNEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5684,7 +5990,7 @@
 			"it": "BELLAGIO",
 			"en": "BELLAGIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5792,7 +6098,7 @@
 			"it": "BELLUSCO",
 			"en": "BELLUSCO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5846,7 +6152,7 @@
 			"it": "BELMONTE PICENO",
 			"en": "BELMONTE PICENO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5919,6 +6225,15 @@
 			"en": "BELVI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114004",
+		"descrizione": {
+			"it": "BELVÌ",
+			"en": "BELVÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -5964,6 +6279,15 @@
 			"en": "BENETUTTI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112005",
+		"descrizione": {
+			"it": "BENETUTTI",
+			"en": "BENETUTTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6044,7 +6368,16 @@
 			"it": "BERCHIDDA",
 			"en": "BERCHIDDA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113006",
+		"descrizione": {
+			"it": "BERCHIDDA",
+			"en": "BERCHIDDA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6134,7 +6467,7 @@
 			"it": "BERNAREGGIO",
 			"en": "BERNAREGGIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6251,7 +6584,7 @@
 			"it": "BESANA IN BRIANZA",
 			"en": "BESANA IN BRIANZA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6315,6 +6648,15 @@
 			"en": "BESSUDE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112006",
+		"descrizione": {
+			"it": "BESSUDE",
+			"en": "BESSUDE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6467,7 +6809,7 @@
 			"it": "BIASSONO",
 			"en": "BIASSONO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6531,6 +6873,15 @@
 			"en": "BIDONI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115014",
+		"descrizione": {
+			"it": "BIDONÌ",
+			"en": "BIDONÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6648,6 +6999,15 @@
 			"en": "BIRORI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114005",
+		"descrizione": {
+			"it": "BIRORI",
+			"en": "BIRORI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6674,7 +7034,7 @@
 			"it": "BISCEGLIE",
 			"en": "BISCEGLIE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -6756,6 +7116,15 @@
 			"en": "BITTI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114006",
+		"descrizione": {
+			"it": "BITTI",
+			"en": "BITTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7080,6 +7449,15 @@
 			"en": "BOLOTANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114007",
+		"descrizione": {
+			"it": "BOLOTANA",
+			"en": "BOLOTANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7179,6 +7557,15 @@
 			"en": "BONARCADO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115015",
+		"descrizione": {
+			"it": "BONARCADO",
+			"en": "BONARCADO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7296,6 +7683,15 @@
 			"en": "BONNANARO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112007",
+		"descrizione": {
+			"it": "BONNANARO",
+			"en": "BONNANARO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7305,6 +7701,15 @@
 			"en": "BONO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112008",
+		"descrizione": {
+			"it": "BONO",
+			"en": "BONO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7314,6 +7719,15 @@
 			"en": "BONORVA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112009",
+		"descrizione": {
+			"it": "BONORVA",
+			"en": "BONORVA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7511,7 +7925,7 @@
 			"it": "BORGO CHIESE",
 			"en": "BORGO CHIESE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7529,7 +7943,7 @@
 			"it": "BORGO D'ANAUNIA",
 			"en": "BORGO D'ANAUNIA"
 		},
-		"dataInizio": "2019-12-31T23:00:00",
+		"dataInizio": "2020-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7547,7 +7961,7 @@
 			"it": "BORGO LARES",
 			"en": "BORGO LARES"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7556,7 +7970,7 @@
 			"it": "BORGO MANTOVANO",
 			"en": "BORGO MANTOVANO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7664,7 +8078,7 @@
 			"it": "BORGO VALBELLUNA",
 			"en": "BORGO VALBELLUNA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7691,7 +8105,7 @@
 			"it": "BORGO VENETO",
 			"en": "BORGO VENETO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7709,7 +8123,7 @@
 			"it": "BORGO VIRGILIO",
 			"en": "BORGO VIRGILIO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7718,7 +8132,7 @@
 			"it": "BORGOCARBONARA",
 			"en": "BORGOCARBONARA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7799,7 +8213,7 @@
 			"it": "BORGOMEZZAVALLE",
 			"en": "BORGOMEZZAVALLE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7917,6 +8331,15 @@
 			"en": "BORONEDDU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115016",
+		"descrizione": {
+			"it": "BORONEDDU",
+			"en": "BORONEDDU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7926,6 +8349,15 @@
 			"en": "BORORE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114008",
+		"descrizione": {
+			"it": "BORORE",
+			"en": "BORORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7962,6 +8394,15 @@
 			"en": "BORTIGALI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114009",
+		"descrizione": {
+			"it": "BORTIGALI",
+			"en": "BORTIGALI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7970,7 +8411,16 @@
 			"it": "BORTIGIADAS",
 			"en": "BORTIGIADAS"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113007",
+		"descrizione": {
+			"it": "BORTIGIADAS",
+			"en": "BORTIGIADAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7980,6 +8430,15 @@
 			"en": "BORUTTA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112010",
+		"descrizione": {
+			"it": "BORUTTA",
+			"en": "BORUTTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -7997,7 +8456,16 @@
 			"it": "BOSA",
 			"en": "BOSA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115017",
+		"descrizione": {
+			"it": "BOSA",
+			"en": "BOSA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -8187,6 +8655,15 @@
 			"en": "BOTTIDDA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112011",
+		"descrizione": {
+			"it": "BOTTIDDA",
+			"en": "BOTTIDDA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -8276,7 +8753,7 @@
 			"it": "BOVISIO-MASCIAGO",
 			"en": "BOVISIO-MASCIAGO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -8825,7 +9302,7 @@
 			"it": "BRIOSCO",
 			"en": "BRIOSCO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -8987,7 +9464,7 @@
 			"it": "BRUGHERIO",
 			"en": "BRUGHERIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9230,7 +9707,16 @@
 			"it": "BUDDUSO'",
 			"en": "BUDDUSO'"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113008",
+		"descrizione": {
+			"it": "BUDDUSÒ",
+			"en": "BUDDUSÒ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9248,7 +9734,16 @@
 			"it": "BUDONI",
 			"en": "BUDONI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113009",
+		"descrizione": {
+			"it": "BUDONI",
+			"en": "BUDONI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9266,7 +9761,16 @@
 			"it": "BUGGERRU",
 			"en": "BUGGERRU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119001",
+		"descrizione": {
+			"it": "BUGGERRU",
+			"en": "BUGGERRU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9348,6 +9852,15 @@
 			"en": "BULTEI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112012",
+		"descrizione": {
+			"it": "BULTEI",
+			"en": "BULTEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9357,6 +9870,15 @@
 			"en": "BULZI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112013",
+		"descrizione": {
+			"it": "BULZI",
+			"en": "BULZI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9401,7 +9923,7 @@
 			"it": "BURAGO DI MOLGORA",
 			"en": "BURAGO DI MOLGORA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9410,7 +9932,16 @@
 			"it": "BURCEI",
 			"en": "BURCEI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118005",
+		"descrizione": {
+			"it": "BURCEI",
+			"en": "BURCEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9429,6 +9960,15 @@
 			"en": "BURGOS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112014",
+		"descrizione": {
+			"it": "BURGOS",
+			"en": "BURGOS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9483,6 +10023,15 @@
 			"en": "BUSACHI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115018",
+		"descrizione": {
+			"it": "BUSACHI",
+			"en": "BUSACHI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9554,7 +10103,7 @@
 			"it": "BUSNAGO",
 			"en": "BUSNAGO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9717,6 +10266,15 @@
 			"en": "CABRAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115019",
+		"descrizione": {
+			"it": "CABRAS",
+			"en": "CABRAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9806,7 +10364,7 @@
 			"it": "CADREZZATE CON OSMATE",
 			"en": "CADREZZATE CON OSMATE"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -9852,6 +10410,15 @@
 			"en": "CAGLIARI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118006",
+		"descrizione": {
+			"it": "CAGLIARI",
+			"en": "CAGLIARI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -10022,7 +10589,16 @@
 			"it": "CALANGIANUS",
 			"en": "CALANGIANUS"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113010",
+		"descrizione": {
+			"it": "CALANGIANUS",
+			"en": "CALANGIANUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -10067,7 +10643,16 @@
 			"it": "CALASETTA",
 			"en": "CALASETTA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119002",
+		"descrizione": {
+			"it": "CALASETTA",
+			"en": "CALASETTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -10922,7 +11507,7 @@
 			"it": "CAMPARADA",
 			"en": "CAMPARADA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -10985,7 +11570,7 @@
 			"it": "CAMPIGLIA CERVO",
 			"en": "CAMPIGLIA CERVO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -11219,7 +11804,7 @@
 			"it": "CAMPOFILONE",
 			"en": "CAMPOFILONE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -11327,7 +11912,7 @@
 			"it": "CAMPOLONGO TAPOGLIANO",
 			"en": "CAMPOLONGO TAPOGLIANO"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -11822,7 +12407,7 @@
 			"it": "CANOSA DI PUGLIA",
 			"en": "CANOSA DI PUGLIA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12200,7 +12785,7 @@
 			"it": "CAPONAGO",
 			"en": "CAPONAGO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12228,6 +12813,15 @@
 			"en": "CAPOTERRA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118007",
+		"descrizione": {
+			"it": "CAPOTERRA",
+			"en": "CAPOTERRA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12632,7 +13226,7 @@
 			"it": "CARATE BRIANZA",
 			"en": "CARATE BRIANZA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12758,7 +13352,16 @@
 			"it": "CARBONIA",
 			"en": "CARBONIA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119003",
+		"descrizione": {
+			"it": "CARBONIA",
+			"en": "CARBONIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12812,7 +13415,16 @@
 			"it": "CARDEDU",
 			"en": "CARDEDU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116004",
+		"descrizione": {
+			"it": "CARDEDU",
+			"en": "CARDEDU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -12930,6 +13542,15 @@
 			"en": "CARGEGHE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112015",
+		"descrizione": {
+			"it": "CARGEGHE",
+			"en": "CARGEGHE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -13055,7 +13676,16 @@
 			"it": "CARLOFORTE",
 			"en": "CARLOFORTE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119004",
+		"descrizione": {
+			"it": "CARLOFORTE",
+			"en": "CARLOFORTE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -13118,7 +13748,7 @@
 			"it": "CARNATE",
 			"en": "CARNATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -13856,7 +14486,7 @@
 			"it": "CASALI DEL MANCO",
 			"en": "CASALI DEL MANCO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -14270,7 +14900,7 @@
 			"it": "CASCIANA TERME LARI",
 			"en": "CASCIANA TERME LARI"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -14369,7 +14999,7 @@
 			"it": "CASEZ",
 			"en": "CASEZ"
 		},
-		"dataInizio": "1900-12-31T23:00:00",
+		"dataInizio": "1901-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -14630,7 +15260,7 @@
 			"it": "CASSANO SPINOLA",
 			"en": "CASSANO SPINOLA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -15125,7 +15755,7 @@
 			"it": "CASTEL IVANO",
 			"en": "CASTEL IVANO"
 		},
-		"dataInizio": "2015-12-31T23:00:00",
+		"dataInizio": "2016-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -15404,7 +16034,7 @@
 			"it": "CASTELDELCI",
 			"en": "CASTELDELCI"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -15512,7 +16142,7 @@
 			"it": "CASTELFRANCO PIANDISCO'",
 			"en": "CASTELFRANCO PIANDISCO'"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -15530,7 +16160,7 @@
 			"it": "CASTELGERUNDO",
 			"en": "CASTELGERUNDO"
 		},
-		"dataInizio": "2018-03-02T11:36:32",
+		"dataInizio": "2018-03-03T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -16494,6 +17124,15 @@
 			"en": "CASTELSARDO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112016",
+		"descrizione": {
+			"it": "CASTELSARDO",
+			"en": "CASTELSARDO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -16673,7 +17312,16 @@
 			"it": "CASTIADAS",
 			"en": "CASTIADAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118008",
+		"descrizione": {
+			"it": "CASTIADAS",
+			"en": "CASTIADAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -17447,7 +18095,7 @@
 			"it": "CAVENAGO DI BRIANZA",
 			"en": "CAVENAGO DI BRIANZA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -17816,7 +18464,7 @@
 			"it": "CELLIO CON BREIA",
 			"en": "CELLIO CON BREIA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -17843,7 +18491,7 @@
 			"it": "CEMBRA LISIGNAGO",
 			"en": "CEMBRA LISIGNAGO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -17960,7 +18608,7 @@
 			"it": "CENTRO VALLE INTELVI",
 			"en": "CENTRO VALLE INTELVI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -18266,7 +18914,7 @@
 			"it": "CERIANO LAGHETTO",
 			"en": "CERIANO LAGHETTO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -18725,7 +19373,7 @@
 			"it": "CESANO MADERNO",
 			"en": "CESANO MADERNO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -18969,6 +19617,15 @@
 			"en": "CHEREMULE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112017",
+		"descrizione": {
+			"it": "CHEREMULE",
+			"en": "CHEREMULE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -19041,6 +19698,15 @@
 			"en": "CHIARAMONTI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112018",
+		"descrizione": {
+			"it": "CHIARAMONTI",
+			"en": "CHIARAMONTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20120,7 +20786,7 @@
 			"it": "CIVIDATE MALEGNO",
 			"en": "CIVIDATE MALEGNO"
 		},
-		"dataInizio": "1927-12-31T23:00:00",
+		"dataInizio": "1928-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -20517,6 +21183,15 @@
 			"en": "CODRONGIANOS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112019",
+		"descrizione": {
+			"it": "CODRONGIANOS",
+			"en": "CODRONGIANOS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20534,7 +21209,7 @@
 			"it": "COGLIATE",
 			"en": "COGLIATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20597,7 +21272,7 @@
 			"it": "COLCERESA",
 			"en": "COLCERESA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20930,7 +21605,7 @@
 			"it": "COLLI AL METAURO",
 			"en": "COLLI AL METAURO"
 		},
-		"dataInizio": "2018-03-06T10:53:33",
+		"dataInizio": "2018-03-07T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20957,7 +21632,7 @@
 			"it": "COLLI VERDI",
 			"en": "COLLI VERDI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -20975,7 +21650,16 @@
 			"it": "COLLINAS",
 			"en": "COLLINAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117003",
+		"descrizione": {
+			"it": "COLLINAS",
+			"en": "COLLINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21146,7 +21830,7 @@
 			"it": "COLVERDE",
 			"en": "COLVERDE"
 		},
-		"dataInizio": "2014-02-03T23:00:00",
+		"dataInizio": "2014-02-04T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21191,7 +21875,7 @@
 			"it": "COMANO TERME",
 			"en": "COMANO TERME"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21443,7 +22127,7 @@
 			"it": "CONCOREZZO",
 			"en": "CONCOREZZO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21560,7 +22244,7 @@
 			"it": "CONTA'",
 			"en": "CONTA'"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21569,7 +22253,7 @@
 			"it": "CONTARINA",
 			"en": "CONTARINA"
 		},
-		"dataInizio": "1927-12-31T23:00:00",
+		"dataInizio": "1928-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -21857,7 +22541,7 @@
 			"it": "CORIGLIANO-ROSSANO",
 			"en": "CORIGLIANO-ROSSANO"
 		},
-		"dataInizio": "2018-04-23T22:00:00",
+		"dataInizio": "2018-04-24T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21956,7 +22640,7 @@
 			"it": "CORNALE E BASTIDA",
 			"en": "CORNALE E BASTIDA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -21974,7 +22658,7 @@
 			"it": "CORNATE D'ADDA",
 			"en": "CORNATE D'ADDA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -22073,7 +22757,7 @@
 			"it": "CORREZZANA",
 			"en": "CORREZZANA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -22289,7 +22973,7 @@
 			"it": "CORTEOLONA E GENZONE",
 			"en": "CORTEOLONA E GENZONE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -22479,6 +23163,15 @@
 			"en": "COSSOINE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112020",
+		"descrizione": {
+			"it": "COSSOINE",
+			"en": "COSSOINE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -22910,7 +23603,7 @@
 			"it": "CRESPINA LORENZANA",
 			"en": "CRESPINA LORENZANA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23199,6 +23892,15 @@
 			"en": "CUGLIERI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115020",
+		"descrizione": {
+			"it": "CUGLIERI",
+			"en": "CUGLIERI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23316,6 +24018,15 @@
 			"en": "CURCURIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115021",
+		"descrizione": {
+			"it": "CURCURIS",
+			"en": "CURCURIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23649,6 +24360,15 @@
 			"en": "DECIMOMANNU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118009",
+		"descrizione": {
+			"it": "DECIMOMANNU",
+			"en": "DECIMOMANNU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23657,7 +24377,16 @@
 			"it": "DECIMOPUTZU",
 			"en": "DECIMOPUTZU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118010",
+		"descrizione": {
+			"it": "DECIMOPUTZU",
+			"en": "DECIMOPUTZU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23819,7 +24548,7 @@
 			"it": "DESIO",
 			"en": "DESIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23829,6 +24558,15 @@
 			"en": "DESULO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114010",
+		"descrizione": {
+			"it": "DESULO",
+			"en": "DESULO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -23918,7 +24656,7 @@
 			"it": "DIMARO FOLGARIDA",
 			"en": "DIMARO FOLGARIDA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24053,7 +24791,16 @@
 			"it": "DOLIANOVA",
 			"en": "DOLIANOVA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118011",
+		"descrizione": {
+			"it": "DOLIANOVA",
+			"en": "DOLIANOVA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24134,7 +24881,16 @@
 			"it": "DOMUS DE MARIA",
 			"en": "DOMUS DE MARIA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118012",
+		"descrizione": {
+			"it": "DOMUS DE MARIA",
+			"en": "DOMUS DE MARIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24143,7 +24899,16 @@
 			"it": "DOMUSNOVAS",
 			"en": "DOMUSNOVAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119005",
+		"descrizione": {
+			"it": "DOMUSNOVAS",
+			"en": "DOMUSNOVAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24161,7 +24926,7 @@
 			"it": "DONADA",
 			"en": "DONADA"
 		},
-		"dataInizio": "1927-12-31T23:00:00",
+		"dataInizio": "1928-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -24197,7 +24962,16 @@
 			"it": "DONORI",
 			"en": "DONORI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118013",
+		"descrizione": {
+			"it": "DONORI",
+			"en": "DONORI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24216,6 +24990,15 @@
 			"en": "DORGALI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114011",
+		"descrizione": {
+			"it": "DORGALI",
+			"en": "DORGALI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24432,6 +25215,15 @@
 			"en": "DUALCHI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114012",
+		"descrizione": {
+			"it": "DUALCHI",
+			"en": "DUALCHI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24593,7 +25385,16 @@
 			"it": "ELINI",
 			"en": "ELINI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116005",
+		"descrizione": {
+			"it": "ELINI",
+			"en": "ELINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24612,6 +25413,15 @@
 			"en": "ELMAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118014",
+		"descrizione": {
+			"it": "ELMAS",
+			"en": "ELMAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24828,6 +25638,15 @@
 			"en": "ERULA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112021",
+		"descrizione": {
+			"it": "ERULA",
+			"en": "ERULA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24854,7 +25673,16 @@
 			"it": "ESCALAPLANO",
 			"en": "ESCALAPLANO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118015",
+		"descrizione": {
+			"it": "ESCALAPLANO",
+			"en": "ESCALAPLANO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24863,7 +25691,16 @@
 			"it": "ESCOLCA",
 			"en": "ESCOLCA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118016",
+		"descrizione": {
+			"it": "ESCOLCA",
+			"en": "ESCOLCA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24900,6 +25737,15 @@
 			"en": "ESPORLATU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112022",
+		"descrizione": {
+			"it": "ESPORLATU",
+			"en": "ESPORLATU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24917,7 +25763,16 @@
 			"it": "ESTERZILI",
 			"en": "ESTERZILI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118017",
+		"descrizione": {
+			"it": "ESTERZILI",
+			"en": "ESTERZILI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -24989,7 +25844,7 @@
 			"it": "FABBRICHE DI VERGEMOLI",
 			"en": "FABBRICHE DI VERGEMOLI"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -25223,7 +26078,7 @@
 			"it": "FALERONE",
 			"en": "FALERONE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -25664,7 +26519,7 @@
 			"it": "FERMO",
 			"en": "FERMO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -25961,7 +26816,7 @@
 			"it": "FIGLINE E INCISA VALDARNO",
 			"en": "FIGLINE E INCISA VALDARNO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26222,7 +27077,7 @@
 			"it": "FISCAGLIA",
 			"en": "FISCAGLIA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26312,7 +27167,7 @@
 			"it": "FIUMICELLO VILLA VICENTINA",
 			"en": "FIUMICELLO VILLA VICENTINA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26394,6 +27249,15 @@
 			"en": "FLORINAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112023",
+		"descrizione": {
+			"it": "FLORINAS",
+			"en": "FLORINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26411,7 +27275,16 @@
 			"it": "FLUMINIMAGGIORE",
 			"en": "FLUMINIMAGGIORE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119006",
+		"descrizione": {
+			"it": "FLUMINIMAGGIORE",
+			"en": "FLUMINIMAGGIORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26420,7 +27293,16 @@
 			"it": "FLUSSIO",
 			"en": "FLUSSIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115022",
+		"descrizione": {
+			"it": "FLUSSIO",
+			"en": "FLUSSIO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26583,6 +27465,15 @@
 			"en": "FONNI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114013",
+		"descrizione": {
+			"it": "FONNI",
+			"en": "FONNI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -26826,6 +27717,15 @@
 			"en": "FORDONGIANUS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115023",
+		"descrizione": {
+			"it": "FORDONGIANUS",
+			"en": "FORDONGIANUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -27311,7 +28211,7 @@
 			"it": "FRANCAVILLA D'ETE",
 			"en": "FRANCAVILLA D'ETE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -27662,7 +28562,7 @@
 			"it": "FRONTONE SERRA",
 			"en": "FRONTONE SERRA"
 		},
-		"dataInizio": "1982-12-31T23:00:00",
+		"dataInizio": "1983-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -27797,7 +28697,16 @@
 			"it": "FURTEI",
 			"en": "FURTEI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117004",
+		"descrizione": {
+			"it": "FURTEI",
+			"en": "FURTEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -27897,6 +28806,15 @@
 			"en": "GADONI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114014",
+		"descrizione": {
+			"it": "GADONI",
+			"en": "GADONI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28031,7 +28949,16 @@
 			"it": "GAIRO",
 			"en": "GAIRO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116006",
+		"descrizione": {
+			"it": "GAIRO",
+			"en": "GAIRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28257,6 +29184,15 @@
 			"en": "GALTELLI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114015",
+		"descrizione": {
+			"it": "GALTELLÌ",
+			"en": "GALTELLÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28625,7 +29561,7 @@
 			"it": "GATTICO-VERUNO",
 			"en": "GATTICO-VERUNO"
 		},
-		"dataInizio": "2018-12-31T23:00:00",
+		"dataInizio": "2019-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28707,6 +29643,15 @@
 			"en": "GAVOI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114016",
+		"descrizione": {
+			"it": "GAVOI",
+			"en": "GAVOI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28859,7 +29804,16 @@
 			"it": "GENONI",
 			"en": "GENONI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118018",
+		"descrizione": {
+			"it": "GENONI",
+			"en": "GENONI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28877,7 +29831,16 @@
 			"it": "GENURI",
 			"en": "GENURI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117005",
+		"descrizione": {
+			"it": "GENURI",
+			"en": "GENURI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -28976,7 +29939,16 @@
 			"it": "GERGEI",
 			"en": "GERGEI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118019",
+		"descrizione": {
+			"it": "GERGEI",
+			"en": "GERGEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29066,7 +30038,16 @@
 			"it": "GESICO",
 			"en": "GESICO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118020",
+		"descrizione": {
+			"it": "GESICO",
+			"en": "GESICO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29093,7 +30074,16 @@
 			"it": "GESTURI",
 			"en": "GESTURI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117006",
+		"descrizione": {
+			"it": "GESTURI",
+			"en": "GESTURI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29148,6 +30138,15 @@
 			"en": "GHILARZA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115024",
+		"descrizione": {
+			"it": "GHILARZA",
+			"en": "GHILARZA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29283,6 +30282,15 @@
 			"en": "GIAVE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112024",
+		"descrizione": {
+			"it": "GIAVE",
+			"en": "GIAVE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29309,7 +30317,16 @@
 			"it": "GIBA",
 			"en": "GIBA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119007",
+		"descrizione": {
+			"it": "GIBA",
+			"en": "GIBA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29534,7 +30551,16 @@
 			"it": "GIRASOLE",
 			"en": "GIRASOLE"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116007",
+		"descrizione": {
+			"it": "GIRASOLE",
+			"en": "GIRASOLE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29660,7 +30686,7 @@
 			"it": "GIUSSANO",
 			"en": "GIUSSANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29777,7 +30803,16 @@
 			"it": "GOLFO ARANCI",
 			"en": "GOLFO ARANCI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113011",
+		"descrizione": {
+			"it": "GOLFO ARANCI",
+			"en": "GOLFO ARANCI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29804,7 +30839,16 @@
 			"it": "GONI",
 			"en": "GONI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118021",
+		"descrizione": {
+			"it": "GONI",
+			"en": "GONI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29813,7 +30857,16 @@
 			"it": "GONNESA",
 			"en": "GONNESA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119008",
+		"descrizione": {
+			"it": "GONNESA",
+			"en": "GONNESA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29823,6 +30876,15 @@
 			"en": "GONNOSCODINA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115025",
+		"descrizione": {
+			"it": "GONNOSCODINA",
+			"en": "GONNOSCODINA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29831,7 +30893,16 @@
 			"it": "GONNOSFANADIGA",
 			"en": "GONNOSFANADIGA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117007",
+		"descrizione": {
+			"it": "GONNOSFANADIGA",
+			"en": "GONNOSFANADIGA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29841,6 +30912,15 @@
 			"en": "GONNOSNO'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115026",
+		"descrizione": {
+			"it": "GONNOSNÒ",
+			"en": "GONNOSNÒ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -29850,6 +30930,15 @@
 			"en": "GONNOSTRAMATZA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115027",
+		"descrizione": {
+			"it": "GONNOSTRAMATZA",
+			"en": "GONNOSTRAMATZA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -30299,7 +31388,7 @@
 			"it": "GRAVEDONA ED UNITI",
 			"en": "GRAVEDONA ED UNITI"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -30713,7 +31802,7 @@
 			"it": "GROTTAZZOLINA",
 			"en": "GROTTAZZOLINA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -30902,7 +31991,16 @@
 			"it": "GUAMAGGIORE",
 			"en": "GUAMAGGIORE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118022",
+		"descrizione": {
+			"it": "GUAMAGGIORE",
+			"en": "GUAMAGGIORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31055,7 +32153,16 @@
 			"it": "GUASILA",
 			"en": "GUASILA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118023",
+		"descrizione": {
+			"it": "GUASILA",
+			"en": "GUASILA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31190,7 +32297,16 @@
 			"it": "GUSPINI",
 			"en": "GUSPINI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117008",
+		"descrizione": {
+			"it": "GUSPINI",
+			"en": "GUSPINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31262,7 +32378,16 @@
 			"it": "IGLESIAS",
 			"en": "IGLESIAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119009",
+		"descrizione": {
+			"it": "IGLESIAS",
+			"en": "IGLESIAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31280,7 +32405,16 @@
 			"it": "ILBONO",
 			"en": "ILBONO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116008",
+		"descrizione": {
+			"it": "ILBONO",
+			"en": "ILBONO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31299,6 +32433,15 @@
 			"en": "ILLORAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112025",
+		"descrizione": {
+			"it": "ILLORAI",
+			"en": "ILLORAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31551,6 +32694,15 @@
 			"en": "IRGOLI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114017",
+		"descrizione": {
+			"it": "IRGOLI",
+			"en": "IRGOLI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31658,7 +32810,16 @@
 			"it": "ISILI",
 			"en": "ISILI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118024",
+		"descrizione": {
+			"it": "ISILI",
+			"en": "ISILI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31965,6 +33126,15 @@
 			"en": "ITTIREDDU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112026",
+		"descrizione": {
+			"it": "ITTIREDDU",
+			"en": "ITTIREDDU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -31974,6 +33144,15 @@
 			"en": "ITTIRI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112027",
+		"descrizione": {
+			"it": "ITTIRI",
+			"en": "ITTIRI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32045,7 +33224,16 @@
 			"it": "JERZU",
 			"en": "JERZU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116009",
+		"descrizione": {
+			"it": "JERZU",
+			"en": "JERZU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32180,7 +33368,16 @@
 			"it": "LA MADDALENA",
 			"en": "LA MADDALENA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113012",
+		"descrizione": {
+			"it": "LA MADDALENA",
+			"en": "LA MADDALENA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32252,7 +33449,7 @@
 			"it": "LA VALLETTA BRIANZA",
 			"en": "LA VALLETTA BRIANZA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32315,7 +33512,16 @@
 			"it": "LACONI",
 			"en": "LACONI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115028",
+		"descrizione": {
+			"it": "LACONI",
+			"en": "LACONI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32334,6 +33540,15 @@
 			"en": "LAERRU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112028",
+		"descrizione": {
+			"it": "LAERRU",
+			"en": "LAERRU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32621,7 +33836,16 @@
 			"it": "LANUSEI",
 			"en": "LANUSEI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116010",
+		"descrizione": {
+			"it": "LANUSEI",
+			"en": "LANUSEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32675,7 +33899,7 @@
 			"it": "LAPEDONA",
 			"en": "LAPEDONA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32756,7 +33980,16 @@
 			"it": "LAS PLASSAS",
 			"en": "LAS PLASSAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117009",
+		"descrizione": {
+			"it": "LAS PLASSAS",
+			"en": "LAS PLASSAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -32837,7 +34070,7 @@
 			"it": "LATERINA PERGINE VALDARNO",
 			"en": "LATERINA PERGINE VALDARNO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33080,7 +34313,7 @@
 			"it": "LAZZATE",
 			"en": "LAZZATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33171,6 +34404,15 @@
 			"en": "LEI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114018",
+		"descrizione": {
+			"it": "LEI",
+			"en": "LEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33269,7 +34511,7 @@
 			"it": "LENTATE SUL SEVESO",
 			"en": "LENTATE SUL SEVESO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33395,7 +34637,7 @@
 			"it": "LESA BELGIRATE",
 			"en": "LESA BELGIRATE"
 		},
-		"dataInizio": "1982-12-31T23:00:00",
+		"dataInizio": "1983-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -33431,7 +34673,7 @@
 			"it": "LESMO",
 			"en": "LESMO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33467,7 +34709,7 @@
 			"it": "LESSONA",
 			"en": "LESSONA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33773,7 +35015,7 @@
 			"it": "LIMBIATE",
 			"en": "LIMBIATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -33935,7 +35177,7 @@
 			"it": "LISSONE",
 			"en": "LISSONE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34106,7 +35348,16 @@
 			"it": "LOCERI",
 			"en": "LOCERI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116011",
+		"descrizione": {
+			"it": "LOCERI",
+			"en": "LOCERI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34134,6 +35385,15 @@
 			"en": "LOCULI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114019",
+		"descrizione": {
+			"it": "LOCULI",
+			"en": "LOCULI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34143,7 +35403,7 @@
 			"en": "LODE'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "003098031",
@@ -34170,6 +35430,15 @@
 			"en": "LODINE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114021",
+		"descrizione": {
+			"it": "LODINE",
+			"en": "LODINE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34179,6 +35448,15 @@
 			"en": "LODRINO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "020114020",
+		"descrizione": {
+			"it": "LODÈ",
+			"en": "LODÈ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34205,7 +35483,16 @@
 			"it": "LOIRI PORTO SAN PAOLO",
 			"en": "LOIRI PORTO SAN PAOLO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113013",
+		"descrizione": {
+			"it": "LOIRI PORTO SAN PAOLO",
+			"en": "LOIRI PORTO SAN PAOLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34340,7 +35627,7 @@
 			"it": "LONGARONE",
 			"en": "LONGARONE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34538,7 +35825,16 @@
 			"it": "LOTZORAI",
 			"en": "LOTZORAI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116012",
+		"descrizione": {
+			"it": "LOTZORAI",
+			"en": "LOTZORAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34619,7 +35915,7 @@
 			"it": "LU E CUCCARO MONFERRATO",
 			"en": "LU E CUCCARO MONFERRATO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34773,6 +36069,15 @@
 			"en": "LULA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114022",
+		"descrizione": {
+			"it": "LULA",
+			"en": "LULA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34799,7 +36104,16 @@
 			"it": "LUNAMATRONA",
 			"en": "LUNAMATRONA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117010",
+		"descrizione": {
+			"it": "LUNAMATRONA",
+			"en": "LUNAMATRONA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34853,7 +36167,16 @@
 			"it": "LUOGOSANTO",
 			"en": "LUOGOSANTO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113014",
+		"descrizione": {
+			"it": "LUOGOSANTO",
+			"en": "LUOGOSANTO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34898,7 +36221,16 @@
 			"it": "LURAS",
 			"en": "LURAS"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113015",
+		"descrizione": {
+			"it": "LURAS",
+			"en": "LURAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -34979,7 +36311,7 @@
 			"it": "LUSIANA CONCO",
 			"en": "LUSIANA CONCO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35069,7 +36401,7 @@
 			"it": "MACCAGNO CON PINO E VEDDASCA",
 			"en": "MACCAGNO CON PINO E VEDDASCA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35159,7 +36491,7 @@
 			"it": "MACHERIO",
 			"en": "MACHERIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35178,6 +36510,15 @@
 			"en": "MACOMER"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114023",
+		"descrizione": {
+			"it": "MACOMER",
+			"en": "MACOMER"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35258,7 +36599,7 @@
 			"it": "MADRUZZO",
 			"en": "MADRUZZO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35366,7 +36707,7 @@
 			"it": "MAGLIANO DI TENNA",
 			"en": "MAGLIANO DI TENNA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35474,7 +36815,16 @@
 			"it": "MAGOMADAS",
 			"en": "MAGOMADAS"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115029",
+		"descrizione": {
+			"it": "MAGOMADAS",
+			"en": "MAGOMADAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35537,7 +36887,7 @@
 			"it": "MAIOLO",
 			"en": "MAIOLO"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35853,6 +37203,15 @@
 			"en": "MAMOIADA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114024",
+		"descrizione": {
+			"it": "MAMOIADA",
+			"en": "MAMOIADA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -35879,7 +37238,16 @@
 			"it": "MANDAS",
 			"en": "MANDAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118025",
+		"descrizione": {
+			"it": "MANDAS",
+			"en": "MANDAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36077,7 +37445,7 @@
 			"it": "MAPPANO",
 			"en": "MAPPANO"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36087,6 +37455,15 @@
 			"en": "MARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112029",
+		"descrizione": {
+			"it": "MARA",
+			"en": "MARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36096,6 +37473,15 @@
 			"en": "MARACALAGONIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118026",
+		"descrizione": {
+			"it": "MARACALAGONIS",
+			"en": "MARACALAGONIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36392,7 +37778,7 @@
 			"it": "MARGHERITA DI SAVOIA",
 			"en": "MARGHERITA DI SAVOIA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36591,6 +37977,15 @@
 			"en": "MARRUBIU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115030",
+		"descrizione": {
+			"it": "MARRUBIU",
+			"en": "MARRUBIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36762,6 +38157,15 @@
 			"en": "MARTIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112030",
+		"descrizione": {
+			"it": "MARTIS",
+			"en": "MARTIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -36851,7 +38255,16 @@
 			"it": "MASAINAS",
 			"en": "MASAINAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119010",
+		"descrizione": {
+			"it": "MASAINAS",
+			"en": "MASAINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -37022,7 +38435,7 @@
 			"it": "MASSA FERMANA",
 			"en": "MASSA FERMANA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -37185,6 +38598,15 @@
 			"en": "MASULLAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115031",
+		"descrizione": {
+			"it": "MASULLAS",
+			"en": "MASULLAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -37365,6 +38787,15 @@
 			"en": "MEANA SARDO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114025",
+		"descrizione": {
+			"it": "MEANA SARDO",
+			"en": "MEANA SARDO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -37373,7 +38804,7 @@
 			"it": "MEANO",
 			"en": "MEANO"
 		},
-		"dataInizio": "1899-12-31T23:00:00",
+		"dataInizio": "1900-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -37382,7 +38813,7 @@
 			"it": "MEDA",
 			"en": "MEDA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38048,7 +39479,7 @@
 			"it": "MEZZAGO",
 			"en": "MEZZAGO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38355,6 +39786,15 @@
 			"en": "MILIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115032",
+		"descrizione": {
+			"it": "MILIS",
+			"en": "MILIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38444,7 +39884,7 @@
 			"it": "MINERVINO MURGE",
 			"en": "MINERVINO MURGE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38606,7 +40046,7 @@
 			"it": "MISILISCEMI",
 			"en": "MISILISCEMI"
 		},
-		"dataInizio": "2019-12-31T23:00:00",
+		"dataInizio": "2020-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38624,7 +40064,7 @@
 			"it": "MISINTO",
 			"en": "MISINTO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38714,7 +40154,16 @@
 			"it": "MODOLO",
 			"en": "MODOLO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115033",
+		"descrizione": {
+			"it": "MODOLO",
+			"en": "MODOLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38787,6 +40236,15 @@
 			"en": "MOGORELLA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115034",
+		"descrizione": {
+			"it": "MOGORELLA",
+			"en": "MOGORELLA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -38796,6 +40254,15 @@
 			"en": "MOGORO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115035",
+		"descrizione": {
+			"it": "MOGORO",
+			"en": "MOGORO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39236,7 +40703,16 @@
 			"it": "MONASTIR",
 			"en": "MONASTIR"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118027",
+		"descrizione": {
+			"it": "MONASTIR",
+			"en": "MONASTIR"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39569,7 +41045,7 @@
 			"it": "MONSAMPIETRO MORICO",
 			"en": "MONSAMPIETRO MORICO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39606,6 +41082,15 @@
 			"en": "MONSERRATO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118028",
+		"descrizione": {
+			"it": "MONSERRATO",
+			"en": "MONSERRATO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39758,7 +41243,7 @@
 			"it": "MONTALCINO",
 			"en": "MONTALCINO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39848,7 +41333,7 @@
 			"it": "MONTALTO CARPASIO",
 			"en": "MONTALTO CARPASIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -39956,7 +41441,7 @@
 			"it": "MONTAPPONE",
 			"en": "MONTAPPONE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40082,7 +41567,7 @@
 			"it": "MONTE GIBERTO",
 			"en": "MONTE GIBERTO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40136,7 +41621,7 @@
 			"it": "MONTE RINALDO",
 			"en": "MONTE RINALDO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40217,7 +41702,7 @@
 			"it": "MONTE SAN PIETRANGELI",
 			"en": "MONTE SAN PIETRANGELI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40271,7 +41756,7 @@
 			"it": "MONTE URANO",
 			"en": "MONTE URANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40280,7 +41765,7 @@
 			"it": "MONTE VIDON COMBATTE",
 			"en": "MONTE VIDON COMBATTE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40289,7 +41774,7 @@
 			"it": "MONTE VIDON CORRADO",
 			"en": "MONTE VIDON CORRADO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40550,7 +42035,7 @@
 			"it": "MONTECOPIOLO",
 			"en": "MONTECOPIOLO"
 		},
-		"dataInizio": "2021-06-16T22:00:00",
+		"dataInizio": "2021-06-17T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40658,7 +42143,7 @@
 			"it": "MONTEFALCONE APPENNINO",
 			"en": "MONTEFALCONE APPENNINO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40793,7 +42278,7 @@
 			"it": "MONTEFORTINO",
 			"en": "MONTEFORTINO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40883,7 +42368,7 @@
 			"it": "MONTEGIORGIO",
 			"en": "MONTEGIORGIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40892,7 +42377,7 @@
 			"it": "MONTEGRANARO",
 			"en": "MONTEGRANARO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -40991,7 +42476,7 @@
 			"it": "MONTELEONE DI FERMO",
 			"en": "MONTELEONE DI FERMO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41019,6 +42504,15 @@
 			"en": "MONTELEONE ROCCA DORIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112031",
+		"descrizione": {
+			"it": "MONTELEONE ROCCA DORIA",
+			"en": "MONTELEONE ROCCA DORIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41081,7 +42575,7 @@
 			"it": "MONTELPARO",
 			"en": "MONTELPARO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41504,7 +42998,7 @@
 			"it": "MONTERUBBIANO",
 			"en": "MONTERUBBIANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41585,7 +43079,7 @@
 			"it": "MONTESCUDO-MONTE COLOMBO",
 			"en": "MONTESCUDO-MONTE COLOMBO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41720,7 +43214,16 @@
 			"it": "MONTI",
 			"en": "MONTI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113016",
+		"descrizione": {
+			"it": "MONTI",
+			"en": "MONTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41819,7 +43322,7 @@
 			"it": "MONTIGLIO",
 			"en": "MONTIGLIO"
 		},
-		"dataInizio": "1899-12-31T23:00:00",
+		"dataInizio": "1900-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -41945,7 +43448,7 @@
 			"it": "MONTORO",
 			"en": "MONTORO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41981,7 +43484,7 @@
 			"it": "MONTOTTONE",
 			"en": "MONTOTTONE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -41990,7 +43493,16 @@
 			"it": "MONTRESTA",
 			"en": "MONTRESTA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115036",
+		"descrizione": {
+			"it": "MONTRESTA",
+			"en": "MONTRESTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42071,7 +43583,7 @@
 			"it": "MORANSENGO-TONENGO",
 			"en": "MORANSENGO-TONENGO"
 		},
-		"dataInizio": "2023-02-23T23:00:00",
+		"dataInizio": "2023-02-24T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42162,6 +43674,15 @@
 			"en": "MORES"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112032",
+		"descrizione": {
+			"it": "MORES",
+			"en": "MORES"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42170,7 +43691,7 @@
 			"it": "MORESCO",
 			"en": "MORESCO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42216,6 +43737,15 @@
 			"en": "MORGONGIORI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115037",
+		"descrizione": {
+			"it": "MORGONGIORI",
+			"en": "MORGONGIORI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42737,7 +44267,7 @@
 			"it": "MUGGIO'",
 			"en": "MUGGIO'"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42791,7 +44321,16 @@
 			"it": "MURAVERA",
 			"en": "MURAVERA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118029",
+		"descrizione": {
+			"it": "MURAVERA",
+			"en": "MURAVERA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42864,6 +44403,15 @@
 			"en": "MUROS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112033",
+		"descrizione": {
+			"it": "MUROS",
+			"en": "MUROS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -42881,7 +44429,16 @@
 			"it": "MUSEI",
 			"en": "MUSEI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119011",
+		"descrizione": {
+			"it": "MUSEI",
+			"en": "MUSEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43008,6 +44565,15 @@
 			"en": "NARBOLIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115038",
+		"descrizione": {
+			"it": "NARBOLIA",
+			"en": "NARBOLIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43016,7 +44582,16 @@
 			"it": "NARCAO",
 			"en": "NARCAO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119012",
+		"descrizione": {
+			"it": "NARCAO",
+			"en": "NARCAO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43224,6 +44799,15 @@
 			"en": "NEONELI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115039",
+		"descrizione": {
+			"it": "NEONELI",
+			"en": "NEONELI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43394,7 +44978,7 @@
 			"it": "NICASTRO",
 			"en": "NICASTRO"
 		},
-		"dataInizio": "1899-12-31T23:00:00",
+		"dataInizio": "1900-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -43755,6 +45339,15 @@
 			"en": "NORAGUGUME"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114026",
+		"descrizione": {
+			"it": "NORAGUGUME",
+			"en": "NORAGUGUME"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43764,6 +45357,15 @@
 			"en": "NORBELLO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115040",
+		"descrizione": {
+			"it": "NORBELLO",
+			"en": "NORBELLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43835,7 +45437,7 @@
 			"it": "NOVA MILANESE",
 			"en": "NOVA MILANESE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43862,7 +45464,7 @@
 			"it": "NOVAFELTRIA",
 			"en": "NOVAFELTRIA"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -43943,7 +45545,7 @@
 			"it": "NOVELLA",
 			"en": "NOVELLA"
 		},
-		"dataInizio": "2019-12-31T23:00:00",
+		"dataInizio": "2020-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44052,6 +45654,15 @@
 			"en": "NUGHEDU SAN NICOLO'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112034",
+		"descrizione": {
+			"it": "NUGHEDU SAN NICOLÒ",
+			"en": "NUGHEDU SAN NICOLÒ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44061,6 +45672,15 @@
 			"en": "NUGHEDU SANTA VITTORIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115041",
+		"descrizione": {
+			"it": "NUGHEDU SANTA VITTORIA",
+			"en": "NUGHEDU SANTA VITTORIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44070,6 +45690,15 @@
 			"en": "NULE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112035",
+		"descrizione": {
+			"it": "NULE",
+			"en": "NULE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44079,6 +45708,15 @@
 			"en": "NULVI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112036",
+		"descrizione": {
+			"it": "NULVI",
+			"en": "NULVI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44097,6 +45735,15 @@
 			"en": "NUORO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114027",
+		"descrizione": {
+			"it": "NUORO",
+			"en": "NUORO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44115,6 +45762,15 @@
 			"en": "NURACHI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115042",
+		"descrizione": {
+			"it": "NURACHI",
+			"en": "NURACHI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44123,7 +45779,16 @@
 			"it": "NURAGUS",
 			"en": "NURAGUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118030",
+		"descrizione": {
+			"it": "NURAGUS",
+			"en": "NURAGUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44132,7 +45797,16 @@
 			"it": "NURALLAO",
 			"en": "NURALLAO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118031",
+		"descrizione": {
+			"it": "NURALLAO",
+			"en": "NURALLAO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44141,7 +45815,16 @@
 			"it": "NURAMINIS",
 			"en": "NURAMINIS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118032",
+		"descrizione": {
+			"it": "NURAMINIS",
+			"en": "NURAMINIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44151,6 +45834,15 @@
 			"en": "NURECI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115043",
+		"descrizione": {
+			"it": "NURECI",
+			"en": "NURECI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44159,7 +45851,16 @@
 			"it": "NURRI",
 			"en": "NURRI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118033",
+		"descrizione": {
+			"it": "NURRI",
+			"en": "NURRI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44204,7 +45905,16 @@
 			"it": "NUXIS",
 			"en": "NUXIS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119013",
+		"descrizione": {
+			"it": "NUXIS",
+			"en": "NUXIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44384,7 +46094,16 @@
 			"it": "OLBIA",
 			"en": "OLBIA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113017",
+		"descrizione": {
+			"it": "OLBIA",
+			"en": "OLBIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44493,6 +46212,15 @@
 			"en": "OLIENA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114028",
+		"descrizione": {
+			"it": "OLIENA",
+			"en": "OLIENA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44574,6 +46302,15 @@
 			"en": "OLLASTRA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115044",
+		"descrizione": {
+			"it": "OLLASTRA",
+			"en": "OLLASTRA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44583,6 +46320,15 @@
 			"en": "OLLOLAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114029",
+		"descrizione": {
+			"it": "OLLOLAI",
+			"en": "OLLOLAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44601,6 +46347,15 @@
 			"en": "OLMEDO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112037",
+		"descrizione": {
+			"it": "OLMEDO",
+			"en": "OLMEDO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44664,6 +46419,15 @@
 			"en": "OLZAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114030",
+		"descrizione": {
+			"it": "OLZAI",
+			"en": "OLZAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44709,7 +46473,7 @@
 			"en": "ONANI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "012056040",
@@ -44718,6 +46482,15 @@
 			"en": "ONANO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "020114031",
+		"descrizione": {
+			"it": "ONANÌ",
+			"en": "ONANÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44745,6 +46518,15 @@
 			"en": "ONIFAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114032",
+		"descrizione": {
+			"it": "ONIFAI",
+			"en": "ONIFAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44754,6 +46536,15 @@
 			"en": "ONIFERI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114033",
+		"descrizione": {
+			"it": "ONIFERI",
+			"en": "ONIFERI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44844,6 +46635,15 @@
 			"en": "ORANI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114034",
+		"descrizione": {
+			"it": "ORANI",
+			"en": "ORANI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -44934,6 +46734,15 @@
 			"en": "ORGOSOLO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114035",
+		"descrizione": {
+			"it": "ORGOSOLO",
+			"en": "ORGOSOLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45024,6 +46833,15 @@
 			"en": "ORISTANO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115045",
+		"descrizione": {
+			"it": "ORISTANO",
+			"en": "ORISTANO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45050,7 +46868,7 @@
 			"it": "ORNAGO",
 			"en": "ORNAGO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45078,6 +46896,15 @@
 			"en": "OROSEI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114036",
+		"descrizione": {
+			"it": "OROSEI",
+			"en": "OROSEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45087,6 +46914,15 @@
 			"en": "OROTELLI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114037",
+		"descrizione": {
+			"it": "OROTELLI",
+			"en": "OROTELLI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45104,7 +46940,16 @@
 			"it": "ORROLI",
 			"en": "ORROLI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118034",
+		"descrizione": {
+			"it": "ORROLI",
+			"en": "ORROLI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45194,7 +47039,16 @@
 			"it": "ORTACESUS",
 			"en": "ORTACESUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118035",
+		"descrizione": {
+			"it": "ORTACESUS",
+			"en": "ORTACESUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45221,7 +47075,7 @@
 			"it": "ORTEZZANO",
 			"en": "ORTEZZANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45285,6 +47139,15 @@
 			"en": "ORTUERI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114038",
+		"descrizione": {
+			"it": "ORTUERI",
+			"en": "ORTUERI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45294,6 +47157,15 @@
 			"en": "ORUNE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114039",
+		"descrizione": {
+			"it": "ORUNE",
+			"en": "ORUNE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45356,7 +47228,16 @@
 			"it": "OSCHIRI",
 			"en": "OSCHIRI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113018",
+		"descrizione": {
+			"it": "OSCHIRI",
+			"en": "OSCHIRI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45366,6 +47247,15 @@
 			"en": "OSIDDA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114040",
+		"descrizione": {
+			"it": "OSIDDA",
+			"en": "OSIDDA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45384,6 +47274,15 @@
 			"en": "OSILO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112038",
+		"descrizione": {
+			"it": "OSILO",
+			"en": "OSILO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45401,7 +47300,16 @@
 			"it": "OSINI",
 			"en": "OSINI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116013",
+		"descrizione": {
+			"it": "OSINI",
+			"en": "OSINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45537,6 +47445,15 @@
 			"en": "OSSI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112039",
+		"descrizione": {
+			"it": "OSSI",
+			"en": "OSSI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45654,6 +47571,15 @@
 			"en": "OTTANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114041",
+		"descrizione": {
+			"it": "OTTANA",
+			"en": "OTTANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45753,6 +47679,15 @@
 			"en": "OVODDA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114042",
+		"descrizione": {
+			"it": "OVODDA",
+			"en": "OVODDA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45780,6 +47715,15 @@
 			"en": "OZIERI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112040",
+		"descrizione": {
+			"it": "OZIERI",
+			"en": "OZIERI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45815,7 +47759,16 @@
 			"it": "PABILLONIS",
 			"en": "PABILLONIS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117011",
+		"descrizione": {
+			"it": "PABILLONIS",
+			"en": "PABILLONIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45951,6 +47904,15 @@
 			"en": "PADRIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112041",
+		"descrizione": {
+			"it": "PADRIA",
+			"en": "PADRIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -45959,7 +47921,16 @@
 			"it": "PADRU",
 			"en": "PADRU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113019",
+		"descrizione": {
+			"it": "PADRU",
+			"en": "PADRU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -46202,7 +48173,16 @@
 			"it": "PALAU",
 			"en": "PALAU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113020",
+		"descrizione": {
+			"it": "PALAU",
+			"en": "PALAU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -46428,6 +48408,15 @@
 			"en": "PALMAS ARBOREA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115046",
+		"descrizione": {
+			"it": "PALMAS ARBOREA",
+			"en": "PALMAS ARBOREA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47049,6 +49038,15 @@
 			"en": "PATTADA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112042",
+		"descrizione": {
+			"it": "PATTADA",
+			"en": "PATTADA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47076,6 +49074,15 @@
 			"en": "PAU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115047",
+		"descrizione": {
+			"it": "PAU",
+			"en": "PAU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47093,7 +49100,16 @@
 			"it": "PAULI ARBAREI",
 			"en": "PAULI ARBAREI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117012",
+		"descrizione": {
+			"it": "PAULI ARBAREI",
+			"en": "PAULI ARBAREI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47103,6 +49119,15 @@
 			"en": "PAULILATINO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115048",
+		"descrizione": {
+			"it": "PAULILATINO",
+			"en": "PAULILATINO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47255,7 +49280,7 @@
 			"it": "PEDASO",
 			"en": "PEDASO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47462,7 +49487,7 @@
 			"it": "PENNABILLI",
 			"en": "PENNABILLI"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47543,7 +49568,16 @@
 			"it": "PERDASDEFOGU",
 			"en": "PERDASDEFOGU"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116014",
+		"descrizione": {
+			"it": "PERDASDEFOGU",
+			"en": "PERDASDEFOGU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47552,7 +49586,16 @@
 			"it": "PERDAXIUS",
 			"en": "PERDAXIUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119014",
+		"descrizione": {
+			"it": "PERDAXIUS",
+			"en": "PERDAXIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -47589,6 +49632,15 @@
 			"en": "PERFUGAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112043",
+		"descrizione": {
+			"it": "PERFUGAS",
+			"en": "PERFUGAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -48092,7 +50144,7 @@
 			"it": "PETRITOLI",
 			"en": "PETRITOLI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -48254,7 +50306,7 @@
 			"it": "PIADENA DRIZZONA",
 			"en": "PIADENA DRIZZONA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -48983,7 +51035,7 @@
 			"it": "PIEVE DEL GRAPPA",
 			"en": "PIEVE DEL GRAPPA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -49001,7 +51053,7 @@
 			"it": "PIEVE DI BONO-PREZZO",
 			"en": "PIEVE DI BONO-PREZZO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -49244,7 +51296,16 @@
 			"it": "PIMENTEL",
 			"en": "PIMENTEL"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118036",
+		"descrizione": {
+			"it": "PIMENTEL",
+			"en": "PIMENTEL"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -49523,7 +51584,16 @@
 			"it": "PISCINAS",
 			"en": "PISCINAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119015",
+		"descrizione": {
+			"it": "PISCINAS",
+			"en": "PISCINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -49749,6 +51819,15 @@
 			"en": "PLOAGHE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112044",
+		"descrizione": {
+			"it": "PLOAGHE",
+			"en": "PLOAGHE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -49964,7 +52043,7 @@
 			"it": "POGGIO TORRIANA",
 			"en": "POGGIO TORRIANA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -50117,7 +52196,7 @@
 			"it": "POLESINE ZIBELLO",
 			"en": "POLESINE ZIBELLO"
 		},
-		"dataInizio": "2015-12-31T23:00:00",
+		"dataInizio": "2016-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -50424,6 +52503,15 @@
 			"en": "POMPU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115049",
+		"descrizione": {
+			"it": "POMPU",
+			"en": "POMPU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -50855,7 +52943,7 @@
 			"it": "PONZANO DI FERMO",
 			"en": "PONZANO DI FERMO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51017,7 +53105,7 @@
 			"it": "PORTE DI RENDENA",
 			"en": "PORTE DI RENDENA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51116,7 +53204,7 @@
 			"it": "PORTO SAN GIORGIO",
 			"en": "PORTO SAN GIORGIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51125,7 +53213,7 @@
 			"it": "PORTO SANT'ELPIDIO",
 			"en": "PORTO SANT'ELPIDIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51144,6 +53232,15 @@
 			"en": "PORTO TORRES"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112045",
+		"descrizione": {
+			"it": "PORTO TORRES",
+			"en": "PORTO TORRES"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51242,7 +53339,16 @@
 			"it": "PORTOSCUSO",
 			"en": "PORTOSCUSO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119016",
+		"descrizione": {
+			"it": "PORTOSCUSO",
+			"en": "PORTOSCUSO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51270,6 +53376,15 @@
 			"en": "POSADA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114043",
+		"descrizione": {
+			"it": "POSADA",
+			"en": "POSADA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51513,6 +53628,15 @@
 			"en": "POZZOMAGGIORE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112046",
+		"descrizione": {
+			"it": "POZZOMAGGIORE",
+			"en": "POZZOMAGGIORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51836,7 +53960,7 @@
 			"it": "PRATOVECCHIO STIA",
 			"en": "PRATOVECCHIO STIA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -51899,7 +54023,7 @@
 			"it": "PREDAIA",
 			"en": "PREDAIA"
 		},
-		"dataInizio": "2014-12-31T23:00:00",
+		"dataInizio": "2015-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52106,7 +54230,7 @@
 			"it": "PRESICCE-ACQUARICA",
 			"en": "PRESICCE-ACQUARICA"
 		},
-		"dataInizio": "2019-12-31T23:00:00",
+		"dataInizio": "2020-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52205,7 +54329,7 @@
 			"it": "PRIMIERO SAN MARTINO DI CASTROZZA",
 			"en": "PRIMIERO SAN MARTINO DI CASTROZZA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52368,6 +54492,15 @@
 			"en": "PULA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118037",
+		"descrizione": {
+			"it": "PULA",
+			"en": "PULA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52422,6 +54555,15 @@
 			"en": "PUTIFIGARI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112047",
+		"descrizione": {
+			"it": "PUTIFIGARI",
+			"en": "PUTIFIGARI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52502,7 +54644,7 @@
 			"it": "QUAREGNA CERRETO",
 			"en": "QUAREGNA CERRETO"
 		},
-		"dataInizio": "2018-12-31T23:00:00",
+		"dataInizio": "2019-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52584,6 +54726,15 @@
 			"en": "QUARTU SANT'ELENA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118038",
+		"descrizione": {
+			"it": "QUARTU SANT'ELENA",
+			"en": "QUARTU SANT'ELENA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52593,6 +54744,15 @@
 			"en": "QUARTUCCIU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118039",
+		"descrizione": {
+			"it": "QUARTUCCIU",
+			"en": "QUARTUCCIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -52637,7 +54797,7 @@
 			"it": "QUERO VAS",
 			"en": "QUERO VAS"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -52970,7 +55130,7 @@
 			"it": "RAPAGNANO",
 			"en": "RAPAGNANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -53330,7 +55490,7 @@
 			"it": "RENATE",
 			"en": "RENATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -53852,7 +56012,7 @@
 			"it": "RIO",
 			"en": "RIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -53907,6 +56067,15 @@
 			"en": "RIOLA SARDO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115050",
+		"descrizione": {
+			"it": "RIOLA SARDO",
+			"en": "RIOLA SARDO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -54095,7 +56264,7 @@
 			"it": "RIVA DEL PO",
 			"en": "RIVA DEL PO"
 		},
-		"dataInizio": "2018-12-31T23:00:00",
+		"dataInizio": "2019-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -54284,7 +56453,7 @@
 			"it": "RIVIGNANO TEOR",
 			"en": "RIVIGNANO TEOR"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -55473,6 +57642,15 @@
 			"en": "ROMANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112048",
+		"descrizione": {
+			"it": "ROMANA",
+			"en": "ROMANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -55625,7 +57803,7 @@
 			"it": "RONCELLO",
 			"en": "RONCELLO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -55688,7 +57866,7 @@
 			"it": "RONCO BRIANTINO",
 			"en": "RONCO BRIANTINO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -56400,6 +58578,15 @@
 			"en": "RUINAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115051",
+		"descrizione": {
+			"it": "RUINAS",
+			"en": "RUINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -56489,7 +58676,7 @@
 			"it": "S.FELICE",
 			"en": "S.FELICE"
 		},
-		"dataInizio": "1973-12-31T23:00:00",
+		"dataInizio": "1974-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -56570,7 +58757,16 @@
 			"it": "SADALI",
 			"en": "SADALI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118040",
+		"descrizione": {
+			"it": "SADALI",
+			"en": "SADALI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -56579,7 +58775,16 @@
 			"it": "SAGAMA",
 			"en": "SAGAMA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115052",
+		"descrizione": {
+			"it": "SAGAMA",
+			"en": "SAGAMA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -57146,7 +59351,16 @@
 			"it": "SAMASSI",
 			"en": "SAMASSI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117013",
+		"descrizione": {
+			"it": "SAMASSI",
+			"en": "SAMASSI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -57155,7 +59369,16 @@
 			"it": "SAMATZAI",
 			"en": "SAMATZAI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118041",
+		"descrizione": {
+			"it": "SAMATZAI",
+			"en": "SAMATZAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -57273,6 +59496,15 @@
 			"en": "SAMUGHEO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115053",
+		"descrizione": {
+			"it": "SAMUGHEO",
+			"en": "SAMUGHEO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -57317,7 +59549,16 @@
 			"it": "SAN BASILIO",
 			"en": "SAN BASILIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118042",
+		"descrizione": {
+			"it": "SAN BASILIO",
+			"en": "SAN BASILIO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -57938,7 +60179,7 @@
 			"it": "SAN FERDINANDO DI PUGLIA",
 			"en": "SAN FERDINANDO DI PUGLIA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58028,7 +60269,16 @@
 			"it": "SAN GAVINO MONREALE",
 			"en": "SAN GAVINO MONREALE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117014",
+		"descrizione": {
+			"it": "SAN GAVINO MONREALE",
+			"en": "SAN GAVINO MONREALE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58415,7 +60665,7 @@
 			"it": "SAN GIOVANNI DI FASSA-SEN JAN",
 			"en": "SAN GIOVANNI DI FASSA-SEN JAN"
 		},
-		"dataInizio": "2018-03-01T13:48:48",
+		"dataInizio": "2018-03-02T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58541,7 +60791,16 @@
 			"it": "SAN GIOVANNI SUERGIU",
 			"en": "SAN GIOVANNI SUERGIU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119017",
+		"descrizione": {
+			"it": "SAN GIOVANNI SUERGIU",
+			"en": "SAN GIOVANNI SUERGIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58721,7 +60980,7 @@
 			"it": "SAN LEO",
 			"en": "SAN LEO"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58811,7 +61070,7 @@
 			"it": "SAN LORENZO DORSINO",
 			"en": "SAN LORENZO DORSINO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -58946,7 +61205,7 @@
 			"it": "SAN MARCELLO PITEGLIO",
 			"en": "SAN MARCELLO PITEGLIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -59072,7 +61331,7 @@
 			"it": "SAN MARTINO DE'CALVI",
 			"en": "SAN MARTINO DE'CALVI"
 		},
-		"dataInizio": "1955-12-31T23:00:00",
+		"dataInizio": "1956-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -59405,7 +61664,7 @@
 			"it": "SAN NAZZARO CALVI",
 			"en": "SAN NAZZARO CALVI"
 		},
-		"dataInizio": "1899-12-31T23:00:00",
+		"dataInizio": "1900-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -59496,7 +61755,7 @@
 			"en": "SAN NICOLO' D'ARCIDANO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "005025046",
@@ -59513,7 +61772,25 @@
 			"it": "SAN NICOLO' GERREI",
 			"en": "SAN NICOLO' GERREI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115054",
+		"descrizione": {
+			"it": "SAN NICOLÒ D'ARCIDANO",
+			"en": "SAN NICOLÒ D'ARCIDANO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "020118043",
+		"descrizione": {
+			"it": "SAN NICOLÒ GERREI",
+			"en": "SAN NICOLÒ GERREI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -59522,7 +61799,7 @@
 			"it": "SAN PANCRAZIO PARMENSE",
 			"en": "SAN PANCRAZIO PARMENSE"
 		},
-		"dataInizio": "1942-12-31T23:00:00",
+		"dataInizio": "1943-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -60188,7 +62465,16 @@
 			"it": "SAN SPERATE",
 			"en": "SAN SPERATE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118044",
+		"descrizione": {
+			"it": "SAN SPERATE",
+			"en": "SAN SPERATE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60215,7 +62501,7 @@
 			"it": "SAN TEODORO",
 			"en": "SAN TEODORO"
 		},
-		"dataInizio": "2018-06-08T09:52:00",
+		"dataInizio": "2018-06-09T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60224,7 +62510,16 @@
 			"it": "SAN TEODORO",
 			"en": "SAN TEODORO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113021",
+		"descrizione": {
+			"it": "SAN TEODORO",
+			"en": "SAN TEODORO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60279,6 +62574,15 @@
 			"en": "SAN VERO MILIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115055",
+		"descrizione": {
+			"it": "SAN VERO MILIS",
+			"en": "SAN VERO MILIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60323,7 +62627,16 @@
 			"it": "SAN VITO",
 			"en": "SAN VITO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118045",
+		"descrizione": {
+			"it": "SAN VITO",
+			"en": "SAN VITO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60566,7 +62879,16 @@
 			"it": "SANLURI",
 			"en": "SANLURI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117015",
+		"descrizione": {
+			"it": "SANLURI",
+			"en": "SANLURI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60692,7 +63014,7 @@
 			"it": "SANT'AGATA FELTRIA",
 			"en": "SANT'AGATA FELTRIA"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -60863,7 +63185,16 @@
 			"it": "SANT'ANDREA FRIUS",
 			"en": "SANT'ANDREA FRIUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118046",
+		"descrizione": {
+			"it": "SANT'ANDREA FRIUS",
+			"en": "SANT'ANDREA FRIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61034,7 +63365,16 @@
 			"it": "SANT'ANNA ARRESI",
 			"en": "SANT'ANNA ARRESI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119019",
+		"descrizione": {
+			"it": "SANT'ANNA ARRESI",
+			"en": "SANT'ANNA ARRESI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61061,7 +63401,16 @@
 			"it": "SANT'ANTIOCO",
 			"en": "SANT'ANTIOCO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119020",
+		"descrizione": {
+			"it": "SANT'ANTIOCO",
+			"en": "SANT'ANTIOCO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61088,7 +63437,16 @@
 			"it": "SANT'ANTONIO DI GALLURA",
 			"en": "SANT'ANTONIO DI GALLURA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113023",
+		"descrizione": {
+			"it": "SANT'ANTONIO DI GALLURA",
+			"en": "SANT'ANTONIO DI GALLURA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61196,7 +63554,7 @@
 			"it": "SANT'ELPIDIO A MARE",
 			"en": "SANT'ELPIDIO A MARE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61223,7 +63581,7 @@
 			"it": "SANT'EUFEMIA LAMEZIA",
 			"en": "SANT'EUFEMIA LAMEZIA"
 		},
-		"dataInizio": "1967-12-31T23:00:00",
+		"dataInizio": "1968-01-01T00:00:00",
 		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
@@ -61304,7 +63662,7 @@
 			"it": "SANT'OMOBONO TERME",
 			"en": "SANT'OMOBONO TERME"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61367,7 +63725,7 @@
 			"it": "SANTA CATERINA D'ESTE",
 			"en": "SANTA CATERINA D'ESTE"
 		},
-		"dataInizio": "1999-12-31T22:00:00",
+		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61530,6 +63888,15 @@
 			"en": "SANTA GIUSTA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115056",
+		"descrizione": {
+			"it": "SANTA GIUSTA",
+			"en": "SANTA GIUSTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61656,6 +64023,15 @@
 			"en": "SANTA MARIA COGHINAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112049",
+		"descrizione": {
+			"it": "SANTA MARIA COGHINAS",
+			"en": "SANTA MARIA COGHINAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61871,7 +64247,16 @@
 			"it": "SANTA TERESA GALLURA",
 			"en": "SANTA TERESA GALLURA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113022",
+		"descrizione": {
+			"it": "SANTA TERESA GALLURA",
+			"en": "SANTA TERESA GALLURA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61898,7 +64283,7 @@
 			"it": "SANTA VITTORIA IN MATENANO",
 			"en": "SANTA VITTORIA IN MATENANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -61907,7 +64292,16 @@
 			"it": "SANTADI",
 			"en": "SANTADI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119018",
+		"descrizione": {
+			"it": "SANTADI",
+			"en": "SANTADI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62124,6 +64518,15 @@
 			"en": "SANTU LUSSURGIU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115057",
+		"descrizione": {
+			"it": "SANTU LUSSURGIU",
+			"en": "SANTU LUSSURGIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62177,7 +64580,7 @@
 			"it": "SAPPADA",
 			"en": "SAPPADA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62231,7 +64634,16 @@
 			"it": "SARDARA",
 			"en": "SARDARA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117016",
+		"descrizione": {
+			"it": "SARDARA",
+			"en": "SARDARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62358,6 +64770,15 @@
 			"en": "SARROCH"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118047",
+		"descrizione": {
+			"it": "SARROCH",
+			"en": "SARROCH"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62394,6 +64815,15 @@
 			"en": "SARULE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114044",
+		"descrizione": {
+			"it": "SARULE",
+			"en": "SARULE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62421,6 +64851,15 @@
 			"en": "SASSARI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112050",
+		"descrizione": {
+			"it": "SASSARI",
+			"en": "SASSARI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62483,7 +64922,7 @@
 			"it": "SASSOCORVARO AUDITORE",
 			"en": "SASSOCORVARO AUDITORE"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62492,7 +64931,7 @@
 			"it": "SASSOFELTRIO",
 			"en": "SASSOFELTRIO"
 		},
-		"dataInizio": "2021-06-16T22:00:00",
+		"dataInizio": "2021-06-17T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62871,6 +65310,15 @@
 			"en": "SCANO DI MONTIFERRO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115058",
+		"descrizione": {
+			"it": "SCANO DI MONTIFERRO",
+			"en": "SCANO DI MONTIFERRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -62951,7 +65399,7 @@
 			"it": "SCARPERIA E SAN PIERO",
 			"en": "SCARPERIA E SAN PIERO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63285,6 +65733,15 @@
 			"en": "SEDILO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115059",
+		"descrizione": {
+			"it": "SEDILO",
+			"en": "SEDILO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63294,6 +65751,15 @@
 			"en": "SEDINI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112051",
+		"descrizione": {
+			"it": "SEDINI",
+			"en": "SEDINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63329,7 +65795,16 @@
 			"it": "SEGARIU",
 			"en": "SEGARIU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117017",
+		"descrizione": {
+			"it": "SEGARIU",
+			"en": "SEGARIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63384,6 +65859,15 @@
 			"en": "SELARGIUS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118048",
+		"descrizione": {
+			"it": "SELARGIUS",
+			"en": "SELARGIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63401,7 +65885,16 @@
 			"it": "SELEGAS",
 			"en": "SELEGAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118049",
+		"descrizione": {
+			"it": "SELEGAS",
+			"en": "SELEGAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63410,7 +65903,7 @@
 			"it": "SELLA GIUDICARIE",
 			"en": "SELLA GIUDICARIE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63519,6 +66012,15 @@
 			"en": "SEMESTENE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112052",
+		"descrizione": {
+			"it": "SEMESTENE",
+			"en": "SEMESTENE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63591,6 +66093,15 @@
 			"en": "SENEGHE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115060",
+		"descrizione": {
+			"it": "SENEGHE",
+			"en": "SENEGHE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63627,6 +66138,15 @@
 			"en": "SENIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115061",
+		"descrizione": {
+			"it": "SENIS",
+			"en": "SENIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63663,6 +66183,15 @@
 			"en": "SENNARIOLO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115062",
+		"descrizione": {
+			"it": "SENNARIOLO",
+			"en": "SENNARIOLO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63672,6 +66201,15 @@
 			"en": "SENNORI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112053",
+		"descrizione": {
+			"it": "SENNORI",
+			"en": "SENNORI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63680,7 +66218,16 @@
 			"it": "SENORBI'",
 			"en": "SENORBI'"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118050",
+		"descrizione": {
+			"it": "SENORBÌ",
+			"en": "SENORBÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63725,7 +66272,16 @@
 			"it": "SERDIANA",
 			"en": "SERDIANA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118051",
+		"descrizione": {
+			"it": "SERDIANA",
+			"en": "SERDIANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63734,7 +66290,7 @@
 			"it": "SEREGNO",
 			"en": "SEREGNO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -63941,7 +66497,16 @@
 			"it": "SERRAMANNA",
 			"en": "SERRAMANNA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117018",
+		"descrizione": {
+			"it": "SERRAMANNA",
+			"en": "SERRAMANNA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64076,7 +66641,16 @@
 			"it": "SERRENTI",
 			"en": "SERRENTI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117019",
+		"descrizione": {
+			"it": "SERRENTI",
+			"en": "SERRENTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64085,7 +66659,16 @@
 			"it": "SERRI",
 			"en": "SERRI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118052",
+		"descrizione": {
+			"it": "SERRI",
+			"en": "SERRI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64121,7 +66704,7 @@
 			"it": "SERVIGLIANO",
 			"en": "SERVIGLIANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64275,6 +66858,15 @@
 			"en": "SESTU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118053",
+		"descrizione": {
+			"it": "SESTU",
+			"en": "SESTU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64301,7 +66893,7 @@
 			"it": "SETTEVILLE",
 			"en": "SETTEVILLE"
 		},
-		"dataInizio": "1999-12-31T22:00:00",
+		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64338,6 +66930,15 @@
 			"en": "SETTIMO SAN PIETRO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118054",
+		"descrizione": {
+			"it": "SETTIMO SAN PIETRO",
+			"en": "SETTIMO SAN PIETRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64373,7 +66974,16 @@
 			"it": "SETZU",
 			"en": "SETZU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117020",
+		"descrizione": {
+			"it": "SETZU",
+			"en": "SETZU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64382,7 +66992,16 @@
 			"it": "SEUI",
 			"en": "SEUI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116023",
+		"descrizione": {
+			"it": "SEUI",
+			"en": "SEUI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64391,7 +67010,16 @@
 			"it": "SEULO",
 			"en": "SEULO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114045",
+		"descrizione": {
+			"it": "SEULO",
+			"en": "SEULO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64400,7 +67028,7 @@
 			"it": "SEVESO",
 			"en": "SEVESO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64464,6 +67092,15 @@
 			"en": "SIAMAGGIORE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115063",
+		"descrizione": {
+			"it": "SIAMAGGIORE",
+			"en": "SIAMAGGIORE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64473,6 +67110,15 @@
 			"en": "SIAMANNA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115064",
+		"descrizione": {
+			"it": "SIAMANNA",
+			"en": "SIAMANNA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64491,6 +67137,15 @@
 			"en": "SIAPICCIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115065",
+		"descrizione": {
+			"it": "SIAPICCIA",
+			"en": "SIAPICCIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64517,7 +67172,16 @@
 			"it": "SIDDI",
 			"en": "SIDDI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117021",
+		"descrizione": {
+			"it": "SIDDI",
+			"en": "SIDDI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64581,6 +67245,15 @@
 			"en": "SILANUS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114046",
+		"descrizione": {
+			"it": "SILANUS",
+			"en": "SILANUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64599,6 +67272,15 @@
 			"en": "SILIGO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112054",
+		"descrizione": {
+			"it": "SILIGO",
+			"en": "SILIGO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64607,7 +67289,16 @@
 			"it": "SILIQUA",
 			"en": "SILIQUA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118056",
+		"descrizione": {
+			"it": "SILIQUA",
+			"en": "SILIQUA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64616,7 +67307,16 @@
 			"it": "SILIUS",
 			"en": "SILIUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118057",
+		"descrizione": {
+			"it": "SILIUS",
+			"en": "SILIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64634,7 +67334,7 @@
 			"it": "SILLANO GIUNCUGNANO",
 			"en": "SILLANO GIUNCUGNANO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64680,6 +67380,15 @@
 			"en": "SIMALA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115066",
+		"descrizione": {
+			"it": "SIMALA",
+			"en": "SIMALA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64689,6 +67398,15 @@
 			"en": "SIMAXIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115067",
+		"descrizione": {
+			"it": "SIMAXIS",
+			"en": "SIMAXIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64734,6 +67452,15 @@
 			"en": "SINDIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114047",
+		"descrizione": {
+			"it": "SINDIA",
+			"en": "SINDIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64752,6 +67479,15 @@
 			"en": "SINI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115068",
+		"descrizione": {
+			"it": "SINI",
+			"en": "SINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64770,6 +67506,15 @@
 			"en": "SINISCOLA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114048",
+		"descrizione": {
+			"it": "SINISCOLA",
+			"en": "SINISCOLA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64779,6 +67524,15 @@
 			"en": "SINNAI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118058",
+		"descrizione": {
+			"it": "SINNAI",
+			"en": "SINNAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64824,6 +67578,15 @@
 			"en": "SIRIS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115069",
+		"descrizione": {
+			"it": "SIRIS",
+			"en": "SIRIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64886,7 +67649,7 @@
 			"it": "SISSA TRECASALI",
 			"en": "SISSA TRECASALI"
 		},
-		"dataInizio": "2013-12-31T23:00:00",
+		"dataInizio": "2014-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64895,7 +67658,16 @@
 			"it": "SIURGUS DONIGALA",
 			"en": "SIURGUS DONIGALA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118059",
+		"descrizione": {
+			"it": "SIURGUS DONIGALA",
+			"en": "SIURGUS DONIGALA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64958,7 +67730,7 @@
 			"it": "SMERILLO",
 			"en": "SMERILLO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -64986,6 +67758,15 @@
 			"en": "SODDI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115070",
+		"descrizione": {
+			"it": "SODDÌ",
+			"en": "SODDÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65076,6 +67857,15 @@
 			"en": "SOLARUSSA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115071",
+		"descrizione": {
+			"it": "SOLARUSSA",
+			"en": "SOLARUSSA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65102,7 +67892,7 @@
 			"it": "SOLBIATE CON CAGNO",
 			"en": "SOLBIATE CON CAGNO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65129,7 +67919,16 @@
 			"it": "SOLEMINIS",
 			"en": "SOLEMINIS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118060",
+		"descrizione": {
+			"it": "SOLEMINIS",
+			"en": "SOLEMINIS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65462,7 +68261,7 @@
 			"it": "SORBOLO MEZZANI",
 			"en": "SORBOLO MEZZANI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65508,6 +68307,15 @@
 			"en": "SORGONO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114049",
+		"descrizione": {
+			"it": "SORGONO",
+			"en": "SORGONO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65589,6 +68397,15 @@
 			"en": "SORRADILE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115072",
+		"descrizione": {
+			"it": "SORRADILE",
+			"en": "SORRADILE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65607,6 +68424,15 @@
 			"en": "SORSO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112055",
+		"descrizione": {
+			"it": "SORSO",
+			"en": "SORSO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65732,7 +68558,7 @@
 			"it": "SOVICO",
 			"en": "SOVICO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -65975,7 +68801,7 @@
 			"it": "SPINAZZOLA",
 			"en": "SPINAZZOLA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -66399,6 +69225,15 @@
 			"en": "STINTINO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112056",
+		"descrizione": {
+			"it": "STINTINO",
+			"en": "STINTINO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -66668,7 +69503,16 @@
 			"it": "SUELLI",
 			"en": "SUELLI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118061",
+		"descrizione": {
+			"it": "SUELLI",
+			"en": "SUELLI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -66695,7 +69539,7 @@
 			"it": "SULBIATE",
 			"en": "SULBIATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -66740,7 +69584,16 @@
 			"it": "SUNI",
 			"en": "SUNI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115073",
+		"descrizione": {
+			"it": "SUNI",
+			"en": "SUNI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -66912,6 +69765,15 @@
 			"en": "TADASUNI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115074",
+		"descrizione": {
+			"it": "TADASUNI",
+			"en": "TADASUNI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67010,7 +69872,7 @@
 			"it": "TALAMELLO",
 			"en": "TALAMELLO"
 		},
-		"dataInizio": "2012-12-31T23:00:00",
+		"dataInizio": "2013-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67028,7 +69890,16 @@
 			"it": "TALANA",
 			"en": "TALANA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116015",
+		"descrizione": {
+			"it": "TALANA",
+			"en": "TALANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67424,7 +70295,16 @@
 			"it": "TELTI",
 			"en": "TELTI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113024",
+		"descrizione": {
+			"it": "TELTI",
+			"en": "TELTI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67451,7 +70331,16 @@
 			"it": "TEMPIO PAUSANIA",
 			"en": "TEMPIO PAUSANIA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020113025",
+		"descrizione": {
+			"it": "TEMPIO PAUSANIA",
+			"en": "TEMPIO PAUSANIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67560,6 +70449,15 @@
 			"en": "TERGU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112057",
+		"descrizione": {
+			"it": "TERGU",
+			"en": "TERGU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67686,6 +70584,15 @@
 			"en": "TERRALBA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115075",
+		"descrizione": {
+			"it": "TERRALBA",
+			"en": "TERRALBA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67775,7 +70682,7 @@
 			"it": "TERRE D'ADIGE",
 			"en": "TERRE D'ADIGE"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67784,7 +70691,7 @@
 			"it": "TERRE DEL RENO",
 			"en": "TERRE DEL RENO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67793,7 +70700,7 @@
 			"it": "TERRE ROVERESCHE",
 			"en": "TERRE ROVERESCHE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67838,7 +70745,16 @@
 			"it": "TERTENIA",
 			"en": "TERTENIA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116016",
+		"descrizione": {
+			"it": "TERTENIA",
+			"en": "TERTENIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67929,6 +70845,15 @@
 			"en": "TETI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114050",
+		"descrizione": {
+			"it": "TETI",
+			"en": "TETI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67937,7 +70862,16 @@
 			"it": "TEULADA",
 			"en": "TEULADA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119024",
+		"descrizione": {
+			"it": "TEULADA",
+			"en": "TEULADA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67983,6 +70917,15 @@
 			"en": "THIESI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112058",
+		"descrizione": {
+			"it": "THIESI",
+			"en": "THIESI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -67992,6 +70935,15 @@
 			"en": "TIANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114051",
+		"descrizione": {
+			"it": "TIANA",
+			"en": "TIANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68081,7 +71033,16 @@
 			"it": "TINNURA",
 			"en": "TINNURA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115076",
+		"descrizione": {
+			"it": "TINNURA",
+			"en": "TINNURA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68145,6 +71106,15 @@
 			"en": "TISSI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112059",
+		"descrizione": {
+			"it": "TISSI",
+			"en": "TISSI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68334,6 +71304,15 @@
 			"en": "TONARA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114052",
+		"descrizione": {
+			"it": "TONARA",
+			"en": "TONARA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68577,6 +71556,15 @@
 			"en": "TORPE'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020114053",
+		"descrizione": {
+			"it": "TORPÈ",
+			"en": "TORPÈ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68595,6 +71583,15 @@
 			"en": "TORRALBA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112060",
+		"descrizione": {
+			"it": "TORRALBA",
+			"en": "TORRALBA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68702,7 +71699,7 @@
 			"it": "TORRE DE' BUSI",
 			"en": "TORRE DE' BUSI"
 		},
-		"dataInizio": "2018-04-23T22:00:00",
+		"dataInizio": "2018-04-24T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -68837,7 +71834,7 @@
 			"it": "TORRE SAN PATRIZIO",
 			"en": "TORRE SAN PATRIZIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69108,6 +72105,15 @@
 			"en": "TORTOLI'"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116017",
+		"descrizione": {
+			"it": "TORTOLÌ",
+			"en": "TORTOLÌ"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69225,6 +72231,15 @@
 			"en": "TRAMATZA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115077",
+		"descrizione": {
+			"it": "TRAMATZA",
+			"en": "TRAMATZA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69287,7 +72302,7 @@
 			"it": "TRANI",
 			"en": "TRANI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69368,7 +72383,16 @@
 			"it": "TRATALIAS",
 			"en": "TRATALIAS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119021",
+		"descrizione": {
+			"it": "TRATALIAS",
+			"en": "TRATALIAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69458,7 +72482,7 @@
 			"it": "TRE VILLE",
 			"en": "TRE VILLE"
 		},
-		"dataInizio": "2015-12-31T23:00:00",
+		"dataInizio": "2016-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69512,7 +72536,7 @@
 			"it": "TRECASTELLI",
 			"en": "TRECASTELLI"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69611,7 +72635,7 @@
 			"it": "TREMEZZINA",
 			"en": "TREMEZZINA"
 		},
-		"dataInizio": "2014-02-03T23:00:00",
+		"dataInizio": "2014-02-04T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69701,7 +72725,7 @@
 			"it": "TREPPO LIGOSULLO",
 			"en": "TREPPO LIGOSULLO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69773,7 +72797,7 @@
 			"it": "TRESIGNANA",
 			"en": "TRESIGNANA"
 		},
-		"dataInizio": "2018-12-31T23:00:00",
+		"dataInizio": "2019-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -69792,6 +72816,15 @@
 			"en": "TRESNURAGHES"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115078",
+		"descrizione": {
+			"it": "TRESNURAGHES",
+			"en": "TRESNURAGHES"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70016,7 +73049,16 @@
 			"it": "TRIEI",
 			"en": "TRIEI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116018",
+		"descrizione": {
+			"it": "TRIEI",
+			"en": "TRIEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70070,8 +73112,8 @@
 			"it": "TRINITA' D'AGULTU E VIGNOLA",
 			"en": "TRINITA' D'AGULTU E VIGNOLA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "016110010",
@@ -70079,7 +73121,16 @@
 			"it": "TRINITAPOLI",
 			"en": "TRINITAPOLI"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "020113026",
+		"descrizione": {
+			"it": "TRINITÀ D'AGULTU E VIGNOLA",
+			"en": "TRINITÀ D'AGULTU E VIGNOLA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70133,7 +73184,7 @@
 			"it": "TRIUGGIO",
 			"en": "TRIUGGIO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70358,7 +73409,16 @@
 			"it": "TUILI",
 			"en": "TUILI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117022",
+		"descrizione": {
+			"it": "TUILI",
+			"en": "TUILI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70368,6 +73428,15 @@
 			"en": "TULA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112061",
+		"descrizione": {
+			"it": "TULA",
+			"en": "TULA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70457,7 +73526,16 @@
 			"it": "TURRI",
 			"en": "TURRI"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117023",
+		"descrizione": {
+			"it": "TURRI",
+			"en": "TURRI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70592,7 +73670,7 @@
 			"it": "UGGIATE CON RONAGO",
 			"en": "UGGIATE CON RONAGO"
 		},
-		"dataInizio": "1999-12-31T22:00:00",
+		"dataInizio": "2000-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70611,7 +73689,7 @@
 			"en": "ULA' TIRSO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
-		"dataFine": "2099-12-31T00:00:00"
+		"dataFine": "2025-12-31T00:00:00"
 	},
 	{
 		"codice": "020091098",
@@ -70619,7 +73697,16 @@
 			"it": "ULASSAI",
 			"en": "ULASSAI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116019",
+		"descrizione": {
+			"it": "ULASSAI",
+			"en": "ULASSAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70629,6 +73716,15 @@
 			"en": "ULTIMO/ULTEN"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2099-12-31T00:00:00"
+	},
+	{
+		"codice": "020115079",
+		"descrizione": {
+			"it": "ULÀ TIRSO",
+			"en": "ULÀ TIRSO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70674,6 +73770,15 @@
 			"en": "URAS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115080",
+		"descrizione": {
+			"it": "URAS",
+			"en": "URAS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70737,6 +73842,15 @@
 			"en": "URI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112062",
+		"descrizione": {
+			"it": "URI",
+			"en": "URI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70763,7 +73877,16 @@
 			"it": "URZULEI",
 			"en": "URZULEI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116020",
+		"descrizione": {
+			"it": "URZULEI",
+			"en": "URZULEI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70782,6 +73905,15 @@
 			"en": "USELLUS"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115081",
+		"descrizione": {
+			"it": "USELLUS",
+			"en": "USELLUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70791,6 +73923,15 @@
 			"en": "USINI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112063",
+		"descrizione": {
+			"it": "USINI",
+			"en": "USINI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70799,7 +73940,7 @@
 			"it": "USMATE VELATE",
 			"en": "USMATE VELATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70808,7 +73949,16 @@
 			"it": "USSANA",
 			"en": "USSANA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118063",
+		"descrizione": {
+			"it": "USSANA",
+			"en": "USSANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70817,7 +73967,16 @@
 			"it": "USSARAMANNA",
 			"en": "USSARAMANNA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117024",
+		"descrizione": {
+			"it": "USSARAMANNA",
+			"en": "USSARAMANNA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70826,7 +73985,16 @@
 			"it": "USSASSAI",
 			"en": "USSASSAI"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116021",
+		"descrizione": {
+			"it": "USSASSAI",
+			"en": "USSASSAI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -70872,6 +74040,15 @@
 			"en": "UTA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118064",
+		"descrizione": {
+			"it": "UTA",
+			"en": "UTA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71033,7 +74210,7 @@
 			"it": "VAL BREMBILLA",
 			"en": "VAL BREMBILLA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71051,7 +74228,7 @@
 			"it": "VAL DI CHY",
 			"en": "VAL DI CHY"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71078,7 +74255,7 @@
 			"it": "VAL DI ZOLDO",
 			"en": "VAL DI ZOLDO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71087,7 +74264,7 @@
 			"it": "VAL LIONA",
 			"en": "VAL LIONA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71132,7 +74309,7 @@
 			"it": "VALBRENTA",
 			"en": "VALBRENTA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71159,7 +74336,7 @@
 			"it": "VALCHIUSA",
 			"en": "VALCHIUSA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71186,7 +74363,7 @@
 			"it": "VALDAONE",
 			"en": "VALDAONE"
 		},
-		"dataInizio": "2014-12-31T23:00:00",
+		"dataInizio": "2015-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71249,7 +74426,7 @@
 			"it": "VALDILANA",
 			"en": "VALDILANA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71375,7 +74552,7 @@
 			"it": "VALFORNACE",
 			"en": "VALFORNACE"
 		},
-		"dataInizio": "2018-04-03T12:58:44",
+		"dataInizio": "2018-04-04T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71510,7 +74687,7 @@
 			"it": "VALLE CANNOBINA",
 			"en": "VALLE CANNOBINA"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71637,6 +74814,15 @@
 			"en": "VALLEDORIA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112064",
+		"descrizione": {
+			"it": "VALLEDORIA",
+			"en": "VALLEDORIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71654,7 +74840,7 @@
 			"it": "VALLEFOGLIA",
 			"en": "VALLEFOGLIA"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71663,7 +74849,7 @@
 			"it": "VALLELAGHI",
 			"en": "VALLELAGHI"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71717,7 +74903,16 @@
 			"it": "VALLERMOSA",
 			"en": "VALLERMOSA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118065",
+		"descrizione": {
+			"it": "VALLERMOSA",
+			"en": "VALLERMOSA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -71906,7 +75101,7 @@
 			"it": "VALSAMOGGIA",
 			"en": "VALSAMOGGIA"
 		},
-		"dataInizio": "2013-12-31T23:00:00",
+		"dataInizio": "2014-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72005,7 +75200,7 @@
 			"it": "VALVARRONE",
 			"en": "VALVARRONE"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72023,7 +75218,7 @@
 			"it": "VALVASONE ARZENE",
 			"en": "VALVASONE ARZENE"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72185,7 +75380,7 @@
 			"it": "VAREDO",
 			"en": "VAREDO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72374,7 +75569,7 @@
 			"it": "VEDANO AL LAMBRO",
 			"en": "VEDANO AL LAMBRO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72419,7 +75614,7 @@
 			"it": "VEDUGGIO CON COLZANO",
 			"en": "VEDUGGIO CON COLZANO"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72653,7 +75848,7 @@
 			"it": "VENTASSO",
 			"en": "VENTASSO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72707,7 +75902,7 @@
 			"it": "VERANO BRIANZA",
 			"en": "VERANO BRIANZA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72797,7 +75992,7 @@
 			"it": "VERDERIO",
 			"en": "VERDERIO"
 		},
-		"dataInizio": "2016-03-09T23:00:00",
+		"dataInizio": "2016-03-10T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -72878,7 +76073,7 @@
 			"it": "VERMEZZO CON ZELO",
 			"en": "VERMEZZO CON ZELO"
 		},
-		"dataInizio": "2019-02-19T23:00:00",
+		"dataInizio": "2019-02-20T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -73500,6 +76695,15 @@
 			"en": "VIDDALBA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112065",
+		"descrizione": {
+			"it": "VIDDALBA",
+			"en": "VIDDALBA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74112,6 +77316,15 @@
 			"en": "VILLA SAN PIETRO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118066",
+		"descrizione": {
+			"it": "VILLA SAN PIETRO",
+			"en": "VILLA SAN PIETRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74139,6 +77352,15 @@
 			"en": "VILLA SANT'ANTONIO"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115082",
+		"descrizione": {
+			"it": "VILLA SANT'ANTONIO",
+			"en": "VILLA SANT'ANTONIO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74193,6 +77415,15 @@
 			"en": "VILLA VERDE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115083",
+		"descrizione": {
+			"it": "VILLA VERDE",
+			"en": "VILLA VERDE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74237,7 +77468,16 @@
 			"it": "VILLACIDRO",
 			"en": "VILLACIDRO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117025",
+		"descrizione": {
+			"it": "VILLACIDRO",
+			"en": "VILLACIDRO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74364,6 +77604,15 @@
 			"en": "VILLAGRANDE STRISAILI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020116022",
+		"descrizione": {
+			"it": "VILLAGRANDE STRISAILI",
+			"en": "VILLAGRANDE STRISAILI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74426,7 +77675,16 @@
 			"it": "VILLAMAR",
 			"en": "VILLAMAR"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117026",
+		"descrizione": {
+			"it": "VILLAMAR",
+			"en": "VILLAMAR"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74444,7 +77702,16 @@
 			"it": "VILLAMASSARGIA",
 			"en": "VILLAMASSARGIA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119022",
+		"descrizione": {
+			"it": "VILLAMASSARGIA",
+			"en": "VILLAMASSARGIA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74580,6 +77847,15 @@
 			"en": "VILLANOVA MONTELEONE"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020112066",
+		"descrizione": {
+			"it": "VILLANOVA MONTELEONE",
+			"en": "VILLANOVA MONTELEONE"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74607,6 +77883,15 @@
 			"en": "VILLANOVA TRUSCHEDU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115084",
+		"descrizione": {
+			"it": "VILLANOVA TRUSCHEDU",
+			"en": "VILLANOVA TRUSCHEDU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74615,7 +77900,16 @@
 			"it": "VILLANOVA TULO",
 			"en": "VILLANOVA TULO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118067",
+		"descrizione": {
+			"it": "VILLANOVA TULO",
+			"en": "VILLANOVA TULO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74624,7 +77918,16 @@
 			"it": "VILLANOVAFORRU",
 			"en": "VILLANOVAFORRU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117027",
+		"descrizione": {
+			"it": "VILLANOVAFORRU",
+			"en": "VILLANOVAFORRU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74633,7 +77936,16 @@
 			"it": "VILLANOVAFRANCA",
 			"en": "VILLANOVAFRANCA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020117028",
+		"descrizione": {
+			"it": "VILLANOVAFRANCA",
+			"en": "VILLANOVAFRANCA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74660,7 +77972,16 @@
 			"it": "VILLAPERUCCIO",
 			"en": "VILLAPERUCCIO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020119023",
+		"descrizione": {
+			"it": "VILLAPERUCCIO",
+			"en": "VILLAPERUCCIO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74678,7 +77999,16 @@
 			"it": "VILLAPUTZU",
 			"en": "VILLAPUTZU"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118068",
+		"descrizione": {
+			"it": "VILLAPUTZU",
+			"en": "VILLAPUTZU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74786,7 +78116,16 @@
 			"it": "VILLASALTO",
 			"en": "VILLASALTO"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118069",
+		"descrizione": {
+			"it": "VILLASALTO",
+			"en": "VILLASALTO"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74795,7 +78134,7 @@
 			"it": "VILLASANTA",
 			"en": "VILLASANTA"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74804,7 +78143,16 @@
 			"it": "VILLASIMIUS",
 			"en": "VILLASIMIUS"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118070",
+		"descrizione": {
+			"it": "VILLASIMIUS",
+			"en": "VILLASIMIUS"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74813,7 +78161,16 @@
 			"it": "VILLASOR",
 			"en": "VILLASOR"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118071",
+		"descrizione": {
+			"it": "VILLASOR",
+			"en": "VILLASOR"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74822,7 +78179,16 @@
 			"it": "VILLASPECIOSA",
 			"en": "VILLASPECIOSA"
 		},
-		"dataInizio": "2018-04-10T22:00:00",
+		"dataInizio": "2018-04-11T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020118072",
+		"descrizione": {
+			"it": "VILLASPECIOSA",
+			"en": "VILLASPECIOSA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74850,6 +78216,15 @@
 			"en": "VILLAURBANA"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115085",
+		"descrizione": {
+			"it": "VILLAURBANA",
+			"en": "VILLAURBANA"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74876,7 +78251,7 @@
 			"it": "VILLE D'ANAUNIA",
 			"en": "VILLE D'ANAUNIA"
 		},
-		"dataInizio": "2015-12-31T23:00:00",
+		"dataInizio": "2016-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74885,7 +78260,7 @@
 			"it": "VILLE DI FIEMME",
 			"en": "VILLE DI FIEMME"
 		},
-		"dataInizio": "2019-12-31T23:00:00",
+		"dataInizio": "2020-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -74966,7 +78341,7 @@
 			"it": "VIMERCATE",
 			"en": "VIMERCATE"
 		},
-		"dataInizio": "2010-06-29T22:00:00",
+		"dataInizio": "2010-06-30T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -75678,6 +79053,15 @@
 			"en": "ZEDDIANI"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115086",
+		"descrizione": {
+			"it": "ZEDDIANI",
+			"en": "ZEDDIANI"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
@@ -75768,6 +79152,15 @@
 			"en": "ZERFALIU"
 		},
 		"dataInizio": "2000-01-01T00:00:00",
+		"dataFine": "2025-12-31T00:00:00"
+	},
+	{
+		"codice": "020115087",
+		"descrizione": {
+			"it": "ZERFALIU",
+			"en": "ZERFALIU"
+		},
+		"dataInizio": "2026-01-01T00:00:00",
 		"dataFine": "2099-12-31T00:00:00"
 	},
 	{
