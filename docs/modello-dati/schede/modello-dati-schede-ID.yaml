@@ -5,7 +5,8 @@ info:
     In caso di modifica dei cup la scheda dovrà contenere ogni volta la lista dei cup validi. Questa lista sovrascriverà la precedente lista inviata.\
     Quindi i cup validi saranno sempre solo quelli inviati con l'ultima scheda ID.\
     La scheda permette la modifica del ribasso di aggiudicazione solo in caso di omessa comunicazione in fase di affidamento.\
-    Con questa scheda può essere comunicata anche l'informazione relativa al docFAP, ovvero se è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM
+    Con questa scheda può essere comunicata anche l'informazione relativa al docFAP, ovvero se è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM.\
+    La scheda permette infine di modificare l'indirizzo dei documenti di gara    
   version: 1.0.0
 components:
   schemas:
@@ -43,7 +44,7 @@ components:
           maximum: 100
           exclusiveMaximum: true
     ComunicazioneUrlType:
-      description: Dati inerenti la comunicazione del ribasso di aggiudicazione
+      description: Dati inerenti la modifica dell'indirizzo dei documenti di gara'
       type: object
       required: [motivoCorrezione,url]
       additionalProperties: false
