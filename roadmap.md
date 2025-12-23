@@ -81,7 +81,7 @@
 |84809|Revisione flussi 61,62 e 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria |Revisione flussi 61,62 e 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria. Introduzione di una nuova scheda di indizione per il flusso soprasoglia.|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:white_check_mark:|
 |70558|TED - Migrazione Nuove API v3|Aggiornamento API endpoint URLs e modifica del nome del parametro "noticeAuthorLocale" in "noticeAuthorLang"|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:white_check_mark:|
 |86830|Introduzione xsd per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:x:|
-|78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
+|78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:white_check_mark:|
 |||||||
 |68714|Revisione flusso di esecuzione|Revisione della corretta successione delle schede di avvio del flusso SC1 e I1, per eliminare la possibilità di non rilevare la data di sottoscrizione del contratto. Revisione della successione di eventi della fase di conclusione|/<br>/<br>/<br>|||
 |||||||
