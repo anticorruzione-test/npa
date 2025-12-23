@@ -64,7 +64,6 @@
 |78221|scheda ID: correzione url trasparenza|Nella scheda ID sarà aggiunta la possibilità di integrare o correggere il dato datiBaseDocumenti.url|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
 |77851|Introduzione regole restrittive per l'uso della tipologica tipoProcedura|Saranno introdotte delle regole per limitare le scelte delle voci della tipologica tipoProcedura a quelle compatibili con la tipologia di comunicazione|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:x:|
 |77857|Ridefinizione tipo per i campi data/ora|Il nome del campo  DatiTerminiInvioType.oraScadenzaPresentazioneOfferte sarà cambiato in  DatiTerminiInvioType.ScadenzaPresentazioneOfferte|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:x:|
-|78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
 |72902|Revisione Regole Scheda S3|Introduzione di una regola che verifichi la coerenza tra il tipo di progettazione e il tipo di soggetto indicato.|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:x:|
 |84898|Ripristino stato precedente ultima comunicazione - adeguamento PCP UI|La funzionalità di roll-back sarà disponibile anche sulla UI, ma potrà essere utilizzata solo se l'ultima scheda sarà stata inviata da PCP-UI|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
 |63161|Aggiornamento eForm SDK 1.12 - risoluzione issue sulle Date/Durate (BT-137, BT-536)|Schede ISDA2, P7_3, PL2_7, P2_11, P2_19: Revisione dell’oggetto DatiBaseDurataType|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
@@ -82,6 +81,7 @@
 |84809|Revisione flussi 61,62 e 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria |Revisione flussi 61,62 e 72 per differenziazione procedure negoziate sopra e sotto soglia comunitaria. Introduzione di una nuova scheda di indizione per il flusso soprasoglia.|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:white_check_mark:|
 |70558|TED - Migrazione Nuove API v3|Aggiornamento API endpoint URLs e modifica del nome del parametro "noticeAuthorLocale" in "noticeAuthorLang"|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:white_check_mark:|
 |86830|Introduzione xsd per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica|30/01/2026*<br>29/05/2026*<br>30/06/2026*|CHG-07|:x:|
+|78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.|30/01/2026*<br>31/03/2026*<br>30/04/2026*|CHG-07|:white_check_mark:|
 |||||||
 |68714|Revisione flusso di esecuzione|Revisione della corretta successione delle schede di avvio del flusso SC1 e I1, per eliminare la possibilità di non rilevare la data di sottoscrizione del contratto. Revisione della successione di eventi della fase di conclusione|/<br>/<br>/<br>|||
 |||||||
