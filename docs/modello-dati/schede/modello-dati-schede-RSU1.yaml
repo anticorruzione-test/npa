@@ -82,7 +82,7 @@ components:
         cpv:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/chg-07/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum'   
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum'   
     AnacFormRSU1Type:
       description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
       type: object
