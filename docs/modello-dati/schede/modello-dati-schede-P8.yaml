@@ -60,7 +60,7 @@ components:
           minLength: 8
           maxLength: 64
         tipoScheda: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipoAppaltoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipoSchedaEnum'
         idSchedaAvr:
           description: identificativo restituito dal servizio all’invio della scheda AVR.
           type: string   
