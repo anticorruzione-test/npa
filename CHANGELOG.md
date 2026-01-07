@@ -1542,6 +1542,12 @@ aggiunta regola REG5_1
     * P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn;
 </details>
 
+<summary><h1>Note di rilascio del 07/01/2026 (In Esercizio)</h1></summary>
+
+### Orchestratore
+* ticket 93808:
+  * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
+
 <summary><h1>Note di rilascio del 30/11/2025 (Changelog-07)</h1></summary>
 
 **NOTA**
