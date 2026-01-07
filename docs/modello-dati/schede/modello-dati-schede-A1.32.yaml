@@ -11,12 +11,12 @@ components:
       additionalProperties: false
       properties:
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_32Type'      
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_32Type'      
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:        
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_32Type'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_32Type'
  
     SchedaA1_32Type:
       description: Avviso di aggiudicazione di una concessione, direttiva concessioni, regime ordinario. Articolo 32, paragrafo 2 (riferimento all’allegato VII), della direttiva 2014/23/UE. Articolo 182 comma 11 secondo periodo e comma 12 decreto legislativo 36/2023.
@@ -27,4 +27,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA1_32Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'          
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'          

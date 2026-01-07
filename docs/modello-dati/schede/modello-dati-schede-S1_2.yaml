@@ -17,7 +17,7 @@ components:
           description: Dati relativi ai soggetti invitati
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SoggettoType'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SoggettoType'
         dataInvito: 
           description: Data della lettera di invito
           type: string

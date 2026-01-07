@@ -10,22 +10,22 @@ components:
       required: [relazioneUnicaSulleProcedure,datiBaseStrumentiProcedura,datiBaseSubappalti]      
       properties:
         modalitaRiaggiudicazioneAffidamento:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'      
         relazioneUnicaSulleProcedure:
           description: Il sottoscritto dichiara che questa SA ha redatto la Relazione Unica sulle Procedure
           type: boolean               
         datiBaseProcedura:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAccelerataType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseProceduraAccelerataType'
         datiBaseStrumentiProcedura:
           allOf: 
-          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAType'
+          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseStrumentiProceduraAType'
         datiBaseSubappalti:
           allOf: 
-          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiRequiredType'            
+          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiRequiredType'            
     AggiudicazioneA3_4Type:
       description: Oggetto che riporta i dati inerenti la fase di aggiudicazione
       allOf: # estende la classe AggiudicazioneCompletaType
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneCompletaType'      
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneCompletaType'      
       type: object
       additionalProperties: false
       required: [numeroOfferteAmmesse,datiBaseAggiudicazioneAppalto,datiBaseRisultatoProcedura]
@@ -35,15 +35,15 @@ components:
           type: number
           format: integer 
         quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'          
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'          
         datiBaseRisultatoProcedura:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseEsitoRisultatoProceduraType'  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseEsitoRisultatoProceduraType'  
         datiBaseSottomissioniRicevute:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'         
         datiBaseAggiudicazioneAppalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'  
         datiBaseAccessibilita:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAccessibilitaType'
 
     AnacFormA3_4Type:
       description: Contiene tutti i dati relativi al contraente generale

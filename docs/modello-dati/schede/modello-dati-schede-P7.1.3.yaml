@@ -7,25 +7,25 @@ components:
    LottoP7_1_3Type:
       description: Oggetto che riporta i dati del lotto all'interno della scheda di avvio dell'indagine di mercato
       allOf: # estende la classe LottoP7BaseType
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP7BaseType'      
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP7BaseType'      
       type: object
       additionalProperties: false
       required: [datiBaseTerminiInvio]
       properties:
         quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'       
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'       
         datiBaseTerminiInvio:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioSoloScadenzaType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseTerminiInvioSoloScadenzaType'
    AnacFormP7_1_3Type:
       description: Contiene i dati per la scheda di avvio dell'indagine di mercato
       allOf: # estende la classe AnacFormBaseType
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'   
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'   
       type: object
       required: [appalto,lotti] 
       additionalProperties: false
       properties:
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP7BaseType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP7BaseType'
         lotti:
           description: Dati relativi ai lotti
           type: array
@@ -40,4 +40,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormP7_1_3Type'          
         espd:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'           
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'           

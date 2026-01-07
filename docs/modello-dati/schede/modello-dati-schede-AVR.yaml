@@ -14,7 +14,7 @@ components:
     AnacFormAVRType:
       description: Anagrafica dei soggetti.
       allOf: # estende la classe AnacFormBaseType
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'
       type: object
       additionalProperties: false
       required: [elencoSoggetti]
@@ -27,7 +27,7 @@ components:
         elencoSoggetti:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SoggettoType'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SoggettoType'
     SchedaAVRType:
       description: Introduzione comunicazione anagrafica per avvio verifiche requisiti
       type: object

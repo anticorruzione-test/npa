@@ -19,7 +19,7 @@ components:
           type: string
           format: date-time
         motivoMancataEsecuzioneSubappalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancataEsecuzioneSubappaltoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancataEsecuzioneSubappaltoEnum'
     AnacFormCS1Type:
       description: Contiene tutti i dati relativi alla scheda di conclusione di subappalto
       type: object

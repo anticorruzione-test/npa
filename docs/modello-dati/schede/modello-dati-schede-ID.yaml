@@ -17,7 +17,7 @@ components:
       additionalProperties: false
       properties:
         motivoVariazioneCUP:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariazioneCUPEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariazioneCUPEnum'    
         cup:
           description: Cup
           type: array
@@ -36,7 +36,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
         motivoCorrezione:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneEnum'    
         ribassoAggiudicazione:
           description: ribasso di aggiudicazione. valori ammessi-> (x<100); sono ammessi valori negativi. I valori positivi saranno considerati come integrazione del campo offertePresentate.offertaEconomica, mentre i valori negativi andranno ad integrare il campo offertePresentate.offertaInAumento.
           type: number
@@ -50,7 +50,7 @@ components:
       additionalProperties: false
       properties:
         motivoCorrezione:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneUrlEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneUrlEnum'    
         url:
           description: Indirizzo dei documenti di gara.
           type: string
@@ -61,7 +61,7 @@ components:
       additionalProperties: false
       properties:
         motivoRichiestaModifica:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModificaEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModificaEnum'    
         comunicazioneCUP:
             $ref: '#/components/schemas/ComunicazioneCUPType'
         comunicazioneRibassoAggiudicazione:

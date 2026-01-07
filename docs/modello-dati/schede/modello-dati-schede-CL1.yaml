@@ -19,7 +19,7 @@ components:
           type: string
           format: date-time
         modoCollaudo:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoCollaudoEnum'
         dataNomina:
           description: Data nomina collaudatore/Commissione
           type: string
@@ -41,9 +41,9 @@ components:
           type: string
           enum: ['POSITIVO', 'NEGATIVO'] 
         quadroEconomicoStandard:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoType'
         quadroEconomicoConcessioni:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoConcessioniType' 
         numeroTotaleRiserve:
           description: Numero totale riserve definite con accordo bonario
           type: number
@@ -55,7 +55,7 @@ components:
         modalitaDefinizione:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DefinizioneType'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DefinizioneType'
     AnacFormCL1Type:
       description: Contiene tutti i dati di collaudo
       type: object

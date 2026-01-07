@@ -10,9 +10,9 @@ components:
       additionalProperties: false
       properties:
         causaInterruzioneAnticipata:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviInterruzioneEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviInterruzioneEnum'
         motiviRisoluzione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRisoluzioneEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRisoluzioneEnum'
         dataStipula:
           description: Data stipula del contratto
           type: string
@@ -26,7 +26,7 @@ components:
           type: string
           format: date-time
         oneriEconomiciRisoluzioneRecesso:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OneriEconomiciRisoluzioneRecessoEnum'      
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OneriEconomiciRisoluzioneRecessoEnum'      
         importo: 
           description: Importo
           type: number

@@ -14,7 +14,7 @@ components:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:       
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_31Type'      
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_31Type'      
     SchedaA1_31Type:
       description: Avviso aggiudicazione  direttiva difesa. Articolo 30, paragrafo 3, della direttiva 2009/81/CE. Articolo 23 decretoegislativo 208/2011.
       type: object
@@ -24,4 +24,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA1_31Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

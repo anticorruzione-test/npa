@@ -11,12 +11,12 @@ components:
       additionalProperties: false
       properties:
         appalto:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_30Type'
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_30Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_30Type'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_30Type'
     SchedaA1_30Type:
       description: Avviso aggiudicazione direttiva settoriale, regime ordinario. Articolo 70 della direttiva 2014/25/UE. Articolo 163 comma 2 decreto legislativo 36/2023.
       type: object
@@ -26,4 +26,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA1_30Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

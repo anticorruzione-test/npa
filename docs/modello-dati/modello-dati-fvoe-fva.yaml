@@ -8,27 +8,27 @@ paths: {}
 components:
   schemas:
     StatoAutorizzazioneEnum:  
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoAutorizzazioneEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoAutorizzazioneEnum'
     StatoFascicoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
     StatoDocumentoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
     TipoDocumentoEnum: 
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
     TipoFascicoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoFascicoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoFascicoloEnum'
     TipoOggettoFascicoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOggettoFascicoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOggettoFascicoloEnum'
     TipoAzioneFascicoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneFascicoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneFascicoloEnum'
     TipoAzioneDocumentoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoAzioneDocumentoEnum'
     AppaltoType : 
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     PianoType : 
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PianoType'
     StatoRichiestaDocumentoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoRichiestaDocumentoEnum'
     FascicoloType: 
       description: Oggetto che riporta i dati del Fascicolo generico
       type: object
@@ -300,7 +300,7 @@ components:
       additionalProperties: false
       properties:
         personaGiuridica:
-          description: Anagrafica della persona giuridica in formato json. Per la struttura fare riferimento ai valori contenuti nel file [modello-dati-persona-giuridica.yaml](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-persona-giuridica.yaml) 
+          description: Anagrafica della persona giuridica in formato json. Per la struttura fare riferimento ai valori contenuti nel file [modello-dati-persona-giuridica.yaml](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-persona-giuridica.yaml) 
           type: string
           example: '{\"stato\":{\"stato\":\"ATTIVA\",\"data_inizio\":\"1968-10-26.....'
     AnagraficaSAType:
@@ -460,7 +460,7 @@ components:
               maxLength: 4
               example: '1980'
             CodiceCatastoStato:
-              description: codice catastale stato di nascita.  Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoCatastoStato.json)
+              description: codice catastale stato di nascita.  Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoCatastoStato.json)
               type: string
               maxLength: 4
               example: Z000
@@ -528,7 +528,7 @@ components:
           maxLength: 250
           example: Mangiare Bene Italia  S.p.A.
         CodiceFormaGiuridica:
-          description: codice forma giuriridica. fare riferimento ai valori contenuti nel file [tipoFormaGiuridica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoFormaGiuridica.json)
+          description: codice forma giuriridica. fare riferimento ai valori contenuti nel file [tipoFormaGiuridica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoFormaGiuridica.json)
           type: string
           maxLength: 6
           example: SP
@@ -550,7 +550,7 @@ components:
               maxLength: 250
               example: C. Farina
             CodiceCatastoStato:
-              description: codice catastale stato della sede legale. Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoCatastoStato.json)
+              description: codice catastale stato della sede legale. Fare riferimento ai valori contenuti nel file [tipoCatastoStato.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoCatastoStato.json)
               type: string
               maxLength: 4
               example: F205
@@ -684,7 +684,7 @@ components:
           type: string
           example: 'DatiSA00850'
         prefettura:
-          description: Prefettura. Fare riferimento ai valori contenuti nel file [tipoPrefettura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoPrefettura.json)
+          description: Prefettura. Fare riferimento ai valori contenuti nel file [tipoPrefettura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoPrefettura.json)
           pattern: IT-(AG|AL|AN|AO|AR|AP|AT|AV|BA|BT|BL|BN|BG|BI|BO|BZ|BS|BR|CA|CL|CB|CI|CE|CT|CZ|CH|CO|CS|CR|KR|CN|EN|FM|FE|FI|FG|FC|FR|GE|GO|GR|IM|IS|SP|AQ|LT|LE|LC|LI|LO|LU|MC|MN|MS|MT|ME|MI|MO|MB|NA|NO|NU|OR|PD|PA|PR|PV|PG|PU|PE|PC|PI|PT|PN|PZ|PO|RG|RA|RC|RE|RI|RN|RM|RO|SA|SS|SV|SI|SR|SO|SU|TA|TE|TR|TO|TP|TN|TV|TS|UD|VA|VE|VB|VC|VR|VV|VI|VT)$
           type: string
         altrisoggetti:

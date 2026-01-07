@@ -11,12 +11,12 @@ components:
       additionalProperties: false
       properties:
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_29Type'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_29Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_29Type'             
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_29Type'             
     SchedaA1_29Type:
       description: Avviso aggiudicazione direttiva generale, regime ordinario. Articolo 50 della direttiva 2014/24/UE. Articolo 111 decreto legislativo 36/2023.
       type: object
@@ -26,4 +26,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA1_29Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'           
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'           

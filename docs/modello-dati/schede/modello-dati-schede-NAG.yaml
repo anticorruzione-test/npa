@@ -15,9 +15,9 @@ components:
           type: string      
         datiBaseRisultatoProcedura:
           allOf: 
-          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseGiustificazioneRisultatoProceduraType'
+          - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseGiustificazioneRisultatoProceduraType'
         esitoProceduraAnnullata:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'      
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'      
     AnacFormNAGType:
       description: Contiene tutti i dati relativi alla mancata aggiudicazione della gara - sotto soglia europea
       type: object

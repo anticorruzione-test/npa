@@ -6,13 +6,13 @@ components:
   schemas:
     ModificaContrattualeType:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale_40Type'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattuale_40Type'
       type: object
       additionalProperties: false
       required: [datiBaseModificaContrattuale]
       properties:    
         datiBaseModificaContrattuale:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseModificaContrattualeType'   
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseModificaContrattualeType'   
     AnacFormM2_40Type:
       description: Contiene tutti i dati di modifica contrattuale
       type: object

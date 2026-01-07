@@ -7,18 +7,18 @@ components:
     AnacFormP1_15_2Type:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf: # estende la classe AnacFormBaseType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType' 
       type: object
       required: [appalto,lotti]
       additionalProperties: false
       properties:  
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP_15Type'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoP_15Type'
         lotti:
           description: Dati relativi ai lotti
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP_15Type'  
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/LottoP_15Type'  
     SchedaP1_15_2Type:
       description: Avviso sull'esistenza di un sistema di qualificazione con indizione di procedura di scelta del contraente. Articolo 68 della direttiva 2014/25/UE, articolo 92, paragrafo 1, lettera c), della direttiva 2014/25/UE. Articolo 155 comma 3 lettera b)  decreto legislativo 36/2023. Articolo 162 comma 2 decreto legislativo 36/2023. Articolo 164 decreto legislativo 36/2023.
       type: object
@@ -28,6 +28,6 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormP1_15_2Type'
         eform:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
         espd:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'         

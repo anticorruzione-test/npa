@@ -11,12 +11,12 @@ components:
       additionalProperties: false
       properties:
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_33Type'      
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA1_33Type'      
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
           items:        
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_33Type'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA1_33Type'    
      
     SchedaA1_33Type:
       description: Avviso di aggiudicazione di un appalto, direttiva generale, regime allegerito. Articolo 75, paragrafo 2, della direttiva 2014/24/UE. Articolo 127 comma 3 decreto legislativo 36/2023.
@@ -27,4 +27,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA1_33Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

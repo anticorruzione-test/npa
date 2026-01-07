@@ -2042,31 +2042,31 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
   schemas:
     StatoFascicoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoFascicoloEnum'
     StatoDocumentoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/StatoDocumentoEnum'
     TipoDocumentoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoDocumentoEnum'
     ErroriEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'
     AnagraficaOEType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AnagraficaOEType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AnagraficaOEType'
     FVOEType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVOEType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVOEType'
     FVAType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVAType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVAType'
     FVPQType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVPQType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/FVPQType'
     DocumentoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoType'
     AutorizzazioneAccessoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AutorizzazioneAccessoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/AutorizzazioneAccessoType'
     RichiestaAccessoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/RichiestaAccessoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/RichiestaAccessoType'
     ContentDocumentType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType'
     StatoRichiestaDocumentoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoRichiestaDocumentoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/StatoRichiestaDocumentoType'
     RichiestaAccessoRequest:
       allOf: # estende il modello dati RichiestaAccessoType
         - $ref: '#/components/schemas/RichiestaAccessoType'
@@ -2093,7 +2093,7 @@ components:
           idRichiesta: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     RichiediDocumentiRequest:
       allOf: # estende il modello dati DocumentoRichiediType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoRichiediType'
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/DocumentoRichiediType'
       example:
         chiaveAccesso: "2022-01-23T12:02:05Z"
         tipoDocumento:

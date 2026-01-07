@@ -231,13 +231,13 @@ paths:
       parameters:
         - in: query
           name: stato
-          description: Codice stato della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoPiano.json)
+          description: Codice stato della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoPiano.json)
           schema:
             type: string
             example: 'IN_LAV'
         - in: query
           name: tipo
-          description: Codice tipologia della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoPiano.json)
+          description: Codice tipologia della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [tipoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoPiano.json)
           schema:
             type: string
             example: 'PREINFORMAZIONE'  
@@ -462,7 +462,7 @@ paths:
             type: string
         - in: query
           name: stato
-          description: Codice Stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: Codice Stato dell'Appalto - Se valorizzato, il parametro richiedere obbligatoriamente la valorizzazione di almeno un altro parametro - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             type: string
             example: 'IN_LAV'
@@ -833,7 +833,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: Codice Stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: Codice Stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             type: string
             example: 'IN_ATT_PUBB'
@@ -860,19 +860,19 @@ paths:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"          
         - in: query
           name: statoAvviso
-          description: Codice Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoAvviso.json)
+          description: Codice Stato in cui si trova l' Avviso - fare riferimento ai valori contenuti nel file [statoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoAvviso.json)
           schema:
             type: string
             example: 'IN_ATT_PUBB'
         - in: query
           name: tipoAvviso
-          description: Codice Tipo di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoAvviso.json)
+          description: Codice Tipo di avviso - fare riferimento ai valori contenuti nel file [tipoAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoAvviso.json)
           schema:
             type: string
             example: 'IT'
         - in: query
           name: azioneAvviso
-          description: Codice Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
+          description: Codice Tipo di azione dell'avviso - fare riferimento ai valori contenuti nel file [tipoAzioneAvviso.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoAzioneAvviso.json)
           schema:
             type: string
             example: 'AZ_PUBB'
@@ -1138,7 +1138,7 @@ paths:
             example: 9050626CD6
         - in: query
           name: stato
-          description: Codice stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoAppalto.json)
+          description: Codice stato dell'Appalto - fare riferimento ai valori contenuti nel file [statoAppalto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoAppalto.json)
           schema:
             type: string
             example: 'IN_ATT_PUBB'
@@ -1158,13 +1158,13 @@ paths:
           example: '2022-01-23T12:02:05Z'
         - in: query
           name: codiceScheda
-          description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/codiceScheda.json)
+          description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/codiceScheda.json)
           schema:
             type: string
             example: 'AD1_28'
         - in: query
           name: statoScheda
-          description: Codice Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/statoScheda.json)
+          description: Codice Stato della Scheda - fare riferimento ai valori contenuti nel file [statoScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/statoScheda.json)
           schema:
             type: string
             example: 'IN_LAV'
@@ -1310,21 +1310,21 @@ paths:
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
         - in: query
           name: tipoOperazione
-          description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoOperazione.json)
+          description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoOperazione.json)
           required: true
           schema:
             type: string
             example: "SC_VERIF"
         - in: query
           name: tipoRicerca
-          description: Codice Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
+          description: Codice Tipo di ricerca da eseguire - fare riferimento ai valori contenuti nel file [tipoRicercaOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoRicercaOperazione.json)
           required: true
           schema:
             type: string
             example: "ULTIMO_ESITO"
         - in: query
           name: esito
-          description: Codice sintetico esito operazione - fare riferimento ai valori contenuti nel file [esito.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/esito.json)
+          description: Codice sintetico esito operazione - fare riferimento ai valori contenuti nel file [esito.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/esito.json)
           schema:
             type: string
             example: "OK"
@@ -1599,18 +1599,18 @@ paths:
             example: 'RSSMRA94E07A511G'
         - in: query
           name: ruolo
-          description: Codice ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoRuolo.json)
+          description: Codice ruolo di un soggetto - fare riferimento ai valori contenuti nel file [tipoRuolo.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoRuolo.json)
           schema:
             type: string
             example: 'RP'
         - in: query
           name: servizio
-          description: Non gestito nella prima release - Codice servizio delegato al soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
+          description: Non gestito nella prima release - Codice servizio delegato al soggetto - fare riferimento ai valori contenuti nel file [tipoServizioSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoServizioSoggetto.json)
           schema:
             type: string
         - in: query
           name: operazione
-          description: Non gestito nella prima release - Codice operazione delegata al soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
+          description: Non gestito nella prima release - Codice operazione delegata al soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
           schema:
             type: string           
         - in: query
@@ -1852,59 +1852,59 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
   schemas:
     TipoServizioSoggettoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoServizioSoggettoEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoServizioSoggettoEnum'
     TipoOperazioneSoggettoEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoOperazioneSoggettoEnum'      
     TipoRuoloEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipoRuoloEnum'
     ErroriEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/ErroriEnum'      
     MotivoAnnullamentoComunicazioneEnum:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/MotivoAnnullamentoComunicazioneEnum'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/MotivoAnnullamentoComunicazioneEnum'
     AppaltoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AppaltoType'
     DatiPianoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoType'
     DatiPianoBaseType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoBaseType'      
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiPianoBaseType'      
     SoggettoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SoggettoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SoggettoType'
     PaginazioneType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
     SchedaGroupType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaGroupType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaGroupType'
     AvvisoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
     AvvisoBaseType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoBaseType'      
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoBaseType'      
     StatoAvvisoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
     CigType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
     DatiAppaltoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
     SchedaPianificazioneType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPianificazioneType'    
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPianificazioneType'    
     SchedaComunicaAppaltoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaComunicaAppaltoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaComunicaAppaltoType'
     SchedaPostPubblicazioneType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
     SchedaType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
     EsitoOperazioneType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
     StatoType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoType'
     TipologicaBaseType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaBaseType'      
     TipologicaType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/TipologicaType'
     DatiTipologicaType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiTipologicaType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiTipologicaType'
     ContentDocumentType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType' 
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-fvoe-fva.yaml#/components/schemas/ContentDocumentType' 
     ProfiloSAType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ProfiloSAType'
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/ProfiloSAType'
     RecuperaProfiloResponse: 
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'

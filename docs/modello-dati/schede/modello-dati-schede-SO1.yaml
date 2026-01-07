@@ -18,7 +18,7 @@ components:
           type: string
           format: date-time
         motivoSospensione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoSospensioneEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoSospensioneEnum'
     AnacFormSO1Type:
       description: Contiene tutti i dati relativi alla scheda di Sospensione
       type: object

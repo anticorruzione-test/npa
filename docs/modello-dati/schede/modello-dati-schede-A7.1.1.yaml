@@ -6,12 +6,12 @@ components:
   schemas:
     AggiudicazioneA7_1_1Type:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA7Type'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AggiudicazioneA7Type'
       type: object
       additionalProperties: false
       properties:   
         esitoProceduraAnnullata:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EsitoProceduraAnnullataEnum'  
     AnacFormA7_1_1Type:
       description: Contiene tutti i dati necessari per procedura negoziata senza bando pari o sopra soglia con invio al TED
       type: object
@@ -19,7 +19,7 @@ components:
       additionalProperties: false
       properties:  
         appalto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA7Type'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AppaltoA7Type'
         aggiudicazioni:
           description: Dati relativi alle aggiudicazioni
           type: array
@@ -34,4 +34,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormA7_1_1Type'
         eform:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'         

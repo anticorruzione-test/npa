@@ -6,7 +6,7 @@ components:
   schemas:
     ComunicazioneCM3Type:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ComunicazioneType'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ComunicazioneType'
       type: object
       additionalProperties: false
       required: [datiBase,datiBaseProcedura,datiBaseStrumentiProcedura]

@@ -16,7 +16,7 @@ components:
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         modificaContrattuale:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType' 
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModificaContrattualeType' 
     SchedaM1Type:
       description: Modifica contrattuale, direttiva generale e direttiva settoriale. Articolo 72, paragrafo 1, della direttiva 2014/24/UE. Articolo 89, paragrafo 1, della direttiva 2014/25/UE. Articolo 141 comma 3 lettera i) decreto legislativo 36/2023. Articolo 120 comma 14 e comma 15 decreto legislativo 36/2023. Articolo 5 comma 11 e comma 12 Allegato II.14.
       type: object
@@ -26,4 +26,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormM1Type'
         eform:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'        
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EformType'        

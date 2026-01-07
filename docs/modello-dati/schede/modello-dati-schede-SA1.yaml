@@ -14,9 +14,9 @@ components:
           description: Denominazione dello stato di avanzamento
           type: string
         denominazioneAvanzamentoMl:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'          
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'          
         modalitaPagamento:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaPagamentoEnum'
         impAnticipazione:
           description: Eventuale anticipazione 
           type: number
@@ -42,7 +42,7 @@ components:
           type: number
           format: double
         avanzamento:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
         numGiorniScostamento:
           description: Indicare lo scostamento registrato in numero di giorni
           type: number
