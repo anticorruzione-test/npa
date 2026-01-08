@@ -249,7 +249,7 @@ components:
           operatoreEconomico:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/PartecipanteType'
           operazione:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+            $ref: '#/components/schemas/OperazioneElencoEnum'
           statoOperatoreEconomico:
             type: string
           historyList:
