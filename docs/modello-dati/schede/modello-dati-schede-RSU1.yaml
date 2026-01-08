@@ -4,85 +4,45 @@ info:
   version: 1.0.0
 components:
   schemas:
-    SoggettoType:
-      description: Dati del soggetto
-      type: object
-      additionalProperties: false
-      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,operatoreEstero]
-      properties:
-        codiceFiscale:
-          description: Codice fiscale
-          type: string
-        denominazione: 
-          description: Denominazione
-          type: string  
-        ruoloOE: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/RuoloOEEnum'
-        tipoOE: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipoOEEnum'
-        operatoreEstero: 
-          type: boolean
-        
-    OperatoreEconomicoType:
-      description: Dati del subappaltatore
-      type: object
-      additionalProperties: false
-      required: [elencoSoggetti,idOE]
-      properties:
-        idOE: 
-          description: id operatore economico
-          type: string  
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        elencoSoggetti:
-          type: array
-          items:
-            $ref: '#/components/schemas/SoggettoType'
-    ConferenteSubappaltoType:
-      description: Dati del conferente
-      type: object
-      additionalProperties: false
-      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,idOE]
-      properties:
-        idAggiudicatario:
-          description: id partecipante dell'aggiudicatario che conferisce il subappalto
-          type: string  
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
-        idSubappaltanteACascata:
-          description: idOE conferente subappalto in caso di subappalto a cascata
-          type: string  
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
     SubappaltoType:
       description: Dati relativi ai subappalti
       type: object
-      required: [operatoreEconomicoSubappaltatore,conferenteSubappalto,importoPresunto,categoria,cpv]
+      required: [codiciFiscaliOE,impresaEstera,importoPresunto,categoria,cpv]
       additionalProperties: false
       properties:    
-        operatoreEconomicoSubappaltatore:
-         $ref: '#/components/schemas/OperatoreEconomicoType'
-        conferenteSubappalto:
-          $ref: '#/components/schemas/ConferenteSubappaltoType'
+        codiciFiscaliOE:
+          description: Codici fiscali operatori economici
+          type: array
+          items:
+            type: string
+        impresaEstera:
+          description: Impresa estera?
+          type: boolean
+        codiceFiscaleAggiudicatario:
+          description: Codice fiscale ditta aggiudicatrice nel caso di aggiudicatari multipli
+          type: string 
+        codiceFiscaleDittaACascata:
+          description: Codice fiscale ditta subappaltatrice
+          type: string          
         oggetto:
           description: Lavoro/Servizio/Fornitura subappalto
           type: string
         oggettoMl:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'         
         importoPresunto:
           description: Importo presunto Lavoro/ Servizio/Fornitura, subappalto
           type: number
           format: double
         categoria:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum' 
         categoriaScorporabile:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum'          
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategoriaEnum'          
         cpv:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum'   
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CPVEnum'   
     AnacFormRSU1Type:
       description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
       type: object
@@ -93,12 +53,7 @@ components:
           description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
           type: string   
           format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
-        idSubappalto:
-          description: identificativo restituito dal servizio all’invio della scheda di richiesta di subappalto precedente, obbligatorio in caso di subappalto a cascata.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         subappalto:
           $ref: '#/components/schemas/SubappaltoType'
     SchedaRSU1Type:
@@ -110,4 +65,4 @@ components:
         anacForm:
           $ref: '#/components/schemas/AnacFormRSU1Type'
         espd:
-         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'            
+         $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EspdRequestType'            
