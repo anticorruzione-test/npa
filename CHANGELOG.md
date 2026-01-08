@@ -1590,7 +1590,6 @@ aggiunta regola REG5_1
   	* aggiunto l'oggetto TipoSchedaEnum per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 * modello-dati-schede-ID.yaml:
 	* aggiunta la sezione comunicazioneUrl per comunicare la correzione della url 
-	* aggiunto l'idPartecipante all'oggetto ComunicazioneRibassoAggiudicazioneType
 * modello-dati-schede-SE.yaml:
 	* nuova scheda definita per la gestione elenco fornitori
 * modello-dati-schede-C7_3.yaml:
