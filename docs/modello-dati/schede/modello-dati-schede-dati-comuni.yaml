@@ -39,11 +39,7 @@ components:
     OperazioneSDAEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/operazioneSDA.json)
-    OperazioneElencoEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
-      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/operazioneElenco.json)      
+      description: Azione richiesta dal partecipante [operazioneSDA.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/tipologiche/operazioneSDA.json)     
     GiustificazioneAggiudicazioneDirettaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
