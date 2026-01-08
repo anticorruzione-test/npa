@@ -1285,20 +1285,6 @@
     "dataFine":null
 },
 {
-  "codice": "SE",
-  "descrizione": {
-    "it": "Elenco richieste di adesione all'elenco fornitori.",
-    "en": "Elenco richieste di adesione all'elenco fornitori."
-  }
-},
-{
-  "codice": "C7_3",
-  "descrizione": {
-    "it": "Chiusura elenco fornitori.",
-    "en": "Chiusura elenco fornitori."
-  }
-},
-{
   "codice": "CM3",
   "descrizione": {
     "it": "Comunicazione modifica dati della procedura negoziata senza bando.",
