@@ -227,6 +227,49 @@ components:
             oneOf:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-SE.yaml#/components/schemas/SchedaSEType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-C7_3.yaml#/components/schemas/SchedaC7_3Type'
+      DatiSchedaOEType:
+        description: Oggetto Complesso che riporta tutti i dati della scheda elenco OE per il contesto gestioneElenchi
+        type: object
+        additionalProperties: false
+        properties:
+          id:
+            description: identificativo univoco dell'ElencoOE definito da ANAC. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"   
+          idElenco:
+            description: identificativo univoco dell'ElencoOE definito da ANAC. Restituito dall'operazione di creazione Elenco OE. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+          operatoriEconomici:
+            $ref: '#/components/schemas/OperatoreEconomicoType'
+      OperatoreEconomicoType:
+        properties:
+          operatoreEconomico:
+            $ref: '#/components/schemas/PartecipanteType'
+          operazione:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+          statoOperatoreEconomico:
+            type: string
+          historyList:
+            items:
+              $ref: '#/components/schemas/History'
+            type: array
+      History:
+        properties:
+          tipoOperazione:
+            type: string
+          dataOperazione:
+            format: date-time
+            type: string
+          statoPartecipante:
+            type: string
+          statoPartecipantePrecedente:
+            type: string
+          userOperazione:
+            type: string
+      type: object
       CigType:
         description: coppia lotIdentifier-cig
         type: object

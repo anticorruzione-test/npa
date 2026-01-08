@@ -1849,7 +1849,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AggiungiSoggettoResponse'
+                $ref: '#/components/schemas/ConsultaSchedaOEResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2790,14 +2790,14 @@ components:
     ConfermaSchedaOERequest:
       description: Oggetto in ingresso al servizio
       properties:
-        idPianificazione:
+        idElenco:
           format: uuid
           type: string
         idScheda:
           format: uuid
           type: string
       required:
-      - idPianificazione
+      - idElenco
       - idScheda
       type: object
     ConfermaSchedaOEResponse:
@@ -2818,6 +2818,13 @@ components:
         type:
           type: string
       type: object
+    ConsultaSchedaOEResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        elenco:
+          $ref: '#/components/schemas/DatiSchedaOEType'
   securitySchemes:
     apiKeyAuth:
       type: apiKey
