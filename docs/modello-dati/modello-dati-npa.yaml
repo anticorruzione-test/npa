@@ -211,6 +211,22 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-SE.yaml#/components/schemas/SchedaSEType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-C7_3.yaml#/components/schemas/SchedaC7_3Type'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-CM3.yaml#/components/schemas/SchedaCM3Type'
+      SchedaElencoPostPubblicazioneType:
+        description: Scheda generica definita dal contesto in cui si trova l'appalto
+        allOf: # estende il modello dati SchedaType
+          - $ref: '#/components/schemas/SchedaType'       
+        type: object
+        additionalProperties: false
+        properties:
+          _dataModifica:
+            description: data modifica della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+          body:
+            oneOf:
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-SE.yaml#/components/schemas/SchedaSEType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/schede/modello-dati-schede-C7_3.yaml#/components/schemas/SchedaC7_3Type'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
