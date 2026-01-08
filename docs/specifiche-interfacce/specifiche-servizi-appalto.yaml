@@ -2824,7 +2824,7 @@ components:
         - $ref: '#/components/schemas/BaseResponse'
       properties:
         elenco:
-          $ref: '#/components/schemas/DatiSchedaOEType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiSchedaOEType'
   securitySchemes:
     apiKeyAuth:
       type: apiKey
