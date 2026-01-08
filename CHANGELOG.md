@@ -1559,7 +1559,6 @@ aggiunta regola REG5_1
     
 ## Modello Dati 
 * modello-dati-npa.yaml:
-	* aggiunta delle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
  	* aggiunta della nuova scheda CM3 per la modifica dei dati della procedura negoziata senza bando
   	* aggiunta della nuova scheda S1_2 per la comunicazione dell'elenco degli invitati  	
 
@@ -1583,14 +1582,9 @@ aggiunta regola REG5_1
 	* modificata la descrizione della scheda, aggiunto il riferimento alla delibera anac n. 584/2023 
 * modello-dati-schede-dati-comuni.yaml, :
 	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
- 	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
-  	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
+ 	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID  	
 * modello-dati-schede-ID.yaml:
 	* aggiunta la sezione comunicazioneUrl per comunicare la correzione della url 
-* modello-dati-schede-SE.yaml:
-	* nuova scheda definita per la gestione elenco fornitori
-* modello-dati-schede-C7_3.yaml:
-	* nuova scheda definita per la chiusura elenco fornitori
 * modello-dati-schede-CM3.yaml: nuova scheda definita per la modifica dei dati della procedura negoziata senza bando
 * modello-dati-schede-S1_2.yaml: nuova scheda definita per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * modello-dati-schede-S2.yaml,modello-dati-schede-S2R.yaml: 
@@ -1603,8 +1597,6 @@ aggiunta regola REG5_1
 * modificate le righe delle schede P3* e P5, colonna schedaNormativa: aggiunto il riferimento alla delibera anac n. 584/2023
 * modificata la riga della scheda AC1, colonna schedaSuccessiva: aggiunta la scheda CL1
 * modificata la riga della scheda P2_19, colonna schedaDescrizione
-* modificata la riga della scheda P7_3, colonna schedaSuccessiva: aggiunte le schede C7_3 e SE
-* aggiunte le righe relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * modificata la riga della scheda P7_2, colonna schedaSuccessiva: aggiunte le schede ANN e CM3
 * modificata la riga della scheda ANN:
 	* colonna flussoAppartenenza: aggiunti i flussi 72
@@ -1630,9 +1622,7 @@ aggiunta regola REG5_1
 * motivoEsclusioneConcessione.json: chiusa la voce con codice 20 e inserita una nuova voce
 * motivoEsclusioneOrdinarioSpeciale.json: chiusa la voce con codice 65 e inserita una nuova voce
 * motivoCorrezioneUrl.json: nuova tipologica definita per gestire la correzione della url nella scheda ID
-* operazioneElenco.json: nuova tipologica definita per gestire le operazioni sugli elenchi fornitori
 * codiceScheda.json: aggiunta delle nuove schede: 
-	* SE e C7_3 per la gestione dell'elenco fornitori
 	* CM3 per la modifica dei dati della procedura negoziata senza bando
 	* S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * ruoloOE.json: aggiunta della nuova voce "Progettista incaricato"
@@ -1646,7 +1636,6 @@ aggiunta regola REG5_1
 * ID.dmn: 
 	* modifica alla regola REG101 per l'introduzione della nuova sezione comunicazioneUrl
 	* aggiunta la regola REG8_1
-* SE.dmn,C7_3.dmn: aggiunta delle regole relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * CM3.dmn: aggiunta delle regole relative alla nuova scheda CM3 definita per la modifica dei dati della procedura negoziata senza bando
 * S1_2.dmn: aggiunta delle regole relative alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * S3: aggiunta la regola REG143
