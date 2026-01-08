@@ -173,5 +173,5 @@ components:
       description: Motivo di annullamento comunicazione - fare riferimento ai valori contenuti nel file [motivoAnnullamentoComunicazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/motivoAnnullamentoComunicazione.json)
     OperazioneElencoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: '#/components/schemas/TipologicaSchemaType'
+        - $ref: '#/components/schemas/TipologicaSchemaType'     
       description: Operazione Elenco - fare riferimento ai valori contenuti nel file [operazioneElenco.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/operazioneElenco.json)
