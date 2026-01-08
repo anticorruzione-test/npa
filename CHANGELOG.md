@@ -1586,7 +1586,6 @@ aggiunta regola REG5_1
 	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte
  	* aggiunto l'oggetto MotivoCorrezioneUrlEnum per la nuova tipologica definita per gestire la correzione della url nella scheda ID
   	* aggiunto l'oggetto OperazioneElencoEnum per la nuova tipologica definita la gestione elenco fornitori
-  	* aggiunto l'oggetto DatiBaseProceduraAD2Type per inserimento del nuovo campo cigCollegato
   	* aggiunto l'oggetto TipoSchedaEnum per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 * modello-dati-schede-ID.yaml:
 	* aggiunta la sezione comunicazioneUrl per comunicare la correzione della url 
@@ -1599,7 +1598,6 @@ aggiunta regola REG5_1
 * modello-dati-schede-S2.yaml,modello-dati-schede-S2R.yaml: 
 	* deprecata la sezione invitati e i campi dataInvito e scadenzaPresentazioneOfferta
 	* modificata la descrizione della scheda
-* modello-dati-schede-AD2.25.yaml, modello-dati-schede-AD2.26.yaml,modello-dati-schede-AD2.27.yaml,modello-dati-schede-AD2.28.yaml: modificato il riferimento dell'oggetto DatiBaseProceduraADType verso il nuovo oggetto DatiBaseProceduraAD2Type
 * modello-dati-schede-P8.yaml: 
 	* nuova scheda per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
 
