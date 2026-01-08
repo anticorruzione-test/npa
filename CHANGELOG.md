@@ -1600,8 +1600,6 @@ aggiunta regola REG5_1
 * modello-dati-schede-S2.yaml,modello-dati-schede-S2R.yaml: 
 	* deprecata la sezione invitati e i campi dataInvito e scadenzaPresentazioneOfferta
 	* modificata la descrizione della scheda
-* modello-dati-schede-RSU1.yaml:
-	* revisione della scheda 
 * modello-dati-schede-AD2.25.yaml, modello-dati-schede-AD2.26.yaml,modello-dati-schede-AD2.27.yaml,modello-dati-schede-AD2.28.yaml: modificato il riferimento dell'oggetto DatiBaseProceduraADType verso il nuovo oggetto DatiBaseProceduraAD2Type
 * modello-dati-schede-P8.yaml: 
 	* nuova scheda per la gestione delle procedure negoziate senza bando o adesioni ad AQ soprasoglia
@@ -1634,7 +1632,7 @@ aggiunta regola REG5_1
   
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143,REG144,REG145
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG143,REG144,REG145
  	* modificata la descrizione dell'errore REG81
   	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
@@ -1663,7 +1661,6 @@ aggiunta regola REG5_1
 * SE.dmn,C7_3.dmn: aggiunta delle regole relative alle nuove schede SE e C7_3 per la gestione dell'elenco fornitori
 * CM3.dmn: aggiunta delle regole relative alla nuova scheda CM3 definita per la modifica dei dati della procedura negoziata senza bando
 * S1_2.dmn: aggiunta delle regole relative alla nuova scheda S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
-* RSU1.dmn: aggiunte regole per la gestione della nuova scheda di subappalto
 * S3: aggiunta la regola REG143
 * AD3.dmn: aggiunte le regole REG144,REG145
 * P8.dmn: aggiunte le regole per la nuova scheda per le procedure negoziate senza bando o adesioni ad AQ soprasoglia
