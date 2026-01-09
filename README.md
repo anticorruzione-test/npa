@@ -18,7 +18,7 @@ Il certificato SSL dei servizi ANAC verrà aggiornato secondo il seguente calend
   •	21 luglio: ambiente di pre-produzione (attestazione) </br>
   •	28 luglio: ambiente di qualificazione ed esercizio</br>
 
-Il certificato aggiornato è disponibile [qui](https://github.com/anticorruzione-test/npa/tree/chg-07/docs/certificato%20SSL)
+Il certificato aggiornato è disponibile [qui](https://github.com/anticorruzione-test/npa/tree/chg-07-v2/docs/certificato%20SSL)
 
 ## 17/06/2025
 Il Pubblication Office TeD ha comunicato che, a causa di una manutenzione programmata, il sistema di pubblicazione può subire delle interruzioni nel giorno 18/06/2025, nella fascia oraria 07:00 - 09:00 (CEST). 

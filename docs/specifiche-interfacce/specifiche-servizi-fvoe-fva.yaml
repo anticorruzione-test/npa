@@ -8,10 +8,10 @@ info:
     
      #### Documentazione
      La documentazione a supporto delle specifiche di interfaccia con i sistemi che interoperano con il nuovo sistema di digitalizzazione è redatta con il linguaggio di markup Markdown ed è presente al segunete url:
-         [documento-specifiche-servizi-npa](https://github.com/anticorruzione-test/npa/blob/chg-07/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md)
+         [documento-specifiche-servizi-npa](https://github.com/anticorruzione-test/npa/blob/chg-07-v2/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md)
 
   # I termini del servizio.
-  termsOfService: 'https://github.com/anticorruzione-test/npa/blob/chg-07/README.md#termini-del-servizio'
+  termsOfService: 'https://github.com/anticorruzione-test/npa/blob/chg-07-v2/README.md#termini-del-servizio'
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
   contact:
     email: ufficio.uscp@anticorruzione.it
