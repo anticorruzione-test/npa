@@ -1548,10 +1548,10 @@ aggiunta regola REG5_1
 * ticket 93808:
   * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
 
-<summary><h1>Note di rilascio del 30/11/2025 (Changelog-07)</h1></summary>
+<summary><h1>Note di rilascio del 09/01/2026 (Changelog-07)</h1></summary>
 
 **NOTA**
-* Pubblicazione contenuti su GitHub: 30/11/2025
+* Pubblicazione contenuti su GitHub: 09/01/2025
 * Rilascio in Qualificazione: Come da Roadmap
 * Rilascio in Esercizio: Come da Roadmap
 
@@ -1626,6 +1626,7 @@ aggiunta regola REG5_1
 	* CM3 per la modifica dei dati della procedura negoziata senza bando
 	* S1_2 per la comunicazione dell'elenco degli invitati nelle procedure a due fasi
 * ruoloOE.json: aggiunta della nuova voce "Progettista incaricato"
+* codIstat.json: aggiornate le voci della tipologica per l'adeguamento alla versione ISTAT
   
 ### Regole
 * ABI.dmn: aggiunta la regola REG132 per limitare l'utilizzo della scheda alle procedure con oggetto servizi o forniture
