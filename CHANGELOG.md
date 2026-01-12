@@ -1546,6 +1546,12 @@ aggiunta regola REG5_1
 ### Orchestratore
 * ticket 93808:
   * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
+  
+<summary><h1>Note di rilascio del 12/01/2026 (In Esercizio)</h1></summary>
+
+### Orchestratore
+* ticket 87512:
+  * scheda S3: impostato schedaAnnullabile a SI
 
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
