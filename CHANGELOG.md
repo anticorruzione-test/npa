@@ -1547,7 +1547,7 @@ aggiunta regola REG5_1
 ### Orchestratore
 * ticket 93808:
   * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
-  
+
 <summary><h1>Note di rilascio del 09/01/2026 (Changelog-07)</h1></summary>
 
 **NOTA**
@@ -1674,7 +1674,7 @@ aggiunta regola REG5_1
 ### Orchestratore
 * ticket 87512:
   * scheda S3: impostato schedaAnnullabile a SI
-  
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
