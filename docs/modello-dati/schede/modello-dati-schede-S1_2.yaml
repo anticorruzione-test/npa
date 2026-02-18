@@ -8,7 +8,7 @@ components:
       description: Elenco di soggetti invitati.
       type: object
       additionalProperties: false
-      required: [cig,dataInvito, scadenzaPresentazioneOfferta,elencoInvitati]
+      required: [cig,dataInvito, scadenzaPresentazioneOfferte,elencoInvitati]
       properties:
         cig:
           description: codice identificativo lotto
@@ -22,8 +22,8 @@ components:
           description: Data della lettera di invito
           type: string
           format: date-time
-        scadenzaPresentazioneOfferta: 
-          description: Data della scadenza di presentazione dell'offerta
+        scadenzaPresentazioneOfferte: 
+          description: Data della scadenza di presentazione delle offerte
           type: string
           format: date-time        
       
@@ -44,3 +44,4 @@ components:
                 $ref: '#/components/schemas/ElencoSoggettiType'              
 
                        
+
