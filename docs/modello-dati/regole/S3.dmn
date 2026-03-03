@@ -66,7 +66,7 @@ satisfies is defined(prestazione.progettazioneInternaEsterna) and prestazione.pr
         <description>REG143: Tipo progettazione e tipo soggetto non coerenti</description>
         <inputEntry id="UnaryTests_0cqzh47">
           <text>some elenco in elencoIncarichi satisfies (some prestazione in elenco.prestazioni
-satisfies is defined(prestazione.progettazioneInternaEsterna) and prestazione.progettazioneInternaEsterna="ESTERNA" and is defined(prestazione.tipoSoggetto) and prestazione.tipoSoggetto.codice ="1"</text>
+satisfies is defined(prestazione.progettazioneInternaEsterna) and prestazione.progettazioneInternaEsterna="ESTERNA" and is defined(prestazione.tipoSoggetto) and prestazione.tipoSoggetto.codice ="1")</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_128lza0">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG143\"}"</text>
