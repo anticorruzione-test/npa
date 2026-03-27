@@ -1700,7 +1700,7 @@ aggiunta regola REG5_1
 	* modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml:
 		* rimosse le properties duplicate strumentiElettroniciSpecifici e docFAP (già presenti nello schema LottoP4BaseType)
 
-<summary><h1>Note di rilascio del 17/03/2026 (In Esercizio)</h1></summary>
+<summary><h1>Note di rilascio del 27/03/2026 (In Esercizio)</h1></summary>
 
 ### Tipologiche
 * ticket 94574:
