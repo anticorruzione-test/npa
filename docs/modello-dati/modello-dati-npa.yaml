@@ -389,6 +389,9 @@ components:
       AvvisoType:
         allOf: # estende la classe AvvisoCommonType
           - $ref: '#/components/schemas/AvvisoCommonType'
+      AvvisoPVLOscuratoType:
+        allOf: # estende la classe AvvisoCommonType
+          - $ref: '#/components/schemas/AvvisoCommonType'
       DatiPubblicazioneEUType:
         type: object
         additionalProperties: false
