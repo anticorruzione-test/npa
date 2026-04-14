@@ -1906,6 +1906,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/PaginazioneType'
     SchedaGroupType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaGroupType'
+    AvvisoPVLOscuratoType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoPVLOscuratoType'
     AvvisoType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoType'
     AppaltoBaseType:
@@ -2577,6 +2579,8 @@ components:
             $ref: '#/components/schemas/DatiPianoBaseType'            
         scheda:
             $ref: '#/components/schemas/SchedaGroupType'
+        avvisoPVLOscurato:
+            $ref: '#/components/schemas/AvvisoPVLOscuratoType'
     RenderingAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
