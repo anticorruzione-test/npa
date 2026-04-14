@@ -389,13 +389,6 @@ components:
       AvvisoType:
         allOf: # estende la classe AvvisoCommonType
           - $ref: '#/components/schemas/AvvisoCommonType'
-        properties:
-          appalto:
-            $ref: '#/components/schemas/AppaltoBaseType'
-          piano:
-            $ref: '#/components/schemas/DatiPianoBaseType'            
-          scheda:
-            $ref: '#/components/schemas/SchedaGroupType'
       DatiPubblicazioneEUType:
         type: object
         additionalProperties: false
