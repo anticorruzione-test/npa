@@ -10,6 +10,8 @@ info:
     \
     Con questa scheda può essere comunicata anche l'informazione relativa al docFAP, ovvero se è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM.\
     \
+    Possono inoltre essere integrate alcune informazioni relative ai dati del contratto non comunicate in precedenza.\
+    \
     La scheda permette infine di modificare l'indirizzo dei documenti di gara    
   version: 1.0.0
 components:
