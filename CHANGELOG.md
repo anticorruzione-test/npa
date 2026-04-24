@@ -1713,6 +1713,28 @@ aggiunta regola REG5_1
 * ticket 98916:
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
+
+
+<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà 			del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunta la REG146
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
