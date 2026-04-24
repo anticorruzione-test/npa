@@ -14,7 +14,7 @@
       <rule id="DecisionRule_1y1n4fo">
         <description>REG101: indicare almeno uno dei campi di cui si richiede la modifica</description>
         <inputEntry id="UnaryTests_1jerhf2">
-          <text>is defined(comunicazione.comunicazioneCUP) = false and is defined(comunicazione.comunicazioneRibassoAggiudicazione) = false and is defined(comunicazione.docFAP) = false and is defined(comunicazione.comunicazioneUrl) = false</text>
+          <text>is defined(comunicazione.comunicazioneCUP) = false and is defined(comunicazione.comunicazioneRibassoAggiudicazione) = false and is defined(comunicazione.docFAP) = false and is defined(comunicazione.comunicazioneUrl) = false and is defined(comunicazione.integrazioneDatiEsecuzione) = false</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1jfj8ky">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG101\"}"</text>
@@ -23,7 +23,7 @@
       <rule id="DecisionRule_0m0ht0d">
         <description>REG127: indicare almeno un Cup.</description>
         <inputEntry id="UnaryTests_0qvvbpl">
-          <text>is defined(comunicazione.comunicazioneCUP) and count(comunicazione.comunicazioneCUP.cup) &lt;= 0</text>
+          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.operazioneCUP = "INSERIMENTO" and count(comunicazione.comunicazioneCUP.cup) &lt;= 0</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0nyzfph">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG127\"}"</text>
@@ -36,6 +36,15 @@
         </inputEntry>
         <outputEntry id="LiteralExpression_15kfsn8">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG8\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1imdre8">
+        <description>REG146: in caso di richiesta di rimozione il campo cup non va compilato</description>
+        <inputEntry id="UnaryTests_060tnzr">
+          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.operazioneCUP = "RIMOZIONE" and count(comunicazione.comunicazioneCUP.cup) &gt; 0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uinsn7">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG146\"}"</text>
         </outputEntry>
       </rule>
     </decisionTable>
