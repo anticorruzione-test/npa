@@ -23,7 +23,7 @@
       <rule id="DecisionRule_0m0ht0d">
         <description>REG127: indicare almeno un Cup.</description>
         <inputEntry id="UnaryTests_0qvvbpl">
-          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "INSERIMENTO" and count(comunicazione.comunicazioneCUP.cup) &lt;= 0</text>
+          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "INSERIMENTO" and (is defined(comunicazione.comunicazioneCUP.operazioneCUP) = false or comunicazione.comunicazioneCUP.operazioneCUP = null or count(comunicazione.comunicazioneCUP.cup) &lt;= 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0nyzfph">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG127\"}"</text>
@@ -41,7 +41,7 @@
       <rule id="DecisionRule_1imdre8">
         <description>REG146: in caso di richiesta di rimozione il campo cup non va compilato</description>
         <inputEntry id="UnaryTests_060tnzr">
-          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "RIMOZIONE" and count(comunicazione.comunicazioneCUP.cup) &gt; 0</text>
+          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "RIMOZIONE" and is defined(comunicazione.comunicazioneCUP.cup)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1uinsn7">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG146\"}"</text>
