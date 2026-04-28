@@ -13,6 +13,56 @@ pertanto, nelle segnalazioni non devono quindi essere inserite informazioni rise
 
 Qualora fosse necessario trasmettere informazioni riservate, dovranno essere utilizzati canali alternativi, previamente concordati con ANAC.
 
+## 24/04/2026 - Nuovo disservizio annunciato dal Ted sulle API di produzione
+Si riporta l'avviso ricevuto dal TeD alle ore 12:48 di oggi 24 aprile
+
+Due to scheduled maintenance, the TED API in Production will be unavailable on 28 April between 07:00 and 09:00 (CEST).
+We suggest that you inform your users if needed.
+We apologise for the inconvenience and thank you for your understanding.
+
+## 21/04/2026 - Disservizi Ted
+Si riporta l'avviso ricevuto dal TeD alle ore 16:34 del 20 aprile
+
+Dear eSenders
+Due to maintenance, TED Developer Portal (Production) may experience temporary disruptions on 23 April, between 07:00 and 09:00 (CEST). We suggest that you inform your users if needed.
+We apologise for the inconvenience and thank you for your understanding. 
+
+## 17/04/2026 - Possibili disservizi sui servizi PCP e FVOE di Esercizio per manutenzione straordinaria
+A causa di un intervento di manutenzione straordinaria, dalle ore 17.00 alle ore 20.00 di mercoledì 22 aprile 2026 i servizi di interoperabilità erogati alle Piattaforme di Approvvigionamento Digitale in ambiente di Esercizio potranno subire saltuari disservizi di breve durata
+
+## 27/03/2026 - Sospensione dei servizi FVOE di Esercizio per manutenzione straordinaria Errata corrige
+A correzione del precedente avviso del 26/03/2026, si segnala che, a causa di un intervento di manutenzione straordinaria, dalle ore 17.00 alle ore 19.00 di giovedì 2 aprile 2026 verranno sospesi i servizi del Fascicolo Virtuale dell'Operatore Economico compresi quelli erogati alle Piattaforme di Approvvigionamento Digitale
+
+## 26/03/2026 - Sospensione dei servizi PCP e FVOE di Qualificazione per manutenzione straordinaria
+A causa di un intervento di manutenzione straordinaria, dalle ore 15.00 alle ore 17.00 di giovedì 2 aprile 2026 verranno sospesi i servizi di interoperabilità erogati alle Piattaforme di Approvvigionamento Digitale in ambiente di Qualificazione
+
+## 26/03/2026 - Sospensione dei servizi FVOE di Esercizio per manutenzione straordinaria
+A causa di un intervento di manutenzione straordinaria, dalle ore 15.00 alle ore 17.00 di giovedì 2 aprile 2026 verranno sospesi i servizi del Fascicolo Virtuale dell'Operatore Economico compresi quelli erogati alle Piattaforme di Approvvigionamento Digitale 
+
+## 18/03/2026 - Disservizi Ted
+Si riporta l'avviso ricevuto dal TeD alle ore 16:06 di oggi
+
+Dear eSenders
+We would like to inform you that eNotices2 is currently experiencing a technical issue, which may prevent access to the application and its API (Publication API).
+As a result, some operations related to the submission and processing of notices are currently affected.
+Our technical teams are actively investigating the situation and working to restore the service as soon as possible.
+We apologise for any inconvenience this may cause and thank you for your understanding.
+
+## 11/03/2026 - Sospensione dei servizi PCP e FVOE di Qualificazione per manutenzione straordinaria
+A causa di un intervento di manutenzione straordinaria, dalle ore 13.00 alle ore 15.00 di mercoledì 18 marzo 2026 verranno sospesi i servizi di interoperabilità erogati alle Piattaforme di Approvvigionamento Digitale in ambiente di Qualificazione
+
+## 11/03/2026 - Sospensione dei servizi FVOE di Esercizio per manutenzione straordinaria
+Come riportato nell'[avviso](https://portale-servizi.anticorruzione.it/home) pubblicato sul Portale Servizi dell'Autorità, a causa di un intervento di manutenzione straordinaria, dalle ore 13.00 alle ore 16.00 di lunedì 16 marzo 2026 verranno sospesi i servizi del Fascicolo Virtuale dell'Operatore Economico compresi quelli erogati alle Piattaforme di Approvvigionamento Digitale 
+
+## 12/02/2026 - Manutenzione straordinaria
+Come riportato nell'[avviso](https://portale-servizi.anticorruzione.it/home) pubblicato sul Portale Servizi dell'Autorità, a causa di un intervento di urgente manutenzione straordinaria, dalle ore 13.00 alle ore 14.00 di venerdì 13 febbraio potrebbero verificarsi disservizi su alcuni servizi dell'Autorità, compresi quelli erogati alle Piattaforme di Approvvigionamento Digitale 
+
+## 05/01/2025 - Manutenzione dei servizi TeD
+Causa manutenzione le API di esercizio del TeD potranno subire temporanee interruzioni tra le 07.00 e le 09.00 del 7 gennaio 2025 
+
+## 14/11/2025 - Sospensione dei servizi per migrazione PSN
+I servizi di interoperabilità in ambiente di esercizio saranno sospesi dalle ore 8.00 di venerdi 21 novembre alle ore 8.00 di martedi 25 novembre per consentire il completamento della migrazione degli stessi sul Polo Strategico Nazionale. Maggiori dettagli sui servizi interessati dall'attività sono disponibili nell'[avviso](https://www.anticorruzione.it/-/avviso.13.11.25.psn) pubblicato sul portale dell'Autorità 
+
 ## 16/07/2025 - Aggiornamento del certificato SSL dei servizi ANAC
 Il certificato SSL dei servizi ANAC verrà aggiornato secondo il seguente calendario: </br>
   •	21 luglio: ambiente di pre-produzione (attestazione) </br>
@@ -73,8 +123,8 @@ Sono previsti tre distinti ambienti disponibili alle Piattaforme Digitali di App
 L'ambiente di qualificazione è destinato alle PDA durante la fase di certificazione dei propri componenti.
 L'accesso all'ambiente è garantito ai soggetti iscritti nel Registro delle Piattaforme Certificate, pubblicato da ANAC e gestito da AgID, che sono in fase di certificazione.
 Per le modalità di presentazione della domanda di certificazione si faccia riferimento alle norme tecniche ed alle istruzioni operative pubblicate da AgID sul proprio portale.
-Gli utenti e le stazioni appaltanti di test sono generati da ANAC e comunicati al gestore della piattaforma in fase di cerificazione.
-La richiesta di generazione di utenti di test può essere fatta invianfo un'email a ufficio.uscp@anticorruzione.it
+Gli utenti e le stazioni appaltanti di test sono generati da ANAC e comunicati al gestore della piattaforma in fase di certificazione.
+La richiesta di generazione di utenti di test può essere fatta inviando un'email a ufficio.uscp@anticorruzione.it
 
 ## Ambiente di ATTESTAZIONE
 L'ambiente di ATTESTAZIONE è destinato alle PDA durante la fase di esercizio dei propri componenti.
