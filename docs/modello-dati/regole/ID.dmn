@@ -23,7 +23,7 @@
       <rule id="DecisionRule_0m0ht0d">
         <description>REG127: indicare almeno un Cup.</description>
         <inputEntry id="UnaryTests_0qvvbpl">
-          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "INSERIMENTO" and (is defined(comunicazione.comunicazioneCUP.operazioneCUP) = false or comunicazione.comunicazioneCUP.operazioneCUP = null or count(comunicazione.comunicazioneCUP.cup) &lt;= 0)</text>
+          <text>is defined(comunicazione.comunicazioneCUP) and comunicazione.comunicazioneCUP.operazioneCUP = "INSERIMENTO" and (is defined(comunicazione.comunicazioneCUP.cup) = false or comunicazione.comunicazioneCUP.cup = null or count(comunicazione.comunicazioneCUP.cup) &lt;= 0)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0nyzfph">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG127\"}"</text>
