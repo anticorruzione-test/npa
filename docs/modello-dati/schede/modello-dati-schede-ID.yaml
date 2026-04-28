@@ -2,20 +2,49 @@ openapi: 3.0.0
 info:
   title: Modello Dati - Scheda ID - Scheda  per l'integrazione dei dati non essenziali ai fini della pubblicità legale e del flusso della procedura.
   description: | 
-    In caso di modifica dei cup la scheda dovrà contenere ogni volta la lista dei cup validi. Questa lista sovrascriverà la precedente lista inviata.\
-    Quindi i cup validi saranno sempre solo quelli inviati con l'ultima scheda ID.\
+    In caso di modifica dei cup le operazioni consentite sono:\
+    INSERIMENTO: La lista dei CUP attualmente associati al CIG viene completamente sostituita. Viene quindi eliminata la lista esistente e impostata una nuova lista, pari ai valori indicati nel campo CUP della scheda.\
+    RIMOZIONE: Viene eliminata la lista esistente. In questo caso il campo CUP NON deve essere valorizzato.\
+    \
     La scheda permette la modifica del ribasso di aggiudicazione solo in caso di omessa comunicazione in fase di affidamento.\
+    \
     Con questa scheda può essere comunicata anche l'informazione relativa al docFAP, ovvero se è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM.\
+    \
     La scheda permette infine di modificare l'indirizzo dei documenti di gara    
   version: 1.0.0
 components:
   schemas:
+    IntegrazioneDatiEsecuzioneType:
+      description: Dati inerenti l'inizio dell'esecuzione lavori
+      type: object
+      required: [dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
+      additionalProperties: false
+      properties:
+        dataStipulaContratto:
+          description: Data stipula del contratto
+          type: string
+          format: date-time 
+        consegnaSottoRiserva:
+          description: Consegna sotto riserva di legge?
+          type: boolean
+        dataEffettivoInizioPrestazione:
+          description: Data di effettivo inizio lavori/servizi/forniture (consegna completa/avvio di tutte le prestazioni del contratto)
+          type: string
+          format: date-time
+        dataFinePrevistaPrestazione:
+          description: Data fine prevista per dare ultimazione ai lavori/servizi/forniture 
+          type: string
+          format: date-time
     ComunicazioneCUPType:
       description: Dati inerenti la modifica del CUP
       type: object
-      required: [motivoVariazioneCUP,cup]
+      required: [operazioneCUP,motivoVariazioneCUP]
       additionalProperties: false
       properties:
+        operazioneCUP:
+          description: tipo di operazione
+          type: string
+          enum: ['INSERIMENTO', 'RIMOZIONE'] 
         motivoVariazioneCUP:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariazioneCUPEnum'    
         cup:
@@ -66,6 +95,8 @@ components:
           type: boolean
         comunicazioneUrl:
             $ref: '#/components/schemas/ComunicazioneUrlType'
+        integrazioneDatiEsecuzione:
+            $ref: '#/components/schemas/IntegrazioneDatiEsecuzioneType'
     AnacFormIDType:
       type: object
       required: [cig,comunicazione]
