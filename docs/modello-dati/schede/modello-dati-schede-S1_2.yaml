@@ -44,3 +44,4 @@ components:
                 $ref: '#/components/schemas/ElencoSoggettiType'              
 
                        
+
