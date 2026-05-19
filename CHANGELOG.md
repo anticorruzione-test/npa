@@ -1714,6 +1714,10 @@ aggiunta regola REG5_1
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 
+### Schede
+* ticket 104014:
+	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
