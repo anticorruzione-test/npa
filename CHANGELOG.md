@@ -1714,6 +1714,8 @@ aggiunta regola REG5_1
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 
+<summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
+
 ### Schede
 * ticket 104014:
 	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
