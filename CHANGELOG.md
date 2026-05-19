@@ -1720,9 +1720,6 @@ aggiunta regola REG5_1
 * ticket 104014:
 	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
 
-
-<summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
-
 ## Orchestratore  
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
