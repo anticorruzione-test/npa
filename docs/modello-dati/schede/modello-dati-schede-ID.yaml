@@ -41,10 +41,10 @@ components:
     ComunicazioneUrlType:
       description: Dati inerenti la modifica dell'indirizzo dei documenti di gara'
       type: object
-      required: [motivoCorrezione,url]
+      required: [motivoCorrezioneUrl,url]
       additionalProperties: false
       properties:
-        motivoCorrezione:
+        motivoCorrezioneUrl:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoCorrezioneUrlEnum'    
         url:
           description: Indirizzo dei documenti di gara.
