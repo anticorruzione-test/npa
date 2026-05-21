@@ -1,6 +1,6 @@
 # 🔄 Git Hooks - Sostituzione Automatica Segmento Branch
 
-Questa cartella contiene script Git che **automaticamente sostituiscono il segmento path** tra `/anticorruzione-test/npa/` e lo slash successivo col nome del branch corrente.
+Questa cartella contiene script Git che **automaticamente sostituiscono il segmento branch** nei path GitHub col nome del branch corrente.
 
 ## 📂 File in questa cartella
 
@@ -68,7 +68,10 @@ Lo script in `update-branch-path.ps1`:
 - **Legge** il nome del branch corrente (`git rev-parse --abbrev-ref HEAD`)
 - **Se il branch contiene `/`** (es. `feature/mio-branch`): lo codifica in `feature%2Fmio-branch` per mantenere un singolo segmento URL
 - **Scansiona** file con estensioni: `.yml`, `.yaml`, `.json`, `.xml`, `.md`, `.txt`, `.properties`, `.conf`
-- **Sostituisce** regex pattern: `(/anticorruzione-test/npa/)[^/]+/` → `/anticorruzione-test/npa/<BRANCH>/`
+- **Sostituisce** i seguenti formati:
+  - `/anticorruzione-test/npa/<BRANCH>/`
+  - `/anticorruzione-test/npa/blob/<BRANCH>/`
+  - `/anticorruzione-test/npa/tree/<BRANCH>/`
 - **Esclude** directory: `.git`, `node_modules`, `target`, `.idea`, `bin`, `obj`, `.githooks`
 
 ## ⚙️ Customizzazione
