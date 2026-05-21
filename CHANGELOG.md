@@ -1725,6 +1725,20 @@ aggiunta regola REG5_1
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
 
+<summary><h1>Note di rilascio del 25/05/2026</h1></summary>
+
+### Tipologiche
+* tipoProcedura.json: aggiornate le descrizioni delle voci: exp-int-rail e comp-tend
+* giustificazioniAggiudicazioneDiretta.json:
+	* aggiornate le descrizioni delle voci below-thres-sme,char-imp,exc-circ-rail,int-oper,sim-infra,tra-ser
+ 	* aggiunta voce non-dir
+  
+### Regole
+* PL1_9.dmn: rimosse le regole REG97 e REG105
+* A1_32.dmn, A1_35.dmn: aggiunta la regola REG68
+* P2_14.dmn,P2_19.dmn,A2_32.dmn, A2_35.dmn: aggiunta la regola REG136
+* P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn: eliminata la voce oth-single da REG136
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
