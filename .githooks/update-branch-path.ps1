@@ -5,27 +5,23 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# Branch corrente
 $branchName = (git -C $RepoRoot rev-parse --abbrev-ref HEAD).Trim()
 if ([string]::IsNullOrWhiteSpace($branchName) -or $branchName -eq "HEAD") {
     Write-Host "Branch non valido o detached HEAD, skip."
     exit 0
 }
 
-# Se il branch contiene "/", lo codifichiamo per restare in un solo segmento URL
 $branchSegment = if ($EncodeSlashInBranch) { $branchName -replace "/", "%2F" } else { $branchName }
 
 Write-Host "Branch corrente: $branchName"
 Write-Host "Segmento path usato: $branchSegment"
 
-# Regex: sostituisce solo il pezzo tra /npa/ e lo slash successivo
-# /anticorruzione-test/npa/<VECCHIO>/ -> /anticorruzione-test/npa/<NUOVO>/
-$pattern = "(/anticorruzione-test/npa/)([^/]+)(/)"
-
-# Estensioni da processare
+# Supporta tutti i formati:
+# - /anticorruzione-test/npa/<branch>/
+# - /anticorruzione-test/npa/blob/<branch>/
+# - /anticorruzione-test/npa/tree/<branch>/
+$pattern = "(/anticorruzione-test/npa/(?:blob/|tree/)?)([^/]+)(/)"
 $extensions = @(".yml", ".yaml", ".json", ".xml", ".md", ".txt", ".properties", ".conf")
-
-# Directory da escludere
 $excludeDirNames = @(".git", "node_modules", "target", ".idea", "bin", "obj", ".githooks")
 
 function Is-ExcludedPath([string]$fullPath) {
@@ -58,15 +54,15 @@ Get-ChildItem -Path $RepoRoot -Recurse -File -ErrorAction SilentlyContinue | For
         if ($newContent -ne $content) {
             Set-Content -LiteralPath $file.FullName -Value $newContent -Encoding UTF8 -ErrorAction Stop
             $updated++
-            Write-Host "  ✓ $($file.FullName -replace [regex]::Escape($RepoRoot), '.')"
+            Write-Host "  updated: $($file.FullName -replace [regex]::Escape($RepoRoot), '.')"
         }
     }
     catch {
-        # Ignora file non leggibili (p.es. binari)
+        # Ignora file non leggibili
     }
 }
 
 Write-Host ""
-Write-Host "✅ Sostituzione completata. File controllati: $checked, aggiornati: $updated (branch: $branchName)"
+Write-Host "Sostituzione completata. File controllati: $checked, aggiornati: $updated (branch: $branchName)"
 exit 0
 
