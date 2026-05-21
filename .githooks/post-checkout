@@ -1,0 +1,6 @@
+#!/bin/sh
+# Hook Git: post-checkout
+# Scatta quando cambi branch o crei un nuovo branch
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".githooks/update-branch-path.ps1"
+exit $?
+
