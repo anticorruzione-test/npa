@@ -1,0 +1,6 @@
+#!/bin/sh
+# Hook Git: post-merge
+# Scatta quando completi un merge locale (dopo aver risolto i conflitti, se ce ne sono)
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".githooks/update-branch-path.ps1"
+exit $?
+
