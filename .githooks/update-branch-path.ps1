@@ -20,7 +20,13 @@ Write-Host "Segmento path usato: $branchSegment"
 # - /anticorruzione-test/npa/<branch>/
 # - /anticorruzione-test/npa/blob/<branch>/
 # - /anticorruzione-test/npa/tree/<branch>/
-$pattern = "(/anticorruzione-test/npa/(?:blob/|tree/)?)([^/]+)(/)"
+#
+# Negative lookahead: esclude path riservati GitHub che NON sono branch:
+# issues, pulls, actions, releases, wiki, discussions, compare,
+# commit(s), milestones, labels, projects, security, pulse,
+# graphs, settings, network, blob, tree, raw, blame
+$githubReserved = "issues|pulls|actions|releases|wiki|discussions|compare|commits?|milestones|labels|projects|security|pulse|graphs|settings|network|blob|tree|raw|blame"
+$pattern = "(/anticorruzione-test/npa/(?:blob/|tree/)?)(?!(?:$githubReserved)/)([^/]+)(/)"
 $extensions = @(".yml", ".yaml", ".json", ".xml", ".md", ".txt", ".properties", ".conf")
 $excludeDirNames = @(".git", "node_modules", "target", ".idea", "bin", "obj", ".githooks")
 
