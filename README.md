@@ -79,7 +79,7 @@ Il certificato SSL dei servizi ANAC verrà aggiornato secondo il seguente calend
   •	21 luglio: ambiente di pre-produzione (attestazione) </br>
   •	28 luglio: ambiente di qualificazione ed esercizio</br>
 
-Il certificato aggiornato è disponibile [qui](https://github.com/anticorruzione-test/npa/tree/chg-07-v2/docs/certificato%20SSL)
+Il certificato aggiornato è disponibile [qui](https://github.com/anticorruzione-test/npa/tree/refactoringSA/docs/certificato%20SSL)
 
 ## 17/06/2025
 Il Pubblication Office TeD ha comunicato che, a causa di una manutenzione programmata, il sistema di pubblicazione può subire delle interruzioni nel giorno 18/06/2025, nella fascia oraria 07:00 - 09:00 (CEST). 
@@ -214,7 +214,7 @@ Durante l'esercizio della piattaforma NPA il processo di aggiornamento del model
 La cartella [modello-dati](/docs/modello-dati/) contenente la definizione dinamica del modello dati referenziato nelle specifiche dei servizi esposti dalla NPA. *Esempio*:
  ```shell
  StatoAppaltoEnum:
-   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
+   $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/refactoringSA/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAppaltoEnum'
  ```
 ## Gestione del processo
 La gestione del processo di appalto è demandata al componente NPA di orchestrazione che, tramite il suo motore di regole, ha il compito di gestire il flusso di informazioni (schede) che caratterizzano il singolo appalto. 
