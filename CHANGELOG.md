@@ -1637,7 +1637,7 @@ aggiunta regola REG5_1
   
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143,REG144,REG145
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143,REG144,REG145,ERR153,ERR154,ERR155,ERR156,ERR157,ERR158,ERR159
  	* modificata la descrizione dell'errore REG81
   	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
@@ -1726,6 +1726,13 @@ aggiunta regola REG5_1
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
 
 <summary><h1>Note di rilascio del 25/05/2026</h1></summary>
+
+**NOTA**
+* Pubblicazione contenuti su GitHub: 25/05/2026
+* Rilascio in Qualificazione: Come da Roadmap
+* Rilascio in Esercizio: Come da Roadmap
+
+  **la nota di rilascio potrà essere integrata successivamente**
 
 ### Tipologiche
 * tipoProcedura.json: aggiornate le descrizioni delle voci: exp-int-rail e comp-tend
