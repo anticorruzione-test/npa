@@ -1983,22 +1983,20 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-  /consulta-sa/{idAppalto}:
-    get:
+  /consulta-sa:
+    post:
       tags:
         - gestioneSA
-      summary: API Rest per il recupero delle stazioni appaltanti associate ad un appalto. SINCRONO
-      description: Recupera le informazioni delle stazioni appaltanti per l'identificativo appalto indicato. SINCRONO
+      summary: API Rest per il recupero delle stazioni appaltanti associate ad un appalto o piano. SINCRONO
+      description: Recupera le informazioni delle stazioni appaltanti per l'identificativo appalto o piano indicato. SINCRONO
       operationId: idConsultaSA
-      parameters:
-        - in: path
-          name: idAppalto
-          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          required: true
-          schema:
-            type: string
-            format: uuid
-            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      requestBody:
+        description: Oggetto in ingresso al servizio di consultazione stazioni appaltanti
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConsultaSARequest'
+        required: true
       responses:
         '200':
           description: Consultazione riuscita
@@ -2021,8 +2019,8 @@ paths:
     post:
       tags:
         - gestioneSA
-      summary: API Rest per la modifica delle stazioni appaltanti associate ad un appalto. SINCRONO
-      description: Modifica le informazioni delle stazioni appaltanti per l'appalto indicato. SINCRONO
+      summary: API Rest per la modifica delle stazioni appaltanti associate ad un appalto o piano. SINCRONO
+      description: Modifica le informazioni delle stazioni appaltanti per l'appalto o piano indicato. SINCRONO
       operationId: idModificaSA
       requestBody:
         description: Oggetto in ingresso al servizio
@@ -2043,14 +2041,23 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GestoreSAErrorResponse'
+        '404':
+          description: Dati non trovati o non coerenti con lo stato corrente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
       security:
         - apiKeyAuth: []
   /aggiungi-sa:
     post:
       tags:
         - gestioneSA
-      summary: API Rest per l'aggiunta di stazioni appaltanti ad un appalto. SINCRONO
-      description: Aggiunge nuove stazioni appaltanti all'appalto indicato. SINCRONO
+      summary: API Rest per l'aggiunta di stazioni appaltanti ad un appalto o piano. SINCRONO
+      description: Aggiunge nuove stazioni appaltanti all'appalto o piano indicato. SINCRONO
       operationId: idAggiungiSA
       requestBody:
         description: Oggetto in ingresso al servizio
@@ -2071,14 +2078,23 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GestoreSAErrorResponse'
+        '404':
+          description: Dati non trovati o non coerenti con lo stato corrente
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
       security:
         - apiKeyAuth: []
   /cancella-sa:
     post:
       tags:
         - gestioneSA
-      summary: API Rest per l'eliminazione di stazioni appaltanti da un appalto. SINCRONO
-      description: Elimina le stazioni appaltanti dall'appalto indicato. SINCRONO
+      summary: API Rest per l'eliminazione di stazioni appaltanti da un appalto o piano. SINCRONO
+      description: Elimina le stazioni appaltanti dall'appalto o piano indicato. SINCRONO
       operationId: idCancellaSA
       requestBody:
         description: Oggetto in ingresso al servizio
@@ -2092,6 +2108,15 @@ paths:
           description: Eliminazione riuscita
         '400':
           description: Errore nell'eliminazione
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+        '404':
+          description: Dati non trovati o non coerenti con lo stato corrente
           content:
             application/problem+json:
               schema:
@@ -2950,25 +2975,66 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/EsitoOperazioneType'
+    ConsultaSARequest:
+      description: Oggetto in ingresso ai servizi di consultazione stazioni appaltanti
+      oneOf:
+        - type: object
+          additionalProperties: false
+          required:
+            - idAppalto
+          properties:
+            idAppalto:
+              description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+              type: string
+              format: uuid
+              example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - type: object
+          additionalProperties: false
+          required:
+            - idPiano
+          properties:
+            idPiano:
+              description: identificativo univoco del Piano definito da ANAC. (A UUID specified by RFC4122)
+              type: string
+              format: uuid
+              example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
     GestoreSARequest:
       description: Oggetto in ingresso ai servizi di gestione stazioni appaltanti
-      type: object
-      additionalProperties: false
-      required:
-        - idAppalto
-        - stazioniAppaltanti
-      properties:
-        idAppalto:
-          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
-          type: string
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-        stazioniAppaltanti:
-          description: elenco delle stazioni appaltanti da aggiungere, modificare o eliminare
-          type: array
-          minItems: 1
-          items:
-            $ref: '#/components/schemas/SAType'
+      oneOf:
+        - type: object
+          additionalProperties: false
+          required:
+            - idAppalto
+            - stazioniAppaltanti
+          properties:
+            idAppalto:
+              description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+              type: string
+              format: uuid
+              example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+            stazioniAppaltanti:
+              description: elenco delle stazioni appaltanti da aggiungere, modificare o eliminare
+              type: array
+              minItems: 1
+              items:
+                $ref: '#/components/schemas/SAType'
+        - type: object
+          additionalProperties: false
+          required:
+            - idPiano
+            - stazioniAppaltanti
+          properties:
+            idPiano:
+              description: identificativo univoco del Piano definito da ANAC. (A UUID specified by RFC4122)
+              type: string
+              format: uuid
+              example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+            stazioniAppaltanti:
+              description: elenco delle stazioni appaltanti da aggiungere, modificare o eliminare
+              type: array
+              minItems: 1
+              items:
+                $ref: '#/components/schemas/SAType'
     SAType:
       description: Dati essenziali della stazione appaltante
       type: object
@@ -3065,8 +3131,13 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        idPiano:
+          description: identificativo univoco del Piano definito da ANAC
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         stazioniAppaltanti:
-          description: elenco delle stazioni appaltanti associate all'appalto
+          description: elenco delle stazioni appaltanti associate all'appalto o al piano
           type: array
           items:
             $ref: '#/components/schemas/StazioneAppaltanteGestoreSAType'
