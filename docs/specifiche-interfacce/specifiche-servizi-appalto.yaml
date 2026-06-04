@@ -53,6 +53,8 @@ tags:
     description: Operazioni richiesti dalle linee guida sull'interoperabilità.
   - name: gestioneElenchi
     description: In questo contesto rientrano tutti i servizi richiamabili dalla SA che permetteranno la creazione, l’invio e la consultazione degli elenchi di operatori economici.
+  - name: gestioneSA
+    description: In questo contesto rientrano i servizi dedicati alla gestione delle Stazioni Appaltanti associate all'appalto.
 paths:
   /status:
     get:
@@ -1980,7 +1982,125 @@ paths:
         '500':
           $ref: '#/components/responses/500InternalServerError'
       security:
-        - apiKeyAuth: []  
+        - apiKeyAuth: []
+  /consulta-sa/{idAppalto}:
+    get:
+      tags:
+        - gestioneSA
+      summary: API Rest per il recupero delle stazioni appaltanti associate ad un appalto. SINCRONO
+      description: Recupera le informazioni delle stazioni appaltanti per l'identificativo appalto indicato. SINCRONO
+      operationId: idConsultaSA
+      parameters:
+        - in: path
+          name: idAppalto
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          required: true
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      responses:
+        '200':
+          description: Consultazione riuscita
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConsultaSAResponse'
+        '400':
+          description: Errore nella richiesta
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+      security:
+        - apiKeyAuth: []
+  /modifica-sa:
+    post:
+      tags:
+        - gestioneSA
+      summary: API Rest per la modifica delle stazioni appaltanti associate ad un appalto. SINCRONO
+      description: Modifica le informazioni delle stazioni appaltanti per l'appalto indicato. SINCRONO
+      operationId: idModificaSA
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GestoreSARequest'
+        required: true
+      responses:
+        '200':
+          description: Modifica riuscita
+        '400':
+          description: Errore nella modifica
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+      security:
+        - apiKeyAuth: []
+  /aggiungi-sa:
+    post:
+      tags:
+        - gestioneSA
+      summary: API Rest per l'aggiunta di stazioni appaltanti ad un appalto. SINCRONO
+      description: Aggiunge nuove stazioni appaltanti all'appalto indicato. SINCRONO
+      operationId: idAggiungiSA
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GestoreSARequest'
+        required: true
+      responses:
+        '200':
+          description: Aggiunta riuscita
+        '400':
+          description: Errore nell'aggiunta
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+      security:
+        - apiKeyAuth: []
+  /cancella-sa:
+    post:
+      tags:
+        - gestioneSA
+      summary: API Rest per l'eliminazione di stazioni appaltanti da un appalto. SINCRONO
+      description: Elimina le stazioni appaltanti dall'appalto indicato. SINCRONO
+      operationId: idCancellaSA
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GestoreSARequest'
+        required: true
+      responses:
+        '200':
+          description: Eliminazione riuscita
+        '400':
+          description: Errore nell'eliminazione
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GestoreSAErrorResponse'
+      security:
+        - apiKeyAuth: []
 components:
   headers:
     Retry-After:
@@ -2830,6 +2950,141 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/EsitoOperazioneType'
+    GestoreSARequest:
+      description: Oggetto in ingresso ai servizi di gestione stazioni appaltanti
+      type: object
+      additionalProperties: false
+      required:
+        - idAppalto
+        - stazioniAppaltanti
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        stazioniAppaltanti:
+          description: elenco delle stazioni appaltanti da aggiungere, modificare o eliminare
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/SAType'
+    SAType:
+      description: Dati essenziali della stazione appaltante
+      type: object
+      additionalProperties: false
+      required:
+        - codiceFiscale
+        - codiceAusa
+        - centroDiCosto
+      properties:
+        codiceFiscale:
+          description: codice fiscale della stazione appaltante
+          type: string
+          minLength: 1
+          example: "02271870921"
+        codiceAusa:
+          description: codice AUSA della stazione appaltante
+          type: string
+          minLength: 1
+          example: "0000198514"
+        centroDiCosto:
+          description: codice centro di costo associato alla stazione appaltante
+          type: string
+          minLength: 1
+          example: "280"
+        saTitolare:
+          description: indica se la stazione appaltante e titolare
+          type: boolean
+          example: true
+        funzioniSvolte:
+          description: elenco delle funzioni svolte dalla stazione appaltante
+          type: array
+          items:
+            $ref: '#/components/schemas/GestoreSATipologicaType'
+    GestoreSATipologicaType:
+      description: Oggetto tipologico usato nei servizi gestore-sa
+      type: object
+      additionalProperties: false
+      properties:
+        idTipologica:
+          type: string
+          example: "string"
+        codice:
+          type: string
+          example: "string"
+        dettaglio:
+          type: string
+          nullable: true
+          example: "string"
+    StazioneAppaltanteGestoreSAType:
+      description: Dati stazione appaltante restituiti in consultazione
+      type: object
+      additionalProperties: false
+      properties:
+        denominazione:
+          type: string
+          example: "Comune di Roma"
+        codiceFiscale:
+          type: string
+          example: "02438750586"
+        codiceAusa:
+          type: string
+          example: "0000234571"
+        denominazioneCentroDiCosto:
+          type: string
+          example: "Ufficio Lavori Pubblici"
+        centroDiCosto:
+          type: string
+          example: "280"
+        saTitolare:
+          type: boolean
+          example: true
+        funzioniSvolte:
+          type: array
+          items:
+            $ref: '#/components/schemas/GestoreSATipologicaType'
+        cancellata:
+          type: boolean
+          example: false
+        userCancellazione:
+          type: string
+          nullable: true
+          example: ""
+        dataCancellazione:
+          type: string
+          nullable: true
+          example: ""
+    ConsultaSAResponse:
+      description: Risposta del servizio di consultazione stazioni appaltanti
+      type: object
+      additionalProperties: false
+      properties:
+        idAppalto:
+          description: identificativo univoco dell'Appalto definito da ANAC
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        stazioniAppaltanti:
+          description: elenco delle stazioni appaltanti associate all'appalto
+          type: array
+          items:
+            $ref: '#/components/schemas/StazioneAppaltanteGestoreSAType'
+    GestoreSAErrorResponse:
+      description: Risposta errore dei servizi gestore-sa
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+      properties:
+        codeError:
+          description: codice tecnico dell'errore
+          type: string
+          nullable: true
+          example: "GS400"
+        errors:
+          description: elenco errori di dettaglio
+          type: array
+          items:
+            $ref: '#/components/schemas/GestoreSATipologicaType'
     BaseResponse:
       type: object
       additionalProperties: false
