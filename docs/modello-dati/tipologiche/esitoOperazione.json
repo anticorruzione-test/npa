@@ -510,4 +510,58 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"SA_INSERITE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti inserite",
+		"en": "Stazioni Appaltanti inserite"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_N_INSERITE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti non inserite",
+		"en": "Stazioni Appaltanti non inserite"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_MODIFICATE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti modificate",
+		"en": "Stazioni Appaltanti modificate"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_N_MODIFICATE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti non modificate",
+		"en": "Stazioni Appaltanti non modificate"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_CANCELLATE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti cancellate",
+		"en": "Stazioni Appaltanti cancellate"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_N_CANCELLATE",
+    "descrizione": {
+		"it": "Stazioni Appaltanti non cancellate",
+		"en": "Stazioni Appaltanti non cancellate"
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]

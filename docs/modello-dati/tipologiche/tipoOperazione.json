@@ -249,4 +249,31 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"SA_INSERISCI",
+    "descrizione": {
+        "it": "Inserisci Stazioni Appaltanti",
+        "en": "Inserisci Stazioni Appaltanti"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_MODIFICA",
+    "descrizione": {
+        "it": "Modifica Stazioni Appaltanti",
+        "en": "Modifica Stazioni Appaltanti"
+    },
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA_INSERISCI",
+    "descrizione": {
+        "it": "Cancella Stazioni Appaltanti",
+        "en": "Cancella Stazioni Appaltanti"
+    },
+    "dataInizio":null,
+    "dataFine":null
 }]
