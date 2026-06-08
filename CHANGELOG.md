@@ -1722,6 +1722,12 @@ aggiunta regola REG5_1
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
 
+<summary><h1>Note di rilascio del 08/06/2026</h1></summary>
+
+### Orchestratore
+* ticket 105169:
+	* modificata la riga della scheda ID:
+		* colonna schedaSuccessiva: aggiunta la scheda S1_2
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
