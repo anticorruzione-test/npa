@@ -269,7 +269,7 @@
     "dataFine":null
 },
 {
-    "codice":"SA_INSERISCI",
+    "codice":"SA_CANCELLA",
     "descrizione": {
         "it": "Cancella Stazioni Appaltanti",
         "en": "Cancella Stazioni Appaltanti"
