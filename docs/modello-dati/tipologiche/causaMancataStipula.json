@@ -1,0 +1,45 @@
+[{
+    "codice":"1",
+    "descrizione": {
+		"it": "Revoca dell'aggiudicazione definitiva",
+		"en": "Revoca dell'aggiudicazione definitiva"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"2",
+    "descrizione": {
+		"it": "Recesso della stazione appaltante",
+		"en": "Recesso della stazione appaltante"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"3",
+    "descrizione": {
+		"it": "Recesso dell'appaltatore",
+		"en": "Recesso dell'appaltatore"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"4",
+    "descrizione": {
+		"it": "Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore)",
+		"en": "Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore)"
+		},
+    "dataInizio":"2019-06-26T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"5",
+    "descrizione": {
+		"it": "Annullata in autotutela per errore amministrativo",
+		"en": "Annullata in autotutela per errore amministrativo"
+		},
+    "dataInizio":"2025-04-08T00:00:00Z",
+    "dataFine":null
+}]
