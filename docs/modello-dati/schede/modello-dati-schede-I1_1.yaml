@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda I1_1 - Scheda di inizio prestazione per avanzata esecuzione
+  version: 1.0.0
+components:
+  schemas:
+    DatiInizioType:
+      description: Oggetto che riporta i dati di inizio prestazione per avanzata esecuzione
+      type: object
+      additionalProperties: false
+      required: [dataVerbaleConsegnaDefinitiva]
+      properties:
+        dataVerbaleConsegnaDefinitiva:
+          description: Data verbale consegna definitiva
+          type: string
+          format: date-time        
+    AnacFormI1_1Type:
+      description: Contiene tutti i dati di inizio prestazione
+      type: object
+      additionalProperties: false
+      required: [idContratto, datiInizio]
+      properties: 
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        datiInizio:
+          $ref: '#/components/schemas/DatiInizioType'
+    SchedaI1_1Type:
+      description: Avvio in anticipata esecuzione
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormI1_1Type'
