@@ -228,6 +228,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [causaInterruzioneAnticipata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/tipologiche/causaInterruzioneAnticipata.json)
+    MotiviMancataStipulaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivi della mancata stipula - fare riferimento ai valori contenuti nel file [causaMancataStipula.json](https://raw.githubusercontent.com/anticorruzione-test/npa/chg-07-v2/docs/modello-dati/tipologiche/causaMancataStipula.json)
     MotiviRisoluzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
