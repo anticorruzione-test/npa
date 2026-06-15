@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda CO1_1 - Scheda di conclusione per mancata stipula/esecuzione.
+  version: 1.0.0
+components:
+  schemas:
+    ConclusioneType:
+      description: Oggetto che riporta i dati di conclusione per mancata stipula
+      type: object
+      additionalProperties: false
+      required: [causaMancataStipula]
+      properties:
+        causaMancataStipula:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviMancataStipulaEnum'
+    AnacFormCO1_1Type:
+      description: Contiene i dati di conclusione per mancata stipula/esecuzione
+      type: object
+      additionalProperties: false
+      required: [conclusione,cig]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string          
+        conclusione:
+          $ref: '#/components/schemas/ConclusioneType'
+    SchedaCO1_1Type:
+      description: Scheda di mancata stipula/esecuzione
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCO1_1Type'
