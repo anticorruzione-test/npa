@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda CO1_2 - Scheda di rescissione dal contratto.
+  version: 1.0.0
+components:
+  schemas:
+    ConclusioneType:
+      description: Oggetto che riporta i dati di rescissione dal contratto.
+      type: object
+      additionalProperties: false
+      required: [dataRescissione,causaRescissione]
+      properties:
+        causaRescissione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRescissioneEnum'
+        motiviRisoluzione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRisoluzioneEnum'
+        dataStipula:
+          description: Data stipula del contratto
+          type: string
+          format: date-time            
+        dataEsecutivita:
+          description: Data esecutività del contratto (ove prevista)
+          type: string
+          format: date-time          
+        dataRescissione:
+          description: Data di rescissione
+          type: string
+          format: date-time
+        oneriEconomiciRisoluzioneRecesso:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OneriEconomiciRisoluzioneRecessoEnum'      
+        importo: 
+          description: Importo
+          type: number
+          format: double
+        incamerataPolizza:
+          description: Incamerata polizza
+          type: boolean
+        dataUltimazione:
+          description: Data di ultimazione della prestazione
+          type: string
+          format: date-time          
+        numeroInfortuni:
+          description: Numero di infortuni
+          type: number
+          format: integer
+        diCuiPostumiPermanenti:
+          description: di cui con postumi permanenti
+          type: number
+          format: integer 
+        diCuiMortali:
+          description: di cui mortali
+          type: number
+          format: integer          
+    AnacFormCO1_2Type:
+      description: Contiene tutti i dati di rescissione dal contratto
+      type: object
+      additionalProperties: false
+      required: [conclusione, idContratto]
+      properties:
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        conclusione:
+          $ref: '#/components/schemas/ConclusioneType'
+    SchedaCO1_2Type:
+      description: Scheda di rescissione dal contratto
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormCO1_2Type'
