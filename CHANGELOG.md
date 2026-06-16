@@ -1747,7 +1747,7 @@ aggiunta regola REG5_1
 
 ## Schede  
 * ticket 94858 e 94864
-  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, SA1_1
+  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
   * modello-dati-schede-dati-comuni.yaml:
   	* aggiunto l'oggetto MotiviMancataStipulaEnum	
 
@@ -1757,7 +1757,7 @@ aggiunta regola REG5_1
  
 ## Orchestratore  
 * ticket 94858 e 94864
-	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, SA1_1
+	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
  	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
   	* Aggiunte le colonne ....
 
