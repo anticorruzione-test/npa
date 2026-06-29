@@ -1316,7 +1316,7 @@
 	"codice":"ERR145",
     "descrizione": {
 		"it": "Operazione non consentita: è in corso una richiesta di rollback scheda.",
-		"en": "Operazione non consentita: è in corso una richiesta di rollback scheda"
+		"en": "Operazione non consentita: è in corso una richiesta di rollback scheda."
 	},
     "dataInizio":null,
     "dataFine":null
