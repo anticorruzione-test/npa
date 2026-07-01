@@ -1448,10 +1448,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1503,10 +1503,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1558,10 +1558,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1613,10 +1613,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1668,10 +1668,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1723,10 +1723,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1785,10 +1785,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1844,10 +1844,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1867,8 +1867,8 @@
 		},
 		"codAreaFunzionale": "A_2",
 		"codFamigliaFunzionale": "BI",
-		"settore": "acquisizione beni infungibili, senza invio al TED.",
-		"regime": "acquisizione beni infungibili, senza invio al TED.",
+		"settore": "Tutti i settori, tutti i regimi",
+		"regime": "Tutti i settori, tutti i regimi",
 		"fase": "affidamento",
 		"faseOrchestratore": "Affidamento",
 		"evento": "Acquisizione beni infungibili",
@@ -1878,14 +1878,12 @@
 		"normativa": "Articolo 76 comma 2, lettera b) del decreto legislativo n. 36/2023",
 		"pubblicazioneTED": false,
 		"anacFormRichiesto": true,
-		"pubblicazioneNazionale": false,
+		"pubblicazioneNazionale": true,
 		"preinformazione": false,
 		"avviaFlusso": true,
 		"attribuisceCIG": true,
 		"schedeAmmesse": [
-			"ANN",
 			"CBI",
-			"CM1",
 			"ID",
 			"S4"
 		],
@@ -1942,6 +1940,7 @@
 		"attribuisceCIG": false,
 		"schedeAmmesse": [
 			"AC1",
+			"CL1",
 			"CO1",
 			"CS1",
 			"ES1",
@@ -2026,6 +2025,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -2743,7 +2743,8 @@
 			"50",
 			"60",
 			"61",
-			"62"
+			"62",
+			"72"
 		],
 		"flussoUscita": "",
 		"regole": [
@@ -2757,7 +2758,7 @@
 		"dataFine": {
 			"$date": "2099-12-30T23:00:00.000Z"
 		},
-		"schedaAnnullabile": false,
+		"schedaAnnullabile": true,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
@@ -2891,8 +2892,8 @@
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "BI",
-		"settore": "",
-		"regime": "",
+		"settore": "Tutti i settori, tutti i regimi",
+		"regime": "Tutti i settori, tutti i regimi",
 		"fase": "esecuzione",
 		"faseOrchestratore": "Esecuzione",
 		"evento": "Conclusione acquisizione beni infungibili.",
@@ -3041,6 +3042,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -3193,6 +3195,61 @@
 			"$uuid": "a65db18e-27b6-4fcc-86a9-ca78e58dee55"
 		},
 		"codAreaFunzionale": "A_5",
+		"codFamigliaFunzionale": "CM3",
+		"settore": "appalti e concessioni sopra e sottosoglia - tutti i regimi - tutti i settori",
+		"regime": "appalti e concessioni sopra e sottosoglia - tutti i regimi - tutti i settori",
+		"fase": "pubblicazione",
+		"faseOrchestratore": "Pubblicazione",
+		"evento": "Comunicazione modifica dati della procedura negoziata senza bando",
+		"schedaInput": "CM3",
+		"versione": "1.0",
+		"descrizione": "Scheda di comunicazione modifica dati della procedura negoziata senza bando",
+		"normativa": "",
+		"pubblicazioneTED": false,
+		"espdRichiesto": false,
+		"anacFormRichiesto": true,
+		"pubblicazioneNazionale": false,
+		"preinformazione": false,
+		"avviaFlusso": false,
+		"attribuisceCIG": false,
+		"schedeAmmesse": [
+			"ANN",
+			"ID",
+			"NAG",
+			"S2"
+		],
+		"flussiAppartenenza": [
+			"72",
+			"800"
+		],
+		"flussoUscita": "",
+		"regole": [
+			"CM3"
+		],
+		"codiciSchedeCorrelate": [],
+		"dataInizio": {
+			"$date": "2024-05-29T22:00:00.000Z"
+		},
+		"dataFine": {
+			"$date": "2099-12-30T23:00:00.000Z"
+		},
+		"schedaAnnullabile": false,
+		"servizioPostAnnullamento": "",
+		"rettificabile": false,
+		"dataCreazione": {
+			"$date": "2026-05-04T14:09:12.968Z"
+		},
+		"dataModifica": null,
+		"stato": "ATTIVO"
+	},
+	{
+		"_id": {
+			"$oid": "69f8a88955cec365e6b549c5"
+		},
+		"publicId": {
+			"$uuid": "daadb63c-e411-43de-b3a7-454c883c2c6c"
+		},
+		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "CO",
 		"settore": "DS",
 		"regime": "R*",
@@ -3283,6 +3340,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -3308,10 +3366,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549c5"
+			"$oid": "69f8a88955cec365e6b549b4"
 		},
 		"publicId": {
-			"$uuid": "daadb63c-e411-43de-b3a7-454c883c2c6c"
+			"$uuid": "670d55f9-8bdb-40a5-a3a6-6b6c9e128bc3"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "CO",
@@ -3345,10 +3403,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": true,
 		"servizioPostAnnullamento": "",
@@ -3361,10 +3419,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549b4"
+			"$oid": "69f8a88955cec365e6b549b5"
 		},
 		"publicId": {
-			"$uuid": "670d55f9-8bdb-40a5-a3a6-6b6c9e128bc3"
+			"$uuid": "16bdfecd-a581-4958-95b7-892c93ee53cc"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "COC",
@@ -3412,10 +3470,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549b5"
+			"$oid": "69f8a88955cec365e6b549bc"
 		},
 		"publicId": {
-			"$uuid": "16bdfecd-a581-4958-95b7-892c93ee53cc"
+			"$uuid": "ac394d06-e9f3-4f2a-87e9-6b492008014e"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "RS",
@@ -3523,6 +3581,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -3533,10 +3592,10 @@
 			"ES1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -3549,10 +3608,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549bc"
+			"$oid": "69f8a88955cec365e6b549ae"
 		},
 		"publicId": {
-			"$uuid": "ac394d06-e9f3-4f2a-87e9-6b492008014e"
+			"$uuid": "025f7e40-aeae-4cc8-99f7-947d2418ec4e"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "CSDA",
@@ -3591,7 +3650,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -3604,10 +3663,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549ae"
+			"$oid": "69f8a88955cec365e6b54944"
 		},
 		"publicId": {
-			"$uuid": "025f7e40-aeae-4cc8-99f7-947d2418ec4e"
+			"$uuid": "304a4521-9466-4f9f-a6ee-5306dcd6f2eb"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "CSDA",
@@ -3642,23 +3701,23 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54944"
+			"$oid": "69f8a88955cec365e6b54945"
 		},
 		"publicId": {
-			"$uuid": "304a4521-9466-4f9f-a6ee-5306dcd6f2eb"
+			"$uuid": "0581f75b-5237-41fa-9a2a-f4598c395a93"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "RS",
@@ -3767,6 +3826,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -3793,10 +3853,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54945"
+			"$oid": "69f8a88955cec365e6b549ad"
 		},
 		"publicId": {
-			"$uuid": "0581f75b-5237-41fa-9a2a-f4598c395a93"
+			"$uuid": "96a2fbc3-7e6b-4fee-a390-9b74877f2d49"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "I",
@@ -3902,6 +3962,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -3920,17 +3981,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549ad"
+			"$oid": "69f8a88955cec365e6b549a5"
 		},
 		"publicId": {
-			"$uuid": "96a2fbc3-7e6b-4fee-a390-9b74877f2d49"
+			"$uuid": "bb5684df-0c60-4dae-9a3a-30ab6e581170"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "ID",
@@ -3988,6 +4049,7 @@
 			"CL1",
 			"CM1",
 			"CM2",
+			"CM3",
 			"CO1",
 			"CO2",
 			"COC",
@@ -4004,6 +4066,7 @@
 			"RI1",
 			"RSU1",
 			"S1",
+			"S1_2",
 			"S2",
 			"S2R",
 			"S4",
@@ -4080,6 +4143,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -4097,17 +4161,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a5"
+			"$oid": "69f8a88955cec365e6b549be"
 		},
 		"publicId": {
-			"$uuid": "bb5684df-0c60-4dae-9a3a-30ab6e581170"
+			"$uuid": "e108a8ec-53b7-4b42-aa10-dea34c4d8c07"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "AC",
@@ -4213,6 +4277,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -4230,17 +4295,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549be"
+			"$oid": "69f8a88955cec365e6b549b3"
 		},
 		"publicId": {
-			"$uuid": "e108a8ec-53b7-4b42-aa10-dea34c4d8c07"
+			"$uuid": "86b906bb-4676-440e-871b-5aaaf2b19b8e"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "ISDA",
@@ -4283,7 +4348,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -4296,10 +4361,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549b3"
+			"$oid": "69f8a88955cec365e6b54941"
 		},
 		"publicId": {
-			"$uuid": "86b906bb-4676-440e-871b-5aaaf2b19b8e"
+			"$uuid": "3392270e-3e22-4f0a-be51-7011c2b32a91"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "ISDA",
@@ -4336,23 +4401,23 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54941"
+			"$oid": "69f8a88955cec365e6b54942"
 		},
 		"publicId": {
-			"$uuid": "3392270e-3e22-4f0a-be51-7011c2b32a91"
+			"$uuid": "4710fa6d-9bda-43f6-9b80-f522597ba927"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "M",
@@ -4426,10 +4491,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54942"
+			"$oid": "69f8a88955cec365e6b549a6"
 		},
 		"publicId": {
-			"$uuid": "4710fa6d-9bda-43f6-9b80-f522597ba927"
+			"$uuid": "d6ac493e-8425-4963-9ae9-e7cffa5830bc"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "M",
@@ -4489,17 +4554,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a6"
+			"$oid": "69f8a88955cec365e6b549a7"
 		},
 		"publicId": {
-			"$uuid": "d6ac493e-8425-4963-9ae9-e7cffa5830bc"
+			"$uuid": "797bf335-1009-4523-9068-7d200387414e"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "M",
@@ -4542,12 +4607,15 @@
 			"212",
 			"213",
 			"216",
+			"217",
 			"220",
 			"225",
+			"228",
 			"30",
 			"31",
 			"33",
 			"34",
+			"36",
 			"40",
 			"61",
 			"62",
@@ -4578,10 +4646,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a7"
+			"$oid": "69f8a88955cec365e6b549a8"
 		},
 		"publicId": {
-			"$uuid": "797bf335-1009-4523-9068-7d200387414e"
+			"$uuid": "15851c93-05d6-495e-af98-394cbac32511"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "M",
@@ -4621,7 +4689,10 @@
 		],
 		"flussiAppartenenza": [
 			"214",
+			"217",
 			"219",
+			"228",
+			"36",
 			"40",
 			"41",
 			"42",
@@ -4655,10 +4726,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a8"
+			"$oid": "69f8a88955cec365e6b549a9"
 		},
 		"publicId": {
-			"$uuid": "15851c93-05d6-495e-af98-394cbac32511"
+			"$uuid": "05824b61-08c6-4a6c-9ac1-41a55752d996"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "NAG",
@@ -4739,10 +4810,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a9"
+			"$oid": "69f8a88955cec365e6b549a3"
 		},
 		"publicId": {
-			"$uuid": "05824b61-08c6-4a6c-9ac1-41a55752d996"
+			"$uuid": "63759f44-6f9f-4bf0-892e-00620a195879"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -4789,17 +4860,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a3"
+			"$oid": "69f8a88955cec365e6b5493a"
 		},
 		"publicId": {
-			"$uuid": "63759f44-6f9f-4bf0-892e-00620a195879"
+			"$uuid": "cc3e8b8e-b9e8-4198-b188-1fe72ae2a725"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -4853,10 +4924,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493a"
+			"$oid": "69f8a88955cec365e6b5493b"
 		},
 		"publicId": {
-			"$uuid": "cc3e8b8e-b9e8-4198-b188-1fe72ae2a725"
+			"$uuid": "c8e20f58-fed3-4520-99ca-aa3d942bfe34"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -4910,10 +4981,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493b"
+			"$oid": "69f8a88955cec365e6b5493c"
 		},
 		"publicId": {
-			"$uuid": "c8e20f58-fed3-4520-99ca-aa3d942bfe34"
+			"$uuid": "78a500d8-85c6-401c-ab5e-a9677e477837"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -4967,10 +5038,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493c"
+			"$oid": "69f8a88955cec365e6b5493d"
 		},
 		"publicId": {
-			"$uuid": "78a500d8-85c6-401c-ab5e-a9677e477837"
+			"$uuid": "644a2c69-a1f2-49fa-bd63-73c3bc50d431"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5024,10 +5095,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493d"
+			"$oid": "69f8a88955cec365e6b5493e"
 		},
 		"publicId": {
-			"$uuid": "644a2c69-a1f2-49fa-bd63-73c3bc50d431"
+			"$uuid": "dca7779b-6aa3-472f-b2f2-6a493d9b1506"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "P1",
@@ -5080,10 +5151,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493e"
+			"$oid": "69f8a88955cec365e6b5493f"
 		},
 		"publicId": {
-			"$uuid": "dca7779b-6aa3-472f-b2f2-6a493d9b1506"
+			"$uuid": "70a04c29-d2c4-46d9-a3f8-8f34d3415742"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5138,10 +5209,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5493f"
+			"$oid": "69f8a88955cec365e6b54940"
 		},
 		"publicId": {
-			"$uuid": "70a04c29-d2c4-46d9-a3f8-8f34d3415742"
+			"$uuid": "7837ae2c-effb-4a4a-98ac-32d697d1ab3d"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5196,10 +5267,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54940"
+			"$oid": "69f8a88955cec365e6b54946"
 		},
 		"publicId": {
-			"$uuid": "7837ae2c-effb-4a4a-98ac-32d697d1ab3d"
+			"$uuid": "34a6ea09-3815-40b6-b0ac-05df5f82ae2d"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5254,10 +5325,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54946"
+			"$oid": "69f8a88955cec365e6b54947"
 		},
 		"publicId": {
-			"$uuid": "34a6ea09-3815-40b6-b0ac-05df5f82ae2d"
+			"$uuid": "316b2ddb-de50-4cfd-87df-1dbed5f0ce15"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5312,10 +5383,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54947"
+			"$oid": "69f8a88955cec365e6b54948"
 		},
 		"publicId": {
-			"$uuid": "316b2ddb-de50-4cfd-87df-1dbed5f0ce15"
+			"$uuid": "bb8062ca-f965-4f4f-93bb-f86c033c13c3"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5370,10 +5441,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54948"
+			"$oid": "69f8a88955cec365e6b54949"
 		},
 		"publicId": {
-			"$uuid": "bb8062ca-f965-4f4f-93bb-f86c033c13c3"
+			"$uuid": "e47ecf80-d2a9-4717-98b8-363a3e8f5486"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5428,10 +5499,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54949"
+			"$oid": "69f8a88955cec365e6b5494a"
 		},
 		"publicId": {
-			"$uuid": "e47ecf80-d2a9-4717-98b8-363a3e8f5486"
+			"$uuid": "af266bcf-a399-4473-98c6-dd10314cc21b"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5486,10 +5557,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5494a"
+			"$oid": "69f8a88955cec365e6b5494b"
 		},
 		"publicId": {
-			"$uuid": "af266bcf-a399-4473-98c6-dd10314cc21b"
+			"$uuid": "11b2d5fe-d888-4219-9d32-2802a6c93dc0"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5544,10 +5615,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5494b"
+			"$oid": "69f8a88955cec365e6b5494c"
 		},
 		"publicId": {
-			"$uuid": "11b2d5fe-d888-4219-9d32-2802a6c93dc0"
+			"$uuid": "0aa4b165-7f00-47a0-8fc7-8276c1db7d83"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P1",
@@ -5602,10 +5673,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5494c"
+			"$oid": "69f8a88955cec365e6b5494d"
 		},
 		"publicId": {
-			"$uuid": "0aa4b165-7f00-47a0-8fc7-8276c1db7d83"
+			"$uuid": "8b9d0ec3-d72a-4147-ac76-182be903b35d"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5658,10 +5729,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5494d"
+			"$oid": "69f8a88955cec365e6b54954"
 		},
 		"publicId": {
-			"$uuid": "8b9d0ec3-d72a-4147-ac76-182be903b35d"
+			"$uuid": "2d68b1d7-f178-4d89-b9a1-485dbe81bb6b"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5713,10 +5784,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54954"
+			"$oid": "69f8a88955cec365e6b54955"
 		},
 		"publicId": {
-			"$uuid": "2d68b1d7-f178-4d89-b9a1-485dbe81bb6b"
+			"$uuid": "b5800bc7-a7cf-4425-90d4-d17e49c604aa"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5768,10 +5839,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54955"
+			"$oid": "69f8a88955cec365e6b54956"
 		},
 		"publicId": {
-			"$uuid": "b5800bc7-a7cf-4425-90d4-d17e49c604aa"
+			"$uuid": "bf40c43d-d645-4ecd-95b4-bdac6cff207a"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5823,10 +5894,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54956"
+			"$oid": "69f8a88955cec365e6b54957"
 		},
 		"publicId": {
-			"$uuid": "bf40c43d-d645-4ecd-95b4-bdac6cff207a"
+			"$uuid": "163ce89b-a2b8-4590-8b41-877b8dc41166"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5878,10 +5949,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54957"
+			"$oid": "69f8a88955cec365e6b54958"
 		},
 		"publicId": {
-			"$uuid": "163ce89b-a2b8-4590-8b41-877b8dc41166"
+			"$uuid": "4098afef-cb44-4469-9ccf-0e7a23d43797"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5934,10 +6005,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54958"
+			"$oid": "69f8a88955cec365e6b54959"
 		},
 		"publicId": {
-			"$uuid": "4098afef-cb44-4469-9ccf-0e7a23d43797"
+			"$uuid": "c3da0fd8-28dc-44fe-a0fc-cb6baf01f736"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -5990,10 +6061,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54959"
+			"$oid": "69f8a88955cec365e6b5495a"
 		},
 		"publicId": {
-			"$uuid": "c3da0fd8-28dc-44fe-a0fc-cb6baf01f736"
+			"$uuid": "d0508c5a-abd4-48a4-9f47-1eef49846c1d"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6046,10 +6117,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495a"
+			"$oid": "69f8a88955cec365e6b5495b"
 		},
 		"publicId": {
-			"$uuid": "d0508c5a-abd4-48a4-9f47-1eef49846c1d"
+			"$uuid": "6c2d1112-c868-4e60-9024-b044a34421af"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6061,7 +6132,7 @@
 		"evento": "pubblicazione bando",
 		"schedaInput": "P2_19",
 		"versione": "1.0",
-		"descrizione": "Bando di concessione - concessioni",
+		"descrizione": "Bando di concessione - settori ordinario e speciale",
 		"normativa": "Articolo 187 decreto legislativo 36/2023",
 		"pubblicazioneTED": false,
 		"espdRichiesto": true,
@@ -6102,10 +6173,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495b"
+			"$oid": "69f8a88955cec365e6b5495c"
 		},
 		"publicId": {
-			"$uuid": "6c2d1112-c868-4e60-9024-b044a34421af"
+			"$uuid": "834f0087-9d90-4094-912d-04c0dac14fbf"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6158,10 +6229,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495c"
+			"$oid": "69f8a88955cec365e6b5495d"
 		},
 		"publicId": {
-			"$uuid": "834f0087-9d90-4094-912d-04c0dac14fbf"
+			"$uuid": "64beeca4-490f-4d93-b794-d02960996b3f"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6214,10 +6285,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495d"
+			"$oid": "69f8a88955cec365e6b5495e"
 		},
 		"publicId": {
-			"$uuid": "64beeca4-490f-4d93-b794-d02960996b3f"
+			"$uuid": "12ab1e90-4dc6-4ff9-bc4c-f16d09195deb"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6270,10 +6341,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495e"
+			"$oid": "69f8a88955cec365e6b5495f"
 		},
 		"publicId": {
-			"$uuid": "12ab1e90-4dc6-4ff9-bc4c-f16d09195deb"
+			"$uuid": "c00df027-f470-46a9-a995-4560377e943c"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P2",
@@ -6326,10 +6397,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5495f"
+			"$oid": "69f8a88955cec365e6b54960"
 		},
 		"publicId": {
-			"$uuid": "c00df027-f470-46a9-a995-4560377e943c"
+			"$uuid": "977e24f8-1a29-4740-bcf7-2beda3b3546d"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P3",
@@ -6340,9 +6411,8 @@
 		"schedaInput": "P3_1",
 		"versione": "1.0",
 		"descrizione": "Contratti esclusi (generale o di tipo accordo quadro)",
-		"normativa": "Articolo 10 della direttiva 2014/24/UE e articolo 21 della direttiva 2014/25/UE",
+		"normativa": "Articolo 10 della direttiva 2014/24/UE e articolo 21 della direttiva 2014/25/UE\nDelibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
-		"espdRichiesto": false,
 		"anacFormRichiesto": true,
 		"pubblicazioneNazionale": false,
 		"preinformazione": false,
@@ -6382,10 +6452,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54960"
+			"$oid": "69f8a88955cec365e6b54961"
 		},
 		"publicId": {
-			"$uuid": "977e24f8-1a29-4740-bcf7-2beda3b3546d"
+			"$uuid": "0dda7aa9-2cb9-46a7-a30f-56f99810a8f7"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P3",
@@ -6396,9 +6466,8 @@
 		"schedaInput": "P3_2",
 		"versione": "1.0",
 		"descrizione": "Contratti esclusi in Concessione o Contratti esclusi in Concessione con la tecnica dell'AQ",
-		"normativa": "Articolo 10 della direttiva 2014/23/UE ",
+		"normativa": "Articolo 10 della direttiva 2014/23/UE \nDelibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
-		"espdRichiesto": true,
 		"anacFormRichiesto": true,
 		"pubblicazioneNazionale": false,
 		"preinformazione": false,
@@ -6438,10 +6507,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54961"
+			"$oid": "69f8a88955cec365e6b54962"
 		},
 		"publicId": {
-			"$uuid": "0dda7aa9-2cb9-46a7-a30f-56f99810a8f7"
+			"$uuid": "352d9860-7129-461b-833f-362e03c0055c"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P3",
@@ -6452,9 +6521,8 @@
 		"schedaInput": "P3_3",
 		"versione": "1.0",
 		"descrizione": "Contratti esclusi - adesione con confronto competitivo",
-		"normativa": "N/A",
+		"normativa": "Delibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
-		"espdRichiesto": true,
 		"anacFormRichiesto": true,
 		"pubblicazioneNazionale": false,
 		"preinformazione": false,
@@ -6493,10 +6561,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54962"
+			"$oid": "69f8a88955cec365e6b54963"
 		},
 		"publicId": {
-			"$uuid": "352d9860-7129-461b-833f-362e03c0055c"
+			"$uuid": "587a725d-3663-49a2-a398-0ab1121fcccc"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P3",
@@ -6507,9 +6575,8 @@
 		"schedaInput": "P3_4",
 		"versione": "1.0",
 		"descrizione": "Affidamento a contraente generale",
-		"normativa": "Artt. 204 decreto legislativo 36/2023\nArticolo 205 comma 6 e comma 7 decreto legislativo 36/2023\n",
+		"normativa": "Artt. 204 decreto legislativo 36/2023\nArticolo 205 comma 6 e comma 7 decreto legislativo 36/2023\nDelibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
-		"espdRichiesto": true,
 		"anacFormRichiesto": true,
 		"pubblicazioneNazionale": true,
 		"preinformazione": false,
@@ -6547,10 +6614,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54963"
+			"$oid": "69f8a88955cec365e6b54964"
 		},
 		"publicId": {
-			"$uuid": "587a725d-3663-49a2-a398-0ab1121fcccc"
+			"$uuid": "016851cd-056f-4f30-a18f-2d7ebd0f4035"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P3",
@@ -6561,9 +6628,8 @@
 		"schedaInput": "P3_5",
 		"versione": "1.0",
 		"descrizione": "Scelta del socio privato nella società mista",
-		"normativa": "Art. 13 comma 3 decreto legislativo 36/2023\nArticolo 17 decreto legislativo 175/2016",
+		"normativa": "Art. 13 comma 3 decreto legislativo 36/2023\nArticolo 17 decreto legislativo 175/2016\nDelibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
-		"espdRichiesto": true,
 		"anacFormRichiesto": true,
 		"pubblicazioneNazionale": true,
 		"preinformazione": false,
@@ -6601,10 +6667,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54964"
+			"$oid": "69f8a88955cec365e6b54965"
 		},
 		"publicId": {
-			"$uuid": "016851cd-056f-4f30-a18f-2d7ebd0f4035"
+			"$uuid": "cf626b2f-0fcf-4051-aee0-f1c86e870239"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6660,10 +6726,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54965"
+			"$oid": "69f8a88955cec365e6b54969"
 		},
 		"publicId": {
-			"$uuid": "cf626b2f-0fcf-4051-aee0-f1c86e870239"
+			"$uuid": "20d88509-4c23-4ceb-80b0-c1370da2e671"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6719,10 +6785,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54969"
+			"$oid": "69f8a88955cec365e6b5496a"
 		},
 		"publicId": {
-			"$uuid": "20d88509-4c23-4ceb-80b0-c1370da2e671"
+			"$uuid": "ac7c349c-d254-4cbe-95c9-9832305065d2"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6778,10 +6844,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496a"
+			"$oid": "69f8a88955cec365e6b5496b"
 		},
 		"publicId": {
-			"$uuid": "ac7c349c-d254-4cbe-95c9-9832305065d2"
+			"$uuid": "251350ca-3436-4d1a-9403-c015d021f2ed"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6837,10 +6903,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496b"
+			"$oid": "69f8a88955cec365e6b5496c"
 		},
 		"publicId": {
-			"$uuid": "251350ca-3436-4d1a-9403-c015d021f2ed"
+			"$uuid": "38477c18-eafe-4e94-ac30-51d7b781b8f5"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6896,10 +6962,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496c"
+			"$oid": "69f8a88955cec365e6b5496d"
 		},
 		"publicId": {
-			"$uuid": "38477c18-eafe-4e94-ac30-51d7b781b8f5"
+			"$uuid": "ca97881e-4e43-44f6-8cbe-2b6a6c63e392"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P4",
@@ -6955,10 +7021,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496d"
+			"$oid": "69f8a88955cec365e6b5496e"
 		},
 		"publicId": {
-			"$uuid": "ca97881e-4e43-44f6-8cbe-2b6a6c63e392"
+			"$uuid": "4b419155-62d5-4de7-a6d5-80fa2c1bcccc"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P5",
@@ -6971,7 +7037,7 @@
 		"schedaInput": "P5",
 		"versione": "1.0",
 		"descrizione": "appalti soggetti a sola tracciabilità",
-		"normativa": "Articoli 6, 139, 142, 143, 144 decreto legislativo 36/2023",
+		"normativa": "Articoli 6, 139, 142, 143, 144 decreto legislativo 36/2023\nDelibera Anac n. 584/2023",
 		"pubblicazioneTED": false,
 		"espdRichiesto": false,
 		"anacFormRichiesto": true,
@@ -7009,10 +7075,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496e"
+			"$oid": "69f8a88955cec365e6b54968"
 		},
 		"publicId": {
-			"$uuid": "4b419155-62d5-4de7-a6d5-80fa2c1bcccc"
+			"$uuid": "d8380d47-18b5-4652-88d6-475978083979"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P6",
@@ -7065,10 +7131,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54968"
+			"$oid": "69f8a88955cec365e6b54966"
 		},
 		"publicId": {
-			"$uuid": "d8380d47-18b5-4652-88d6-475978083979"
+			"$uuid": "4ee65d6b-1416-433a-a46e-1c4b7c90ae48"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P6",
@@ -7121,10 +7187,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54966"
+			"$oid": "69f8a88955cec365e6b54967"
 		},
 		"publicId": {
-			"$uuid": "4ee65d6b-1416-433a-a46e-1c4b7c90ae48"
+			"$uuid": "7f6f3db5-079d-456b-8844-7a5819069908"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P7",
@@ -7159,10 +7225,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7175,10 +7241,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54967"
+			"$oid": "69f8a88955cec365e6b5496f"
 		},
 		"publicId": {
-			"$uuid": "7f6f3db5-079d-456b-8844-7a5819069908"
+			"$uuid": "562f9359-5f3c-46eb-9c2e-c07fc3e85a60"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P7",
@@ -7213,10 +7279,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7229,10 +7295,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b5496f"
+			"$oid": "69f8a88955cec365e6b54970"
 		},
 		"publicId": {
-			"$uuid": "562f9359-5f3c-46eb-9c2e-c07fc3e85a60"
+			"$uuid": "59ffe01b-14de-49a6-87b9-58d389e11185"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P7",
@@ -7267,10 +7333,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7283,10 +7349,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54970"
+			"$oid": "69f8a88955cec365e6b54971"
 		},
 		"publicId": {
-			"$uuid": "59ffe01b-14de-49a6-87b9-58d389e11185"
+			"$uuid": "e931da36-a885-4671-9d4d-fa9b4a0eba4b"
 		},
 		"codAreaFunzionale": "A_3",
 		"codFamigliaFunzionale": "P7",
@@ -7307,6 +7373,8 @@
 		"avviaFlusso": true,
 		"attribuisceCIG": true,
 		"schedeAmmesse": [
+			"ANN",
+			"CM3",
 			"ID",
 			"NAG",
 			"S2"
@@ -7322,10 +7390,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7338,10 +7406,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54971"
+			"$oid": "69f8a88955cec365e6b54972"
 		},
 		"publicId": {
-			"$uuid": "e931da36-a885-4671-9d4d-fa9b4a0eba4b"
+			"$uuid": "82b0a0c3-b502-44c6-b62d-cb951cba705e"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "P7",
@@ -7373,10 +7441,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7389,10 +7457,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54972"
+			"$oid": "69f8a88955cec365e6b54973"
 		},
 		"publicId": {
-			"$uuid": "82b0a0c3-b502-44c6-b62d-cb951cba705e"
+			"$uuid": "8577a437-0489-4686-97b8-85e728429740"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7426,10 +7494,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.718Z"
+			"$date": "2026-06-25T15:13:08.287Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.718Z"
+			"$date": "2099-12-31T16:13:08.287Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7442,10 +7510,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54973"
+			"$oid": "69f8a88955cec365e6b549c7"
 		},
 		"publicId": {
-			"$uuid": "8577a437-0489-4686-97b8-85e728429740"
+			"$uuid": "9b7fc207-0814-4274-82d4-e0cae3040bb6"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7479,26 +7547,26 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549c7"
+			"$oid": "69f8a88955cec365e6b54931"
 		},
 		"publicId": {
-			"$uuid": "9b7fc207-0814-4274-82d4-e0cae3040bb6"
+			"$uuid": "7c996f3e-89f2-4829-b6be-12a95cd88d67"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7532,26 +7600,26 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.958Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54931"
+			"$oid": "69f8a88955cec365e6b54932"
 		},
 		"publicId": {
-			"$uuid": "7c996f3e-89f2-4829-b6be-12a95cd88d67"
+			"$uuid": "ff8fe1d8-e3fc-42c0-839e-572d5a83467b"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7585,26 +7653,26 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.958Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54932"
+			"$oid": "69f8a88955cec365e6b54933"
 		},
 		"publicId": {
-			"$uuid": "ff8fe1d8-e3fc-42c0-839e-572d5a83467b"
+			"$uuid": "e529a21c-0967-4acc-8051-a30fb18e3a10"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7638,10 +7706,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7654,10 +7722,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54933"
+			"$oid": "69f8a88955cec365e6b54934"
 		},
 		"publicId": {
-			"$uuid": "e529a21c-0967-4acc-8051-a30fb18e3a10"
+			"$uuid": "1fcff64a-b734-4c4f-b96b-fe304bcbced7"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7691,10 +7759,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7707,10 +7775,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54934"
+			"$oid": "69f8a88955cec365e6b54935"
 		},
 		"publicId": {
-			"$uuid": "1fcff64a-b734-4c4f-b96b-fe304bcbced7"
+			"$uuid": "94ddd157-5ab4-4fbb-90ee-87717a26612a"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7745,10 +7813,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7761,10 +7829,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54935"
+			"$oid": "69f8a88955cec365e6b54936"
 		},
 		"publicId": {
-			"$uuid": "94ddd157-5ab4-4fbb-90ee-87717a26612a"
+			"$uuid": "2aaca24e-c2d4-4bec-9710-e8a38eb1001d"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7800,10 +7868,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7816,10 +7884,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54936"
+			"$oid": "69f8a88955cec365e6b54937"
 		},
 		"publicId": {
-			"$uuid": "2aaca24e-c2d4-4bec-9710-e8a38eb1001d"
+			"$uuid": "56e2d05d-7d4f-4008-8d11-f85245cb0203"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL1",
@@ -7854,10 +7922,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.728Z"
+			"$date": "2026-06-25T15:13:08.295Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.295Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7870,10 +7938,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54937"
+			"$oid": "69f8a88955cec365e6b54938"
 		},
 		"publicId": {
-			"$uuid": "56e2d05d-7d4f-4008-8d11-f85245cb0203"
+			"$uuid": "1e8e142f-c2e0-4c03-b3dd-6be6ae9de438"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -7922,10 +7990,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54938"
+			"$oid": "69f8a88955cec365e6b54939"
 		},
 		"publicId": {
-			"$uuid": "1e8e142f-c2e0-4c03-b3dd-6be6ae9de438"
+			"$uuid": "4cacde5a-da48-4338-b90c-0ab39192a753"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -7974,10 +8042,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54939"
+			"$oid": "69f8a88955cec365e6b54951"
 		},
 		"publicId": {
-			"$uuid": "4cacde5a-da48-4338-b90c-0ab39192a753"
+			"$uuid": "272b3359-b4db-4bee-8d9d-105876bd86f9"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -8026,10 +8094,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54951"
+			"$oid": "69f8a88955cec365e6b54952"
 		},
 		"publicId": {
-			"$uuid": "272b3359-b4db-4bee-8d9d-105876bd86f9"
+			"$uuid": "ce3a9b06-359d-41ed-8760-44dca398bddc"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -8077,10 +8145,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54952"
+			"$oid": "69f8a88955cec365e6b54953"
 		},
 		"publicId": {
-			"$uuid": "ce3a9b06-359d-41ed-8760-44dca398bddc"
+			"$uuid": "2cba6cff-ec99-4459-a73f-5a1b50e46990"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -8128,10 +8196,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54953"
+			"$oid": "69f8a88955cec365e6b549b1"
 		},
 		"publicId": {
-			"$uuid": "2cba6cff-ec99-4459-a73f-5a1b50e46990"
+			"$uuid": "05314df9-b488-4885-a34b-29615afb3fcc"
 		},
 		"codAreaFunzionale": "A_1",
 		"codFamigliaFunzionale": "PL2",
@@ -8172,17 +8240,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549b1"
+			"$oid": "69f8a88955cec365e6b549ab"
 		},
 		"publicId": {
-			"$uuid": "05314df9-b488-4885-a34b-29615afb3fcc"
+			"$uuid": "611ea14c-5cb5-4228-a5fe-eb32f3ff6e39"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SO",
@@ -8290,6 +8358,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -8301,10 +8370,10 @@
 			"SQ1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -8317,10 +8386,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549ab"
+			"$oid": "69f8a88955cec365e6b549ac"
 		},
 		"publicId": {
-			"$uuid": "611ea14c-5cb5-4228-a5fe-eb32f3ff6e39"
+			"$uuid": "a8e36c5b-eaa3-4b40-afb8-17cf3b63adea"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "RS",
@@ -8429,6 +8498,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -8453,10 +8523,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549ac"
+			"$oid": "69f8a88955cec365e6b54943"
 		},
 		"publicId": {
-			"$uuid": "a8e36c5b-eaa3-4b40-afb8-17cf3b63adea"
+			"$uuid": "742df0e3-06f7-4d27-b6c0-500b3ff4bad4"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "S0",
@@ -8494,23 +8564,23 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.728Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54943"
+			"$oid": "69f8a88955cec365e6b54974"
 		},
 		"publicId": {
-			"$uuid": "742df0e3-06f7-4d27-b6c0-500b3ff4bad4"
+			"$uuid": "fb494963-f750-4438-86c5-c78e81ab5b22"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "S1",
@@ -8531,6 +8601,142 @@
 		"avviaFlusso": false,
 		"attribuisceCIG": false,
 		"schedeAmmesse": [
+			"A1_29",
+			"A1_30",
+			"A1_31",
+			"A1_32",
+			"A1_33",
+			"A1_34",
+			"A1_35",
+			"A1_36",
+			"A1_37",
+			"ID",
+			"NAG",
+			"S1_2"
+		],
+		"flussiAppartenenza": [
+			"100",
+			"110",
+			"111",
+			"112",
+			"113",
+			"114",
+			"115",
+			"116",
+			"117",
+			"118",
+			"119",
+			"120",
+			"121",
+			"123",
+			"124",
+			"125",
+			"126",
+			"127",
+			"128",
+			"200",
+			"21",
+			"210",
+			"211",
+			"212",
+			"213",
+			"214",
+			"215",
+			"216",
+			"217",
+			"218",
+			"219",
+			"22",
+			"220",
+			"221",
+			"222",
+			"223",
+			"224",
+			"225",
+			"226",
+			"227",
+			"228",
+			"23",
+			"30",
+			"300",
+			"31",
+			"32",
+			"33",
+			"34",
+			"35",
+			"36",
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45",
+			"46",
+			"61",
+			"62",
+			"711",
+			"712",
+			"713",
+			"72",
+			"73",
+			"800",
+			"90"
+		],
+		"flussoUscita": "",
+		"regole": [
+			"S1"
+		],
+		"codiciSchedeCorrelate": [],
+		"dataInizio": {
+			"$date": "2023-10-24T22:00:00.000Z"
+		},
+		"dataFine": {
+			"$date": "2099-12-30T23:00:00.000Z"
+		},
+		"schedaAnnullabile": false,
+		"servizioPostAnnullamento": "",
+		"rettificabile": false,
+		"dataCreazione": {
+			"$date": "2026-05-04T14:09:12.967Z"
+		},
+		"dataModifica": null,
+		"stato": "ATTIVO"
+	},
+	{
+		"_id": {
+			"$oid": "69f8a88955cec365e6b549c6"
+		},
+		"publicId": {
+			"$uuid": "7c27127b-d49d-40eb-87a8-631132601850"
+		},
+		"codAreaFunzionale": "A_4",
+		"codFamigliaFunzionale": "S1_2",
+		"settore": "indipendenti dalla soglia - tutti i settori - tutti i regimi",
+		"regime": "indipendenti dalla soglia - tutti i settori - tutti i regimi",
+		"fase": "aggiudicazione",
+		"faseOrchestratore": "Aggiudicazione",
+		"evento": "acquisizione invitati",
+		"schedaInput": "S1_2",
+		"versione": "1.0",
+		"descrizione": "Elenco dei soggetti invitati.",
+		"normativa": "N/A",
+		"pubblicazioneTED": false,
+		"espdRichiesto": false,
+		"anacFormRichiesto": true,
+		"pubblicazioneNazionale": false,
+		"preinformazione": false,
+		"avviaFlusso": false,
+		"attribuisceCIG": false,
+		"schedeAmmesse": [
+			"A1_29",
+			"A1_30",
+			"A1_31",
+			"A1_32",
+			"A1_33",
+			"A1_34",
+			"A1_35",
+			"A1_36",
+			"A1_37",
 			"ID",
 			"NAG",
 			"S2"
@@ -8600,11 +8806,12 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
 		"regole": [
-			"S1"
+			"S1_2"
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
@@ -8617,17 +8824,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54974"
+			"$oid": "69f8a88955cec365e6b54975"
 		},
 		"publicId": {
-			"$uuid": "fb494963-f750-4438-86c5-c78e81ab5b22"
+			"$uuid": "230c12da-1ae1-4fbb-a279-70e3270331ea"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "S2",
@@ -8737,7 +8944,6 @@
 			"34",
 			"35",
 			"36",
-			"40",
 			"41",
 			"42",
 			"43",
@@ -8751,6 +8957,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -8775,10 +8982,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549c6"
+			"$oid": "69f8a88955cec365e6b549bd"
 		},
 		"publicId": {
-			"$uuid": "7c27127b-d49d-40eb-87a8-631132601850"
+			"$uuid": "f38d10df-a2ed-4dc7-bf89-92f4225a1e8c"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "S2R",
@@ -8902,6 +9109,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -8926,10 +9134,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54975"
+			"$oid": "69f8a88955cec365e6b54976"
 		},
 		"publicId": {
-			"$uuid": "230c12da-1ae1-4fbb-a279-70e3270331ea"
+			"$uuid": "9afd59e8-5b45-42a0-a745-09c3aeb98455"
 		},
 		"codAreaFunzionale": "A_4",
 		"codFamigliaFunzionale": "S3",
@@ -9039,6 +9247,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9063,10 +9272,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549bd"
+			"$oid": "69f8a88955cec365e6b54977"
 		},
 		"publicId": {
-			"$uuid": "f38d10df-a2ed-4dc7-bf89-92f4225a1e8c"
+			"$uuid": "0010f05c-6595-459b-aab2-c41621475d76"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "M",
@@ -9176,6 +9385,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9184,26 +9394,26 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.296Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.296Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.968Z"
+			"$date": "2026-05-04T14:09:12.967Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54976"
+			"$oid": "69f8a88955cec365e6b549aa"
 		},
 		"publicId": {
-			"$uuid": "9afd59e8-5b45-42a0-a745-09c3aeb98455"
+			"$uuid": "703b236d-5420-4de7-9e64-ef131b75e9a0"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SA",
@@ -9312,6 +9522,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9329,17 +9540,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b54977"
+			"$oid": "69f8a88955cec365e6b549a4"
 		},
 		"publicId": {
-			"$uuid": "0010f05c-6595-459b-aab2-c41621475d76"
+			"$uuid": "8d883939-899f-44c3-a269-e355fb45d6ac"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SC",
@@ -9442,6 +9653,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9452,10 +9664,10 @@
 		"nuovoStatoContratto": "SOTT",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -9468,10 +9680,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549aa"
+			"$oid": "69f8a88955cec365e6b549c3"
 		},
 		"publicId": {
-			"$uuid": "703b236d-5420-4de7-9e64-ef131b75e9a0"
+			"$uuid": "b89b3700-57bf-4434-95ef-f4aeb520bd3f"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SO",
@@ -9580,6 +9792,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9604,10 +9817,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549a4"
+			"$oid": "69f8a88955cec365e6b549af"
 		},
 		"publicId": {
-			"$uuid": "8d883939-899f-44c3-a269-e355fb45d6ac"
+			"$uuid": "d9e22ea6-c48b-42de-a037-5f3e87542e9b"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SOC",
@@ -9650,17 +9863,17 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-05-04T14:09:12.967Z"
+			"$date": "2026-05-04T14:09:12.968Z"
 		},
 		"dataModifica": null,
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549c3"
+			"$oid": "69f8a88955cec365e6b549bb"
 		},
 		"publicId": {
-			"$uuid": "b89b3700-57bf-4434-95ef-f4aeb520bd3f"
+			"$uuid": "3f6c95c5-9b30-4a1d-a139-ea74b5a011e3"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SO",
@@ -9768,6 +9981,7 @@
 			"713",
 			"72",
 			"73",
+			"800",
 			"90"
 		],
 		"flussoUscita": "",
@@ -9778,10 +9992,10 @@
 			"SO1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:00:56.729Z"
+			"$date": "2026-06-25T15:13:08.297Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:00:56.729Z"
+			"$date": "2099-12-31T16:13:08.297Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -9794,10 +10008,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "69f8a88955cec365e6b549af"
+			"$oid": "69f8a88955cec365e6b549b0"
 		},
 		"publicId": {
-			"$uuid": "d9e22ea6-c48b-42de-a037-5f3e87542e9b"
+			"$uuid": "7debdda9-cee5-4ff6-ad42-462dd6bbefc5"
 		},
 		"codAreaFunzionale": "A_2",
 		"codFamigliaFunzionale": "VR",
