@@ -13,11 +13,11 @@
           <text>subappalto</text>
         </inputExpression>
       </input>
-      <input id="InputClause_0ge2vg3">
-        <inputExpression id="LiteralExpression_030x2vz" typeRef="string">
-          <text>idSubappalto</text>
-        </inputExpression>
-      </input>
+	  <input id="InputClause_0ge2vg3">
+		<inputExpression id="LiteralExpression_030x2vz" typeRef="string">
+		  <text>if is defined(idSubappalto) then idSubappalto else ""</text>
+		</inputExpression>
+	  </input>
       <output id="Errore_AD1_10" name="Errore" typeRef="string" biodi:width="477" />
       <rule id="DecisionRule_0m0ht0d">
         <description>REG0: Dati non presenti</description>
@@ -34,7 +34,7 @@
       <rule id="DecisionRule_0o1lpaj">
         <description>REG138: I campi di tipo testo non possono essere vuoti</description>
         <inputEntry id="UnaryTests_0li798j">
-          <text>subappalto.operatoreEconomicoSubappaltatore.idOE=""</text>
+          <text>subappalto.operatoreEconomicoSubappaltatore.idOE = null or is defined(subappalto.operatoreEconomicoSubappaltatore.idOE) = false</text>
         </inputEntry>
         <inputEntry id="UnaryTests_04dmj24">
           <text></text>
@@ -46,7 +46,7 @@
       <rule id="DecisionRule_146nxje">
         <description>REG139: Definire almeno un conferente subappalto</description>
         <inputEntry id="UnaryTests_0eervl7">
-          <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario)=false and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)=false) or (subappalto.conferenteSubappalto.idAggiudicatario="" and subappalto.conferenteSubappalto.idSubappaltanteACascata="")</text>
+		  <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario)=false and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)=false) or (subappalto.conferenteSubappalto.idAggiudicatario=null and subappalto.conferenteSubappalto.idSubappaltanteACascata=null)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0iy35t5">
           <text></text>
@@ -58,7 +58,7 @@
       <rule id="DecisionRule_1ec3b6s">
         <description>REG140: Definire un solo conferente subappalto</description>
         <inputEntry id="UnaryTests_0g025qn">
-          <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario) and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)) and (subappalto.conferenteSubappalto.idAggiudicatario!="" and subappalto.conferenteSubappalto.idSubappaltanteACascata!="")</text>
+          <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario) and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)) and (subappalto.conferenteSubappalto.idAggiudicatario!=null and subappalto.conferenteSubappalto.idSubappaltanteACascata!=null)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0lzm2lg">
           <text></text>
@@ -70,7 +70,7 @@
       <rule id="DecisionRule_1ys5s32">
         <description>REG141: In caso di subappalto a cascata deve essere indicato l'idSubappalto</description>
         <inputEntry id="UnaryTests_1ye9vw4">
-          <text>is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata) and subappalto.conferenteSubappalto.idSubappaltanteACascata!=""</text>
+          <text>is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata) and subappalto.conferenteSubappalto.idSubappaltanteACascata!=null</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1x4zs9m">
           <text>is defined(idSubappalto) = false or idSubappalto=""</text>
