@@ -1,6 +1,6 @@
 # Linea Guida Orchestratore ANAC PCP
 
-> Guida di riferimento per la lettura, verifica e aggiornamento dell'orchestratore delle schede ANAC. È pensata per essere fruibile senza conoscenze tecniche specifiche: descrive, colonna per colonna, il significato dei valori inseriti in ciascuna cella e il comportamento che il sistema ne deriva.
+> Guida di riferimento per la lettura dell'orchestratore delle schede ANAC. Descrive, colonna per colonna, il significato dei valori inseriti in ciascuna cella e il comportamento che il sistema ne deriva.
 
 ---
 
@@ -19,8 +19,6 @@
    - 5.6 [Evoluzione degli stati e correlazioni tra schede](#56-evoluzione-degli-stati-e-correlazioni-tra-schede)
    - 5.7 [Validità temporale, annullamento e rettifica](#57-validità-temporale-annullamento-e-rettifica)
    - 5.8 [Sottofasi della fase di Esecuzione](#58-sottofasi-della-fase-di-esecuzione)
-6. [Esempio di lettura di una riga completa](#6-esempio-di-lettura-di-una-riga-completa)
-7. [Punti di attenzione nella compilazione](#7-punti-di-attenzione-nella-compilazione)
 
 ---
 
@@ -30,18 +28,18 @@
 Questa guida descrive, colonna per colonna, come il sistema interpreta i valori presenti nelle celle di ciascuna riga dell'orchestratore. L'obiettivo è rendere trasparente il comportamento del sistema rispetto a ogni valore inserito, in modo da poter leggere, verificare o aggiornare l'orchestratore con piena consapevolezza degli effetti.
 
 ### A chi si rivolge
-La guida è pensata per l'utente che ha il compito di leggere, verificare o aggiornare l'orchestratore e desidera comprendere che effetto produce ogni singolo valore. Non presuppone conoscenze tecniche specifiche.
+La guida è pensata per l'utente che ha il compito di leggere, verificare o aggiornare l'orchestratore e desidera comprendere che effetto produce ogni singolo valore.
 
 ### Contenuto in sintesi
 - Ogni **riga** dell'orchestratore rappresenta una **scheda ANAC**.
 - Ogni **colonna** rappresenta un attributo o una regola che governa il comportamento della scheda all'interno del ciclo di vita di un appalto, tra cui:
-  - identificazione della scheda,
-  - pubblicazione,
-  - transizioni ammesse verso altre schede,
-  - appartenenza ai flussi,
-  - evoluzione degli stati di appalto, lotto e contratto,
-  - validità temporale,
-  - annullabilità e rettificabilità.
+  - identificazione della scheda
+  - pubblicazione
+  - transizioni ammesse verso altre schede
+  - appartenenza ai flussi
+  - evoluzione degli stati di appalto, lotto e contratto
+  - validità temporale
+  - annullabilità e rettificabilità
 
 ---
 
@@ -49,16 +47,18 @@ La guida è pensata per l'utente che ha il compito di leggere, verificare o aggi
 
 ### Struttura del foglio
 - Le **prime due righe** contengono l'intestazione delle colonne e una descrizione estesa di ciascuna di esse: non rappresentano schede.
-- **Dalla terza riga in poi**, ogni riga descrive una singola scheda ANAC, identificata dal suo codice.
+- Dalla **terza riga** in poi, ogni riga descrive una singola scheda ANAC, identificata dal suo codice.
 
 ### Ruolo delle colonne
 Ogni colonna esprime una specifica caratteristica della scheda che il sistema utilizza per decidere:
-- se e come la scheda può essere inviata,
-- quali schede possono seguirla o precederla,
-- a quali flussi appartiene,
-- come deve essere composto il suo contenuto (eForm, ESPD, anacForm),
-- come evolvono gli stati di appalto, lotto e contratto,
-- in quale finestra temporale la scheda è valida.
+- se e come la scheda può essere inviata
+- quali schede possono seguirla o precederla
+- a quali flussi appartiene
+- come deve essere composto il suo contenuto (eForm, ESPD, anacForm)
+- come evolvono gli stati di appalto, lotto e contratto
+- in quale finestra temporale la scheda è valida
+- se la scheda è annullabile e/o rettificabile
+- come gestire correttamente la fase di Esecuzione di un procedimento
 
 ---
 
@@ -84,10 +84,6 @@ Queste convenzioni si applicano trasversalmente a tutte le colonne, salvo dove d
 ### Righe da considerare
 - Le prime due righe descrivono l'orchestratore stesso e non vengono considerate schede.
 - Una riga viene interpretata come scheda solo se il codice scheda è valorizzato e se sono definite una o più schede successive.
-
-### Normalizzazione dei codici scheda
-- I punti presenti nei codici vengono trasformati in underscore. Esempio: `A1.29` diventa `A1_29`.
-- La normalizzazione si applica a tutte le colonne che contengono codici scheda (codice principale, schede successive, schede correlate).
 
 ### Valori booleani (colonne SI/NO)
 - `SI` viene interpretato come vero.
@@ -131,7 +127,7 @@ Queste colonne inquadrano la scheda all'interno dell'appalto: a quale fase appar
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **Settore-regime** | Testo che identifica il settore (ordinari, speciali, difesa e sicurezza, concessioni) e il regime (ordinario, alleggerito) del contratto. | Determina l'ambito procedurale della scheda; utilizzato per filtri, percorso guidato e coerenza normativa. |
+| **Settore-regime** | Testo che identifica il settore (ordinari, speciali, difesa e sicurezza, concessioni) e il regime (ordinario, alleggerito) del contratto. | Determina l'ambito procedurale della scheda in riferimento alla normativa. |
 | **fase** | Uno o più identificativi di fase separati da virgola. Il valore rappresenta la fase (o le fasi) in cui la scheda può essere collocata all'interno della procedura. | La fase è un'informazione di consultazione: la fase corrente di una procedura viene determinata in base alla scheda più avanzata inviata. Se una scheda dichiara più fasi, può essere inviata in ognuna di esse purché consentito dalla sequenza di schede ammesse (vedi `schedaSuccessiva`). |
 
 #### Fasi della procedura e loro ordinamento
@@ -142,13 +138,14 @@ Le fasi previste, elencate nell'ordine logico progressivo, sono:
 3. Pubblicazione
 4. Aggiudicazione
 5. Esecuzione
+6. Conclusione
 
 > **Nota — Le fasi non sono strettamente sequenziali.**
 > Una procedura può saltare una o più fasi in funzione del proprio profilo. Alcuni esempi tipici:
-> - Un ciclo può essere `2 - 4 - 5` (senza Pianificazione né Pubblicazione).
+> - Un ciclo può essere `2 - 4 - 5 - 6` (senza Pianificazione né Pubblicazione).
 > - Gli Affidamenti Diretti non attraversano mai la fase `1` (Pianificazione) né la fase `3` (Pubblicazione).
 > - Le pubblicazioni tipicamente seguono il ciclo `3 - 4 - 5`, ma alcune si fermano alla fase `3`.
-> - Le pianificazioni possono seguire il ciclo `1 - 3 - 4 - 5`, ma non attraversano mai la fase `2` (Affidamento).
+> - Le pianificazioni possono seguire il ciclo `1 - 3 - 4 - 5 - 6`, ma non attraversano mai la fase `2` (Affidamento).
 > - Il ciclo non inizia necessariamente dalla fase `1`: può iniziare dalla `2` o dalla `3`, e non è garantito che termini con la `5`.
 
 #### Sottofasi della fase di Esecuzione
@@ -178,10 +175,10 @@ Le colonne di questo gruppo definiscono come la scheda si deve presentare in ter
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **pubblicazioneTED** | `SI` = la scheda deve essere pubblicata su TED e la eForm è obbligatoria. `NO` = la scheda non va su TED e la eForm non deve essere presente. Vuoto = pubblicazione facoltativa: se la eForm è presente viene inoltrata, ma non è obbligatoria. | Governa la presenza obbligatoria / facoltativa / vietata della eForm nel contenuto della scheda. |
-| **eForm** | Elenco dei subtype eForm ammessi per la scheda. Ogni voce può essere un semplice codice numerico oppure la coppia `codice:vincoloFlusso`. Il valore `nonPrevista` indica che nessun subtype è associato. | Limita quali subtype eForm sono accettati nel contenuto della scheda. Se è presente un vincolo di flusso, la eForm è ammessa solo se coerente con il codice indicato. |
-| **includeESPD** | `SI` = l'ESPD-request è obbligatorio nel contenuto della scheda. `NO` / vuoto = non obbligatorio; se presente comunque, viene validato. | Controlla presenza e validità del documento ESPD nel contenuto. |
-| **includeAnacForm** | `SI` = l'anacForm deve essere presente nel contenuto della scheda. `NO` / vuoto = non richiesto. | Controlla la presenza obbligatoria dell'anacForm nel contenuto. |
+| **pubblicazioneTED** | `SI` = la scheda deve essere pubblicata su TED e la eForm è obbligatoria. <br>`NO` = la scheda non va su TED e la eForm non deve essere presente. <br>Vuoto = pubblicazione facoltativa: se la eForm è presente viene inoltrata, ma non è obbligatoria. | Governa la presenza obbligatoria / facoltativa / vietata della eForm nel contenuto della scheda. |
+| **eForm** | Elenco dei subtype eForm ammessi per la scheda. Ogni voce è un semplice codice numerico. Il valore `nonPrevista` indica che nessun subtype è associato. | Limita quali subtype eForm sono accettati nel contenuto della scheda. Se è presente un vincolo di flusso, la eForm è ammessa solo se coerente con il codice indicato. |
+| **includeESPD** | `SI` = l'ESPD è obbligatorio nel contenuto della scheda. <br>`NO` / vuoto = non obbligatorio; se presente comunque, viene validato. | Controlla presenza e validità del documento ESPD nel contenuto. |
+| **includeAnacForm** | `SI` = l'anacForm deve essere presente nel contenuto della scheda. <br>`NO` / vuoto = non richiesto. | Controlla la presenza obbligatoria dell'anacForm nel contenuto. |
 | **pubblicazioneNazionale** | `SI` / `NO` = indica se la scheda può essere pubblicata sulla piattaforma di pubblicità legale nazionale. | Attributo esposto e utilizzato per orientare la pubblicazione nazionale. |
 
 ### 5.4 Contesto d'invio della scheda e attribuzione CIG
@@ -192,10 +189,10 @@ Le colonne `schedaPreinformazione`, `schedaDiIndizione` e `schedaGestioneElenco`
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **schedaPreinformazione** | `SI` = la scheda appartiene al contesto di Pianificazione. `NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `pianificazioneAppalto`. |
-| **schedaDiIndizione** | `SI` = la scheda appartiene al contesto di Appalto. `NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `comunicaAppalto`. |
-| **schedaGestioneElenco** | `SI` = la scheda appartiene al contesto di Gestione Elenchi Operatori Economici. `NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `gestioneElenchi`. |
-| **attribuisceCIG** | `SI` = alla conferma della scheda il sistema attribuisce il CIG ai lotti. `NO` / vuoto = nessuna attribuzione automatica di CIG. | Determina l'attivazione dell'attribuzione CIG lato sistema. |
+| **schedaPreinformazione** | `SI` = la scheda appartiene al contesto di Pianificazione. <br>`NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `pianificazioneAppalto`. |
+| **schedaDiIndizione** | `SI` = la scheda appartiene al contesto di Appalto. <br>`NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `comunicaAppalto`. |
+| **schedaGestioneElenco** | `SI` = la scheda appartiene al contesto di Gestione Elenchi Operatori Economici. <br>`NO` / vuoto = non appartiene a questo contesto. | La scheda può essere inviata e gestita esclusivamente attraverso i servizi del contesto `gestioneElenchi`. |
+| **attribuisceCIG** | `SI` = alla conferma della scheda il sistema attribuisce il CIG ai lotti. <br>`NO` / vuoto = nessuna attribuzione automatica di CIG. | Determina l'attivazione dell'attribuzione CIG lato sistema. |
 
 > **Contesto d'invio di default.**
 > Tutte le schede per cui `schedaPreinformazione`, `schedaDiIndizione` e `schedaGestioneElenco` risultano non valorizzate (o valorizzate a `NO`) vengono inviate e gestite tramite i servizi di `comunicaPostPubblicazione`.
@@ -209,12 +206,13 @@ Queste colonne descrivono il grafo delle transizioni: quali schede possono segui
 | **schedaSuccessiva** | Elenco dei codici delle schede ammesse come successive rispetto alla scheda corrente, separati da virgola. Può contenere `*` per indicare tutte le schede note. Il valore `STATO FINALE` indica che il percorso si chiude e la scheda corrente non ammette schede successive. | Definisce quali schede possono essere inviate dopo la scheda corrente. Se la scheda in ingresso non è presente in questo elenco, il sistema la rifiuta. |
 | **flussoAppartenenza** | Valore numerico che identifica il flusso di appartenenza della scheda. Le schede di preinformazione e di indizione appartengono a un singolo flusso, ad eccezione di alcune schede di indizione che possono presentare doppio flusso di appartenenza (caso in cui la scheda di indizione debba seguire una precedente scheda di preinformazione). Sono supportati anche `*` (tutti i flussi noti) e il prefisso `!` per escludere specifici flussi (per esempio `!110` esclude il flusso 110). | Il sistema verifica che la scheda in ingresso e la scheda precedente condividano almeno un flusso di appartenenza: se non c'è intersezione la scheda viene rifiutata, garantendo la coerenza di flusso lungo l'intera sequenza della procedura. |
 | **flussoUscita** | Codice del flusso che la scheda determina per l'appalto una volta ricevuta. | Attributo informativo del cambio di flusso associato alla scheda. |
-| **regole** | Elenco dei codici di regola (tabelle decisionali) applicabili alla scheda, separati da virgola. | Il sistema espone tali codici come tabelle decisionali associate alla scheda per la valutazione di condizioni di ammissibilità. |
+| **regole** | Riferimento del codice di fiel DMN di regole (tabelle decisionali) applicate alla scheda. | Il sistema espone tali codici come tabelle decisionali associate alla scheda per la valutazione di condizioni di ammissibilità. |
 
 **Riepilogo dei valori speciali per queste colonne:**
 - `*` sostituisce l'insieme completo dei valori del dominio (tutte le schede o tutti i flussi noti).
 - `!X` rimuove il valore `X` dall'insieme risultante.
 - `STATO FINALE` (colonna schede successive) segnala la chiusura del percorso.
+- `FALLBACK` (colonna schede successive) segnala che la scheda, se inviata, non determina alcun cambio di fase per la procedura. Può essere inviata dopo una certa scheda se la scheda in ingresso è presente nell'elenco delle schede ammesse.
 
 #### Logica di sequenza delle schede in una procedura
 1. La sequenza di schede di una procedura ha origine da una scheda di preinformazione e/o da una scheda di indizione.
@@ -228,9 +226,9 @@ Le colonne di questo gruppo indicano come cambia lo stato di appalto, lotto e co
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **nuovoStatoAppalto** | Codice testuale dello stato in cui transita l'appalto a valle della pubblicazione della scheda. | Determina il nuovo stato dell'appalto; il testo viene normalizzato in maiuscolo. |
-| **nuovoStatoLotto** | Codice testuale dello stato in cui transita il lotto alla conferma della scheda o alla sua avvenuta pubblicazione. | Determina il nuovo stato del lotto; il testo viene normalizzato in maiuscolo. |
-| **nuovoStatoContratto** | Codice testuale dello stato in cui transita il contratto alla conferma della scheda o alla sua avvenuta pubblicazione. | Determina il nuovo stato del contratto; il testo viene normalizzato in maiuscolo. |
+| **nuovoStatoAppalto** | Codice testuale dello stato in cui transita l'appalto a valle della pubblicazione della scheda. | Determina il nuovo stato dell'appalto. |
+| **nuovoStatoLotto** | Codice testuale dello stato in cui transita il lotto alla conferma della scheda o alla sua avvenuta pubblicazione. | Determina il nuovo stato del lotto. |
+| **nuovoStatoContratto** | Codice testuale dello stato in cui transita il contratto alla conferma della scheda o alla sua avvenuta pubblicazione. | Determina il nuovo stato del contratto. |
 | **codiciSchedeCorrelate** | Elenco dei codici delle schede che devono essere referenziate dalla scheda in invio. Il riferimento va valorizzato nel campo `idScheda` del modello dati YAML della scheda che si sta inviando. | Il sistema verifica, all'atto dell'invio, che nel payload YAML della scheda sia presente il riferimento (tramite `idScheda`) alla scheda correlata attesa nell'ambito della stessa procedura. Se il riferimento è assente o non corrisponde a una scheda ammessa, la scheda in invio viene rifiutata. |
 
 #### Esempi di applicazione di `codiciSchedeCorrelate`
@@ -248,9 +246,9 @@ Le colonne di questo gruppo regolano la finestra temporale in cui la scheda è v
 |---|---|---|
 | **dataInizio** | Data di inizio validità della scheda. Deve essere una cella in formato data. | La scheda è selezionabile solo se la data corrente è successiva o uguale a `dataInizio`. |
 | **dataFine** | Data di fine validità della scheda. Deve essere una cella in formato data. | La scheda è selezionabile solo se la data corrente è precedente o uguale a `dataFine`. |
-| **schedaAnnullabile** | `SI` = la scheda può essere candidata all'annullamento tramite il servizio `rollback-scheda` del contesto `serviziComuni`, a condizione che siano soddisfatti anche i requisiti generali di annullabilità (vedi nota successiva). `NO` / vuoto = la scheda non è mai annullabile. | Abilita l'operazione di rollback della scheda solo se, oltre al valore `SI`, sono verificati gli altri requisiti previsti dal sistema. |
-| **servizioPostAnnullamento** | Campo ad uso esclusivamente interno di sistema. Il valore riportato identifica il servizio e/o l'operazione da eseguire al termine dell'operazione di annullamento scheda invocata tramite `rollback-scheda`. Cella vuota = nessuna invocazione post-annullamento. *Esempio d'uso:* valorizzare un servizio ad-hoc quando si vuole poter annullare schede che prevedono pubblicazione e, contestualmente, dover inoltrare la comunicazione (su TED o su PVL) di un avviso che notifichi la cancellazione della scheda su PCP. | Al termine del rollback, il sistema invoca il servizio / operazione indicato per eseguire le azioni post-annullamento previste (per esempio la notifica di cancellazione su canali di pubblicazione esterni). |
-| **schedaRettificabile** | `SI` = la scheda può essere candidata alla rettifica tramite il servizio di rettifica-avviso, a condizione che siano soddisfatti anche i requisiti generali di rettificabilità (vedi nota successiva). `NO` / vuoto = la scheda non è mai rettificabile. | Abilita la rettifica della scheda solo se, oltre al valore `SI`, sono verificati gli altri requisiti previsti dal sistema. |
+| **schedaAnnullabile** | `SI` = la scheda può essere candidata all'annullamento tramite il servizio `rollback-scheda` del contesto `serviziComuni`, a condizione che siano soddisfatti anche i requisiti generali di annullabilità (vedi nota successiva). <br>`NO` / vuoto = la scheda non è mai annullabile. | Abilita l'operazione di rollback della scheda solo se, oltre al valore `SI`, sono verificati gli altri requisiti previsti dal sistema. |
+| **servizioPostAnnullamento** | Campo ad uso esclusivamente interno di sistema. Il valore riportato identifica il servizio e/o l'operazione da eseguire al termine dell'operazione di annullamento scheda invocata tramite `rollback-scheda`. <br>Cella vuota = nessuna invocazione post-annullamento. <br>*Esempio d'uso:* valorizzare un servizio ad-hoc quando si vuole poter annullare schede che prevedono pubblicazione e, contestualmente, dover inoltrare la comunicazione (su TED o su PVL) di un avviso che notifichi la cancellazione della scheda su PCP. | Al termine del rollback, il sistema invoca il servizio / operazione indicato per eseguire le azioni post-annullamento previste (per esempio la notifica di cancellazione su canali di pubblicazione esterni). |
+| **schedaRettificabile** | `SI` = la scheda può essere candidata alla rettifica tramite il servizio di rettifica-avviso, a condizione che siano soddisfatti anche i requisiti generali di rettificabilità (vedi nota successiva). <br>`NO` / vuoto = la scheda non è mai rettificabile. | Abilita la rettifica della scheda solo se, oltre al valore `SI`, sono verificati gli altri requisiti previsti dal sistema. |
 
 #### Note sulla validità temporale
 - Se `dataInizio` o `dataFine` non sono valorizzate, il sistema applica una finestra di default molto ampia in modo che la scheda risulti sempre valida (equivalente a: nessun vincolo temporale).
@@ -261,7 +259,7 @@ L'operazione di annullamento di una scheda, invocabile tramite il servizio `roll
 
 1. La colonna `schedaAnnullabile` è valorizzata a `SI`.
 2. La scheda oggetto di annullamento è l'ultima scheda inviata a sistema per la procedura di riferimento (non possono essere annullate schede intermedie).
-3. Non risultano già effettuate due operazioni di rollback consecutive: non è ammesso un terzo rollback consecutivo sulla stessa procedura.
+3. Non risultano già effettuate operazioni di rollback: non è ammesso un secondo rollback consecutivo sulla stessa procedura.
 
 > Se anche una sola di queste condizioni non è verificata, il sistema non ammette l'operazione di rollback sulla scheda.
 
@@ -280,17 +278,17 @@ Le colonne di questo gruppo descrivono la suddivisione della fase `5 - Esecuzion
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **sottofaseEsecuzione** | Etichetta testuale della sottofase di Esecuzione a cui la scheda appartiene, riferita all'intera fase di Esecuzione. Valori possibili: `Anticipata`, `Sottoscrizione`, `Inizio Lavori`, `Avanzamento`, `Conclusione`, `Collaudo`, `Conclusione Finale`. Può contenere più etichette separate da virgola quando la scheda copre più sottofasi. Se la scheda ha `avvioSottofase` = `SI`, questa colonna deve contenere una sola etichetta. | Classifica la scheda all'interno della o delle sottofasi della fase di Esecuzione. |
-| **avvioSottofase** | `SI` = la scheda è abilitata ad avviare la sottofase di Esecuzione indicata nella colonna `sottofaseEsecuzione`: è cioè una delle schede (talvolta l'unica) che possono determinare il passaggio a quella sottofase. `NO` / vuoto = la scheda non avvia alcuna sottofase. | Il sistema, in occasione di un cambio di sottofase di Esecuzione, ammette il passaggio solo se la scheda ricevuta ha `avvioSottofase` = `SI` e la sottofase indicata in `sottofaseEsecuzione` corrisponde alla nuova sottofase attesa. Se più schede sono abilitate ad avviare la stessa sottofase, è sufficiente inviarne una tra quelle ammesse. |
+| **sottofaseEsecuzione** | Etichetta testuale della sottofase di Esecuzione a cui la scheda appartiene, riferita all'intera fase di Esecuzione. Valori possibili: `Anticipata`, `Sottoscrizione`, `Inizio Lavori`, `Avanzamento`, `Conclusione`, `Collaudo`, `Conclusione Finale`. Può contenere più etichette separate da virgola quando la scheda copre più sottofasi. <br>**N.B.: Se la scheda ha `avvioSottofase` = `SI`, questa colonna deve contenere una sola etichetta.** | Classifica la scheda all'interno della o delle sottofasi della fase di Esecuzione. |
+| **avvioSottofase** | `SI` = la scheda è abilitata ad avviare la sottofase di Esecuzione indicata nella colonna `sottofaseEsecuzione`: è cioè una delle schede (talvolta l'unica) che possono determinare il passaggio a quella sottofase. <br>`NO` / vuoto = la scheda non avvia alcuna sottofase. | Il sistema, in occasione di un cambio di sottofase di Esecuzione, ammette il passaggio solo se la scheda ricevuta ha `avvioSottofase` = `SI` e la sottofase indicata in `sottofaseEsecuzione` corrisponde alla nuova sottofase attesa. Se più schede sono abilitate ad avviare la stessa sottofase, è sufficiente inviarne una tra quelle ammesse. |
 | **codiciSchedaDaverificare** | Elenco dei codici delle schede che identificano sottoprocessi la cui corretta chiusura deve essere verificata prima di poter inviare la scheda corrente. La valorizzazione è tipicamente prevista per la scheda di sottofase `Collaudo` e per alcune schede di sottofase `Conclusione`. Ogni codice indicato rappresenta un sottoprocesso che, se aperto / inviato a sistema per la procedura, deve risultare correttamente concluso (chiuso) attraverso l'invio delle relative schede correlate secondo quanto definito nella colonna `codiciSchedeCorrelate`. | All'atto dell'invio della scheda, il sistema verifica per ciascun codice indicato che il corrispondente sottoprocesso risulti chiuso; se anche uno solo dei sottoprocessi risulta aperto, la scheda in ingresso viene rifiutata. |
 
 #### Note sull'avvio delle sottofasi di Esecuzione
 - Le colonne `sottofaseEsecuzione` e `avvioSottofase` vanno lette in coppia: il cambio di sottofase avviene tramite la scheda che, con `avvioSottofase` = `SI`, dichiara in `sottofaseEsecuzione` la sottofase da avviare.
 - Una stessa sottofase può essere avviata da più schede: in tal caso, per effettuare il cambio, deve essere inviata una sola scheda tra quelle abilitate.
-- Se una scheda ha `avvioSottofase` = `SI`, la colonna `sottofaseEsecuzione` deve contenere un solo valore (una scheda "di avvio" non può essere associata a più sottofasi).
+- **N.B.: se una scheda ha `avvioSottofase` = `SI`, la colonna `sottofaseEsecuzione` deve contenere un solo valore (una scheda "di avvio" non può essere associata a più sottofasi**).
 
 #### Logica di verifica di `codiciSchedaDaverificare`
-Per ciascun codice indicato in `codiciSchedaDaverificare` (chiamiamolo `X`), il sistema controlla che l'eventuale sottoprocesso attivato da `X` sia stato correttamente chiuso. La verifica di chiusura si esegue navigando la catena delle correlazioni definite dalla colonna `codiciSchedeCorrelate`, procedendo a ritroso e in avanti a partire dalla scheda `X`:
+Per ciascun codice indicato in `codiciSchedaDaverificare` (ipotizziamo `X`), il sistema controlla che l'eventuale sottoprocesso attivato da `X` sia stato correttamente chiuso. La verifica di chiusura si esegue navigando la catena delle correlazioni definite dalla colonna `codiciSchedeCorrelate`, procedendo a ritroso e in avanti a partire dalla scheda `X`:
 
 1. Il sistema individua le schede che riferiscono `X` come correlata (cioè le schede che hanno `X` in `codiciSchedeCorrelate`) e verifica se una di queste risulta presente a sistema per la procedura in corso.
 2. Se ne trova una, prosegue individuando le schede che riferiscono a loro volta quella scheda come correlata, e ripete il controllo di presenza.
@@ -301,30 +299,3 @@ Per ciascun codice indicato in `codiciSchedaDaverificare` (chiamiamolo `X`), il 
 - Il sistema verifica se per la procedura in corso è stata inviata una scheda che referenzia `RSU1` come correlata (secondo `codiciSchedeCorrelate`): nell'esempio, `ES1_1` o `ES1_2`.
 - Se una tra `ES1_1` / `ES1_2` risulta presente a sistema, il sistema verifica quali schede referenziano a loro volta quella scheda come correlata (per esempio `CS1` che referenzia `ES1_1`) e ne controlla la presenza per la procedura.
 - Solo quando tutti i passaggi della catena risultano presenti e coerenti, il sottoprocesso avviato da `RSU1` è considerato chiuso e la scheda `CL1` può essere inviata.
-
----
-
-## 6. Esempio di lettura di una riga completa
-
-Consideriamo una scheda ipotetica con codice `P1_10`:
-
-| Colonna | Valore | Significato |
-|---|---|---|
-| `schedaCodice` | `P1_10` | Il sistema registra la scheda con questo identificativo (i punti sarebbero stati convertiti in underscore). |
-| `schedaDiIndizione` | `SI` | La scheda istanzia una nuova procedura, quindi non deve avere una scheda precedente. |
-| `pubblicazioneTED` + `eForm` | `SI` + `10` | La scheda deve essere pubblicata su TED, la eForm è obbligatoria e il subtype ammesso è `10`. |
-| `schedaSuccessiva` | `S1, A1_29, ID` | Dopo la scheda `P1_10` sono accettate solo `S1`, `A1_29` e `ID`. |
-| `flussoAppartenenza` | `110` | La scheda appartiene al flusso `110`; ogni scheda successiva dovrà condividere questo flusso. |
-| `nuovoStatoAppalto` | `PUBB` | La ricezione della scheda porta l'appalto nello stato `PUBB`. |
-| `dataInizio` + `dataFine` | valorizzate | La scheda è utilizzabile solo se la data corrente rientra nell'intervallo. |
-
----
-
-## 7. Punti di attenzione nella compilazione
-
-- Usare esclusivamente `SI` o `NO` (o cella vuota) nelle colonne booleane per evitare interpretazioni ambigue.
-- Fare attenzione all'uso di `*` e del prefisso `!`: possono ampliare o restringere significativamente le transizioni ammesse.
-- Assicurarsi che i codici scheda referenziati (schede successive, correlate, da verificare) esistano effettivamente come righe dell'orchestratore.
-- Verificare la coerenza tra `flussoAppartenenza` delle schede consecutive: schede senza flussi comuni non possono essere concatenate.
-- Valorizzare `dataInizio` e `dataFine` con celle in formato data; testi liberi non vengono interpretati come date.
-- Ricordare che valori come `nuovoStatoAppalto` / `nuovoStatoLotto` / `nuovoStatoContratto` vengono normalizzati in maiuscolo dal sistema: differenze di formattazione non producono effetti.
