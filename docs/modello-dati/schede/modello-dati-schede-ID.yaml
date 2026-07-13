@@ -22,6 +22,8 @@ components:
       required: [dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
       additionalProperties: false
       properties:
+        motivoIntegrazione:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaID/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoIntegrazioneEnum'
         dataStipulaContratto:
           description: Data stipula del contratto
           type: string
