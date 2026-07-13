@@ -19,11 +19,16 @@ components:
     IntegrazioneDatiEsecuzioneType:
       description: Dati inerenti l'inizio dell'esecuzione lavori
       type: object
-      required: [motivoIntegrazione,dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
+      required: [motivoIntegrazione,idContratto,dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
       additionalProperties: false
       properties:
         motivoIntegrazione:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaID/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoIntegrazioneEnum'
+        idContratto: 
+          description: id contratto
+          type: string  
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
         dataStipulaContratto:
           description: Data stipula del contratto
           type: string
