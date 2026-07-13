@@ -19,7 +19,7 @@ components:
     IntegrazioneDatiEsecuzioneType:
       description: Dati inerenti l'inizio dell'esecuzione lavori
       type: object
-      required: [dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
+      required: [motivoIntegrazione,dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
       additionalProperties: false
       properties:
         motivoIntegrazione:
