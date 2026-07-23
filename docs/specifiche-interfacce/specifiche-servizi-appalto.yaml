@@ -53,7 +53,7 @@ tags:
     description: Operazioni richiesti dalle linee guida sull'interoperabilità.
   - name: gestioneElenchi
     description: In questo contesto rientrano tutti i servizi richiamabili dalla SA che permetteranno la creazione, l’invio e la consultazione degli elenchi di operatori economici.
-  - name: contratto
+  - name: gestioneContratto
     description: In questo contesto rientrano i servizi richiamabili dalla SA per la ricerca e consultazione dei contratti sottoscritti.
 paths:
   /status:
@@ -1987,7 +1987,7 @@ paths:
   /ricerca-contratto:
     get:
       tags:
-      - contratto
+      - gestioneContratto
       summary: API Rest per la ricerca dei contratti. SINCRONO
       description: Vengono recuperati i contratti secondo i criteri di ricerca forniti.
       operationId: ricercaContratto
