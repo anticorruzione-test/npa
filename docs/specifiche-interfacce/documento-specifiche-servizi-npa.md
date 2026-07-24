@@ -91,7 +91,7 @@ Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto i
 - Nome servizio = Servizi che richiamano contesti e componenti interne all’NPA.
 
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
-I singoli contesti sono descritti nei paragrafi da [5](#5contesto-gestioneutenti) a [11](#11contesto-fvoe).
+I singoli contesti sono descritti nei paragrafi da [5](#5contesto-gestioneutenti) a [12](#12contesto-gestioneappalti).
 
 ## 4.3	Diagramma a stati
 Nei paragrafi che seguono sono illustrati, attraverso diagrammi a stati, i passaggi di stato per le seguenti entità coinvolte:
@@ -124,7 +124,7 @@ Il diagramma seguente illustra i cambi di stato dell’entità Notice di TED:
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
 
 ## 4.4	Utenti e ruoli
-I servizi di NPA e dei componenti FVA e FVOE sono erogati B2B alle piattaforme di negoziazione e gestione dell'appalto. Gli utenti finali del sistema sono identificati dalla piattaforma fruitrice dei servizi (si faccia riferimento al paragrafo [Contesto di sicurezza](#14contesto-di-sicurezza) per i dettagli tecnici), tuttavia tali soggetti devono essere registrati sui sistemi ANAC e dotati di un ruolo opportuno per poter accedere ai servizi NPA.
+I servizi di NPA e dei componenti FVA e FVOE sono erogati B2B alle piattaforme di negoziazione e gestione dell'appalto. Gli utenti finali del sistema sono identificati dalla piattaforma fruitrice dei servizi (si faccia riferimento al paragrafo [Contesto di sicurezza](#15contesto-di-sicurezza) per i dettagli tecnici), tuttavia tali soggetti devono essere registrati sui sistemi ANAC e dotati di un ruolo opportuno per poter accedere ai servizi NPA.
 Il ruoli previsti sono i seguenti:
   - RP, responsabile del progetto
   - DRP1, delegato dal responsabile del progetto per la fase di Programmazione
@@ -182,6 +182,9 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**comunicaPostPubblicazione**| consulta-scheda  | RP, DRP2, DRP3 |
   |**Modulo NPA**|**comunicaPostPubblicazione**| verifica-scheda  | RP, DRP2, DRP3 |
   |**Modulo NPA**|**comunicaPostPubblicazione**| conferma-scheda  | RP, DRP2, DRP3 |
+  |**Modulo NPA**|**gestioneAppalti**| consulta-appalti-simog  | RP |
+  |**Modulo NPA**|**gestioneAppalti**| consulta-appalti-smartcig  | RP |
+  |**Modulo NPA**|**gestioneAppalti**| migra-appalto  | RP |
   |**Modulo FVOE**|**FVOE**| richiesta-accesso-fvoe  | RP,  DRP2, DRP3 |
   |**Modulo FVOE**|**FVOE**| verifica-richiesta-accesso-fvoe  | RP, DRP2, DRP3 |
   |**Modulo FVOE**|**FVOE**| ricerca-documenti-fvoe  | RP, DRP2, DRP3 |
@@ -406,7 +409,18 @@ Il modello dati del FVOE è descritto nel [file YAML](../modello-dati/modello-da
 ## 11.3	Tipi documento richiedibili agli enti certificanti
 La lista dei tipi documento che si possono richiedere agli enti certificanti è descritto nel [documento](documento-specifiche-enticertificanti.md)
 
-# 12	Servizi comuni
+# 12	Contesto gestioneAppalti
+
+In questo contesto rientrano i servizi richiamabili dalla SA per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e per la migrazione delle relative procedure verso la PCP.
+
+**Descrizione dei servizi**
+
+I servizi che possono essere invocati in questo contesto sono i seguenti:
+- consulta-appalti-simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
+- consulta-appalti-smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
+- migra-appalto: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP.
+
+# 13	Servizi comuni
 
 In questo capitolo si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti dell’NPA e che forniranno una risposta diversa a seconda della fase in cui vengono invocati:
 - esito-operazione: tramite questo servizio è possibile recuperare l’esito di una determinata operazione;
@@ -421,12 +435,12 @@ In questo capitolo si riportano i servizi comuni, ossia quelli che possono esser
 -	recupera-tipologica: tramite questo servizio è possibile recuperare l'elenco dei valori per una specifica tipologica.
 -	recupera-valore-tipologica: tramite questo servizio è possibile recuperare un valore puntuale per una specifica tipologica.
 
-# 13	Interfaccia servizi
+# 14	Interfaccia servizi
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
 
 I file YAML con le specifiche delle interfacce dei servizi esposti dalla NPA sono consultabili nella cartella [specifiche-interfacce](../specifiche-interfacce/)
 
-# 14	Contesto di sicurezza
+# 15	Contesto di sicurezza
 Le Linee Guida di interoperabilità PDND sono destinate ai soggetti di cui all’articolo 2, comma 2, del CAD, i quali favoriscono la conoscenza e l’utilizzo del patrimonio informativo detenuto per finalità istituzionali nonché la condivisione dei dati con i soggetti che hanno diritto di accedervi ai fini dell’attuazione dell’articolo 50 del CAD e della semplificazione degli adempimenti dei cittadini e delle imprese, in conformità alla disciplina vigente, assicurando le modalità di scambio telematico per il tramite di API così come previsto dal ModI. 
 
 In particolare, i soggetti di cui all’articolo 2, comma 2, del CAD attuano le Linee Guida al fine di condividere i dati e le informazioni da essi detenuti, assicurando:
