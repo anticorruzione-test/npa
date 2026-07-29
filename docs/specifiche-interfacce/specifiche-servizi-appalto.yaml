@@ -112,13 +112,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo. Viene restituito l'idPiano generato da ANAC
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -150,13 +144,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -187,13 +175,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -377,13 +359,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo. Viene restituito l'idAppalto generato da ANAC
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -415,13 +391,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -452,13 +422,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -575,13 +539,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1177,13 +1135,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1414,39 +1366,21 @@ paths:
       responses:
         '200':
           description: Esecuzione avvenuta con successo
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/EsitoOperazioneListaResponse'
         '404':
             description: Identificativo non trovato
-            headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+            headers: *ratelimit_headers
             content:
               application/problem+json:
                 schema:
                   $ref: '#/components/schemas/ErrorResponse'
         '400':
             description: Richiesta malformata
-            headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+            headers: *ratelimit_headers
             content:
              application/problem+json:
                 schema:
@@ -1655,13 +1589,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1782,13 +1710,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1820,13 +1742,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -2033,39 +1949,21 @@ components:
   responses:
     200AckResponse:
       description: Richiesta accettata
-      headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+      headers: *ratelimit_headers
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/AckResponse'
     400BadRequest:
       description: Richiesta malformattata
-      headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+      headers: *ratelimit_headers
       content:
         application/problem+json:
           schema:
             $ref: '#/components/schemas/ErrorResponse'
     404NotFound:
       description: Dato non trovato
-      headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+      headers: *ratelimit_headers
       content:
         application/problem+json:
           schema:
@@ -2081,13 +1979,7 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
     500InternalServerError:
       description: Errore generico. Operazione terminato con errore. Viene restitutito il dettaglio dell'errore
-      headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+      headers: *ratelimit_headers
       content:
         application/problem+json:
           schema:
