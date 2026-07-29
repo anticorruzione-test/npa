@@ -219,10 +219,9 @@ components:
         additionalProperties: false
         properties:
           _dataModifica:
-            description: data modifica della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
-            type: string
-            format: date-time
-            example: '2022-01-23T12:02:05Z'
+            description: data modifica della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+            allOf:
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaID/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
           body:
             oneOf:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaID/docs/modello-dati/schede/modello-dati-schede-SE.yaml#/components/schemas/SchedaSEType'
@@ -261,8 +260,8 @@ components:
           tipoOperazione:
             type: string
           dataOperazione:
-            format: date-time
-            type: string
+            allOf:
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/schedaID/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
           statoPartecipante:
             type: string
           statoPartecipantePrecedente:
