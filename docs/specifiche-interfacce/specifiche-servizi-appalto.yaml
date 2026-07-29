@@ -7,7 +7,7 @@ info:
     Sono descritte le specifiche dei servizi esposti dalla Piattaforma Contratti Pubblici (PCP), richiamabili dalle Stazioni Appaltanti, per la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita degli appalti.
 
       #### Documentazione
-      La documentazione a supporto delle specifiche di interfaccia con i sistemi che interoperano con il nuovo sistema di digitalizzazione è redatta con il linguaggio di markup Markdown ed è presente al segunete url:
+      La documentazione a supporto delle specifiche di interfaccia con i sistemi che interoperano con il nuovo sistema di digitalizzazione è redatta con il linguaggio di markup Markdown ed è presente al seguente url:
     ```
   # I termini del servizio.
   # Chi posso contattare per informazioni sul servizio e sul suo stato?
@@ -48,7 +48,7 @@ tags:
   - name: serviziComuni
     description: In questo contesto si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti della PCP.
   - name: codeList
-    description: In questo contesto si riportano i servizi per il recupero delle tipologiche.     
+    description: In questo contesto si riportano i servizi per il recupero delle tipologiche.
   - name: serviziTecnici 
     description: Operazioni richiesti dalle linee guida sull'interoperabilità
 paths:
