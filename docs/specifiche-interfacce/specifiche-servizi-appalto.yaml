@@ -259,20 +259,8 @@ paths:
           schema:
             type: string
             example: 'PREINFORMAZIONE'  
-        - in: query
-          name: dataCreazioneDa
-          description: Data di crezione della Pianificazione - valorizzare almeno un parametro di ricerca -  intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: dataCreazioneA
-          description: Data di crezione della Pianificazione - valorizzare almeno un parametro di ricerca -  intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'  
+        - $ref: '#/components/parameters/DataCreazioneDa'
+        - $ref: '#/components/parameters/DataCreazioneA'
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -502,20 +490,8 @@ paths:
           schema:
             type: string
             example: 'IN_LAV'
-        - in: query
-          name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: dataCreazioneA
-          description: Data di crezione dell'Appalto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'  
+        - $ref: '#/components/parameters/DataCreazioneDa'
+        - $ref: '#/components/parameters/DataCreazioneA'
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -879,20 +855,8 @@ paths:
           schema:
             type: string
             example: 'IN_ATT_PUBB'
-        - in: query
-          name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: dataCreazioneA
-          description: Data di crezione della Appalto - intervallo precedente (A date-time specified by RF333)
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'
+        - $ref: '#/components/parameters/DataCreazioneDa'
+        - $ref: '#/components/parameters/DataCreazioneA'
         - in: query    
           name: idPianificazione
           description: Identificativo univoco della Pianificazione definito da ANAC. (A UUID specified by FC4122). Obbligatorio se codiceAppalto, idAppalto e cig non sono stati valorizzati.
@@ -918,20 +882,8 @@ paths:
           schema:
             type: string
             example: 'AZ_PUBB'
-        - in: query
-          name: dataCreazioneAvvisoDa
-          description: Data di crezione dell'Avviso - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: dataCreazioneAvvisoA
-          description: Data di crezione della Avviso - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'    
+        - $ref: '#/components/parameters/DataCreazioneAvvisoDa'
+        - $ref: '#/components/parameters/DataCreazioneAvvisoA'
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -1223,20 +1175,8 @@ paths:
           schema:
             type: string
             example: 'IN_ATT_PUBB'
-        - in: query
-          name: dataCreazioneDa
-          description: Data di crezione dell'Appalto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: dataCreazioneA
-          description: Data di crezione della Gara - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
-          schema:
-            type: string
-            format: date-time
-          example: '2022-01-23T12:02:05Z'
+        - $ref: '#/components/parameters/DataCreazioneDa'
+        - $ref: '#/components/parameters/DataCreazioneA'
         - in: query
           name: codiceScheda
           description: Codice Scheda - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/tipologiche/codiceScheda.json)
@@ -1550,20 +1490,8 @@ paths:
             type: string
             example: 'CPV'
           required: true
-        - in: query
-          name: dataInizio
-          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-            example: '2022-01-23T12:02:05Z'
-        - in: query
-          name: dataFine
-          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-            example: '2022-01-23T12:02:05Z'
+        - $ref: '#/components/parameters/DataInizio'
+        - $ref: '#/components/parameters/DataFine'
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -1718,34 +1646,10 @@ paths:
           description: Non gestito nella prima release - Codice operazione delegata al soggetto - fare riferimento ai valori contenuti nel file [tipoOperazioneSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/tipologiche/tipoOperazioneSoggetto.json)        
           schema:
             type: string           
-        - in: query
-          name: dataInizioDa
-          description: Data inizio incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: dataInizioA
-          description: Data inizio incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: dataFineDa
-          description: Data fine incarico soggetto - intervallo successivo (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
-        - in: query
-          name: dataFineA
-          description: data fine incarico soggetto - intervallo precedente (A date-time specified by ISO 8601 as profiled by RFC 3339) 
-          schema:
-            type: string
-            format: date-time
-          example: '2015-05-28T14:07:17Z'
+        - $ref: '#/components/parameters/DataInizioDa'
+        - $ref: '#/components/parameters/DataInizioA'
+        - $ref: '#/components/parameters/DataFineDa'
+        - $ref: '#/components/parameters/DataFineA'
       responses:
         '200':
           description: Operazione terminato con successo
@@ -1864,6 +1768,80 @@ paths:
       security:
         - apiKeyAuth: []
 components:
+  # Parametri riusabili di tipo temporale.
+  # Il formato e le forme ammesse sono definiti una sola volta in
+  # modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+  parameters:
+    DataCreazioneDa:
+      name: dataCreazioneDa
+      in: query
+      required: false
+      description: Estremo inferiore (incluso) dell'intervallo di ricerca sulla data di creazione (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataCreazioneA:
+      name: dataCreazioneA
+      in: query
+      required: false
+      description: Estremo superiore (incluso) dell'intervallo di ricerca sulla data di creazione (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataCreazioneAvvisoDa:
+      name: dataCreazioneAvvisoDa
+      in: query
+      required: false
+      description: Estremo inferiore (incluso) dell'intervallo di ricerca sulla data di creazione dell'Avviso (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataCreazioneAvvisoA:
+      name: dataCreazioneAvvisoA
+      in: query
+      required: false
+      description: Estremo superiore (incluso) dell'intervallo di ricerca sulla data di creazione dell'Avviso (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataInizio:
+      name: dataInizio
+      in: query
+      required: false
+      description: Data di inizio validità (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataFine:
+      name: dataFine
+      in: query
+      required: false
+      description: Data di fine validità (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataInizioDa:
+      name: dataInizioDa
+      in: query
+      required: false
+      description: Estremo inferiore (incluso) dell'intervallo di ricerca sulla data di inizio incarico del soggetto (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataInizioA:
+      name: dataInizioA
+      in: query
+      required: false
+      description: Estremo superiore (incluso) dell'intervallo di ricerca sulla data di inizio incarico del soggetto (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataFineDa:
+      name: dataFineDa
+      in: query
+      required: false
+      description: Estremo inferiore (incluso) dell'intervallo di ricerca sulla data di fine incarico del soggetto (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+    DataFineA:
+      name: dataFineA
+      in: query
+      required: false
+      description: Estremo superiore (incluso) dell'intervallo di ricerca sulla data di fine incarico del soggetto (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+      schema:
+        $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
   headers:
     Retry-After:
       description: |-
@@ -2232,15 +2210,13 @@ components:
         operazione:
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
-          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          type: string
-          format: date-time
-          example: '2022-01-23T12:02:05Z'
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         dataFine: 
-          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339). Se il valore non è indicato la delega è a tempo indeterminato.
-          type: string
-          format: date-time
-          example: '2022-01-23T12:02:05Z'
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset). Se il valore non è indicato la delega è a tempo indeterminato.
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
     EliminaSoggettoRequest:
       description: Oggetto in ingresso al servizio
       type: object
@@ -2266,15 +2242,13 @@ components:
         operazione:  
           $ref: '#/components/schemas/TipoOperazioneSoggettoEnum'      
         dataInizio: 
-          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          type: string
-          format: date-time
-          example: '2022-01-23T12:02:05Z'
+          description: Data di inizio (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         dataFine: 
-          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339)
-          type: string
-          format: date-time
-          example: '2022-01-23T12:02:05Z'          
+          description: Data di fine (A date-time specified by ISO 8601 as profiled by RFC 3339, with explicit UTC offset)
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
     CreaSchedaRequest:
       description: Oggetto in ingresso al servizio    
       type: object
