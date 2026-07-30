@@ -1,4 +1,35 @@
 <details>
+<summary><h1>Note di rilascio del 29/07/2026</h1></summary>
+
+## PdL DAT_PCP_07 - Centralizzazione del formato dei campi temporali (perimetro A)
+
+### Modello Dati
+* modello-dati-tipologiche.yaml:
+  * creati i nuovi oggetti DataOraType, DataType e OraType: costituiscono l'unica sorgente di definizione del formato dei valori temporali scambiati con la PCP e sono referenziati da tutti i livelli (specifiche dei servizi, modello dati e yaml delle schede). Il formato ISO 8601 as profiled by RFC 3339 e vincolato sia con format sia con pattern, con offset dal fuso orario UTC in forma esplicita obbligatorio (es. 2026-07-15T14:54:28+02:00). Non sono piu ammessi l'indicatore di zona Z, la frazione di secondo e l'omissione dell'offset
+  * modificato l'oggetto TipologicaSchemaEstesoType: i campi dataInizio e dataFine referenziano DataOraType
+  * corretto il refuso nel link alla tipologica tipoDocumento.json
+* modello-dati-npa.yaml:
+  * modificati i 23 campi temporali degli oggetti SchedaType, SchedaPostPubblicazioneType, SoggettoType, AppaltoBaseType, AvvisoCommonType, AvvisoPVLOscuratoType, DatiPubblicazioneEUType, DatiPubblicazioneITType, StatoAppaltoType, StatoLottoType, StatoAvvisoType, EsitoOperazioneType: rimossa la dichiarazione inline di type/format/example, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+  * uniformata la descrizione dei campi temporali
+
+### Schede
+* modello-dati-schede-dati-comuni.yaml:
+  * modificati i 16 campi temporali degli oggetti ModificaContrattualeType, ModificaContrattuale_40Type, PrestazioneType, DatiBaseAggiudicazioneAppaltoType, DatiTerminiInvioType, DatiBaseTerminiInvioSoloScadenzaType, DatiBaseTerminiInvioSoloOraType, DatiBaseModificaContrattualeType, DatiBaseComunicazioneType, DatiBaseDurataType, DatiBaseDurataSDAType, DatiBaseDurataCSDAType: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+* modello-dati-schede-A3.3.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-CBI.yaml, modello-dati-schede-CL1.yaml, modello-dati-schede-CM3.yaml, modello-dati-schede-CO1.yaml, modello-dati-schede-CO2.yaml, modello-dati-schede-COC.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-I1.yaml, modello-dati-schede-IR1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-S1_2.yaml, modello-dati-schede-S2.yaml, modello-dati-schede-S2R.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-SC1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml:
+  * modificati i 47 campi temporali dichiarati localmente: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+
+
+### Specifiche di interfaccia
+* specifiche-servizi-appalto.yaml:
+  * creata la sezione components.parameters con i 10 parametri riusabili di tipo temporale DataCreazioneDa, DataCreazioneA, DataCreazioneAvvisoDa, DataCreazioneAvvisoA, DataInizio, DataFine, DataInizioDa, DataInizioA, DataFineDa, DataFineA, tutti riferiti a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+  * rimosse le 16 dichiarazioni inline duplicate dei parametri temporali delle operazioni idPianoRicerca, idAppaltoRicerca, idAvvisoRicerca, idSchedaRicerca, idRecuperaTipologica e idIncaricatoRicerca, sostituite dal riferimento ai parametri riusabili
+  * modificati gli oggetti SoggettoRequest ed EliminaSoggettoRequest: i campi dataInizio e dataFine referenziano modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+  * corretto il refuso nella descrizione del parametro dataCreazioneA dell'operazione idAvvisoRicerca (A date-time specified by RF333)
+  * uniformato l'unico valore di esempio dei campi temporali a 2026-07-15T14:54:28+02:00 e ricondotta la sua dichiarazione dentro l'oggetto schema, secondo la forma prevista da OpenAPI 3.0.3
+  * corretto l'uso delle ancore YAML: l'ancora ratelimit_headers era dichiarata 19 volte senza alcun alias, rendendo il documento non parsabile dai lettori YAML che rifiutano le ancore duplicate. Mantenuta una sola dichiarazione e sostituite le altre 18 con l'alias *ratelimit_headers, come gia previsto in specifiche-servizi-fvoe-fva.yaml. Il contratto API resta invariato
+</details>
+
+<details>
 <summary><h1>Note di rilascio del 22/09/2023</h1></summary>
 
 ## Modello Dati
