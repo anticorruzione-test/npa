@@ -249,6 +249,46 @@
     "dataFine":null
 },
 {
+    "codice":"26",
+    "descrizione": {
+		"it": "Medicazioni speciali",
+		"en": "Medicazioni speciali",
+	    "de": "Spezialverbände"
+		},
+    "dataInizio":"2026-02-11T00:00:00",
+    "dataFine":null
+},
+{
+    "codice":"27",
+    "descrizione": {
+		"it": "Protesi ginocchio",
+		"en": "Protesi ginocchio",
+	    "de": "Knieprothese"
+		},
+    "dataInizio":"2026-02-11T00:00:00",
+    "dataFine":null
+},
+{
+    "codice":"28",
+    "descrizione": {
+		"it": "Suturatrici",
+		"en": "Suturatrici",
+	    "de": "Chirurgische Klammernahtgeräte"
+		},
+    "dataInizio":"2026-02-11T00:00:00",
+    "dataFine":null
+},
+{
+    "codice":"29",
+    "descrizione": {
+		"it": "Gestione e manutenzione delle aree verdi",
+		"en": "Gestione e manutenzione delle aree verdi",
+	    "de": "Bewirtschaftung und Pflege von Grünflächen"
+		},
+    "dataInizio":"2026-02-11T00:00:00",
+    "dataFine":null
+},
+{
     "codice":"999",
     "descrizione": {
 		"it": "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015",
