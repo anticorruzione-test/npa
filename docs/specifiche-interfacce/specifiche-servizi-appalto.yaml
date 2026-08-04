@@ -1899,6 +1899,38 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
+  /modifica-scheda-appalto:
+    post:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la modifica di una scheda dati per un appalto. SINCRONO
+      description: Il servizio sostituisce la precedente Scheda in lavorazione. SINCRONO
+      operationId: idModificaSchedaAppalto
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DatiSchedaRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModificaSchedaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
 components:
   headers:
     Retry-After:
