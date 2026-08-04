@@ -185,7 +185,7 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**gestioneAppalti**| consulta-appalti-simog  | RP |
   |**Modulo NPA**|**gestioneAppalti**| consulta-appalti-smartcig  | RP |
   |**Modulo NPA**|**gestioneAppalti**| migra-appalto  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| modifica-scheda-appalto  | RP |
+  |**Modulo NPA**|**gestioneAppalti**| modifica-scheda-simog  | RP |
   |**Modulo FVOE**|**FVOE**| richiesta-accesso-fvoe  | RP,  DRP2, DRP3 |
   |**Modulo FVOE**|**FVOE**| verifica-richiesta-accesso-fvoe  | RP, DRP2, DRP3 |
   |**Modulo FVOE**|**FVOE**| ricerca-documenti-fvoe  | RP, DRP2, DRP3 |
@@ -420,7 +420,7 @@ I servizi che possono essere invocati in questo contesto sono i seguenti:
 - consulta-appalti-simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
 - consulta-appalti-smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
 - migra-appalto: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP;
-- modifica-scheda-appalto: servizio che consente la modifica di una scheda dati per un appalto.
+- modifica-scheda-simog: servizio che consente la modifica di una scheda dati per un appalto migrato da SIMOG.
 
 # 13	Servizi comuni
 

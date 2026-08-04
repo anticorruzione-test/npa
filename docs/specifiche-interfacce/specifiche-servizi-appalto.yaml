@@ -1899,13 +1899,13 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
-  /modifica-scheda-appalto:
+  /modifica-scheda-simog:
     post:
       tags:
       - gestioneAppalti
-      summary: API Rest per la modifica di una scheda dati per un appalto. SINCRONO
+      summary: API Rest per la modifica di una scheda dati per un appalto da SIMOG. SINCRONO
       description: Il servizio sostituisce la precedente Scheda in lavorazione. SINCRONO
-      operationId: idModificaSchedaAppalto
+      operationId: idModificaSchedaSimog
       requestBody:
         description: Oggetto in ingresso al servizio
         content:
