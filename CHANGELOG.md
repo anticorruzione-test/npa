@@ -1542,11 +1542,13 @@ aggiunta regola REG5_1
     * P4_1.dmn,P4_2.dmn,P4_3.dmn,P4_4.dmn,P4_5.dmn,P4_6.dmn;
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 07/01/2026 (In Esercizio)</h1></summary>
 
 ### Orchestratore
 * ticket 93808:
   * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
+</details>
 
 <summary><h1>Note di rilascio del 09/01/2026 (Changelog-07)</h1></summary>
 
@@ -1672,18 +1674,23 @@ aggiunta regola REG5_1
 * AD3.dmn: aggiunte le regole REG144,REG145
 * P8.dmn: aggiunte le regole per la nuova scheda per le procedure negoziate senza bando o adesioni ad AQ soprasoglia
 
+<details>
 <summary><h1>Note di rilascio del 12/01/2026 (In Esercizio)</h1></summary>
 
 ### Orchestratore
 * ticket 87512:
   * scheda S3: impostato schedaAnnullabile a SI
-  
+</details>
+
+<details>
 <summary><h1>Note di rilascio del 30/01/2026 (In Esercizio)</h1></summary>
 
 ### Tipologiche
 * errori.json:
   * modificato messaggio dell'errore ERR132
-  
+</details>  
+
+<details>
 <summary><h1>Note di rilascio del 25/02/2026 (In Esercizio)</h1></summary>
 
 ### Orchestratore
@@ -1692,14 +1699,18 @@ aggiunta regola REG5_1
 		* colonna schedaSuccessiva: aggiunta la scheda CM2
 	* modificata la riga della scheda CM2:
 		* colonna schedaSuccessiva: aggiunta la scheda S4
-		
+</details>
+
+<details>
 <summary><h1>Note di rilascio del 26/02/2026 (In Esercizio)</h1></summary>
 
 ### Orchestratore
 * ticket 98397:
 	* modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml:
 		* rimosse le properties duplicate strumentiElettroniciSpecifici e docFAP (già presenti nello schema LottoP4BaseType)
+</details>
 
+<details>
 <summary><h1>Note di rilascio del 27/03/2026 (In Esercizio)</h1></summary>
 
 ### Tipologiche
@@ -1713,6 +1724,7 @@ aggiunta regola REG5_1
 * ticket 98916:
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
+</details>
 
 <summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
 
@@ -1741,14 +1753,25 @@ aggiunta regola REG5_1
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
+</details>
 
+<details>
 <summary><h1>Note di rilascio del 08/06/2026</h1></summary>
 
 ### Orchestratore
 * ticket 105169:
 	* modificata la riga della scheda ID:
 		* colonna schedaSuccessiva: aggiunta la scheda S1_2
-  
+</details>
+
+<summary><h1>Note di rilascio del 05/08/2026</h1></summary>
+
+### Tipologiche
+* ticket 108783:
+	* codIstat.json: aggiunte le voci "Stato Estero" e "Pluricomunale";
+* ticket 105000:
+	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
+
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
 * Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
 Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
