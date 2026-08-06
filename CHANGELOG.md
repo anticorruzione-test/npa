@@ -1708,7 +1708,9 @@ aggiunta regola REG5_1
 * ticket 98397:
 	* modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml:
 		* rimosse le properties duplicate strumentiElettroniciSpecifici e docFAP (già presenti nello schema LottoP4BaseType)
+</details>
 
+<details>
 <summary><h1>Note di rilascio del 27/03/2026 (In Esercizio)</h1></summary>
 
 ### Tipologiche
@@ -1722,6 +1724,7 @@ aggiunta regola REG5_1
 * ticket 98916:
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
+</details>
 
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1802,7 +1805,3 @@ aggiunta regola REG5_1
 	* codIstat.json: aggiunte le voci "Stato Estero" e "Pluricomunale";
 * ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
-
-<summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
-* Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
-Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
