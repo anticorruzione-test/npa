@@ -126,6 +126,7 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-ISDA2.yaml#/components/schemas/SchedaISDA2Type' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-AOC.yaml#/components/schemas/SchedaAOCType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-ABI.yaml#/components/schemas/SchedaABIType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-P_SIMOG.yaml#/components/schemas/SchedaP_SIMOGType'
              
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
@@ -208,6 +209,21 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-ID.yaml#/components/schemas/SchedaIDType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-CBI.yaml#/components/schemas/SchedaCBIType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-CM3.yaml#/components/schemas/SchedaCM3Type'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-A_SIMOG.yaml#/components/schemas/SchedaA_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-ANN_SIMOG.yaml#/components/schemas/SchedaANN_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-CL1_SIMOG.yaml#/components/schemas/SchedaCL1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-CO1_SIMOG.yaml#/components/schemas/SchedaCO1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-CS1_SIMOG.yaml#/components/schemas/SchedaCS1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-I1_SIMOG.yaml#/components/schemas/SchedaI1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-M_SIMOG.yaml#/components/schemas/SchedaM_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-RI1_SIMOG.yaml#/components/schemas/SchedaRI1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-RSU1_SIMOG.yaml#/components/schemas/SchedaRSU1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-S2_SIMOG.yaml#/components/schemas/SchedaS2_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-S3_SIMOG.yaml#/components/schemas/SchedaS3_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-S4_SIMOG.yaml#/components/schemas/SchedaS4_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SA1_SIMOG.yaml#/components/schemas/SchedaSA1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SC1_SIMOG.yaml#/components/schemas/SchedaSC1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SO1_SIMOG.yaml#/components/schemas/SchedaSO1_SIMOGType'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
