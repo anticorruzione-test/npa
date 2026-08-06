@@ -1773,7 +1773,7 @@ aggiunta regola REG5_1
   * uniformato l'unico valore di esempio dei campi temporali a 2026-07-15T14:54:28+02:00 e ricondotta la sua dichiarazione dentro l'oggetto schema, secondo la forma prevista da OpenAPI 3.0.3
   * corretto l'uso delle ancore YAML: l'ancora ratelimit_headers era dichiarata 19 volte senza alcun alias, rendendo il documento non parsabile dai lettori YAML che rifiutano le ancore duplicate. Mantenuta una sola dichiarazione e sostituite le altre 18 con l'alias *ratelimit_headers, come gia previsto in specifiche-servizi-fvoe-fva.yaml. Il contratto API resta invariato
 
-<summary><h1>Note di rilascio del 05/08/2026</h1></summary>
+<summary><h1>Note di rilascio del 06/08/2026</h1></summary>
 
 ### Tipologiche
 * ticket 108783:
