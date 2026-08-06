@@ -1728,14 +1728,33 @@ aggiunta regola REG5_1
 
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
+### Schede
+* ticket 104014:
+	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
 
 ## Orchestratore  
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
-</details>
 
-<details>
+<summary><h1>Note di rilascio del </h1></summary>
+
+## Schede  
+* ticket 94858 e 94864
+  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
+  * modello-dati-schede-dati-comuni.yaml:
+  	* aggiunto l'oggetto MotiviMancataStipulaEnum	
+
+## Tipologiche  
+* ticket 94858 e 94864
+  * Aggiunte la tipologica causaMancataStipula.json
+ 
+## Orchestratore  
+* ticket 94858 e 94864
+	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
+ 	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
+  	* Aggiunte le colonne ....
+	
 <summary><h1>Note di rilascio del 08/06/2026</h1></summary>
 
 ### Orchestratore
@@ -1780,7 +1799,3 @@ aggiunta regola REG5_1
 	* codIstat.json: aggiunte le voci "Stato Estero" e "Pluricomunale";
 * ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
-
-<summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
-* Il certificato digitale SSL utilizzato per i servizi di ANAC è in scadenza il prossimo 24 luglio. La nuova catena di certificazione pubblica è disponibile per il download nella cartella docs/certificato SSL.
-Il certificato sarà installato alle 17.00 di oggi (18 luglio) negli ambienti di qualificazione e attestazione e il 22 luglio alle ore 13.00 in ambiente di esercizio.
