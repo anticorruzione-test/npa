@@ -1708,9 +1708,7 @@ aggiunta regola REG5_1
 * ticket 98397:
 	* modello-dati-schede-P4.1.yaml,modello-dati-schede-P4.2.yaml,modello-dati-schede-P4.3.yaml,modello-dati-schede-P4.4.yaml,modello-dati-schede-P4.5.yaml:
 		* rimosse le properties duplicate strumentiElettroniciSpecifici e docFAP (già presenti nello schema LottoP4BaseType)
-</details>
 
-<details>
 <summary><h1>Note di rilascio del 27/03/2026 (In Esercizio)</h1></summary>
 
 ### Tipologiche
@@ -1724,9 +1722,7 @@ aggiunta regola REG5_1
 * ticket 98916:
 	* M1.dmn,M2.dmn: eliminate le regole REG55,REG56,REG63
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
-</details>
 
-<details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
 ### Schede
@@ -1737,7 +1733,6 @@ aggiunta regola REG5_1
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
-</details>
 
 <summary><h1>Note di rilascio del 25/05/2026 (SDK 1.13.3)</h1></summary>
 
@@ -1766,6 +1761,31 @@ aggiunta regola REG5_1
 
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.13.3).
+
+<summary><h1>Note di rilascio del 16/07/2026</h1></summary>
+
+### Modello Dati FVOE/FVA
+* modello-dati-fvoe-fva.yaml:
+  * creato DatiSA00006 per il certificato dei carichi pendenti penali (tipo documento 00006)
+  * creato DatiSA00014 per la certificazione IAF (tipo documento 00014)
+  * creato DatiSA00045 per il bilancio aziendale InfoCamere (tipo documento 00045)
+  * esteso DocumentoRichiediType.datiRichiesta (oneOf/discriminator) con i nuovi schemi
+  * confermati/riallineati i modelli già esistenti DatiSA00004 (tipo documento 00004) e DatiSA00020 (tipo documento 00005)
+
+### Tipologiche
+* aggiornata la tipologica tipoDocumento.json:
+  * aggiunto codice 00006 - Certificato dei carichi pendenti
+  * aggiunto codice 00045 - Bilancio Aziendale
+  * confermati i codici già presenti 00004 (Casellario giudiziario), 00005 (Anagrafe sanzioni amministrative dipendenti da reato) e 00014 (Certificazione IAF)
+* aggiornata la tipologica tipoFormaGiuridica.json
+### Specifiche interfacce
+* documento-specifiche-enticertificanti.md:
+  * aggiornata la tabella tipi documento richiedibili (00006, 00014, 00045)
+* specifiche-servizi-fvoe-fva.yaml:
+  * corretto l'esempio di default di RichiediDocumentiRequest (prima mistificava codice 00004 con DatiSA00036)
+  * aggiunti esempi di RichiediDocumentiRequest per 00004, 00005, 00006, 00014 e 00045
+* roadmap.md:
+  * aggiunta voce di roadmap per il rilascio/aggiornamento dei documenti enti certificanti 00004, 00005, 00006, 00014 e 00045
 
 <summary><h1>Note di rilascio del 08/06/2026</h1></summary>
 
