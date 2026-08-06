@@ -2713,6 +2713,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG146",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei due campi tra codIstat e codNUTS.",
+		"en": "E' obbligatorio inserire almeno uno dei due campi tra codIstat e codNUTS."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG147",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi codIstat e codNUTS.",
+		"en": "Inserire solo uno tra i campi codIstat e codNUTS."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
