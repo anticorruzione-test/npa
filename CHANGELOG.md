@@ -1727,7 +1727,6 @@ aggiunta regola REG5_1
 </details>
 
 <summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
-
 ### Schede
 * ticket 96573:
 	* modello-dati-schede-ID.yaml:
