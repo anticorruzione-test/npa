@@ -24,6 +24,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Deprecato - Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/strumentiSvolgimentoProcedure.json)
+    StrumentiSvolgimentoProcedure_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Deprecato - Strumenti per lo svolgimento delle procedure - fare riferimento ai valori contenuti nel file [strumentiSvolgimentoProcedure.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/strumentiSvolgimentoProcedure.json)
     MotivoUrgenzaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -35,7 +39,11 @@ components:
     CondizioniNegoziataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/condizioniNegoziata.json) 
+      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/condizioniNegoziata.json)
+    CondizioniNegoziata_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/condizioniNegoziata.json)  
     OperazioneSDAEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
@@ -98,8 +106,11 @@ components:
       description: Tipologia del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [tipoSoggetto.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/tipoSoggetto.json) 
     TipoIncaricoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType' 
+    TipoIncarico_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/tipoIncarico.json) 
+      description: Tipologia dell'incarico - fare riferimento ai valori contenuti nel file [tipoIncarico.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/tipoIncarico.json) 
     TipoProgettazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -148,6 +159,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di esclusione concessione - fare riferimento ai valori contenuti nel file [motivoEsclusioneConcessione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoEsclusioneConcessione.json) 
+    MotivoEsclusione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di esclusione settore ordinario e speciale - fare riferimento ai valori contenuti nel file [motivoEsclusioneOrdinarioSpeciale.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoEsclusione_SIMOG.json)
     FattispecieTracciabilitaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -252,6 +267,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [motivoAnnullamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoAnnullamento.json)
+    Annullamento_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivo di annullamento - fare riferimento ai valori contenuti nel file [motivoAnnullamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motivoAnnullamento.json)
     SettoreEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -2396,6 +2415,37 @@ components:
           type: boolean
         tipologiaAvvalimento:
           $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
+    Partecipante_SIMOGType:
+      description: Dati del partecipante
+      type: object
+      additionalProperties: false
+      required: [codiceFiscale,ruoloOE,idPartecipante]
+      properties:
+        codiceFiscale:
+          description: Codice fiscale del soggetto interessato
+          type: string
+        denominazione: 
+          description: Denominazione del soggetto interessato
+          type: string  
+        ruoloOE: 
+          $ref: '#/components/schemas/RuoloOEEnum'
+        tipoOE: 
+          $ref: '#/components/schemas/TipoOEEnum' 
+        idPartecipante: 
+          description: id partecipante
+          type: string  
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        paeseOperatoreEconomico:
+          description: Paese Operatore Economico
+          type: string 
+        paeseOperatoreEconomicoMl:
+          $ref: '#/components/schemas/MultilinguaType'          
+        avvalimento:
+          description: Flag avvalimento
+          type: boolean
+        tipologiaAvvalimento:
+          $ref: '#/components/schemas/TipologiaAvvalimentoEnum' 
     PartecipanteADType:
       description: Dati del partecipante in caso di aggiudicazione diretta
       type: object
@@ -2468,6 +2518,19 @@ components:
       properties:
         tipoIncarico:
           $ref: '#/components/schemas/TipoIncaricoEnum'
+        datiPersonaFisica:
+          $ref: '#/components/schemas/DatiPersonaFisicaType'
+        datiPersonaGiuridica:
+          type: array
+          items:
+            $ref: '#/components/schemas/DatiPersonaGiuridicaType'
+    Incarico_SIMOGType:
+      description: Dati relativi agli incarichi tecnici
+      type: object
+      additionalProperties: false
+      properties:
+        tipoIncarico:
+          $ref: '#/components/schemas/TipoIncarico_SIMOGEnum'
         datiPersonaFisica:
           $ref: '#/components/schemas/DatiPersonaFisicaType'
         datiPersonaGiuridica:
