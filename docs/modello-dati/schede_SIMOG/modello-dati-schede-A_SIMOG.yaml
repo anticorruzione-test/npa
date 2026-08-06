@@ -1,0 +1,84 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda A_SIMOG - Scheda relativa all'aggiudicazione SIMOG.
+  version: 1.0.0
+components:
+  schemas:
+    DatiBaseProceduraType:
+      description: dati tipo procedura e procedura accelerata
+      type: object
+      additionalProperties: false
+      properties:
+        tipoProcedura:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipoProceduraEnum' 
+        proceduraAccelerata:
+          description: E' stata utilizzata la procedura accelerata per ragioni di urgenza?
+          type: boolean
+    AppaltoA_SIMOGType:
+      type: object
+      additionalProperties: false
+      properties:
+        opereUrbanizzazioneScomputo:
+          description: Opere di urbanizzazione a scomputo
+          type: boolean
+        modalitaRiaggiudicazioneAffidamento:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaRiaggiudicazioneAffidamentoEnum'    
+        datiBaseProcedura:
+          $ref: '#/components/schemas/DatiBaseProceduraType'
+        datiBaseSubappalti:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSubappaltiRequiredType' 
+    AggiudicazioneA_SIMOGType:
+      type: object
+      additionalProperties: false
+      required: [numeroOfferteAmmesse,offertePresentate,datiBaseAggiudicazioneAppalto,datiBaseRisultatoProcedura]
+      properties: 
+        numeroOfferteAmmesse:
+          description: numero di offerte ammesse
+          type: number
+          format: integer
+        valoreSogliaAnomalia:
+          description: Valore soglia anomalia
+          type: number
+          format: double
+          pattern: (^100([.]0{1,2})?)$|(^\d{1,2}([.]\d{0,5})?)$             
+        offertePresentate:
+          type: array
+          items: 
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OfferteType'
+        quadroEconomicoStandard:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'   
+        datiBaseRisultatoProcedura:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseEsitoRisultatoProceduraType'
+        datiBaseAggiudicazioneAppalto:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'         
+        datiBaseSottomissioniRicevute:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'   
+        datiBaseAggiudicazione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneOptionalType'                
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FinanziamentoType'
+       
+    AnacFormA_SIMOGType:
+      description: Contiene tutti i dati relativi all'aggiudicazione
+      type: object
+      additionalProperties: false
+      required: [appalto,aggiudicazioni]
+      properties:
+        appalto:
+          $ref: '#/components/schemas/AppaltoA_SIMOGType'
+        aggiudicazioni:
+          description: Dati relativi alle aggiudicazioni
+          type: array
+          items:
+            $ref: '#/components/schemas/AggiudicazioneA_SIMOGType'       
+    SchedaA_SIMOGType:
+      description: Avviso aggiudicazione SIMOG.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormA_SIMOGType'          

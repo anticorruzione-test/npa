@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda SO1_SIMOG - Scheda di sospensione.
+  version: 1.0.0
+components:
+  schemas:
+    SospensioneType:
+      description: Oggetto che riporta tutti i dati delle Sospensioni
+      type: object
+      required: [dataVerbaleSospensione, motivoSospensione]
+      additionalProperties: false
+      properties:
+        sospensioneParziale: 
+          description: La sospensione è parziale?
+          type: boolean
+        dataVerbaleSospensione: 
+          description: Data del verbale di sospensione
+          type: string
+          format: date-time
+        motivoSospensione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoSospensioneEnum'
+    AnacFormSO1_SIMOGType:
+      description: Contiene tutti i dati relativi alla scheda di Sospensione
+      type: object
+      required: [sospensione, idContratto]
+      additionalProperties: false
+      properties:
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        sospensione:
+          $ref: '#/components/schemas/SospensioneType'           
+    SchedaSO1_SIMOGType:
+      description: Sospensione in fase di esecuzione per qualunque procedura. Articolo 121 decreto legislativo 36/2023
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormSO1_SIMOGType'

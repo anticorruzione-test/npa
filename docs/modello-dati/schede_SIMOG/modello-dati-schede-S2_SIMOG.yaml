@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda S2_SIMOG - Elenco dei soggetti che hanno presentato offerta. 
+  version: 1.0.0
+components:
+  schemas:
+    ElencoSoggettiType:
+      description: Elenco di soggetti che hanno presentato offerta
+      type: object
+      additionalProperties: false
+      required: [cig,partecipanti]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+        partecipanti:
+          description: Dati relativi ai partecipanti
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Partecipante_SIMOGType'                      
+    SchedaS2_SIMOGType:
+      description: "Elenco dei soggetti che hanno presentato offerta."
+      type: object
+      additionalProperties: false
+      required: [anacForm]
+      properties:
+        anacForm:
+          type: object
+          additionalProperties: false
+          required: [elencoSoggetti]
+          properties:
+            elencoSoggetti:
+              type: array
+              items:
+                $ref: '#/components/schemas/ElencoSoggettiType'              
+                       

@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda S4_SIMOG - Scheda relativa alla Variazione Aggiudicatari per le procedure SIMOG
+  version: 1.0.0
+components:
+  schemas:
+    AnacFormS4_SIMOGType:
+      description: Dati relativi alla Variazione Aggiudicatari
+      type: object
+      additionalProperties: false
+      required: [cig]
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string
+        partecipante:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Partecipante_SIMOGType'
+        motivoVariazione: 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviVariazioneAnagraficaEnum'
+    SchedaS4_SIMOGType:
+      description: Variazione Aggiudicatari.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormS4_SIMOGType'        

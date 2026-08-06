@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda ANN_SIMOG - Scheda di annullamento SIMOG.
+  version: 1.0.0
+components:
+  schemas:    
+    AnnullamentoSimogType:
+      description: Oggetto utilizzato per annullare un cig Simog
+      type: object
+      additionalProperties: false
+      required: [motivoAnnullamento]
+      properties:
+        motivoAnnullamento:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Annullamento_SIMOGEnum' 
+    AnacFormANN_SIMOGType:
+      type: object
+      required: [cig,annullamento]
+      additionalProperties: false
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string 
+        annullamento:
+            $ref: '#/components/schemas/AnnullamentoSimogType'             
+    SchedaANN_SIMOGType:
+      description: Scheda di annullamento SIMOG.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormANN_SIMOGType'

@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda M_SIMOG - Scheda di modifica contrattuale.
+  version: 1.0.0
+components:
+  schemas:
+    DatiBaseModificaContrattualeType:
+      description:  dati di modifica
+      additionalProperties: false
+      properties:
+        dataSottoscrizione:
+          description: Data sottoscrizione eventuale atto aggiuntivo/ sottomissione
+          type: string
+          format: date-time  
+        motiviModifica:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviModificaContrattualeEnum'
+        causaModifica:
+          description: Cause della modifica contrattuale
+          type: string 
+        causaModificaMl:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MultilinguaType'        
+    ModificaContrattualeType: 
+      description: Oggetto che riporta tutti i dati della modifica contrattuale
+      type: object
+      additionalProperties: false
+      properties: 
+        dataApprovazione:
+          description: Data di approvazione della modifica contrattuale
+          type: string
+          format: date-time
+        urlDocumentazione:
+          description: URL documentazione varianti in corso d’opera
+          type: string
+          format: url
+        motivoRevisionePrezzi: 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRevisionePrezziEnum'
+        cigNuovaProcedura:
+          description: CIG della nuova procedura avviata
+          type: string   
+        quadroEconomicoStandardRideterminato:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoModificaContrattualeType' 
+        datiBaseModifica:     
+          $ref: '#/components/schemas/DatiBaseModificaContrattualeType' 
+    AnacFormM_SIMOGType:
+      description: Contiene tutti i dati di modifica contrattuale
+      type: object
+      additionalProperties: false
+      required: [idContratto,modificaContrattuale]
+      properties:
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"       
+        modificaContrattuale:
+         $ref: '#/components/schemas/ModificaContrattualeType' 
+          
+    SchedaM_SIMOGType:
+      description: Modifica contrattuale
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormM_SIMOGType'
+         
