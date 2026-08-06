@@ -1778,7 +1778,7 @@ aggiunta regola REG5_1
 ### Tipologiche
 * ticket 108783:
 	* codIstat.json: aggiunte le voci "Stato Estero" e "Pluricomunale";
-* ticket 105000:
+* ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
 
 <summary><h1>Scadenza certificato digitale *.anticorruzione.it</h1></summary>
