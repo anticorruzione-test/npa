@@ -1763,6 +1763,31 @@ aggiunta regola REG5_1
 		* colonna schedaSuccessiva: aggiunta la scheda S1_2
 </details>
 
+<summary><h1>Note di rilascio del 16/07/2026</h1></summary>
+
+### Modello Dati FVOE/FVA
+* modello-dati-fvoe-fva.yaml:
+  * creato DatiSA00006 per il certificato dei carichi pendenti penali (tipo documento 00006)
+  * creato DatiSA00014 per la certificazione IAF (tipo documento 00014)
+  * creato DatiSA00045 per il bilancio aziendale InfoCamere (tipo documento 00045)
+  * esteso DocumentoRichiediType.datiRichiesta (oneOf/discriminator) con i nuovi schemi
+  * confermati/riallineati i modelli già esistenti DatiSA00004 (tipo documento 00004) e DatiSA00020 (tipo documento 00005)
+
+### Tipologiche
+* aggiornata la tipologica tipoDocumento.json:
+  * aggiunto codice 00006 - Certificato dei carichi pendenti
+  * aggiunto codice 00045 - Bilancio Aziendale
+  * confermati i codici già presenti 00004 (Casellario giudiziario), 00005 (Anagrafe sanzioni amministrative dipendenti da reato) e 00014 (Certificazione IAF)
+* aggiornata la tipologica tipoFormaGiuridica.json
+### Specifiche interfacce
+* documento-specifiche-enticertificanti.md:
+  * aggiornata la tabella tipi documento richiedibili (00006, 00014, 00045)
+* specifiche-servizi-fvoe-fva.yaml:
+  * corretto l'esempio di default di RichiediDocumentiRequest (prima mistificava codice 00004 con DatiSA00036)
+  * aggiunti esempi di RichiediDocumentiRequest per 00004, 00005, 00006, 00014 e 00045
+* roadmap.md:
+  * aggiunta voce di roadmap per il rilascio/aggiornamento dei documenti enti certificanti 00004, 00005, 00006, 00014 e 00045
+
 <summary><h1>Note di rilascio del 29/07/2026</h1></summary>
 
 ## PdL DAT_PCP_07 - Centralizzazione del formato dei campi temporali
