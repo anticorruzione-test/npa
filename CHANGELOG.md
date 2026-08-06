@@ -1727,6 +1727,7 @@ aggiunta regola REG5_1
 </details>
 
 <summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
+
 ### Schede
 * ticket 96573:
 	* modello-dati-schede-ID.yaml:
@@ -1746,6 +1747,7 @@ aggiunta regola REG5_1
 	* ID.dmn: modificata la REG127, aggiunta la REG146
 
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
+
 ### Schede
 * ticket 104014:
 	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
