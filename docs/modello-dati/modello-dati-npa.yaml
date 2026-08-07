@@ -127,7 +127,7 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-AOC.yaml#/components/schemas/SchedaAOCType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-ABI.yaml#/components/schemas/SchedaABIType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-P_SIMOG.yaml#/components/schemas/SchedaP_SIMOGType'
-              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SMARTICG/modello-dati-schede-P_SMARTCIG.yaml#/components/schemas/SchedaP_SMARTCIGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SMARTCIG/modello-dati-schede-P_SMARTCIG.yaml#/components/schemas/SchedaP_SMARTCIGType'
              
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
