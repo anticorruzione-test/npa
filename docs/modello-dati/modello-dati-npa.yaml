@@ -127,6 +127,7 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-AOC.yaml#/components/schemas/SchedaAOCType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-ABI.yaml#/components/schemas/SchedaABIType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-P_SIMOG.yaml#/components/schemas/SchedaP_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SMARTICG/modello-dati-schede-P_SMARTCIG.yaml#/components/schemas/SchedaP_SMARTCIGType'
              
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
@@ -224,6 +225,8 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SA1_SIMOG.yaml#/components/schemas/SchedaSA1_SIMOGType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SC1_SIMOG.yaml#/components/schemas/SchedaSC1_SIMOGType'
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SIMOG/modello-dati-schede-SO1_SIMOG.yaml#/components/schemas/SchedaSO1_SIMOGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SMARTCIG/modello-dati-schede-ANN_SMARTCIG.yaml#/components/schemas/SchedaANN_SMARTCIGType'
+              - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede_SMARTCIG/modello-dati-schede-ID_SMARTCIG.yaml#/components/schemas/SchedaID_SMARTCIGType'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
