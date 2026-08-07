@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda ANN_SMARTCIG - Scheda di annullamento SMARTCIG.
+  version: 1.0.0
+components:
+  schemas:
+    AnnullamentoType:
+      description: Oggetto utilizzato per annullare un cig Simog
+      type: object
+      additionalProperties: false
+      required: [motivoAnnullamento]
+      properties:
+        motivoAnnullamento:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Annullamento_SMARTCIGEnum'
+    AnacFormANN_SMARTCIGType:
+      type: object
+      required: [cig,annullamento]
+      additionalProperties: false
+      properties:
+        cig:
+          description: codice identificativo lotto
+          type: string 
+        annullamento:
+            $ref: '#/components/schemas/AnnullamentoType'             
+    SchedaANN_SMARTCIGType:
+      description: Scheda di annullamento SMARTCIG.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormANN_SMARTCIGType'

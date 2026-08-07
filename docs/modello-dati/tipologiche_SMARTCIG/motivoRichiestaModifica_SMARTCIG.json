@@ -1,0 +1,18 @@
+[{
+    "codice":"1",
+    "descrizione": {
+		"it": "Errore materiale per la corretta emissione CEL",
+		"en": "Errore materiale per la corretta emissione CEL"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"2",
+    "descrizione": {
+		"it": "Errore materiale per rendicontazione dati corretti",
+		"en": "Errore materiale per rendicontazione dati corretti"
+		},
+    "dataInizio":null,
+    "dataFine":null
+}]

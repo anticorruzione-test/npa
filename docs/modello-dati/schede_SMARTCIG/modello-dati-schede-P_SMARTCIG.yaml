@@ -1,0 +1,65 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda P_SmartCIG - Scheda di bando di gara P_SmartCIG.
+  version: 1.0.0
+components:
+  schemas:
+    AppaltoP_SMARTCIGType:   
+      type: object
+      additionalProperties: false
+      required: [codiceAppalto,categorieMerceologiche,datiBase]
+      properties: 
+        codiceAppalto:
+          description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
+          type: string
+          minLength: 8
+          maxLength: 64
+        motivazioneCIG:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
+        categorieMerceologiche:
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategorieMerceologicheEnum'
+        datiBase:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'                  
+    LottoP_SMARTCIGType:   
+      type: object
+      additionalProperties: false
+      required: [lotIdentifier,datiBase]
+      properties:
+        lotIdentifier:
+          description: Id univoco del lotto generato dalla stazione appaltante
+          type: string
+        categorieMerceologiche:
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CategorieMerceologicheEnum'
+        cupLotto:
+          description: Cup associati al lotto
+          type: array
+          items:
+            type: string
+            pattern: ^[a-zA-Z0-9]{15}$        
+    AnacFormP_SMARTCIGType:
+      description: Contiene tutti i dati necessari per la pubblicazione nazionale.
+      allOf: 
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
+      type: object
+      additionalProperties: false
+      required: [appalto,lotti]
+      properties:      
+        appalto:
+          $ref: '#/components/schemas/AppaltoP_SMARTCIGType'
+        lotti:
+          description: Dati relativi ai lotti
+          type: array
+          items:
+            $ref: '#/components/schemas/LottoP_SMARTCIGType'          
+    SchedaP_SMARTCIGType:
+      description: Bando di gara — SmartCIG.
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormP_SMARTCIGType'         
