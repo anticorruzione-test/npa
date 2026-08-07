@@ -1728,6 +1728,7 @@ aggiunta regola REG5_1
 
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
+
 ### Schede
 * ticket 104014:
 	* modello-dati-schede-P5.yaml: reso obbligatorio il campo fattispecieTracciabilita
@@ -1822,5 +1823,7 @@ aggiunta regola REG5_1
 ### Tipologiche
 * ticket 108783:
 	* codIstat.json: aggiunte le voci "Stato Estero" e "Pluricomunale";
+
+Le nuove voci della tipologica codIstat devono essere utilizzate qualora si intenda indicare un ambito geografico riferito a uno Stato estero oppure a una dimensione territoriale sovracomunale. In entrambi i casi, la valorizzazione di una delle due voci comporta l'obbligo di compilare anche il campo codNUTS, selezionando uno dei valori previsti dalla relativa tipologica.
 * ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
