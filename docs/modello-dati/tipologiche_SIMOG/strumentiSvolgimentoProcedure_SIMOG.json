@@ -1,0 +1,63 @@
+[{
+    "codice":"1",
+    "descrizione": {
+		"it": "Procedura svolta in modalità tradizionale o “cartacea”",
+		"en": "Procedura svolta in modalità tradizionale o “cartacea”"
+		},
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"2",
+    "descrizione": {
+		"it": "Asta elettronica Art.56",
+		"en": "Asta elettronica Art.56"
+		},
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"3",
+    "descrizione": {
+		"it": "Catalogo elettronico Art.57: acquisto diretto",
+		"en": "Catalogo elettronico Art.57: acquisto diretto"
+		},	
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"4",
+    "descrizione": {
+		"it": "Catalogo elettronico Art.57: richiesta di offerta",
+		"en": "Catalogo elettronico Art.57: richiesta di offerta"
+		},	
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"5",
+    "descrizione": {
+		"it": "Procedure svolte attraverso piattaforme telematiche di negoziazione Art.58",
+		"en": "Procedure svolte attraverso piattaforme telematiche di negoziazione Art.58"
+		},	
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"6",
+    "descrizione": {
+		"it": "Accordo quadro",
+		"en": "Accordo quadro"
+		},	
+    "dataInizio":"1970-01-01T00:00:00Z",
+    "dataFine":null
+},
+{
+    "codice":"7",
+    "descrizione": {
+		"it": "Sistema dinamico di acquisizione",
+		"en": "Sistema dinamico di acquisizione"
+		},		
+    "dataInizio":"2020-12-10T00:00:00Z",
+    "dataFine":null
+}]
