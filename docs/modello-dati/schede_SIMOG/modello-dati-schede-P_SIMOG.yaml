@@ -7,7 +7,7 @@ components:
     AppaltoP_SIMOGType:   
       type: object
       additionalProperties: false
-      required: [codiceAppalto,motivoUrgenza,categorieMerceologiche,datiBase,settore]
+      required: [codiceAppalto,motivoUrgenza,datiBase,settore]
       properties: 
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
@@ -34,7 +34,7 @@ components:
     LottoP_SIMOGType:   
       type: object
       additionalProperties: false
-      required: [lotIdentifier,categorieMerceologiche,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione]
+      required: [lotIdentifier,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
@@ -132,7 +132,14 @@ components:
         datiBaseDurata:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseDurataType'
         datiBaseAggiuntivi:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiuntiviType'         
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiuntiviType' 
+        datiBaseAggiudicazione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneOptionalType'                
+        finanziamenti:
+          description: Dati relativi ai finanziamenti
+          type: array
+          items:
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FinanziamentoType'                  
     AnacFormP_SIMOGType:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf: 

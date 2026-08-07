@@ -53,13 +53,6 @@ components:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneAppaltoType'         
         datiBaseSottomissioniRicevute:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseSottomissioniRicevuteType'   
-        datiBaseAggiudicazione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneOptionalType'                
-        finanziamenti:
-          description: Dati relativi ai finanziamenti
-          type: array
-          items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/FinanziamentoType'
        
     AnacFormA_SIMOGType:
       description: Contiene tutti i dati relativi all'aggiudicazione
