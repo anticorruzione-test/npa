@@ -1746,6 +1746,7 @@ aggiunta regola REG5_1
 * ticket 100672:
 	* ID.dmn: modificata la REG127, aggiunta la REG146
 
+<details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
 ### Schede
