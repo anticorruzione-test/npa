@@ -129,6 +129,32 @@ satisfies (soggetto.denominazione = null or soggetto.denominazione="")</text>
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG146\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_0atis0h">
+        <description>REG147: In caso di più soggetti indicare il mandatario</description>
+        <inputEntry id="UnaryTests_09b3o50">
+          <text>count(subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti) &gt; 1 and every soggetto in subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti
+satisfies (soggetto.ruoloOE.codice != "5" and soggetto.ruoloOE.codice != "13" )</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_145nj32">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wh0t80">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG147\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g0089t">
+        <description>REG148: In caso di più soggetti indicare il mandante</description>
+        <inputEntry id="UnaryTests_13wyv75">
+          <text>count(subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti) &gt; 1 and every soggetto in subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti
+satisfies (soggetto.ruoloOE.codice != "12" and soggetto.ruoloOE.codice != "10" )</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0al6evf">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qpe8z0">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG148\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="subappalto" />
