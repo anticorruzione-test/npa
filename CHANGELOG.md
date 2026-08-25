@@ -1800,3 +1800,13 @@ aggiunta regola REG5_1
 Le nuove voci della tipologica codIstat devono essere utilizzate qualora si intenda indicare un ambito geografico riferito a uno Stato estero oppure a una dimensione territoriale sovracomunale. In entrambi i casi, la valorizzazione di una delle due voci comporta l'obbligo di compilare anche il campo codNUTS, selezionando uno dei valori previsti dalla relativa tipologica.
 * ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
+
+<summary><h1>Note di rilascio del TBD</h1></summary>
+
+### Tipologiche
+* ticket 109514:
+	* errori.json: modificata la descrizione dell'errore REG47
+
+### Regole
+* ticket 109514:
+	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
