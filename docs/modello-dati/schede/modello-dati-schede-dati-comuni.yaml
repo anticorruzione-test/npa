@@ -399,7 +399,7 @@ components:
       description: Stazione Appaltante e ruoli ricoperti nell'appalto
       type: object
       additionalProperties: false
-      required: [codiceFiscale,codiceAusa,codiceCentroCosto,saTitolare]
+      required: [codiceFiscale,codiceAusa,codiceCentroCosto,saTitolare,funzioniSvolte]
       properties:
         codiceFiscale:
           description: Codice fiscale della S.A.
