@@ -5,7 +5,7 @@
 		"en": "Solo aggiudicazione"
 		},
     "dataInizio":null,
-    "dataFine":null
+    "dataFine": "2025-01-16T00:00:00Z"
 },
 {
     "codice":"2",
@@ -14,7 +14,7 @@
 		"en": "Aggiudicazione e stipula del contratto"
 		},
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2025-01-16T00:00:00Z"
 },
 {
     "codice":"3",
@@ -23,7 +23,7 @@
 		"en": "Aggiudicazione, stipula ed esecuzione del contratto"
 		},	
     "dataInizio":null,
-    "dataFine":null
+    "dataFine":"2025-01-16T00:00:00Z"
 },
 {
     "codice":"4",
@@ -32,5 +32,46 @@
 		"en": "Proposta di aggiudicazione"
 		},	
     "dataInizio":null,
+    "dataFine":"2025-01-16T00:00:00Z"
+},
+{
+    "codice":"1",
+    "descrizione": {
+		"it": "Pubblicazione",
+		"en": "Pubblicazione"
+		},	
+    "dataInizio":"2026-10-01T00:00:00Z",
     "dataFine":null
-}]
+},{
+    "codice":"2",
+    "descrizione": {
+		"it": "Affidamento",
+		"en": "Affidamento"
+		},	
+    "dataInizio":"2026-10-01T00:00:00Z",
+    "dataFine":null
+},{
+    "codice":"3",
+    "descrizione": {
+		"it": "Proposta di aggiudicazione",
+		"en": "Proposta di aggiudicazione"
+		},	
+    "dataInizio":"2026-10-01T00:00:00Z",
+    "dataFine":null
+},{
+    "codice":"4",
+    "descrizione": {
+		"it": "Stipula del contratto",
+		"en": "Stipula del contratto"
+		},	
+    "dataInizio":"2026-10-01T00:00:00Z",
+    "dataFine":null
+},{
+    "codice":"5",
+    "descrizione": {
+		"it": "Esecuzione del contratto",
+		"en": "Esecuzione del contratto"
+		},	
+    "dataInizio":"2026-10-01T00:00:00Z",
+    "dataFine":null
+},]
