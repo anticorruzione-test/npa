@@ -2880,6 +2880,18 @@ components:
               type: string
               format: uuid
               example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+            dataDa:
+              description: data di inizio del range di filtro sulla data di creazione dell'elenco delle stazioni appaltanti (opzionale)
+              type: string
+              format: date-time
+              nullable: true
+              example: "2024-01-01T00:00:00.000Z"
+            dataA:
+              description: data di fine del range di filtro sulla data di creazione dell'elenco delle stazioni appaltanti (opzionale)
+              type: string
+              format: date-time
+              nullable: true
+              example: "2024-12-31T23:59:59.999Z"
         - type: object
           additionalProperties: false
           required:
@@ -2890,6 +2902,18 @@ components:
               type: string
               format: uuid
               example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+            dataDa:
+              description: data di inizio del range di filtro sulla data di creazione dell'elenco delle stazioni appaltanti (opzionale)
+              type: string
+              format: date-time
+              nullable: true
+              example: "2024-01-01T00:00:00.000Z"
+            dataA:
+              description: data di fine del range di filtro sulla data di creazione dell'elenco delle stazioni appaltanti (opzionale)
+              type: string
+              format: date-time
+              nullable: true
+              example: "2024-12-31T23:59:59.999Z"
     GestoreSARequest:
       description: Oggetto in ingresso ai servizi di gestione stazioni appaltanti
       oneOf:
