@@ -1,211 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_P2_14" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.7.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
-  <decision id="P2_14" name="P2_14">
-    <informationRequirement id="InformationRequirement_P2_14_01">
-      <requiredInput href="#InputData_appalto_P2_14" />
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_P8" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.6.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+  <decision id="P8" name="P8">
+    <informationRequirement id="InformationRequirement_P8_01">
+      <requiredInput href="#InputData_appalto_P8" />
     </informationRequirement>
-    <informationRequirement id="InformationRequirement_P2_14_02">
-      <requiredInput href="#InputData_lotti_P2_14" />
+    <informationRequirement id="InformationRequirement_P8_02">
+      <requiredInput href="#InputData_lotti_P8" />
     </informationRequirement>
-    <informationRequirement id="InformationRequirement_P2_14_03">
-      <requiredInput href="#InputData_stazioniAppaltanti_P2_14" />
+    <informationRequirement id="InformationRequirement_P8_03">
+      <requiredInput href="#InputData_stazioniAppaltanti_P8" />
     </informationRequirement>
-    <informationRequirement id="InformationRequirement_1ijfut7">
-      <requiredInput href="#InputData_1e3bpcr" />
+    <informationRequirement id="InformationRequirement_12j8w8d">
+      <requiredInput href="#InputData_1mfloyl" />
     </informationRequirement>
-    <informationRequirement id="InformationRequirement_1ntzfdw">
-      <requiredInput href="#InputData_0fofuyt" />
+    <informationRequirement id="InformationRequirement_10yx1q6">
+      <requiredInput href="#InputData_0y8jvh8" />
     </informationRequirement>
-    <informationRequirement id="InformationRequirement_0f6mpo7">
-      <requiredInput href="#InputData_1ptm75y" />
+    <informationRequirement id="InformationRequirement_0ugurwb">
+      <requiredInput href="#InputData_1srkbir" />
     </informationRequirement>
-    <decisionTable id="DecisionTable_P2_14" hitPolicy="COLLECT">
-      <input id="appalto_P2_14">
-        <inputExpression id="LiteralExpression_appalto_P2_14" typeRef="string">
+    <decisionTable id="DecisionTable_P8" hitPolicy="COLLECT">
+      <input id="appalto_P8">
+        <inputExpression id="LiteralExpression_appalto_P8" typeRef="string">
           <text>appalto</text>
         </inputExpression>
       </input>
-      <input id="lotti_P2_14" biodi:width="272">
-        <inputExpression id="LiteralExpression_lotti_P2_14" typeRef="string">
+      <input id="lotti_P8" biodi:width="272">
+        <inputExpression id="LiteralExpression_lotti_P8" typeRef="string">
           <text>lotti</text>
         </inputExpression>
       </input>
-      <input id="stazioniAppaltanti_P2_14" biodi:width="170">
-        <inputExpression id="LiteralExpression_stazioniAppaltanti_P2_14" typeRef="string">
+      <input id="stazioniAppaltanti_P8" biodi:width="170">
+        <inputExpression id="LiteralExpression_stazioniAppaltanti_P8" typeRef="string">
           <text>stazioniAppaltanti</text>
         </inputExpression>
       </input>
-      <output id="Errore_P2_14" name="Errore" typeRef="string" biodi:width="269" />
-      <rule id="DecisionRule_P2_14_0018">
-        <description>REG1: categoria merceologica: controllo di coerenza tra quelle indicate nei lotti e quelle indicate nell'appalto</description>
-        <inputEntry id="UnaryTests_P2_14_0055">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0056">
-          <text>some lotto in lotti
-satisfies (some categoria in lotto.categorieMerceologiche
-satisfies not(list contains(appalto.categorieMerceologiche, categoria)))</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0057">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0019">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG1\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0007">
+      <output id="Errore_P8" name="Errore" typeRef="string" biodi:width="269" />
+      <rule id="DecisionRule_P8_0007">
         <description>REG2: E' stata indicata la funzione ma non è stato indicato il codice fiscale della stazione appaltante</description>
-        <inputEntry id="UnaryTests_P2_14_0019">
+        <inputEntry id="UnaryTests_P8_0019">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0020">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0020">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0021">
+        <inputEntry id="UnaryTests_P8_0021">
           <text>some stazioneAppaltante in stazioniAppaltanti
 satisfies is defined(stazioneAppaltante.funzioniSvolte) and stazioneAppaltante.codiceFiscale=null</text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0007">
+        <outputEntry id="LiteralExpression_P8_0007">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG2\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0019">
+      <rule id="DecisionRule_P8_0019">
         <description>REG3: i codici fiscali nella lista delle stazioni appaltanti devono essere diversi</description>
-        <inputEntry id="UnaryTests_P2_14_0058">
+        <inputEntry id="UnaryTests_P8_0058">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0059">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0059">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0060">
+        <inputEntry id="UnaryTests_P8_0060">
           <text>count(stazioniAppaltanti.codiceFiscale) &gt; count(distinct values(stazioniAppaltanti.codiceFiscale))</text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0020">
+        <outputEntry id="LiteralExpression_P8_0020">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG3\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_12o224y">
+      <rule id="DecisionRule_0t85q4c">
         <description>REG4_1: Tipologica motivazioneCig: la motivazione è richiesta solo se la categoria merceologica è diversa dal valore "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015". Se la categoria merceologica è "Lavori oppure beni e servizi non elencati nell'art. 1 dPCM 24 dicembre 2015" allora Motivazione Richiesta Cig è null.</description>
-        <inputEntry id="UnaryTests_10vg999">
-          <text>(is defined(appalto.motivazioneCig) = false or ((appalto.motivazioneCig.codice = "")) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice != "999"))</text>
+        <inputEntry id="UnaryTests_033nkdv">
+          <text>(is defined(appalto.motivazioneCig) = false or ((appalto.motivazioneCig.codice = "")) and (some categoriaMerceologica in appalto.categorieMerceologiche satisfies categoriaMerceologica.codice != "999")) and list contains(["1"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0o87d16">
+        <inputEntry id="UnaryTests_1ssz1i9">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1l8oh80">
+        <inputEntry id="UnaryTests_0wqvpct">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_0jskioz">
+        <outputEntry id="LiteralExpression_0nablie">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG4_1\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0001">
-        <description>REG6_1: Condizioni Negoziata: se il valore del tipo di procedura è "Negoziata senza previa indizione di gara" allora il campo condizioniNegoziata deve essere valorizzato.</description>
-        <inputEntry id="UnaryTests_P2_14_0001">
-          <text>appalto.datiBaseProcedura.tipoProcedura.codice = "neg-wo-call"</text>
+      <rule id="DecisionRule_152mjcw">
+        <description>REG5: Uso di metodi e degli strumenti elettronici specifici, quali quelli di modellazione per l’edilizia e le infrastrutture, nelle fasi di progettazione, costruzione e gestione delle opere e relative verifiche: obbligatorio se l'oggetto del contratto è uguale a “works” e la somma di tutti i campi del quadro economico standard tranne somme a disposizione è maggiore di 1.000.000.</description>
+        <inputEntry id="UnaryTests_1tuw7qi">
+          <text>list contains(["1"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0002">
+        <inputEntry id="UnaryTests_1ygllcj">
           <text>some lotto in lotti
-satisfies lotto.condizioniNegoziata=null</text>
+satisfies lotto.datiBase.oggettoContratto.codice = "works" and lotto.strumentiElettroniciSpecifici=null and (lotto.quadroEconomicoStandard.impLavori + lotto.quadroEconomicoStandard.impServizi + lotto.quadroEconomicoStandard.impForniture + lotto.quadroEconomicoStandard.impTotaleSicurezza + lotto.quadroEconomicoStandard.ulterioriSommeNoRibasso + lotto.quadroEconomicoStandard.impProgettazione + lotto.quadroEconomicoStandard.sommeOpzioniRinnovi + lotto.quadroEconomicoStandard.sommeRipetizioni) &gt; 1000000</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0003">
+        <inputEntry id="UnaryTests_057ksxk">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0001">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG6_1\"}"</text>
+        <outputEntry id="LiteralExpression_1sdl9is">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG5\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0002">
-        <description>REG6_2: Condizioni Negoziata: se il valore del tipo di procedura (scelta contraente) è diverso da "Negoziata senza previa indizione di gara" allora il campo condizioniNegoziata non deve essere valorizzato.</description>
-        <inputEntry id="UnaryTests_P2_14_0004">
-          <text>appalto.datiBaseProcedura.tipoProcedura.codice != "neg-wo-call"</text>
+      <rule id="DecisionRule_1gpj7xa">
+        <description>REG5_1: il campo docFaP è obbligatorio in caso venga valorizzato il campo strumentiElettroniciSpecifici</description>
+        <inputEntry id="UnaryTests_02knqwr">
+          <text>list contains(["1"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0005">
+        <inputEntry id="UnaryTests_1bwddp3">
           <text>some lotto in lotti
-satisfies lotto.condizioniNegoziata != null</text>
+satisfies is defined(lotto.strumentiElettroniciSpecifici) and is defined (lotto.docFAP) = false</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0006">
+        <inputEntry id="UnaryTests_1favk0a">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0002">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG6_2\"}"</text>
+        <outputEntry id="LiteralExpression_0r79ezc">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG5_1\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1t5ps76">
+      <rule id="DecisionRule_09p7mfd">
         <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
-        <inputEntry id="UnaryTests_0v1qx7v">
-          <text></text>
+        <inputEntry id="UnaryTests_07wsh75">
+          <text>list contains(["1","2"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1qy60fi">
+        <inputEntry id="UnaryTests_128djsu">
           <text>some lotto in lotti satisfies lotto.datiBaseDocumenti.url != null and lotto.datiBaseDocumenti.url != "" and starts with(lotto.datiBaseDocumenti.url,"http:") = false and starts with(lotto.datiBaseDocumenti.url,"https:") = false</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_1wt1l1s">
+        <inputEntry id="UnaryTests_01vy79y">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_04cxsgw">
+        <outputEntry id="LiteralExpression_0hi2kdb">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG8\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0015">
+      <rule id="DecisionRule_P8_0015">
         <description>REG10: Servizio Pubblico Locale: il campo è obbligatorio solo se l'oggetto del contratto = servizi</description>
-        <inputEntry id="UnaryTests_P2_14_0046">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0046">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0047">
+        <inputEntry id="UnaryTests_P8_0047">
           <text>some lotto in lotti
-satisfies lotto.datiBase.oggettoContratto.codice = "services" and lotto.servizioPubblicoLocale = null</text>
+satisfies lotto.datiBase.oggettoContratto.codice="services" and lotto.servizioPubblicoLocale = null</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0048">
+        <inputEntry id="UnaryTests_P8_0048">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0016">
+        <outputEntry id="LiteralExpression_P8_0016">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG10\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0016">
-        <description>REG11: Cui: Obbligatorio se Il lavoro o l’acquisto di bene o servizio è stato previsto all’interno della programmazione</description>
-        <inputEntry id="UnaryTests_P2_14_0049">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0050">
-          <text>some lotto in lotti
-satisfies lotto.lavoroOAcquistoPrevistoInProgrammazione and lotto.cui = null</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0051">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0017">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG11\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0021">
+      <rule id="DecisionRule_P8_0021">
         <description>REG14: Motivo Collegamento: Se l'appalto prevede ripetizioni, il motivo collegamento CIG deve essere 'No, nessuna ipotesi di collegamento' </description>
-        <inputEntry id="UnaryTests_P2_14_0064">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0064">
+          <text>list contains(["1","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0065">
+        <inputEntry id="UnaryTests_P8_0065">
           <text>some lotto in lotti
 satisfies lotto.ripetizioniEConsegneComplementari and lotto.ipotesiCollegamento.motivoCollegamento.codice != "10"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0066">
+        <inputEntry id="UnaryTests_P8_0066">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0022">
+        <outputEntry id="LiteralExpression_P8_0022">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG14\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0022">
+      <rule id="DecisionRule_P8_0022">
         <description>REG15: Cig collegato: è obbligatorio se Motivo collegamento CIG e' valorizzato</description>
-        <inputEntry id="UnaryTests_P2_14_0067">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0067">
+          <text>list contains(["1","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0068">
+        <inputEntry id="UnaryTests_P8_0068">
           <text>some lotto in lotti satisfies (lotto.ipotesiCollegamento.motivoCollegamento.codice != "10" and (lotto.ipotesiCollegamento.cigCollegato = null or count(lotto.ipotesiCollegamento.cigCollegato) = 0 or lotto.ipotesiCollegamento.cigCollegato[1]= ""))</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0069">
+        <inputEntry id="UnaryTests_P8_0069">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0023">
+        <outputEntry id="LiteralExpression_P8_0023">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG15\"}"</text>
         </outputEntry>
       </rule>
@@ -275,166 +242,163 @@ satisfies lotto.afferenteInvestimentiPNRR = true and is defined(lotto.cupLotto) 
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG20_1\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0025">
-        <description>REG21: Tutela delle pari opportunità generazionali e di genere nonché per l'inclusione delle persone con disabilità: La sezione è obbligatoria se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
-        <inputEntry id="UnaryTests_P2_14_0076">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0077">
-          <text>some lotto in lotti
-satisfies lotto.afferenteInvestimentiPNRR and lotto.paritaDiGenereGenerazionale = null</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0078">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0026">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG21\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0026">
-        <description>REG22: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?: il campo è obbligatorio se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
-        <inputEntry id="UnaryTests_P2_14_0079">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0080">
-          <text>some lotto in lotti
-satisfies lotto.afferenteInvestimentiPNRR and lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quota30PerCento = null</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0081">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0027">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG22\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0027">
-        <description>REG23: Previsione di una quota
-inferiore con riferimento all’occupazione femminile o giovanile: se è stato indicato il valore 'SI_QUOTA_INFERIORE' nel campo quota30PerCento allora il valore della Previsione di una quota inferiore con riferimento all’occupazione giovanile e il valore della Previsione di una quota inferiore con riferimento all’occupazione femminile non possono essere entrambi 0%.</description>
-        <inputEntry id="UnaryTests_P2_14_0082">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0083">
-          <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quota30PerCento ="SI_QUOTA_INFERIORE" and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile= 0 and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile=0</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0084">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0028">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG23\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0028">
-        <description>REG24: Tutela delle pari opportunità generazionali e di genere nonché per l'inclusione delle persone con disabilità: almeno una quota, tra occupazione femminile e
-occupazione giovanile, deve essere inferiore al 30%</description>
-        <inputEntry id="UnaryTests_P2_14_0085">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0086">
-          <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupFemminile &gt;= 30 and lotto.paritaDiGenereGenerazionale.quotaInferioreOccupGiovanile &gt;= 30</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0087">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0029">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG24\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0029">
-        <description>REG27: Tutela delle pari opportunità generazionali e di genere nonché per l'inclusione delle persone con disabilità: se il campo quota30PerCento contiene il valore 'SI_QUOTA_INFERIORE' o 'NO', deve essere indicato il motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile</description>
-        <inputEntry id="UnaryTests_P2_14_0088">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0089">
-          <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and (lotto.paritaDiGenereGenerazionale.quota30PerCento ="SI_QUOTA_INFERIORE" or lotto.paritaDiGenereGenerazionale.quota30PerCento ="NO") and lotto.paritaDiGenereGenerazionale.motivoDeroga = null</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0090">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0030">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG27\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0030">
-        <description>REG28: Misure Premiali: il campo è obbligatorio se l’appalto o concessione è afferente agli investimenti pubblici finanziati con le risorse previste dal PNRR e/o PNC</description>
-        <inputEntry id="UnaryTests_P2_14_0091">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0092">
-          <text>some lotto in lotti
-satisfies lotto.paritaDiGenereGenerazionale != null and lotto.afferenteInvestimentiPNRR and lotto.paritaDiGenereGenerazionale.misurePremiali= null</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0093">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0031">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG28\"}"</text>
-        </outputEntry>
-      </rule>
-      <rule id="DecisionRule_P2_14_0033">
+      <rule id="DecisionRule_P8_0033">
         <description>REG32: Accessibilita: Se contratto PNRR o PNC il valore del campo di accessibilità deve essere "Sono compresi criteri di accessibilità per le persone con disabilità"</description>
-        <inputEntry id="UnaryTests_P2_14_0100">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0100">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0101">
+        <inputEntry id="UnaryTests_P8_0101">
           <text>some lotto in lotti
 satisfies lotto.afferenteInvestimentiPNRR and lotto.datiBaseAccessibilita.accessibilita.codice != "inc"</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0102">
+        <inputEntry id="UnaryTests_P8_0102">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0034">
+        <outputEntry id="LiteralExpression_P8_0034">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG32\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0034">
+      <rule id="DecisionRule_P8_0034">
         <description>REG33: Giustificazione: se come accessibilità si indica "Non sono compresi criteri di accessibilità per le persone con disabilità con la giustificazione seguente" occorre indicare anche il campo con la giustificazione.</description>
-        <inputEntry id="UnaryTests_P2_14_0103">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0103">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0104">
+        <inputEntry id="UnaryTests_P8_0104">
           <text>some lotto in lotti
 satisfies lotto.datiBaseAccessibilita.accessibilita.codice = "n-inc-just" and (lotto.datiBaseAccessibilita.giustificazione = null or lotto.datiBaseAccessibilita.giustificazione="")</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0105">
+        <inputEntry id="UnaryTests_P8_0105">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0035">
+        <outputEntry id="LiteralExpression_P8_0035">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG33\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0036">
-        <description>REG65: CPV Secondarie: l'elenco delle cpv secondarie non deve contenere il valore indicato come cpv prevalente.</description>
-        <inputEntry id="UnaryTests_P2_14_0109">
+      <rule id="DecisionRule_P8_0008">
+        <description>REG34: Importo Lavori: se l'oggetto del contratto è "works" deve essere indicato un importo maggiore di 0.</description>
+        <inputEntry id="UnaryTests_P8_0022">
+          <text>list contains(["3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0023">
+          <text>some lotto in lotti
+satisfies lotto.datiBase.oggettoContratto.codice="works" and (lotto.quadroEconomicoStandard.impLavori = null or lotto.quadroEconomicoStandard.impLavori = 0)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0024">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0110">
+        <outputEntry id="LiteralExpression_P8_0008">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG34\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0009">
+        <description>REG35: Importo Servizi: se l'oggetto del contratto è "services" deve essere indicato un importo maggiore di 0.</description>
+        <inputEntry id="UnaryTests_P8_0025">
+          <text>list contains(["3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0026">
+          <text>some lotto in lotti
+satisfies lotto.datiBase.oggettoContratto.codice="services" and (lotto.quadroEconomicoStandard.impServizi = null or lotto.quadroEconomicoStandard.impServizi = 0)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0027">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P8_0009">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG35\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0010">
+        <description>REG36: Importo Forniture: se l'oggetto del contratto è "supplies" deve essere indicato un importo maggiore di 0.</description>
+        <inputEntry id="UnaryTests_P8_0028">
+          <text>list contains(["3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0029">
+          <text>some lotto in lotti
+satisfies lotto.datiBase.oggettoContratto.codice="supplies" and (lotto.quadroEconomicoStandard.impForniture = null or lotto.quadroEconomicoStandard.impForniture = 0)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0030">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P8_0010">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG36\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0011">
+        <description>REG37: Somme opzioni e rinnovi: se l’appalto prevede opzioni/rinnovi deve essere indicato un importo maggiore di 0.</description>
+        <inputEntry id="UnaryTests_P8_0031">
+          <text>list contains(["1","3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0032">
+          <text>some lotto in lotti
+satisfies lotto.opzioniRinnovi and (lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = null or lotto.quadroEconomicoStandard.sommeOpzioniRinnovi = 0)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0033">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P8_0011">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG37\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0012">
+        <description>REG38: Somme ripetizione: se l’appalto prevede ripetizioni di servizi/forniture/lavori analoghi e consegne complementari deve essere indicato un importo maggiore di 0.</description>
+        <inputEntry id="UnaryTests_P8_0034">
+          <text>list contains(["1","3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0035">
+          <text>some lotto in lotti
+satisfies lotto.ripetizioniEConsegneComplementari and (lotto.quadroEconomicoStandard.sommeRipetizioni = null or lotto.quadroEconomicoStandard.sommeRipetizioni = 0)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0036">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P8_0012">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG38\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0036">
+        <description>REG65: CPV Secondarie: l'elenco delle cpv secondarie non deve contenere il valore indicato come cpv prevalente.</description>
+        <inputEntry id="UnaryTests_P8_0109">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0110">
           <text>some lotto in lotti
 satisfies list contains(lotto.datiBaseCPV.cpvSecondarie.codice, lotto.datiBaseCPV.cpvPrevalente.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0111">
+        <inputEntry id="UnaryTests_P8_0111">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0037">
+        <outputEntry id="LiteralExpression_P8_0037">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG65\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_P2_14_0037">
+      <rule id="DecisionRule_P8_0037">
         <description>REG66: CPV Secondarie: l'elenco delle cpv secondarie non deve contenere valori replicati.</description>
-        <inputEntry id="UnaryTests_P2_14_0112">
-          <text></text>
+        <inputEntry id="UnaryTests_P8_0112">
+          <text>list contains(["2","3"],appalto.tipoScheda.codice)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0113">
+        <inputEntry id="UnaryTests_P8_0113">
           <text>some lotto in lotti
 satisfies count(lotto.datiBaseCPV.cpvSecondarie.codice) &gt; count(distinct values(lotto.datiBaseCPV.cpvSecondarie.codice))</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_P2_14_0114">
+        <inputEntry id="UnaryTests_P8_0114">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_P2_14_0038">
+        <outputEntry id="LiteralExpression_P8_0038">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG66\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_P8_0038">
+        <description>REG67: il campo giustificazione procedura accelerata è obbligatorio in caso di procedura accelerata</description>
+        <inputEntry id="UnaryTests_P8_0115">
+          <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.proceduraAccelerata != null and appalto.datiBaseProcedura.proceduraAccelerata and (appalto.datiBaseProcedura.giustificazioneProceduraAccelerata = null or appalto.datiBaseProcedura.giustificazioneProceduraAccelerata="") and (list contains(["2","3"],appalto.tipoScheda.codice))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0116">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_P8_0117">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_P8_0039">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG67\"}"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_13m2iti">
@@ -468,35 +432,35 @@ satisfies lotto.datiBase.importo = null or lotto.datiBase.importo &lt;= 0</text>
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG99\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1qae09c">
-        <description>REG106: la data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneInvito non può essere antecedente o uguale ad oggi.</description>
-        <inputEntry id="UnaryTests_0w0gf02">
+      <rule id="DecisionRule_1qae09b">
+        <description>REG105: la data inserita nel campo datiBaseTerminiInvio.scadenzaPresentazioneOfferte non può essere antecedente o uguale ad oggi.</description>
+        <inputEntry id="UnaryTests_0w0gf0l">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0xbdfzz">
+        <inputEntry id="UnaryTests_0xbdfzt">
           <text>some lotto in lotti
-satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "" and
- date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
+satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte != "" and
+ date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0ibafgt">
+        <inputEntry id="UnaryTests_0ibafgn">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_01bit43">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG106\"}"</text>
+        <outputEntry id="LiteralExpression_01bit47">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG105\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_1nok6xm">
+      <rule id="DecisionRule_09rd7i3">
         <description>REG110: La somma degli importi indicati nei lotti deve essere compresa tra l'80% e il 100% dell'importo indicato nell'appalto. In presenza di eForm verificare gli importi inseriti nei campi EstimatedOverallContractAmount (BT-27).</description>
-        <inputEntry id="UnaryTests_0l8gku0">
+        <inputEntry id="UnaryTests_0pbgppw">
           <text></text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0bd1hfq">
+        <inputEntry id="UnaryTests_1v0i1ui">
           <text>(sum(for i in 1..count(lotti) return lotti[i].datiBase.importo) &lt; (appalto.datiBase.importo * 0.8)) or (sum(for i in 1..count(lotti) return lotti[i].datiBase.importo) &gt; appalto.datiBase.importo)</text>
         </inputEntry>
-        <inputEntry id="UnaryTests_0eh2xb9">
+        <inputEntry id="UnaryTests_0lufeoo">
           <text></text>
         </inputEntry>
-        <outputEntry id="LiteralExpression_1wibbhc">
+        <outputEntry id="LiteralExpression_1okduc1">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG110\"}"</text>
         </outputEntry>
       </rule>
@@ -581,54 +545,39 @@ satisfies ((lotto.datiBase.oggettoContratto.codice != "services" or lotto.datiBa
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG122\"}"</text>
         </outputEntry>
       </rule>
-      <rule id="DecisionRule_0i485fn">
-        <description>REG136: Valore della tipologica TipoProcedura non ammesso</description>
-        <inputEntry id="UnaryTests_1hrvn5r">
-          <text>is defined(appalto.datiBaseProcedura) and is defined(appalto.datiBaseProcedura.tipoProcedura) and not(list contains(["comp-dial","innovation","neg-w-call","oth-mult","restricted"], appalto.datiBaseProcedura.tipoProcedura.codice))</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_10ttqbf">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_0scyv6p">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_190cj0a">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG136\"}"</text>
-        </outputEntry>
-      </rule>
     </decisionTable>
   </decision>
-  <inputData id="InputData_1e3bpcr" name="lotti" />
-  <inputData id="InputData_0fofuyt" name="stazioniAppaltanti" />
-  <inputData id="InputData_1ptm75y" name="appalto" />
+  <inputData id="InputData_1mfloyl" name="lotti" />
+  <inputData id="InputData_0y8jvh8" name="stazioniAppaltanti" />
+  <inputData id="InputData_1srkbir" name="appalto" />
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="DMNDiagram_15do7a0">
-      <dmndi:DMNShape id="DMNShape_P2_14" dmnElementRef="P2_14">
-        <dc:Bounds height="80" width="180" x="230" y="80" />
+      <dmndi:DMNShape id="DMNShape_P8" dmnElementRef="P8">
+        <dc:Bounds height="80" width="180" x="230" y="50" />
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="DMNShape_13zsj0b" dmnElementRef="InputData_1e3bpcr">
-        <dc:Bounds height="45" width="125" x="259" y="327" />
+      <dmndi:DMNShape id="DMNShape_1l6jpk7" dmnElementRef="InputData_1mfloyl">
+        <dc:Bounds height="45" width="125" x="257" y="257" />
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="DMNEdge_0uh3xm2" dmnElementRef="InformationRequirement_1ijfut7">
-        <di:waypoint x="322" y="327" />
-        <di:waypoint x="320" y="180" />
-        <di:waypoint x="320" y="160" />
+      <dmndi:DMNEdge id="DMNEdge_12t8evc" dmnElementRef="InformationRequirement_12j8w8d">
+        <di:waypoint x="320" y="257" />
+        <di:waypoint x="320" y="150" />
+        <di:waypoint x="320" y="130" />
       </dmndi:DMNEdge>
-      <dmndi:DMNShape id="DMNShape_09hpnsk" dmnElementRef="InputData_0fofuyt">
-        <dc:Bounds height="45" width="125" x="347" y="247" />
+      <dmndi:DMNShape id="DMNShape_14fjtp4" dmnElementRef="InputData_0y8jvh8">
+        <dc:Bounds height="45" width="125" x="347" y="187" />
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="DMNEdge_12p060e" dmnElementRef="InformationRequirement_1ntzfdw">
-        <di:waypoint x="410" y="247" />
-        <di:waypoint x="365" y="180" />
-        <di:waypoint x="365" y="160" />
+      <dmndi:DMNEdge id="DMNEdge_1u2ihgl" dmnElementRef="InformationRequirement_10yx1q6">
+        <di:waypoint x="410" y="187" />
+        <di:waypoint x="365" y="150" />
+        <di:waypoint x="365" y="130" />
       </dmndi:DMNEdge>
-      <dmndi:DMNShape id="DMNShape_0r56fa3" dmnElementRef="InputData_1ptm75y">
-        <dc:Bounds height="45" width="125" x="173" y="247" />
+      <dmndi:DMNShape id="DMNShape_1ttigji" dmnElementRef="InputData_1srkbir">
+        <dc:Bounds height="45" width="125" x="167" y="187" />
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="DMNEdge_1tcif6x" dmnElementRef="InformationRequirement_0f6mpo7">
-        <di:waypoint x="236" y="247" />
-        <di:waypoint x="275" y="180" />
-        <di:waypoint x="275" y="160" />
+      <dmndi:DMNEdge id="DMNEdge_1bp2wo6" dmnElementRef="InformationRequirement_0ugurwb">
+        <di:waypoint x="230" y="187" />
+        <di:waypoint x="275" y="150" />
+        <di:waypoint x="275" y="130" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>

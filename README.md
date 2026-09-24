@@ -13,6 +13,9 @@ pertanto, nelle segnalazioni non devono quindi essere inserite informazioni rise
 
 Qualora fosse necessario trasmettere informazioni riservate, dovranno essere utilizzati canali alternativi, previamente concordati con ANAC.
 
+## 18/05/2026 - Sospensione dei servizi FVOE di Esercizio per manutenzione straordinaria
+A causa di un intervento di manutenzione straordinaria, dalle ore 16.00 di venerdì 22 maggio 2026 alle ore 8.00 di lunedì 25 maggio 2026 verranno sospesi i servizi del Fascicolo Virtuale dell'Operatore Economico compresi quelli erogati alle Piattaforme di Approvvigionamento Digitale
+
 ## 11/05/2026 - Nuovo disservizio annunciato dal TeD sulle API di produzione
 Si riporta di seguito l'avviso ricevuto dal TeD alle ore 11.22 di oggi, 11 maggio
 
@@ -251,8 +254,12 @@ Nella tabella seguente sono disciplinati i tempi massimi e minimi per l'adozione
 **NB**: l'aggiornamento del flusso di monitoraggio può includere l'aggiornamento o l'estensione del modello dati anche mediante l'introduzione di nuove schede.
 
 ## Standard adottati
- - eForms sdk versione 1.9.0 fino al 27/03/2025; 1.12 dal 27/03/2025
- - ESPD versione 2.1.1;
+* eForms:
+  * versione 1.9.0 fino al 27/03/2025; 
+  * versione 1.12 dal 27/03/2025;
+  * versione 1.13.3 dal 30/09/2026;
+
+* ESPD versione 2.1.1;
 
 **NB**: nel momento in cui il sistema sarà in esercizio, l'upgrade delle versioni utilizzate sarà pubblicato con almeno 90 giorni di anticipo.
 
