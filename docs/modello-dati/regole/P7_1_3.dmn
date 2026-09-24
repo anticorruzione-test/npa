@@ -58,7 +58,7 @@ satisfies is defined(lotto.strumentiElettroniciSpecifici) and is defined (lotto.
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1p14lkf">
-        <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
+        <description>REG8: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
         <inputEntry id="UnaryTests_02rz0vc">
           <text></text>
         </inputEntry>
