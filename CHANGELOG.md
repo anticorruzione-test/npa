@@ -1726,6 +1726,7 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
 ### Schede
@@ -1736,6 +1737,7 @@ aggiunta regola REG5_1
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
+</details>
 
 <summary><h1>Note di rilascio del 25/05/2026 (SDK 1.13.3)</h1></summary>
 
