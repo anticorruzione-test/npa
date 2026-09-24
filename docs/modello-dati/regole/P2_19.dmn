@@ -164,7 +164,7 @@ satisfies lotto.condizioniNegoziata != null</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1t5ps76">
-        <description>REG8: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
+        <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
         <inputEntry id="UnaryTests_0v1qx7v">
           <text></text>
         </inputEntry>

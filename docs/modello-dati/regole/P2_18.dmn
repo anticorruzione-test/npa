@@ -29,7 +29,7 @@
       </input>
       <output id="Errore_P2_18" name="Errore" typeRef="string" biodi:width="269" />
       <rule id="DecisionRule_1t5ps76">
-        <description>REG8: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
+        <description>REG8_1: L'indirizzo dei documenti di gara: deve essere una url valida e quindi iniziare con http o https.</description>
         <inputEntry id="UnaryTests_1qy60fi">
           <text>some lotto in lotti satisfies lotto.datiBaseDocumenti.url != null and lotto.datiBaseDocumenti.url != "" and starts with(lotto.datiBaseDocumenti.url,"http:") = false and starts with(lotto.datiBaseDocumenti.url,"https:") = false</text>
         </inputEntry>
