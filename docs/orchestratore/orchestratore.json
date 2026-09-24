@@ -1449,10 +1449,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1504,10 +1504,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1559,10 +1559,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1614,10 +1614,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1669,10 +1669,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1724,10 +1724,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1786,10 +1786,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -1845,10 +1845,10 @@
 		"nuovoStatoLotto": "AGG",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -3457,10 +3457,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": true,
 		"servizioPostAnnullamento": "",
@@ -3646,10 +3646,10 @@
 			"ES1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -3704,7 +3704,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -3755,7 +3755,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -4402,7 +4402,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -4455,7 +4455,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7280,10 +7280,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7334,10 +7334,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7388,10 +7388,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7445,10 +7445,10 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7497,10 +7497,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7554,7 +7554,7 @@
 		"nuovoStatoAppalto": "PUBB",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
 			"$date": "2099-12-30T23:00:00.000Z"
@@ -7607,10 +7607,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.409Z"
+			"$date": "2026-06-25T15:14:45.253Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.409Z"
+			"$date": "2099-12-31T16:14:45.253Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7660,10 +7660,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.415Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.415Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7713,10 +7713,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.415Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.415Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7766,10 +7766,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.415Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.415Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7819,10 +7819,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7872,10 +7872,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7926,10 +7926,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -7981,10 +7981,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -8035,10 +8035,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -8483,10 +8483,10 @@
 			"SQ1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -8623,7 +8623,7 @@
 			"$date": "2023-10-24T22:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2026-07-01T22:00:00.000Z"
+			"$date": "2026-07-20T22:00:00.000Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -8757,7 +8757,7 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-07-02T22:00:00.000Z"
+			"$date": "2026-07-21T22:00:00.000Z"
 		},
 		"dataFine": {
 			"$date": "2099-12-30T23:00:00.000Z"
@@ -8814,7 +8814,7 @@
 			"$date": "2024-12-31T23:00:00.000Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -9644,10 +9644,10 @@
 		],
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.416Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.416Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -9914,10 +9914,10 @@
 		"nuovoStatoContratto": "SOTT",
 		"codiciSchedeCorrelate": [],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
@@ -10119,10 +10119,10 @@
 	},
 	{
 		"_id": {
-			"$oid": "6a3d432879f3854d070e09a4"
+			"$oid": "6a3d45e503f7ae06ed87fc96"
 		},
 		"publicId": {
-			"$uuid": "d9f0761c-5f4a-4d92-a06f-0be2bc209982"
+			"$uuid": "8dc02aae-0f5c-4c76-8d84-2baff80caad5"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SOC",
@@ -10165,19 +10165,19 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataModifica": {
-			"$date": "2026-06-25T15:03:04.566Z"
+			"$date": "2026-06-25T15:14:45.438Z"
 		},
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "6a3d432879f3854d070e0999"
+			"$oid": "6a3d45e503f7ae06ed87fc8b"
 		},
 		"publicId": {
-			"$uuid": "eceac9a9-1730-4217-b98f-ef9933739ae7"
+			"$uuid": "17ad8b83-1cc4-4297-9f17-37f33985ee23"
 		},
 		"codAreaFunzionale": "A_5",
 		"codFamigliaFunzionale": "SO",
@@ -10296,28 +10296,28 @@
 			"SO1"
 		],
 		"dataInizio": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataFine": {
-			"$date": "2099-12-31T16:03:04.417Z"
+			"$date": "2099-12-31T16:14:45.268Z"
 		},
 		"schedaAnnullabile": false,
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataModifica": {
-			"$date": "2026-06-25T15:03:04.561Z"
+			"$date": "2026-06-25T15:14:45.434Z"
 		},
 		"stato": "ATTIVO"
 	},
 	{
 		"_id": {
-			"$oid": "6a3d432879f3854d070e09a9"
+			"$oid": "6a3d45e503f7ae06ed87fc9b"
 		},
 		"publicId": {
-			"$uuid": "ada256f0-3584-4547-a69c-f3226d505ee9"
+			"$uuid": "407a75de-f29b-4021-b7e6-624d17ee5bd1"
 		},
 		"codAreaFunzionale": "A_2",
 		"codFamigliaFunzionale": "VR",
@@ -10358,10 +10358,10 @@
 		"servizioPostAnnullamento": "",
 		"rettificabile": false,
 		"dataCreazione": {
-			"$date": "2026-06-25T15:03:04.417Z"
+			"$date": "2026-06-25T15:14:45.268Z"
 		},
 		"dataModifica": {
-			"$date": "2026-06-25T15:03:04.566Z"
+			"$date": "2026-06-25T15:14:45.439Z"
 		},
 		"stato": "ATTIVO"
 	}
