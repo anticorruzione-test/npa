@@ -38,7 +38,7 @@ satisfies aggiudicazione.importoAggiudicazione &gt;= 221000</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1oti80j">
           <text>every stazioneAppaltante in stazioniAppaltanti
-satisfies is defined(stazioneAppaltante.codiceFiscale) and stazioneAppaltante.codiceFiscale!="80242250589"</text>
+satisfies is defined(stazioneAppaltante.codiceFiscale) and not(list contains(["80242250589","80242290585"], stazioneAppaltante.codiceFiscale))</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1xwjm6w">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG131\"}"</text>
