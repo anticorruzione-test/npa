@@ -113,7 +113,7 @@ satisfies count(aggiudicazione.partecipanti)=0</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1a4e2bn">
           <text>some aggiudicazione in aggiudicazioni
-satisfies count(aggiudicazione.cup)&gt;0 and (every c in aggiudicazione.cup satisfies (c = null or c = ""))</text>
+satisfies (is defined(aggiudicazione.cup) and  count(aggiudicazione.cup)&gt;0 and (every c in aggiudicazione.cup satisfies (c = null or c = "")))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1ymy2gm">
           <text></text>
