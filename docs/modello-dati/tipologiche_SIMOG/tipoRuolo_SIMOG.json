@@ -1,0 +1,65 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "MANDANTE",
+      "en": "MANDANTE"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "MANDATARIA",
+      "en": "MANDATARIA"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "ASSOCIATA",
+      "en": "ASSOCIATA"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "CAPOGRUPPO",
+      "en": "CAPOGRUPPO"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "NON CLASSIFICATO",
+      "en": "NON CLASSIFICATO"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "CONSORZIATA",
+      "en": "CONSORZIATA"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "COMPONENTE",
+      "en": "COMPONENTE"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE",
+      "en": "PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "SUBALTERNA",
+      "en": "SUBALTERNA"
+    }
+  }
+]

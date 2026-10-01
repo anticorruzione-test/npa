@@ -1,0 +1,156 @@
+[
+  {
+    "codice": "RUP",
+    "descrizione": {
+      "it": "RESPONSABILE UNICO DEL PROCEDIMENTO",
+      "en": "RESPONSABILE UNICO DEL PROCEDIMENTO"
+    }
+  },
+  {
+    "codice": "DRP1",
+    "descrizione": {
+      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI PROGRAMMAZIONE",
+      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI PROGRAMMAZIONE"
+    }
+  },
+  {
+    "codice": "DRP2",
+    "descrizione": {
+      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI AFFIDAMENTO",
+      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI AFFIDAMENTO"
+    }
+  },
+  {
+    "codice": "DRP3",
+    "descrizione": {
+      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI ESECUZIONE",
+      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI ESECUZIONE"
+    }
+  },
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "PROGETTISTA INTERNO ALLA S.A.",
+      "en": "PROGETTISTA INTERNO ALLA S.A."
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "PROGETTISTA ESTERNO ALLA S.A.",
+      "en": "PROGETTISTA ESTERNO ALLA S.A."
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "AGGIUDICATARIO QUALIFICATO",
+      "en": "AGGIUDICATARIO QUALIFICATO"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "PROGETTISTA QUALIFICATO INCARICATO DALL'AGGIUDICATARIO",
+      "en": "PROGETTISTA QUALIFICATO INCARICATO DALL'AGGIUDICATARIO"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "DIRETTORE LAVORI",
+      "en": "DIRETTORE LAVORI"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "COORDINATORE DELLA SICUREZZA IN FASE DI PROGETTAZIONE",
+      "en": "COORDINATORE DELLA SICUREZZA IN FASE DI PROGETTAZIONE"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "COORDINATORE DELLA SICUREZZA IN CORSO D'OPERA",
+      "en": "COORDINATORE DELLA SICUREZZA IN CORSO D'OPERA"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "DIRETTORE DELL'ESECUZIONE DEL CONTRATTO",
+      "en": "DIRETTORE DELL'ESECUZIONE DEL CONTRATTO"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "RESPONSABILE SUBFASE DEL PROCEDIMENTO",
+      "en": "RESPONSABILE SUBFASE DEL PROCEDIMENTO"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "COLLAUDATORE STATICO",
+      "en": "COLLAUDATORE STATICO"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "REDATTORE DEL CERTIFICATO DI REGOLARE ESECUZIONE",
+      "en": "REDATTORE DEL CERTIFICATO DI REGOLARE ESECUZIONE"
+    }
+  },
+  {
+    "codice": "12",
+    "descrizione": {
+      "it": "PRESIDENTE COMMISSIONE DI COLLAUDO/COLLAUDATORE",
+      "en": "PRESIDENTE COMMISSIONE DI COLLAUDO/COLLAUDATORE"
+    }
+  },
+  {
+    "codice": "13",
+    "descrizione": {
+      "it": "COMPONENTE COMMISSIONE DI COLLAUDO",
+      "en": "COMPONENTE COMMISSIONE DI COLLAUDO"
+    }
+  },
+  {
+    "codice": "14",
+    "descrizione": {
+      "it": "RESPONSABILE FASE PROGETTAZIONE/PREDISPOSIZIONE DOCUMENTAZIONE TECNICO-AMMINISTRATIVA",
+      "en": "RESPONSABILE FASE PROGETTAZIONE/PREDISPOSIZIONE DOCUMENTAZIONE TECNICO-AMMINISTRATIVA"
+    }
+  },
+  {
+    "codice": "16",
+    "descrizione": {
+      "it": "RESPONSABILE FASE DI AFFIDAMENTO",
+      "en": "RESPONSABILE FASE DI AFFIDAMENTO"
+    }
+  },
+  {
+    "codice": "17",
+    "descrizione": {
+      "it": "RESPONSABILE FASE DI ESECUZIONE",
+      "en": "RESPONSABILE FASE DI ESECUZIONE"
+    }
+  },
+  {
+    "codice": "18",
+    "descrizione": {
+      "it": "REFERENTE DELLA STAZIONE APPALTANTE",
+      "en": "REFERENTE DELLA STAZIONE APPALTANTE"
+    }
+  },
+  {
+    "codice": "19",
+    "descrizione": {
+      "it": "ATI",
+      "en": "ATI"
+    }
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "SOPRAVVENUTE ESIGENZE NORMATIVE E REGOLAMENTARI",
+      "en": "SOPRAVVENUTE ESIGENZE NORMATIVE E REGOLAMENTARI"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "CAUSE IMPREVISTE ED IMPREVEDIBILI",
+      "en": "CAUSE IMPREVISTE ED IMPREVEDIBILI"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "EVENTI DIPENDENTI DALLA NATURA E SPECIFICITÀ DEI BENI E DEI LUOGHI",
+      "en": "EVENTI DIPENDENTI DALLA NATURA E SPECIFICITÀ DEI BENI E DEI LUOGHI"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "MIGLIORAMENTO O MIGLIORE FUNZIONALITÀ DELLE PRESTAZIONI",
+      "en": "MIGLIORAMENTO O MIGLIORE FUNZIONALITÀ DELLE PRESTAZIONI"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "NON CLASSIFICATO",
+      "en": "NON CLASSIFICATO"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "ART.132 C.1 LETT. A) D.LGS.163/2006",
+      "en": "ART.132 C.1 LETT. A) D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "ART.132 C.1 LETT. B) D.LGS.163/2006",
+      "en": "ART.132 C.1 LETT. B) D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "ART.132 C.1 LETT. C) D.LGS.163/2006",
+      "en": "ART.132 C.1 LETT. C) D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "ART.132 C.1 LETT. D) D.LGS.163/2006",
+      "en": "ART.132 C.1 LETT. D) D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "ART.132 C.1 LETT. E) D.LGS.163/2006",
+      "en": "ART.132 C.1 LETT. E) D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "ART.132 C.3 II CV D.LGS.163/2006",
+      "en": "ART.132 C.3 II CV D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "12",
+    "descrizione": {
+      "it": "ART.205 C.1 D.LGS.163/2006",
+      "en": "ART.205 C.1 D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "13",
+    "descrizione": {
+      "it": "ART.205 C.3 D.LGS.163/2006",
+      "en": "ART.205 C.3 D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "14",
+    "descrizione": {
+      "it": "ART.205 C.4 D.LGS.163/2006",
+      "en": "ART.205 C.4 D.LGS.163/2006"
+    }
+  },
+  {
+    "codice": "15",
+    "descrizione": {
+      "it": "ERRORI O OMISSIONI NEL PROGETTO ESECUTIVO",
+      "en": "ERRORI O OMISSIONI NEL PROGETTO ESECUTIVO"
+    }
+  },
+  {
+    "codice": "16",
+    "descrizione": {
+      "it": "LAVORI, SERVIZI O FORNITURE SUPPLEMENTARI",
+      "en": "LAVORI, SERVIZI O FORNITURE SUPPLEMENTARI"
+    }
+  },
+  {
+    "codice": "17",
+    "descrizione": {
+      "it": "MOD. IMPORTO INF. SOGLIA COMUN. E 10% DEL VAL. CONTR. SERV./FORN. O 15% LAVORI",
+      "en": "MOD. IMPORTO INF. SOGLIA COMUN. E 10% DEL VAL. CONTR. SERV./FORN. O 15% LAVORI"
+    }
+  },
+  {
+    "codice": "18",
+    "descrizione": {
+      "it": "MODIFICHE PREVISTE DAI DOCUMENTI DI GARA INIZIALI",
+      "en": "MODIFICHE PREVISTE DAI DOCUMENTI DI GARA INIZIALI"
+    }
+  },
+  {
+    "codice": "19",
+    "descrizione": {
+      "it": "PROROGA TECNICA",
+      "en": "PROROGA TECNICA"
+    }
+  },
+  {
+    "codice": "20",
+    "descrizione": {
+      "it": "RINNOVO PREVISTO NEI DOCUMENTI DI GARA",
+      "en": "RINNOVO PREVISTO NEI DOCUMENTI DI GARA"
+    }
+  },
+  {
+    "codice": "21",
+    "descrizione": {
+      "it": "Modifiche contrattuali nel settore dei beni culturali",
+      "en": "Modifiche contrattuali nel settore dei beni culturali"
+    }
+  },
+  {
+    "codice": "22",
+    "descrizione": {
+      "it": "Varianti in corso d'opera nel settore dei beni culturali",
+      "en": "Varianti in corso d'opera nel settore dei beni culturali"
+    }
+  },
+  {
+    "codice": "23",
+    "descrizione": {
+      "it": "Revisione dei prezzi",
+      "en": "Revisione dei prezzi"
+    }
+  }
+]

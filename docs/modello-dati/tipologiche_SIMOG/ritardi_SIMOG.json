@@ -1,0 +1,23 @@
+[
+  {
+    "codice": "P",
+    "descrizione": {
+      "it": "IN LINEA",
+      "en": "IN LINEA"
+    }
+  },
+  {
+    "codice": "A",
+    "descrizione": {
+      "it": "IN ANTICIPO",
+      "en": "IN ANTICIPO"
+    }
+  },
+  {
+    "codice": "R",
+    "descrizione": {
+      "it": "IN RITARDO",
+      "en": "IN RITARDO"
+    }
+  }
+]

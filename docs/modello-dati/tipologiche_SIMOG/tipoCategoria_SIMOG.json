@@ -1,0 +1,16 @@
+[
+  {
+    "codice": "P",
+    "descrizione": {
+      "it": "PRINCIPALE",
+      "en": "PRINCIPALE"
+    }
+  },
+  {
+    "codice": "S",
+    "descrizione": {
+      "it": "SCORPORABILE",
+      "en": "SCORPORABILE"
+    }
+  }
+]

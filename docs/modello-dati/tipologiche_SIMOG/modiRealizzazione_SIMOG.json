@@ -1,0 +1,149 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Contratto d'appalto",
+      "en": "Contratto d'appalto"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Contratto d'appalto discendente da Accordo quadro/Convenzione con successivo confronto competitivo",
+      "en": "Contratto d'appalto discendente da Accordo quadro/Convenzione con successivo confronto competitivo"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Contratto di concessione di lavori",
+      "en": "Contratto di concessione di lavori"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Contratto di concessione di servizi e/o forniture",
+      "en": "Contratto di concessione di servizi e/o forniture"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Finanza di progetto",
+      "en": "Finanza di progetto"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "Affidamento a contraente generale",
+      "en": "Affidamento a contraente generale"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "Acquisizione in economia",
+      "en": "Acquisizione in economia"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "Locazione finanziaria di opere pubbliche o di pubblica utilita'",
+      "en": "Locazione finanziaria di opere pubbliche o di pubblica utilita'"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "Accordo quadro/Convenzione",
+      "en": "Accordo quadro/Convenzione"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "Concorsi di progettazione/Concorsi di idee",
+      "en": "Concorsi di progettazione/Concorsi di idee"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "Contratto d'appalto discendente da Accordo quadro/Convenzione senza successivo confronto competitivo",
+      "en": "Contratto d'appalto discendente da Accordo quadro/Convenzione senza successivo confronto competitivo"
+    }
+  },
+  {
+    "codice": "12",
+    "descrizione": {
+      "it": "Scelta del socio privato nella societa' mista",
+      "en": "Scelta del socio privato nella societa' mista"
+    }
+  },
+  {
+    "codice": "13",
+    "descrizione": {
+      "it": "Contratto di disponibilità",
+      "en": "Contratto di disponibilità"
+    }
+  },
+  {
+    "codice": "14",
+    "descrizione": {
+      "it": "Interventi di sussidiarietà orizzontale",
+      "en": "Interventi di sussidiarietà orizzontale"
+    }
+  },
+  {
+    "codice": "15",
+    "descrizione": {
+      "it": "Contratti di parternariato sociale (baratto amministrativo)",
+      "en": "Contratti di parternariato sociale (baratto amministrativo)"
+    }
+  },
+  {
+    "codice": "16",
+    "descrizione": {
+      "it": "Co-progettazione di servizi sociali",
+      "en": "Co-progettazione di servizi sociali"
+    }
+  },
+  {
+    "codice": "17",
+    "descrizione": {
+      "it": "Accordo quadro",
+      "en": "Accordo quadro"
+    }
+  },
+  {
+    "codice": "18",
+    "descrizione": {
+      "it": "Convenzione",
+      "en": "Convenzione"
+    }
+  },
+  {
+    "codice": "19",
+    "descrizione": {
+      "it": "Appalto pre-commerciale",
+      "en": "Appalto pre-commerciale"
+    }
+  },
+  {
+    "codice": "20",
+    "descrizione": {
+      "it": "Contratto di concessione di servizi discendente da Accordo quadro/convenzione con successivo confronto competitivo",
+      "en": "Contratto di concessione di servizi discendente da Accordo quadro/convenzione con successivo confronto competitivo"
+    }
+  },
+  {
+    "codice": "21",
+    "descrizione": {
+      "it": "Contratto di concessione di servizi discendente da Accordo quadro/convenzione senza successivo confronto competitivo",
+      "en": "Contratto di concessione di servizi discendente da Accordo quadro/convenzione senza successivo confronto competitivo"
+    }
+  }
+]

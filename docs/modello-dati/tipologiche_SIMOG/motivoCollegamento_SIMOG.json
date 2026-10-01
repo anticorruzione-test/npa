@@ -1,0 +1,79 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Ripetizione di lavori o servizi analoghi",
+      "en": "Ripetizione di lavori o servizi analoghi"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Consegne complementari",
+      "en": "Consegne complementari"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Lavori, servizi o forniture supplementari",
+      "en": "Lavori, servizi o forniture supplementari"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Procedura a seguito di precedente revoca di aggiudicazione o di rescissione contrattuale, senza scorrimento graduatoria",
+      "en": "Procedura a seguito di precedente revoca di aggiudicazione o di rescissione contrattuale, senza scorrimento graduatoria"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Procedura a seguito di precedente gara annullata o deserta (senza esito)",
+      "en": "Procedura a seguito di precedente gara annullata o deserta (senza esito)"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "Affidamento dell’esecuzione o della progettazione dei lavori successiva a progettazione o livello inferiore di progettazione",
+      "en": "Affidamento dell’esecuzione o della progettazione dei lavori successiva a progettazione o livello inferiore di progettazione"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "Affidamento da parte di aggiudicatari di contratti di concessione o di project financing",
+      "en": "Affidamento da parte di aggiudicatari di contratti di concessione o di project financing"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "Modifiche contrattuali o varianti per le quali e' necessaria una nuova procedura di affidamento",
+      "en": "Modifiche contrattuali o varianti per le quali e' necessaria una nuova procedura di affidamento"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "II fase Concorso di progettazione e idee",
+      "en": "II fase Concorso di progettazione e idee"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "No, nessuna ipotesi di collegamento",
+      "en": "No, nessuna ipotesi di collegamento"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "Affidamento a seguito di appalto pre-commerciale",
+      "en": "Affidamento a seguito di appalto pre-commerciale"
+    }
+  }
+]

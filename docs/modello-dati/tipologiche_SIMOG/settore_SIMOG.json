@@ -1,0 +1,16 @@
+[
+  {
+    "codice": "S",
+    "descrizione": {
+      "it": "SETTORI SPECIALI",
+      "en": "SETTORI SPECIALI"
+    }
+  },
+  {
+    "codice": "O",
+    "descrizione": {
+      "it": "SETTORI ORDINARI",
+      "en": "SETTORI ORDINARI"
+    }
+  }
+]

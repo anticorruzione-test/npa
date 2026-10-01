@@ -1,0 +1,23 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Sola esecuzione",
+      "en": "Sola esecuzione"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Progettazione ed esecuzione (su progetto definitivo)",
+      "en": "Progettazione ed esecuzione (su progetto definitivo)"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Progettazione ed esecuzione (su progetto preliminare)",
+      "en": "Progettazione ed esecuzione (su progetto preliminare)"
+    }
+  }
+]

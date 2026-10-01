@@ -1,0 +1,72 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Accordo consensuale",
+      "en": "Accordo consensuale"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Grave inosservanza alle norme in materia di sicurezza",
+      "en": "Grave inosservanza alle norme in materia di sicurezza"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Variante per errore progettuale oltre il quinto contrattuale",
+      "en": "Variante per errore progettuale oltre il quinto contrattuale"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Reati accertati",
+      "en": "Reati accertati"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Grave inadempimento, grave irregolarita' o grave ritardo",
+      "en": "Grave inadempimento, grave irregolarita' o grave ritardo"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "Superamento delle soglie delle modifiche contrattuali",
+      "en": "Superamento delle soglie delle modifiche contrattuali"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "Modifica sostanziale del contratto",
+      "en": "Modifica sostanziale del contratto"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "Carenza dei requisiti al momento dell’aggiudicazione",
+      "en": "Carenza dei requisiti al momento dell’aggiudicazione"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "Violazione degli obblighi derivanti dai trattati",
+      "en": "Violazione degli obblighi derivanti dai trattati"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "Decadenza dell’attestazione di qualificazione",
+      "en": "Decadenza dell’attestazione di qualificazione"
+    }
+  }
+]

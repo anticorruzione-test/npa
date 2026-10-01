@@ -1,0 +1,37 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "ATTIVO",
+      "en": "ATTIVO"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "CANCELLATO",
+      "en": "CANCELLATO"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "LAVORAZIONE",
+      "en": "LAVORAZIONE"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "ANNULLATO",
+      "en": "ANNULLATO"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "MODIFICATO",
+      "en": "MODIFICATO"
+    }
+  }
+]

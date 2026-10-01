@@ -1,0 +1,254 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Procedura aperta",
+      "en": "Procedura aperta"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "Procedura negoziata senza previa indizione di gara (settori speciali)",
+      "en": "Procedura negoziata senza previa indizione di gara (settori speciali)"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "Procedura selettiva ex art. 238 c.7, D.Lgs. 163/2006",
+      "en": "Procedura selettiva ex art. 238 c.7, D.Lgs. 163/2006"
+    }
+  },
+  {
+    "codice": "12",
+    "descrizione": {
+      "it": "Affidamento diretto ex art.5 della legge n.381/91",
+      "en": "Affidamento diretto ex art.5 della legge n.381/91"
+    }
+  },
+  {
+    "codice": "13",
+    "descrizione": {
+      "it": "Procedura ristretta derivante da avvisi con cui si indice la gara",
+      "en": "Procedura ristretta derivante da avvisi con cui si indice la gara"
+    }
+  },
+  {
+    "codice": "14",
+    "descrizione": {
+      "it": "Procedura negoziata derivante da avvisi con cui si indice una gara",
+      "en": "Procedura negoziata derivante da avvisi con cui si indice una gara"
+    }
+  },
+  {
+    "codice": "15",
+    "descrizione": {
+      "it": "Affidamento diretto",
+      "en": "Affidamento diretto"
+    }
+  },
+  {
+    "codice": "16",
+    "descrizione": {
+      "it": "Affidamento diretto a societa' in house",
+      "en": "Affidamento diretto a societa' in house"
+    }
+  },
+  {
+    "codice": "17",
+    "descrizione": {
+      "it": "Affidamento diretto a societa' raggruppate/consorziate o controllate nelle concessioni e nei partenariati",
+      "en": "Affidamento diretto a societa' raggruppate/consorziate o controllate nelle concessioni e nei partenariati"
+    }
+  },
+  {
+    "codice": "18",
+    "descrizione": {
+      "it": "Affidamento diretto in adesione ad accordo quadro/convenzione",
+      "en": "Affidamento diretto in adesione ad accordo quadro/convenzione"
+    }
+  },
+  {
+    "codice": "19",
+    "descrizione": {
+      "it": "Confronto competitivo in adesione ad accordo quadro/convenzione",
+      "en": "Confronto competitivo in adesione ad accordo quadro/convenzione"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Procedura ristretta",
+      "en": "Procedura ristretta"
+    }
+  },
+  {
+    "codice": "20",
+    "descrizione": {
+      "it": "Procedura ai sensi dei regolamenti degli organi costituzionali",
+      "en": "Procedura ai sensi dei regolamenti degli organi costituzionali"
+    }
+  },
+  {
+    "codice": "21",
+    "descrizione": {
+      "it": "* Procedura aperta art.18 c.1 a) L.R. 14/2002",
+      "en": "* Procedura aperta art.18 c.1 a) L.R. 14/2002"
+    }
+  },
+  {
+    "codice": "22",
+    "descrizione": {
+      "it": "* Procedura ristretta art.18 c.1 b) L.R. 14/20026",
+      "en": "* Procedura ristretta art.18 c.1 b) L.R. 14/20026"
+    }
+  },
+  {
+    "codice": "23",
+    "descrizione": {
+      "it": "* Procedura ristretta semplificata art.18 c.1 c) L.R. 14/2002",
+      "en": "* Procedura ristretta semplificata art.18 c.1 c) L.R. 14/2002"
+    }
+  },
+  {
+    "codice": "24",
+    "descrizione": {
+      "it": "* Procedura negoziata senza previa pubblicazione art.18 c.1 e) L.R. 14/2002",
+      "en": "* Procedura negoziata senza previa pubblicazione art.18 c.1 e) L.R. 14/2002"
+    }
+  },
+  {
+    "codice": "25",
+    "descrizione": {
+      "it": "Procedura ristretta semplificata",
+      "en": "Procedura ristretta semplificata"
+    }
+  },
+  {
+    "codice": "26",
+    "descrizione": {
+      "it": "Procedura derivante da legge regionale",
+      "en": "Procedura derivante da legge regionale"
+    }
+  },
+  {
+    "codice": "27",
+    "descrizione": {
+      "it": "Procedura disciplinata da regolamento interno per settori speciali",
+      "en": "Procedura disciplinata da regolamento interno per settori speciali"
+    }
+  },
+  {
+    "codice": "28",
+    "descrizione": {
+      "it": "Procedura negoziata per affidamenti sotto soglia",
+      "en": "Procedura negoziata per affidamenti sotto soglia"
+    }
+  },
+  {
+    "codice": "29",
+    "descrizione": {
+      "it": "Procedura competitiva con negoziazione",
+      "en": "Procedura competitiva con negoziazione"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Procedura negoziata",
+      "en": "Procedura negoziata"
+    }
+  },
+  {
+    "codice": "30",
+    "descrizione": {
+      "it": "Procedura negoziata con previa indizione di gara (settori speciali)",
+      "en": "Procedura negoziata con previa indizione di gara (settori speciali)"
+    }
+  },
+  {
+    "codice": "31",
+    "descrizione": {
+      "it": "Affidamento diretto per variante superiore al 20% dell'importo contrattuale",
+      "en": "Affidamento diretto per variante superiore al 20% dell'importo contrattuale"
+    }
+  },
+  {
+    "codice": "32",
+    "descrizione": {
+      "it": "Affidamento riservato",
+      "en": "Affidamento riservato"
+    }
+  },
+  {
+    "codice": "33",
+    "descrizione": {
+      "it": "Procedura art.16 comma 2-bis DPR 380/2001 per opere urbanizzazione a scomputo primarie sotto soglia comunitaria",
+      "en": "Procedura art.16 comma 2-bis DPR 380/2001 per opere urbanizzazione a scomputo primarie sotto soglia comunitaria"
+    }
+  },
+  {
+    "codice": "34",
+    "descrizione": {
+      "it": "Parternariato per l’innovazione",
+      "en": "Parternariato per l’innovazione"
+    }
+  },
+  {
+    "codice": "35",
+    "descrizione": {
+      "it": "Affidamento diretto per lavori, servizi o forniture supplementari",
+      "en": "Affidamento diretto per lavori, servizi o forniture supplementari"
+    }
+  },
+  {
+    "codice": "36",
+    "descrizione": {
+      "it": "Affidamento diretto per modifiche contrattuali o varianti per le quali è necessaria una nuova procedura di affidamento",
+      "en": "Affidamento diretto per modifiche contrattuali o varianti per le quali è necessaria una nuova procedura di affidamento"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Procedura negoziata senza previa pubblicazione",
+      "en": "Procedura negoziata senza previa pubblicazione"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Accordo quadro",
+      "en": "Accordo quadro"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "Sistema dinamico di acquisizione",
+      "en": "Sistema dinamico di acquisizione"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "Affidamento in economia - cottimo fiduciario",
+      "en": "Affidamento in economia - cottimo fiduciario"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "Dialogo competitivo",
+      "en": "Dialogo competitivo"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "Procedura negoziata previa pubblicazione",
+      "en": "Procedura negoziata previa pubblicazione"
+    }
+  }
+]

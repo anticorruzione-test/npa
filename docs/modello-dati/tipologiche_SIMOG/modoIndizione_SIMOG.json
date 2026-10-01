@@ -1,0 +1,30 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Gara indetta mediante avviso periodico indicativo",
+      "en": "Gara indetta mediante avviso periodico indicativo"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Gara indetta mediante avviso sull'esistenza di un sistema di qualificazione",
+      "en": "Gara indetta mediante avviso sull'esistenza di un sistema di qualificazione"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Gara indetta mediante bando di gara",
+      "en": "Gara indetta mediante bando di gara"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Procedura che non prevede indizione di gara",
+      "en": "Procedura che non prevede indizione di gara"
+    }
+  }
+]

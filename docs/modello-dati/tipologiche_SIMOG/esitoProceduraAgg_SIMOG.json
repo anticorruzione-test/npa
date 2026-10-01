@@ -1,0 +1,72 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "AGGIUDICATA",
+      "en": "AGGIUDICATA"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "ANNULLATA O REVOCATA SUCCESSIVAMENTE ALLA PUBBLICAZIONE",
+      "en": "ANNULLATA O REVOCATA SUCCESSIVAMENTE ALLA PUBBLICAZIONE"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "DESERTA",
+      "en": "DESERTA"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "SENZA ESITO A SEGUITO DI OFFERTE IRREGOLARI O INAMMISSIBILI, NON CONGRUE O NON APPROPRIATE",
+      "en": "SENZA ESITO A SEGUITO DI OFFERTE IRREGOLARI O INAMMISSIBILI, NON CONGRUE O NON APPROPRIATE"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "PROPOSTA DI AGGIUDICAZIONE",
+      "en": "PROPOSTA DI AGGIUDICAZIONE"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "ANNULLATA/REVOCATA PRIMA DELL'APERTURA DELLE BUSTE AMMINISTRATIVE",
+      "en": "ANNULLATA/REVOCATA PRIMA DELL'APERTURA DELLE BUSTE AMMINISTRATIVE"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "ANNULLATA/REVOCATA DOPO L'APERTURA DELLE BUSTE AMMINISTRATIVE",
+      "en": "ANNULLATA/REVOCATA DOPO L'APERTURA DELLE BUSTE AMMINISTRATIVE"
+    }
+  },
+  {
+    "codice": "90",
+    "descrizione": {
+      "it": "NON È ANCORA STATO SELEZIONATO UN VINCITORE MA LA GARA È ANCORA IN CORSO.",
+      "en": "NON È ANCORA STATO SELEZIONATO UN VINCITORE MA LA GARA È ANCORA IN CORSO."
+    }
+  },
+  {
+    "codice": "98",
+    "descrizione": {
+      "it": "NON È STATO SELEZIONATO NESSUN VINCITORE E LA GARA È CHIUSA.",
+      "en": "NON È STATO SELEZIONATO NESSUN VINCITORE E LA GARA È CHIUSA."
+    }
+  },
+  {
+    "codice": "99",
+    "descrizione": {
+      "it": "NON AGGIUDICATA",
+      "en": "NON AGGIUDICATA"
+    }
+  }
+]

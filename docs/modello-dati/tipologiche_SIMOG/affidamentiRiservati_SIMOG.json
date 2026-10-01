@@ -1,0 +1,30 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Art. 5 L. 381/1991",
+      "en": "Art. 5 L. 381/1991"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Art. 112 D.Lgs. 50/2016",
+      "en": "Art. 112 D.Lgs. 50/2016"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Art. 143 D.Lgs. 50/2016",
+      "en": "Art. 143 D.Lgs. 50/2016"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Art. 56 D. Lgs 117/2017",
+      "en": "Art. 56 D. Lgs 117/2017"
+    }
+  }
+]

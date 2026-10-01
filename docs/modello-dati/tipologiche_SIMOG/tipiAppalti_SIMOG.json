@@ -1,0 +1,100 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Acquisto",
+      "en": "Acquisto"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Leasing",
+      "en": "Leasing"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Noleggio",
+      "en": "Noleggio"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Acquisto a riscatto",
+      "en": "Acquisto a riscatto"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Misto",
+      "en": "Misto"
+    }
+  },
+  {
+    "codice": "6",
+    "descrizione": {
+      "it": "Costruzione",
+      "en": "Costruzione"
+    }
+  },
+  {
+    "codice": "7",
+    "descrizione": {
+      "it": "Demolizione",
+      "en": "Demolizione"
+    }
+  },
+  {
+    "codice": "8",
+    "descrizione": {
+      "it": "Recupero",
+      "en": "Recupero"
+    }
+  },
+  {
+    "codice": "9",
+    "descrizione": {
+      "it": "Ristrutturazione",
+      "en": "Ristrutturazione"
+    }
+  },
+  {
+    "codice": "10",
+    "descrizione": {
+      "it": "Restauro",
+      "en": "Restauro"
+    }
+  },
+  {
+    "codice": "11",
+    "descrizione": {
+      "it": "Manutenzione",
+      "en": "Manutenzione"
+    }
+  },
+  {
+    "codice": "12",
+    "descrizione": {
+      "it": "Manutenzione ordinaria",
+      "en": "Manutenzione ordinaria"
+    }
+  },
+  {
+    "codice": "13",
+    "descrizione": {
+      "it": "Manutenzione straordinaria",
+      "en": "Manutenzione straordinaria"
+    }
+  },
+  {
+    "codice": "14",
+    "descrizione": {
+      "it": "Manutenzione ordinaria e straordinaria",
+      "en": "Manutenzione ordinaria e straordinaria"
+    }
+  }
+]
