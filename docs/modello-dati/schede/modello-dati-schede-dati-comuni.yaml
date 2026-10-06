@@ -16,6 +16,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
       description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [categorieMerceologiche.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/categorieMerceologiche.json)
+    EaggCategorie_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
+      description: Categorie merceologiche oggetto della fornitura di cui al DPCM soggetti aggregatori - fare riferimento ai valori contenuti nel file [eaggCategorie_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/eaggCategorie_SIMOG.json)
     MotivazioneCIGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -32,18 +36,26 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo urgenza - fare riferimento ai valori contenuti nel file [motivoUrgenza.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoUrgenza.json)
+    ArtEstremaUrgenzaSommaUrgenzaEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo urgenza - fare riferimento ai valori contenuti nel file [artEstremaUrgenzaSommaUrgenza_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/artEstremaUrgenzaSommaUrgenza_SIMOG.json)
     PrestazioniEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/prestazioniComprese.json)
+    TipiPrestazioni_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [tipiPrestazioni_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/tipiPrestazioni_SIMOG.json)
     CondizioniNegoziataEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/condizioniNegoziata.json)
-    CondizioniNegoziata_SIMOGEnum:
+    Condizioni_SIMOGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioniNegoziata_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/condizioniNegoziata_SIMOG.json)  
+      description: Condizioni che giustificano il ricorso alla procedura negoziata senza previa pubblicazione di un bando oppure senza previa indizione di una gara - fare riferimento ai valori contenuti nel file [condizioni_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/condizioni_SIMOG.json)  
     OperazioneSDAEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'
@@ -84,18 +96,34 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoCollegamento.json)
+    MotivoCollegamento_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di collegamento - fare riferimento ai valori contenuti nel file [motivoCollegamento_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motivoCollegamento_SIMOG.json)
     CategoriaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Categoria - fare riferimento ai valori contenuti nel file [categoria.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/categoria.json)
+    Categoria_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Categoria - fare riferimento ai valori contenuti nel file [categoria_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/categoria_SIMOG.json)
     MotivoDerogaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile - fare riferimento ai valori contenuti nel file [motivoDeroga.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoDeroga.json) 
+    MotivoDeroga_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo della deroga alla previsione dell’obbligo di indicare una quota pari almeno al 30 per cento con riferimento all’occupazione femminile/giovanile - fare riferimento ai valori contenuti nel file [motivoDeroga_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motivoDeroga_SIMOG.json) 
     MisurePremialiEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Misure Premiali - fare riferimento ai valori contenuti nel file [misurePremiali.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/misurePremiali.json) 
+    MisurePremiali_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Misure Premiali - fare riferimento ai valori contenuti nel file [misuraPremiale_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/misuraPremiale_SIMOG.json) 
     TipoClassificazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -119,6 +147,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Classificazione - fare riferimento ai valori contenuti nel file [CPV.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/CPV.json) 
+    CPV_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Classificazione - fare riferimento ai valori contenuti nel file [cpv_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/cpv_SIMOG.json) 
     AccessibilitaEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -139,6 +171,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/affidamentiRiservati.json) 
+    AffidamentiRiservati_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Indicare se la partecipazione è riservata a specifiche organizzazioni (ad es. laboratori protetti, organizzazioni con missione di servizio pubblico) - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-71 - Reserved Participation del TED - fare riferimento ai valori contenuti nel file [affidamentiRiservati_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/affidamentiRiservati_SIMOG.json) 
     CriteriAggiudicazioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -283,10 +319,14 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/settore.json)
+    Settore_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Settore attività della SA - fare riferimento ai valori contenuti nel file [settore_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/settore_SIMOG.json)
     MotivoDerogaQlfEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
+      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoDerogaQlf.json)    
     MotivazioneMancatoAffidamentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -382,6 +422,20 @@ components:
             type: string
         motivoCollegamento:
           $ref: '#/components/schemas/MotivoCollegamentoEnum'
+    IpotesiCollegamento_SIMOGType:
+      description: ipotesi di collegamento
+      type: object
+      required:
+        - motivoCollegamento
+      additionalProperties: false
+      properties:
+        cigCollegato:
+          description: CIG collegato
+          type: array
+          items: 
+            type: string
+        motivoCollegamento:
+          $ref: '#/components/schemas/MotivoCollegamento_SIMOGEnum'
     ImportoType:
       description: Importo
       type: number
@@ -471,6 +525,41 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/MisurePremialiEnum'
+    ParitaDiGenereGenerazionale_SIMOGType:
+      description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?
+      type: object
+      additionalProperties: false
+      properties:
+        derogaAQ:
+          description: Deroga per adesione ad AQ/Convenzione precedente alle linee guida DPO sull’articolo 47 del DL 77/2021 e ss.m.i.?
+          type: boolean
+        quota30PerCento:
+          description: Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)? Valori ammessi - SI/NO/SI_QUOTA_INFERIORE
+          type: string
+          enum: ['SI', 'NO', 'SI_QUOTA_INFERIORE'] 
+        quotaInferioreOccupFemminile:
+          description: Previsione di una quota inferiore con riferimento all’occupazione femminile
+          type: number
+          format: double
+          minimum: 0
+          maximum: 100
+        quotaInferioreOccupGiovanile:
+          description: Previsione di una quota inferiore con riferimento all’occupazione giovanile
+          type: number
+          format: double
+          minimum: 0
+          maximum: 100        
+        motivoDeroga:
+          type: array
+          items:
+            $ref: '#/components/schemas/MotivoDeroga_SIMOGEnum'
+        ulterioriMisurePremiali:
+          description: Previsione nel bando di gara, nell’avviso o nell’invito di ulteriori misure premiali che attribuiscono un punteggio aggiuntivo all’offerente o al candidato.
+          type: boolean          
+        misurePremiali:
+          type: array
+          items:
+            $ref: '#/components/schemas/MisurePremiali_SIMOGEnum'
     ParitaDiGenereGenerazionaleA7Type:
       description: Deprecato. Previsione nel bando di gara, nell’avviso o nell’invito, dell’obbligo di assicurare, in caso di aggiudicazione del contratto, una quota pari almeno al 30 per cento, delle assunzioni necessarie per l'esecuzione del contratto o per la realizzazione di attività ad esso connesse o strumentali, sia all'occupazione giovanile sia all'occupazione femminile (articolo 47, comma 4, D.L. 77/2021)?
       type: object
@@ -3535,7 +3624,26 @@ components:
           description: Codice classificazione supplementare che caratterizza anch'esso l'appalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-263 - Additional Classification Codes del TED
           type: array
           items:
-            $ref: '#/components/schemas/CPVEnum'            
+            $ref: '#/components/schemas/CPVEnum'     
+    DatiBaseCPV_SIMOGType:
+      description: Dato in comune con il Business Group Classification delle eforms
+      type: object
+      additionalProperties: false
+      required:
+        - tipoClassificazione
+        - cpvPrevalente
+      properties:
+        tipoClassificazione:
+          description: Il tipo di classificazione che descrive l'appalto (ad es. CPV).
+          $ref: '#/components/schemas/TipoClassificazioneEnum'
+        cpvPrevalente:
+          description: Il codice della classificazione che caratterizza meglio l'appalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-262 - Main Classification Code del TED
+          $ref: '#/components/schemas/CPV_SIMOGEnum'
+        cpvSecondarie:
+          description: Codice classificazione supplementare che caratterizza anch'esso l'appalto - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-263 - Additional Classification Codes del TED
+          type: array
+          items:
+            $ref: '#/components/schemas/CPV_SIMOGEnum'                   
     DatiBaseAccessibilitaType:
       description: Dato in comune con il Business Group Strategic Procurement delle eforms
       additionalProperties: false
@@ -3877,6 +3985,16 @@ components:
           type: array
           items:        
            $ref: '#/components/schemas/AffidamentiRiservatiEnum'
+    DatiBaseAggiuntivi_SIMOGType:
+      description: Dato in comune con il Business Group Other Requirements delle eforms
+      required:
+        - affidamentiRiservati
+      additionalProperties: false
+      properties:
+        affidamentiRiservati:
+          type: array
+          items:        
+           $ref: '#/components/schemas/AffidamentiRiservati_SIMOGEnum'
     DatiBaseAggiuntiviOptionalType:
       description: Dato in comune con il Business Group Other Requirements delle eforms
       additionalProperties: false
