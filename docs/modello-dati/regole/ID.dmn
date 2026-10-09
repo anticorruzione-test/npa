@@ -71,7 +71,7 @@
         <description>REG147: Il cig indicato corrisponde ad una procedura per cui non è prevista la
 fase di esecuzione</description>
         <inputEntry id="UnaryTests_09819zh">
-          <text></text>
+          <text>is defined(comunicazione.integrazioneDatiEsecuzione)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1ucypp5">
           <text>list contains(["P5","AD5","ABI"], codiceScheda)</text>
