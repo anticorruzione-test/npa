@@ -10,7 +10,10 @@ info:
     \
     Con questa scheda può essere comunicata anche l'informazione relativa al docFAP, ovvero se è stato realizzato e autorizzato entro i termini lo studio di fattibilità che esenta dall'uso del BIM.\
     \
-    Possono inoltre essere integrate alcune informazioni relative ai dati del contratto non comunicate in precedenza.\
+    Possono inoltre essere integrate alcune informazioni relative ai dati del contratto.\
+    I campi della sezione IntegrazioneDatiEsecuzioneType verranno aggiornati solo se non comunicati in precedenza con la scheda SC1 (per la dataStipula) o in caso di mancato invio della scheda I1.\
+    La scheda ID potrà essere inviata più volte con la sezione IntegrazioneDatiEsecuzioneType compilata, in caso si vogliano comunicare i dati in momenti diversi, ma non sarà possibile correggere i dati già trasmessi.\
+    L'aggiornamento avverrà solo se il dato non è stato comunicato in precedenza.\
     \
     La scheda permette infine di modificare l'indirizzo dei documenti di gara    
   version: 1.0.0
@@ -19,7 +22,7 @@ components:
     IntegrazioneDatiEsecuzioneType:
       description: Dati inerenti l'inizio dell'esecuzione lavori
       type: object
-      required: [motivoIntegrazione,idContratto,dataStipulaContratto,consegnaSottoRiserva,dataEffettivoInizioPrestazione,dataFinePrevistaPrestazione]
+      required: [motivoIntegrazione,idContratto]
       additionalProperties: false
       properties:
         motivoIntegrazione:
