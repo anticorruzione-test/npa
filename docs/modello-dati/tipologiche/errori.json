@@ -2758,6 +2758,24 @@
     "dataFine":null
 },
 {
+    "codice":"REG147",
+    "descrizione": {
+		"it": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione.",
+		"en": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG148",
+    "descrizione": {
+		"it": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione.",
+		"en": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},	
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
