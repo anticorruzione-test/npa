@@ -85,7 +85,7 @@ fase di esecuzione</description>
         <inputEntry id="UnaryTests_1p5fox3">
           <text>is defined(comunicazione.integrazioneDatiEsecuzione) and
 (is defined(comunicazione.integrazioneDatiEsecuzione.dataStipulaContratto) = false or comunicazione.integrazioneDatiEsecuzione.dataStipulaContratto = "") and 
-(is defined(comunicazione.integrazioneDatiEsecuzione.consegnaSottoRiserva) = false and 
+is defined(comunicazione.integrazioneDatiEsecuzione.consegnaSottoRiserva) = false and 
 (is defined(comunicazione.integrazioneDatiEsecuzione.dataEffettivoInizioPrestazione) = false or comunicazione.integrazioneDatiEsecuzione.dataEffettivoInizioPrestazione = "") and 
 (is defined(comunicazione.integrazioneDatiEsecuzione.dataFinePrevistaPrestazione) = false or comunicazione.integrazioneDatiEsecuzione.dataFinePrevistaPrestazione = "") 
 </text>
