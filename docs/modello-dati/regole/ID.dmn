@@ -15,7 +15,7 @@
       </input>
       <input id="InputClause_1eqyogv">
         <inputExpression id="LiteralExpression_0rzfk5o" typeRef="string">
-          <text>codiceScheda</text>
+          <text>codiceSchedaInizialeAvvio</text>
         </inputExpression>
       </input>
       <output id="Errore_ID" name="Errore" typeRef="string" biodi:width="477" />
@@ -74,7 +74,7 @@ fase di esecuzione</description>
           <text>is defined(comunicazione.integrazioneDatiEsecuzione)</text>
         </inputEntry>
         <inputEntry id="UnaryTests_1ucypp5">
-          <text>list contains(["P5","AD5","ABI"], codiceScheda)</text>
+          <text>list contains(["P5","AD5","ABI"], codiceSchedaInizialeAvvio)</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0fk6s5f">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG147\"}"</text>
@@ -100,8 +100,8 @@ fase di esecuzione</description>
     </decisionTable>
   </decision>
   <inputData id="InputData_1gcht8t" name="comunicazione" />
-  <inputData id="InputData_16pwit1" name="codiceScheda">
-    <variable id="InformationItem_0fic5gu" name="codiceScheda" typeRef="Any" />
+  <inputData id="InputData_16pwit1" name="codiceSchedaInizialeAvvio">
+    <variable id="InformationItem_0fic5gu" name="codiceSchedaInizialeAvvio" typeRef="Any" />
   </inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="DMNDiagram_15do7a0">
