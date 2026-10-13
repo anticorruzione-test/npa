@@ -1726,26 +1726,6 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
-<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
-
-### Schede
-* ticket 96573:
-	* modello-dati-schede-ID.yaml:
-		* aggiunta la nuova sezione integrazioneDatiEsecuzione
-* ticket 100672:
-	* modello-dati-schede-ID.yaml:
-		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
-
-### Tipologiche
-* ticket 100672:
-	* errori.json: inserito nuovo messaggio di errore REG146
-  
-### Regole
-* ticket 96573:
-	* ID.dmn: modificata la REG101
-* ticket 100672:
-	* ID.dmn: modificata la REG127, aggiunta la REG146
-
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1811,3 +1791,28 @@ Le nuove voci della tipologica codIstat devono essere utilizzate qualora si inte
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
+
+<summary><h1>Note di rilascio del 28/10/2026 (In Esercizio)</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inseriti nuovi messaggi di errore REG146,REG147,REG148
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunte le REG146, REG147,REG148
+
+### Orchestratore
+* ticket 96573:
+	* aggiunta la scheda ID come scheda successiva alla P5
+ 	* eliminato il flusso !5 da FlussoAppartenenza 
