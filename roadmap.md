@@ -28,13 +28,13 @@
 |60137|AVR - Introduzione comunicazione anagrafica per avvio verifiche requisiti|Inserimento della comunicazione anagrafica per l'attivazione della verifica dei requisiti. La comunicazione AVR contiene l’anagrafica dei soggetti che hanno manifestato interesse a seguito di un eventuale avviso di indagine di mercato che è stato pubblicato utilizzando una scheda PL1 o PL2, oppure l'anagrafica dei soggetti individuati dalla SA (senza l'invio preventivo di una PL1 e PL2) ai fini di affidamento diretto. La comunicazione consente di attivare l’FVOE per tali soggetti. Non attribuisce il CIG.| 15/04/2025<br>25/06/2025<br>30/06/2025        |CHG-05||
 |56474|TVR - Comunicazione di Termine Verifiche Requisiti FVOE|Introduzione della comunicazione TVR: Terminazione Verifiche FVOE. La comunicazione è utilizzata per indicare il termine delle verifiche FVOE attivate con comunicazione AVR quando la Stazione Appaltante decide di non proseguire con la procedura di affidamento.| 15/04/2025<br>25/06/2025<br>30/06/2025        |CHG-05||
 |74116|<strong>Ripristino regole parità di genere</strong>|Ripristino delle regole REG21, REG22, REG23, REG24, REG27, REG28 sulle seguenti schede: A3_6, AD1_25, AD1_26, AD1_28, AD2_25, AD2_26, AD2_28, AD3, AD4| /<br>/<br>18/04/2025                          |/||
-||||                                               |||
+|||||||
 |77867|correzione all’orchestratore: PL1_8 |La scheda che deve seguire la PL1_8 è la P1_15_2| 04/07/2025<br>05/08/2025<br>30/09/2025<br>    |CHG-06||
 |58794|Ripristino stato precedente ultima comunicazione|Inserimento funzionalità di annullamento di una comunicazione precedente avvenuta tramite la conferma di una scheda. L'annullamento sarà inizialmente possibile per le sole schede di Conclusione (CO1, CO2), e potrà essere utilizzato per la sola ultima scheda confermata| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |60561|AD3, AD1_27 e AD2_27: quadro economico standard e concessioni|Schede AD1_27 e AD2_27: inserimento delle due sezioni "quadro economico standard" e "quadro economico concessioni", come già definite in altre schede AD1_25 / AD2_25 (standard) e AD1_28 / AD2_28 (concessioni). Schede AD1_27, AD2_27, AD3: aggiunta di regolaDMN per rendere le due sezioni mutuamente esclusive.| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |61305<br>69529<br>79452<br>|Cambio Tipologica RuoloOE|Revisione della lista dei voci della tipologica, con aggiunta della nuova voce "Subappaltatore Qualificante in Offerta"| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |61221|Regole DMN prive di codice|Aggiornamento regole DMN prive di riferimento al codice della regola nell'annotation| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
-|62096|Creazione nuove schede AVVTRASP e Modifica schede AD1_*|Creazione di 4 nuove schede da utilizzarsi per l'avviso della trasparenza volontaria ex ante di cui all'art 86 del codice.| /<br>/<br>/<br>                               |/||
+|62096|Creazione nuove schede AVVTRASP e Modifica schede AD1_*|Creazione di 4 nuove schede da utilizzarsi per l'avviso della trasparenza volontaria ex ante di cui all'art 86 del codice.| /<br>/<br>/<br>|/||
 |79142|gestione flusso acquisizione beni infungibili|Gestione del flusso per l'affidamento diretto di beni infungibili a imprese estere o acquisizione di beni e servizi in modalità e-commerce| 04/07/2025<br>28/07/2025<br>31/07/2025<br>    |CHG-06||
 |77868<br>77861<br>78056|Refactoring Scheda ID|Aggiunta del campo "Motivo Variazione CUP" per motivare la modifica all'elenco dei codici CUP<br>Introduzione del nuovo campo docFAP<br>Aggiunta dell'oggetto ribassoAggiudicazione| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |77866|Aggiunta campo docFAP in associazione a strumentiElettroniciSpecifici|Per le schede di indizione che prevedono il campo strumentiElettroniciSpecifici sarà previsto in aggiunt anche il campo docFAP; la valorizzazione del campo strumentiElettroniciSpecifici prevederà la valorizzazione obbligatoria del campo docFAP| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
@@ -48,7 +48,7 @@
 |81331|Inibizione invio scheda S3 prima della scheda di esito|La tabella di orchestrazione va modificata per impedire l'invio della scheda S3 prima della scheda di esito A*| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |70237|Modifica contrattuale per scheda P7_2|Aggiunta del flusso 72 per la scheda M2| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
 |79454|aggiornamento tipologica motivoDerogaQlf|Revisione della lista dei voci della tipologica, con aggiunta di nuove voci| 04/07/2025<br>05/08/2025<br>30/09/2025        |CHG-06||
-||||                                               |||
+|||||||
 |79142<br>97247|gestione flusso acquisizione beni infungibili|Limitazione di utilizzo ai soli servizi e forniture. Aggiunta del campo facoltativo Id Pianificazione.Pubblicazione su PVL della scheda ABI| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:x:|
 |69809|Rimozione tipologica motivoEsclusioneTracciabilita|La tipologica motivoEsclusioneTracciabilita sarà rimossa perché non utilizzata| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:white_check_mark:|
 |61141|Inserimento tetto massimo su scheda AD3|Introduzione di una regola che blocca la scheda in caso di appalto di lavori di importo superiore a € 150.000 e di servizi e forniture di importo superiore a € 140.000| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:x:|
@@ -73,7 +73,7 @@
 |68505|Nuova scheda S1_2 – elenco dei soggetti invitati a presentare offerta|Nuova scheda per le procedure a due fasi, utilizzata dopo la S1 per comunicare l'elenco degli invitati, la data di invito e la data di scadenza offerta| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:x:|
 |56603|Nuova scheda CM3|Nuova scheda, estensione della CM1, disponibile per le negoziate senza bando, con ulteriori attributi modificabili, tra cui l'attributo "data scadenza offerta"| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:white_check_mark:|
 |87011|Aggiornamento tabella istat|Aggiornamento della tabella istat con allineamento alla versione attuale| 09/01/2026<br>19/05/2026<br>30/06/2026        |CHG-07|:x:|
-||||                                               |||
+|||||||
 |57290|Revisione scheda RSU1 - richiesta subappalto|Revisione del modello dati della scheda RSU1.| 09/01/2026<br>21/07/2026<br>30/09/2026*      |CHG-07|:x:|
 |68087|Cancellazione appalti non confermati dopo 90 giorni|Verrà realizzato un job che provvederà alla cancellazione degli appalti non confermati dopo 90 giorni| 09/01/2026<br>21/07/2026<br>30/09/2026*      |CHG-07|:white_check_mark:|
 |84677|Revisione Scheda ID - Integrazione Dati|Aggiunta idPartecipante all'oggetto comunicazioneRibassoAggiudicazione| 09/01/2026<br>21/07/2026<br>30/09/2026*      |CHG-07|:white_check_mark:|
@@ -82,21 +82,23 @@
 |70558|TED - Migrazione Nuove API v3|Aggiornamento API endpoint URLs e modifica del nome del parametro "noticeAuthorLocale" in "noticeAuthorLang"| 09/01/2026<br>21/07/2026<br>30/09/2026*      |CHG-07|:white_check_mark:|
 |86830|Introduzione xsd per validazione eForm|Introduzione di una validazione dello schema eform per verifiche sintattiche sul valore assegnato ai campi relativi a valori di tipo numerico (intero o reale) e date, per i quali il TED non esegue verifica| 09/01/2026<br>21/07/2026<br>30/09/2026*      |CHG-07|:x:|
 |78309|Gestione elenco fornitori - accesso FVOE|La P7_3 avvierà un flusso analogo alle schede ISDA, con la creazione di un elenco di fornitori con accesso al fascicolo.| 09/01/2026<br>21/07/2026<br>31/07/2026      |CHG-07|:white_check_mark:|
-||||                                               |||
+|||||||
 |TBD|Rilascio/aggiornamento documenti enti certificanti: casellario, anagrafe sanzioni, carichi pendenti, IAF, bilancio InfoCamere|Rilascio/aggiornamento dei tipi documento richiedibili via FVC/PDND (`/richiedi-documenti`): certificato integrale del casellario giudiziario (`00004`, modello `DatiSA00004`), anagrafe delle sanzioni amministrative dipendenti da reato (`00005`, modello `DatiSA00020`), certificato dei carichi pendenti penali (`00006`, modello `DatiSA00006`), certificazione IAF (`00014`), bilancio aziendale InfoCamere (`00045`, modello `DatiSA00045`). Aggiornamento di `modello-dati-fvoe-fva.yaml`, `documento-specifiche-enticertificanti.md`, `specifiche-servizi-fvoe-fva.yaml` e tipologica `tipoDocumento.json`.| 17/07/2026<br>21/07/2026<br>03/09/2026*      |/|:x:|
-||||                                               |||
+|||||||
 |89451|Adeguamento PCP al BO PVL|Adeguamento del sistema PCP al BackOffice PVL, volto a garantire la corretta interoperabilità dei dati per la pubblicazione degli avvisi. Il BackOffice PVL applica controlli di validazione sui dati trasmessi da PCP e, in caso di esito negativo, procede con l’oscuramento temporaneo dell’avviso, notificando l’evento al sistema PCP. Quest’ultimo recepisce la notifica, aggiorna il proprio stato informativo e rende disponibile il dettaglio dell’oscuramento. <br>Al seguente percorso è possibile consultare la Guida Utente [Oscuramento_Avviso_PVL_e_Adeguamento_PCP.md](docs/Guide_Utente/Oscuramento_Avviso_PVL_e_Adeguamento_PCP.md)| 14/04/2026<br>04/06/2026<br>08/07/2026<br>    |/|:white_check_mark:|
-||||                                               |||
+|||||||
 |68714|Revisione flusso di esecuzione|Revisione della corretta successione delle schede di avvio del flusso SC1 e I1, per eliminare la possibilità di non rilevare la data di sottoscrizione del contratto. Revisione della successione di eventi della fase di conclusione| 15/06/2026*<br>15/07/2026*<br>14/08/2026*<br> |||
 |84595|Reingegnerizzazione rettifiche|Aggiunta di una colonna extra su orchestratore che agisca da "semaforo" per consentire le rettifiche| 15/06/2026*<br>15/07/2026*<br>14/08/2026*<br> |||
-||||                                               |||
-|58792|partecipante type - refactoring modello dati|refactoring del modello dati per la  gestione dei gruppi multilivello | /<br>/<br>/<br>                               |/||
-|62794|Modifica delle stazioni appaltanti coinvolte nella procedura|Funzionalità di inserimento, sostituzione, eliminazione di soggetti dall'elenco delle Stazioni Appaltanti| /<br>/<br>/<br>                               |/||
-||||                                               |||
-|68715|introduzione eForm SDK 1.13|Aggiornamento del modello dati allo schema eForm SDK 1.13.3<br>(la pianificazione è stata aggiornata a seguito della disponibilità della versione SDK 1.13.3 - ora nuovo riferimento - e dello slittamento della data di fine vita della versione 1.12)| 25/05/2026<br>03/08/2026<br>30/09/2026*<br>  |/||
-||||                                               |||
-|77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura| /<br>/<br>/<br>                               |||
-|58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte| /<br>/<br>/<br>                               ||
-||||                                               |||
-|96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione| /<br>/<br>/<br>                               ||
-|100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL| /<br>/<br>/<br>                               ||
+|||||||
+|58792|partecipante type - refactoring modello dati|refactoring del modello dati per la  gestione dei gruppi multilivello | /<br>/<br>/<br>|/||
+|62794|Modifica delle stazioni appaltanti coinvolte nella procedura|Funzionalità di inserimento, sostituzione, eliminazione di soggetti dall'elenco delle Stazioni Appaltanti| /<br>/<br>/<br>|/||
+|||||||
+|68715|introduzione eForm SDK 1.13|Aggiornamento del modello dati allo schema eForm SDK 1.13.3<br>(la pianificazione è stata aggiornata a seguito della disponibilità della versione SDK 1.13.3 - ora nuovo riferimento - e dello slittamento della data di fine vita della versione 1.12)| 25/05/2026<br>03/08/2026<br>30/09/2026*<br>|/||
+|||||||
+|77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura| /<br>/<br>/<br>|||
+|58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte| /<br>/<br>/<br>||
+|||||||
+|96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione| 14/10/2026*<br>28/10/2026*<br>28/10/2026*<br>||
+|100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL| 14/10/2026*<br>28/10/2026*<br>28/10/2026*<br>||
+|||||||
+|||||||
