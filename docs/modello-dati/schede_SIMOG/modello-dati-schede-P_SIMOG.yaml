@@ -21,8 +21,8 @@ components:
           type: string
         artEstremaUrgenzaSommaUrgenza:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ArtEstremaUrgenzaSommaUrgenzaEnum'
-        motivazioneCIG:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
+        eaggMotivi:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggMotivi_SIMOGEnum' 
         eaggCategorie:
           type: array
           items:
