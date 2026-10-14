@@ -4018,6 +4018,13 @@ components:
       properties:
         criteriAggiudicazione:
           $ref: '#/components/schemas/CriteriAggiudicazioneEnum'
+    DatiBaseAggiudicazione_SIMOGType:
+      description: Dato in comune con il Business Group Award Criterion delle eforms
+      additionalProperties: false
+      required: [modalitaGara]
+      properties:
+        modalitaGara:
+          $ref: '#/components/schemas/ModalitaGara_SIMOGEnum'
     DatiBaseAggiudicazioneOptionalType:
       description: Dato in comune con il Business Group Award Criterion delle eforms
       additionalProperties: false
