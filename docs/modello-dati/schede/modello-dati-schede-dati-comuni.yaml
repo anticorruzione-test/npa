@@ -24,6 +24,10 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [motivazioneCIG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivazioneCIG.json)
+    EaggMotivi_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivazione richiesta CIG - fare riferimento ai valori contenuti nel file [eaggMotivi_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/eaggMotivi_SIMOG.json)      
     StrumentiSvolgimentoProcedureEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
