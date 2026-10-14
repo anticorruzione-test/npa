@@ -1,0 +1,37 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Prezzo più basso",
+      "en": "Prezzo più basso"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Offerta economicamente più vantaggiosa",
+      "en": "Offerta economicamente più vantaggiosa"
+    }
+  },
+  {
+    "codice": "3",
+    "descrizione": {
+      "it": "Offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo",
+      "en": "Offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo"
+    }
+  },
+  {
+    "codice": "4",
+    "descrizione": {
+      "it": "Offerta economicamente più vantaggiosa: criterio del minor prezzo",
+      "en": "Offerta economicamente più vantaggiosa: criterio del minor prezzo"
+    }
+  },
+  {
+    "codice": "5",
+    "descrizione": {
+      "it": "Offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi",
+      "en": "Offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi"
+    }
+  }
+]
