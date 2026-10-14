@@ -20,7 +20,7 @@ components:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
         artEstremaUrgenzaSommaUrgenza:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/artEstremaUrgenzaSommaUrgenzaEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ArtEstremaUrgenzaSommaUrgenzaEnum'
         motivazioneCIG:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
         eaggCategorie:
@@ -134,7 +134,7 @@ components:
         datiBaseAggiuntivi:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiuntivi_SIMOGType' 
         datiBaseAggiudicazione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazioneOptionalType'                
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAggiudicazione_SIMOGType'                
         finanziamenti:
           description: Dati relativi ai finanziamenti
           type: array
