@@ -16,7 +16,7 @@ components:
           maxLength: 64
         settore: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Settore_SIMOGEnum' 
-        modiRealizzazione: 
+        tipoRealizzazione: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiRealizzazione_SIMOGEnum'
         modoIndizione: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoIndizione_SIMOGEnum'
@@ -25,11 +25,11 @@ components:
         cigAccordoQuadroConvenzione:
           description: CIG relativo all’accordo quadro/convenzione cui si aderisce
           type: string
-        artEstremaUrgenzaSommaUrgenza:
+        motivoUrgenza:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ArtEstremaUrgenzaSommaUrgenzaEnum'
         motivazioneCIG:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
-        eaggCategorie:
+        categorieMerceologiche:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
@@ -45,7 +45,7 @@ components:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
           type: string
-        eaggCategorie:
+        categorieMerceologiche:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
@@ -90,7 +90,7 @@ components:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/CodIstatEnum' 
         motivoEsclusione:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoEsclusione_SIMOGEnum'
-        condizioni:
+        condizioniNegoziata:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Condizioni_SIMOGEnum'
@@ -118,7 +118,7 @@ components:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/IpotesiCollegamento_SIMOGType'
         paritaDiGenereGenerazionale:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ParitaDiGenereGenerazionale_SIMOGType' 
-        tipiPrestazioni:
+        prestazioniComprese:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/TipiPrestazioni_SIMOGEnum'       
         quadroEconomicoStandard:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoP7Type'

@@ -15,9 +15,9 @@ components:
         denominazione: 
           description: Denominazione
           type: string  
-        ruolo: 
+        ruoloOE: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Ruolo_SIMOGEnum'
-        tipo: 
+        tipoOE: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Tipo_SIMOGEnum'
         operatoreEstero: 
           type: boolean

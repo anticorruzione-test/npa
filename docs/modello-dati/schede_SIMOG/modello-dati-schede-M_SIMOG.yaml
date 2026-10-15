@@ -12,7 +12,7 @@ components:
           description: Data sottoscrizione eventuale atto aggiuntivo/ sottomissione
           type: string
           format: date-time  
-        motivoVariante:
+        motiviModifica:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariante_SIMOGEnum'
         causaModifica:
           description: Cause della modifica contrattuale

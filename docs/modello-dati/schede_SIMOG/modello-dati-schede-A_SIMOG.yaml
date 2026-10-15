@@ -21,7 +21,7 @@ components:
         opereUrbanizzazioneScomputo:
           description: Opere di urbanizzazione a scomputo
           type: boolean
-        modiRiaggiud:
+        modalitaRiaggiudicazioneAffidamento:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiRiaggiud_SIMOGEnum'    
         datiBaseProcedura:
           $ref: '#/components/schemas/DatiBaseProceduraType'
