@@ -1,0 +1,16 @@
+[
+  {
+    "codice": "1",
+    "descrizione": {
+      "it": "Errore materiale",
+      "en": "Errore materiale"
+    }
+  },
+  {
+    "codice": "2",
+    "descrizione": {
+      "it": "Rettifica documentazione di gara",
+      "en": "Rettifica documentazione di gara"
+    }
+  }
+]
