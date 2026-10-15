@@ -42,7 +42,7 @@ components:
           type: number
           format: double
         avanzamento:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AvanzamentoEnum'          
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Ritardi_SIMOGEnum'          
         numGiorniScostamento:
           description: Indicare lo scostamento registrato in numero di giorni
           type: number
