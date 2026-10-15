@@ -4093,9 +4093,9 @@ components:
     DatiBaseAggiudicazione_SIMOGType:
       description: Dato in comune con il Business Group Award Criterion delle eforms
       additionalProperties: false
-      required: [modalitaGara]
+      required: [criteriAggiudicazione]
       properties:
-        modalitaGara:
+        criteriAggiudicazione:
           $ref: '#/components/schemas/ModalitaGara_SIMOGEnum'
     DatiBaseAggiudicazioneOptionalType:
       description: Dato in comune con il Business Group Award Criterion delle eforms
