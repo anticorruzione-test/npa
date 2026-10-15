@@ -15,9 +15,7 @@ components:
           minLength: 8
           maxLength: 64
         settore: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Settore_SIMOGEnum' 
-        tipoRealizzazione: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiRealizzazione_SIMOGEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Settore_SIMOGEnum'         
         modoIndizione: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoIndizione_SIMOGEnum'
         modalitaIndizioneAllegatoIx: 
@@ -45,6 +43,8 @@ components:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
           type: string
+        tipoRealizzazione: 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiRealizzazione_SIMOGEnum'
         categorieMerceologiche:
           type: array
           items:
