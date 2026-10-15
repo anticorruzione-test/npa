@@ -9,10 +9,10 @@ components:
       type: object
       additionalProperties: false
       properties:
-        causaInterruzioneAnticipata:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviInterruzioneEnum'
+        motiviInterruzione:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviInterruzione_SIMOGEnum'
         motiviRisoluzione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRisoluzioneEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviRisoluzione_SIMOGEnum'
         dataStipula:
           description: Data stipula del contratto
           type: string

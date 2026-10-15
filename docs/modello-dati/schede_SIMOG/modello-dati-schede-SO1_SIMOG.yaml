@@ -18,7 +18,7 @@ components:
           type: string
           format: date-time
         motivoSospensione:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoSospensioneEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviSospensione_SIMOGEnum'
     AnacFormSO1_SIMOGType:
       description: Contiene tutti i dati relativi alla scheda di Sospensione
       type: object
