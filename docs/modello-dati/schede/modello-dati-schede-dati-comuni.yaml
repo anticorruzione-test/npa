@@ -47,7 +47,7 @@ components:
     PrestazioniEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/prestazioniComprese.json)
+      description: Prestazioni comprese nell'appalto - fare riferimento ai valori contenuti nel file [prestazioniComprese.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/prestazioniComprese.json)    
     TipiPrestazioni_SIMOGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -84,10 +84,18 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruoloOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/ruoloOE.json) 
+    Ruolo_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Ruolo del soggetto incaricato della prestazione - fare riferimento ai valori contenuti nel file [ruolo_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/ruolo_SIMOG.json)
     TipoOEEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Tipo soggetto - fare riferimento ai valori contenuti nel file [tipoOE.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/tipoOE.json)
+    Tipo_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Tipo soggetto - fare riferimento ai valori contenuti nel file [tipo_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/tipo_SIMOG.json)
     ModalitaAcquisizioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -215,10 +223,30 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
       description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modalitaRiaggiudicazioneAffidamento.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/modalitaRiaggiudicazioneAffidamento.json)    
+    ModiRiaggiud_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di riaggiudicazione/affidamento dell'appalto - fare riferimento ai valori contenuti nel file [modiRiaggiud_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modiRiaggiud_SIMOG.json)
+    ModoIndizione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di indizione dell'appalto - fare riferimento ai valori contenuti nel file [modoIndizione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modoIndizione_SIMOG.json)
+    ModalitaIndizioneAllegatoIx_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di indizione dell'appalto - fare riferimento ai valori contenuti nel file [ModalitaIndizioneAllegatoIx_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/ModalitaIndizioneAllegatoIx_SIMOG.json)
+    ModiRealizzazione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Modalità di realizzazione dell'appalto - fare riferimento ai valori contenuti nel file [ModiRealizzazione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/ModiRealizzazione_SIMOG.json)
     EsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/esitoProcedura.json) 
+      description: Esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/esitoProcedura.json)
+    EsitoProceduraAgg_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Esito procedura - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-142 - Winner Chosen del TED - fare riferimento ai valori contenuti nel file [esitoProcedura.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/esitoProceduraAgg_SIMOG.json)  
     GiustificazioneEsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -226,7 +254,11 @@ components:
     MotiviModificaContrattualeEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivi modifica contrattuale - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motiviModifica.json) 
+      description: Motivi modifica contrattuale - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motiviModifica.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motiviModifica.json)
+    MotivoVariante_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivi modifica contrattuale - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-200 - Modification Reason Code del TED - fare riferimento ai valori contenuti nel file [motivoVariante_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motivoVariante_SIMOG.json)      
     MotiviRevisionePrezziEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -258,7 +290,11 @@ components:
     MotivoSospensioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motivoSospensione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoSospensione.json) 
+      description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motivoSospensione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoSospensione.json)
+    MotiviSospensione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
+      description: Motivo di sospensione - fare riferimento ai valori contenuti nel file [motiviSospensione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motiviSospensione_SIMOG.json)      
     TipologiaAvvalimentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
@@ -287,10 +323,18 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [causaInterruzioneAnticipata.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/causaInterruzioneAnticipata.json)
+    MotiviInterruzione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivi dell'interruzione - fare riferimento ai valori contenuti nel file [motiviInterruzione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/motiviInterruzione_SIMOG.json)
     MotiviRisoluzioneEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivi di risoluzione - fare riferimento ai valori contenuti nel file [motiviRisoluzione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motiviRisoluzione.json)   
+      description: Motivi di risoluzione - fare riferimento ai valori contenuti nel file [motiviRisoluzione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motiviRisoluzione.json)
+    MotiviRisoluzione_SIMOGEnum:
+      allOf: # estende lo schema dati di TipologicaSchemaType
+        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
+      description: Motivi di risoluzione - fare riferimento ai valori contenuti nel file [motiviRisoluzione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motiviRisoluzione_SIMOG.json)      
     OneriEconomiciRisoluzioneRecessoEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -656,6 +700,26 @@ components:
           $ref: '#/components/schemas/RuoloOEEnum'
         tipoOE: 
           $ref: '#/components/schemas/TipoOEEnum'
+        idPartecipante: 
+          description: id partecipante
+          type: string  
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    DatiPersonaGiuridica_SIMOGType:
+      description: Dati relativi alla persona giuridica
+      type: object
+      additionalProperties: false
+      properties: 
+        codiceFiscale:
+          description: Codice fiscale 
+          type: string
+        denominazione:
+          description: Denominazione
+          type: string
+        ruolo: 
+          $ref: '#/components/schemas/Ruolo_SIMOGEnum'
+        tipo: 
+          $ref: '#/components/schemas/Tipo_SIMOGEnum'
         idPartecipante: 
           description: id partecipante
           type: string  
@@ -2536,10 +2600,10 @@ components:
         denominazione: 
           description: Denominazione del soggetto interessato
           type: string  
-        ruoloOE: 
-          $ref: '#/components/schemas/RuoloOEEnum'
-        tipoOE: 
-          $ref: '#/components/schemas/TipoOEEnum' 
+        ruolo: 
+          $ref: '#/components/schemas/Ruolo_SIMOGEnum'
+        tipo: 
+          $ref: '#/components/schemas/Tipo_SIMOGEnum' 
         idPartecipante: 
           description: id partecipante
           type: string  
@@ -2645,7 +2709,7 @@ components:
         datiPersonaGiuridica:
           type: array
           items:
-            $ref: '#/components/schemas/DatiPersonaGiuridicaType'
+            $ref: '#/components/schemas/DatiPersonaGiuridica_SIMOGType'
     SoggettoType:
       description: Dati del soggetto
       type: object
@@ -4248,7 +4312,14 @@ components:
       required: [esitoProcedura]
       properties:
         esitoProcedura:
-          $ref: '#/components/schemas/EsitoProceduraEnum'          
+          $ref: '#/components/schemas/EsitoProceduraEnum'
+    DatiBaseEsitoRisultatoProcedura_SIMOGType:
+      description:  Dato in comune con il Business Group Procedure Lot Result delle eforms
+      additionalProperties: false
+      required: [esitoProceduraAgg]
+      properties:
+        esitoProceduraAgg:
+          $ref: '#/components/schemas/EsitoProceduraAgg_SIMOGEnum'          
     DatiBaseModificaContrattualeType:
       description:  Dato in comune con i Business Group Contract e Modification delle eforms
       required: [motiviModifica,causaModifica]
