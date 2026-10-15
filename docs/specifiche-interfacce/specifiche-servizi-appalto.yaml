@@ -55,6 +55,8 @@ tags:
     description: In questo contesto rientrano tutti i servizi richiamabili dalla SA che permetteranno la creazione, l’invio e la consultazione degli elenchi di operatori economici.
   - name: gestioneContratto
     description: In questo contesto rientrano i servizi richiamabili dalla SA per la ricerca e consultazione dei contratti sottoscritti.
+  - name: gestioneAppalti
+    description: In questo contesto rientrano i servizi richiamabili dalla SA per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e per la migrazione delle relative procedure verso la PCP.
 paths:
   /status:
     get:
@@ -1801,13 +1803,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1839,13 +1835,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1878,13 +1868,7 @@ paths:
       responses:
         '200':
           description: Operazione terminato con successo.
-          headers: &ratelimit_headers 
-              X-RateLimit-Limit:
-                 $ref: '#/components/headers/X-RateLimit-Limit'
-              X-RateLimit-Remaining:
-                 $ref: '#/components/headers/X-RateLimit-Remaining'
-              X-RateLimit-Reset:
-                 $ref: '#/components/headers/X-RateLimit-Reset'
+          headers: *ratelimit_headers
           content:
             application/json:
               schema:
@@ -1966,6 +1950,229 @@ paths:
             $ref: '#/components/responses/429TooManyRequests'
         '500':
           $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/simog:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la consultazione della lista degli appalti SIMOG. SINCRONO
+      description: Il servizio recupera la lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando.
+      operationId: consultaAppaltiSimog
+      parameters:
+      - description: "numero della pagina da visualizzare (min: 0)"
+        in: query
+        name: page
+        required: false
+        schema:
+          type: integer
+          format: int32
+          default: 0
+          minimum: 0
+      - description: numero di elementi per pagina
+        in: query
+        name: size
+        required: false
+        schema:
+          type: integer
+          format: int32
+          default: 10
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppaltoListaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/smartcig:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la consultazione della lista degli appalti SMARTCIG. SINCRONO
+      description: Il servizio recupera la lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando.
+      operationId: consultaAppaltiSmartCig
+      parameters:
+      - description: "numero della pagina da visualizzare (min: 0)"
+        in: query
+        name: page
+        required: false
+        schema:
+          type: integer
+          format: int32
+          default: 0
+          minimum: 0
+      - description: numero di elementi per pagina
+        in: query
+        name: size
+        required: false
+        schema:
+          type: integer
+          format: int32
+          default: 10
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppaltoListaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/migraProcedura:
+    post:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la migrazione di una procedura di appalto da SIMOG o SMARTCIG verso la PCP. SINCRONO
+      description: Il servizio consente la migrazione di un appalto, identificato dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP.
+      operationId: migraProcedura
+      requestBody:
+        description: Richiesta di migrazione procedura appalto
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MigraAppaltoRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MigraAppaltoResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/verificaRup:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la verifica del RUP di una procedura SIMOG. SINCRONO
+      description: Il servizio verifica se l'utente (codiceFiscale passato o, in assenza, il codiceFiscale del RUP presente nel token) risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP.
+      operationId: verificaRup
+      parameters:
+      - description: Numero gara della procedura SIMOG da verificare
+        in: query
+        name: numeroGara
+        required: true
+        schema:
+          type: string
+          example: "1234567"
+      - description: Codice fiscale dell'utente da verificare come RUP. Se non valorizzato viene utilizzato il codice fiscale del RUP presente nel token.
+        in: query
+        name: codiceFiscale
+        required: false
+        schema:
+          type: string
+          example: "RSSMRA80A01H501U"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificaRupResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/verificaIdoneita:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la verifica dell'idoneità (perfezionamento) di una procedura SIMOG. SINCRONO
+      description: Il servizio verifica se la procedura SIMOG è perfezionata e quindi migrabile in PCP.
+      operationId: verificaIdoneita
+      parameters:
+      - description: Numero gara della procedura SIMOG da verificare
+        in: query
+        name: numeroGara
+        required: true
+        schema:
+          type: string
+          example: "1234567"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificaIdoneitaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /modifica-scheda-simog:
+    post:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la modifica di una scheda dati per un appalto da SIMOG. SINCRONO
+      description: Il servizio sostituisce la precedente Scheda in lavorazione. SINCRONO
+      operationId: idModificaSchedaSimog
+      requestBody:
+        description: Oggetto in ingresso al servizio
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ModificaSchedaSimogRequest'
+        required: true
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModificaSchedaSimogResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+            $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
 components:
@@ -3022,6 +3229,115 @@ components:
           type: array
           items:
             type: object
+    TipoAppaltoMigratoEnum:
+      description: Tipologia di sistema sorgente dell'appalto da migrare
+      type: string
+      enum:
+        - SIMOG
+        - SMARTCIG
+      example: SIMOG
+    MigraAppaltoRequest:
+      description: Richiesta di migrazione di un appalto da SIMOG o SMARTCIG
+      type: object
+      additionalProperties: false
+      required:
+        - numeroGara
+        - tipoAppalto
+      properties:
+        numeroGara:
+          description: Numero gara dell'appalto da migrare
+          type: string
+          example: "1234567"
+        tipoAppalto:
+          $ref: '#/components/schemas/TipoAppaltoMigratoEnum'
+    MigraAppaltoResponse:
+      description: Risposta del servizio di migrazione appalto
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      properties:
+        idAppalto:
+          description: Identificativo dell'appalto migrato definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    TipologicaSchemaType:
+      description: Oggetto che riporta il riferimento ad un valore di una tipologica
+      type: object
+      additionalProperties: false
+      properties:
+        idTipologica:
+          description: Identificativo della tipologica
+          type: string
+        codice:
+          description: Codice del valore della tipologica
+          type: string
+        dettaglio:
+          description: Descrizione di dettaglio del valore della tipologica
+          type: string
+    ModificaSchedaSimogRequest:
+      description: >-
+        Oggetto in ingresso al servizio di modifica scheda SIMOG. Estende DatiSchedaRequest
+        aggiungendo la motivazione della modifica.
+      allOf: # estende lo schema dati di DatiSchedaRequest
+        - $ref: '#/components/schemas/DatiSchedaRequest'
+      type: object
+      required:
+        - motivazioneModifica
+      properties:
+        motivazioneModifica:
+          description: >-
+            Motivazione della modifica della scheda. Fa riferimento alla tipologica
+            "motivazioneModifica_SIMOG" (1 = Errore materiale, 2 = Rettifica documentazione di gara).
+          allOf:
+            - $ref: '#/components/schemas/TipologicaSchemaType'
+      additionalProperties: false
+    ModificaSchedaSimogResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      required:
+        - idScheda
+      properties:
+        idScheda:
+          description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      additionalProperties: false
+    VerificaRupResponse:
+      description: Risposta del servizio di verifica del RUP di una procedura SIMOG
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      properties:
+        numeroGara:
+          description: Numero gara della procedura SIMOG verificata
+          type: string
+          example: "1234567"
+        codiceFiscale:
+          description: Codice fiscale dell'utente verificato come RUP della procedura
+          type: string
+          example: "RSSMRA80A01H501U"
+        rupAutorizzato:
+          description: Indica se l'utente risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP
+          type: boolean
+      additionalProperties: false
+    VerificaIdoneitaResponse:
+      description: Risposta del servizio di verifica dell'idoneità (perfezionamento) di una procedura SIMOG
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      properties:
+        numeroGara:
+          description: Numero gara della procedura SIMOG verificata
+          type: string
+          example: "1234567"
+        proceduraPerfezionata:
+          description: Indica se la procedura SIMOG è perfezionata e quindi migrabile in PCP
+          type: boolean
+      additionalProperties: false
   securitySchemes:
     apiKeyAuth:
       type: apiKey
