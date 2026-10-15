@@ -46,12 +46,14 @@ satisfies (count(aggiudicazione.numeroOfferteAmmesse) &gt; aggiudicazione.offert
         <outputEntry id="LiteralExpression_0nf57qi">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG47\"}"</text>
         </outputEntry>
-      </rule>      
+      </rule>
       <rule id="DecisionRule_15fz0wa">
         <description>REG68: il campo giustificazione aggiudicazione diretta non va indicato se il tipo di procedura non è Negoziata senza previa indizione di gara</description>
         <inputEntry id="UnaryTests_0mc6li2">
           <text>appalto.datiBaseProcedura != null and appalto.datiBaseProcedura.tipoProcedura != null and (appalto.datiBaseProcedura.tipoProcedura.codice != "neg-wo-call" and appalto.datiBaseProcedura.tipoProcedura.codice != "" ) and (appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta != null and count(appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta)&gt;0 and (some giustificazione in appalto.datiBaseProcedura.giustificazioniAggiudicazioneDiretta satisfies giustificazione.codice != ""))</text>
         </inputEntry>
+        <inputEntry id="UnaryTests_03op2bz">
+          <text></text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1hkncny">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG68\"}"</text>
