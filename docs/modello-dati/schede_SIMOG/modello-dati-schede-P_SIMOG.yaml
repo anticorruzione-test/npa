@@ -40,7 +40,7 @@ components:
     LottoP_SIMOGType:   
       type: object
       additionalProperties: false
-      required: [lotIdentifier,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione]
+      required: [lotIdentifier,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione,datiBaseTerminiInvio]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
@@ -127,7 +127,7 @@ components:
         datiBaseContratto:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseContrattoType'       
         datiBaseTerminiInvio:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiTerminiInvioType'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiTerminiInvioObbligatorioType'
         datiBaseCPV:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseCPV_SIMOGType' 
         datiBaseDocumenti:
