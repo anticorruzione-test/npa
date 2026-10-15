@@ -1899,6 +1899,79 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
+  /appalti/verificaRup:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la verifica del RUP di una procedura SIMOG. SINCRONO
+      description: Il servizio verifica se l'utente (codiceFiscale passato o, in assenza, il codiceFiscale del RUP presente nel token) risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP.
+      operationId: verificaRup
+      parameters:
+      - description: Numero gara della procedura SIMOG da verificare
+        in: query
+        name: numeroGara
+        required: true
+        schema:
+          type: string
+          example: "1234567"
+      - description: Codice fiscale dell'utente da verificare come RUP. Se non valorizzato viene utilizzato il codice fiscale del RUP presente nel token.
+        in: query
+        name: codiceFiscale
+        required: false
+        schema:
+          type: string
+          example: "RSSMRA80A01H501U"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificaRupResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
+  /appalti/verificaIdoneita:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la verifica dell'idoneità (perfezionamento) di una procedura SIMOG. SINCRONO
+      description: Il servizio verifica se la procedura SIMOG è perfezionata e quindi migrabile in PCP.
+      operationId: verificaIdoneita
+      parameters:
+      - description: Numero gara della procedura SIMOG da verificare
+        in: query
+        name: numeroGara
+        required: true
+        schema:
+          type: string
+          example: "1234567"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerificaIdoneitaResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
   /modifica-scheda-simog:
     post:
       tags:
@@ -1911,7 +1984,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/DatiSchedaRequest'
+              $ref: '#/components/schemas/ModificaSchedaSimogRequest'
         required: true
       responses:
         '200':
@@ -1920,7 +1993,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ModificaSchedaResponse'
+                $ref: '#/components/schemas/ModificaSchedaSimogResponse'
         '400':
             $ref: '#/components/responses/400BadRequest'
         '404':
@@ -2882,6 +2955,83 @@ components:
           type: string
           format: uuid
           example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+    TipologicaSchemaType:
+      description: Oggetto che riporta il riferimento ad un valore di una tipologica
+      type: object
+      additionalProperties: false
+      properties:
+        idTipologica:
+          description: Identificativo della tipologica
+          type: string
+        codice:
+          description: Codice del valore della tipologica
+          type: string
+        dettaglio:
+          description: Descrizione di dettaglio del valore della tipologica
+          type: string
+    ModificaSchedaSimogRequest:
+      description: >-
+        Oggetto in ingresso al servizio di modifica scheda SIMOG. Estende DatiSchedaRequest
+        aggiungendo la motivazione della modifica.
+      allOf: # estende lo schema dati di DatiSchedaRequest
+        - $ref: '#/components/schemas/DatiSchedaRequest'
+      type: object
+      required:
+        - motivazioneModifica
+      properties:
+        motivazioneModifica:
+          description: >-
+            Motivazione della modifica della scheda. Fa riferimento alla tipologica
+            "motivazioneModifica_SIMOG" (1 = Errore materiale, 2 = Rettifica documentazione di gara).
+          allOf:
+            - $ref: '#/components/schemas/TipologicaSchemaType'
+      additionalProperties: false
+    ModificaSchedaSimogResponse:
+      description: Risposta generica servizio
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      required:
+        - idScheda
+      properties:
+        idScheda:
+          description: Identificativo univoco della scheda definito da ANAC. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      additionalProperties: false
+    VerificaRupResponse:
+      description: Risposta del servizio di verifica del RUP di una procedura SIMOG
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      properties:
+        numeroGara:
+          description: Numero gara della procedura SIMOG verificata
+          type: string
+          example: "1234567"
+        codiceFiscale:
+          description: Codice fiscale dell'utente verificato come RUP della procedura
+          type: string
+          example: "RSSMRA80A01H501U"
+        rupAutorizzato:
+          description: Indica se l'utente risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP
+          type: boolean
+      additionalProperties: false
+    VerificaIdoneitaResponse:
+      description: Risposta del servizio di verifica dell'idoneità (perfezionamento) di una procedura SIMOG
+      allOf: # estende lo schema dati di BaseResponse
+        - $ref: '#/components/schemas/BaseResponse'
+      type: object
+      properties:
+        numeroGara:
+          description: Numero gara della procedura SIMOG verificata
+          type: string
+          example: "1234567"
+        proceduraPerfezionata:
+          description: Indica se la procedura SIMOG è perfezionata e quindi migrabile in PCP
+          type: boolean
+      additionalProperties: false
   securitySchemes:
     apiKeyAuth:
       type: apiKey
