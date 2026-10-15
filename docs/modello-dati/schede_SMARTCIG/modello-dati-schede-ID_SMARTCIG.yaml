@@ -11,7 +11,7 @@ components:
       additionalProperties: false
       properties:
         motivoVariazioneCUP:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariazioneCUPEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoVariazioneCUPEnum'    
         cup:
           description: Cup
           type: array
@@ -24,7 +24,7 @@ components:
       additionalProperties: false
       properties:
         motivoRichiestaModifica:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModifica_SMARTCIGEnum'    
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoRichiestaModifica_SMARTCIGEnum'    
         comunicazioneCUP:
             $ref: '#/components/schemas/ComunicazioneCUPType'
         importo:
@@ -32,7 +32,7 @@ components:
           type: number
           format: double
         oggettoContratto:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoContrattoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/OggettoContrattoEnum'
     AnacFormID_SMARTCIGType:
       type: object
       required: [cig,comunicazione]

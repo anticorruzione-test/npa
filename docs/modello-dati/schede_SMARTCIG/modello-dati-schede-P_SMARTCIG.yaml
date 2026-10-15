@@ -15,13 +15,13 @@ components:
           minLength: 8
           maxLength: 64
         motivazioneCIG:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
         eaggCategorie:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
         datiBase:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'                  
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseAppaltoType'                  
     LottoP_SMARTCIGType:   
       type: object
       additionalProperties: false
@@ -33,7 +33,7 @@ components:
         eaggCategorie:
           type: array
           items:
-            $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
+            $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
         sceltaContraente:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/SceltaContraente_SIMOGEnum'
         cupLotto:
@@ -45,7 +45,7 @@ components:
     AnacFormP_SMARTCIGType:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/AnacFormBaseType'      
       type: object
       additionalProperties: false
       required: [appalto,lotti]
