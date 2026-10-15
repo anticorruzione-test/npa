@@ -7,7 +7,7 @@ components:
     AppaltoP_SIMOGType:   
       type: object
       additionalProperties: false
-      required: [codiceAppalto,motivoUrgenza,datiBase,settore]
+      required: [codiceAppalto,datiBase,settore]
       properties: 
         codiceAppalto:
           description: Identificativo univoco dell'appalto definito dalla Stazione Appaltante
@@ -18,8 +18,8 @@ components:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Settore_SIMOGEnum' 
         modiRealizzazione: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiRealizzazione_SIMOGEnum'
-        modiIndizione: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModiIndizione_SIMOGEnum'
+        modoIndizione: 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModoIndizione_SIMOGEnum'
         modalitaIndizioneAllegatoIx: 
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ModalitaIndizioneAllegatoIx_SIMOGEnum'
         cigAccordoQuadroConvenzione:
