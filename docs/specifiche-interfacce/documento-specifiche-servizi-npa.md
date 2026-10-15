@@ -155,9 +155,10 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**pianificazioneAppalto**| conferma-piano  | RP |
   |**Modulo NPA**|**pianificazioneAppalto**| verifica-piano  | RP |
   |**Modulo NPA**|**gestioneUtenti**| presa-carico  | RP |
-  |**Modulo NPA**|**gestioneUtenti**| ricerca-soggetto  | RP, DRP1, DRP2, DRP3 |
+  |**Modulo NPA**|**gestioneUtenti**| ricerca-soggetti  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**gestioneUtenti**| aggiungi-soggetto  | RP |
   |**Modulo NPA**|**gestioneUtenti**| elimina-soggetto  | RP |
+  |**Modulo NPA**|**gestioneUtenti**| recupera-profilo  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**comunicaAppalto**| crea-appalto  | RP |
   |**Modulo NPA**|**comunicaAppalto**| modifica-appalto  | RP, DRP1 |
   |**Modulo NPA**|**comunicaAppalto**| cancella-appalto  | RP, DRP1 |
@@ -172,8 +173,8 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**pubblicaAvviso**| cancella-avviso  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| ricerca-avviso  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| consulta-avviso  | RP, DRP1 |
+  |**Modulo NPA**|**pubblicaAvviso**| consulta-avviso-oscurato  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| stato-avviso  | RP, DRP1 |
-  |**Modulo NPA**|**pubblicaAvviso**| recupera-cig  | RP, DRP1 |
   |**Modulo NPA**|**pubblicaAvviso**| consulta-rendering-avviso  | RP, DRP1 |
   |**Modulo NPA**|**comunicaPostPubblicazione**| crea-scheda  | RP, DRP2, DRP3 |
   |**Modulo NPA**|**comunicaPostPubblicazione**| modifica-scheda  | RP, DRP2, DRP3 |
@@ -200,11 +201,6 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo FVA**|**FVA**| recupera-documento-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-fascicolo-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP1, DRP2, DRP3  |
-  |**Modulo NPA**|**Servizi comuni**| stato-appalto  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**Servizi comuni**| esito-operazione  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**Servizi comuni**| recupera-elenco-tipologiche  | * |
-  |**Modulo NPA**|**Servizi comuni**| recupera-tipologica  | * |
-  |**Modulo NPA**|**Servizi comuni**| recupera-valore-tipologica  | * |
 
 # 5	Contesto gestioneUtenti
 
@@ -302,6 +298,7 @@ Sarà possibile invocare anche i seguenti servizi facoltativi:
 -	recupera-cig: servizio per il recupero dei CIG generati e assegnati ai lotti dell’Appalto. Il servizio è il medesimo descritto nel contesto di comunicaAppalto;
 -	ricerca-avviso: servizio per la ricerca degli avvisi di un appalto in base ai criteri di input. 
 -	consulta-avviso: servizio per la consultazione delle informazioni di dettaglio di un Avviso 
+-	consulta-avviso-oscurato: servizio per la consultazione delle informazioni di dettaglio di un Avviso oscurato.
 -	consulta-rendering-avviso: servizio per consentire la consultazione in formato pdf dell’Avviso.
 
 ## 8.1	Flusso di Interoperabilità
