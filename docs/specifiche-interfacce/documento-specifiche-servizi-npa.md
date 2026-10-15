@@ -446,9 +446,11 @@ In questo contesto rientrano i servizi richiamabili dalla SA per la consultazion
 **Descrizione dei servizi**
 
 I servizi che possono essere invocati in questo contesto sono i seguenti:
-- consulta-appalti-simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
-- consulta-appalti-smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
-- migra-appalto: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP;
+- appalti/simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
+- appalti/smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
+- appalti/migraProcedura: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP;
+- appalti/verificaRup: servizio che verifica se l’utente risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP;
+- appalti/verificaIdoneita: servizio che verifica se la procedura SIMOG è perfezionata e quindi migrabile in PCP;
 - modifica-scheda-simog: servizio che consente la modifica di una scheda dati per un appalto migrato da SIMOG.
 
 # 15	Servizi comuni
