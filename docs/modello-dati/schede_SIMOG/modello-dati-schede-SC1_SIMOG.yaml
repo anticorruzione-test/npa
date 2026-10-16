@@ -54,7 +54,7 @@ components:
         datiContratto:
           $ref: '#/components/schemas/DatiContrattoType'
     SchedaSC1_SIMOGType:
-      description: Sottoscrizione del contratto 
+      description: Sottoscrizione del contratto SIMOG
       type: object
       required: [anacForm]
       additionalProperties: false

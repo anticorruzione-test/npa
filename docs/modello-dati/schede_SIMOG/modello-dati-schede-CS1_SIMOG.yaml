@@ -34,7 +34,7 @@ components:
         subappalto:
           $ref: '#/components/schemas/SubappaltoType'
     SchedaCS1_SIMOGType:
-      description: Conclusione subappalto. Articolo 119 decreto legislativo 36/2023.
+      description: Conclusione subappalto SIMOG. Articolo 119 decreto legislativo 36/2023.
       type: object
       required: [anacForm]
       additionalProperties: false

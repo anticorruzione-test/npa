@@ -42,7 +42,7 @@ components:
         sospensione:
           $ref: '#/components/schemas/SospensioneType'           
     SchedaRI1_SIMOGType:
-      description: Scheda di ripresa prestazioni. Articolo 121 decreto legislativo 36/2023
+      description: Scheda di ripresa prestazioni SIMOG. Articolo 121 decreto legislativo 36/2023
       type: object
       required: [anacForm]
       additionalProperties: false

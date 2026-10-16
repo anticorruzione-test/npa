@@ -28,7 +28,7 @@ components:
           items:        
             $ref: '#/components/schemas/ElencoIncarichiType'  
     SchedaS3_SIMOGType:
-      description: Elenco dei soggetti incaricati della progettazione.
+      description: Elenco dei soggetti incaricati della progettazione SIMOG.
       type: object
       required: [anacForm]
       additionalProperties: false

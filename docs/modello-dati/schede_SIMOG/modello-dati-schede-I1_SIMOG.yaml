@@ -61,7 +61,7 @@ components:
         datiInizio:
           $ref: '#/components/schemas/DatiInizioType'
     SchedaI1_SIMOGType:
-      description: Avvio dell'esecuzione
+      description: Avvio dell'esecuzione SIMOG
       type: object
       required: [anacForm]
       additionalProperties: false

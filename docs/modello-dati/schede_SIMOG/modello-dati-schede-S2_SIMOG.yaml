@@ -19,7 +19,7 @@ components:
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Partecipante_SIMOGType'                      
     SchedaS2_SIMOGType:
-      description: "Elenco dei soggetti che hanno presentato offerta."
+      description: "Elenco dei soggetti che hanno presentato offerta SIMOG."
       type: object
       additionalProperties: false
       required: [anacForm]

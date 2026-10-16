@@ -1318,4 +1318,176 @@
     "it": "Procedure negoziate senza bando o adesioni ad AQ soprasoglia.",
     "en": "Procedure negoziate senza bando o adesioni ad AQ soprasoglia."
   }
-}]
+},
+{
+    "codice":"ANN_SIMOG",
+    "descrizione": {
+		"it": "Scheda di annullamento SIMOG.",
+		"en": "Scheda di annullamento SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"A_SIMOG",
+    "descrizione": {
+		"it": "Scheda relativa all'aggiudicazione SIMOG.",
+		"en": "Scheda relativa all'aggiudicazione SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CL1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di collaudo SIMOG.",
+		"en": "Scheda di collaudo SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CO1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di conclusione SIMOG.",
+		"en": "Scheda di conclusione SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"CS1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di conclusione subappalto SIMOG.",
+		"en": "Scheda di conclusione subappalto SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"I1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di inizio prestazione SIMOG",
+		"en": "Scheda di inizio prestazione SIMOG"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"M_SIMOG",
+    "descrizione": {
+		"it": "Scheda di modifica contrattuale SIMOG.",
+		"en": "Scheda di modifica contrattuale SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"P_SIMOG",
+    "descrizione": {
+		"it": "Scheda di bando di gara SIMOG.",
+		"en": "Scheda di bando di gara SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"RI1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di ripresa prestazione SIMOG.",
+		"en": "Scheda di ripresa prestazione SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"RSU1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di richiesta di subappalto SIMOG.",
+		"en": "Scheda di richiesta di subappalto SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"S2_SIMOG",
+    "descrizione": {
+		"it": "Elenco dei soggetti che hanno presentato offerta SIMOG.",
+		"en": "Elenco dei soggetti che hanno presentato offerta SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"S3_SIMOG",
+    "descrizione": {
+		"it": "Scheda relativa agli incarichi tecnici e alle prestazioni progettuali SIMOG.",
+		"en": "Scheda relativa agli incarichi tecnici e alle prestazioni progettuali SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"S4_SIMOG",
+    "descrizione": {
+		"it": "Scheda relativa alla Variazione Aggiudicatari per le procedure SIMOG",
+		"en": "Scheda relativa alla Variazione Aggiudicatari per le procedure SIMOG"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SA1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di SAL per le procedure SIMOG.",
+		"en": "Scheda di SAL per le procedure SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SC1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di sottoscrizione del contratto SIMOG",
+		"en": "Scheda di sottoscrizione del contratto SIMOG"
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"SO1_SIMOG",
+    "descrizione": {
+		"it": "Scheda di sospensione SIMOG.",
+		"en": "Scheda di sospensione SIMOG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ANN_SMARTCIG",
+    "descrizione": {
+		"it": "Scheda di annullamento SMARTCIG.",
+		"en": "Scheda di annullamento SMARTCIG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"ID_SMARTCIG",
+    "descrizione": {
+		"it": "Scheda  per l'integrazione dei dati delle procedure SMARTCIG.",
+		"en": "Scheda  per l'integrazione dei dati delle procedure SMARTCIG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"P_SMARTCIG",
+    "descrizione": {
+		"it": "Scheda di bando di gara SMARTCIG.",
+		"en": "Scheda di bando di gara SMARTCIG."
+		},
+    "dataInizio":null,
+    "dataFine":null
+}
+]

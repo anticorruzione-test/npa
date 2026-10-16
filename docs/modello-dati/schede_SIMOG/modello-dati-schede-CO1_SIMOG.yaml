@@ -67,7 +67,7 @@ components:
         conclusione:
           $ref: '#/components/schemas/ConclusioneType'
     SchedaCO1_SIMOGType:
-      description: Scheda di conclusione
+      description: Scheda di conclusione SIMOG
       type: object
       required: [anacForm]
       additionalProperties: false

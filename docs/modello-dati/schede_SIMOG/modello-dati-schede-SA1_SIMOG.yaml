@@ -65,7 +65,7 @@ components:
         avanzamento:
           $ref: '#/components/schemas/AvanzamentoType'          
     SchedaSA1_SIMOGType:
-      description: Stato Avanzamento lavori per qualunque procedura
+      description: Stato Avanzamento lavori per qualunque procedura SIMOG
       type: object
       required: [anacForm]
       additionalProperties: false

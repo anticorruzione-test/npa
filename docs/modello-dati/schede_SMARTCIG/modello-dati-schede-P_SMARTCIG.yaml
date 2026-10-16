@@ -58,7 +58,7 @@ components:
           items:
             $ref: '#/components/schemas/LottoP_SMARTCIGType'          
     SchedaP_SMARTCIGType:
-      description: Bando di gara — SmartCIG.
+      description: Bando di gara — SMARTCIG.
       type: object
       required: [anacForm]
       additionalProperties: false

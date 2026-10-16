@@ -56,7 +56,7 @@ components:
          $ref: '#/components/schemas/ModificaContrattualeType' 
           
     SchedaM_SIMOGType:
-      description: Modifica contrattuale
+      description: Modifica contrattuale SIMOG
       type: object
       required: [anacForm]
       additionalProperties: false

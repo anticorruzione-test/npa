@@ -44,7 +44,7 @@ components:
         comunicazione:
             $ref: '#/components/schemas/ComunicazioneIDType'    
     SchedaID_SMARTCIGType:
-      description: Scheda per l'integrazione dei dati delle procedure SmartCIG.
+      description: Scheda per l'integrazione dei dati delle procedure SMARTCIG.
       type: object
       required: [anacForm]
       additionalProperties: false
