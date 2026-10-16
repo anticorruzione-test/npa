@@ -2070,6 +2070,39 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
       security:
         - apiKeyAuth: []
+  /appalti/migrazione/{numeroGara}:
+    get:
+      tags:
+      - gestioneAppalti
+      summary: API Rest per la consultazione dello stato di migrazione di una procedura SIMOG/SmartCIG. SINCRONO
+      description: Il servizio ritorna lo stato corrente della migrazione di una procedura SIMOG/SmartCIG verso la PCP, identificata per numeroGara.
+      operationId: getMigrazione
+      parameters:
+      - description: Numero gara della procedura di cui consultare lo stato di migrazione
+        in: path
+        name: numeroGara
+        required: true
+        schema:
+          type: string
+          example: "1234567"
+      responses:
+        '200':
+          description: Operazione terminato con successo
+          headers: *ratelimit_headers
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MigrazioneResponse'
+        '400':
+            $ref: '#/components/responses/400BadRequest'
+        '404':
+            $ref: '#/components/responses/404NotFound'
+        '429':
+            $ref: '#/components/responses/429TooManyRequests'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+      security:
+        - apiKeyAuth: []
   /appalti/verificaRup:
     get:
       tags:
@@ -3338,6 +3371,85 @@ components:
           description: Indica se la procedura SIMOG è perfezionata e quindi migrabile in PCP
           type: boolean
       additionalProperties: false
+    MigrazioneResponse:
+      description: Risposta del servizio di consultazione dello stato di migrazione di una procedura SIMOG/SmartCIG
+      type: object
+      additionalProperties: false
+      properties:
+        numeroGara:
+          description: Numero gara della procedura in migrazione
+          type: string
+          example: "1234567"
+        isSimog:
+          description: Indica se la procedura proviene dal sistema SIMOG (true) o SmartCIG (false)
+          type: boolean
+        idAppalto:
+          description: Identificativo dell'appalto creato in PCP. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        stato:
+          description: Stato corrente della migrazione
+          type: string
+        schede:
+          description: Elenco delle schede associate alla migrazione
+          type: array
+          items:
+            $ref: '#/components/schemas/SchedaMigrazioneResponse'
+        ultimoErrore:
+          description: Descrizione dell'ultimo errore riscontrato durante la migrazione
+          type: string
+        dataInizio:
+          description: Data di inizio della migrazione (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+        dataFine:
+          description: Data di fine della migrazione (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+    SchedaMigrazioneResponse:
+      description: Dettaglio dello stato di migrazione di una singola scheda
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          description: Identificativo del record di migrazione della scheda
+          type: string
+        idSchedaPcp:
+          description: Identificativo della scheda creata in PCP. (A UUID specified by RFC4122)
+          type: string
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        fatta:
+          description: Indica se la migrazione della scheda è stata completata
+          type: boolean
+        esito:
+          description: Esito della migrazione della scheda
+          type: string
+        tentativi:
+          description: Numero di tentativi di migrazione effettuati
+          type: integer
+          format: int32
+        ultimoErrore:
+          description: Descrizione dell'ultimo errore riscontrato durante la migrazione della scheda
+          type: string
+        dataCreazione:
+          description: Data di creazione del record di migrazione della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+        dataConferma:
+          description: Data di conferma della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
+        dataEsitoPositivo:
+          description: Data di esito positivo della migrazione della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          type: string
+          format: date-time
+          example: '2022-01-23T12:02:05Z'
   securitySchemes:
     apiKeyAuth:
       type: apiKey

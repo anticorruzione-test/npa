@@ -193,6 +193,7 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**gestioneAppalti**| appalti/simog  | RP |
   |**Modulo NPA**|**gestioneAppalti**| appalti/smartcig  | RP |
   |**Modulo NPA**|**gestioneAppalti**| appalti/migraProcedura  | RP |
+  |**Modulo NPA**|**gestioneAppalti**| appalti/migrazione/{numeroGara}  | RP |
   |**Modulo NPA**|**gestioneAppalti**| appalti/verificaRup  | RP |
   |**Modulo NPA**|**gestioneAppalti**| appalti/verificaIdoneita  | RP |
   |**Modulo NPA**|**gestioneAppalti**| modifica-scheda-simog  | RP |
@@ -449,6 +450,7 @@ I servizi che possono essere invocati in questo contesto sono i seguenti:
 - appalti/simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
 - appalti/smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
 - appalti/migraProcedura: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP;
+- appalti/migrazione/{numeroGara}: servizio che consente la consultazione dello stato di migrazione di una procedura SIMOG/SmartCIG verso la PCP, identificata per numero gara;
 - appalti/verificaRup: servizio che verifica se l’utente risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP;
 - appalti/verificaIdoneita: servizio che verifica se la procedura SIMOG è perfezionata e quindi migrabile in PCP;
 - modifica-scheda-simog: servizio che consente la modifica di una scheda dati per un appalto migrato da SIMOG.
