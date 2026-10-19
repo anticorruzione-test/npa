@@ -141,12 +141,7 @@ L'esito di ogni controllo ricade in una di tre categorie:
 Quando un avviso viene oscurato, il dettaglio riportato in PCP distingue i campi `invalidFields` (KO, da correggere obbligatoriamente) da `nonConformeFields` e `warningFields`.
 
 ### 9.2 Cosa controlla PVL su ogni campo
-Per ciascun campo soggetto a regola, PVL verifica nell'ordine:
-
-1. **Presenza e valorizzazione** — il campo esiste e non e' vuoto.
-2. **Formattazione URL** — se il campo contiene un link, PVL verifica che sia formattato correttamente.
-3. **Validita' della data** — se il campo e' una data, viene verificato che il formato sia corretto e, dove previsto, che la data sia futura.
-4. **Mutua esclusione** — per alcuni campi alternativi (es. `termine_invito` / `termine_ricezione`) e' sufficiente che almeno uno dei due sia valorizzato.
+Per ciò che riguarda i campi soggetti a controlli, questi sono attualmente disattivati e saranno progressivamente introdotti, riportandone il dettaglio in questo paragrafo stesso man mano che verranno rilasciati.
 
 ## 10. Buone pratiche operative
 - Verificare sempre il dettaglio di oscuramento prima di rettificare.
