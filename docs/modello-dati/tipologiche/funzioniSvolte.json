@@ -42,7 +42,8 @@
 		},	
     "dataInizio":"2026-10-01T00:00:00Z",
     "dataFine":null
-},{
+},
+{
     "codice":"2",
     "descrizione": {
 		"it": "Affidamento",
@@ -50,28 +51,22 @@
 		},	
     "dataInizio":"2026-10-01T00:00:00Z",
     "dataFine":null
-},{
+},
+{
     "codice":"3",
-    "descrizione": {
-		"it": "Proposta di aggiudicazione",
-		"en": "Proposta di aggiudicazione"
-		},	
-    "dataInizio":"2026-10-01T00:00:00Z",
-    "dataFine":null
-},{
-    "codice":"4",
     "descrizione": {
 		"it": "Stipula del contratto",
 		"en": "Stipula del contratto"
 		},	
     "dataInizio":"2026-10-01T00:00:00Z",
     "dataFine":null
-},{
-    "codice":"5",
+},
+{
+    "codice":"4",
     "descrizione": {
 		"it": "Esecuzione del contratto",
 		"en": "Esecuzione del contratto"
 		},	
     "dataInizio":"2026-10-01T00:00:00Z",
     "dataFine":null
-},]
+}]
