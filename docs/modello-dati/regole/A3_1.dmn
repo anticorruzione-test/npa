@@ -28,7 +28,7 @@
         </inputEntry>
         <inputEntry id="UnaryTests_1extrxn">
           <text>some aggiudicazione in aggiudicazioni
-satisfies (count(aggiudicazione.numeroOfferteAmmesse) &gt; aggiudicazione.offertePresentate)</text>
+satisfies (aggiudicazione.numeroOfferteAmmesse &gt; count(aggiudicazione.offertePresentate))</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_01kmogs">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG47\"}"</text>
