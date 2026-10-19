@@ -1639,7 +1639,7 @@ aggiunta regola REG5_1
   
 ### Tipologiche
 * errori.json:
-	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143,REG144,REG145
+	* aggiunti gli errori REG132,REG133,REG134,REG135,REG136,REG137,REG138,REG139,REG140,REG141,REG142,REG143,REG144,REG145,ERR153,ERR154,ERR155,ERR156,ERR157,ERR158,ERR159
  	* modificata la descrizione dell'errore REG81
   	* rinominato il campo oraScadenzaPresentazioneOfferte in scadenzaPresentazioneOfferte nei messaggi
 * motivoEsclusioneTracciabilita.json: rimossa perché non utilizzata
@@ -1737,32 +1737,35 @@ aggiunta regola REG5_1
 * ticket 103946
   * Modificata la colonna R "schedaSuccessiva": 
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
-
-<summary><h1>Note di rilascio del </h1></summary>
-
-## Schede  
-* ticket 94858 e 94864
-  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
-  * modello-dati-schede-dati-comuni.yaml:
-  	* aggiunto l'oggetto MotiviMancataStipulaEnum	
-
-## Tipologiche  
-* ticket 94858 e 94864
-  * Aggiunte la tipologica causaMancataStipula.json
- 
-## Orchestratore  
-* ticket 94858 e 94864
-	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
- 	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
-  	* Aggiunte le colonne ....
-	
-<summary><h1>Note di rilascio del 08/06/2026</h1></summary>
-
-### Orchestratore
-* ticket 105169:
-	* modificata la riga della scheda ID:
-		* colonna schedaSuccessiva: aggiunta la scheda S1_2
 </details>
+
+<summary><h1>Note di rilascio del 25/05/2026 (SDK 1.13.3)</h1></summary>
+
+**NOTA**
+* Pubblicazione contenuti su GitHub: 25/05/2026
+* Rilascio in Qualificazione: Come da Roadmap
+* Rilascio in Esercizio: Come da Roadmap
+
+  **la nota di rilascio potrà essere integrata successivamente**
+
+### Tipologiche
+* tipoProcedura.json: aggiornate le descrizioni delle voci: exp-int-rail e comp-tend
+* giustificazioniAggiudicazioneDiretta.json:
+	* aggiornate le descrizioni delle voci below-thres-sme,char-imp,exc-circ-rail,int-oper,sim-infra,tra-ser
+ 	* aggiunta voce non-dir
+* codNUTS.json:
+	* modificate le voci BE31,HU333,ITF65,NO060,NO071,PT11B
+ 	* eliminate le voci DEG04,DEG0B,DEG0F,DEG0H,DEG0N,DEG0P,FI193,FI194,FI195,FI197,FI1C3,FI1C4,FI1D1,FI1D2,FI1D3,LV003,LV006,LV007,LV008,NL111,NL113,NL124,NL125,NL31,NL310,NL324,NL329,NL33,NL332,NL333,NL337,NL33A,NL33B,NL33C,NO074,NO082,NO091,PT16,PT16B,PT16D,PT16E,PT16F,PT16G,PT16H,PT16I,PT16J,PT17,PT170,PT18,PT181,PT184,PT185,PT186,PT187,UK,UKC,UKC1,UKC11,UKC12,UKC13,UKC14,UKC2,UKC2,UKC21,UKC22,UKC23,UKD,UKD1,UKD11,UKD12,UKD3,UKD33,UKD34,UKD35,UKD36,UKD37,UKD4,UKD41,UKD42,UKD44,UKD45,UKD46,UKD47,UKD6,UKD61,UKD62,UKD63,UKD7,UKD71,UKD72,UKD73,UKD74,UKE,UKE1,UKE11,UKE12,UKE13,UKE2,UKE21,UKE22,UKE3,UKE31,UKE32,UKE4,UKE41,UKE42,UKE44,UKE45,UKF,UKF1,UKF11,UKF12,UKF13,UKF14,UKF15,UKF16,UKF2,UKF21,UKF22,UKF24,UKF25,UKF3,UKF30,UKG,UKG1,UKG11,UKG12,UKG13,UKG2,UKG21,UKG22,UKG23,UKG24,UKG3,UKG31,UKG32,UKG33,UKG36,UKG37,UKG38,UKG39,UKH,UKH1,UKH11,UKH12,UKH14,UKH15,UKH16,UKH17,UKH2,UKH21,UKH23,UKH24,UKH25,UKH3,UKH31,UKH32,UKH34,UKH35,UKH36,UKH37,UKI,UKI3,UKI31,UKI32,UKI33,UKI34,UKI4,UKI41,UKI42,UKI43,UKI44,UKI45,UKI5,UKI51,UKI52,UKI53,UKI54,UKI6,UKI61,UKI62,UKI63,UKI7,UKI71,UKI72,UKI73,UKI74,UKI75,UKJ,UKJ1,UKJ11,UKJ12,UKJ13,UKJ14,UKJ2,UKJ21,UKJ22,UKJ25,UKJ26,UKJ27,UKJ28,UKJ3,UKJ31,UKJ32,UKJ34,UKJ35,UKJ36,UKJ37,UKJ4,UKJ41,UKJ43,UKJ44,UKJ45,UKJ46,UKK,UKK1,UKK11,UKK12,UKK13,UKK14,UKK15,UKK2,UKK23,UKK24,UKK25,UKK3,UKK30,UKK4,UKK41,UKK42,UKK43,UKL,UKL1,UKL11,UKL12,UKL13,UKL14,UKL15,UKL16,UKL17,UKL18,UKL2,UKL21,UKL22,UKL23,UKL24,UKM,UKM5,UKM50,UKM6,UKM61,UKM62,UKM63,UKM64,UKM65,UKM66,UKM7,UKM71,UKM72,UKM73,UKM75,UKM76,UKM77,UKM78,UKM8,UKM81,UKM82,UKM83,UKM84,UKM9,UKM91,UKM92,UKM93,UKM94,UKM95,UKN,UKN0,UKN06,UKN07,UKN08,UKN09,UKN0A,UKN0B,UKN0C,UKN0D,UKN0E,UKN0F,UKN0G,UKZ,UKZZ,UKZZZ
+	* aggiunte le voci DEG0Q,DEG0S,DEG0T,DEG0U,DEG0V,FI199,FI19A,FI19B,FI1C6,FI1C7,FI1DA,FI1DB,FI1DC,LV00A,LV00B,LV00C,NL114,NL115,NL127,NL128,NL32A,NL32B,NL35,NL350,NL36,NL361,NL362,NL363,NL364,NL365,NL366,NO072,NO073,NO083,NO084,NO085,NO093,NO094,PT19,PT191,PT192,PT193,PT194,PT195,PT196,PT1A,PT1A0,PT1B,PT1B0,PT1C,PT1C1,PT1C2,PT1C3,PT1C4,PT1D,PT1D1,PT1D2,PT1D3,XK,XK0,XK00,XK001,XK002,XK003,XK004,XK005,XK006,XK007,XKZ,XKZZ,XKZZZ
+  
+### Regole
+* PL1_9.dmn: rimosse le regole REG97 e REG105
+* A1_32.dmn, A1_35.dmn: aggiunta la regola REG68
+* P2_14.dmn,P2_19.dmn,A2_32.dmn, A2_35.dmn: aggiunta la regola REG136
+* P2_10.dmn,P2_11.dmn,P2_12.dmn,P2_13.dmn: eliminata la voce oth-single da REG136
+
+## Documentazione
+* Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.13.3).
 
 <summary><h1>Note di rilascio del 16/07/2026</h1></summary>
 
@@ -1789,34 +1792,13 @@ aggiunta regola REG5_1
 * roadmap.md:
   * aggiunta voce di roadmap per il rilascio/aggiornamento dei documenti enti certificanti 00004, 00005, 00006, 00014 e 00045
 
-<summary><h1>Note di rilascio del 29/07/2026</h1></summary>
+<summary><h1>Note di rilascio del 08/06/2026</h1></summary>
 
-## PdL DAT_PCP_07 - Centralizzazione del formato dei campi temporali
-
-### Modello Dati
-* modello-dati-tipologiche.yaml:
-  * creati i nuovi oggetti DataOraType, DataType e OraType: costituiscono l'unica sorgente di definizione del formato dei valori temporali scambiati con la PCP e sono referenziati da tutti i livelli (specifiche dei servizi, modello dati e yaml delle schede). Il formato ISO 8601 as profiled by RFC 3339 e vincolato sia con format sia con pattern, con offset dal fuso orario UTC in forma esplicita obbligatorio (es. 2026-07-15T14:54:28+02:00). Non sono piu ammessi l'indicatore di zona Z, la frazione di secondo e l'omissione dell'offset
-  * modificato l'oggetto TipologicaSchemaEstesoType: i campi dataInizio e dataFine referenziano DataOraType
-  * corretto il refuso nel link alla tipologica tipoDocumento.json
-* modello-dati-npa.yaml:
-  * modificati i 23 campi temporali degli oggetti SchedaType, SchedaPostPubblicazioneType, SoggettoType, AppaltoBaseType, AvvisoCommonType, AvvisoPVLOscuratoType, DatiPubblicazioneEUType, DatiPubblicazioneITType, StatoAppaltoType, StatoLottoType, StatoAvvisoType, EsitoOperazioneType: rimossa la dichiarazione inline di type/format/example, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-  * uniformata la descrizione dei campi temporali
-
-### Schede
-* modello-dati-schede-dati-comuni.yaml:
-  * modificati i 16 campi temporali degli oggetti ModificaContrattualeType, ModificaContrattuale_40Type, PrestazioneType, DatiBaseAggiudicazioneAppaltoType, DatiTerminiInvioType, DatiBaseTerminiInvioSoloScadenzaType, DatiBaseTerminiInvioSoloOraType, DatiBaseModificaContrattualeType, DatiBaseComunicazioneType, DatiBaseDurataType, DatiBaseDurataSDAType, DatiBaseDurataCSDAType: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-* modello-dati-schede-A3.3.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-CBI.yaml, modello-dati-schede-CL1.yaml, modello-dati-schede-CM3.yaml, modello-dati-schede-CO1.yaml, modello-dati-schede-CO2.yaml, modello-dati-schede-COC.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-I1.yaml, modello-dati-schede-IR1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-S1_2.yaml, modello-dati-schede-S2.yaml, modello-dati-schede-S2R.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-SC1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml:
-  * modificati i 47 campi temporali dichiarati localmente: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-
-
-### Specifiche di interfaccia
-* specifiche-servizi-appalto.yaml:
-  * creata la sezione components.parameters con i 10 parametri riusabili di tipo temporale DataCreazioneDa, DataCreazioneA, DataCreazioneAvvisoDa, DataCreazioneAvvisoA, DataInizio, DataFine, DataInizioDa, DataInizioA, DataFineDa, DataFineA, tutti riferiti a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-  * rimosse le 16 dichiarazioni inline duplicate dei parametri temporali delle operazioni idPianoRicerca, idAppaltoRicerca, idAvvisoRicerca, idSchedaRicerca, idRecuperaTipologica e idIncaricatoRicerca, sostituite dal riferimento ai parametri riusabili
-  * modificati gli oggetti SoggettoRequest ed EliminaSoggettoRequest: i campi dataInizio e dataFine referenziano modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-  * corretto il refuso nella descrizione del parametro dataCreazioneA dell'operazione idAvvisoRicerca (A date-time specified by RF333)
-  * uniformato l'unico valore di esempio dei campi temporali a 2026-07-15T14:54:28+02:00 e ricondotta la sua dichiarazione dentro l'oggetto schema, secondo la forma prevista da OpenAPI 3.0.3
-  * corretto l'uso delle ancore YAML: l'ancora ratelimit_headers era dichiarata 19 volte senza alcun alias, rendendo il documento non parsabile dai lettori YAML che rifiutano le ancore duplicate. Mantenuta una sola dichiarazione e sostituite le altre 18 con l'alias *ratelimit_headers, come gia previsto in specifiche-servizi-fvoe-fva.yaml. Il contratto API resta invariato
+### Orchestratore
+* ticket 105169:
+	* modificata la riga della scheda ID:
+		* colonna schedaSuccessiva: aggiunta la scheda S1_2
+</details>
 
 <summary><h1>Note di rilascio del 06/08/2026</h1></summary>
 
