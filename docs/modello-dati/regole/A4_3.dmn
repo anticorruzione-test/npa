@@ -41,7 +41,7 @@ satisfies aggiudicazione.datiBaseAccessibilita.accessibilita.codice = "n-inc-jus
         </inputEntry>
         <inputEntry id="UnaryTests_17lu7h8">
           <text>some aggiudicazione in aggiudicazioni
-satisfies (count(aggiudicazione.numeroOfferteAmmesse) &gt; aggiudicazione.offertePresentate)</text>
+satisfies (aggiudicazione.numeroOfferteAmmesse &gt; count(aggiudicazione.offertePresentate))</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1c0dan1">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG47\"}"</text>
