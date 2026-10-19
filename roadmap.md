@@ -100,3 +100,6 @@
 ||||                                               |||
 |96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione| /<br>/<br>/<br>                               ||
 |100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL| /<br>/<br>/<br>                               ||
+||||                                               |||
+|91168<br>91175<br>91297<br>86956|Integrazione SIMOG e SmartCIG in PCP|Realizzazione delle funzionalità necessarie all’integrazione delle procedure SIMOG e SmartCIG nell’ecosistema PCP, mediante introduzione di un nuovo modello dati, adeguamento della piattaforma PCP-UI per la gestione delle procedure e predisposizione di meccanismi di importazione e migrazione del pregresso, garantendo la continuità operativa e il riutilizzo dei processi già disponibili in PCP.| /<br>/<br>/<br>                               ||
+||||                                               |||
