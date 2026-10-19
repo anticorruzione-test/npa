@@ -195,11 +195,15 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo FVA**|**FVA**| recupera-documento-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-fascicolo-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP1, DRP2, DRP3  |
+  |**Modulo NPA**|**gestioneSA**| consulta-sa  | RP |
+  |**Modulo NPA**|**gestioneSA**| modifica-sa  | RP |
+  |**Modulo NPA**|**gestioneSA**| aggiungi-sa  | RP |
+  |**Modulo NPA**|**gestioneSA**| cancella-sa  | RP |
   |**Modulo NPA**|**Servizi comuni**| stato-appalto  | RP, DRP1, DRP2, DRP3 |
   |**Modulo NPA**|**Servizi comuni**| esito-operazione  | RP, DRP1, DRP2, DRP3 |
-  |**Modulo NPA**|**Servizi comuni**| recupera-elenco-tipologiche  | * |
-  |**Modulo NPA**|**Servizi comuni**| recupera-tipologica  | * |
-  |**Modulo NPA**|**Servizi comuni**| recupera-valore-tipologica  | * |
+  |**Modulo NPA**|**codeList**| recupera-elenco-tipologiche  | * |
+  |**Modulo NPA**|**codeList**| recupera-tipologica  | * |
+  |**Modulo NPA**|**codeList**| recupera-valore-tipologica  | * |
 
 # 5	Contesto gestioneUtenti
 
@@ -405,7 +409,19 @@ Il modello dati del FVOE è descritto nel [file YAML](../modello-dati/modello-da
 ## 11.3	Tipi documento richiedibili agli enti certificanti
 La lista dei tipi documento che si possono richiedere agli enti certificanti è descritto nel [documento](documento-specifiche-enticertificanti.md)
 
-# 12	Servizi comuni
+# 12	Contesto gestioneSA
+
+In questo contesto rientrano i servizi richiamabili dalla SA per la gestione delle Stazioni Appaltanti associate ad un appalto o ad un piano.
+
+**Descrizione dei servizi**
+
+I servizi che possono essere invocati in questo contesto sono i seguenti:
+- consulta-sa: servizio che consente il recupero delle stazioni appaltanti associate ad un appalto o ad un piano;
+- modifica-sa: servizio che consente la modifica delle stazioni appaltanti associate ad un appalto o ad un piano;
+- aggiungi-sa: servizio che consente l'aggiunta di stazioni appaltanti ad un appalto o ad un piano;
+- cancella-sa: servizio che consente l'eliminazione di stazioni appaltanti da un appalto o ad un piano.
+
+# 13	Servizi comuni
 
 In questo capitolo si riportano i servizi comuni, ossia quelli che possono essere richiamati dalle Stazioni appaltanti in più contesti dell’NPA e che forniranno una risposta diversa a seconda della fase in cui vengono invocati:
 - esito-operazione: tramite questo servizio è possibile recuperare l’esito di una determinata operazione;
@@ -420,12 +436,12 @@ In questo capitolo si riportano i servizi comuni, ossia quelli che possono esser
 -	recupera-tipologica: tramite questo servizio è possibile recuperare l'elenco dei valori per una specifica tipologica.
 -	recupera-valore-tipologica: tramite questo servizio è possibile recuperare un valore puntuale per una specifica tipologica.
 
-# 13	Interfaccia servizi
+# 14	Interfaccia servizi
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
 
 I file YAML con le specifiche delle interfacce dei servizi esposti dalla NPA sono consultabili nella cartella [specifiche-interfacce](../specifiche-interfacce/)
 
-# 14	Contesto di sicurezza
+# 15	Contesto di sicurezza
 Le Linee Guida di interoperabilità PDND sono destinate ai soggetti di cui all’articolo 2, comma 2, del CAD, i quali favoriscono la conoscenza e l’utilizzo del patrimonio informativo detenuto per finalità istituzionali nonché la condivisione dei dati con i soggetti che hanno diritto di accedervi ai fini dell’attuazione dell’articolo 50 del CAD e della semplificazione degli adempimenti dei cittadini e delle imprese, in conformità alla disciplina vigente, assicurando le modalità di scambio telematico per il tramite di API così come previsto dal ModI. 
 
 In particolare, i soggetti di cui all’articolo 2, comma 2, del CAD attuano le Linee Guida al fine di condividere i dati e le informazioni da essi detenuti, assicurando:
