@@ -1824,10 +1824,12 @@ Le nuove voci della tipologica codIstat devono essere utilizzate qualora si inte
   * uniformata la descrizione dei campi temporali
 
 ### Schede
-* modello-dati-schede-dati-comuni.yaml:
+* Scheda dati comuni (modello-dati-schede-dati-comuni.yaml):
   * modificati i 16 campi temporali degli oggetti ModificaContrattualeType, ModificaContrattuale_40Type, PrestazioneType, DatiBaseAggiudicazioneAppaltoType, DatiTerminiInvioType, DatiBaseTerminiInvioSoloScadenzaType, DatiBaseTerminiInvioSoloOraType, DatiBaseModificaContrattualeType, DatiBaseComunicazioneType, DatiBaseDurataType, DatiBaseDurataSDAType, DatiBaseDurataCSDAType: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
-* modello-dati-schede-A3.3.yaml, modello-dati-schede-AC1.yaml, modello-dati-schede-AD4.yaml, modello-dati-schede-CBI.yaml, modello-dati-schede-CL1.yaml, modello-dati-schede-CM3.yaml, modello-dati-schede-CO1.yaml, modello-dati-schede-CO2.yaml, modello-dati-schede-COC.yaml, modello-dati-schede-CS1.yaml, modello-dati-schede-ES1.yaml, modello-dati-schede-I1.yaml, modello-dati-schede-IR1.yaml, modello-dati-schede-RI1.yaml, modello-dati-schede-S1_2.yaml, modello-dati-schede-S2.yaml, modello-dati-schede-S2R.yaml, modello-dati-schede-SA1.yaml, modello-dati-schede-SC1.yaml, modello-dati-schede-SO1.yaml, modello-dati-schede-SQ1.yaml:
+* Schede con campi temporali dichiarati localmente — 21 file modello-dati-schede-<COD>.yaml (COD = A3.3, AC1, AD4, CBI, CL1, CM3, CO1, CO2, COC, CS1, ES1, I1, IR1, RI1, S1_2, S2, S2R, SA1, SC1, SO1, SQ1):
   * modificati i 47 campi temporali dichiarati localmente: rimossa la dichiarazione inline di type/format, sostituita dal riferimento a modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+* Scheda C7_3 (modello-dati-schede-C7_3.yaml):
+  * centralizzato il campo dataChiusura: ora referenzia modello-dati-tipologiche.yaml#/components/schemas/DataOraType
 
 ### Specifiche di interfaccia
 * specifiche-servizi-appalto.yaml:
@@ -1836,7 +1838,14 @@ Le nuove voci della tipologica codIstat devono essere utilizzate qualora si inte
   * modificati gli oggetti SoggettoRequest ed EliminaSoggettoRequest: i campi dataInizio e dataFine referenziano modello-dati-tipologiche.yaml#/components/schemas/DataOraType
   * corretto il refuso nella descrizione del parametro dataCreazioneA dell'operazione idAvvisoRicerca (A date-time specified by RF333)
   * uniformato l'unico valore di esempio dei campi temporali a 2026-07-15T14:54:28+02:00 e ricondotta la sua dichiarazione dentro l'oggetto schema, secondo la forma prevista da OpenAPI 3.0.3
-  * corretto l'uso delle ancore YAML: l'ancora ratelimit_headers era dichiarata 19 volte senza alcun alias, rendendo il documento non parsabile dai lettori YAML che rifiutano le ancore duplicate. Mantenuta una sola dichiarazione e sostituite le altre 18 con l'alias *ratelimit_headers, come gia previsto in specifiche-servizi-fvoe-fva.yaml. Il contratto API resta invariato
+  * centralizzati i campi temporali dataControllo, dataCreazione, dataModifica e dataCancellazione dell'oggetto contratto: ora referenziano modello-dati-tipologiche.yaml#/components/schemas/DataOraType
+
+### Regole (DMN)
+Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in coerenza con la centralizzazione introdotta nei file YAML. Il confronto tra valori temporali non si appoggia più a manipolazioni di stringa e all'assunzione del suffisso "Z" (non più ammesso dal formato con offset UTC esplicito), ma utilizza i tipi e le funzioni temporali.
+* P1_10.dmn, P1_11.dmn, P1_12.dmn, P1_13.dmn, P1_14.dmn, P1_16.dmn, P1_17.dmn, P1_18.dmn, P1_19.dmn, P1_20.dmn, P1_21.dmn, P1_23.dmn, P1_24.dmn, P2_10.dmn, P2_11.dmn, P2_12.dmn, P2_13.dmn, P2_14.dmn, P2_16.dmn, P2_17.dmn, P2_18.dmn, P2_19.dmn, P2_20.dmn, P2_21.dmn, P2_23.dmn, P2_24.dmn, P3_1.dmn, P3_2.dmn, P3_3.dmn, P3_4.dmn, P3_5.dmn, P4_1.dmn, P4_2.dmn, P4_3.dmn, P4_4.dmn, P4_5.dmn, P4_6.dmn, P6_1.dmn, P6_2.dmn, P7_1_1.dmn, P7_1_2.dmn, P7_1_3.dmn, P7_2.dmn, PL1_7.dmn, PL1_8.dmn, PL1_9.dmn, PL2_7.dmn, PL2_8.dmn, PL2_9.dmn, P8.dmn (50 file):
+  * nelle regole che confrontano la scadenza di presentazione (scadenzaPresentazioneOfferte / scadenzaPresentazioneInvito, REG105/REG106) con il momento corrente, l'espressione `date and time(substring before(scadenza, "Z")) <= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))` è stata sostituita con `date and time(scadenza) <= now()`. Rimossa la dipendenza dal suffisso "Z" e dalla ricostruzione manuale del timestamp corrente, ora ottenuto dalla funzione now()
+* CL1.dmn (REG90, REG92, REG93), I1.dmn (REG57), SC1.dmn (REG77):
+  * i confronti tra date, prima eseguiti direttamente sulle stringhe, sono ora effettuati su valori tipizzati tramite `date and time(...)`, garantendo l'ordinamento cronologico corretto a prescindere dall'offset. In SC1.dmn aggiunto inoltre il controllo di valorizzazione (null / stringa vuota) sul campo dataScadenza
 
 <summary><h1>Note di rilascio del TBD</h1></summary>
 

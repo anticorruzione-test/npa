@@ -2963,26 +2963,26 @@ components:
               type: string
         dataControllo:
           description: Data di controllo del contratto
-          type: string
-          format: date-time
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         dataCreazione:
           description: Data creazione del contratto
-          type: string
-          format: date-time
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         userIdCreazione:
           description: ID utente che ha creato il contratto
           type: string
         dataModifica:
           description: Data modifica del contratto
-          type: string
-          format: date-time
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         userIdModifica:
           description: ID utente che ha modificato il contratto
           type: string
         dataCancellazione:
           description: Data cancellazione del contratto
-          type: string
-          format: date-time
+          allOf:
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/datetimeFormat/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         userIdCancellazione:
           description: ID utente che ha cancellato il contratto
           type: string
