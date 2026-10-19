@@ -100,3 +100,5 @@
 ||||                                               |||
 |96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione| /<br>/<br>/<br>                               ||
 |100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL| /<br>/<br>/<br>                               ||
+||||                                               |||
+|95898|Gestione delle date sull'infrastruttura|Introduzione di uno standard temporale univoco basato su UTC all’interno dell’ecosistema PCP, con adeguamento della gestione delle informazioni temporali, delle integrazioni con i sistemi terzi e delle logiche di business correlate.| 19/10/2026<br>/<br>/<br>||
