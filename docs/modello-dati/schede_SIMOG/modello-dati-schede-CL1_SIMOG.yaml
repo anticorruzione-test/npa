@@ -83,7 +83,7 @@ components:
           $ref: '#/components/schemas/RiserveType'
         riserveViaGiudiziale:
           $ref: '#/components/schemas/RiserveType'
-        riserveViatransattiva:
+        riserveViaTransattiva:
           $ref: '#/components/schemas/RiserveType'
     AnacFormCL1_SIMOGType:
       description: Contiene tutti i dati di collaudo
