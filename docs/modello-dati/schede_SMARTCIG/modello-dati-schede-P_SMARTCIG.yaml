@@ -41,7 +41,9 @@ components:
           type: array
           items:
             type: string
-            pattern: ^[a-zA-Z0-9]{15}$        
+            pattern: ^[a-zA-Z0-9]{15}$  
+        datiBase:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/DatiBaseLottoType'        
     AnacFormP_SMARTCIGType:
       description: Contiene tutti i dati necessari per la pubblicazione nazionale.
       allOf: 
