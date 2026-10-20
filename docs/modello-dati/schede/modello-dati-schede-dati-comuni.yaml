@@ -2617,9 +2617,9 @@ components:
         denominazione: 
           description: Denominazione del soggetto interessato
           type: string  
-        ruolo: 
+        ruoloOE: 
           $ref: '#/components/schemas/Ruolo_SIMOGEnum'
-        tipo: 
+        tipoOE: 
           $ref: '#/components/schemas/Tipo_SIMOGEnum' 
         idPartecipante: 
           description: id partecipante
