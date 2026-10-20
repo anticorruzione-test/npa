@@ -1550,6 +1550,7 @@ aggiunta regola REG5_1
   * modificato l'elenco delle schede successive della S4: aggiunta la scheda CO2
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 09/01/2026 (Changelog-07)</h1></summary>
 
 **NOTA**
@@ -1673,6 +1674,7 @@ aggiunta regola REG5_1
 * S3: aggiunta la regola REG143
 * AD3.dmn: aggiunte le regole REG144,REG145
 * P8.dmn: aggiunte le regole per la nuova scheda per le procedure negoziate senza bando o adesioni ad AQ soprasoglia
+</details>
 
 <details>
 <summary><h1>Note di rilascio del 12/01/2026 (In Esercizio)</h1></summary>
@@ -1726,6 +1728,26 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
+<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunta la REG146
+
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1739,6 +1761,7 @@ aggiunta regola REG5_1
     * schede M1, M1_40, M2, M2_40, RSU1, ES1, AC1: aggiunto valore I1
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 25/05/2026 (SDK 1.13.3)</h1></summary>
 
 **NOTA**
@@ -1766,6 +1789,7 @@ aggiunta regola REG5_1
 
 ## Documentazione
 * Nella sezione Standard adottati del file README.md è stata aggiornata la versione sdk dell'eForms da adottare (1.13.3).
+</details>
 
 <summary><h1>Note di rilascio del 16/07/2026</h1></summary>
 
@@ -1792,6 +1816,7 @@ aggiunta regola REG5_1
 * roadmap.md:
   * aggiunta voce di roadmap per il rilascio/aggiornamento dei documenti enti certificanti 00004, 00005, 00006, 00014 e 00045
 
+<details>
 <summary><h1>Note di rilascio del 08/06/2026</h1></summary>
 
 ### Orchestratore
@@ -1800,6 +1825,7 @@ aggiunta regola REG5_1
 		* colonna schedaSuccessiva: aggiunta la scheda S1_2
 </details>
 
+<details>
 <summary><h1>Note di rilascio del 06/08/2026</h1></summary>
 
 ### Tipologiche
@@ -1809,10 +1835,14 @@ aggiunta regola REG5_1
 Le nuove voci della tipologica codIstat devono essere utilizzate qualora si intenda indicare un ambito geografico riferito a uno Stato estero oppure a una dimensione territoriale sovracomunale. In entrambi i casi, la valorizzazione di una delle due voci comporta l'obbligo di compilare anche il campo codNUTS, selezionando uno dei valori previsti dalla relativa tipologica.
 * ticket 105000, 109973:
 	* categorieMerceologiche.json: aggiunte le voci "Medicazioni speciali", "Protesi ginocchio", "Suturatrici", "Gestione e manutenzione delle aree verdi", "Arredi";
+</details>
 
-<summary><h1>Note di rilascio del 19/10/2026</h1></summary>
+<summary><h1>Note di rilascio del 19/10/2026 (DAT_PCP_07 - Centralizzazione del formato dei campi temporali)</h1></summary>
 
-## PdL DAT_PCP_07 - Centralizzazione del formato dei campi temporali
+**NOTA**
+* Pubblicazione contenuti su GitHub: 19/10/2026
+* Rilascio in Qualificazione: Come da Roadmap
+* Rilascio in Esercizio: Come da Roadmap
 
 ### Modello Dati
 * modello-dati-tipologiche.yaml:
@@ -1847,6 +1877,13 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 * CL1.dmn (REG90, REG92, REG93), I1.dmn (REG57), SC1.dmn (REG77):
   * i confronti tra date, prima eseguiti direttamente sulle stringhe, sono ora effettuati su valori tipizzati tramite `date and time(...)`, garantendo l'ordinamento cronologico corretto a prescindere dall'offset. In SC1.dmn aggiunto inoltre il controllo di valorizzazione (null / stringa vuota) sul campo dataScadenza
 
+<summary><h1>Note di rilascio del 20/10/2026</h1></summary>
+
+### Orchestratore
+* ticket 114287:
+	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
+		* colonna versione: inserito il valore 1.0
+
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
 ### Tipologiche
@@ -1856,3 +1893,21 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
+
+<summary><h1>Note di rilascio del TBD</h1></summary>
+
+## Schede  
+* ticket 94858 e 94864
+  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
+  * modello-dati-schede-dati-comuni.yaml:
+  	* aggiunto l'oggetto MotiviMancataStipulaEnum	
+
+## Tipologiche  
+* ticket 94858 e 94864
+  * Aggiunte la tipologica causaMancataStipula.json
+ 
+## Orchestratore  
+* ticket 94858 e 94864
+	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
+ 	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
+  	* Aggiunte le colonne ....
