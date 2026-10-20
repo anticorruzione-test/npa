@@ -41,7 +41,6 @@ components:
       description: Dati del conferente
       type: object
       additionalProperties: false
-      required: [codiceFiscale,denominazione,ruoloOE,tipoOE,idOE]
       properties:
         idAggiudicatario:
           description: id partecipante dell'aggiudicatario che conferisce il subappalto
