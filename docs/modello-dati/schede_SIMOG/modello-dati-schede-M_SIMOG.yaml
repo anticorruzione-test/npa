@@ -6,6 +6,7 @@ components:
   schemas:
     DatiBaseModificaContrattualeType:
       description:  dati di modifica
+      type: object
       additionalProperties: false
       properties:
         dataSottoscrizione:
