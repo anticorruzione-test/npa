@@ -17,7 +17,7 @@ components:
           type: array
           items:        
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/Incarico_SIMOGType'   
-    AnacFormS3Type:
+    AnacFormS3_SIMOGType:
       description: Dati relativi agli incarichi tecnici e alle prestazioni progettuali.
       type: object
       additionalProperties: false
