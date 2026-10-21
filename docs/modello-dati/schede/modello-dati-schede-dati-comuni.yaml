@@ -239,11 +239,11 @@ components:
     ModalitaIndizioneAllegatoIx_SIMOGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di indizione dell'appalto - fare riferimento ai valori contenuti nel file [ModalitaIndizioneAllegatoIx_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/ModalitaIndizioneAllegatoIx_SIMOG.json)
+      description: Modalità di indizione dell'appalto - fare riferimento ai valori contenuti nel file [modalitaIndizioneAllegatoIx_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modalitaIndizioneAllegatoIx_SIMOG.json)
     ModiRealizzazione_SIMOGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di realizzazione dell'appalto - fare riferimento ai valori contenuti nel file [ModiRealizzazione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/ModiRealizzazione_SIMOG.json)
+      description: Modalità di realizzazione dell'appalto - fare riferimento ai valori contenuti nel file [modiRealizzazione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modiRealizzazione_SIMOG.json)
     EsitoProceduraEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
