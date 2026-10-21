@@ -16,7 +16,7 @@ components:
           maxLength: 64
         motivazioneCIG:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivazioneCIGEnum' 
-        eaggCategorie:
+        categorieMerceologiche:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
@@ -30,7 +30,7 @@ components:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
           type: string
-        eaggCategorie:
+        categorieMerceologiche:
           type: array
           items:
             $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/EaggCategorie_SIMOGEnum'
