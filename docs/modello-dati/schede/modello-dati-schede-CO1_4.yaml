@@ -1,34 +1,30 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda CO1_4 - Scheda di conclusione della procedura.
+  title: Modello Dati - Scheda CO1_4 - Scheda di conclusione per affidamenti diretti per mancata stipula/esecuzione.
   version: 1.0.0
 components:
   schemas:
     ConclusioneType:
-      description: Oggetto che riporta i dati di conclusione finale della procedura.
+      description: Oggetto che riporta i dati di conclusione per mancata stipula
       type: object
       additionalProperties: false
-      required: [dataConclusione]
+      required: [causaMancataStipula]
       properties:
-        dataConclusione:
-          description: Data conclusione della procedura
-          type: string
-          format: date-time                    
+        causaMancataStipula:
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviMancataStipulaEnum'
     AnacFormCO1_4Type:
-      description: Contiene tutti i dati di conclusione finale della procedura
+      description: Contiene i dati di conclusione per mancata stipula/esecuzione
       type: object
       additionalProperties: false
-      required: [idAppalto,conclusione]
+      required: [conclusione,cig]
       properties:
-        idAppalto:
-          description: identificativo del contratto restituito in response alla scheda di creazione della procedura.
-          type: string   
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
+        cig:
+          description: codice identificativo lotto
+          type: string          
         conclusione:
           $ref: '#/components/schemas/ConclusioneType'
     SchedaCO1_4Type:
-      description: Scheda di conclusione
+      description: Scheda di mancata stipula/esecuzione
       type: object
       required: [anacForm]
       additionalProperties: false
