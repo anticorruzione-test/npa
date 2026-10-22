@@ -801,7 +801,7 @@ components:
     OfferteType:
       description: Dati delle offerte
       type: object
-      required: [importo,ccnl,idPartecipante,aggiudicatario,offertaAnomala]
+      required: [importo,idPartecipante,aggiudicatario]
       additionalProperties: false
       properties:
         idPartecipante: 
