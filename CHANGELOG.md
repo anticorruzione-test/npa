@@ -1740,13 +1740,13 @@ aggiunta regola REG5_1
 
 ### Tipologiche
 * ticket 100672:
-	* errori.json: inserito nuovo messaggio di errore REG146
+	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
   
 ### Regole
 * ticket 96573:
 	* ID.dmn: modificata la REG101
 * ticket 100672:
-	* ID.dmn: modificata la REG127, aggiunta la REG146
+	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
 
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
