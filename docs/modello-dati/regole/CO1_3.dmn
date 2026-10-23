@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_CO1_3" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.12.3" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+  <decision id="CO1_3" name="CO1_3">
+    <informationRequirement id="InformationRequirement_00o5h7n">
+      <requiredInput href="#InputData_1vsdrei" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_CO1_3" hitPolicy="COLLECT">
+      <input id="appalto_CO1_3" biodi:width="394">
+        <inputExpression id="LiteralExpression_appalto_CO1_3" typeRef="string">
+          <text>conclusione</text>
+        </inputExpression>
+      </input>
+      <output id="Errore_CO1_10" name="Errore" typeRef="string" biodi:width="477" />
+      <rule id="DecisionRule_03ebwta">
+        <description>REG82: Numero totale degli infortuni incoerente rispetto al numero degli infortuni mortali e con postumi permanenti</description>
+        <inputEntry id="UnaryTests_0euxlz0">
+          <text>conclusione.numeroInfortuni != null and conclusione.numeroInfortuni &lt; (conclusione.diCuiPostumiPermanenti + conclusione.diCuiMortali)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bv2v61">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG82\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hqmqnu">
+        <description>REG84: il campo di cui postumi permanenti deve essere &gt;=0</description>
+        <inputEntry id="UnaryTests_1b6vfpw">
+          <text>conclusione.diCuiPostumiPermanenti != null and conclusione.diCuiPostumiPermanenti &lt; 0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1t2bscj">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG84\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0owd8b4">
+        <description>REG85: il campo di cui mortali deve essere &gt;= 0</description>
+        <inputEntry id="UnaryTests_1q15r2j">
+          <text>conclusione.diCuiMortali != null and conclusione.diCuiMortali &lt; 0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10ruv1k">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG85\"}"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1vsdrei" name="conclusione" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_15do7a0">
+      <dmndi:DMNShape id="DMNShape_AD1_10" dmnElementRef="CO1_3">
+        <dc:Bounds height="80" width="180" x="150" y="110" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0je0q06" dmnElementRef="InputData_1vsdrei">
+        <dc:Bounds height="45" width="125" x="177" y="347" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0iatk2c" dmnElementRef="InformationRequirement_00o5h7n">
+        <di:waypoint x="240" y="347" />
+        <di:waypoint x="240" y="210" />
+        <di:waypoint x="240" y="190" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
