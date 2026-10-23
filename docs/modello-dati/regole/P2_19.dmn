@@ -526,7 +526,7 @@ satisfies lotto.datiBase.importo = null or lotto.datiBase.importo &lt;= 0</text>
         <inputEntry id="UnaryTests_0xbdfzt">
           <text>some lotto in lotti
 satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte != "" and
- date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
+ date and time(lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte) &lt;= now()</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0ibafgn">
           <text></text>
@@ -543,7 +543,7 @@ satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneOfferte != null and lo
         <inputEntry id="UnaryTests_0xbdfzz">
           <text>some lotto in lotti
 satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "" and
- date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
+ date and time(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito) &lt;= now()</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0ibafgt">
           <text></text>
@@ -694,6 +694,21 @@ satisfies (is defined(lotto.datiBaseDurata.durata)=false and is defined(lotto.da
         </inputEntry>
         <outputEntry id="LiteralExpression_08y3hps">
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG135\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bycehl">
+        <description>REG136: Valore della tipologica TipoProcedura non ammesso</description>
+        <inputEntry id="UnaryTests_18tikyu">
+          <text>is defined(appalto.datiBaseProcedura) and is defined(appalto.datiBaseProcedura.tipoProcedura) and not(list contains(["comp-dial","innovation","neg-w-call","open","oth-mult","oth-single","restricted"], appalto.datiBaseProcedura.tipoProcedura.codice))</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10rgy4a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_091inrk">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06awbnf">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG136\"}"</text>
         </outputEntry>
       </rule>
     </decisionTable>

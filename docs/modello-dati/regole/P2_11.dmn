@@ -602,7 +602,7 @@ satisfies lotto.datiBase.importo = null or lotto.datiBase.importo &lt;= 0</text>
         <inputEntry id="UnaryTests_0xbdfzz">
           <text>some lotto in lotti
 satisfies lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != null and lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito != "" and
- date and time(substring before(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito, "Z")) &lt;= date and time(string(today()) + "T" + string(time(now().hour, now().minute, now().second)))</text>
+ date and time(lotto.datiBaseTerminiInvio.scadenzaPresentazioneInvito) &lt;= now()</text>
         </inputEntry>
         <inputEntry id="UnaryTests_0ibafgt">
           <text></text>
@@ -758,7 +758,7 @@ satisfies (is defined(lotto.datiBaseDurata.durata)=false and is defined(lotto.da
       <rule id="DecisionRule_197y48f">
         <description>REG136: Valore della tipologica TipoProcedura non ammesso</description>
         <inputEntry id="UnaryTests_0s36fcc">
-          <text>is defined(appalto.datiBaseProcedura) and is defined(appalto.datiBaseProcedura.tipoProcedura) and not(list contains(["comp-dial","innovation","neg-w-call","oth-mult","oth-single","restricted"], appalto.datiBaseProcedura.tipoProcedura.codice))</text>
+          <text>is defined(appalto.datiBaseProcedura) and is defined(appalto.datiBaseProcedura.tipoProcedura) and not(list contains(["comp-dial","innovation","neg-w-call","oth-mult","restricted"], appalto.datiBaseProcedura.tipoProcedura.codice))</text>
         </inputEntry>
         <inputEntry id="UnaryTests_00fyuql">
           <text></text>
