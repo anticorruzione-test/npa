@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda ES1_2 - Scheda di esito in caso di subappalto non autorizzato.
+  version: 1.0.0
+components:
+  schemas:
+    SubappaltoType:
+      description: Dati relativi ai subappalti
+      type: object
+      additionalProperties: false
+      properties:    
+        motivoMancatoSubappalto: 
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoSubappaltoEnum'
+    AnacFormES1_2Type:
+      description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
+      type: object
+      required: [subappalto, idScheda]
+      additionalProperties: false
+      properties: 
+        idScheda:
+          description: identificativo restituito dal servizio all’invio della scheda di richiesta di subappalto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        subappalto:
+          $ref: '#/components/schemas/SubappaltoType'
+    SchedaES1_2Type:
+      description: Esito Richiesta subappalto. Mancato subappalto. Articolo119 decreto legislativo 36/2023
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormES1_2Type'

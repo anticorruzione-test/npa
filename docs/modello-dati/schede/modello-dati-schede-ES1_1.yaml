@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Modello Dati - Scheda ES1_1 - Scheda di esito in caso di subappalto autorizzato.
+  version: 1.0.0
+components:
+  schemas:
+    SubappaltoType:
+      description: Dati relativi ai subappalti
+      type: object
+      additionalProperties: false
+      required: [dataAutorizzazione]
+      properties:    
+        dataAutorizzazione: 
+          description: Data di autorizzazione del subappalto
+          type: string
+          format: date-time
+    AnacFormES1_1Type:
+      description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
+      type: object
+      required: [subappalto, idScheda]
+      additionalProperties: false
+      properties: 
+        idScheda:
+          description: identificativo restituito dal servizio all’invio della scheda di richiesta di subappalto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
+        subappalto:
+          $ref: '#/components/schemas/SubappaltoType'
+    SchedaES1_1Type:
+      description: Esito Richiesta subappalto. Autorizzazione subappalto. Articolo119 decreto legislativo 36/2023
+      type: object
+      required: [anacForm]
+      additionalProperties: false
+      properties:
+        anacForm:
+          $ref: '#/components/schemas/AnacFormES1_1Type'
