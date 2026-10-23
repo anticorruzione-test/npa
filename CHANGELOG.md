@@ -1728,26 +1728,6 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
-<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
-
-### Schede
-* ticket 96573:
-	* modello-dati-schede-ID.yaml:
-		* aggiunta la nuova sezione integrazioneDatiEsecuzione
-* ticket 100672:
-	* modello-dati-schede-ID.yaml:
-		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
-
-### Tipologiche
-* ticket 100672:
-	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
-  
-### Regole
-* ticket 96573:
-	* ID.dmn: modificata la REG101
-* ticket 100672:
-	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
-
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1883,6 +1863,26 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 * ticket 114287:
 	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
 		* colonna versione: inserito il valore 1.0
+
+<summary><h1>Note di rilascio del 23/10/2026</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
 
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
