@@ -1,30 +1,15 @@
 openapi: 3.0.0
 info:
-  title: Modello Dati - Scheda SC1 - Scheda di sottoscrizione del contratto
+  title: Modello Dati - Scheda SC1_1 - Scheda di sottoscrizione del contratto in caso di anticipata esecuzione
   version: 1.0.0
 components:
   schemas:
     DatiContrattoType:
-      description: Oggetto che riporta i dati di sottoscrizione del contratto
+      description: Oggetto che riporta i dati di sottoscrizione del contratto in caso di anticipata esecuzione
       type: object
       additionalProperties: false
-      required: [importoCauzione,codiceAusa,idPartecipante,cig,dataDecorrenza,dataScadenza]
+      required: [importoCauzione,dataDecorrenza,dataScadenza]
       properties:
-        codiceAusa:
-          description: Amministrazione firmataria
-          type: array
-          items: 
-            type: string
-        idPartecipante: 
-          description: id partecipante
-          type: string  
-          format: uuid
-          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
-        cig:
-          description: Lista dei lotti rientranti nel contratto
-          type: array
-          items: 
-            type: string  
         dataStipula:
           description: Data stipula del contratto
           type: string
@@ -45,19 +30,24 @@ components:
           description: Importo cauzione definitiva in €
           type: number
           format: double
-    AnacFormSC1Type:
+    AnacFormSC1_1Type:
       description: Contiene tutti i dati di sottoscrizione del contratto
       type: object
       additionalProperties: false
-      required: [datiContratto]
-      properties: 
+      required: [idContratto, datiContratto]
+      properties:
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"      
         datiContratto:
           $ref: '#/components/schemas/DatiContrattoType'
-    SchedaSC1Type:
+    SchedaSC1_1Type:
       description: Sottoscrizione del contratto 
       type: object
       required: [anacForm]
       additionalProperties: false
       properties:
         anacForm:
-          $ref: '#/components/schemas/AnacFormSC1Type'
+          $ref: '#/components/schemas/AnacFormSC1_1Type'

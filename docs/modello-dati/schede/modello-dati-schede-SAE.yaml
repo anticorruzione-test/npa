@@ -8,8 +8,23 @@ components:
       description: Oggetto che riporta i dati di anticipata esecuzione
       type: object
       additionalProperties: false
-      required: [consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista]
+      required: [codiceAusa,idPartecipante,cig,consegnaSottoRiserva,dataEffettivoInizio,dataFinePrevista]
       properties:
+        codiceAusa:
+          description: Amministrazione firmataria
+          type: array
+          items: 
+            type: string
+        idPartecipante: 
+          description: id partecipante
+          type: string  
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"  
+        cig:
+          description: Lista dei lotti rientranti nel contratto
+          type: array
+          items: 
+            type: string
         dataDisposizioneInizio:
           description: Data disposizione dell’inizio della prog. Esecutiva
           type: string
