@@ -5,26 +5,57 @@ info:
 components:
   schemas:
     ConclusioneType:
-      description: Oggetto che riporta i dati di conclusione per mancata stipula
+      description: Oggetto che riporta i dati di conclusione ordinaria.
       type: object
       additionalProperties: false
-      required: [causaMancataStipula]
+      required: [dataUltimazione]
       properties:
-        causaMancataStipula:
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotiviMancataStipulaEnum'
+        dataStipula:
+          description: Data stipula del contratto
+          type: string
+          format: date-time            
+        dataEsecutivita:
+          description: Data esecutività del contratto (ove prevista)
+          type: string
+          format: date-time          
+        importo: 
+          description: Importo
+          type: number
+          format: double
+        incamerataPolizza:
+          description: Incamerata polizza
+          type: boolean
+        dataUltimazione:
+          description: Data di ultimazione della prestazione
+          type: string
+          format: date-time          
+        numeroInfortuni:
+          description: Numero di infortuni
+          type: number
+          format: integer
+        diCuiPostumiPermanenti:
+          description: di cui con postumi permanenti
+          type: number
+          format: integer 
+        diCuiMortali:
+          description: di cui mortali
+          type: number
+          format: integer          
     AnacFormCO1_6Type:
-      description: Contiene i dati di conclusione per mancata stipula/esecuzione
+      description: Contiene tutti i dati di conclusione ordinaria
       type: object
       additionalProperties: false
-      required: [conclusione,cig]
+      required: [idContratto,conclusione]
       properties:
-        cig:
-          description: codice identificativo lotto
-          type: string          
+        idContratto:
+          description: identificativo del contratto restituito in response alla scheda di Sottoscrizione del contratto.
+          type: string   
+          format: uuid
+          example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6" 
         conclusione:
           $ref: '#/components/schemas/ConclusioneType'
     SchedaCO1_6Type:
-      description: Scheda di mancata stipula/esecuzione
+      description: Scheda di conclusione ordinaria per affidamenti diretti
       type: object
       required: [anacForm]
       additionalProperties: false
