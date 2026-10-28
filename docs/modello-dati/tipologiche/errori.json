@@ -2832,8 +2832,8 @@
 {
     "codice":"REG146",
     "descrizione": {
-		"it": "L'id del conferente subappalto non può essere lo stesso del ricevente.",
-		"en": "L'id del conferente subappalto non può essere lo stesso del ricevente."
+		"it": "In caso di richiesta di rimozione il campo cup non va compilato.",
+		"en": "In caso di richiesta di rimozione il campo cup non va compilato."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2841,8 +2841,8 @@
 {
     "codice":"REG147",
     "descrizione": {
-		"it": "In caso di più soggetti indicare il mandatario.",
-		"en": "In caso di più soggetti indicare il mandatario."
+		"it": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione.",
+		"en": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione."
 	},
     "dataInizio":null,
     "dataFine":null
@@ -2850,8 +2850,8 @@
 {
     "codice":"REG148",
     "descrizione": {
-		"it": "In caso di più soggetti indicare il mandante.",
-		"en": "In caso di più soggetti indicare il mandante."
+		"it": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione.",
+		"en": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione."
 	},
     "dataInizio":null,
     "dataFine":null
