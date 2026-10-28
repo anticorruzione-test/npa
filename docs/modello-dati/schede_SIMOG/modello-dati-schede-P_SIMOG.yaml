@@ -38,7 +38,7 @@ components:
     LottoP_SIMOGType:   
       type: object
       additionalProperties: false
-      required: [lotIdentifier,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione,datiBaseTerminiInvio,sceltaContraente]
+      required: [lotIdentifier,paritaDiGenereGenerazionale,categoria,datiBase,datiBaseCPV,dataPubblicazione,datiBaseTerminiInvio,sceltaContraente,tipoRealizzazione]
       properties:
         lotIdentifier:
           description: Id univoco del lotto generato dalla stazione appaltante
