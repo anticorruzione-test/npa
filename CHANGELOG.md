@@ -1728,26 +1728,6 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
-<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
-
-### Schede
-* ticket 96573:
-	* modello-dati-schede-ID.yaml:
-		* aggiunta la nuova sezione integrazioneDatiEsecuzione
-* ticket 100672:
-	* modello-dati-schede-ID.yaml:
-		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
-
-### Tipologiche
-* ticket 100672:
-	* errori.json: inserito nuovo messaggio di errore REG146
-  
-### Regole
-* ticket 96573:
-	* ID.dmn: modificata la REG101
-* ticket 100672:
-	* ID.dmn: modificata la REG127, aggiunta la REG146
-
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1884,6 +1864,26 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
 		* colonna versione: inserito il valore 1.0
 
+<summary><h1>Note di rilascio del 23/10/2026</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
+
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
 ### Tipologiche
@@ -1893,21 +1893,3 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
-
-<summary><h1>Note di rilascio del TBD</h1></summary>
-
-## Schede  
-* ticket 94858 e 94864
-  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
-  * modello-dati-schede-dati-comuni.yaml:
-  	* aggiunto l'oggetto MotiviMancataStipulaEnum	
-
-## Tipologiche  
-* ticket 94858 e 94864
-  * Aggiunte la tipologica causaMancataStipula.json
- 
-## Orchestratore  
-* ticket 94858 e 94864
-	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
- 	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
-  	* Aggiunte le colonne ....
