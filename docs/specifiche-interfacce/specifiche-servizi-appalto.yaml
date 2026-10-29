@@ -2042,7 +2042,7 @@ paths:
     post:
       tags:
       - gestioneAppalti
-      summary: API Rest per la migrazione di una procedura di appalto da SIMOG o SMARTCIG verso la PCP. SINCRONO
+      summary: API Rest per la migrazione di una procedura di appalto da SIMOG o SMARTCIG verso la PCP. ASINCRONO
       description: Il servizio consente la migrazione di un appalto, identificato dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP.
       operationId: migraProcedura
       requestBody:
