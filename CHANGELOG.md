@@ -1864,6 +1864,26 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
 		* colonna versione: inserito il valore 1.0
 
+<summary><h1>Note di rilascio del 23/10/2026</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
+
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
 ### Tipologiche
@@ -1873,3 +1893,69 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
+
+<summary><h1>Note di rilascio del TBD (Integrazione SIMOG e SmartCIG in PCP)</h1></summary>
+
+### Modello Dati
+* ticket 91168, 91175, 91297, 86956:
+	* modello-dati-npa.yaml:
+		* modificato l'oggetto SchedaType: aggiunti i riferimenti alle schede P_SIMOG e P_SMARTCIG
+		* modificato l'oggetto SchedaPostPubblicazioneType: aggiunti i riferimenti alle schede ANN_SIMOG, A_SIMOG, CL1_SIMOG, CO1_SIMOG, CS1_SIMOG, I1_SIMOG, M_SIMOG, RI1_SIMOG, RSU1_SIMOG, S2_SIMOG, S3_SIMOG, S4_SIMOG, SA1_SIMOG, SC1_SIMOG, SO1_SIMOG, ANN_SMARTCIG e ID_SMARTCIG
+
+### Schede
+* ticket 91168, 91175, 91297, 86956:
+	* create le nuove schede SIMOG nella cartella schede_SIMOG:
+		* modello-dati-schede-P_SIMOG.yaml: bando di gara
+		* modello-dati-schede-S2_SIMOG.yaml: elenco dei soggetti che hanno presentato offerta
+		* modello-dati-schede-A_SIMOG.yaml: aggiudicazione
+		* modello-dati-schede-S3_SIMOG.yaml: incarichi tecnici e prestazioni progettuali
+		* modello-dati-schede-S4_SIMOG.yaml: variazione aggiudicatari
+		* modello-dati-schede-SC1_SIMOG.yaml: sottoscrizione del contratto
+		* modello-dati-schede-I1_SIMOG.yaml: inizio prestazione
+		* modello-dati-schede-SA1_SIMOG.yaml: stato avanzamento lavori (SAL)
+		* modello-dati-schede-SO1_SIMOG.yaml: sospensione
+		* modello-dati-schede-RI1_SIMOG.yaml: ripresa prestazione
+		* modello-dati-schede-M_SIMOG.yaml: modifica contrattuale
+		* modello-dati-schede-RSU1_SIMOG.yaml: richiesta di subappalto
+		* modello-dati-schede-CS1_SIMOG.yaml: conclusione subappalto
+		* modello-dati-schede-CO1_SIMOG.yaml: conclusione
+		* modello-dati-schede-CL1_SIMOG.yaml: collaudo
+		* modello-dati-schede-ANN_SIMOG.yaml: annullamento
+	* create le nuove schede SMARTCIG nella cartella schede_SMARTCIG:
+		* modello-dati-schede-P_SMARTCIG.yaml: bando di gara
+		* modello-dati-schede-ID_SMARTCIG.yaml: integrazione dei dati delle procedure SmartCIG
+		* modello-dati-schede-ANN_SMARTCIG.yaml: annullamento
+	* modello-dati-schede-dati-comuni.yaml:
+		* aggiunti gli oggetti enumerativi delle tipologiche SIMOG e SMARTCIG: EaggCategorie_SIMOGEnum, EaggMotivi_SIMOGEnum, StrumentiSvolgimentoProcedure_SIMOGEnum, ArtEstremaUrgenzaSommaUrgenzaEnum, TipiPrestazioni_SIMOGEnum, Condizioni_SIMOGEnum, Ruolo_SIMOGEnum, Tipo_SIMOGEnum, MotivoCollegamento_SIMOGEnum, Categoria_SIMOGEnum, MotivoDeroga_SIMOGEnum, MisurePremiali_SIMOGEnum, TipoIncarico_SIMOGEnum, CPV_SIMOGEnum, SceltaContraente_SIMOGEnum, AffidamentiRiservati_SIMOGEnum, ModalitaGara_SIMOGEnum, MotivoEsclusione_SIMOGEnum, ModiRiaggiud_SIMOGEnum, ModoIndizione_SIMOGEnum, ModalitaIndizioneAllegatoIx_SIMOGEnum, ModiRealizzazione_SIMOGEnum, EsitoProceduraAgg_SIMOGEnum, MotivoVariante_SIMOGEnum, Ritardi_SIMOGEnum, MotiviSospensione_SIMOGEnum, MotiviInterruzione_SIMOGEnum, MotiviRisoluzione_SIMOGEnum, MotivoRichiestaModifica_SMARTCIGEnum, Annullamento_SIMOGEnum, Annullamento_SMARTCIGEnum, Settore_SIMOGEnum, ModalitaRealizzazione_SIMOGEnum
+		* aggiunti gli oggetti IpotesiCollegamento_SIMOGType, ParitaDiGenereGenerazionale_SIMOGType, DatiPersonaGiuridica_SIMOGType, Partecipante_SIMOGType, Incarico_SIMOGType, DatiBaseCPV_SIMOGType, DatiBaseAggiuntivi_SIMOGType, DatiBaseAggiudicazione_SIMOGType, DatiTerminiInvioObbligatorioType, DatiBaseEsitoRisultatoProcedura_SIMOGType
+
+### Tipologiche
+* ticket 91168, 91175, 91297, 86956:
+	* create le tipologiche SIMOG nella cartella tipologiche_SIMOG: affidamentiRiservati_SIMOG.json, artEstremaUrgenzaSommaUrgenza_SIMOG.json, categoria_SIMOG.json, condizioni_SIMOG.json, cpv_SIMOG.json, eaggCategorie_SIMOG.json, eaggMotivi_SIMOG.json, esitoProceduraAgg_SIMOG.json, misuraPremiale_SIMOG.json, modalitaGara_SIMOG.json, modalitaIndizioneAllegatoIx_SIMOG.json, modiRealizzazione_SIMOG.json, modiRiaggiud_SIMOG.json, modoIndizione_SIMOG.json, motivazioneModifica_SIMOG.json, motiviInterruzione_SIMOG.json, motiviRisoluzione_SIMOG.json, motiviSospensione_SIMOG.json, motivoAnnullamento_SIMOG.json, motivoCollegamento_SIMOG.json, motivoDeroga_SIMOG.json, motivoEsclusione_SIMOG.json, motivoVariante_SIMOG.json, ritardi_SIMOG.json, ruolo_SIMOG.json, sceltaContraente_SIMOG.json, settore_SIMOG.json, stato_SIMOG.json, strumentiSvolgimentoProcedure_SIMOG.json, tipiAppalti_SIMOG.json, tipiPrestazioni_SIMOG.json, tipoAggiudicatario_SIMOG.json, tipoCategoria_SIMOG.json, tipoIncarico_SIMOG.json, tipoRuolo_SIMOG.json
+	* create le tipologiche SMARTCIG nella cartella tipologiche_SMARTCIG: motivoAnnullamento_SMARTCIG.json, motivoRichiestaModifica_SMARTCIG.json
+	* codiceScheda.json: aggiunti i codici scheda P_SIMOG, S2_SIMOG, A_SIMOG, S3_SIMOG, S4_SIMOG, SC1_SIMOG, I1_SIMOG, SA1_SIMOG, SO1_SIMOG, RI1_SIMOG, M_SIMOG, RSU1_SIMOG, CS1_SIMOG, CO1_SIMOG, CL1_SIMOG, ANN_SIMOG, P_SMARTCIG, ID_SMARTCIG, ANN_SMARTCIG
+
+### Regole
+* ticket 91168, 91175, 91297, 86956:
+	* create le regole SIMOG nella cartella regole_SIMOG: ANN_SIMOG.dmn, A_SIMOG.dmn, CL1_SIMOG.dmn, CO1_SIMOG.dmn, CS1_SIMOG.dmn, I1_SIMOG.dmn, M_SIMOG.dmn, P_SIMOG.dmn, RI1_SIMOG.dmn, RSU1_SIMOG.dmn, S2_SIMOG.dmn, S3_SIMOG.dmn, S4_SIMOG.dmn, SA1_SIMOG.dmn, SC1_SIMOG.dmn, SO1_SIMOG.dmn
+	* create le regole SMARTCIG nella cartella regole_SMARTCIG: ANN_SMARTCIG.dmn, ID_SMARTCIG.dmn, P_SMARTCIG.dmn
+
+### Orchestratore
+* ticket 91168, 91175, 91297, 86956:
+	* schema-cronologia-schede.xlsx: aggiunte le righe relative alle schede P_SIMOG, S2_SIMOG, A_SIMOG, S3_SIMOG, S4_SIMOG, SC1_SIMOG, I1_SIMOG, SA1_SIMOG, SO1_SIMOG, RI1_SIMOG, M_SIMOG, RSU1_SIMOG, CS1_SIMOG, CO1_SIMOG, CL1_SIMOG, ANN_SIMOG, P_SMARTCIG, ID_SMARTCIG, ANN_SMARTCIG, con il relativo flusso di appartenenza
+	* creato il file schema-cronologia-schede SIMOG.xlsx con lo schema di cronologia comprensivo delle schede SIMOG e SMARTCIG e della colonna schedaAnnullabile valorizzata per le schede SIMOG
+
+### Specifiche di interfaccia
+* ticket 91168, 91175, 91297, 86956:
+	* specifiche-servizi-appalto.yaml:
+		* aggiunto il tag gestioneAppalti per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e la migrazione delle relative procedure verso la PCP
+		* aggiunte le operazioni consultaAppaltiSimog (GET /appalti/simog), consultaAppaltiSmartCig (GET /appalti/smartcig), migraProcedura (POST /appalti/migraProcedura), getMigrazione (GET /appalti/migrazione/{numeroGara}), verificaRup (GET /appalti/verificaRup), verificaIdoneita (GET /appalti/verificaIdoneita), idModificaSchedaSimog (POST /modifica-scheda-simog)
+		* aggiunti gli oggetti TipoAppaltoMigratoEnum, MigraAppaltoRequest, MigraAppaltoResponse, TipologicaSchemaType, ModificaSchedaSimogRequest, ModificaSchedaSimogResponse, VerificaRupResponse, VerificaIdoneitaResponse, MigrazioneResponse, SchedaMigrazioneResponse
+	* documento-specifiche-servizi-appalti-simog-smartcig.md: creato il documento di specifiche autonomo e separato per i servizi Appalti SIMOG e SMARTCIG (contesto gestioneAppalti), distinto dai servizi ordinari della piattaforma oggetto di certificazione AgID
+	* documento-specifiche-servizi-npa.md:
+		* precisato che il documento descrive i servizi ordinari della piattaforma oggetto di certificazione AgID e aggiunti i riferimenti al documento dei servizi Appalti SIMOG e SMARTCIG
+		* inserito il capitolo 14 Contesto gestioneAppalti, con rimando al documento dedicato; i servizi gestioneAppalti non sono riportati nella tabella Servizi e ruoli del paragrafo 4.5
+
+### Documentazione
+* README.md:
+	* sezione Specifiche delle interfacce: aggiunto il riferimento al documento dei servizi Appalti SIMOG e SMARTCIG

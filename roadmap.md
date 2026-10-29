@@ -98,9 +98,9 @@
 |77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura| /<br>/<br>/<br>                               |||
 |58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte| /<br>/<br>/<br>                               ||
 ||||                                               |||
-|96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione| /<br>/<br>/<br>                               ||
-|100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL| /<br>/<br>/<br>                               ||
-||||                                               |||
-|91168<br>91175<br>91297<br>86956|Integrazione SIMOG e SmartCIG in PCP|Realizzazione delle funzionalità necessarie all’integrazione delle procedure SIMOG e SmartCIG nell’ecosistema PCP, mediante introduzione di un nuovo modello dati, adeguamento della piattaforma PCP-UI per la gestione delle procedure e predisposizione di meccanismi di importazione e migrazione del pregresso, garantendo la continuità operativa e il riutilizzo dei processi già disponibili in PCP.| /<br>/<br>/<br>                               ||
+|96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione|23/10/2026<br>29/10/2026*<br>29/10/2026*<br>||
+|100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL|23/10/2026<br>29/10/2026*<br>29/10/2026*<br>||
 ||||                                               |||
 |95898|Gestione delle date sull'infrastruttura|Introduzione di uno standard temporale univoco basato su UTC all’interno dell’ecosistema PCP, con adeguamento della gestione delle informazioni temporali, delle integrazioni con i sistemi terzi e delle logiche di business correlate.| 19/10/2026<br>/<br>/<br>||
+||||                                               |||
+|91168<br>91175<br>91297<br>86956|Integrazione SIMOG e SmartCIG in PCP|Realizzazione delle funzionalità necessarie all’integrazione delle procedure SIMOG e SmartCIG nell’ecosistema PCP, mediante introduzione di un nuovo modello dati, adeguamento della piattaforma PCP-UI per la gestione delle procedure e predisposizione di meccanismi di importazione e migrazione del pregresso, garantendo la continuità operativa e il riutilizzo dei processi già disponibili in PCP.| /<br>/<br>/<br>                               ||
