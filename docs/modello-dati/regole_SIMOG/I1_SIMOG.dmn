@@ -11,6 +11,44 @@
         </inputExpression>
       </input>
       <output id="Errore_I1_SIMOG" name="Errore" typeRef="string" biodi:width="477" />
+	  <rule id="DecisionRule_0m0ht0d">
+        <description>REG57: Data approvazione del progetto Esecutivo: se digitata deve essere superiore alla data di disposizione dell’inizio della prog. Esecutiva</description>
+        <inputEntry id="UnaryTests_0qvvbpl">
+          <text>datiInizio.dataApprovazione != null and datiInizio.dataApprovazione != "" and datiInizio.dataDisposizioneInizio != null and datiInizio.dataDisposizioneInizio != "" and datiInizio.dataApprovazione &lt; datiInizio.dataDisposizioneInizio</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nyzfph">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG57\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hvqq58">
+        <description>REG58: Data verbale prima consegna lavori: obbligatoria in caso di consegna frazionata.</description>
+        <inputEntry id="UnaryTests_040f8s2">
+          <text>datiInizio.consegnaFrazionata != null and datiInizio.consegnaFrazionata and (datiInizio.dataVerbalePrimaConsegna = null or datiInizio.dataVerbalePrimaConsegna = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00e73ic">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG58\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0d0a056">
+        <description>REG59: Data di avvio della prima fase dell'esecuzione del contratto: obbligatoria in caso di avvio per fasi.
+		</description>
+        <inputEntry id="UnaryTests_0j8n53j">
+          <text>datiInizio.avvioPerFasi != null and datiInizio.avvioPerFasi and (datiInizio.dataAvvioPrimaFase = null or datiInizio.dataAvvioPrimaFase = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08u5a70">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG59\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1w95x5h">
+        <description>REG60: Data verbale consegna definitiva: obbligatoria quando non c'è consegna frazionata.
+		</description>
+        <inputEntry id="UnaryTests_183izqu">
+          <text>datiInizio.consegnaFrazionata != null and datiInizio.consegnaFrazionata = false and (datiInizio.dataVerbaleConsegnaDefinitiva = null or datiInizio.dataVerbaleConsegnaDefinitiva = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a9z5bw">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG60\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="datiInizio" />

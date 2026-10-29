@@ -11,6 +11,87 @@
         </inputExpression>
       </input>
       <output id="Errore_CL1_SIMOG" name="Errore" typeRef="string" biodi:width="477" />
+	  <rule id="DecisionRule_0m0ht0d">
+        <description>REG86: Certificato di regolare esecuzione non previsto in caso di collaudo tecnico/amministrativo</description>
+        <inputEntry id="UnaryTests_0qvvbpl">
+          <text>collaudo.modoCollaudo != null and collaudo.modoCollaudo != "" and collaudo.modoCollaudo.codice != null and collaudo.modoCollaudo.codice != "" and collaudo.dataCertificato != null and collaudo.dataCertificato != ""</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nyzfph">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG86\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11d6eg7">
+        <description>REG87: Specificare data del certificato di regolare esecuzione o le modalità del collaudo tecnico amministrativo</description>
+        <inputEntry id="UnaryTests_1wqxd96">
+          <text>(collaudo.modoCollaudo = null or collaudo.modoCollaudo = "" or collaudo.modoCollaudo.codice = null or collaudo.modoCollaudo.codice = "") and (collaudo.dataCertificato = null or collaudo.dataCertificato = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17t3sh9">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG87\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13oo8yc">
+        <description>REG88: Non è stata indicata la data di nomina del collaudatore / Commissione</description>
+        <inputEntry id="UnaryTests_1ltmolc">
+          <text>collaudo.modoCollaudo != null and collaudo.modoCollaudo != "" and collaudo.modoCollaudo.codice != null and collaudo.modoCollaudo.codice != "" and (collaudo.dataNomina = null or collaudo.dataNomina = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vtz43e">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG88\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1le1b1k">
+        <description>REG89: Non è stata indicata la data di inizio delle operazioni di collaudo</description>
+        <inputEntry id="UnaryTests_16oyfqq">
+          <text>collaudo.modoCollaudo != null and collaudo.modoCollaudo != "" and collaudo.modoCollaudo.codice != null and collaudo.modoCollaudo.codice != "" and (collaudo.dataInizio = null or collaudo.dataInizio = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xahmmx">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG89\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ebyvv3">
+        <description>REG90: Data inizio operazioni di collaudo antecedente la data  di nomina della commissione di collaudo/collaudatore </description>
+        <inputEntry id="UnaryTests_1xy83gr">
+          <text>collaudo.dataInizio != null and collaudo.dataInizio != "" and collaudo.dataNomina != null and collaudo.dataNomina != "" and collaudo.dataInizio &lt; collaudo.dataNomina</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y9q5as">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG90\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pjcxe4">
+        <description>REG91: Non è stata indicata la data di redazione del certificato di collaudo</description>
+        <inputEntry id="UnaryTests_0hrbmfb">
+          <text>collaudo.modoCollaudo != null and collaudo.modoCollaudo != "" and collaudo.modoCollaudo.codice != null and collaudo.modoCollaudo.codice != "" and (collaudo.dataRedazioneCertificato = null or collaudo.dataRedazioneCertificato = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n5yix8">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG91\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a63zwo">
+        <description>REG92: Data redazione certificato antecedente la data di inizio operazioni di collaudo</description>
+        <inputEntry id="UnaryTests_0cvi816">
+          <text>collaudo.dataRedazioneCertificato != null and collaudo.dataRedazioneCertificato != "" and collaudo.dataInizio != null and collaudo.dataInizio != "" and collaudo.dataRedazioneCertificato &lt; collaudo.dataInizio</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cr53mp">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG92\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ywrkfy">
+        <description>REG93: Data delibera di ammissibilità antecedente la data di redazione del certificato di collaudo</description>
+        <inputEntry id="UnaryTests_0wdkw9q">
+          <text>collaudo.dataDeliberaAmmissibilita != null and collaudo.dataDeliberaAmmissibilita != "" and collaudo.dataRedazioneCertificato != null and collaudo.dataRedazioneCertificato != "" and collaudo.dataDeliberaAmmissibilita &lt; collaudo.dataRedazioneCertificato</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r6gjn7">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG93\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0014s0g">
+        <description>REG94: Oneri complessivi derivanti è obbligatorio se il numero totale riserve è maggiore di zero.</description>
+        <inputEntry id="UnaryTests_08vtf46">
+          <text>collaudo.numeroTotaleRiserve != null and collaudo.numeroTotaleRiserve &gt; 0 and collaudo.oneri != null and collaudo.oneri = 0</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rn8j6t">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG94\"}"</text>
+        </outputEntry>
+      </rule>
       </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="collaudo" />

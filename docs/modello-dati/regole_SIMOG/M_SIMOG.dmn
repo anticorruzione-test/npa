@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_M_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.6.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_M_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="18.0.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
   <decision id="M_SIMOG" name="M_SIMOG">
     <informationRequirement id="InformationRequirement_1j4weak">
       <requiredInput href="#InputData_1h41ymf" />
@@ -11,6 +11,33 @@
         </inputExpression>
       </input>
       <output id="Errore_M_SIMOG" name="Errore" typeRef="string" biodi:width="477" />
+      <rule id="DecisionRule_1i3h22a">
+        <description>REG61: Per i contratti pubblici di importo superiore alla soglia comunitaria, se la variante in corso d’opera eccede il 10% dell’importo originario del contratto, è necessario fornire il link URL documentazione varianti in corso d’opera</description>
+        <inputEntry id="UnaryTests_0oh09o6">
+          <text>modificaContrattuale.datiBaseModificaContrattuale != null and modificaContrattuale.datiBaseModificaContrattuale.motiviModifica.codice = "17" and (modificaContrattuale.urlDocumentazione = null or modificaContrattuale.urlDocumentazione = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fe1utl">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG61\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_06mw5fm">
+        <description>REG54: Selezionare un motivo di revisione prezzi</description>
+        <inputEntry id="UnaryTests_0gu75g0">
+          <text>modificaContrattuale.datiBaseModificaContrattuale != null and modificaContrattuale.datiBaseModificaContrattuale.motiviModifica.codice = "23" and (modificaContrattuale.motivoRevisionePrezzi = null or modificaContrattuale.motivoRevisionePrezzi = "" or modificaContrattuale.motivoRevisionePrezzi.codice = null or modificaContrattuale.motivoRevisionePrezzi.codice = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mdzkb6">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG54\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1be9f10">
+        <description>REG62: in caso di ‘Altre cause impreviste ed imprevedibili’ indicare una motivazione nel campo ‘Cause della modifica contrattuale’</description>
+        <inputEntry id="UnaryTests_08qm85o">
+          <text>modificaContrattuale.datiBaseModificaContrattuale != null and modificaContrattuale.datiBaseModificaContrattuale.motiviModifica.codice = "2" and (modificaContrattuale.datiBaseModificaContrattuale.causaModifica = null or modificaContrattuale.datiBaseModificaContrattuale.causaModifica = "")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1l6wf7l">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG62\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1h41ymf" name="modificaContrattuale" />
