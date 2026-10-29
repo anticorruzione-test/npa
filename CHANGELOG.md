@@ -1728,26 +1728,6 @@ aggiunta regola REG5_1
  	* M1_40.dmn,M2_40.dmn: eliminate le regole REG55,REG56
 </details>
 
-<summary><h1>Note di rilascio del 24/04/2026 (In Esercizio)</h1></summary>
-
-### Schede
-* ticket 96573:
-	* modello-dati-schede-ID.yaml:
-		* aggiunta la nuova sezione integrazioneDatiEsecuzione
-* ticket 100672:
-	* modello-dati-schede-ID.yaml:
-		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
-
-### Tipologiche
-* ticket 100672:
-	* errori.json: inserito nuovo messaggio di errore REG146
-  
-### Regole
-* ticket 96573:
-	* ID.dmn: modificata la REG101
-* ticket 100672:
-	* ID.dmn: modificata la REG127, aggiunta la REG146
-
 <details>
 <summary><h1>Note di rilascio del 19/05/2026 (In Esercizio)</h1></summary>
 
@@ -1884,6 +1864,26 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
 		* colonna versione: inserito il valore 1.0
 
+<summary><h1>Note di rilascio del 23/10/2026</h1></summary>
+
+### Schede
+* ticket 96573:
+	* modello-dati-schede-ID.yaml:
+		* aggiunta la nuova sezione integrazioneDatiEsecuzione
+* ticket 100672:
+	* modello-dati-schede-ID.yaml:
+		* modificato l'oggetto ComunicazioneCUPType: aggiunto il campo operazioneCUP e resa condizionata l'obbligatorietà del campo cup.
+
+### Tipologiche
+* ticket 100672:
+	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
+  
+### Regole
+* ticket 96573:
+	* ID.dmn: modificata la REG101
+* ticket 100672:
+	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
+
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
 ### Tipologiche
@@ -1896,18 +1896,33 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 
 <summary><h1>Note di rilascio del TBD</h1></summary>
 
-## Schede  
-* ticket 94858 e 94864
-  * Aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
-  * modello-dati-schede-dati-comuni.yaml:
-  	* aggiunto l'oggetto MotiviMancataStipulaEnum	
+### Schede
+* ticket 68714, 91106, 91109 e 91114:
+	* aggiunte le schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, CO1_5, CO1_6, COF, ES1_1, ES1_2, SA1_1 (file modello-dati-schede-<codice>.yaml)
+	* modello-dati-schede-dati-comuni.yaml:
+		* aggiunto l'oggetto MotiviMancataStipulaEnum
 
-## Tipologiche  
-* ticket 94858 e 94864
-  * Aggiunte la tipologica causaMancataStipula.json
- 
-## Orchestratore  
-* ticket 94858 e 94864
-	* Aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, SA1_1
- 	* Modificata la colonna schedeSuccessiveAmmesse per le schede ID, M*, S3, S4.
-  	* Aggiunte le colonne ....
+### Tipologiche
+* ticket 68714, 91106, 91109 e 91114:
+	* aggiunta la tipologica causaMancataStipula.json
+
+### Regole
+* ticket 68714, 91106, 91109 e 91114:
+	* aggiunte le regole SAE.dmn, I1_1.dmn, SC1_1.dmn, CO1_1.dmn, CO1_2.dmn, CO1_3.dmn, CO1_4.dmn, CO1_5.dmn, CO1_6.dmn, COF.dmn, ES1_1.dmn, ES1_2.dmn, SA1_1.dmn
+
+### Orchestratore
+* ticket 68714, 91106, 91109 e 91114:
+	* schema-cronologia-schede.xlsx:
+		* aggiunte le informazioni relative alle schede SAE, I1_1, SC1_1, CO1_1, CO1_2, CO1_3, CO1_4, CO1_5, CO1_6, COF, ES1_1, ES1_2, SA1_1
+		* modificata la colonna schedaSuccessiva per le schede ID, M*, S3, S4
+		* aggiunta la colonna sottofaseEsecuzione: sottofase della fase di esecuzione contrattuale a cui appartiene la scheda
+		* aggiunta la colonna avvioSottofase: se valorizzata a SI la scheda deve essere inviata tramite il servizio comunicaPostPubblicazione e determina l'avvio della relativa sottofase della fase di esecuzione
+		* aggiunta la colonna codiciSchedaDaverificare: codici delle schede che avviano sottoprocessi, di cui è necessario verificare la corretta chiusura prima di accedere alla sottofase successiva
+		* aggiunta la colonna schedaPostPubblicazione: se valorizzata a SI la scheda deve essere inviata esclusivamente tramite i servizi del contesto comunicaPostPubblicazione
+		* aggiunta la colonna schedaGestioneElenco: se valorizzata a SI la scheda istanzia un nuovo elenco di Operatori Economici e deve essere inviata esclusivamente tramite i servizi del contesto gestioneElenchi
+* ticket 84595:
+	* schema-cronologia-schede.xlsx: aggiunta la colonna schedaRettificabile: se valorizzata a SI la scheda può essere utilizzata tramite il servizio rettifica-avviso, se valorizzata a NO la scheda non è rettificabile
+
+### Documentazione
+* ticket 68714, 91106, 91109 e 91114:
+	* linea-guida-orchestratore-anac-pcp.md: creata la linea guida dell'orchestratore ANAC PCP
