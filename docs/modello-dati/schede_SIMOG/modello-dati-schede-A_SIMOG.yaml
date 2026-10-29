@@ -30,7 +30,7 @@ components:
     AggiudicazioneA_SIMOGType:
       type: object
       additionalProperties: false
-      required: [numeroOfferteAmmesse,offertePresentate,datiBaseAggiudicazioneAppalto,datiBaseRisultatoProcedura]
+      required: [datiBaseRisultatoProcedura]
       properties: 
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
