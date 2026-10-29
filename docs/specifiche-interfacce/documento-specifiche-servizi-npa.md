@@ -27,6 +27,8 @@
    - [E-Certis](https://ec.europa.eu/tools/ecertis/search)
    - [ESPD EU](http://ec.europa.eu/growth/single-market/public-procurement/e-procurement/espd/)
    - [eForms](https://simap.ted.europa.eu/it_IT/web/simap/eforms)
+   - [AgID - Certificazione componenti piattaforme](https://www.agid.gov.it/it/piattaforme/procurement/certificazione-componenti-piattaforme)
+   - [Documento di specifiche dei servizi Appalti SIMOG e SMARTCIG](documento-specifiche-servizi-appalti-simog-smartcig.md)
   
 # 2	Obiettivo del documento 
 Il presente documento ha lo scopo di illustrare le specifiche di interfaccia del sistema di digitalizzazione appalti che si articola in: Nuova Piattaforma Appalti (NPA) e dei suoi componenti:  Fascicolo Virtuale dell’Appalto (FVA) e Fascicolo Virtuale dell’Operatore Economico (FVOE). La fruizione di tali servizi è destinata alle piattaforme digitali che le Stazioni Appaltanti adottano per la gestione del ciclo di vita dell'appalto.
@@ -53,6 +55,11 @@ Il sistema FVOE è un componente della NPA che aggiorna e sostituisce l'attuale 
   - Accesso alla documentazione da parte di Stazioni Appaltanti e SOA nel corso dei procedimenti di gara e di qualificazione
   - Compilazione e gestione ESPD (EU) request/response come mezzo di identificazione degli OE e accesso rapido alle informazioni necessarie alla verifica
   - Gestione dell'elenco degli operatori economici già verificati
+
+**Servizi Appalti SIMOG e SMARTCIG**
+
+Il presente documento descrive i servizi ordinari della piattaforma oggetto di certificazione AgID.
+I servizi per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e per la migrazione delle relative procedure verso la PCP (contesto gestioneAppalti) sono descritti in un [documento di specifiche autonomo e separato](documento-specifiche-servizi-appalti-simog-smartcig.md) e non rientrano tra i servizi oggetto di certificazione AgID.
 
 # 3	Architettura generale 
 La nuova piattaforma mira a digitalizzare i processi dell’intero ciclo di vita dell’appalto, attraverso la realizzazione di una serie di strumenti che abilitano l’integrazione e l’interoperabilità tra le piattaforme telematiche presenti nell’ecosistema nazionale dell’e-procurement.
@@ -91,7 +98,7 @@ Nel presente paragrafo si rappresentano i flussi di interoperabilità di tutto i
 - Nome servizio = Servizi che richiamano contesti e componenti interne all’NPA.
 
 Nella seguente [cartella](../diagrammi-drawio/), è consultabile il diagramma drawio.
-I singoli contesti sono descritti nei paragrafi da [5](#5contesto-gestioneutenti) a [14](#14contesto-gestioneappalti).
+I singoli contesti sono descritti nei paragrafi da [5](#5contesto-gestioneutenti) a [13](#13contesto-gestionecontratto). I servizi Appalti SIMOG e SMARTCIG (contesto gestioneAppalti) sono descritti nel documento dedicato richiamato al [capitolo 14](#14contesto-gestioneappalti).
 
 ## 4.3	Diagramma a stati
 Nei paragrafi che seguono sono illustrati, attraverso diagrammi a stati, i passaggi di stato per le seguenti entità coinvolte:
@@ -143,7 +150,7 @@ Il DRP ha accesso esclusivamente alle operazioni per le quali ha ricevuto delega
 
 ## 4.5	Servizi e ruoli
 
-Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamabili dalle Stazioni Appaltanti, per la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita degli appalti e per l'accesso e la consultazione del FVOE e FVA:
+Nella tabella seguente si riporta l'elenco dei servizi ordinari esposti, oggetto di certificazione AgID, richiamabili dalle Stazioni Appaltanti, per la gestione e la raccolta delle informazioni rilevanti nei processi che compongono l’intero ciclo di vita degli appalti e per l'accesso e la consultazione del FVOE e FVA:
 
 | Modulo | Contesto | Servizio | Ruolo | 
   |-------------|-------------| ------------- | ------------- |
@@ -190,13 +197,6 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo NPA**|**gestioneElenchi**| conferma-elenco-operatori-oe  | RP |
   |**Modulo NPA**|**gestioneElenchi**| consulta-elenco-operatori-oe  | RP |
   |**Modulo NPA**|**gestioneContratto**| ricerca-contratto  | RP, DRP1 |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/simog  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/smartcig  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/migraProcedura  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/migrazione/{numeroGara}  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/verificaRup  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| appalti/verificaIdoneita  | RP |
-  |**Modulo NPA**|**gestioneAppalti**| modifica-scheda-simog  | RP |
   |**Modulo NPA**|**codeList**| recupera-elenco-tipologiche  | * |
   |**Modulo NPA**|**codeList**| recupera-tipologica  | * |
   |**Modulo NPA**|**codeList**| recupera-valore-tipologica  | * |
@@ -214,6 +214,8 @@ Nella tabella seguente si riporta l'elenco di tutti i servizi esposti, richiamab
   |**Modulo FVA**|**FVA**| recupera-documento-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-fascicolo-fva  | RP, DRP1, DRP2, DRP3  |
   |**Modulo FVA**|**FVA**| recupera-storico-documento-fva  | RP, DRP1, DRP2, DRP3  |
+
+**Nota**: i servizi Appalti SIMOG e SMARTCIG (contesto gestioneAppalti) non sono riportati nella tabella in quanto non rientrano tra i servizi ordinari oggetto di certificazione AgID. L'elenco dei servizi e dei relativi ruoli è riportato nel [documento dedicato](documento-specifiche-servizi-appalti-simog-smartcig.md#4-servizi-e-ruoli).
 
 # 5	Contesto gestioneUtenti
 
@@ -442,18 +444,10 @@ I servizi che possono essere invocati in questo contesto sono i seguenti:
 
 # 14	Contesto gestioneAppalti
 
-In questo contesto rientrano i servizi richiamabili dalla SA per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e per la migrazione delle relative procedure verso la PCP.
+I servizi del contesto gestioneAppalti ("Appalti SIMOG e SMARTCIG"), richiamabili dalla SA per la consultazione degli appalti presenti nei sistemi SIMOG e SmartCIG e per la migrazione delle relative procedure verso la PCP, sono descritti in un documento di specifiche autonomo e separato:
+- [Documento di specifiche dei servizi Appalti SIMOG e SMARTCIG](documento-specifiche-servizi-appalti-simog-smartcig.md)
 
-**Descrizione dei servizi**
-
-I servizi che possono essere invocati in questo contesto sono i seguenti:
-- appalti/simog: servizio che consente la consultazione della lista degli appalti presenti nel sistema SIMOG di competenza della SA che sta operando;
-- appalti/smartcig: servizio che consente la consultazione della lista degli appalti presenti nel sistema SmartCIG di competenza della SA che sta operando;
-- appalti/migraProcedura: servizio che consente la migrazione di una procedura di appalto, identificata dal numero gara, dal sistema sorgente (SIMOG o SmartCIG) verso la PCP;
-- appalti/migrazione/{numeroGara}: servizio che consente la consultazione dello stato di migrazione di una procedura SIMOG/SmartCIG verso la PCP, identificata per numero gara;
-- appalti/verificaRup: servizio che verifica se l’utente risulta tra gli incaricati della procedura SIMOG con ruolo RUP/RP;
-- appalti/verificaIdoneita: servizio che verifica se la procedura SIMOG è perfezionata e quindi migrabile in PCP;
-- modifica-scheda-simog: servizio che consente la modifica di una scheda dati per un appalto migrato da SIMOG.
+Tali servizi non rientrano tra i servizi ordinari della piattaforma oggetto di certificazione AgID e, pertanto, non sono riportati nella tabella del paragrafo [4.5](#45servizi-e-ruoli).
 
 # 15	Servizi comuni
 
@@ -475,6 +469,8 @@ In questo capitolo si riportano i servizi comuni, ossia quelli che possono esser
 Le interfacce dei servizi sono definite secondo gli standard di interoperabilità tramite API dei sistemi informatici che tutte le pubbliche amministrazioni devono adottare al fine di garantire l’interoperabilità dei propri sistemi con quelli di altri soggetti a favorire l’implementazione complessiva del sistema informativo delle PA (ModI).
 
 I file YAML con le specifiche delle interfacce dei servizi esposti dalla NPA sono consultabili nella cartella [specifiche-interfacce](../specifiche-interfacce/)
+
+Le operazioni dei servizi Appalti SIMOG e SMARTCIG sono definite nel file [specifiche-servizi-appalto.yaml](specifiche-servizi-appalto.yaml) con il tag `gestioneAppalti` e sono descritte nel [documento dedicato](documento-specifiche-servizi-appalti-simog-smartcig.md).
 
 # 17	Contesto di sicurezza
 Le Linee Guida di interoperabilità PDND sono destinate ai soggetti di cui all’articolo 2, comma 2, del CAD, i quali favoriscono la conoscenza e l’utilizzo del patrimonio informativo detenuto per finalità istituzionali nonché la condivisione dei dati con i soggetti che hanno diritto di accedervi ai fini dell’attuazione dell’articolo 50 del CAD e della semplificazione degli adempimenti dei cittadini e delle imprese, in conformità alla disciplina vigente, assicurando le modalità di scambio telematico per il tramite di API così come previsto dal ModI. 

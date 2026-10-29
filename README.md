@@ -187,7 +187,8 @@ E' richiesta l'iscrizione degli utenti sul sistema di gestione utenti di ANAC e 
 ## Specifiche delle interfacce
  - Il [file YAML](/docs/specifiche-interfacce/specifiche-servizi-appalto.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Ciclo di vita dell'Appalto
  - Il [file YAML](/docs/specifiche-interfacce/specifiche-servizi-fvoe-fva.yaml) relativo alle specifiche dei servizi esposti dalla NPA per la gestione del Fascicolo Virtuale dell'Operatore Economico e del Fascicolo Virtuale dell'Appalto
- - Il [documento](/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md) di sintesi di Specifica delle Interfacce redatto utilizzando il linguaggio di markup Markdown
+ - Il [documento](/docs/specifiche-interfacce/documento-specifiche-servizi-npa.md) di sintesi di Specifica delle Interfacce dei servizi ordinari della piattaforma, oggetto di certificazione AgID, redatto utilizzando il linguaggio di markup Markdown
+ - Il [documento](/docs/specifiche-interfacce/documento-specifiche-servizi-appalti-simog-smartcig.md) di Specifica delle Interfacce dei servizi Appalti SIMOG e SMARTCIG (contesto gestioneAppalti), autonomo e separato rispetto ai servizi ordinari della piattaforma oggetto di certificazione AgID, redatto utilizzando il linguaggio di markup Markdown
  - Il [documento](/docs/specifiche-jws/specificheJWS.json) riporta la struttura del token JWS che deve essere generato dal fruitore per l'interazione con gli eService esposti da ANAC. Qui è consultabile [roadmap](/docs/specifiche-jws/roadmap.md) con la previsione dell'attivazione delle restrizioni all'accesso in seguito all'adozione del JWS.
 
 ## Modello dati
