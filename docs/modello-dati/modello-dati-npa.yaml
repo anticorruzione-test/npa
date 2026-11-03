@@ -21,10 +21,10 @@ components:
             description: versione della scheda. necessaria al motore interno ANAC.
             type: string
             example: '1.0'
-          _stato:
+          stato:
             $ref: '#/components/schemas/StatoSchedaEnum' 
-          _dataCreazione:
-            description: data creazione della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          dataCreazione:
+            description: data di creazione della scheda, valorizzata da ANAC e restituita nelle response (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
             example: '2022-01-23T12:02:05Z'
@@ -126,6 +126,10 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-ISDA2.yaml#/components/schemas/SchedaISDA2Type' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-AOC.yaml#/components/schemas/SchedaAOCType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-ABI.yaml#/components/schemas/SchedaABIType'
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
              
       SchedaPostPubblicazioneType:
         description: Scheda generica definita dal contesto in cui si trova l'appalto
@@ -134,8 +138,8 @@ components:
         type: object
         additionalProperties: false
         properties:
-          _dataModifica:
-            description: data modifica della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+          dataModifica:
+            description: data dell'ultima modifica della scheda, valorizzata da ANAC e restituita nelle response (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
             example: '2022-01-23T12:02:05Z'
@@ -206,6 +210,18 @@ components:
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-CSDA2.yaml#/components/schemas/SchedaCSDA2Type' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-ID.yaml#/components/schemas/SchedaIDType' 
               - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/schede/modello-dati-schede-CBI.yaml#/components/schemas/SchedaCBIType'
+          idAppalto:
+            description: identificativo univoco dell'Appalto a cui appartiene la scheda. Restituito nelle response; in input il valore viene ignorato (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          regCodPiattaforma:
+            description: codice della piattaforma (registro piattaforme certificate) che ha trasmesso la scheda. Restituito nelle response; in input il valore viene ignorato
+            type: string
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
       CigType:
         description: coppia lotIdentifier-cig
         type: object
@@ -217,6 +233,115 @@ components:
             example: '9050626CD6'
           lotIdentifier:
             description: Id univoco del lotto generato dalla stazione appaltante - corrisponde al campo bt-137 - Purpose Lot Identifier del TED
+            type: string
+      LottoTypeCompleto:
+        description: Oggetto che riporta i dati del lotto, le schede confermate e i partecipanti
+        allOf: # estende la classe LottoType
+          - $ref: '#/components/schemas/LottoType'
+        properties:
+          schedeConfermate:
+            description: Lista delle schede confermate associate al lotto
+            type: array
+            items:
+              $ref: '#/components/schemas/SchedaConfermataType'
+          partecipanti:
+            description: Lista dei partecipanti al lotto, espansa per soggetto (un elemento per ciascun soggetto del partecipante)
+            type: array
+            items:
+              $ref: '#/components/schemas/PartecipanteLottoType'
+      SchedaConfermataMinimaleType:
+        description: Dati minimi di una scheda confermata
+        type: object
+        additionalProperties: false
+        properties:
+          idScheda:
+            description: identificativo univoco della scheda definito da ANAC (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          dataConferma:
+            description: data di conferma della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+      SchedaConfermataType:
+        description: Dati minimi di una scheda confermata, comprensivi del codice della scheda
+        allOf: # estende la classe SchedaConfermataMinimaleType
+          - $ref: '#/components/schemas/SchedaConfermataMinimaleType'
+        properties:
+          codice:
+            $ref: '#/components/schemas/CodiceSchedaEnum'
+      SchedaListaType:
+        description: Dati di sintesi di una scheda restituiti dal servizio ricerca-scheda
+        type: object
+        additionalProperties: false
+        properties:
+          _idScheda:
+            description: identificativo univoco della scheda definito da ANAC (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          codice:
+            $ref: '#/components/schemas/CodiceSchedaEnum'
+          versione:
+            description: versione della scheda
+            type: string
+            example: '1.0'
+          stato:
+            $ref: '#/components/schemas/StatoSchedaEnum'
+          dataCreazione:
+            description: data di creazione della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
+      PartecipanteLottoType:
+        description: Partecipante al lotto
+        type: object
+        additionalProperties: false
+        properties:
+          idPartecipante:
+            description: identificativo univoco del partecipante (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+          soggetti:
+            description: Soggetto del partecipante (la lista contiene un solo elemento, in quanto i partecipanti sono espansi per soggetto)
+            type: array
+            uniqueItems: true
+            items:
+              $ref: '#/components/schemas/SoggettoPartecipanteType'
+          aggiudicato:
+            description: indica se il partecipante è aggiudicatario del lotto
+            type: boolean
+          importo:
+            description: importo associato al partecipante in €
+            type: number
+            format: double
+          idContratto:
+            description: identificativo univoco del Contratto associato al partecipante (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+      SoggettoPartecipanteType:
+        description: Soggetto che compone il partecipante
+        type: object
+        additionalProperties: false
+        properties:
+          codiceFiscale:
+            description: codice fiscale del soggetto
+            type: string
+          denominazione:
+            description: denominazione del soggetto
+            type: string
+          statoSoggettoSDA:
+            description: stato del soggetto nel Sistema Dinamico di Acquisizione - presente solo se valorizzato
+            type: string
+          statoSoggettoElenco:
+            description: stato del soggetto nell'Elenco degli Operatori Economici - presente solo se valorizzato
             type: string
       TipologicaBaseType:
         description: Oggetto generico di una tipologica
@@ -299,6 +424,10 @@ components:
             $ref: '#/components/schemas/StatoLottoEnum'
           oggettoContratto:
             $ref: '#/components/schemas/OggettoContrattoEnum'
+          importoAggiudicazione:
+            description: importo di aggiudicazione del lotto in €
+            type: number
+            format: double
       AppaltoBaseType:
         description: Oggetto che riporta tutti i dati dell'Appalto
         type: object
@@ -333,6 +462,30 @@ components:
             type: array
             items:
               $ref: '#/components/schemas/LottoType'
+          codiceScheda:
+            description: codice della scheda iniziale dell'Appalto
+            type: string
+            example: 'AD1_25'
+          faseOrchestratore:
+            description: fase più avanzata del ciclo di vita dell'Appalto raggiunta con le schede confermate (Pianificazione, Affidamento, Pubblicazione, Aggiudicazione, Esecuzione)
+            type: string
+            example: 'Pubblicazione'
+          regCodPiattaforma:
+            description: codice della piattaforma (registro piattaforme certificate) che ha trasmesso la scheda iniziale dell'Appalto
+            type: string
+          importo:
+            description: importo dell'Appalto in € (valore appalto.datiBase.importo riportato nella scheda)
+            type: number
+            format: double
+          dataModifica:
+            description: data dell'ultima modifica dell'Appalto (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
       SchedaGroupType:
         oneOf:
           - $ref: '#/components/schemas/SchedaPianificazioneType'
@@ -386,9 +539,13 @@ components:
             $ref: '#/components/schemas/DatiPubblicazioneEUType'
           datiPubblicazioneIT:
             $ref: '#/components/schemas/DatiPubblicazioneITType'            
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
       AvvisoType:
-        allOf: # estende la classe AvvisoCommonType
-          - $ref: '#/components/schemas/AvvisoCommonType'
+        allOf: # estende la classe AvvisoBaseType
+          - $ref: '#/components/schemas/AvvisoBaseType'
       AvvisoPVLOscuratoType:
         type: object
         additionalProperties: false
@@ -418,12 +575,12 @@ components:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
-          _dataCreazione:
+          dataCreazione:
             description: data creazione della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
             example: '2022-01-23T12:02:05Z'
-          _dataModifica:
+          dataModifica:
             description: data modifica della scheda (A date-time specified by ISO 8601 as profiled by RFC 3339)
             type: string
             format: date-time
@@ -568,10 +725,27 @@ components:
         properties:
           idPianificazione:
             description: identificativo univoco della Pianificazione definito da ANAC. Restituito dall'operazione di creazione Pianificazione. (A UUID specified by RFC4122)
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
           tipo: 
             $ref: '#/components/schemas/TipoPianoEnum'
           stato:
             $ref: '#/components/schemas/StatoPianoEnum' 
+          dataCreazione:
+            description: data di creazione della Pianificazione (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+          dataModifica:
+            description: data dell'ultima modifica della Pianificazione (A date-time specified by ISO 8601 as profiled by RFC 3339)
+            type: string
+            format: date-time
+            example: '2022-01-23T12:02:05Z'
+          messaggioOscuramentoAvviso:
+            description: messaggio informativo restituito quando l'avviso associato risulta oscurato oppure modificato sulla Piattaforma di Pubblicità Legale (PVL); per i dettagli invocare il servizio consulta-avviso-oscurato. Assente negli altri casi
+            type: string
+            example: 'Avviso oscurato su PVL. Usare il servizio consultaAvvisoOscurato per i dettagli.'
       PianoType:
         allOf: # estende la classe PianoBaseType
           - $ref: '#/components/schemas/PianoBaseType'

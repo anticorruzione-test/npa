@@ -230,6 +230,13 @@ paths:
       operationId: idPianoRicerca
       parameters:
         - in: query
+          name: idPianificazione
+          description: identificativo univoco della Pianificazione definito da ANAC - valorizzare almeno un parametro di ricerca (A UUID specified by RFC4122)
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
           name: stato
           description: Codice stato della Pianificazione - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [statoPiano.json](https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/tipologiche/statoPiano.json)
           schema:
@@ -255,6 +262,14 @@ paths:
             type: string
             format: date-time
           example: '2015-05-28T14:07:17Z'  
+        - in: query
+          name: codiciScheda
+          description: Codici scheda da utilizzare come filtro - sono restituite le sole Pianificazioni la cui scheda di preinformazione ha codice compreso nella lista - valorizzare almeno un parametro di ricerca - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/tipologiche/codiceScheda.json)
+          schema:
+            type: array
+            items:
+              type: string
+          example: ['AVR']
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -481,6 +496,20 @@ paths:
             format: date-time
           example: '2015-05-28T14:07:17Z'  
         - in: query
+          name: codiciScheda
+          description: Codici scheda da utilizzare come filtro - sono restituiti i soli Appalti la cui scheda iniziale ha codice compreso nella lista. Il filtro non è sufficiente da solo, richiede la valorizzazione di almeno un altro parametro di ricerca - fare riferimento ai valori contenuti nel file [codiceScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/tipologiche/codiceScheda.json)
+          schema:
+            type: array
+            items:
+              type: string
+          example: ['AD1_25', 'P1_16']
+        - in: query
+          name: abilitaPresaCarico
+          description: Se valorizzato a true, sono restituiti gli Appalti sui quali l'utente può effettuare l'operazione di presa in carico (scheda iniziale confermata, Stazione Appaltante dell'utente presente tra quelle della scheda, utente non già RP dell'Appalto); in tal caso i filtri lotIdentifier e stato non sono applicati. Il filtro non è sufficiente da solo, richiede la valorizzazione di almeno un altro parametro di ricerca
+          schema:
+            type: boolean
+            default: false
+        - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
           schema:
@@ -654,7 +683,7 @@ paths:
       tags:
         - comunicaAppalto
       summary: API Rest per il recupero dei CIG generati da ANAC e assegnati ai lotti dell’Appalto. SINCRONO
-      description: Per un Appalto il servizio restituiti le coppie Lotto - CIG. SINCRONO
+      description: Per un Appalto il servizio restituisce i lotti con il relativo CIG, i dati di sintesi del lotto, le schede confermate e i partecipanti. Se valorizzato il parametro cig, restituisce il solo lotto corrispondente. SINCRONO
       operationId: idCIGRecupera
       parameters:
         - in: query
@@ -665,6 +694,12 @@ paths:
             type: string
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
+          name: cig
+          description: Identificativo univoco Appalto-Lotto rilasciato da ANAC - se valorizzato, il servizio restituisce il solo lotto dell'Appalto con il CIG indicato
+          schema:
+            type: string
+            example: 9050626CD6
         - in: query
           name: page
           description: "numero della pagina da visualizzare (min: 1)"
@@ -1342,6 +1377,13 @@ paths:
             format: uuid
             example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"            
         - in: query
+          name: idScheda
+          description: identificativo univoco della Scheda definito da ANAC. Se valorizzato insieme a idAppalto o idPianificazione, sono restituiti tutti gli esiti relativi alla scheda indicata (A UUID specified by RFC4122)
+          schema:
+            type: string
+            format: uuid
+            example: "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+        - in: query
           name: tipoOperazione
           description: Tipo operazione di cui si vuole conoscere l'esito - fare riferimento ai valori contenuti nel file [tipoOperazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/tipologiche/tipoOperazione.json)
           required: true
@@ -1916,8 +1958,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/AvvisoBaseType'      
     StatoAvvisoType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/StatoAvvisoType'
-    CigType:
-      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/CigType'
+    LottoTypeCompleto:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/LottoTypeCompleto'
     DatiAppaltoType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/DatiAppaltoType'
     SchedaPianificazioneType:
@@ -1928,6 +1970,8 @@ components:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaPostPubblicazioneType'
     SchedaType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaType'
+    SchedaListaType:
+      $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/SchedaListaType'
     EsitoOperazioneType:
       $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/dis_rettifica_orch/docs/modello-dati/modello-dati-npa.yaml#/components/schemas/EsitoOperazioneType'
     StatoType:
@@ -2508,10 +2552,10 @@ components:
       additionalProperties: false
       properties:
         result: 
-          description: Lista lotIdentifier-cig
+          description: Lista dei lotti dell'Appalto con CIG, dati di sintesi, schede confermate e partecipanti
           type: array
           items:
-            $ref: '#/components/schemas/CigType' 
+            $ref: '#/components/schemas/LottoTypeCompleto' 
     TipologicaResponse:
       allOf: # estende la classe BaseResponse e PaginazioneType
         - $ref: '#/components/schemas/BaseResponse'
@@ -2554,7 +2598,7 @@ components:
           description: Lista di ritorno con la sintesi dei dati delle schede
           type: array
           items:
-            $ref: '#/components/schemas/SchedaType'
+            $ref: '#/components/schemas/SchedaListaType'
     ConsultaAvvisoResponse:
       allOf: # estende lo schema dati di BaseResponse
         - $ref: '#/components/schemas/BaseResponse'
