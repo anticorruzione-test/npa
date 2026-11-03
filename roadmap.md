@@ -100,7 +100,6 @@
 |77856|Tipologica tipoProcedura eliminare voce 99 - procedura di gara|Sarà chiusa la voce 99 della tipologica tipoProcedura| /<br>/<br>/<br>                               |||
 |58793|StazioneAppaltanteType - refactoring modello dati|Refactoring del modello dati della stazione appaltante per ottimizzazione della struttura e disambiguamento delle informazioni di delega e funzioni svolte| /<br>/<br>/<br>                               ||
 ||||                                               |||
-|96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione|23/10/2026<br>29/10/2026*<br>29/10/2026*<br>||
 |96573|Scheda ID - revisione modello dati|Revisione del modello dati per consentire non solo la sovrascrittura del CUP ma anche la dissociazione|23/10/2026<br>/<br>/<br>||
 |100672|Scheda ID - integrazione modello dati|Modifica scheda ID per integrazione dati CEL|23/10/2026<br>/<br>/<br>||
 ||||                                               |||
