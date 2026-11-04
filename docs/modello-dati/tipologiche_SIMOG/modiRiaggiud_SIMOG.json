@@ -1,58 +1,72 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art.113 c.4 e fattispecie consimili",
-      "en": "D.Lgs. 163/2006, art.113 c.4 e fattispecie consimili"
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art.113 c.4 e fattispecie consimili",
+    "en": "d.lgs. 163/2006, art.113 c.4 e fattispecie consimili"
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art.140 c.1",
-      "en": "D.Lgs. 163/2006, art.140 c.1"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art.140 c.1",
+    "en": "d.lgs. 163/2006, art.140 c.1"
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore",
-      "en": "Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore",
+    "en": "fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell'appaltatore"
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "Risoluzione del contratto",
-      "en": "Risoluzione del contratto"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "risoluzione del contratto",
+    "en": "risoluzione del contratto"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "Recesso dal contratto (codice antimafia)",
-      "en": "Recesso dal contratto (codice antimafia)"
-    }
+  "dataInizio":null,
+  "dataFine": null
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "recesso dal contratto (codice antimafia)",
+    "en": "recesso dal contratto (codice antimafia)"
   },
-  {
-    "codice": "6",
-    "descrizione": {
-      "it": "Recesso dal contratto su richiesta dell'appaltatore",
-      "en": "Recesso dal contratto su richiesta dell'appaltatore"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "6",
+  "descrizione": {
+    "it": "recesso dal contratto su richiesta dell'appaltatore",
+    "en": "recesso dal contratto su richiesta dell'appaltatore"
   },
-  {
-    "codice": "7",
-    "descrizione": {
-      "it": "Dichiarazione giudiziale di inefficacia del contratto",
-      "en": "Dichiarazione giudiziale di inefficacia del contratto"
-    }
+  "dataInizio":null,
+  "dataFine": null
+},
+{
+  "codice": "7",
+  "descrizione": {
+    "it": "dichiarazione giudiziale di inefficacia del contratto",
+    "en": "dichiarazione giudiziale di inefficacia del contratto"
   },
-  {
-    "codice": "8",
-    "descrizione": {
-      "it": "Revoca dell'aggiudicazione definitiva",
-      "en": "Revoca dell'aggiudicazione definitiva"
-    }
-  }
-]
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "8",
+  "descrizione": {
+    "it": "revoca dell'aggiudicazione definitiva",
+    "en": "revoca dell'aggiudicazione definitiva"
+  },
+  "dataInizio":null,
+  "dataFine": null
+}]

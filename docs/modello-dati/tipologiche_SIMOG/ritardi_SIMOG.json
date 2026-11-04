@@ -1,23 +1,29 @@
 [
   {
-    "codice": "P",
+    "codice": "p",
     "descrizione": {
-      "it": "IN LINEA",
-      "en": "IN LINEA"
-    }
+      "it": "in linea",
+      "en": "in linea"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
-    "codice": "A",
+    "codice": "a",
     "descrizione": {
-      "it": "IN ANTICIPO",
-      "en": "IN ANTICIPO"
-    }
+      "it": "in anticipo",
+      "en": "in anticipo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
-    "codice": "R",
+    "codice": "r",
     "descrizione": {
-      "it": "IN RITARDO",
-      "en": "IN RITARDO"
-    }
+      "it": "in ritardo",
+      "en": "in ritardo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

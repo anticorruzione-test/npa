@@ -2,15 +2,19 @@
   {
     "codice": "S",
     "descrizione": {
-      "it": "SETTORI SPECIALI",
-      "en": "SETTORI SPECIALI"
-    }
+      "it": "settori speciali",
+      "en": "settori speciali"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "O",
     "descrizione": {
-      "it": "SETTORI ORDINARI",
-      "en": "SETTORI ORDINARI"
-    }
+      "it": "settori ordinari",
+      "en": "settori ordinari"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

@@ -1,72 +1,90 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "Accordo consensuale",
-      "en": "Accordo consensuale"
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "accordo consensuale",
+    "en": "accordo consensuale"
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "Grave inosservanza alle norme in materia di sicurezza",
-      "en": "Grave inosservanza alle norme in materia di sicurezza"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "grave inosservanza alle norme in materia di sicurezza",
+    "en": "grave inosservanza alle norme in materia di sicurezza"
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "Variante per errore progettuale oltre il quinto contrattuale",
-      "en": "Variante per errore progettuale oltre il quinto contrattuale"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "variante per errore progettuale oltre il quinto contrattuale",
+    "en": "variante per errore progettuale oltre il quinto contrattuale"
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "Reati accertati",
-      "en": "Reati accertati"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "reati accertati",
+    "en": "reati accertati"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "Grave inadempimento, grave irregolarita' o grave ritardo",
-      "en": "Grave inadempimento, grave irregolarita' o grave ritardo"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "grave inadempimento, grave irregolarita' o grave ritardo",
+    "en": "grave inadempimento, grave irregolarita' o grave ritardo"
   },
-  {
-    "codice": "6",
-    "descrizione": {
-      "it": "Superamento delle soglie delle modifiche contrattuali",
-      "en": "Superamento delle soglie delle modifiche contrattuali"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "6",
+  "descrizione": {
+    "it": "superamento delle soglie delle modifiche contrattuali",
+    "en": "superamento delle soglie delle modifiche contrattuali"
   },
-  {
-    "codice": "7",
-    "descrizione": {
-      "it": "Modifica sostanziale del contratto",
-      "en": "Modifica sostanziale del contratto"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine":null
+},
+{
+  "codice": "7",
+  "descrizione": {
+    "it": "modifica sostanziale del contratto",
+    "en": "modifica sostanziale del contratto"
   },
-  {
-    "codice": "8",
-    "descrizione": {
-      "it": "Carenza dei requisiti al momento dell’aggiudicazione",
-      "en": "Carenza dei requisiti al momento dell’aggiudicazione"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine":null
+},
+{
+  "codice": "8",
+  "descrizione": {
+    "it": "carenza dei requisiti al momento dell’aggiudicazione",
+    "en": "carenza dei requisiti al momento dell’aggiudicazione"
   },
-  {
-    "codice": "9",
-    "descrizione": {
-      "it": "Violazione degli obblighi derivanti dai trattati",
-      "en": "Violazione degli obblighi derivanti dai trattati"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine":null
+},
+{
+  "codice": "9",
+  "descrizione": {
+    "it": "violazione degli obblighi derivanti dai trattati",
+    "en": "violazione degli obblighi derivanti dai trattati"
   },
-  {
-    "codice": "10",
-    "descrizione": {
-      "it": "Decadenza dell’attestazione di qualificazione",
-      "en": "Decadenza dell’attestazione di qualificazione"
-    }
-  }
-]
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine":null
+},
+{
+  "codice": "10",
+  "descrizione": {
+    "it": "decadenza dell’attestazione di qualificazione",
+    "en": "decadenza dell’attestazione di qualificazione"
+  },
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine":null
+}]

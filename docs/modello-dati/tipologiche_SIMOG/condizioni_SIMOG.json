@@ -1,310 +1,396 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.2,lett.a). (N.B. per lavori<1.000.000 Euro)",
-      "en": "D. Lgs. 163/2006, art.57, c.2,lett.a). (N.B. per lavori<1.000.000 Euro)"
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.2,lett.a). (n.b. per lavori<1.000.000 euro)",
+    "en": "d. lgs. 163/2006, art.57, c.2,lett.a). (n.b. per lavori<1.000.000 euro)"
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.2, lett.b).",
-      "en": "D. Lgs. 163/2006, art.57, c.2, lett.b)."
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.2, lett.b).",
+    "en": "d. lgs. 163/2006, art.57, c.2, lett.b)."
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.2, lett.c).",
-      "en": "D. Lgs. 163/2006, art.57, c.2, lett.c)."
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.2, lett.c).",
+    "en": "d. lgs. 163/2006, art.57, c.2, lett.c)."
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.3, lett.a).(N.B. Solo per forniture)",
-      "en": "D. Lgs. 163/2006, art.57, c.3, lett.a).(N.B. Solo per forniture)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.3, lett.a).(n.b. solo per forniture)",
+    "en": "d. lgs. 163/2006, art.57, c.3, lett.a).(n.b. solo per forniture)"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.3, lett.b).(N.B. Solo per forniture)",
-      "en": "D. Lgs. 163/2006, art.57, c.3, lett.b).(N.B. Solo per forniture)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.3, lett.b).(n.b. solo per forniture)",
+    "en": "d. lgs. 163/2006, art.57, c.3, lett.b).(n.b. solo per forniture)"
   },
-  {
-    "codice": "6",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.3, lett.c).(N.B. Solo per forniture)",
-      "en": "D. Lgs. 163/2006, art.57, c.3, lett.c).(N.B. Solo per forniture)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "6",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.3, lett.c).(n.b. solo per forniture)",
+    "en": "d. lgs. 163/2006, art.57, c.3, lett.c).(n.b. solo per forniture)"
   },
-  {
-    "codice": "7",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.3, lett.d).(N.B. Solo per forniture)",
-      "en": "D. Lgs. 163/2006, art.57, c.3, lett.d).(N.B. Solo per forniture)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "7",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.3, lett.d).(n.b. solo per forniture)",
+    "en": "d. lgs. 163/2006, art.57, c.3, lett.d).(n.b. solo per forniture)"
   },
-  {
-    "codice": "8",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.4.(N.B. Solo per Servizi)",
-      "en": "D. Lgs. 163/2006, art.57, c.4.(N.B. Solo per Servizi)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "8",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.4.(n.b. solo per servizi)",
+    "en": "d. lgs. 163/2006, art.57, c.4.(n.b. solo per servizi)"
   },
-  {
-    "codice": "9",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.1) (N.B. Solo per lavori e servizi)",
-      "en": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.1) (N.B. Solo per lavori e servizi)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "9",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.5, lett.a), sub a.1) (n.b. solo per lavori e servizi)",
+    "en": "d. lgs. 163/2006, art.57, c.5, lett.a), sub a.1) (n.b. solo per lavori e servizi)"
   },
-  {
-    "codice": "10",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.2) (N.B. Solo per lavori e servizi)",
-      "en": "D. Lgs. 163/2006, art.57, c.5, lett.a), sub a.2) (N.B. Solo per lavori e servizi)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "10",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.5, lett.a), sub a.2) (n.b. solo per lavori e servizi)",
+    "en": "d. lgs. 163/2006, art.57, c.5, lett.a), sub a.2) (n.b. solo per lavori e servizi)"
   },
-  {
-    "codice": "11",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.57, c.5, lett.b) (N.B. Solo per lavori e servizi)",
-      "en": "D. Lgs. 163/2006, art.57, c.5, lett.b) (N.B. Solo per lavori e servizi)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "11",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.57, c.5, lett.b) (n.b. solo per lavori e servizi)",
+    "en": "d. lgs. 163/2006, art.57, c.5, lett.b) (n.b. solo per lavori e servizi)"
   },
-  {
-    "codice": "12",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. a) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. a) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "12",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. a) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. a) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "13",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. b) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. b) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "13",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. b) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. b) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "14",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. c) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. c) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "14",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. c) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. c) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "15",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. d) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. d) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "15",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. d) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. d) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "16",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. e) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. e) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "16",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. e) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. e) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "17",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. f) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. f) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "17",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. f) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. f) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "18",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. g) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. g) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "18",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. g) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. g) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "19",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. h) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. h) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "19",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. h) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. h) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "20",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. i) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. i) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "20",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. i) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. i) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "21",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. l) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. l) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "21",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. l) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. l) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "22",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 204, c. 1",
-      "en": "D.Lgs. 163/2006, art. 204, c. 1"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "22",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 204, c. 1",
+    "en": "d.lgs. 163/2006, art. 204, c. 1"
   },
-  {
-    "codice": "23",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. j) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. j) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "23",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. j) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. j) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "24",
-    "descrizione": {
-      "it": "D.Lgs. 163/2006, art. 221, c. 1, lett. k) (N.B. Solo Settori Speciali)",
-      "en": "D.Lgs. 163/2006, art. 221, c. 1, lett. k) (N.B. Solo Settori Speciali)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "24",
+  "descrizione": {
+    "it": "d.lgs. 163/2006, art. 221, c. 1, lett. k) (n.b. solo settori speciali)",
+    "en": "d.lgs. 163/2006, art. 221, c. 1, lett. k) (n.b. solo settori speciali)"
   },
-  {
-    "codice": "25",
-    "descrizione": {
-      "it": "Altre motivazioni",
-      "en": "Altre motivazioni"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "25",
+  "descrizione": {
+    "it": "altre motivazioni",
+    "en": "altre motivazioni"
   },
-  {
-    "codice": "26",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.122, c.7-bis (N.B. Solo per lavori)",
-      "en": "D. Lgs. 163/2006, art.122, c.7-bis (N.B. Solo per lavori)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "26",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.122, c.7-bis (n.b. solo per lavori)",
+    "en": "d. lgs. 163/2006, art.122, c.7-bis (n.b. solo per lavori)"
   },
-  {
-    "codice": "27",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.122, c.8 (N.B. Solo per lavori)",
-      "en": "D. Lgs. 163/2006, art.122, c.8 (N.B. Solo per lavori)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "27",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.122, c.8 (n.b. solo per lavori)",
+    "en": "d. lgs. 163/2006, art.122, c.8 (n.b. solo per lavori)"
   },
-  {
-    "codice": "28",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art. 99, c.5 / art. 108 c.6",
-      "en": "D. Lgs. 163/2006, art. 99, c.5 / art. 108 c.6"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "28",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art. 99, c.5 / art. 108 c.6",
+    "en": "d. lgs. 163/2006, art. 99, c.5 / art. 108 c.6"
   },
-  {
-    "codice": "29",
-    "descrizione": {
-      "it": "Ricorso al mercato elettronico",
-      "en": "Ricorso al mercato elettronico"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "29",
+  "descrizione": {
+    "it": "ricorso al mercato elettronico",
+    "en": "ricorso al mercato elettronico"
   },
-  {
-    "codice": "30",
-    "descrizione": {
-      "it": "Adesione ad accordo quadro/convenzione",
-      "en": "Adesione ad accordo quadro/convenzione"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "30",
+  "descrizione": {
+    "it": "adesione ad accordo quadro/convenzione",
+    "en": "adesione ad accordo quadro/convenzione"
   },
-  {
-    "codice": "31",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.122, c.7 (N.B. Solo per lavori)",
-      "en": "D. Lgs. 163/2006, art.122, c.7 (N.B. Solo per lavori)"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "31",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.122, c.7 (n.b. solo per lavori)",
+    "en": "d. lgs. 163/2006, art.122, c.7 (n.b. solo per lavori)"
   },
-  {
-    "codice": "32",
-    "descrizione": {
-      "it": "D. Lgs. 163/2006, art.91, c.2",
-      "en": "D. Lgs. 163/2006, art.91, c.2"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "32",
+  "descrizione": {
+    "it": "d. lgs. 163/2006, art.91, c.2",
+    "en": "d. lgs. 163/2006, art.91, c.2"
   },
-  {
-    "codice": "33",
-    "descrizione": {
-      "it": "Procedura a seguito di precedente gara annullata o deserta o senza esito",
-      "en": "Procedura a seguito di precedente gara annullata o deserta o senza esito"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "33",
+  "descrizione": {
+    "it": "procedura a seguito di precedente gara annullata o deserta o senza esito",
+    "en": "procedura a seguito di precedente gara annullata o deserta o senza esito"
   },
-  {
-    "codice": "34",
-    "descrizione": {
-      "it": "Lavori, beni e Servizi infungibili per opera d'arte",
-      "en": "Lavori, beni e Servizi infungibili per opera d'arte"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "34",
+  "descrizione": {
+    "it": "lavori, beni e servizi infungibili per opera d'arte",
+    "en": "lavori, beni e servizi infungibili per opera d'arte"
   },
-  {
-    "codice": "35",
-    "descrizione": {
-      "it": "Lavori, beni e Servizi infungibili per motivi tecnici",
-      "en": "Lavori, beni e Servizi infungibili per motivi tecnici"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "35",
+  "descrizione": {
+    "it": "lavori, beni e servizi infungibili per motivi tecnici",
+    "en": "lavori, beni e servizi infungibili per motivi tecnici"
   },
-  {
-    "codice": "36",
-    "descrizione": {
-      "it": "Lavori, beni e Servizi infungibili per diritti esclusivi",
-      "en": "Lavori, beni e Servizi infungibili per diritti esclusivi"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "36",
+  "descrizione": {
+    "it": "lavori, beni e servizi infungibili per diritti esclusivi",
+    "en": "lavori, beni e servizi infungibili per diritti esclusivi"
   },
-  {
-    "codice": "37",
-    "descrizione": {
-      "it": "Estrema urgenza",
-      "en": "Estrema urgenza"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "37",
+  "descrizione": {
+    "it": "estrema urgenza",
+    "en": "estrema urgenza"
   },
-  {
-    "codice": "38",
-    "descrizione": {
-      "it": "Scopo di ricerca",
-      "en": "Scopo di ricerca"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "38",
+  "descrizione": {
+    "it": "scopo di ricerca",
+    "en": "scopo di ricerca"
   },
-  {
-    "codice": "39",
-    "descrizione": {
-      "it": "Consegne complementari",
-      "en": "Consegne complementari"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "39",
+  "descrizione": {
+    "it": "consegne complementari",
+    "en": "consegne complementari"
   },
-  {
-    "codice": "40",
-    "descrizione": {
-      "it": "Forniture quotate e acquistate sul mercato delle materie prime",
-      "en": "Forniture quotate e acquistate sul mercato delle materie prime"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "40",
+  "descrizione": {
+    "it": "forniture quotate e acquistate sul mercato delle materie prime",
+    "en": "forniture quotate e acquistate sul mercato delle materie prime"
   },
-  {
-    "codice": "41",
-    "descrizione": {
-      "it": "Condizioni particolarmente vantaggiose",
-      "en": "Condizioni particolarmente vantaggiose"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "41",
+  "descrizione": {
+    "it": "condizioni particolarmente vantaggiose",
+    "en": "condizioni particolarmente vantaggiose"
   },
-  {
-    "codice": "42",
-    "descrizione": {
-      "it": "II fase Concorso di progettazione e idee",
-      "en": "II fase Concorso di progettazione e idee"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "42",
+  "descrizione": {
+    "it": "ii fase concorso di progettazione e idee",
+    "en": "ii fase concorso di progettazione e idee"
   },
-  {
-    "codice": "43",
-    "descrizione": {
-      "it": "Ripetizione lavori o servizi analoghi",
-      "en": "Ripetizione lavori o servizi analoghi"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "43",
+  "descrizione": {
+    "it": "ripetizione lavori o servizi analoghi",
+    "en": "ripetizione lavori o servizi analoghi"
   },
-  {
-    "codice": "44",
-    "descrizione": {
-      "it": "Procedura di affidamento a contraente vincolato da disposizioni sovraordinate",
-      "en": "Procedura di affidamento a contraente vincolato da disposizioni sovraordinate"
-    }
-  }
-]
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "44",
+  "descrizione": {
+    "it": "procedura di affidamento a contraente vincolato da disposizioni sovraordinate",
+    "en": "procedura di affidamento a contraente vincolato da disposizioni sovraordinate"
+  },
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+}]

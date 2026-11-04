@@ -2,15 +2,19 @@
   {
     "codice": "P",
     "descrizione": {
-      "it": "PRINCIPALE",
-      "en": "PRINCIPALE"
-    }
+      "it": "principale",
+      "en": "principale"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "S",
     "descrizione": {
-      "it": "SCORPORABILE",
-      "en": "SCORPORABILE"
-    }
+      "it": "scorporabile",
+      "en": "scorporabile"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

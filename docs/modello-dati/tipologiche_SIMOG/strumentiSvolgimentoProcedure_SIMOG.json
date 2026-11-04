@@ -1,51 +1,63 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "Procedura svolta in modalità tradizionale o \"cartacea\"",
-      "en": "Procedura svolta in modalità tradizionale o \"cartacea\""
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "procedura svolta in modalità tradizionale o \"cartacea\"",
+    "en": "procedura svolta in modalità tradizionale o \"cartacea\""
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "Asta elettronica Art.56",
-      "en": "Asta elettronica Art.56"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "asta elettronica art.56",
+    "en": "asta elettronica art.56"
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "Catalogo elettronico Art.57: acquisto diretto",
-      "en": "Catalogo elettronico Art.57: acquisto diretto"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "catalogo elettronico art.57: acquisto diretto",
+    "en": "catalogo elettronico art.57: acquisto diretto"
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "Catalogo elettronico Art.57: richiesta di offerta",
-      "en": "Catalogo elettronico Art.57: richiesta di offerta"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "catalogo elettronico art.57: richiesta di offerta",
+    "en": "catalogo elettronico art.57: richiesta di offerta"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "Procedure svolte attraverso piattaforme telematiche di negoziazione Art.58",
-      "en": "Procedure svolte attraverso piattaforme telematiche di negoziazione Art.58"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "procedure svolte attraverso piattaforme telematiche di negoziazione art.58",
+    "en": "procedure svolte attraverso piattaforme telematiche di negoziazione art.58"
   },
-  {
-    "codice": "6",
-    "descrizione": {
-      "it": "Accordo quadro",
-      "en": "Accordo quadro"
-    }
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "6",
+  "descrizione": {
+    "it": "accordo quadro",
+    "en": "accordo quadro"
   },
-  {
-    "codice": "7",
-    "descrizione": {
-      "it": "Sistema dinamico di acquisizione",
-      "en": "Sistema dinamico di acquisizione"
-    }
-  }
-]
+  "dataInizio":null,
+  "dataFine":null
+},
+{
+  "codice": "7",
+  "descrizione": {
+    "it": "sistema dinamico di acquisizione",
+    "en": "sistema dinamico di acquisizione"
+  },
+  "dataInizio":"2020-12-09T23:00:00",
+  "dataFine":null
+}]

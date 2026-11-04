@@ -1,37 +1,45 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "Prezzo più basso",
-      "en": "Prezzo più basso"
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "prezzo piu' basso",
+    "en": "prezzo piu' basso"
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "Offerta economicamente più vantaggiosa",
-      "en": "Offerta economicamente più vantaggiosa"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "offerta economicamente piu' vantaggiosa",
+    "en": "offerta economicamente piu' vantaggiosa"
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "Offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo",
-      "en": "Offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo"
-    }
+  "dataInizio":null,
+  "dataFine":"2019-06-25T22:00:00"
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo",
+    "en": "offerta economicamente più vantaggiosa: miglior rapporto qualità / prezzo"
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "Offerta economicamente più vantaggiosa: criterio del minor prezzo",
-      "en": "Offerta economicamente più vantaggiosa: criterio del minor prezzo"
-    }
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "offerta economicamente più vantaggiosa: criterio del minor prezzo",
+    "en": "offerta economicamente più vantaggiosa: criterio del minor prezzo"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "Offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi",
-      "en": "Offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi"
-    }
-  }
-]
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi",
+    "en": "offerta economicamente più vantaggiosa: competizione solo in base a criteri qualitativi"
+  },
+  "dataInizio":"2019-06-25T22:00:00",
+  "dataFine": null
+}]

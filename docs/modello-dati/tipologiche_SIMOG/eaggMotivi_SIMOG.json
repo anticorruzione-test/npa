@@ -1,51 +1,63 @@
-[
-  {
-    "codice": "1",
-    "descrizione": {
-      "it": "Stazione appaltante non soggetta agli obblighi di cui al dPCM 24 dicembre 2015",
-      "en": "Stazione appaltante non soggetta agli obblighi di cui al dPCM 24 dicembre 2015"
-    }
+[{
+  "codice": "1",
+  "descrizione": {
+    "it": "stazione appaltante non soggetta agli obblighi di cui al dpcm 24 dicembre 2015",
+    "en": "stazione appaltante non soggetta agli obblighi di cui al dpcm 24 dicembre 2015"
   },
-  {
-    "codice": "2",
-    "descrizione": {
-      "it": "Acquisto espletato mediante adesione a contratto di soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'Autorita'Nazionale Anticorruzione n. 784 del 20 luglio 2016",
-      "en": "Acquisto espletato mediante adesione a contratto di soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'Autorita'Nazionale Anticorruzione n. 784 del 20 luglio 2016"
-    }
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "2",
+  "descrizione": {
+    "it": "acquisto espletato mediante adesione a contratto di soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'autorita'nazionale anticorruzione n. 784 del 20 luglio 2016",
+    "en": "acquisto espletato mediante adesione a contratto di soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'autorita'nazionale anticorruzione n. 784 del 20 luglio 2016"
   },
-  {
-    "codice": "3",
-    "descrizione": {
-      "it": "Soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'Autorita' Nazionale Anticorruzione n. 784 del 20 luglio 2016",
-      "en": "Soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'Autorita' Nazionale Anticorruzione n. 784 del 20 luglio 2016"
-    }
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "3",
+  "descrizione": {
+    "it": "soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'autorita' nazionale anticorruzione n. 784 del 20 luglio 2016",
+    "en": "soggetto aggregatore iscritto nell'elenco di cui alla delibera dell'autorita' nazionale anticorruzione n. 784 del 20 luglio 2016"
   },
-  {
-    "codice": "4",
-    "descrizione": {
-      "it": "Soglie massime annuali di cui all'art. 1 del dPCM 24 dicembre 2015 non raggiunte per la categoria merceologica d'interesse",
-      "en": "Soglie massime annuali di cui all'art. 1 del dPCM 24 dicembre 2015 non raggiunte per la categoria merceologica d'interesse"
-    }
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "4",
+  "descrizione": {
+    "it": "soglie massime annuali di cui all'art. 1 del dpcm 24 dicembre 2015 non raggiunte per la categoria merceologica d'interesse",
+    "en": "soglie massime annuali di cui all'art. 1 del dpcm 24 dicembre 2015 non raggiunte per la categoria merceologica d'interesse"
   },
-  {
-    "codice": "5",
-    "descrizione": {
-      "it": "Contratto non attivo presso il soggetto aggregatore (di cui all'art. 9, commi 1 e 2 del DL 66/2014) di riferimento o Consip e mancanza di accordi di collaborazione tra questi al momento della richiesta del rilascio del CIG",
-      "en": "Contratto non attivo presso il soggetto aggregatore (di cui all'art. 9, commi 1 e 2 del DL 66/2014) di riferimento o Consip e mancanza di accordi di collaborazione tra questi al momento della richiesta del rilascio del CIG"
-    }
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "5",
+  "descrizione": {
+    "it": "contratto non attivo presso il soggetto aggregatore (di cui all'art. 9, commi 1 e 2 del dl 66/2014) di riferimento o consip e mancanza di accordi di collaborazione tra questi al momento della richiesta del rilascio del cig",
+    "en": "contratto non attivo presso il soggetto aggregatore (di cui all'art. 9, commi 1 e 2 del dl 66/2014) di riferimento o consip e mancanza di accordi di collaborazione tra questi al momento della richiesta del rilascio del cig"
   },
-  {
-    "codice": "6",
-    "descrizione": {
-      "it": "Il fornitore non ha accettato ordinativi di importi minimi previsti dai contratti attivi",
-      "en": "Il fornitore non ha accettato ordinativi di importi minimi previsti dai contratti attivi"
-    }
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "6",
+  "descrizione": {
+    "it": "il fornitore non ha accettato ordinativi di importi minimi previsti dai contratti attivi",
+    "en": "il fornitore non ha accettato ordinativi di importi minimi previsti dai contratti attivi"
   },
-  {
-    "codice": "7",
-    "descrizione": {
-      "it": "Procedura avviata prima dell'entrata in vigore del DPCM 24 dicembre 2015",
-      "en": "Procedura avviata prima dell'entrata in vigore del DPCM 24 dicembre 2015"
-    }
-  }
-]
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+},
+{
+  "codice": "7",
+  "descrizione": {
+    "it": "procedura avviata prima dell'entrata in vigore del dpcm 24 dicembre 2015",
+    "en": "procedura avviata prima dell'entrata in vigore del dpcm 24 dicembre 2015"
+  },
+  "dataInizio":"2016-01-20T09:16:55",
+  "dataFine":"2099-01-21T09:16:55"
+}]

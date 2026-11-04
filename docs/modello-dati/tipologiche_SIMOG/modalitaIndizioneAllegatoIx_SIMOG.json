@@ -2,50 +2,64 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Gara indetta mediante avviso di gara",
-      "en": "Gara indetta mediante avviso di gara"
-    }
+      "it": "gara indetta mediante avviso di gara",
+      "en": "gara indetta mediante avviso di gara"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Gara indetta mediante avviso periodico indicativo",
-      "en": "Gara indetta mediante avviso periodico indicativo"
-    }
+      "it": "gara indetta mediante avviso periodico indicativo",
+      "en": "gara indetta mediante avviso periodico indicativo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "Gara indetta mediante avviso sull’esistenza di un sistema di qualificazione",
-      "en": "Gara indetta mediante avviso sull’esistenza di un sistema di qualificazione"
-    }
+      "it": "gara indetta mediante avviso sull’esistenza di un sistema di qualificazione",
+      "en": "gara indetta mediante avviso sull’esistenza di un sistema di qualificazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "Gara indetta mediante bando di gara",
-      "en": "Gara indetta mediante bando di gara"
-    }
+      "it": "gara indetta mediante bando di gara",
+      "en": "gara indetta mediante bando di gara"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "Gara indetta mediante avviso di preinformazione",
-      "en": "Gara indetta mediante avviso di preinformazione"
-    }
+      "it": "gara indetta mediante avviso di preinformazione",
+      "en": "gara indetta mediante avviso di preinformazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "Procedura negoziata senza previo avviso di gara conformemente all'art.63",
-      "en": "Procedura negoziata senza previo avviso di gara conformemente all'art.63"
-    }
+      "it": "procedura negoziata senza previo avviso di gara conformemente all'art.63",
+      "en": "procedura negoziata senza previo avviso di gara conformemente all'art.63"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "7",
     "descrizione": {
-      "it": "Procedura che non prevede indizione di gara",
-      "en": "Procedura che non prevede indizione di gara"
-    }
+      "it": "procedura che non prevede indizione di gara",
+      "en": "procedura che non prevede indizione di gara"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

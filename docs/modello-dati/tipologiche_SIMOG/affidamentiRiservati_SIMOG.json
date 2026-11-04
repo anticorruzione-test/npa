@@ -2,29 +2,37 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Art. 5 L. 381/1991",
-      "en": "Art. 5 L. 381/1991"
-    }
+      "it": "art. 5 l. 381/1991",
+      "en": "art. 5 l. 381/1991"
+    },
+    "dataInizio":null,
+    "dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Art. 112 D.Lgs. 50/2016",
-      "en": "Art. 112 D.Lgs. 50/2016"
-    }
+      "it": "art. 112 d.lgs. 50/2016",
+      "en": "art. 112 d.lgs. 50/2016"
+    },
+    "dataInizio":null,
+    "dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "Art. 143 D.Lgs. 50/2016",
-      "en": "Art. 143 D.Lgs. 50/2016"
-    }
+      "it": "art. 143 d.lgs. 50/2016",
+      "en": "art. 143 d.lgs. 50/2016"
+    },
+    "dataInizio":null,
+    "dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "Art. 56 D. Lgs 117/2017",
-      "en": "Art. 56 D. Lgs 117/2017"
-    }
+      "it": "art. 56 d. lgs 117/2017",
+      "en": "art. 56 d. lgs 117/2017"
+    },
+    "dataInizio":null,
+    "dataFine":null
   }
 ]

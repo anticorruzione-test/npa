@@ -4,34 +4,44 @@
     "descrizione": {
       "it": "ati (raggruppamenti temporanei di concorrenti: consorzi ordinari di concorrenti)",
       "en": "ati (raggruppamenti temporanei di concorrenti: consorzi ordinari di concorrenti)"
-    }
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
       "it": "consorzio (consorzi tra societa'cooperative di produzione e lavoro; consorzi tra imprese artigiane; consorzi stabili)",
       "en": "consorzio (consorzi tra societa'cooperative di produzione e lavoro; consorzi tra imprese artigiane; consorzi stabili)"
-    }
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
       "it": "impresa singola (imprenditori individuali, anche artigiani, societa' commerciali, societa' cooperative)",
       "en": "impresa singola (imprenditori individuali, anche artigiani, societa' commerciali, societa' cooperative)"
-    }
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
       "it": "geie (soggetti che hanno stipulato il contratto di gruppo europeo di interesse economico)",
       "en": "geie (soggetti che hanno stipulato il contratto di gruppo europeo di interesse economico)"
-    }
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
       "it": "associazione di categoria",
       "en": "associazione di categoria"
-    }
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

@@ -2,64 +2,82 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "MANDANTE",
-      "en": "MANDANTE"
-    }
+      "it": "mandante",
+      "en": "mandante"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "MANDATARIA",
-      "en": "MANDATARIA"
-    }
+      "it": "mandataria",
+      "en": "mandataria"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "ASSOCIATA",
-      "en": "ASSOCIATA"
-    }
+      "it": "associata",
+      "en": "associata"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "CAPOGRUPPO",
-      "en": "CAPOGRUPPO"
-    }
+      "it": "capogruppo",
+      "en": "capogruppo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "NON CLASSIFICATO",
-      "en": "NON CLASSIFICATO"
-    }
+      "it": "non classificato",
+      "en": "non classificato"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "CONSORZIATA",
-      "en": "CONSORZIATA"
-    }
+      "it": "consorziata",
+      "en": "consorziata"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "7",
     "descrizione": {
-      "it": "COMPONENTE",
-      "en": "COMPONENTE"
-    }
+      "it": "componente",
+      "en": "componente"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "8",
     "descrizione": {
-      "it": "PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE",
-      "en": "PRESIDENTE DEL CONSIGLIO DI AMMINISTRAZIONE"
-    }
+      "it": "presidente del consiglio di amministrazione",
+      "en": "presidente del consiglio di amministrazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "9",
     "descrizione": {
-      "it": "SUBALTERNA",
-      "en": "SUBALTERNA"
-    }
+      "it": "subalterna",
+      "en": "subalterna"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

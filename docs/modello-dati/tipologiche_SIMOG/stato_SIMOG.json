@@ -2,36 +2,46 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "ATTIVO",
-      "en": "ATTIVO"
-    }
+      "it": "attivo",
+      "en": "attivo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "CANCELLATO",
-      "en": "CANCELLATO"
-    }
+      "it": "cancellato",
+      "en": "cancellato"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "LAVORAZIONE",
-      "en": "LAVORAZIONE"
-    }
+      "it": "lavorazione",
+      "en": "lavorazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "ANNULLATO",
-      "en": "ANNULLATO"
-    }
+      "it": "annullato",
+      "en": "annullato"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "MODIFICATO",
-      "en": "MODIFICATO"
-    }
+      "it": "modificato",
+      "en": "modificato"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

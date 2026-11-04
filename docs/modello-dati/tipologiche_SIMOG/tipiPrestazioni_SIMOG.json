@@ -2,22 +2,28 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Sola esecuzione",
-      "en": "Sola esecuzione"
-    }
+      "it": "sola esecuzione",
+      "en": "sola esecuzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Progettazione ed esecuzione (su progetto definitivo)",
-      "en": "Progettazione ed esecuzione (su progetto definitivo)"
-    }
+      "it": "progettazione ed esecuzione (su progetto definitivo)",
+      "en": "progettazione ed esecuzione (su progetto definitivo)"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "Progettazione ed esecuzione (su progetto preliminare)",
-      "en": "Progettazione ed esecuzione (su progetto preliminare)"
-    }
+      "it": "progettazione ed esecuzione (su progetto preliminare)",
+      "en": "progettazione ed esecuzione (su progetto preliminare)"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

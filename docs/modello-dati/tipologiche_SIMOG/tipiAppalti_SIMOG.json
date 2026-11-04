@@ -2,99 +2,127 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Acquisto",
-      "en": "Acquisto"
-    }
+      "it": "acquisto",
+      "en": "acquisto"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Leasing",
-      "en": "Leasing"
-    }
+      "it": "leasing",
+      "en": "leasing"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "Noleggio",
-      "en": "Noleggio"
-    }
+      "it": "noleggio",
+      "en": "noleggio"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "Acquisto a riscatto",
-      "en": "Acquisto a riscatto"
-    }
+      "it": "acquisto a riscatto",
+      "en": "acquisto a riscatto"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "Misto",
-      "en": "Misto"
-    }
+      "it": "misto",
+      "en": "misto"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "Costruzione",
-      "en": "Costruzione"
-    }
+      "it": "costruzione",
+      "en": "costruzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "7",
     "descrizione": {
-      "it": "Demolizione",
-      "en": "Demolizione"
-    }
+      "it": "demolizione",
+      "en": "demolizione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "8",
     "descrizione": {
-      "it": "Recupero",
-      "en": "Recupero"
-    }
+      "it": "recupero",
+      "en": "recupero"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "9",
     "descrizione": {
-      "it": "Ristrutturazione",
-      "en": "Ristrutturazione"
-    }
+      "it": "ristrutturazione",
+      "en": "ristrutturazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "10",
     "descrizione": {
-      "it": "Restauro",
-      "en": "Restauro"
-    }
+      "it": "restauro",
+      "en": "restauro"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "11",
     "descrizione": {
-      "it": "Manutenzione",
-      "en": "Manutenzione"
-    }
+      "it": "manutenzione",
+      "en": "manutenzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "12",
     "descrizione": {
-      "it": "Manutenzione ordinaria",
-      "en": "Manutenzione ordinaria"
-    }
+      "it": "manutenzione ordinaria",
+      "en": "manutenzione ordinaria"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "13",
     "descrizione": {
-      "it": "Manutenzione straordinaria",
-      "en": "Manutenzione straordinaria"
-    }
+      "it": "manutenzione straordinaria",
+      "en": "manutenzione straordinaria"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "14",
     "descrizione": {
-      "it": "Manutenzione ordinaria e straordinaria",
-      "en": "Manutenzione ordinaria e straordinaria"
-    }
+      "it": "manutenzione ordinaria e straordinaria",
+      "en": "manutenzione ordinaria e straordinaria"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

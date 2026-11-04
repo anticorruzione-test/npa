@@ -2,71 +2,91 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "AGGIUDICATA",
-      "en": "AGGIUDICATA"
-    }
+      "it": "aggiudicata",
+      "en": "aggiudicata"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "ANNULLATA O REVOCATA SUCCESSIVAMENTE ALLA PUBBLICAZIONE",
-      "en": "ANNULLATA O REVOCATA SUCCESSIVAMENTE ALLA PUBBLICAZIONE"
-    }
+      "it": "annullata o revocata successivamente alla pubblicazione",
+      "en": "annullata o revocata successivamente alla pubblicazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "DESERTA",
-      "en": "DESERTA"
-    }
+      "it": "deserta",
+      "en": "deserta"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "SENZA ESITO A SEGUITO DI OFFERTE IRREGOLARI O INAMMISSIBILI, NON CONGRUE O NON APPROPRIATE",
-      "en": "SENZA ESITO A SEGUITO DI OFFERTE IRREGOLARI O INAMMISSIBILI, NON CONGRUE O NON APPROPRIATE"
-    }
+      "it": "senza esito a seguito di offerte irregolari o inammissibili, non congrue o non appropriate",
+      "en": "senza esito a seguito di offerte irregolari o inammissibili, non congrue o non appropriate"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "PROPOSTA DI AGGIUDICAZIONE",
-      "en": "PROPOSTA DI AGGIUDICAZIONE"
-    }
+      "it": "proposta di aggiudicazione",
+      "en": "proposta di aggiudicazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "ANNULLATA/REVOCATA PRIMA DELL'APERTURA DELLE BUSTE AMMINISTRATIVE",
-      "en": "ANNULLATA/REVOCATA PRIMA DELL'APERTURA DELLE BUSTE AMMINISTRATIVE"
-    }
+      "it": "annullata/revocata prima dell'apertura delle buste amministrative",
+      "en": "annullata/revocata prima dell'apertura delle buste amministrative"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "7",
     "descrizione": {
-      "it": "ANNULLATA/REVOCATA DOPO L'APERTURA DELLE BUSTE AMMINISTRATIVE",
-      "en": "ANNULLATA/REVOCATA DOPO L'APERTURA DELLE BUSTE AMMINISTRATIVE"
-    }
+      "it": "annullata/revocata dopo l'apertura delle buste amministrative",
+      "en": "annullata/revocata dopo l'apertura delle buste amministrative"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "90",
     "descrizione": {
-      "it": "NON È ANCORA STATO SELEZIONATO UN VINCITORE MA LA GARA È ANCORA IN CORSO.",
-      "en": "NON È ANCORA STATO SELEZIONATO UN VINCITORE MA LA GARA È ANCORA IN CORSO."
-    }
+      "it": "non è ancora stato selezionato un vincitore ma la gara è ancora in corso.",
+      "en": "non è ancora stato selezionato un vincitore ma la gara è ancora in corso."
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "98",
     "descrizione": {
-      "it": "NON È STATO SELEZIONATO NESSUN VINCITORE E LA GARA È CHIUSA.",
-      "en": "NON È STATO SELEZIONATO NESSUN VINCITORE E LA GARA È CHIUSA."
-    }
+      "it": "non è stato selezionato nessun vincitore e la gara è chiusa.",
+      "en": "non è stato selezionato nessun vincitore e la gara è chiusa."
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "99",
     "descrizione": {
-      "it": "NON AGGIUDICATA",
-      "en": "NON AGGIUDICATA"
-    }
+      "it": "non aggiudicata",
+      "en": "non aggiudicata"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

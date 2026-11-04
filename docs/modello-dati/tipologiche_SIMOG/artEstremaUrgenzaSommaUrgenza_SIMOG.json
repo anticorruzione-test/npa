@@ -2,43 +2,55 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Somma urgenza beni culturali",
-      "en": "Somma urgenza beni culturali"
-    }
+      "it": "somma urgenza beni culturali",
+      "en": "somma urgenza beni culturali"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Somma urgenza e protezione civile",
-      "en": "Somma urgenza e protezione civile"
-    }
+      "it": "somma urgenza e protezione civile",
+      "en": "somma urgenza e protezione civile"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "Estrema urgenza settori speciali",
-      "en": "Estrema urgenza settori speciali"
-    }
+      "it": "estrema urgenza settori speciali",
+      "en": "estrema urgenza settori speciali"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "Procedura negoziata per estrema urgenza",
-      "en": "Procedura negoziata per estrema urgenza"
-    }
+      "it": "procedura negoziata per estrema urgenza",
+      "en": "procedura negoziata per estrema urgenza"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici",
-      "en": "Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici"
-    }
+      "it": "estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici",
+      "en": "estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "L. 120 del 11/09/2020",
-      "en": "L. 120 del 11/09/2020"
-    }
+      "it": "l. 120 del 11/09/2020",
+      "en": "l. 120 del 11/09/2020"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

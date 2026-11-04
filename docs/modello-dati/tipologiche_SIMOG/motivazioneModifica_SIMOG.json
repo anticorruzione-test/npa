@@ -2,15 +2,19 @@
   {
     "codice": "1",
     "descrizione": {
-      "it": "Errore materiale",
-      "en": "Errore materiale"
-    }
+      "it": "errore materiale",
+      "en": "errore materiale"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "Rettifica documentazione di gara",
-      "en": "Rettifica documentazione di gara"
-    }
+      "it": "rettifica documentazione di gara",
+      "en": "rettifica documentazione di gara"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]

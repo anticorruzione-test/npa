@@ -2,155 +2,199 @@
   {
     "codice": "RUP",
     "descrizione": {
-      "it": "RESPONSABILE UNICO DEL PROCEDIMENTO",
-      "en": "RESPONSABILE UNICO DEL PROCEDIMENTO"
-    }
+      "it": "responsabile unico del procedimento",
+      "en": "responsabile unico del procedimento"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "DRP1",
     "descrizione": {
-      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI PROGRAMMAZIONE",
-      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI PROGRAMMAZIONE"
-    }
+      "it": "delegato dal responsabile del progetto per la fase di programmazione",
+      "en": "delegato dal responsabile del progetto per la fase di programmazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "DRP2",
     "descrizione": {
-      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI AFFIDAMENTO",
-      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI AFFIDAMENTO"
-    }
+      "it": "delegato dal responsabile del progetto per la fase di affidamento",
+      "en": "delegato dal responsabile del progetto per la fase di affidamento"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "DRP3",
     "descrizione": {
-      "it": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI ESECUZIONE",
-      "en": "DELEGATO DAL RESPONSABILE DEL PROGETTO PER LA FASE DI ESECUZIONE"
-    }
+      "it": "delegato dal responsabile del progetto per la fase di esecuzione",
+      "en": "delegato dal responsabile del progetto per la fase di esecuzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "1",
     "descrizione": {
-      "it": "PROGETTISTA INTERNO ALLA S.A.",
-      "en": "PROGETTISTA INTERNO ALLA S.A."
-    }
+      "it": "progettista interno alla s.a.",
+      "en": "progettista interno alla s.a."
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "2",
     "descrizione": {
-      "it": "PROGETTISTA ESTERNO ALLA S.A.",
-      "en": "PROGETTISTA ESTERNO ALLA S.A."
-    }
+      "it": "progettista esterno alla s.a.",
+      "en": "progettista esterno alla s.a."
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "3",
     "descrizione": {
-      "it": "AGGIUDICATARIO QUALIFICATO",
-      "en": "AGGIUDICATARIO QUALIFICATO"
-    }
+      "it": "aggiudicatario qualificato",
+      "en": "aggiudicatario qualificato"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "4",
     "descrizione": {
-      "it": "PROGETTISTA QUALIFICATO INCARICATO DALL'AGGIUDICATARIO",
-      "en": "PROGETTISTA QUALIFICATO INCARICATO DALL'AGGIUDICATARIO"
-    }
+      "it": "progettista qualificato incaricato dall'aggiudicatario",
+      "en": "progettista qualificato incaricato dall'aggiudicatario"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "5",
     "descrizione": {
-      "it": "DIRETTORE LAVORI",
-      "en": "DIRETTORE LAVORI"
-    }
+      "it": "direttore lavori",
+      "en": "direttore lavori"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "6",
     "descrizione": {
-      "it": "COORDINATORE DELLA SICUREZZA IN FASE DI PROGETTAZIONE",
-      "en": "COORDINATORE DELLA SICUREZZA IN FASE DI PROGETTAZIONE"
-    }
+      "it": "coordinatore della sicurezza in fase di progettazione",
+      "en": "coordinatore della sicurezza in fase di progettazione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "7",
     "descrizione": {
-      "it": "COORDINATORE DELLA SICUREZZA IN CORSO D'OPERA",
-      "en": "COORDINATORE DELLA SICUREZZA IN CORSO D'OPERA"
-    }
+      "it": "coordinatore della sicurezza in corso d'opera",
+      "en": "coordinatore della sicurezza in corso d'opera"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "8",
     "descrizione": {
-      "it": "DIRETTORE DELL'ESECUZIONE DEL CONTRATTO",
-      "en": "DIRETTORE DELL'ESECUZIONE DEL CONTRATTO"
-    }
+      "it": "direttore dell'esecuzione del contratto",
+      "en": "direttore dell'esecuzione del contratto"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "9",
     "descrizione": {
-      "it": "RESPONSABILE SUBFASE DEL PROCEDIMENTO",
-      "en": "RESPONSABILE SUBFASE DEL PROCEDIMENTO"
-    }
+      "it": "responsabile subfase del procedimento",
+      "en": "responsabile subfase del procedimento"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "10",
     "descrizione": {
-      "it": "COLLAUDATORE STATICO",
-      "en": "COLLAUDATORE STATICO"
-    }
+      "it": "collaudatore statico",
+      "en": "collaudatore statico"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "11",
     "descrizione": {
-      "it": "REDATTORE DEL CERTIFICATO DI REGOLARE ESECUZIONE",
-      "en": "REDATTORE DEL CERTIFICATO DI REGOLARE ESECUZIONE"
-    }
+      "it": "redattore del certificato di regolare esecuzione",
+      "en": "redattore del certificato di regolare esecuzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "12",
     "descrizione": {
-      "it": "PRESIDENTE COMMISSIONE DI COLLAUDO/COLLAUDATORE",
-      "en": "PRESIDENTE COMMISSIONE DI COLLAUDO/COLLAUDATORE"
-    }
+      "it": "presidente commissione di collaudo/collaudatore",
+      "en": "presidente commissione di collaudo/collaudatore"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "13",
     "descrizione": {
-      "it": "COMPONENTE COMMISSIONE DI COLLAUDO",
-      "en": "COMPONENTE COMMISSIONE DI COLLAUDO"
-    }
+      "it": "componente commissione di collaudo",
+      "en": "componente commissione di collaudo"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "14",
     "descrizione": {
-      "it": "RESPONSABILE FASE PROGETTAZIONE/PREDISPOSIZIONE DOCUMENTAZIONE TECNICO-AMMINISTRATIVA",
-      "en": "RESPONSABILE FASE PROGETTAZIONE/PREDISPOSIZIONE DOCUMENTAZIONE TECNICO-AMMINISTRATIVA"
-    }
+      "it": "responsabile fase progettazione/predisposizione documentazione tecnico-amministrativa",
+      "en": "responsabile fase progettazione/predisposizione documentazione tecnico-amministrativa"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "16",
     "descrizione": {
-      "it": "RESPONSABILE FASE DI AFFIDAMENTO",
-      "en": "RESPONSABILE FASE DI AFFIDAMENTO"
-    }
+      "it": "responsabile fase di affidamento",
+      "en": "responsabile fase di affidamento"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "17",
     "descrizione": {
-      "it": "RESPONSABILE FASE DI ESECUZIONE",
-      "en": "RESPONSABILE FASE DI ESECUZIONE"
-    }
+      "it": "responsabile fase di esecuzione",
+      "en": "responsabile fase di esecuzione"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "18",
     "descrizione": {
-      "it": "REFERENTE DELLA STAZIONE APPALTANTE",
-      "en": "REFERENTE DELLA STAZIONE APPALTANTE"
-    }
+      "it": "referente della stazione appaltante",
+      "en": "referente della stazione appaltante"
+    },
+	"dataInizio":null,
+	"dataFine":null
   },
   {
     "codice": "19",
     "descrizione": {
-      "it": "ATI",
-      "en": "ATI"
-    }
+      "it": "ati",
+      "en": "ati"
+    },
+	"dataInizio":null,
+	"dataFine":null
   }
 ]
