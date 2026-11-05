@@ -40,7 +40,7 @@ components:
           type: string   
         quadroEconomicoStandardRideterminato:
           $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/QuadroEconomicoModificaContrattualeType' 
-        datiBaseModifica:     
+        datiBaseModificaContrattuale:     
           $ref: '#/components/schemas/DatiBaseModificaContrattualeType' 
     AnacFormM_SIMOGType:
       description: Contiene tutti i dati di modifica contrattuale
