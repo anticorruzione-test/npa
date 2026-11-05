@@ -2830,6 +2830,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG149",
+    "descrizione": {
+		"it": "In caso di più soggetti è necessario indicare il ruolo.",
+		"en": "In caso di più soggetti è necessario indicare il ruolo."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
