@@ -1893,3 +1893,32 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
+
+<summary><h1>Note di rilascio del TBD (Refactoring Stazioni Appaltanti)</h1></summary>
+
+**Punto aperto (da verificare al porting):** verificare la numerazione dei codici di errore ERR160-ERR172 inseriti in errori.json: su main il codice ERR160 è già utilizzato ("CIG e idContratto non coerenti").
+
+### Schede
+* ticket 58793:
+	* modello-dati-schede-dati-comuni.yaml:
+		* modificato l'oggetto StazioneAppaltanteType: il campo funzioniSvolte diventa obbligatorio
+
+### Tipologiche
+* ticket 58793:
+	* funzioniSvolte.json:
+		* chiuse le voci 1 "Solo aggiudicazione", 2 "Aggiudicazione e stipula del contratto", 3 "Aggiudicazione, stipula ed esecuzione del contratto", 4 "Proposta di aggiudicazione" (dataFine 30/09/2026)
+		* aggiunte le voci 1 "Pubblicazione", 2 "Affidamento", 3 "Stipula del contratto", 4 "Esecuzione del contratto", valide dal 01/10/2026
+* ticket 62794:
+	* errori.json: inseriti i messaggi di errore ERR160, ERR161, ERR162, ERR163, ERR164, ERR165, ERR166, ERR167, ERR168, ERR169, ERR170, ERR171, ERR172 per i servizi del contesto gestioneSA
+	* esitoOperazione.json: aggiunte le voci SA_INSERITE, SA_N_INSERITE, SA_MODIFICATE, SA_N_MODIFICATE, SA_CANCELLATE, SA_N_CANCELLATE
+	* tipoOperazione.json: aggiunte le voci SA_INSERISCI, SA_MODIFICA, SA_CANCELLA
+
+### Specifiche di interfaccia
+* ticket 62794:
+	* specifiche-servizi-appalto.yaml:
+		* aggiunto il tag gestioneSA per la gestione delle stazioni appaltanti associate a un appalto o a un piano
+		* aggiunte le operazioni idConsultaSA (POST /consulta-sa), idModificaSA (POST /modifica-sa), idAggiungiSA (POST /aggiungi-sa), idCancellaSA (POST /cancella-sa)
+		* aggiunti gli oggetti ConsultaSARequest, GestoreSARequest, SAType, GestoreSATipologicaType, StazioneAppaltanteGestoreSAType, ConsultaSAResponse, GestoreSAErrorResponse
+	* documento-specifiche-servizi-npa.md:
+		* paragrafo 4.5: aggiunti alla tabella Servizi e ruoli i servizi del contesto gestioneSA
+		* inserito il capitolo Contesto gestioneSA

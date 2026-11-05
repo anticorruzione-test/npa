@@ -5,7 +5,7 @@
 		"en": "Solo aggiudicazione"
 		},
     "dataInizio":null,
-    "dataFine": "2025-01-16T00:00:00Z"
+    "dataFine": "2026-09-30T00:00:00Z"
 },
 {
     "codice":"2",
@@ -14,7 +14,7 @@
 		"en": "Aggiudicazione e stipula del contratto"
 		},
     "dataInizio":null,
-    "dataFine":"2025-01-16T00:00:00Z"
+    "dataFine":"2026-09-30T00:00:00Z"
 },
 {
     "codice":"3",
@@ -23,7 +23,7 @@
 		"en": "Aggiudicazione, stipula ed esecuzione del contratto"
 		},	
     "dataInizio":null,
-    "dataFine":"2025-01-16T00:00:00Z"
+    "dataFine":"2026-09-30T00:00:00Z"
 },
 {
     "codice":"4",
@@ -32,7 +32,7 @@
 		"en": "Proposta di aggiudicazione"
 		},	
     "dataInizio":null,
-    "dataFine":"2025-01-16T00:00:00Z"
+    "dataFine":"2026-09-30T00:00:00Z"
 },
 {
     "codice":"1",
