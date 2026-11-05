@@ -72,6 +72,19 @@ satisfies (offerta.offertaEconomica &lt; 0 or offerta.offertaEconomica &gt; 100)
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG112\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_0pmzmpm">
+        <description>REG150: In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate e numeroOfferteAmmesse</description>
+        <inputEntry id="UnaryTests_1i6l7ea">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15zmxdv">
+          <text>some aggiudicazione in aggiudicazioni
+satisfies aggiudicazione.datiBaseRisultatoProcedura.esitoProcedura.codice = "1" and ((is defined(aggiudicazione.offertePresentate) = false) or aggiudicazione.offertePresentate = null or count(aggiudicazione.offertePresentate) = 0 or aggiudicazione.numeroOfferteAmmesse = null)</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h4ramt">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG150\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <dmndi:DMNDI>
