@@ -21,6 +21,23 @@ satisfies count(soggetto.partecipanti)=0</text>
           <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG78\"}"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_0yqgwx5">
+        <description>REG149: In caso di più soggetti è necessario indicare il ruolo.</description>
+        <inputEntry id="UnaryTests_0fobh8d">
+          <text>some soggetto in elencoSoggetti
+satisfies (
+some partecipante in soggetto.partecipanti satisfies
+  count(partecipanti[idPartecipante = partecipante.idPartecipante]) &gt; 1
+  and (
+    partecipante.ruoloOE = null
+    or partecipante.ruoloOE.codice = null
+    or partecipante.ruoloOE.codice = ""
+  )</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03stgcm">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG149\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1d4qmvk" name="elencoSoggetti" />
