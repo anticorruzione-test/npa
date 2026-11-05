@@ -1877,6 +1877,7 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Tipologiche
 * ticket 100672:
 	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
+		* **Punto aperto (da risolvere prima del porting):** i codici REG146, REG147 e REG148 sono utilizzati anche dalla regola RSU1_v2.0.dmn con un significato diverso (controlli sui soggetti del subappalto). errori.json riporta oggi i messaggi di RSU1_v2.0.dmn e non quelli di ID.dmn: definire una numerazione univoca e allineare errori.json, ID.dmn e RSU1_v2.0.dmn
   
 ### Regole
 * ticket 96573:
