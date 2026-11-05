@@ -30,8 +30,11 @@ components:
     AggiudicazioneA_SIMOGType:
       type: object
       additionalProperties: false
-      required: [datiBaseRisultatoProcedura]
+      required: [datiBaseRisultatoProcedura,cig]
       properties: 
+        cig:
+          description: codice identificativo lotto
+          type: number
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
