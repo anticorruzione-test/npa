@@ -36,6 +36,10 @@ components:
           description: numero di offerte ammesse
           type: number
           format: integer
+        nImpreseEscluseInsuffIcientiGiustificazioni:
+          description: numero di imprese escluse per insufficienti giustificazioni
+          type: number
+          format: integer
         valoreSogliaAnomalia:
           description: Valore soglia anomalia
           type: number
