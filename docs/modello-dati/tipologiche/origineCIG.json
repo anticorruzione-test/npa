@@ -1,18 +1,32 @@
-[{
-    "codice":"PCP",
-    "descrizione": { "it": "PCP", "en": "PCP", "de": "PCP" },
-    "dataInizio":null,
-    "dataFine":null
-},
-{
-    "codice":"SIMOG",
-    "descrizione": { "it": "SIMOG", "en": "SIMOG", "de": "SIMOG" },
-    "dataInizio":null,
-    "dataFine":null
-},
-{
-    "codice":"SMARTCIG",
-    "descrizione": { "it": "SMARTCIG", "en": "SMARTCIG", "de": "SMARTCIG" },
-    "dataInizio":null,
-    "dataFine":null
-}]
+[
+	{
+		"codice": "PCP",
+		"descrizione": {
+			"it": "PCP",
+			"en": "PCP",
+			"de": "PCP"
+		},
+		"dataInizio": null,
+		"dataFine": null
+	},
+	{
+		"codice": "SIMOG",
+		"descrizione": {
+			"it": "SIMOG",
+			"en": "SIMOG",
+			"de": "SIMOG"
+		},
+		"dataInizio": null,
+		"dataFine": null
+	},
+	{
+		"codice": "SMARTCIG",
+		"descrizione": {
+			"it": "SMARTCIG",
+			"en": "SMARTCIG",
+			"de": "SMARTCIG"
+		},
+		"dataInizio": null,
+		"dataFine": null
+	}
+]
