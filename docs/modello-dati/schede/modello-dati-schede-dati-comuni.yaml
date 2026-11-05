@@ -386,7 +386,7 @@ components:
     MotivoDerogaQlfEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoDerogaQlf.json)
+      description: Motivo deroga qualificazione - fare riferimento ai valori contenuti nel file [motivoDerogaQlf.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoDerogaQlf.json)    
     MotivazioneMancatoAffidamentoEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -399,10 +399,6 @@ components:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
       description: Motivo variazione CUP - fare riferimento ai valori contenuti nel file [motivoVariazioneCUP.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoVariazioneCUP.json)
-    MotivoIntegrazioneEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo Integrazione Dati Esecuzione - fare riferimento ai valori contenuti nel file [motivoIntegrazione.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoIntegrazione.json)
     MotivoCorrezioneEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
@@ -410,19 +406,11 @@ components:
     MotivoCorrezioneUrlEnum: 
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Motivo correzione url - fare riferimento ai valori contenuti nel file [motivoCorrezioneUrl.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoCorrezioneUrl.json) 
+      description: Motivo correzione url - fare riferimento ai valori contenuti nel file [motivoCorrezioneUrl.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/motivoCorrezioneUrl.json)
     ModalitaRealizzazione_SIMOGEnum:
       allOf: # estende lo schema dati di TipologicaSchemaType
         - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'    
-      description: Modalità di realizzazione - fare riferimento ai valori contenuti nel file  [modalitaRealizzazione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modalitaRealizzazione_SIMOG.json)
-    TipoSchedaEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Tipo di scheda - fare riferimento ai valori contenuti nel file [tipoScheda.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/tipoScheda.json)
-    OperazioneElencoEnum:
-      allOf: # estende lo schema dati di TipologicaSchemaType
-        - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/TipologicaSchemaType'     
-      description: Operazione Elenco - fare riferimento ai valori contenuti nel file [operazioneElenco.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche/operazioneElenco.json)    
+      description: Modalità di realizzazione - fare riferimento ai valori contenuti nel file  [modalitaRealizzazione_SIMOG.json](https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/tipologiche_SIMOG/modalitaRealizzazione_SIMOG.json)       
     CategoriaType: 
       description: categoria prevalente o scorporabile
       type: object
@@ -2533,8 +2521,8 @@ components:
       properties: 
         dataApprovazione:
           description: Data di approvazione della modifica contrattuale
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         urlDocumentazione:
           description: URL documentazione varianti in corso d’opera
           type: string
@@ -2553,8 +2541,8 @@ components:
       properties: 
         dataApprovazione:
           description: Data di approvazione della modifica contrattuale
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         urlDocumentazione:
           description: URL documentazione varianti in corso d’opera
           type: string
@@ -2612,7 +2600,7 @@ components:
       description: Dati del partecipante
       type: object
       additionalProperties: false
-      required: [codiceFiscale,ruoloOE,idPartecipante]
+      required: [codiceFiscale,idPartecipante]
       properties:
         codiceFiscale:
           description: Codice fiscale del soggetto interessato
@@ -2698,12 +2686,12 @@ components:
           type: string
         dataAffidamentoIncarico:
           description: Data di affidamento incarico (per progettazione esterna)
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         dataConsegna: 
           description: Data di consegna progetto (per progettazione esterna)
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
     IncaricoType:
       description: Dati relativi agli incarichi tecnici
       type: object
@@ -3769,8 +3757,8 @@ components:
       properties:
         dataAggiudicazione:
           description: Data della decisione ufficiale di selezione dell'offerta vincitrice - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-1451 - Winner Decision Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time 
     DatiBaseSottomissioniRicevuteType:
       description:  Dato in comune con il Business Group Received Submissions delle eforms
       additionalProperties: false
@@ -4048,27 +4036,6 @@ components:
           type: array
           items:        
             $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'            
-    DatiBaseProceduraAD2Type:
-      description: Dato in comune con il Business Group Procedure delle eforms
-      type: object
-      additionalProperties: false
-      required: [tipoProcedura]
-      properties:
-        tipoProcedura:
-          $ref: '#/components/schemas/TipoProceduraEnum'  
-        giustificazioniAggiudicazioneDirettaAD:
-          type: array
-          items: 
-           $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaType'           
-    GiustificazioneAggiudicazioneDirettaType:
-          properties:
-            giustificazioneAggiudicazioneDiretta:
-              $ref: '#/components/schemas/GiustificazioneAggiudicazioneDirettaEnum'
-            cigCollegato:
-              description: CIG collegato
-              type: array
-              items: 
-                type: string
     DatiBaseContrattoType:
       description: Dato in comune con il Business Group Place of Performance delle eforms
       type: object
@@ -4278,12 +4245,12 @@ components:
       properties:
         scadenzaPresentazioneInvito:
           description: Data e ora di scadenza per la presentazione della richiesta di invito - nei casi in cui la scheda preveda un eform, corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         scadenzaPresentazioneOfferte: 
           description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time   
     DatiBaseTerminiInvioSoloScadenzaType:
       description: Dato in comune con il Business Group Submission Terms delle eforms
       required:
@@ -4292,8 +4259,8 @@ components:
       properties:
         scadenzaPresentazioneInvito:
           description: Data di scadenza per la presentazione della richiesta di invito - nei casi in cui la scheda preveda un eform, corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time          
     DatiBaseTerminiInvioSoloOraType:
       description: Dato in comune con il Business Group Submission Terms delle eforms 
       required: [scadenzaPresentazioneOfferte]
@@ -4310,12 +4277,12 @@ components:
       properties:
         scadenzaPresentazioneInvito:
           description: Data e ora di scadenza per la presentazione della richiesta di invito - nei casi in cui la scheda preveda un eform, corrisponde ai campi bt-630 - Deadline Receipt Expressions e bt-1311 - Deadline Receipt Requests del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         scadenzaPresentazioneOfferte: 
           description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'     
+          type: string
+          format: date-time              
     DatiBaseImportoType:
       description: Dato in comune con il Business Group Prize delle eforms 
       additionalProperties: false
@@ -4368,8 +4335,8 @@ components:
       properties:
         dataSottoscrizione:
           description: Data sottoscrizione eventuale atto aggiuntivo/ sottomissione - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-145 - Contract Conclusion Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time  
         motiviModifica:
           $ref: '#/components/schemas/MotiviModificaContrattualeEnum'
         causaModifica:
@@ -4383,8 +4350,8 @@ components:
       properties: 
         dataInvioInviti: 
           description: Data stimata dell'invio degli inviti a presentare le offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-130  - Dispatch Invitation Tender del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
     DatiBaseDocumentiType:
       description:  Dato in comune con il Business Group Procurement Documents delle eforms
       additionalProperties: false
@@ -4416,15 +4383,15 @@ components:
       properties: 
         dataInizio: 
           description: La data (stimata) alla quale ha inizio l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-536 - Duration Start Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         durata: 
           description: Il periodo (stimato) che intercorre tra l'inizio e la fine dell'appalto, dell'accordo quadro, del sistema dinamico di acquisizione o del sistema di qualificazione. Sono compresi tutte le opzioni e tutti i rinnovi. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-36 - Duration Period del TED
           type: string
         dataFine: 
           description: La data (stimata) alla quale ha fine l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time 
         altraDurata: 
           $ref: '#/components/schemas/AltraDurataEnum'  
     DatiBaseDurataSDAType:
@@ -4434,15 +4401,15 @@ components:
       properties: 
         dataInizio: 
           description: La data (stimata) alla quale ha inizio l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-536 - Duration Start Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time
         durata: 
           description: Il periodo (stimato) che intercorre tra l'inizio e la fine dell'appalto, dell'accordo quadro, del sistema dinamico di acquisizione o del sistema di qualificazione. Sono compresi tutte le opzioni e tutti i rinnovi. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-36 - Duration Period del TED
           type: string
         dataFine: 
           description: La data (stimata) alla quale ha fine l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time 
         altraDurata: 
           $ref: '#/components/schemas/AltraDurataEnum' 
     DatiBaseDurataCSDAType:
@@ -4452,8 +4419,8 @@ components:
       properties: 
         dataFine: 
           description: La data (stimata) alla quale ha fine l'appalto, l'accordo quadro, il sistema dinamico di acquisizione o il sistema di qualificazione. - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-537 - Duration End Date del TED
-          allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/appalti/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+          type: string
+          format: date-time 
     AnacFormPLBaseType:
       description: Contiene i dati comuni per le schede relative alle pianificazioni
       type: object
