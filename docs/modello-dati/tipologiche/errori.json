@@ -2839,6 +2839,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG150",
+    "descrizione": {
+		"it": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate e numeroOfferteAmmesse.",
+		"en": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate e numeroOfferteAmmesse."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
