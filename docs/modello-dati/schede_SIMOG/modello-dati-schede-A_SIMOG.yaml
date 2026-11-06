@@ -34,7 +34,7 @@ components:
       properties: 
         cig:
           description: codice identificativo lotto
-          type: number
+          type: string
         numeroOfferteAmmesse:
           description: numero di offerte ammesse
           type: number
