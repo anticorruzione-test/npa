@@ -413,7 +413,12 @@ In questo contesto rientrano i servizi richiamabili dalla SA per la ricerca e co
 **Descrizione dei servizi**
 
 I servizi che possono essere invocati in questo contesto sono i seguenti:
-- ricerca-contratto: servizio che permette la ricerca dei contratti secondo i criteri di input forniti.
+- ricerca-contratto: servizio che permette la ricerca dei contratti secondo i criteri di input forniti. I criteri idAppalto, cig e idContratto sono tutti facoltativi, ma deve esserne valorizzato almeno uno; se ne sono valorizzati più di uno, prevale il criterio più specifico e ne viene verificata la coerenza reciproca:
+  - [SE è valorizzato solo idAppalto] restituisce tutti i contratti dell'Appalto;
+  - [SE è valorizzato il cig e non l'idContratto] restituisce i contratti associati al Lotto; se è valorizzato anche l'idAppalto, il Lotto deve appartenere all'Appalto indicato;
+  - [SE è valorizzato l'idContratto] restituisce il solo contratto indicato; se sono valorizzati anche l'idAppalto e/o il cig, il Contratto deve appartenere all'Appalto e/o essere associato al Lotto indicati.
+
+  In caso di criteri non coerenti il servizio restituisce un errore e nessun contratto.
 
 # 13	Servizi comuni
 

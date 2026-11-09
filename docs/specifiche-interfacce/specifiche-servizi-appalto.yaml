@@ -1828,23 +1828,33 @@ paths:
       tags:
       - gestioneContratto
       summary: API Rest per la ricerca dei contratti. SINCRONO
-      description: Vengono recuperati i contratti secondo i criteri di ricerca forniti.
+      description: |-
+        Vengono recuperati i contratti secondo i criteri di ricerca forniti.
+        I parametri idAppalto, cig e idContratto sono tutti facoltativi, ma deve esserne valorizzato almeno uno; in caso contrario viene restituito l'errore ERR34.
+        Se sono valorizzati più criteri, prevale il più specifico (idContratto, poi cig, poi idAppalto):
+        - solo idAppalto: vengono restituiti tutti i contratti dell'Appalto;
+        - cig, con o senza idAppalto: vengono restituiti i contratti associati al Lotto (ERR23 se il cig non è presente);
+        - idContratto, con o senza idAppalto e/o cig: viene restituito il solo contratto indicato (ERR39 se l'idContratto non è presente).
+        Se sono valorizzati più criteri, ne viene verificata la coerenza reciproca:
+        - idAppalto e cig: il Lotto deve appartenere all'Appalto indicato (ERR66);
+        - idAppalto e idContratto: il Contratto deve appartenere all'Appalto indicato (ERR161);
+        - cig e idContratto: il Contratto deve essere associato al Lotto indicato (ERR160).
       operationId: ricercaContratto
       parameters:
-      - description: Identificativo univoco dell'Appalto definito da ANAC
+      - description: Identificativo univoco dell'Appalto definito da ANAC. Facoltativo se è valorizzato il cig o l'idContratto.
         in: query
         name: idAppalto
-        required: true
+        required: false
         schema:
           format: uuid
           type: string
-      - description: Identificativo univoco Gara-Lotto rilasciato da ANAC, alternativo all'idAppalto
+      - description: Identificativo univoco Gara-Lotto rilasciato da ANAC. Facoltativo; se valorizzato insieme all'idAppalto, il Lotto deve appartenere all'Appalto indicato.
         in: query
         name: cig
         required: false
         schema:
           type: string
-      - description: Identificativo univoco Contratto rilasciato da ANAC, alternativo all'idAppalto
+      - description: Identificativo univoco Contratto rilasciato da ANAC. Facoltativo; se valorizzato insieme all'idAppalto e/o al cig, il Contratto deve appartenere all'Appalto e/o essere associato al Lotto indicati.
         in: query
         name: idContratto
         required: false
