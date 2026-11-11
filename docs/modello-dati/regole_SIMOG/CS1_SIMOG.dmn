@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_CS1_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.2.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_CS1_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="18.0.2" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
   <decision id="CS1_SIMOG" name="CS1_SIMOG">
     <informationRequirement id="InformationRequirement_00o5h7n">
       <requiredInput href="#InputData_1vsdrei" />
@@ -11,7 +11,16 @@
         </inputExpression>
       </input>
       <output id="Errore_CS1_SIMOG_SIMOG" name="Errore" typeRef="string" biodi:width="477" />
-     </decisionTable>
+      <rule id="DecisionRule_0eg4sf8">
+        <description>REG153: In caso di mancato subappalto deve essere indicata la motivazione</description>
+        <inputEntry id="UnaryTests_177616j">
+          <text>subappalto.importoEffettivo&lt;=0 and ((is defined(subappalto.motivoMancataEsecuzioneSubappalto) = false) or subappalto.motivoMancataEsecuzioneSubappalto.codice = null or subappalto.motivoMancataEsecuzioneSubappalto.codice ="")</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ybjjxh">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG153\"}"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="subappalto" />
   <dmndi:DMNDI>
