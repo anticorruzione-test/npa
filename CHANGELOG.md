@@ -1895,6 +1895,8 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
 
+<summary><h1>Note di rilascio del 06/11/2026</h1></summary>
+
 ### Orchestratore
 * ticket 114365:
 	* modificata la riga della scheda S3:
