@@ -2830,6 +2830,33 @@
     "dataFine":null
 },
 {
+    "codice":"REG146",
+    "descrizione": {
+		"it": "In caso di richiesta di rimozione il campo cup non va compilato.",
+		"en": "In caso di richiesta di rimozione il campo cup non va compilato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG147",
+    "descrizione": {
+		"it": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione.",
+		"en": "Il cig indicato corrisponde ad una procedura per cui non è prevista la fase di esecuzione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG148",
+    "descrizione": {
+		"it": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione.",
+		"en": "Compilare almeno uno dei dati di esecuzione per cui si richiede l'integrazione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"REG149",
     "descrizione": {
 		"it": "In caso di più soggetti è necessario indicare il ruolo.",
@@ -2843,6 +2870,24 @@
     "descrizione": {
 		"it": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate, dataAggiudicazione e numeroOfferteAmmesse.",
 		"en": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate, dataAggiudicazione e numeroOfferteAmmesse."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG151",
+    "descrizione": {
+		"it": "E' obbligatorio inserire almeno uno dei due campi tra codIstat e codNUTS.",
+		"en": "E' obbligatorio inserire almeno uno dei due campi tra codIstat e codNUTS."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"REG152",
+    "descrizione": {
+		"it": "Inserire solo uno tra i campi codIstat e codNUTS.",
+		"en": "Inserire solo uno tra i campi codIstat e codNUTS."
 	},
     "dataInizio":null,
     "dataFine":null
