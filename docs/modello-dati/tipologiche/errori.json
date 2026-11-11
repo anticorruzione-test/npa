@@ -2841,8 +2841,8 @@
 {
     "codice":"REG150",
     "descrizione": {
-		"it": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate e numeroOfferteAmmesse.",
-		"en": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate e numeroOfferteAmmesse."
+		"it": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate, dataAggiudicazione e numeroOfferteAmmesse.",
+		"en": "In caso di procedura con esito aggiudicata devono essere compilati i campi offertePresentate, dataAggiudicazione e numeroOfferteAmmesse."
 	},
     "dataInizio":null,
     "dataFine":null
