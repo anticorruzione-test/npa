@@ -2893,6 +2893,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG153",
+    "descrizione": {
+		"it": "In caso di mancato subappalto deve essere indicata la motivazione.",
+		"en": "In caso di mancato subappalto deve essere indicata la motivazione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
