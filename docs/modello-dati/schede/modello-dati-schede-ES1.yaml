@@ -20,9 +20,9 @@ components:
         dataAutorizzazione: 
           description: Data di autorizzazione del subappalto
           allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         motivoMancatoSubappalto: 
-          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoSubappaltoEnum'
+          $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/MotivoMancatoSubappaltoEnum'
     AnacFormES1Type:
       description: Contiene tutti i dati relativi alla scheda di Richiesta di Subappalto
       type: object

@@ -6,14 +6,14 @@ components:
   schemas:
     ComunicazioneCM3Type:
       allOf: 
-      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ComunicazioneType'
+      - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/schede/modello-dati-schede-dati-comuni.yaml#/components/schemas/ComunicazioneType'
       type: object
       additionalProperties: false
       properties:
         scadenzaPresentazioneOfferte: 
           description: Date e ora di scadenza per la presentazione delle offerte - nei casi in cui la scheda preveda un eform, corrisponde al campo bt-131 - Deadline Receipt Tenders del TED
           allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
     AnacFormCM3Type:
       type: object
       required: [cig,comunicazione]

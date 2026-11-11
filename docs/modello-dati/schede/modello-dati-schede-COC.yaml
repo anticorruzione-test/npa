@@ -18,11 +18,11 @@ components:
         dataInizio:
           description: Data di inizio
           allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         dataUltimazione:
           description: Data di ultimazione
           allOf:
-            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/main/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
+            - $ref: 'https://raw.githubusercontent.com/anticorruzione-test/npa/pcp05/docs/modello-dati/modello-dati-tipologiche.yaml#/components/schemas/DataOraType'
         importo: 
           description: Importo delle somme liquidate
           type: number
