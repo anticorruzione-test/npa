@@ -39,7 +39,7 @@ components:
           description: numero di offerte ammesse
           type: number
           format: integer
-        nImpreseEscluseInsuffIcientiGiustificazioni:
+        nImpreseEscluseInsufficientiGiustificazioni:
           description: numero di imprese escluse per insufficienti giustificazioni
           type: number
           format: integer
