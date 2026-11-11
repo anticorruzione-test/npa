@@ -8,7 +8,7 @@ components:
       description: Dati relativi alla Variazione Aggiudicatari
       type: object
       additionalProperties: false
-      required: [cig]
+      required: [cig,motivoVariazione]
       properties:
         cig:
           description: codice identificativo lotto
