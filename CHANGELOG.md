@@ -1864,7 +1864,7 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* modificata la riga delle schede PL2_1, PL2_2, PL2_3:
 		* colonna versione: inserito il valore 1.0
 
-<summary><h1>Note di rilascio del 23/10/2026</h1></summary>
+<summary><h1>Note di rilascio del 23/10/2026 (solo documentazione)</h1></summary>
 
 ### Schede
 * ticket 96573:
@@ -1877,7 +1877,6 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Tipologiche
 * ticket 100672:
 	* errori.json: inserito nuovo messaggio di errore REG146, REG147, REG148
-		* **Punto aperto (da risolvere prima del porting):** i codici REG146, REG147 e REG148 sono utilizzati anche dalla regola RSU1_v2.0.dmn con un significato diverso (controlli sui soggetti del subappalto). errori.json riporta oggi i messaggi di RSU1_v2.0.dmn e non quelli di ID.dmn: definire una numerazione univoca e allineare errori.json, ID.dmn e RSU1_v2.0.dmn
   
 ### Regole
 * ticket 96573:
@@ -1885,7 +1884,14 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 * ticket 100672:
 	* ID.dmn: modificata la REG127, aggiunte la REG146, REG147, REG148
 
-<summary><h1>Note di rilascio del TBD</h1></summary>
+<summary><h1>Note di rilascio del 06/11/2026</h1></summary>
+
+### Orchestratore
+* ticket 114365:
+	* modificata la riga della scheda S3:
+		* colonna schedaSuccessiva: rimossa la scheda NAG
+
+<summary><h1>Note di rilascio del 09/11/2026</h1></summary>
 
 ### Tipologiche
 * ticket 109514:
@@ -1894,10 +1900,3 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 ### Regole
 * ticket 109514:
 	* A1_29.dmn,A1_30.dmn,A1_32.dmn,A1_33.dmn,A1_34.dmn,A1_35.dmn,A2_29.dmn,A2_30.dmn,A2_32.dmn,A2_33.dmn,A2_34.dmn,A2_35.dmn,A3_1.dmn,A3_2.dmn,A3_4.dmn,A3_5.dmn,A4_1.dmn,A4_2.dmn,A4_3.dmn,A4_4.dmn,A4_5.dmn,A4_6.dmn,A7_1_1.dmn,A7_1_2.dmn: modificate la sintassi e la descrizione della regola REG47
-
-<summary><h1>Note di rilascio del 06/11/2026</h1></summary>
-
-### Orchestratore
-* ticket 114365:
-	* modificata la riga della scheda S3:
-		* colonna schedaSuccessiva: rimossa la scheda NAG
