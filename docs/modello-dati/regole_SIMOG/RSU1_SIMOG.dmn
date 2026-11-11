@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_RSU1_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="17.2.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Scheda_RSU1_SIMOG" name="Regole" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="18.0.2" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0" camunda:diagramRelationId="ad8e9e2b-ffef-4291-b177-ce7ee3ca7fa8">
   <decision id="RSU1_SIMOG" name="RSU1_SIMOG">
     <informationRequirement id="InformationRequirement_00o5h7n">
       <requiredInput href="#InputData_1vsdrei" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_03i7fim">
+      <requiredInput href="#InputData_18aewnm" />
     </informationRequirement>
     <decisionTable id="DecisionTable_RSU1_SIMOG" hitPolicy="COLLECT">
       <input id="appalto_RSU1_SIMOG" biodi:width="394">
@@ -10,22 +13,136 @@
           <text>subappalto</text>
         </inputExpression>
       </input>
+      <input id="InputClause_0vftqhq">
+        <inputExpression id="LiteralExpression_17wqvsh" typeRef="string">
+          <text>idSubappalto</text>
+        </inputExpression>
+      </input>
       <output id="Errore_RSU1_SIMOG_SIMOG" name="Errore" typeRef="string" biodi:width="477" />
+      <rule id="DecisionRule_1ih9ewp">
+        <description>REG0: Dati non presenti</description>
+        <inputEntry id="UnaryTests_0klai5z">
+          <text>subappalto = null or subappalto = ""</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x433dw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xa8cqh">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG0\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0k6m5mt">
+        <description>REG138: I campi di tipo testo non possono essere vuoti</description>
+        <inputEntry id="UnaryTests_13qkawz">
+          <text>subappalto.operatoreEconomicoSubappaltatore.idOE=""</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u07j9m">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hsbisf">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG138\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ywoeks">
+        <description>REG139: Definire almeno un conferente subappalto</description>
+        <inputEntry id="UnaryTests_13b9bf0">
+          <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario)=false and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)=false) or (subappalto.conferenteSubappalto.idAggiudicatario="" and subappalto.conferenteSubappalto.idSubappaltanteACascata="")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14999e9">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sx8i2b">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG139\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16kdmiu">
+        <description>REG140: Definire un solo conferente subappalto</description>
+        <inputEntry id="UnaryTests_0g09ml2">
+          <text>(is defined(subappalto.conferenteSubappalto.idAggiudicatario) and is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata)) and (subappalto.conferenteSubappalto.idAggiudicatario!="" and subappalto.conferenteSubappalto.idSubappaltanteACascata!="")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_083riwn">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jvisi2">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG140\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0op0dd6">
+        <description>REG141: In caso di subappalto a cascata deve essere indicato l'idSubappalto</description>
+        <inputEntry id="UnaryTests_0uu5euu">
+          <text>is defined(subappalto.conferenteSubappalto.idSubappaltanteACascata) and subappalto.conferenteSubappalto.idSubappaltanteACascata!=""</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0naahy6">
+          <text>is defined(idSubappalto) = false or idSubappalto=""</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0e611n7">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG141\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vt5myk">
+        <description>REG142: Indicare almeno un soggetto</description>
+        <inputEntry id="UnaryTests_17zkk9x">
+          <text>count(subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti) = 0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y8ml5d">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10gy0ap">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG142\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pkb5mm">
+        <description>REG2: indicare il codice fiscale del soggetto.</description>
+        <inputEntry id="UnaryTests_1ir16zv">
+          <text>some soggetto in subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti
+satisfies (soggetto.codiceFiscale = null or soggetto.codiceFiscale="")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ssp89j">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ln957b">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG2\"}"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0c2t8gv">
+        <description>REG129: indicare la denominazione del soggetto.</description>
+        <inputEntry id="UnaryTests_0i0nwrg">
+          <text>some soggetto in subappalto.operatoreEconomicoSubappaltatore.elencoSoggetti
+satisfies (soggetto.denominazione = null or soggetto.denominazione="")</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zhf2zr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bdn6lo">
+          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG129\"}"</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1vsdrei" name="subappalto" />
+  <inputData id="InputData_18aewnm" name="idSubappalto">
+    <variable id="InformationItem_06o17xt" name="idSubappalto" typeRef="Any" />
+  </inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="DMNDiagram_15do7a0">
       <dmndi:DMNShape id="DMNShape_RSU1_SIMOG_SIMOG" dmnElementRef="RSU1_SIMOG">
         <dc:Bounds height="80" width="180" x="150" y="110" />
       </dmndi:DMNShape>
       <dmndi:DMNShape id="DMNShape_0je0q06" dmnElementRef="InputData_1vsdrei">
-        <dc:Bounds height="45" width="125" x="177" y="347" />
+        <dc:Bounds height="45" width="125" x="107" y="257" />
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="DMNEdge_0iatk2c" dmnElementRef="InformationRequirement_00o5h7n">
-        <di:waypoint x="240" y="347" />
-        <di:waypoint x="240" y="210" />
-        <di:waypoint x="240" y="190" />
+        <di:waypoint x="170" y="257" />
+        <di:waypoint x="210" y="210" />
+        <di:waypoint x="210" y="190" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_1841ar3" dmnElementRef="InputData_18aewnm">
+        <dc:Bounds height="45" width="125" x="277" y="257" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0hktofh" dmnElementRef="InformationRequirement_03i7fim">
+        <di:waypoint x="340" y="257" />
+        <di:waypoint x="270" y="210" />
+        <di:waypoint x="270" y="190" />
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
