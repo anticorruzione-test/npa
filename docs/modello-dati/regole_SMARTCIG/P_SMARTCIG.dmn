@@ -36,21 +36,6 @@
         </inputExpression>
       </input>
       <output id="Errore_P_SMARTCIG" name="Errore" typeRef="string" biodi:width="269" />
-      <rule id="DecisionRule_1bw4nq2">
-        <description>REG154: L'importo totale dei lotti non può superare i 40K</description>
-        <inputEntry id="UnaryTests_1dri5ls">
-          <text></text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_07uapes">
-          <text>(sum(for i in 1..count(lotti) return lotti[i].datiBase.importo) &gt; 40000)</text>
-        </inputEntry>
-        <inputEntry id="UnaryTests_1b5a3q0">
-          <text></text>
-        </inputEntry>
-        <outputEntry id="LiteralExpression_17gm9wy">
-          <text>"{\"idTipologica\":\"errori\",\"codice\":\"REG154\"}"</text>
-        </outputEntry>
-      </rule>
     </decisionTable>
   </decision>
   <inputData id="InputData_1xc4zxw" name="lotti" />
