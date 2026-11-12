@@ -2911,6 +2911,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG155",
+    "descrizione": {
+		"it": "Indicare almeno un incaricato.",
+		"en": "Indicare almeno un incaricato."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
