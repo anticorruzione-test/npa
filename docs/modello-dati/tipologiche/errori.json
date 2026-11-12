@@ -2902,6 +2902,15 @@
     "dataFine":null
 },
 {
+    "codice":"REG154",
+    "descrizione": {
+		"it": "L'importo totale dei lotti non può superare i 40K.",
+		"en": "L'importo totale dei lotti non può superare i 40K."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"AUT01",
     "descrizione": {
         "it": "l'utente non è presente tra le stazioni appaltanti",
