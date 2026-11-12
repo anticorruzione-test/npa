@@ -1457,6 +1457,60 @@
     "dataFine":null
 },
 {
+	"codice":"ERR161",
+    "descrizione": {
+		"it": "Tipologica non attiva.",
+		"en": "Tipologica non attiva."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR162",
+    "descrizione": {
+		"it": "Tipologica già esistente nel database.",
+		"en": "Tipologica già esistente nel database."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR163",
+    "descrizione": {
+		"it": "Versione non presente.",
+		"en": "Versione non presente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR164",
+    "descrizione": {
+		"it": "Codice duplicato per la stessa versione.",
+		"en": "Codice duplicato per la stessa versione."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR165",
+    "descrizione": {
+		"it": "Errori duplicati nella richiesta.",
+		"en": "Errori duplicati nella richiesta."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+	"codice":"ERR166",
+    "descrizione": {
+		"it": "Valore non esistente.",
+		"en": "Valore non esistente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",

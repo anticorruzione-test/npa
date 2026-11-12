@@ -1,0 +1,153 @@
+[{
+    "codice":"BO_ERR1",
+    "descrizione": {
+		"it": "Codice e versione già esistenti",
+		"en": "Codice e versione già esistenti"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR2",
+    "descrizione": {
+		"it": "Il contenuto inviato non è codificato correttamente in Base64",
+		"en": "Il contenuto inviato non è codificato correttamente in Base64"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR3",
+    "descrizione": {
+		"it": "Errore generico durante la validazione",
+		"en": "Errore generico durante la validazione"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR4",
+    "descrizione": {
+		"it": "Errore nella generazione del file",
+		"en": "Errore nella generazione del file"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR5",
+    "descrizione": {
+		"it": "Dati non disponibili",
+		"en": "Dati non disponibili"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR6",
+    "descrizione": {
+		"it": "Tipologica già esistente",
+		"en": "Tipologica già esistente"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR7",
+    "descrizione": {
+		"it": "Tipologica non attiva",
+		"en": "Tipologica non attiva"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR8",
+    "descrizione": {
+		"it": "Impossibile paginare i risultati della ricerca",
+		"en": "Impossibile paginare i risultati della ricerca"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR9",
+    "descrizione": {
+		"it": "Data fine deve essere successiva alla data inizio",
+		"en": "Data fine deve essere successiva alla data inizio"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR10",
+    "descrizione": {
+		"it": "Voce non presente a database",
+		"en": "Voce non presente a database"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR11",
+    "descrizione": {
+		"it": "Errore nell'import delle voci",
+		"en": "Errore nell'import delle voci"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR12",
+    "descrizione": {
+		"it": "Codice già presente nel periodo selezionato",
+		"en": "Codice già presente nel periodo selezionato"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR13",
+    "descrizione": {
+		"it": "Tipologica non trovata",
+		"en": "Tipologica non trovata"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR14",
+    "descrizione": {
+		"it": "Tipologica riservata (non modificabile)",
+		"en": "Tipologica riservata (non modificabile)"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR15",
+    "descrizione": {
+		"it": "La richiesta non può essere null",
+		"en": "La richiesta non può essere null"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR16",
+    "descrizione": {
+		"it": "Errore nella costruzione della risposta",
+		"en": "Errore nella costruzione della risposta"
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
+    "codice":"BO_ERR17",
+    "descrizione": {
+		"it": "Errore durante la ricerca dei percorsi nel database",
+		"en": "Errore durante la ricerca dei percorsi nel database"
+	},
+    "dataInizio":null,
+    "dataFine":null
+}]
