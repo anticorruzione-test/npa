@@ -502,13 +502,4 @@
 		"de": "OS 9 - SIGNAL- UND AMPELANLAGEN FÜR DIE VERKEHRSSICHERHEIT"	},
     "dataInizio":null,
     "dataFine":null
-},
-{
-    "codice":"OS 29",
-    "descrizione": {
-		"it": "OS 29 - ARMAMENTO FERROVIARIO",
-		"en": "OS 29 - ARMAMENTO FERROVIARIO",
-		"de": "OS 29 - EISENBAHNOBERBAU"	},
-    "dataInizio":null,
-    "dataFine":null
 }]
