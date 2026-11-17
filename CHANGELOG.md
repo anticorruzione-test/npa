@@ -1909,3 +1909,11 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 		* colonna schedaSuccessiva: rimossa la scheda ANN
 	* modificata la riga della scheda ANN:
  		* colonna flussoAppartenenza: rimossi i flussi 72, 800
+
+<summary><h1>Note di rilascio del 17/11/2026</h1></summary>
+
+### Specifiche di interfaccia
+* ticket 115421:
+	* specifiche-servizi-appalto.yaml:
+		* modificato il summary dell'operazione /cancella-appalto
+		* modificata la descrizione dell'operazione /cancella-appalto
