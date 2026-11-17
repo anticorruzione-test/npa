@@ -1910,7 +1910,7 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* modificata la riga della scheda ANN:
  		* colonna flussoAppartenenza: rimossi i flussi 72, 800 
 
-<summary><h1>Note di rilascio del TBD</h1></summary>
+<summary><h1>Note di rilascio del 17/11/2026</h1></summary>
 
 ### Specifiche di interfaccia
 * ticket 115421:
