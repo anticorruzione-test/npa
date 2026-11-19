@@ -87,4 +87,13 @@
 	},
     "dataInizio":null,
     "dataFine":null
+},
+{
+    "codice":"CONCL",
+    "descrizione": {
+		"it": "Concluso",
+		"en": "Concluso"
+	},
+    "dataInizio":null,
+    "dataFine":null
 }]
