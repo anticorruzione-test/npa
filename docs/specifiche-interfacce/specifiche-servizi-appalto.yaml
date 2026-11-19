@@ -2894,6 +2894,10 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/SubappaltoTypeCompleto'
+        sottofaseEsecuzione:
+          description: Sottofase corrente della fase di Esecuzione del contratto (Anticipazione, Sottoscrizione, Inizio Lavori, Avanzamento, Conclusione, Collaudo), determinata dall'ultima scheda confermata del contratto che avvia una sottofase secondo le regole dell'Orchestratore. Assente se nessuna scheda del contratto avvia una sottofase.
+          type: string
+          example: 'Avanzamento'
     SubappaltoTypeCompleto:
       description: Oggetto che riporta i dati del subappalto associato al contratto
       type: object
