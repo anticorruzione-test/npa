@@ -151,7 +151,7 @@ Le fasi previste, elencate nell'ordine logico progressivo, sono:
 #### Sottofasi della fase di Esecuzione
 La fase `5 - Esecuzione` viene ulteriormente suddivisa nelle seguenti sottofasi, rappresentate nella colonna `sottofaseEsecuzione`:
 
-- `1.0` Anticipata
+- `1.0` Anticipazione
 - `1.1` Sottoscrizione
 - `2` Inizio Lavori
 - `2.1` Avanzamento
@@ -163,8 +163,8 @@ La fase `5 - Esecuzione` viene ulteriormente suddivisa nelle seguenti sottofasi,
 > Le sottofasi sono identificate esclusivamente dalle rispettive etichette testuali. I codici `1.0`, `1.1`, `2`, `2.1`, ecc. indicati come prefisso rappresentano il livello/sottolivello nella gerarchia e non costituiscono l'identificativo della sottofase.
 
 **Prescrizioni sull'ordine delle sottofasi di Esecuzione:**
-- `1.0 Anticipata` e `1.1 Sottoscrizione` sono mutuamente esclusive.
-- Dopo `1.0 Anticipata` o `1.1 Sottoscrizione` segue necessariamente `2 Inizio Lavori`.
+- `1.0 Anticipazione` e `1.1 Sottoscrizione` sono mutuamente esclusive.
+- Dopo `1.0 Anticipazione` o `1.1 Sottoscrizione` segue necessariamente `2 Inizio Lavori`.
 - Dopo `2 Inizio Lavori` può seguire `2.1 Avanzamento` oppure direttamente `3 Conclusione`.
 - Dopo `3 Conclusione` deve seguire `4 Collaudo`.
 - Dopo `4 Collaudo` deve seguire `5 Conclusione Finale`.
@@ -278,7 +278,7 @@ Le colonne di questo gruppo descrivono la suddivisione della fase `5 - Esecuzion
 
 | Colonna | Come viene interpretato il valore | Effetto sul sistema |
 |---|---|---|
-| **sottofaseEsecuzione** | Etichetta testuale della sottofase di Esecuzione a cui la scheda appartiene, riferita all'intera fase di Esecuzione. Valori possibili: `Anticipata`, `Sottoscrizione`, `Inizio Lavori`, `Avanzamento`, `Conclusione`, `Collaudo`, `Conclusione Finale`. Può contenere più etichette separate da virgola quando la scheda copre più sottofasi. <br>**N.B.: Se la scheda ha `avvioSottofase` = `SI`, questa colonna deve contenere una sola etichetta.** | Classifica la scheda all'interno della o delle sottofasi della fase di Esecuzione. |
+| **sottofaseEsecuzione** | Etichetta testuale della sottofase di Esecuzione a cui la scheda appartiene, riferita all'intera fase di Esecuzione. Valori possibili: `Anticipazione`, `Sottoscrizione`, `Inizio Lavori`, `Avanzamento`, `Conclusione`, `Collaudo`, `Conclusione Finale`. Può contenere più etichette separate da virgola quando la scheda copre più sottofasi. <br>**N.B.: Se la scheda ha `avvioSottofase` = `SI`, questa colonna deve contenere una sola etichetta.** | Classifica la scheda all'interno della o delle sottofasi della fase di Esecuzione. |
 | **avvioSottofase** | `SI` = la scheda è abilitata ad avviare la sottofase di Esecuzione indicata nella colonna `sottofaseEsecuzione`: è cioè una delle schede (talvolta l'unica) che possono determinare il passaggio a quella sottofase. <br>`NO` / vuoto = la scheda non avvia alcuna sottofase. | Il sistema, in occasione di un cambio di sottofase di Esecuzione, ammette il passaggio solo se la scheda ricevuta ha `avvioSottofase` = `SI` e la sottofase indicata in `sottofaseEsecuzione` corrisponde alla nuova sottofase attesa. Se più schede sono abilitate ad avviare la stessa sottofase, è sufficiente inviarne una tra quelle ammesse. |
 | **codiciSchedaDaverificare** | Elenco dei codici delle schede che identificano sottoprocessi la cui corretta chiusura deve essere verificata prima di poter inviare la scheda corrente. La valorizzazione è tipicamente prevista per la scheda di sottofase `Collaudo` e per alcune schede di sottofase `Conclusione`. Ogni codice indicato rappresenta un sottoprocesso che, se aperto / inviato a sistema per la procedura, deve risultare correttamente concluso (chiuso) attraverso l'invio delle relative schede correlate secondo quanto definito nella colonna `codiciSchedeCorrelate`. | All'atto dell'invio della scheda, il sistema verifica per ciascun codice indicato che il corrispondente sottoprocesso risulti chiuso; se anche uno solo dei sottoprocessi risulta aperto, la scheda in ingresso viene rifiutata. |
 
