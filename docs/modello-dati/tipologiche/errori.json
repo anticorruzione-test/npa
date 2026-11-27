@@ -1385,7 +1385,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR161",
+	"codice":"ERR191",
     "descrizione": {
 		"it": "idAppalto e idContratto non coerenti.",
 		"en": "idAppalto e idContratto non coerenti."
