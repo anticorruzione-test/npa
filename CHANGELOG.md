@@ -1917,9 +1917,3 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 	* specifiche-servizi-appalto.yaml:
 		* modificato il summary dell'operazione /cancella-appalto
 		* modificata la descrizione dell'operazione /cancella-appalto
-
-<summary><h1>Note di rilascio del TBD (CR-Profili)</h1></summary>
-
-### Tipologiche
-* CR-Profili - Gestione dei profili:
-	* errori.json: inseriti i messaggi di errore ERR180, ERR181, ERR182, ERR183, ERR184, ERR185, ERR186, ERR187, ERR188, ERR189 per i servizi di gestione dei profili e della matrice di autorizzazione
