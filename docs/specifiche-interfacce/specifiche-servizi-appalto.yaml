@@ -1837,7 +1837,7 @@ paths:
         - idContratto, con o senza idAppalto e/o cig: viene restituito il solo contratto indicato (ERR39 se l'idContratto non è presente).
         Se sono valorizzati più criteri, ne viene verificata la coerenza reciproca:
         - idAppalto e cig: il Lotto deve appartenere all'Appalto indicato (ERR66);
-        - idAppalto e idContratto: il Contratto deve appartenere all'Appalto indicato (ERR161);
+        - idAppalto e idContratto: il Contratto deve appartenere all'Appalto indicato (ERR191);
         - cig e idContratto: il Contratto deve essere associato al Lotto indicato (ERR160).
       operationId: ricercaContratto
       parameters:
