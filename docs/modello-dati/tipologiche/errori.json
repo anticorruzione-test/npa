@@ -1448,7 +1448,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR160",
+	"codice":"ERR167",
     "descrizione": {
 		"it": "Esiste già un elenco di SA per l'appalto indicato.",
 		"en": "Esiste già un elenco di SA per l'appalto indicato."
@@ -1457,7 +1457,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR161",
+	"codice":"ERR168",
     "descrizione": {
 		"it": "Nessun elenco di SA trovato per l'appalto indicato.",
 		"en": "Nessun elenco di SA trovato per l'appalto indicato."
@@ -1466,7 +1466,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR162",
+	"codice":"ERR169",
     "descrizione": {
 		"it": "Deve essere presente almeno una Stazione Appaltante Titolare.",
 		"en": "Deve essere presente almeno una Stazione Appaltante Titolare."
@@ -1475,7 +1475,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR163",
+	"codice":"ERR170",
     "descrizione": {
 		"it": "Non presenti in AUSA SA per CF e codiceAusa.",
 		"en": "Non presenti in AUSA SA per CF e codiceAusa."
@@ -1484,7 +1484,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR164",
+	"codice":"ERR171",
     "descrizione": {
 		"it": "Non presenti in AUSA SA Attive per CF e codiceAusa.",
 		"en": "Non presenti in AUSA SA Attive per CF e codiceAusa."
@@ -1493,7 +1493,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR165",
+	"codice":"ERR172",
     "descrizione": {
 		"it": "Centro di costo non presente.",
 		"en": "Centro di costo non presente."
@@ -1502,7 +1502,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR166",
+	"codice":"ERR173",
     "descrizione": {
 		"it": "Centro di costo non Attivo.",
 		"en": "Centro di costo non Attivo."
@@ -1511,7 +1511,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR167",
+	"codice":"ERR174",
     "descrizione": {
 		"it": "L'elenco delle SA da modificare o aggiungere o eliminare non può essere vuoto.",
 		"en": "L'elenco delle SA da modificare o aggiungere o eliminare non può essere vuoto."
@@ -1520,7 +1520,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR168",
+	"codice":"ERR175",
     "descrizione": {
 		"it": "La SA da modificare non è presente nell'elenco corrente.",
 		"en": "La SA da modificare non è presente nell'elenco corrente."
@@ -1529,7 +1529,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR169",
+	"codice":"ERR176",
     "descrizione": {
 		"it": "La SA da aggiungere esiste già nell'elenco attuale.",
 		"en": "La SA da aggiungere esiste già nell'elenco attuale."
@@ -1538,7 +1538,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR170",
+	"codice":"ERR177",
     "descrizione": {
 		"it": "La SA da eliminare non esiste nell'elenco attuale.",
 		"en": "La SA da eliminare non esiste nell'elenco attuale."
@@ -1547,7 +1547,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR171",
+	"codice":"ERR178",
     "descrizione": {
 		"it": "Errore durante verifica AUSA.",
 		"en": "Errore durante verifica AUSA."
@@ -1556,7 +1556,7 @@
     "dataFine":null
 },
 {
-	"codice":"ERR172",
+	"codice":"ERR179",
     "descrizione": {
 		"it": "Errore interno durante il recupero dati AUSA.",
 		"en": "Errore interno durante il recupero dati AUSA."

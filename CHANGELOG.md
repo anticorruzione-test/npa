@@ -1920,8 +1920,6 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 
 <summary><h1>Note di rilascio del TBD (Refactoring Stazioni Appaltanti)</h1></summary>
 
-**Punto aperto (da verificare al porting):** verificare la numerazione dei codici di errore ERR160-ERR172 inseriti in errori.json: su main il codice ERR160 è già utilizzato ("CIG e idContratto non coerenti").
-
 ### Schede
 * ticket 58793:
 	* modello-dati-schede-dati-comuni.yaml:
@@ -1933,7 +1931,7 @@ Adeguate le regole di validazione DMN al nuovo formato dei campi temporali, in c
 		* chiuse le voci 1 "Solo aggiudicazione", 2 "Aggiudicazione e stipula del contratto", 3 "Aggiudicazione, stipula ed esecuzione del contratto", 4 "Proposta di aggiudicazione" (dataFine 30/09/2026)
 		* aggiunte le voci 1 "Pubblicazione", 2 "Affidamento", 3 "Stipula del contratto", 4 "Esecuzione del contratto", valide dal 01/10/2026
 * ticket 62794:
-	* errori.json: inseriti i messaggi di errore ERR160, ERR161, ERR162, ERR163, ERR164, ERR165, ERR166, ERR167, ERR168, ERR169, ERR170, ERR171, ERR172 per i servizi del contesto gestioneSA
+	* errori.json: inseriti i messaggi di errore ERR167, ERR168, ERR169, ERR170, ERR171, ERR172, ERR173, ERR174, ERR175, ERR176, ERR177, ERR178, ERR179 per i servizi del contesto gestioneSA
 	* esitoOperazione.json: aggiunte le voci SA_INSERITE, SA_N_INSERITE, SA_MODIFICATE, SA_N_MODIFICATE, SA_CANCELLATE, SA_N_CANCELLATE
 	* tipoOperazione.json: aggiunte le voci SA_INSERISCI, SA_MODIFICA, SA_CANCELLA
 
