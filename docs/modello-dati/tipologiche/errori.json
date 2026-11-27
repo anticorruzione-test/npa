@@ -1457,6 +1457,15 @@
     "dataFine":null
 },
 {
+	"codice":"ERR190",
+    "descrizione": {
+		"it": "Modifica dei dati Categoria/CategoriaSOA non consentita per il ruolo dell'utente.",
+		"en": "Modifica dei dati Categoria/CategoriaSOA non consentita per il ruolo dell'utente."
+	},
+    "dataInizio":null,
+    "dataFine":null
+},
+{
     "codice":"ERR9999",
     "descrizione": {
 		"it": "errore generico",
